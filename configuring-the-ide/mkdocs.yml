@@ -1,0 +1,47 @@
+
+site_name: Configuring the IDE
+theme:
+  favicon: 'img/favicon-32.png'
+  logo: 'img/dyalog-white.svg'
+  features:
+    - navigation.sections
+    - navigation.instant
+  name: material
+
+extra_css:
+  - style/main.css
+  - style/admonition-ucmdhelp.css
+
+plugins:
+  - search
+  - macros
+  - site-urls
+
+extra:
+  version_maj: 20
+  version_majmin: 20.0
+
+markdown_extensions:
+  - admonition
+  - abbr
+
+nav:
+  - index.md
+  - Configuration Dialog:
+    - configuration-dialog/configuration-dialog-general-tab.md
+    - configuration-dialog/configuration-dialog-unicode-input-tab-unicode-edition-only.md
+    - configuration-dialog/configuration-dialog-input-tab-classic-edition-only.md
+    - configuration-dialog/configuration-dialog-output-tab-classic-edition-only.md
+    - configuration-dialog/configuration-dialog-keyboard-shortcuts-tab.md
+    - configuration-dialog/configuration-dialog-workspace-tab.md
+    - configuration-dialog/configuration-dialog-help-dmx-tab.md
+    - configuration-dialog/configuration-dialog-windows-tab.md
+    - configuration-dialog/configuration-dialog-session-tab.md
+    - configuration-dialog/configuration-dialog-trace-edit-tab.md
+    - configuration-dialog/configuration-dialog-auto-complete-tab.md
+    - configuration-dialog/configuration-dialog-salt-tab.md
+    - configuration-dialog/configuration-dialog-user-commands-tab.md
+    - configuration-dialog/configuration-dialog-object-syntax-tab.md
+    - configuration-dialog/configuration-dialog-saved-responsestab.md
+  - colour-selection-dialog.md
+  - print-configuration.md

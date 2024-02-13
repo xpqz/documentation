@@ -1,0 +1,147 @@
+
+site_name: Windows Installation and Configuration Guide
+theme:
+  favicon: 'img/favicon-32.png'
+  logo: 'img/dyalog-white.svg'
+  features:
+    - navigation.sections
+    - navigation.instant
+  name: material
+
+extra_css:
+  - style/main.css
+  - style/admonition-ucmdhelp.css
+
+plugins:
+  - search
+  - macros
+  - site-urls
+
+extra:
+  version_maj: 20
+  version_majmin: 20.0
+
+markdown_extensions:
+  - admonition
+  - abbr
+
+nav:
+  - index.md
+  - documentation.md
+  - files-and-directories.md
+  - runtime-applications-addional.md
+  - apl-fonts.md
+  - apl-command-line.md
+  - apl-exit-codes.md
+  - Configuration Parameters:
+    - configuration-parameters/configuration-parameters.md
+    - A-Z:
+      - configuration-parameters/a-z/addclassheaders.md
+      - configuration-parameters/a-z/aplcorename.md
+      - configuration-parameters/a-z/aplk.md
+      - configuration-parameters/a-z/aplkeys.md
+      - configuration-parameters/a-z/aplnid.md
+      - configuration-parameters/a-z/aplt.md
+      - configuration-parameters/a-z/apltrans.md
+      - configuration-parameters/a-z/apl-code-e-magnitude.md
+      - configuration-parameters/a-z/apl-complex-as-v12.md
+      - configuration-parameters/a-z/apl-fcreate-props-c.md
+      - configuration-parameters/a-z/apl-fcreate-props-j.md
+      - configuration-parameters/a-z/apl-fast-fchk.md
+      - configuration-parameters/a-z/apl-max-threads.md
+      - configuration-parameters/a-z/wrapsearchmsgbox.md
+      - configuration-parameters/a-z/autodpi.md
+      - AutoComplete:
+        - configuration-parameters/a-z/autocomplete/showfiles.md
+      - configuration-parameters/a-z/autoformat.md
+      - configuration-parameters/a-z/autoindent.md
+      - configuration-parameters/a-z/auto-pw.md
+      - configuration-parameters/a-z/cfext.md
+      - configuration-parameters/a-z/classicmode.md
+      - configuration-parameters/a-z/classicmodesaveposition.md
+      - configuration-parameters/a-z/cmd-prefix-and-cmd-postfix.md
+      - configuration-parameters/a-z/confirm-abort.md
+      - configuration-parameters/a-z/confirm-close.md
+      - configuration-parameters/a-z/confirm-fix.md
+      - configuration-parameters/a-z/confirm-session-delete.md
+      - configuration-parameters/a-z/default-div.md
+      - configuration-parameters/a-z/default-io.md
+      - configuration-parameters/a-z/default-ml.md
+      - configuration-parameters/a-z/default-pp.md
+      - configuration-parameters/a-z/default-pw.md
+      - configuration-parameters/a-z/default-rtl.md
+      - configuration-parameters/a-z/default-wx.md
+      - configuration-parameters/a-z/dmxoutputonerror.md
+      - configuration-parameters/a-z/dockableeditwindows.md
+      - configuration-parameters/a-z/doubleclickedit.md
+      - configuration-parameters/a-z/dyalog.md
+      - configuration-parameters/a-z/dyalogemailaddress.md
+      - configuration-parameters/a-z/dyaloghelpdir.md
+      - configuration-parameters/a-z/dyaloginstalldir.md
+      - configuration-parameters/a-z/dyalogwebsite.md
+      - configuration-parameters/a-z/dyalog-eventlogginglevel.md
+      - configuration-parameters/a-z/dyalog-eventlogname.md
+      - configuration-parameters/a-z/dyalog-nopopups.md
+      - configuration-parameters/a-z/dyalog-pixel-type.md
+      - configuration-parameters/a-z/dyalog-serial.md
+      - configuration-parameters/a-z/editorstate.md
+      - configuration-parameters/a-z/enable-cef.md
+      - configuration-parameters/a-z/erroronexternalexception.md
+      - configuration-parameters/a-z/externalhelpurl.md
+      - configuration-parameters/a-z/greet-bitmap.md
+      - configuration-parameters/a-z/history-size.md
+      - configuration-parameters/a-z/inifile.md
+      - configuration-parameters/a-z/initialkeyboardlayout.md
+      - configuration-parameters/a-z/initialkeyboardlayoutinuse.md
+      - configuration-parameters/a-z/initialkeyboardlayoutshowall.md
+      - configuration-parameters/a-z/input-size.md
+      - configuration-parameters/a-z/keyboardinputdelay.md
+      - configuration-parameters/a-z/localdyalogdir.md
+      - configuration-parameters/a-z/log-file.md
+      - configuration-parameters/a-z/log-file-inuse.md
+      - configuration-parameters/a-z/log-size.md
+      - configuration-parameters/a-z/mapchars.md
+      - configuration-parameters/a-z/maxaplcores.md
+      - configuration-parameters/a-z/maxws.md
+      - configuration-parameters/a-z/overstrikespopup.md
+      - configuration-parameters/a-z/passexceptionstoopsys.md
+      - configuration-parameters/a-z/pfkey-size.md
+      - configuration-parameters/a-z/programfolder.md
+      - configuration-parameters/a-z/propertyexposeroot.md
+      - configuration-parameters/a-z/propertyexposese.md
+      - configuration-parameters/a-z/qcmd-timeout.md
+      - configuration-parameters/a-z/resolveoverstrikes.md
+      - configuration-parameters/a-z/runasservice.md
+      - configuration-parameters/a-z/savecontinueonexit.md
+      - configuration-parameters/a-z/savelogonexit.md
+      - configuration-parameters/a-z/savesessiononexit.md
+      - configuration-parameters/a-z/serial.md
+      - configuration-parameters/a-z/sessionontop.md
+      - configuration-parameters/a-z/session-file.md
+      - configuration-parameters/a-z/showstatusonerror.md
+      - configuration-parameters/a-z/singletrace.md
+      - configuration-parameters/a-z/statusonedit.md
+      - configuration-parameters/a-z/tabstops.md
+      - configuration-parameters/a-z/tracestopmonitor.md
+      - configuration-parameters/a-z/trace-level-warn.md
+      - configuration-parameters/a-z/unicodetoclipboard.md
+      - configuration-parameters/a-z/useexternalhelpurl.md
+      - ValueTips:
+        - configuration-parameters/a-z/valuetips/enabled.md
+      - configuration-parameters/a-z/wantsspecialkeys.md
+      - configuration-parameters/a-z/wrapsearch.md
+      - configuration-parameters/a-z/wsext.md
+      - configuration-parameters/a-z/wspath.md
+      - configuration-parameters/a-z/xplookandfeel.md
+      - configuration-parameters/a-z/yy-window.md
+  - registry-subfolders.md
+  - window-captions.md
+  - workspace-management.md
+  - interface-with-windows.md
+  - auxiliary-processors.md
+  - access-control-for-external-variables.md
+  - creating-executables.md
+  - runtime-applications-and-components.md
+  - com-objects-and-the-dyalog-dll.md
+  - apl-application-as-a-service.md
+  - aplservice-logging-events.md

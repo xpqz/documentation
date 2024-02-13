@@ -1,0 +1,134 @@
+
+site_name: .NET Interface
+theme:
+  favicon: 'img/favicon-32.png'
+  logo: 'img/dyalog-white.svg'
+  features:
+    - navigation.sections
+    - navigation.instant
+  name: material
+
+extra_css:
+  - style/main.css
+  - style/admonition-ucmdhelp.css
+
+plugins:
+  - search
+  - macros
+  - site-urls
+
+extra:
+  version_maj: 20
+  version_majmin: 20.0
+
+markdown_extensions:
+  - admonition
+  - abbr
+
+nav:
+  - index.md
+  - Overview:
+    - overview/introduction.md
+    - overview/prerequisites.md
+    - overview/files-installed-with-dyalog.md
+  - Accessing .Net Classes:
+    - accessing-net-classes/introduction.md
+    - accessing-net-classes/locating-net-classes-and-assemblies.md
+    - accessing-net-classes/using-net-classes.md
+    - accessing-net-classes/browsing-net-classes.md
+    - accessing-net-classes/value-tips-external.md
+    - accessing-net-classes/advanced-techniques.md
+    - accessing-net-classes/more-examples.md
+    - accessing-net-classes/enumerations.md
+    - accessing-net-classes/handling-pointers-with-dyalog.md
+    - accessing-net-classes/decf-conversions.md
+  - Using Windows.Forms:
+    - using-windows-forms/introduction.md
+    - using-windows-forms/creating-gui-objects.md
+    - using-windows-forms/object-hierarchy.md
+    - using-windows-forms/positioning-and-sizing-forms.md
+    - using-windows-forms/modal-dialog-boxes.md
+    - using-windows-forms/non-modal-forms.md
+  - WPF:
+    - Windows Presentation Foundation:
+      - wpf/windows-presentation-foundation/introduction.md
+      - Temperature Converter:
+        - wpf/windows-presentation-foundation/temperature-converter/temperature-converter-intro.md
+        - wpf/windows-presentation-foundation/temperature-converter/using-xaml.md
+        - wpf/windows-presentation-foundation/temperature-converter/using-code.md
+      - Data Binding:
+        - wpf/windows-presentation-foundation/data-binding/data-binding-introduction.md
+        - wpf/windows-presentation-foundation/data-binding/text-example.md
+        - wpf/windows-presentation-foundation/data-binding/fontsize-example.md
+        - wpf/windows-presentation-foundation/data-binding/text-and-fontsize-code.md
+        - wpf/windows-presentation-foundation/data-binding/text-and-fontsize-xaml.md
+        - wpf/windows-presentation-foundation/data-binding/filtered-list.md
+        - wpf/windows-presentation-foundation/data-binding/netobject-example.md
+        - wpf/windows-presentation-foundation/data-binding/datetime-example-using-ts-format.md
+        - wpf/windows-presentation-foundation/data-binding/datagrid-example.md
+        - wpf/windows-presentation-foundation/data-binding/datagrid-matrix-example.md
+      - wpf/windows-presentation-foundation/syncfusion-introduction.md
+      - wpf/windows-presentation-foundation/syncfusion-circulargauge.md
+  - APLScript:
+    - aplscript/introduction.md
+    - aplscript/aplscript-compiler.md
+    - aplscript/creating-an-aplscript-file.md
+    - aplscript/transferring-code.md
+    - aplscript/general-principles.md
+    - aplscript/creating-programs.md
+    - aplscript/creating-net-classes.md
+    - aplscript/creating-asp-net-classes.md
+  - Writing .Net Classes:
+    - writing-net-classes/introduction.md
+    - writing-net-classes/assemblies-namespaces-and-classes.md
+    - writing-net-classes/getting-started.md
+    - writing-net-classes/aplclasses1.md
+    - writing-net-classes/aplclasses2.md
+    - writing-net-classes/aplclasses2a.md
+    - writing-net-classes/aplclasses3.md
+    - writing-net-classes/aplclasses4.md
+    - writing-net-classes/aplclasses5.md
+    - writing-net-classes/interfaces.md
+  - Dyalog APL and IIS:
+    - dyalog-apl-and-iis/introduction.md
+    - dyalog-apl-and-iis/iis-installation-dependency.md
+    - dyalog-apl-and-iis/iis-applications-and-virtual.md
+    - dyalog-apl-and-iis/internet-services-manager.md
+  - Writing Web Services:
+    - writing-web-services/introduction.md
+    - writing-web-services/web-service-asmx-scripts.md
+    - writing-web-services/compilation.md
+    - writing-web-services/exporting-methods.md
+    - writing-web-services/web-service-data-types.md
+    - writing-web-services/execution.md
+    - writing-web-services/global-asax-and-application.md
+    - writing-web-services/sample-web-service-eg1.md
+    - writing-web-services/sample-web-service-loanservice.md
+    - writing-web-services/sample-web-service-golfservice.md
+    - writing-web-services/sample-web-service-eg2.md
+  - Calling Web Services:
+    - calling-web-services/introduction.md
+    - calling-web-services/makeproxy-function.md
+    - calling-web-services/using-loanservice-from-dyalog.md
+    - calling-web-services/using-golfservice-from-dyalog.md
+    - calling-web-services/exploring-web-services.md
+    - calling-web-services/asynchronous-use.md
+  - Writing ASP.NET Web pages:
+    - writing-asp-net-web-pages/introduction.md
+    - writing-asp-net-web-pages/your-first-apl-web-page.md
+    - writing-asp-net-web-pages/page-load-event.md
+    - writing-asp-net-web-pages/code-behind.md
+    - writing-asp-net-web-pages/workspace-behind.md
+  - Writing Custom Controls for ASP.NET:
+    - writing-custom-controls-for-asp-net/introduction.md
+    - writing-custom-controls-for-asp-net/simplectl-control.md
+    - writing-custom-controls-for-asp-net/temperatureconverterctl1.md
+    - writing-custom-controls-for-asp-net/temperatureconverterctl2.md
+    - writing-custom-controls-for-asp-net/temperatureconverterctl3.md
+  - Implementation Details:
+    - implementation-details/introduction.md
+    - implementation-details/isolation-mode.md
+    - implementation-details/asp-net-configuration-file.md
+    - implementation-details/structure-of-the-active-workspace.md
+    - implementation-details/threading.md
+    - implementation-details/debugging-an-apl-net-class.md

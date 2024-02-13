@@ -1,0 +1,328 @@
+
+site_name: Programmer's Guide
+theme:
+  favicon: 'img/favicon-32.png'
+  logo: 'img/dyalog-white.svg'
+  features:
+    - navigation.sections
+    - navigation.instant
+  name: material
+
+extra_css:
+  - style/main.css
+  - style/admonition-ucmdhelp.css
+
+plugins:
+  - search
+  - macros
+  - site-urls
+
+extra:
+  version_maj: 20
+  version_majmin: 20.0
+
+markdown_extensions:
+  - admonition
+  - abbr
+
+nav:
+  - index.md
+  - Introduction:
+    - Programmers Guide Introduction:
+      - introduction/programmers-guide-introduction/workspaces.md
+      - introduction/programmers-guide-introduction/names.md
+      - Arrays:
+        - introduction/programmers-guide-introduction/arrays/arrays.md
+        - introduction/programmers-guide-introduction/arrays/numbers.md
+        - introduction/programmers-guide-introduction/arrays/characters.md
+        - introduction/programmers-guide-introduction/arrays/enclosed-elements.md
+        - introduction/programmers-guide-introduction/arrays/specification-of-variables.md
+        - introduction/programmers-guide-introduction/arrays/vector-notation.md
+        - introduction/programmers-guide-introduction/arrays/structuring-of-arrays.md
+        - introduction/programmers-guide-introduction/arrays/display-of-arrays.md
+        - introduction/programmers-guide-introduction/arrays/prototypes-and-fill-items.md
+        - introduction/programmers-guide-introduction/arrays/cells-and-subarrays.md
+      - introduction/programmers-guide-introduction/expressions.md
+      - introduction/programmers-guide-introduction/functions.md
+      - introduction/programmers-guide-introduction/operators.md
+      - introduction/programmers-guide-introduction/binding-strength.md
+      - introduction/programmers-guide-introduction/trains.md
+      - introduction/programmers-guide-introduction/search-functions-and-hash.md
+      - Idiom Recogition:
+        - introduction/programmers-guide-introduction/idiom-recogition/idiom-recognition.md
+        - introduction/programmers-guide-introduction/idiom-recogition/idiom-list.md
+      - introduction/programmers-guide-introduction/parallel-execution.md
+      - introduction/programmers-guide-introduction/complex-numbers.md
+      - introduction/programmers-guide-introduction/128-bit-decimal-floating-point.md
+      - Namespaces:
+        - introduction/programmers-guide-introduction/namespaces/namespaces.md
+        - introduction/programmers-guide-introduction/namespaces/namespace-syntax.md
+        - introduction/programmers-guide-introduction/namespaces/namespace-reference-evaluation.md
+        - introduction/programmers-guide-introduction/namespaces/namespaces-and-localisation.md
+        - introduction/programmers-guide-introduction/namespaces/namespace-references.md
+        - introduction/programmers-guide-introduction/namespaces/unnamed-namespaces.md
+        - introduction/programmers-guide-introduction/namespaces/arrays-of-namespace-references.md
+        - introduction/programmers-guide-introduction/namespaces/distributed-assignment.md
+        - introduction/programmers-guide-introduction/namespaces/distributed-functions.md
+        - introduction/programmers-guide-introduction/namespaces/namespaces-and-operators.md
+        - introduction/programmers-guide-introduction/namespaces/serialising-namespaces.md
+      - introduction/programmers-guide-introduction/external-variables.md
+      - introduction/programmers-guide-introduction/component-files.md
+      - introduction/programmers-guide-introduction/auxiliary-processors.md
+  - Defined Functions and Operators:
+    - defined-functions-and-operators/introduction.md
+    - Traditional Functions and Operators:
+      - defined-functions-and-operators/traditional-functions-and-operators/introduction.md
+      - TradFns:
+        - defined-functions-and-operators/traditional-functions-and-operators/tradfns/model-syntax.md
+        - defined-functions-and-operators/traditional-functions-and-operators/tradfns/statements.md
+        - defined-functions-and-operators/traditional-functions-and-operators/tradfns/global-local-names.md
+        - defined-functions-and-operators/traditional-functions-and-operators/tradfns/locals-lines.md
+        - defined-functions-and-operators/traditional-functions-and-operators/tradfns/namelists.md
+        - defined-functions-and-operators/traditional-functions-and-operators/tradfns/locked-functions-operators.md
+        - Function Declaration Statements:
+          - defined-functions-and-operators/traditional-functions-and-operators/tradfns/function-declaration-statements/function-declaration-statements-introduction.md
+          - Function Declaration Statements:
+            - Access Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/function-declaration-statements/function-declaration-statements/access.md
+            - Attribute Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/function-declaration-statements/function-declaration-statements/attribute.md
+            - Implements Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/function-declaration-statements/function-declaration-statements/implements.md
+            - Signature Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/function-declaration-statements/function-declaration-statements/signature.md
+        - Control Structures:
+          - defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures-introduction.md
+          - Control Structures:
+            - defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/control-structures-summary.md
+            - If Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/if.md
+            - While Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/while.md
+            - Repeat Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/repeat.md
+            - For Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/for.md
+            - Select Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/select.md
+            - With Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/with.md
+            - Hold Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/hold.md
+            - Trap Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/trap.md
+            - GoTo Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/goto.md
+            - Return Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/return.md
+            - Leave Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/leave.md
+            - Continue Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/continue.md
+            - Section Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/section.md
+            - Disposable Statement: defined-functions-and-operators/traditional-functions-and-operators/tradfns/control-structures/control-structures/disposable.md
+        - defined-functions-and-operators/traditional-functions-and-operators/tradfns/apl-line-editor.md
+    - Dfns and Dops:
+      - defined-functions-and-operators/dfns-and-dops/dynamic-functions-and-operators.md
+      - Dfns and Dops:
+        - defined-functions-and-operators/dfns-and-dops/dfns-and-dops/multiline-dynamic-functions.md
+        - defined-functions-and-operators/dfns-and-dops/dfns-and-dops/default-left-argument.md
+        - defined-functions-and-operators/dfns-and-dops/dfns-and-dops/guards.md
+        - defined-functions-and-operators/dfns-and-dops/dfns-and-dops/shy-result.md
+        - defined-functions-and-operators/dfns-and-dops/dfns-and-dops/static-name-scope.md
+        - defined-functions-and-operators/dfns-and-dops/dfns-and-dops/error-guards.md
+        - defined-functions-and-operators/dfns-and-dops/dfns-and-dops/dynamic-operators.md
+        - defined-functions-and-operators/dfns-and-dops/dfns-and-dops/recursion.md
+        - defined-functions-and-operators/dfns-and-dops/dfns-and-dops/tail-calls.md
+        - defined-functions-and-operators/dfns-and-dops/dfns-and-dops/restrictions.md
+  - Object Oriented Programming:
+    - Introducing Classes:
+      - object-oriented-programming/introducing-classes/introducing-classes.md
+      - object-oriented-programming/introducing-classes/defining-classes.md
+      - object-oriented-programming/introducing-classes/editing-classes.md
+      - object-oriented-programming/introducing-classes/class-inheritance.md
+      - object-oriented-programming/introducing-classes/instances.md
+    - Constructors:
+      - object-oriented-programming/constructors/constructors.md
+      - object-oriented-programming/constructors/constructor-overloading.md
+      - object-oriented-programming/constructors/niladic-default-constructors.md
+      - object-oriented-programming/constructors/empty-arrays-of-instances-why.md
+      - object-oriented-programming/constructors/empty-arrays-of-instances-how.md
+      - object-oriented-programming/constructors/base-constructors.md
+      - object-oriented-programming/constructors/niladic-example.md
+      - object-oriented-programming/constructors/monadic-example.md
+      - object-oriented-programming/constructors/destructors.md
+    - Class Members:
+      - object-oriented-programming/class-members/class-members.md
+      - Fields:
+        - object-oriented-programming/class-members/fields/fields.md
+        - object-oriented-programming/class-members/fields/public-fields.md
+        - object-oriented-programming/class-members/fields/initialising-fields.md
+        - object-oriented-programming/class-members/fields/private-fields.md
+        - object-oriented-programming/class-members/fields/shared-fields.md
+        - object-oriented-programming/class-members/fields/trigger-fields.md
+      - Methods:
+        - object-oriented-programming/class-members/methods/methods.md
+        - object-oriented-programming/class-members/methods/shared-methods.md
+        - object-oriented-programming/class-members/methods/instance-methods.md
+        - object-oriented-programming/class-members/methods/superceding-base-class-methods.md
+      - Properties:
+        - object-oriented-programming/class-members/properties/properties.md
+        - object-oriented-programming/class-members/properties/simple-instance-properties.md
+        - object-oriented-programming/class-members/properties/simple-shared-properties.md
+        - Numbered Properties:
+          - object-oriented-programming/class-members/properties/numbered-properties/numbered-properties.md
+          - object-oriented-programming/class-members/properties/numbered-properties/numbered-property-example.md
+        - object-oriented-programming/class-members/properties/default-property.md
+        - object-oriented-programming/class-members/properties/component-file-class-example.md
+        - Keyed Properties:
+          - object-oriented-programming/class-members/properties/keyed-properties/keyed-properties.md
+          - object-oriented-programming/class-members/properties/keyed-properties/keyed-property-example-one.md
+          - object-oriented-programming/class-members/properties/keyed-properties/keyed-property-example-two.md
+    - Interfaces:
+      - object-oriented-programming/interfaces/interfaces.md
+      - object-oriented-programming/interfaces/interface-example.md
+    - Including Namespaces in Classes:
+      - object-oriented-programming/including-namespaces-in-classes/including-namespaces-in-classes.md
+      - object-oriented-programming/including-namespaces-in-classes/including-namespaces-example.md
+    - Nested Classes:
+      - object-oriented-programming/nested-classes/nested-classes.md
+      - object-oriented-programming/nested-classes/golfservice-example.md
+    - Namespace Scripts:
+      - object-oriented-programming/namespace-scripts/namespace-scripts.md
+      - object-oriented-programming/namespace-scripts/namespace-script-example.md
+    - object-oriented-programming/including-script-files.md
+    - Class Declaration Statements:
+      - object-oriented-programming/class-declaration-statements/class-declaration-statements.md
+      - object-oriented-programming/class-declaration-statements/interface.md
+      - object-oriented-programming/class-declaration-statements/namespace.md
+      - object-oriented-programming/class-declaration-statements/class.md
+      - object-oriented-programming/class-declaration-statements/using.md
+      - object-oriented-programming/class-declaration-statements/attribute.md
+      - object-oriented-programming/class-declaration-statements/access.md
+      - object-oriented-programming/class-declaration-statements/implements.md
+    - object-oriented-programming/field-statement.md
+    - Property Section:
+      - object-oriented-programming/property-section/property-section.md
+      - object-oriented-programming/property-section/propertyarguments-class.md
+      - PropertyGet Function: object-oriented-programming/property-section/propertyget-function-syntax.md
+      - PropertySet Function: object-oriented-programming/property-section/propertyset-function-syntax.md
+      - PropertyShape Function: object-oriented-programming/property-section/propertyshape-function-syntax.md
+  - Threads:
+    - threads/multithreading-overview.md
+    - Threads:
+      - threads/threads/multithreading-language-elements.md
+      - threads/threads/thread-switching.md
+      - threads/threads/name-scope.md
+      - threads/threads/stack-considerations.md
+      - threads/threads/globals-and-the-order-of-execution.md
+      - threads/threads/threads-and-niladic-functions.md
+      - threads/threads/threads-and-external-functions.md
+      - threads/threads/synchronising-threads.md
+      - threads/threads/semaphore-token-pool-example.md
+      - threads/threads/latch-token-pool-example.md
+      - threads/threads/debugging-threads.md
+  - Triggers:
+    - triggers/triggers.md
+    - triggers/trigger-example.md
+    - triggers/global-triggers.md
+  - Component Files:
+    - component-files/introduction.md
+    - Component FIles:
+      - component-files/component-files/component-files.md
+      - component-files/component-files/programming-techniques.md
+      - component-files/component-files/file-design.md
+      - component-files/component-files/internal-structure.md
+      - component-files/component-files/the-effect-of-buffering.md
+      - component-files/component-files/integrity-and-security.md
+  - Error Trapping:
+    - error-trapping/standard-error-action.md
+    - error-trapping/error-trapping.md
+    - error-trapping/error-trapping-examples.md
+    - error-trapping/signalling-events.md
+    - error-trapping/handling-unexpected-errors.md
+  - Error Messages:
+    - error-messages/error-messages.md
+    - error-messages/apl-errors.md
+    - error-messages/os-errors.md
+    - error-messages/windows-errors.md
+    - APL Error Messages (A-Z):
+      - bad ws: error-messages/apl-error-messages-a-z/bad-ws.md
+      - cannot create name: error-messages/apl-error-messages-a-z/cannot-create-name.md
+      - clear ws: error-messages/apl-error-messages-a-z/clear-ws.md
+      - copy incomplete: error-messages/apl-error-messages-a-z/copy-incomplete.md
+      - DEADLOCK: error-messages/apl-error-messages-a-z/deadlock.md
+      - defn error: error-messages/apl-error-messages-a-z/defn-error.md
+      - DOMAIN ERROR: error-messages/apl-error-messages-a-z/domain-error.md
+      - EOF INTERRUPT: error-messages/apl-error-messages-a-z/eof-interrupt.md
+      - EXCEPTION: error-messages/apl-error-messages-a-z/exception.md
+      - FIELD CONTENTS RANK ERROR: error-messages/apl-error-messages-a-z/field-contents-rank-error.md
+      - FIELD CONTENTS TOO MANY COLUMNS: error-messages/apl-error-messages-a-z/field-contents-too-many-columns.md
+      - FIELD POSITION ERROR: error-messages/apl-error-messages-a-z/field-position-error.md
+      - FIELD CONTENTS TYPE MISMATCH: error-messages/apl-error-messages-a-z/field-contents-type-mismatch.md
+      - FIELD TYPE BEHAVIOUR UNRECOGNISED: error-messages/apl-error-messages-a-z/field-type-behaviour-unrecognised.md
+      - FIELD ATTRIBUTES RANK ERROR: error-messages/apl-error-messages-a-z/field-attributes-rank-error.md
+      - FIELD ATTRIBUTES LENGTH ERROR: error-messages/apl-error-messages-a-z/field-attributes-length-error.md
+      - FULL SCREEN ERROR: error-messages/apl-error-messages-a-z/full-screen-error.md
+      - KEY CODE UNRECOGNISED: error-messages/apl-error-messages-a-z/key-code-unrecognised.md
+      - KEY CODE RANK ERROR: error-messages/apl-error-messages-a-z/key-code-rank-error.md
+      - KEY CODE TYPE ERROR: error-messages/apl-error-messages-a-z/key-code-type-error.md
+      - FORMAT FILE ACCESS ERROR: error-messages/apl-error-messages-a-z/format-file-access-error.md
+      - FORMAT FILE ERROR: error-messages/apl-error-messages-a-z/format-file-error.md
+      - FILE ACCESS ERROR: error-messages/apl-error-messages-a-z/file-access-error.md
+      - FILE ACCESS ERROR CONVERTING: error-messages/apl-error-messages-a-z/file-access-error-converting.md
+      - FILE COMPONENT DAMAGED: error-messages/apl-error-messages-a-z/file-component-damaged.md
+      - FILE DAMAGED: error-messages/apl-error-messages-a-z/file-damaged.md
+      - FILE FULL: error-messages/apl-error-messages-a-z/file-full.md
+      - FILE INDEX ERROR: error-messages/apl-error-messages-a-z/file-index-error.md
+      - FILE NAME ERROR: error-messages/apl-error-messages-a-z/file-name-error.md
+      - FILE NAME QUOTA USED UP: error-messages/apl-error-messages-a-z/file-name-quota-used-up.md
+      - FILE SYSTEM ERROR: error-messages/apl-error-messages-a-z/file-system-error.md
+      - FILE SYSTEM NO SPACE: error-messages/apl-error-messages-a-z/file-system-no-space.md
+      - FILE SYSTEM NOT AVAILABLE: error-messages/apl-error-messages-a-z/file-system-not-available.md
+      - FILE SYSTEM TIES USED UP: error-messages/apl-error-messages-a-z/file-system-ties-used-up.md
+      - FILE TIE ERROR: error-messages/apl-error-messages-a-z/file-tie-error.md
+      - FILE TIED: error-messages/apl-error-messages-a-z/file-tied.md
+      - FILE TIED REMOTELY: error-messages/apl-error-messages-a-z/file-tied-remotely.md
+      - FILE TIE QUOTA USED UP: error-messages/apl-error-messages-a-z/file-tie-quota-used-up.md
+      - FORMAT ERROR: error-messages/apl-error-messages-a-z/format-error.md
+      - HOLD ERROR: error-messages/apl-error-messages-a-z/hold-error.md
+      - incorrect command: error-messages/apl-error-messages-a-z/incorrect-command.md
+      - INDEX ERROR: error-messages/apl-error-messages-a-z/index-error.md
+      - INTERNAL ERROR: error-messages/apl-error-messages-a-z/internal-error.md
+      - INTERRUPT: error-messages/apl-error-messages-a-z/interrupt.md
+      - is name: error-messages/apl-error-messages-a-z/is-name.md
+      - LENGTH ERROR: error-messages/apl-error-messages-a-z/length-error.md
+      - LIMIT ERROR: error-messages/apl-error-messages-a-z/limit-error.md
+      - NONCE ERROR: error-messages/apl-error-messages-a-z/nonce-error.md
+      - NO PIPES: error-messages/apl-error-messages-a-z/no-pipes.md
+      - name is not a ws: error-messages/apl-error-messages-a-z/name-is-not-a-ws.md
+      - Name already exists: error-messages/apl-error-messages-a-z/name-already-exists.md
+      - Namespace does not exist: error-messages/apl-error-messages-a-z/namespace-does-not-exist.md
+      - not copied name: error-messages/apl-error-messages-a-z/not-copied-name.md
+      - not found name: error-messages/apl-error-messages-a-z/not-found-name.md
+      - not saved this ws is name: error-messages/apl-error-messages-a-z/not-saved-this-ws-is-name.md
+      - PROCESSOR TABLE FULL: error-messages/apl-error-messages-a-z/processor-table-full.md
+      - RANK ERROR: error-messages/apl-error-messages-a-z/rank-error.md
+      - RESIZE: error-messages/apl-error-messages-a-z/resize.md
+      - name saved date time: error-messages/apl-error-messages-a-z/name-saved-date-time.md
+      - SYNTAX ERROR: error-messages/apl-error-messages-a-z/syntax-error.md
+      - sys error number: error-messages/apl-error-messages-a-z/sys-error-number.md
+      - TIMEOUT: error-messages/apl-error-messages-a-z/timeout.md
+      - TRANSLATION ERROR: error-messages/apl-error-messages-a-z/translation-error.md
+      - TRAP ERROR: error-messages/apl-error-messages-a-z/trap-error.md
+      - too many names: error-messages/apl-error-messages-a-z/too-many-names.md
+      - VALUE ERROR: error-messages/apl-error-messages-a-z/value-error.md
+      - warning duplicate label: error-messages/apl-error-messages-a-z/warning-duplicate-label.md
+      - warning duplicate name: error-messages/apl-error-messages-a-z/warning-duplicate-name.md
+      - warning pendent operation: error-messages/apl-error-messages-a-z/warning-pendent-operation.md
+      - warning label name present: error-messages/apl-error-messages-a-z/warning-label-name-present.md
+      - warning unmatched brackets: error-messages/apl-error-messages-a-z/warning-unmatched-brackets.md
+      - warning unmatched parentheses: error-messages/apl-error-messages-a-z/warning-unmatched-parentheses.md
+      - was name: error-messages/apl-error-messages-a-z/was-name.md
+      - WS FULL: error-messages/apl-error-messages-a-z/ws-full.md
+      - ws not found: error-messages/apl-error-messages-a-z/ws-not-found.md
+      - ws too large: error-messages/apl-error-messages-a-z/ws-too-large.md
+    - Operating System Error Messages (A-Z):
+      - FILE ERROR 1 Not owner: error-messages/operating-system-error-messages-a-z/file-error-1-not-owner.md
+      - FILE ERROR 2 No such file: error-messages/operating-system-error-messages-a-z/file-error-2-no-such-file.md
+      - FILE ERROR 5 I O error: error-messages/operating-system-error-messages-a-z/file-error-5-i-o-error.md
+      - FILE ERROR 6 No such device: error-messages/operating-system-error-messages-a-z/file-error-6-no-such-device.md
+      - FILE ERROR 13 Permission denied: error-messages/operating-system-error-messages-a-z/file-error-13-permission-denied.md
+      - FILE ERROR 20 Not a directory: error-messages/operating-system-error-messages-a-z/file-error-20-not-a-directory.md
+      - FILE ERROR 21 Is a directory: error-messages/operating-system-error-messages-a-z/file-error-21-is-a-directory.md
+      - FILE ERROR 23 File table overflow: error-messages/operating-system-error-messages-a-z/file-error-23-file-table-overflow.md
+      - FILE ERROR 24 Too many open: error-messages/operating-system-error-messages-a-z/file-error-24-too-many-open.md
+      - FILE ERROR 26 Text file busy: error-messages/operating-system-error-messages-a-z/file-error-26-text-file-busy.md
+      - FILE ERROR 27 File too large: error-messages/operating-system-error-messages-a-z/file-error-27-file-too-large.md
+      - FILE ERROR 28 No space left: error-messages/operating-system-error-messages-a-z/file-error-28-no-space-left.md
+      - FILE ERROR 30 Read only file: error-messages/operating-system-error-messages-a-z/file-error-30-read-only-file.md
+    - error-messages/system-errors.md
+  - APLMon:
+    - aplmon/aplmon-chapter-heading.md
+    - aplmon:
+      - aplmon/aplmon/notes.md

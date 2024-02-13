@@ -1,0 +1,47 @@
+
+site_name: UNIX Installation and Configuration Guide
+theme:
+  favicon: 'img/favicon-32.png'
+  logo: 'img/dyalog-white.svg'
+  features:
+    - navigation.sections
+    - navigation.instant
+  name: material
+
+extra_css:
+  - style/main.css
+  - style/admonition-ucmdhelp.css
+
+plugins:
+  - search
+  - macros
+  - site-urls
+
+extra:
+  version_maj: 20
+  version_majmin: 20.0
+
+markdown_extensions:
+  - admonition
+  - abbr
+
+nav:
+  - index.md
+  - introduction.md
+  - installation.md
+  - dyalog-serial-number.md
+  - linux-console-config.md
+  - apl-vnc-rdp.md
+  - putty.md
+  - Configuration Parameters:
+    - configuration-parameters/configuration-parameters.md
+    - configuration-parameters/configuration-files.md
+    - configuration-parameters/environment-variables.md
+  - configuring-the-editor.md
+  - starting-apl-from-scripts.md
+  - magic.md
+  - se-and-user-commands.md
+  - home-dyalog-directory.md
+  - quadna.md
+  - miscellaneous.md
+  - buildid.md
