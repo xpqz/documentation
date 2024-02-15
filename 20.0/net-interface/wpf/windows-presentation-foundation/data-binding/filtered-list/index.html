@@ -3864,43 +3864,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_2_1" id="__nav_4_2_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Programmers Guide Introduction
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2_1">
-            <span class="md-nav__icon md-icon"></span>
-            Programmers Guide Introduction
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../programmer-s-guide/introduction/programmers-guide-introduction/workspaces/" class="md-nav__link">
         
@@ -3953,10 +3916,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_4_2_1_3" id="__nav_4_2_1_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_2_3" id="__nav_4_2_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3967,8 +3930,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_1_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2_1_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3">
             <span class="md-nav__icon md-icon"></span>
             Arrays
           </label>
@@ -4334,10 +4297,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_10" >
         
           
-          <label class="md-nav__link" for="__nav_4_2_1_10" id="__nav_4_2_1_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_2_10" id="__nav_4_2_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4348,8 +4311,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_1_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2_1_10">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_10">
             <span class="md-nav__icon md-icon"></span>
             Idiom Recogition
           </label>
@@ -4484,10 +4447,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1_14" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_14" >
         
           
-          <label class="md-nav__link" for="__nav_4_2_1_14" id="__nav_4_2_1_14_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_2_14" id="__nav_4_2_14_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4498,8 +4461,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_1_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2_1_14">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_14">
             <span class="md-nav__icon md-icon"></span>
             Namespaces
           </label>
@@ -4802,14 +4765,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59795,7 +59750,7 @@
 <h2 id="testing-the-data-binding">Testing the Data Binding</h2>
 <pre><code class="language-apl">      FilteredList
 </code></pre>
-<pre><code class="language-apl">![data binding filteredlist 1](site:img/data-binding-filteredlist-1.png)
+<pre><code class="language-apl">![data binding filteredlist 1](../img/data-binding-filteredlist-1.png)
 </code></pre>
 <p>If the user types a single character, in this case "e", into the <code>TextBox</code>, this fires a TextChanged event which in turn fires the callback function shown below:</p>
 <pre><code class="language-apl">     ∇ FilteredList_TextChanged a;hits
@@ -59805,9 +59760,9 @@
 
 </code></pre>
 <p>When the callback runs, the variable <code>MySource.Filter</code>, which is bound to the Text property of the <code>TextBox</code>, will contain "e". The function calculates a mask <code>hits</code> which identifies which members of the variable <code>DyalogNames</code>  contain this string. It then assigns that subset to the variable <code>MySource.FilteredList</code>. This is bound to the ItemsSource property of the right-hand <code>ListBox</code>, so the result is as follows:</p>
-<p><img alt="data binding filteredlist 2" src="site:img/data-binding-filteredlist-2.png" /></p>
+<p><img alt="data binding filteredlist 2" src="../img/data-binding-filteredlist-2.png" /></p>
 <p>Similarly, typing "er" into the <code>TextBox</code> reduces the number of hits as shown below:</p>
-<p><img alt="data binding filteredlist 3" src="site:img/data-binding-filteredlist-3.png" /></p>
+<p><img alt="data binding filteredlist 3" src="../img/data-binding-filteredlist-3.png" /></p>
 
 
 
