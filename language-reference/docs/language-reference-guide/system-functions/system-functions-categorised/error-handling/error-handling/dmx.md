@@ -11,6 +11,7 @@
 `⎕DMX` contains the following Properties (name class 2.6). Note that this list is likely to change. Your code should not assume that this list will remain unchanged. You should also not assume that the display form of `⎕DMX` will remain unchanged.
 
 
+
 | `Category` | character vector | The category of the error |
 | --- | --- | ---  |
 | `DM` | nested vector | Diagnostic message. This is the same as `⎕DM` , but thread safe |
@@ -27,6 +28,7 @@
 
 
 OSError is a 3-element vector whose items are as follows:
+
 
 | `1` | integer | This indicates how an error from the operating system or a child process was retrieved. 0 = by the C-library errno() function 1 = by the Windows GetLastError() function 2 = as the exit status of a child process |
 | --- | --- | ---  |

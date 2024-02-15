@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">ItemDblClick</span></h1>
+
 | Applies To: | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ListView](../a-z/listview.md) [TreeView](../a-z/treeview.md) | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |  |
-| --- | --- | ---  |
-| [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user double-clicks a mouse button when the mouse pointer is over an item in a [ListView](../a-z/listview.md) or  [TreeView](../a-z/treeview.md) object. This event is reported for information only and may not be controlled in any way using a callback function. Generating the event with `⎕NQ`, or calling it as a method, has no effect.
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 6-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

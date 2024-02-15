@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">AlwaysShowSelection</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
 | --- | --- | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) [ListView](../a-z/listview.md) [TreeView](../a-z/treeview.md) | [Grid](../a-z/grid.md) | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
 
-
-Description
+**Description**
 
 
 The AlwaysShowSelection property specifies whether or not the selection remains highlighted when the object loses the focus.

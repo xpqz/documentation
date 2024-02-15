@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RunMode</span></h1>
+
 | Applies To: | [OLEServer](../a-z/oleserver.md) |
 | --- | ---  |
 
-| Applies To: | [OLEServer](../a-z/oleserver.md) | [OLEServer](../a-z/oleserver.md) |  |  |
-| --- | --- | ---  |
-| [OLEServer](../a-z/oleserver.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies the way in which an [OLEServer](../a-z/oleserver.md) object serves multiple clients.

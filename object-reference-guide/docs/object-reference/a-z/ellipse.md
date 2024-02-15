@@ -4,43 +4,35 @@
 
 
 <h1 class="heading"><span class="name">Ellipse</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Ellipse.htm) | [Children](../ChildLists/Ellipse.htm) | [Properties](../PropLists/Ellipse.htm) | [Methods](../MethodLists/Ellipse.htm) | [Events](../EventLists/Ellipse.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | A Graphical object to draw ellipses, arcs, and pie-slices. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Children | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Properties | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Methods | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Events | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 This object duplicates much of the functionality of the [Circle](circle.md) object, but differs in two major respects. Firstly, ellipses, circles, and arcs
-are specified in terms of their bounding rectangles, rather than in terms
+are specified in terms of their **bounding rectangles**, rather than in terms
 of their centre(s) and radii. Secondly, the Ellipse object behaves like any
 other (rectangular) object when it is resized by its parent. The [Circle](circle.md) object behaves differently in that when resized by its parent, it maintains a
-constant ratio between its physical height and width.
+constant ratio between its **physical** height and width.
 
 
 
 The [Points](./points.md) property specifies one or more
 sets of co-ordinates which define the position(s) of one or more bounding
-rectangles. The position is defined to be the position of the corner that is nearest to the origin of its parent. The default is therefore its top-left corner.
+rectangles. The position is defined to be the position of the corner that is **nearest** to the origin of its parent. The default is therefore its top-left corner.
 
 
 The [Size](./size.md) property specifies the height and
 width of each bounding rectangle, measuring away from the origin. To obtain a
-perfect circle, you must take the aspect ratio of the device into
-account. This is available from the [DevCaps](./devcaps.md) property of the Root and Printer objects. Alternatively you can use the [Circle](circle.md) object.
+perfect circle, you must take the **aspect ratio** of the device into
+account. This is available from the [DevCaps](./devcaps.md) property of the [Root](root.md) and [Printer](printer.md) objects. Alternatively you can use the [Circle](circle.md) object.
 
 
 The [Start](./start.md) and/or [End](./end.md) properties are used to draw partial ellipses and circles. They specify start and
@@ -48,6 +40,7 @@ end angles respectively, measuring from the x-axis at the centre of the bounding
 rectangle in a counter-clockwise direction and are expressed in radians. The
 type of arc is controlled by [ArcMode](./arcmode.md) as
 follows:
+
 
 | ArcMode | Effect |
 | --- | ---  |
@@ -88,7 +81,7 @@ whose elements specify the height and width of the bounding rectangle.
 
 
 [FStyle](./fstyle.md) is either a single number
-specifying a standard fill pattern, or the name of a Bitmap object which is to be used to fill the ellipse, circle or arc.
+specifying a standard fill pattern, or the name of a [Bitmap](bitmap.md) object which is to be used to fill the ellipse, circle or arc.
 
 
 [FCol](./fcol.md), [BCol](./bcol.md) and [FillCol](./fillcol.md) are each either single numbers
@@ -98,7 +91,7 @@ explicitly in terms of their RGB values.
 #### Examples:
 
 
-First make a Form :
+First make a [Form](form.md) :
 ```apl
       'F' ⎕WC 'Form'
 ```
@@ -140,16 +133,16 @@ Ditto, but use a green line and solid red fill :
 
 
 To draw a set of ellipses, circles, or arcs with a single name, [Points](./points.md) may be a simple 2-element vector (specifying the location of all the bounding
-rectangles), or a 2-column matrix whose first column specifies their
-y-coordinates and whose second column specifies their x-coordinates, or a
+rectangles), **or** a 2-column matrix whose first column specifies their
+y-coordinates and whose second column specifies their x-coordinates, **or** a
 2-element nested vector whose first element specifies their y-coordinate(s) and
 whose second element specifies their x-coordinate(s).
 
 
 Likewise, [Size](./size.md) may be a simple 2-element
-vector (applying to all the bounding rectangles), or a 2-column matrix
+vector (applying to all the bounding rectangles), **or** a 2-column matrix
 whose first column specifies their heights and whose second column specifies
-their widths, or a 2-element nested vector whose first element specifies
+their widths, **or** a 2-element nested vector whose first element specifies
 their height(s) and whose second element specifies their width(s).
 
 
@@ -173,7 +166,7 @@ refer to each of the corresponding ellipses, circles or arcs in turn.
 
 
 [FStyle](./fstyle.md) may be a simple scalar numeric or
-a simple character vector (Bitmap name)
+a simple character vector ([Bitmap](bitmap.md) name)
 applying to all rectangles, or a vector whose elements refer to each of the
 corresponding ellipses, circles or arcs in turn.
 
@@ -192,7 +185,7 @@ ellipse, circle or arc that is drawn.
 #### Examples
 
 
-First make a Form :
+First make a [Form](form.md) :
 ```apl
       'F' ⎕WC 'Form'
 ```
@@ -219,7 +212,7 @@ Ditto, but draw the first with (height=40, width=30) and the second with
 
 
 Draw an elliptical Pie-Chart in a bounding rectangle located at (y=5, x=10)
-with a height and width equal to 40% of the height and width of the parent Form.
+with a height and width equal to 40% of the height and width of the parent [Form](form.md).
 Each of the 4 pie-slices is bounded by a black line :
 ```apl
       Data ←12 27 21 40

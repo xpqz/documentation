@@ -24,7 +24,7 @@ The default value of `⎕FR` (its value in a `clear ws`) is configurable.
 `⎕FR`  has namespace scope but may be localised. If so, like most other system variables, it inherits its initial value from the global environment.
 
 
-However: Although `⎕FR` *can* vary, the system is *not designed* to allow "seamless" modification during the running of an application and the dynamic alteration of is not recommended.  Strange effects may occur. For example, the type of a constant contained in a line of code (in a function or class), will depend on the value of `⎕FR` *when the function is fixed*.
+**However:** Although `⎕FR` *can* vary, the system is *not designed* to allow "seamless" modification during the running of an application and the dynamic alteration of is not recommended.  Strange effects may occur. For example, the type of a constant contained in a line of code (in a function or class), will depend on the value of `⎕FR` *when the function is fixed*.
 
 
 

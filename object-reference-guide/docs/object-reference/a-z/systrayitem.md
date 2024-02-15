@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">SysTrayItem</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/SysTrayItem.htm) | [Children](../ChildLists/SysTrayItem.htm) | [Properties](../PropLists/SysTrayItem.htm) | [Methods](../MethodLists/SysTrayItem.htm) | [Events](../EventLists/SysTrayItem.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The SysTrayItem object represents an item that you can create in the Windows System Tray. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [ShowBalloonTip](./showballoontip.md) [Wait](./wait.md) | [Detach](./detach.md) | [ShowBalloonTip](./showballoontip.md) | [Wait](./wait.md) |
-| [Detach](./detach.md) | [ShowBalloonTip](./showballoontip.md) | [Wait](./wait.md) |
-| Children | [Detach](./detach.md) [ShowBalloonTip](./showballoontip.md) [Wait](./wait.md) | [Detach](./detach.md) | [ShowBalloonTip](./showballoontip.md) | [Wait](./wait.md) |
-| [Detach](./detach.md) | [ShowBalloonTip](./showballoontip.md) | [Wait](./wait.md) |
-| Properties | [Detach](./detach.md) [ShowBalloonTip](./showballoontip.md) [Wait](./wait.md) | [Detach](./detach.md) | [ShowBalloonTip](./showballoontip.md) | [Wait](./wait.md) |
-| [Detach](./detach.md) | [ShowBalloonTip](./showballoontip.md) | [Wait](./wait.md) |
-| Methods | [Detach](./detach.md) [ShowBalloonTip](./showballoontip.md) [Wait](./wait.md) | [Detach](./detach.md) | [ShowBalloonTip](./showballoontip.md) | [Wait](./wait.md) |
-| [Detach](./detach.md) | [ShowBalloonTip](./showballoontip.md) | [Wait](./wait.md) |
-| Events | [Detach](./detach.md) [ShowBalloonTip](./showballoontip.md) [Wait](./wait.md) | [Detach](./detach.md) | [ShowBalloonTip](./showballoontip.md) | [Wait](./wait.md) |
-| [Detach](./detach.md) | [ShowBalloonTip](./showballoontip.md) | [Wait](./wait.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The SysTrayItem object appears as an icon in the Windows System Tray and allows the user to interact with your application even if it is minimised or has no other visible presence.

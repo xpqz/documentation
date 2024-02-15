@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">CalendarCols</span></h1>
+
 | Applies To: | [Calendar](./calendar.md) | [DateTimePicker](./datetimepicker.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Calendar](./calendar.md) [DateTimePicker](./datetimepicker.md) | [Calendar](./calendar.md) | [DateTimePicker](./datetimepicker.md) |  |
-| --- | --- | ---  |
-| [Calendar](./calendar.md) | [DateTimePicker](./datetimepicker.md) |  |
 
-
-Description
+**Description**
 
 
 The CalendarCols property specifies the colours used for various elements in the [Calendar](./calendar.md) object.
 
 
 CalendarCols is a 6-element integer vector whose elements specify the colours as follows:
+
 
 | `[1]` | Background colour displayed between months |
 | --- | ---  |

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">PName</span></h1>
+
 | Applies To: | [Font](./font.md) | [Printer](./printer.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Font](./font.md) [Printer](./printer.md) | [Font](./font.md) | [Printer](./printer.md) |  |
-| --- | --- | ---  |
-| [Font](./font.md) | [Printer](./printer.md) |  |
 
-
-Description
+**Description**
 
 
 This property is a character vector that specifies the face name for a [Font](./font.md) object, or the printing device associated with a [Printer](./printer.md). It is case-independent.

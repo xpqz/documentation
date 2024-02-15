@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">CellChange</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user changes the contents of a cell in a [Grid](./grid.md) object and then attempts to move to another cell or to another control outside the [Grid](./grid.md).
@@ -26,7 +23,8 @@ The default action for the CellChange event is to update the appropriate element
 
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is an 8-element vector as follows:
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is an 8-element vector as follows:
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

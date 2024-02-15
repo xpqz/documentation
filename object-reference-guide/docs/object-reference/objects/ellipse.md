@@ -4,42 +4,34 @@
 
 
 <h1 class="heading"><span class="name">Ellipse</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Ellipse.htm) | [Children](../ChildLists/Ellipse.htm) | [Properties](../PropLists/Ellipse.htm) | [Methods](../MethodLists/Ellipse.htm) | [Events](../EventLists/Ellipse.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | A Graphical object to draw ellipses, arcs, and pie-slices. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Children | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Events | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 This object duplicates much of the functionality of the [Circle](../a-z/circle.md) object, but differs in two major respects. Firstly, ellipses, circles, and arcs
-are specified in terms of their bounding rectangles, rather than in terms
+are specified in terms of their **bounding rectangles**, rather than in terms
 of their centre(s) and radii. Secondly, the Ellipse object behaves like any
 other (rectangular) object when it is resized by its parent. The [Circle](../a-z/circle.md) object behaves differently in that when resized by its parent, it maintains a
-constant ratio between its physical height and width.
+constant ratio between its **physical** height and width.
 
 
 
 The [Points](../a-z/points.md) property specifies one or more
 sets of co-ordinates which define the position(s) of one or more bounding
-rectangles. The position is defined to be the position of the corner that is nearest to the origin of its parent. The default is therefore its top-left corner.
+rectangles. The position is defined to be the position of the corner that is **nearest** to the origin of its parent. The default is therefore its top-left corner.
 
 
 The [Size](../a-z/size.md) property specifies the height and
 width of each bounding rectangle, measuring away from the origin. To obtain a
-perfect circle, you must take the aspect ratio of the device into
+perfect circle, you must take the **aspect ratio** of the device into
 account. This is available from the [DevCaps](../a-z/devcaps.md) property of the [Root](../a-z/root.md) and [Printer](../a-z/printer.md) objects. Alternatively you can use the [Circle](../a-z/circle.md) object.
 
 
@@ -48,6 +40,7 @@ end angles respectively, measuring from the x-axis at the centre of the bounding
 rectangle in a counter-clockwise direction and are expressed in radians. The
 type of arc is controlled by [ArcMode](../a-z/arcmode.md) as
 follows:
+
 
 | ArcMode | Effect |
 | --- | ---  |
@@ -140,16 +133,16 @@ Ditto, but use a green line and solid red fill :
 
 
 To draw a set of ellipses, circles, or arcs with a single name, [Points](../a-z/points.md) may be a simple 2-element vector (specifying the location of all the bounding
-rectangles), or a 2-column matrix whose first column specifies their
-y-coordinates and whose second column specifies their x-coordinates, or a
+rectangles), **or** a 2-column matrix whose first column specifies their
+y-coordinates and whose second column specifies their x-coordinates, **or** a
 2-element nested vector whose first element specifies their y-coordinate(s) and
 whose second element specifies their x-coordinate(s).
 
 
 Likewise, [Size](../a-z/size.md) may be a simple 2-element
-vector (applying to all the bounding rectangles), or a 2-column matrix
+vector (applying to all the bounding rectangles), **or** a 2-column matrix
 whose first column specifies their heights and whose second column specifies
-their widths, or a 2-element nested vector whose first element specifies
+their widths, **or** a 2-element nested vector whose first element specifies
 their height(s) and whose second element specifies their width(s).
 
 

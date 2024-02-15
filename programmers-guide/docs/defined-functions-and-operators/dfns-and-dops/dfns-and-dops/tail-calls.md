@@ -12,9 +12,9 @@ For example in the following, the first call on function `fact` is a tail call b
 
 Tail calls occur frequently in dfns, and the interpreter optimises them by re-using the current stack frame instead of creating a new one. This gives a significant saving in both time and workspace usage. It is easy to check whether a call is a tail call by tracing it. An embedded call will pop up a new trace window for the called function, whereas a tail call will re-use the current one.
 
-Using tail calls can improve code performance considerably, although at first the technique might appear obscure. A simple way to think of a tail call is as a branch with arguments. The tail call, in effect, branches to the first line of the function after installing new values for `⍵` and `⍺`.
+Using tail calls can improve code performance considerably, although at first the technique might appear obscure. A simple way to think of a tail call is as a **branch with arguments**. The tail call, in effect, branches to the first line of the function after installing new values for `⍵` and `⍺`.
 
-Iterative algorithms can almost always be coded using tail calls.
+**Iterative algorithms can almost always be coded using tail calls.**
 
 In general, when coding a loop, we use the following steps; possibly in a different order depending on whether we want to test at the "top" or the "bottom" of the loop.
 

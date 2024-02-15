@@ -61,4 +61,4 @@ The cat ate the last one!
 
 Notice that the behaviour of empty arrays of Instances is modelled VERY closely after the behaviour of empty arrays in general. In particular, the Class designer is given the task of deciding what the types of the members of the prototype are.
 
-The full explanation is given in the next topic.
+The full explanation is given in the [next topic](empty-arrays-of-instances-how.md).

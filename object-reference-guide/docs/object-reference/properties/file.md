@@ -5,16 +5,10 @@
 
 <h1 class="heading"><span class="name">File</span></h1>
 
-Applies To
-
-| Applies To: | [Animation](../a-z/animation.md) [Bitmap](../a-z/bitmap.md) [Cursor](../a-z/cursor.md) [FileBox](../a-z/filebox.md) [Icon](../a-z/icon.md) [Metafile](../a-z/metafile.md) [RichEdit](../a-z/richedit.md) | [Animation](../a-z/animation.md) | [Bitmap](../a-z/bitmap.md) | [Cursor](../a-z/cursor.md) | [FileBox](../a-z/filebox.md) | [Icon](../a-z/icon.md) | [Metafile](../a-z/metafile.md) | [RichEdit](../a-z/richedit.md) |  |  |
-| --- | --- | ---  |
-| [Animation](../a-z/animation.md) | [Bitmap](../a-z/bitmap.md) | [Cursor](../a-z/cursor.md) |
-| [FileBox](../a-z/filebox.md) | [Icon](../a-z/icon.md) | [Metafile](../a-z/metafile.md) |
-| [RichEdit](../a-z/richedit.md) |  |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 Specifies the name of a file associated with an object.

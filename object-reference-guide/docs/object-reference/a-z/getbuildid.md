@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GetBuildID</span></h1>
+
 | Applies To: | [Root](./root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](./root.md) | [Root](./root.md) |  |  |
-| --- | --- | ---  |
-| [Root](./root.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to obtain the Build ID of a Dyalog executable or the checksum of a file.
@@ -22,6 +19,7 @@ This method is used to obtain the Build ID of a Dyalog executable or the checksu
 
 The argument to GetBuildID is `⍬` or a
 single item as follows:
+
 
 | `[1]` | File name | character vector |
 | --- | --- | ---  |

@@ -17,10 +17,7 @@ If  `ws` specifies a file name other than that implied by  `⎕WSID`, the specif
 See WorkspacesProgrammer's Guide: "Workspaces" for the rules for specifying a workspace name.
 
 
-If an extension is not specified, an extension is added according to the WSEXT parameter. See 
-Installation & Configuration Guide: 
-
-Configuration Parameters.
+If an extension is not specified, an extension is added according to the [WSEXT parameter](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#WSEXT)..
 
 
 A workspace may not be saved if any threads (other than the root thread 0) are running or if there are any Edit or Trace windows open. Otherwise, the workspace is saved with its state of execution intact, however certain operations may be performed before it is saved. For further information, see Set Workspace Save Options on page 1.
@@ -29,6 +26,7 @@ A workspace may not be saved if any threads (other than the root thread 0) are r
 
 
 `)SAVE` may fail with one of the following error messages:
+
 
 | `unacceptable char` | The given workspace name was ill-formed |
 | --- | ---  |

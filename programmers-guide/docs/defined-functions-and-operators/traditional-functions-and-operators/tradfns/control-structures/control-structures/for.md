@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">For Statement</span><span class="command">:For var :In[Each] aexp</span></h1>
 
-Formal Definition
+[Formal Definition](For%20Statement%20Definition.htm)
 
 #### Single Control Variable
 
@@ -104,18 +104,5 @@ Notice that in the second case, the number of items in the values vector is the 
 
 
 Here, each time around the loop, control variable `a` is set to the next item of `avec`, `b` to the next item of `bvec` and `c` to the next item of `cvec`.
-
-#### :For Statement
-
-```apl
- 
-       |
-       :For var :In[Each] aexp
-       |
-       code
-       |
-       :End[For]
-       |
-```
 
 

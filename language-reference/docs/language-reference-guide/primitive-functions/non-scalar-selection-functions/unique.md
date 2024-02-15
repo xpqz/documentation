@@ -5,10 +5,7 @@
 
 <h1 class="heading"><span class="name">Unique</span><span class="command">R←∪Y</span></h1>
 
-`Y` may be any array. `R` is a vector of the unique major cells of `Y` (the unique items of a vector, the unique rows of a matrix and so forth), in the order in which they first appear in `Y`.  For further information, see 
-Programming Reference Guide: 
-
-Cells and SubarraysMajor Cells on page 1.
+`Y` may be any array. `R` is a vector of the unique major cells of `Y` (the unique items of a vector, the unique rows of a matrix and so forth), in the order in which they first appear in `Y`.  For further information, see [Major Cells on page 1](../Introduction/Variables/Cells%20and%20Subarrays.htm#Major_Cells).
 
 
 `⎕CT` and `⎕DCT` are  implicit arguments of Unique.

@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">StatusField</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/StatusField.htm) | [Children](../ChildLists/StatusField.htm) | [Properties](../PropLists/StatusField.htm) | [Methods](../MethodLists/StatusField.htm) | [Events](../EventLists/StatusField.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | This object is used to display information for the user. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Children | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Properties | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Methods | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Events | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The StatusField object provides an area for displaying context sensitive help messages, keyboard status, and other application dependent information.
@@ -47,6 +39,7 @@ If [Style](./style.md) is KeyMode, the StatusField displays the name for the cur
 
 
 If [Style](./style.md) is set to one of the above, you may still use the [Caption](./caption.md) property to give the StatusField a title. You may even set the value of the [Text](./text.md) property, but be aware that this value will be reset when the user next presses the key the StatusField is monitoring.
+
 
 | CapsLock | Monitors state of Caps Lock key |
 | --- | ---  |

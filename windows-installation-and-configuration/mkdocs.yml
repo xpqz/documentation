@@ -29,10 +29,12 @@ nav:
   - index.md
   - documentation.md
   - files-and-directories.md
-  - runtime-applications-addional.md
+  - file-associations.md
   - apl-fonts.md
+  - interoperability.md
   - apl-command-line.md
   - apl-exit-codes.md
+  - dyalog-serial-number.md
   - Configuration Parameters:
     - configuration-parameters/configuration-parameters.md
     - A-Z:
@@ -135,13 +137,16 @@ nav:
       - configuration-parameters/a-z/xplookandfeel.md
       - configuration-parameters/a-z/yy-window.md
   - registry-subfolders.md
+  - configuration-files.md
   - window-captions.md
   - workspace-management.md
   - interface-with-windows.md
   - auxiliary-processors.md
   - access-control-for-external-variables.md
+  - shell-scripts.md
   - creating-executables.md
   - runtime-applications-and-components.md
+  - runtime-applications-addional.md
   - com-objects-and-the-dyalog-dll.md
   - apl-application-as-a-service.md
   - aplservice-logging-events.md

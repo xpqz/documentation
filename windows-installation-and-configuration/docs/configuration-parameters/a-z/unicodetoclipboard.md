@@ -4,4 +4,4 @@ This parameter specifies whether or not text that is transferred to and from the
 
 See also Paste text as Unicode(Classic Edition only) on page 1
 
-Classic Edition only.
+**Classic Edition only.**

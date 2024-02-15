@@ -5,21 +5,17 @@
 
 <h1 class="heading"><span class="name">VScroll</span></h1>
 
-Applies To
-
-| Applies To: | [Form](../a-z/form.md) [SubForm](../a-z/subform.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) |  |
-| --- | --- | ---  |
-| [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property determines whether or not an object has a vertical scrollbar. It is a single integer with the value `¯2`, `¯1`, or 0.
 
 
 
-VScroll may only be set when the object is created with `⎕WC` and may not subsequently be changed with `⎕WS` or assignment.
+**VScroll may only be set when the object is created with ⎕WC and may not subsequently be changed with ⎕WS or assignment.**
 
 
 For a [Form](../a-z/form.md) object, the value `¯1`  specifies that the [Form](../a-z/form.md) has a vertical scrollbar. A value of 0 (which is the default) means that it does not.

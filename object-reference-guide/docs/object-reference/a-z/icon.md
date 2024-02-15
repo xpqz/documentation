@@ -4,34 +4,26 @@
 
 
 <h1 class="heading"><span class="name">Icon</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Icon.htm) | [Children](../ChildLists/Icon.htm) | [Properties](../PropLists/Icon.htm) | [Methods](../MethodLists/Icon.htm) | [Events](../EventLists/Icon.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | This object defines an icon. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [FileRead](./fileread.md) [FileWrite](./filewrite.md) | [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| Children | [Detach](./detach.md) [FileRead](./fileread.md) [FileWrite](./filewrite.md) | [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| Properties | [Detach](./detach.md) [FileRead](./fileread.md) [FileWrite](./filewrite.md) | [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| Methods | [Detach](./detach.md) [FileRead](./fileread.md) [FileWrite](./filewrite.md) | [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| Events | [Detach](./detach.md) [FileRead](./fileread.md) [FileWrite](./filewrite.md) | [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The [File](./file.md) property specifies the name of an icon  file (.ICO. .GIF or .PNG), or the name of a DLL or EXE file and the identity of the icon within it.
 
 
 
-The Style property identifies the size of the icon and must be `'Large'` or `'Small'`. The former specifies a 32x32 icon and is the default; the latter specifies a 16x16 icon. The size of the icon is not embedded within the icon data, so it is essential to specify Style correctly. Note that a single file may contain both sizes of an icon. Style is only relevant when loading an Icon from file.
+The Style property identifies the size of the icon and must be `'Large'` or `'Small'`. The former specifies a 32x32 icon and is the default; the latter specifies a 16x16 icon. The size of the icon is not embedded within the icon data, so it is **essential** to specify Style correctly. Note that a single file may contain both sizes of an icon. Style is only relevant when loading an Icon from file.
 
 
-If the value of the [File](./file.md) property is set by `⎕WS`, no immediate action is taken, but the corresponding file may subsequently be read or written using the [FileRead](./fileread.md) or [FileWrite](./filewrite.md) methods.
+If the value of the [File](./file.md) property is set by [`⎕WS`](../../Language/System%20Functions/ws.htm), no immediate action is taken, but the corresponding file may subsequently be read or written using the [FileRead](./fileread.md) or [FileWrite](./filewrite.md) methods.
 
 
 16-bit icons contain fewer than 256 colours and each pixel is either transparent or opaque. The images in such Icons are represented by the [Bits](./bits.md), [Mask](./mask.md) and [CMap](./cmap.md) properties.
@@ -45,6 +37,7 @@ If the value of the [File](./file.md) property is set by `⎕WS`, no immediate a
 
 [Bits](./bits.md) is an integer matrix whose elements define the colours of each pixel in the icon in terms of their (0-origin) indices into [CMap](./cmap.md). When the icon is displayed on the screen, the way in which these colours combine with those currently displayed on the screen (the background) is specified by [Mask](./mask.md). This is a Boolean matrix of the same size as [Bits](./bits.md). The following table shows how the colour of each resulting pixel is determined.
 
+
 | Bits | Colour | 0 | Colour |
 | --- | --- | --- | ---  |
 | Mask | 0 | 1 | 1 |
@@ -57,6 +50,6 @@ If an element of [Mask](./mask.md) is 0, the corresponding element of [Bits](./b
 The size of [Bits](./bits.md) is restricted by the capabilities of the current display driver. [Mask](./mask.md) must have the same shape as [Bits](./bits.md).
 
 
-An Icon is used by setting the [IconObj](./iconobj.md) property or [Picture](./picture.md) property of another object to its name or ref.
+An Icon is **used** by setting the [IconObj](./iconobj.md) property or [Picture](./picture.md) property of another object to its name or ref.
 
 

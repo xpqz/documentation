@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ExitApp</span></h1>
+
 | Applies To: | [Root](./root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](./root.md) | [Root](./root.md) |  |  |
-| --- | --- | ---  |
-| [Root](./root.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user attempts to terminate a Dyalog APL/W application from the Windows Task List.
@@ -27,7 +24,8 @@ If you wish to prevent the user from terminating your application from the Windo
 Note that this event only provides for termination via the Windows Task List. See also the [ExitWindows](./exitwindows.md) event.
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 2-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

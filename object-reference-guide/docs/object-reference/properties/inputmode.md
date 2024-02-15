@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">InputMode</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property determines editing behaviour and the action of the cursor movement keys when the user changes the contents of a Grid using a *floating*[ Edit](../a-z/edit.md) or DropEdit [Combo](../a-z/combo.md) control.
@@ -21,6 +18,7 @@ This property determines editing behaviour and the action of the cursor movement
 
 
 InputMode is a character vector with one of the following values:
+
 
 | `'Scroll'` | The cursor keys move around the Grid; the user may switch to *InCell* mode |
 | --- | ---  |

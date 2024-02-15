@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SetPropertyInfo</span></h1>
+
 | Applies To: | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |
 | --- | --- | ---  |
 
-| Applies To: | [OCXClass](../a-z/ocxclass.md) [OLEClient](../a-z/oleclient.md) | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |  |
-| --- | --- | ---  |
-| [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |  |
 
-
-Description
+**Description**
 
 
 This method is used to redefine a property that is exported by a COM object. SetPropertyInfo is used to override the information provided by the object's Type Library.
@@ -21,6 +18,7 @@ This method is used to redefine a property that is exported by a COM object. Set
 
 
 The argument to SetPropertyInfo is a  2 or 3-element array as follows:
+
 
 | `[1]` | Property name | character vector |
 | --- | --- | ---  |

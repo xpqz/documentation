@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">TCPGotAddr</span></h1>
+
 | Applies To: | [TCPSocket](./tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](./tcpsocket.md) | [TCPSocket](./tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](./tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when a host name (specified by the [RemoteAddrName](./remoteaddrname.md) or [LocalAddrName](./localaddrname.md) property) is resolved to an IP address.
@@ -22,6 +19,7 @@ You may not disable or nullify the operation by setting the action code for the 
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

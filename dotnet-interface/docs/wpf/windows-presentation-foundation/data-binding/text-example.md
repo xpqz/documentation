@@ -1,6 +1,6 @@
 # Example 1
 
-This example illustrates data binding using XAML to specify the user-interface coupled with an APL function to drive it and handle the data binding.
+This example illustrates data binding using XAML to specify the user-interface coupled with an APL function to drive it and handle the data binding.
 
 ![data binding text xaml 1](../img/data-binding-text-xaml-1.png)
 
@@ -20,7 +20,7 @@ The XAML shown below, describes a Window containing a TextBox.
 </Window>
 ```
 
-It contains a data binding expression, namely:
+It contains a data binding expression, namely:
 ```apl
       Text="{Binding txtSource,Mode=TwoWay,
              UpdateSourceTrigger=PropertyChanged}"
@@ -32,7 +32,7 @@ This specifies that the Text property of the `TextBox` is bound to a value in th
 
 The function `Text` which generates this example is shown below.
 
-The argument `txt` is the text to be displayed initially in the `TextBox`. Note that the variable `XAML_Text` contains the XAML that describes the user-interface listed above.
+The argument `txt` is the text to be displayed initially in the `TextBox`. Note that the variable `XAML_Text` contains the XAML that describes the user-interface listed above.
 
 ```apl
      ∇ Text txt;⎕USING;str;xml;win
@@ -49,7 +49,7 @@ The argument `txt` is the text to be displayed initially in the `TextBox`. Note 
 
 ```
 
-The utility function `LoadXAML` incorporates the 3 lines of code, used to create a WPF window from XAML, that were coded in-line in previous examples in this chapter.
+The utility function `LoadXAML` incorporates the 3 lines of code, used to create a WPF window from XAML, that were coded in-line in previous examples in this chapter.
 ```apl
      ∇ win←LoadXAML xaml;⎕USING;str;xml
 [1]    ⎕USING←'System.IO'
@@ -64,7 +64,7 @@ The utility function `LoadXAML` incorporates the 3 lines of code, used to create
 
 ```
 
-`Text[1]` defines the .NET search path needed to access the WPF controls.
+`Text[1]` defines the .NET search path needed to access the WPF controls.
 ```apl
 
 [1]    ⎕USING←,⊂'System.Windows.Controls,WPF/PresentationFramework.dll'
@@ -90,7 +90,7 @@ The utility function `LoadXAML` incorporates the 3 lines of code, used to create
 [7]    win.txtBox.DataContext←2015⌶'txtSource'
 ```
 
-`Text[9]` displays the Window. Note that although the APL local variable `win` goes out of scope when the function terminates, the Window remains visible until the user has closed it.
+`Text[9]` displays the Window. Note that although the APL local variable `win` goes out of scope when the function terminates, the Window remains visible until the user has closed it.
 ```apl
 
 [9]   win.Show

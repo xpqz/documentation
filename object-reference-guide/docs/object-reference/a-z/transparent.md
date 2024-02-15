@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Transparent</span></h1>
+
 | Applies To: | [Animation](./animation.md) | [ButtonEdit](./buttonedit.md) | [ToolControl](./toolcontrol.md) |
 | --- | --- | --- | ---  |
 
-| Applies To: | [Animation](./animation.md) [ButtonEdit](./buttonedit.md) [ToolControl](./toolcontrol.md) | [Animation](./animation.md) | [ButtonEdit](./buttonedit.md) | [ToolControl](./toolcontrol.md) |
-| --- | --- | ---  |
-| [Animation](./animation.md) | [ButtonEdit](./buttonedit.md) | [ToolControl](./toolcontrol.md) |
 
-
-Description
+**Description**
 
 
 The Transparent property specifies whether or not a [ToolControl](./toolcontrol.md) is transparent.

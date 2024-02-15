@@ -4,26 +4,16 @@
 
 
 <h1 class="heading"><span class="name">ColorButton</span></h1>
-| Parents | Properties | Methods | Events |
+
+| [Parents](../ParentLists/ColorButton.htm) | [Properties](../PropLists/ColorButton.htm) | [Methods](../MethodLists/ColorButton.htm) | [Events](../EventLists/ColorButton.htm) |
 | --- | --- | --- | ---  |
 
+
 | Purpose: | The ColorButton object allows the user to select a colour. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Properties | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Methods | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Events | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The ColorButton object displays a coloured box, with an optional drop down button. When the user clicks the ColorButton with the left mouse button, a colour selection drop-down appears below it, allowing the user to select a new colour.

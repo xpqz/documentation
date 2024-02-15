@@ -4,29 +4,16 @@
 
 
 <h1 class="heading"><span class="name">ToolControl</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/ToolControl.htm) | [Children](../ChildLists/ToolControl.htm) | [Properties](../PropLists/ToolControl.htm) | [Methods](../MethodLists/ToolControl.htm) | [Events](../EventLists/ToolControl.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The ToolControl object provides a standard Windows ToolBar. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Children | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Properties | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Methods | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Events | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The ToolControl object provides an interface to the native Windows ToolBar control and supersedes the Dyalog APL [ToolBar](../a-z/toolbar.md) object.
@@ -137,7 +124,7 @@ The [ShowDropDown](../a-z/showdropdown.md) property specifies whether or not a d
 The [ButtonsAcceptFocus](../a-z/buttonsacceptfocus.md) property determines how the ToolControl responds to the Tab and cursor movement keys.
 
 
-As a special case, the ToolControl may contain a [MenuBar](../a-z/menubar.md) as its only child. In this case, Dyalog APL causes the menu items to be drawn as buttons as shown below.
+As a special case, the ToolControl may contain a [MenuBar](../a-z/menubar.md) as its **only** child. In this case, Dyalog APL causes the menu items to be drawn as buttons as shown below.
 
 
 Although nothing is done to prevent it, the use of other objects in a ToolControl containing a [MenuBar](../a-z/menubar.md), is not supported.

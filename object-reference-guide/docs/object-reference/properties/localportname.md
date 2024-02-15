@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">LocalPortName</span></h1>
+
 | Applies To: | [TCPSocket](../a-z/tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](../a-z/tcpsocket.md) | [TCPSocket](../a-z/tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](../a-z/tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 The LocalPortName property is a character vector that specifies the port name of the local service that you wish to offer as a server.

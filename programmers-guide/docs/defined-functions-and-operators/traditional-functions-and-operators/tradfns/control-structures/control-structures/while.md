@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">While Statement</span><span class="command">:While bexp</span></h1>
 
-Formal Definition
+[Formal Definition](While%20Statement%20Definition.htm)
 
 
 The simplest `:While` loop is :
@@ -45,34 +45,5 @@ Instead of single conditions, the tests at the beginning and end of the loop may
 
 
 In this example, there are complex conditions at both the start and the end of the iteration.  Each time around the loop, the system tests that both `i` and `j` are less than or equal to 100.  If either test fails, the iteration stops.  Then, after `i` and `j` have been recalculated by `foo`, the iteration stops if `i+j` is equal to or greater than 100, or if either `i` or `j` is negative.
-
-#### :While Statement
-
-```apl
- 
-       |
-       :While bexp
-       |
-       .-------.
-       |       |
-       |       andor
-       |       |
-       |<------'
-       |
-       code
-       |
-       .---------------.
-       |               |
-       :End[While]     :Until bexp
-       |               |
-       |               .-------.
-       |               |       |
-       |               |       andor
-       |               |       |
-       |               |<------'
-       |               |
-       |<--------------'
-       |
-```
 
 

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SocketNumber</span></h1>
+
 | Applies To: | [TCPSocket](./tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](./tcpsocket.md) | [TCPSocket](./tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](./tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 The SocketNumber property is an integer whose value is the Window handle of the socket attached to the [TCPSocket](./tcpsocket.md) object and is generally a read-only property.

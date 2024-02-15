@@ -4,40 +4,22 @@
 
 
 <h1 class="heading"><span class="name">SubForm</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/SubForm.htm) | [Children](../ChildLists/SubForm.htm) | [Properties](../PropLists/SubForm.htm) | [Methods](../MethodLists/SubForm.htm) | [Events](../EventLists/SubForm.htm) |
 | --- | --- | --- | --- | ---  |
 
-| Purpose: | This object represents a window that is owned by and constrained         within another Form or an MDIClient . |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) |  |  |
-| Children | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) |  |  |
-| Properties | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) |  |  |
-| Methods | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) |  |  |
-| Events | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) |  |  |
+
+| Purpose: | This object represents a window that is owned by and constrained         within another [Form](form.md) or an [MDIClient](mdiclient.md) . |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
-If the SubForm is the child of a Form, it is
+If the SubForm is the child of a [Form](form.md), it is
 by default a simple featureless window that occupies the entire client area
-(excluding standard [ToolBar](toolbar.md)s, StatusBars
-and TabBars) of its parent.
+(excluding standard [ToolBar](toolbar.md)s, [StatusBar](statusbar.md)s
+and [TabBar](tabbar.md)s) of its parent.
 
 
 
@@ -48,21 +30,21 @@ that control its appearance, including [Sizeable](./sizeable.md),
 background of the SubForm defaults to the Window Background colour.
 
 
-If the SubForm is the child of an MDIClient,
-its default appearance is the same as for a top-level Form.
+If the SubForm is the child of an [MDIClient](mdiclient.md),
+its default appearance is the same as for a top-level [Form](form.md).
 By default its size is 25% of its parent client area and it is positioned in the
 centre of its parent object.
 
 
 The [Posn](./posn.md) property specifies the location of
-the internal top-left corner of the SubForm relative to its parent. If
+the **internal** top-left corner of the SubForm relative to its parent. If
 the SubForm has a title bar, border, or a 3-dimensional shadow, you must allow
 sufficient space for these components. Similarly, the [Size](./size.md) property specifies the internal size of the SubForm excluding the title bar and
 border.
 
 
 A SubForm is constrained so that it cannot be moved outside its parent. In
-all other respects it behaves in a similar manner to a Form object. See Form object and the descriptions of
+all other respects it behaves in a similar manner to a [Form](form.md) object. See [Form](form.md) object and the descriptions of
 its properties for further details.
 
 

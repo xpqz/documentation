@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">MsgBox</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/MsgBox.htm) | [Children](../ChildLists/MsgBox.htm) | [Properties](../PropLists/MsgBox.htm) | [Methods](../MethodLists/MsgBox.htm) | [Events](../EventLists/MsgBox.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | Provides a "modal" dialog box for displaying messages, errors, warnings and other information. The dialog box has a title, one or more lines of text, and up to three buttons. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [Wait](./wait.md) | [Detach](./detach.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [Wait](./wait.md) |  |
-| Children | [Detach](./detach.md) [Wait](./wait.md) | [Detach](./detach.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [Wait](./wait.md) |  |
-| Properties | [Detach](./detach.md) [Wait](./wait.md) | [Detach](./detach.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [Wait](./wait.md) |  |
-| Methods | [Detach](./detach.md) [Wait](./wait.md) | [Detach](./detach.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [Wait](./wait.md) |  |
-| Events | [Detach](./detach.md) [Wait](./wait.md) | [Detach](./detach.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [Wait](./wait.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The [Caption](./caption.md) property determines the text displayed in the object's title bar.
@@ -52,19 +44,20 @@ The [Btns](./btns.md) property may specify one of six sets of buttons as follows
 - `'ABORT'  'RETRY' 'IGNORE'`
 
 
-If any other combination is specified, `⎕WC` and `⎕WS` will report a `DOMAIN ERROR`. The names of the buttons are however case-insensitive, so the system will accept `'ok'`, `'Ok'`, `'oK'` or `'OK'`. If [Btns](./btns.md) is not specified, it assumes a default according to [Style](./style.md) as follows:
+If any other combination is specified, [`⎕WC`](../../Language/System%20Functions/wc.htm) and [`⎕WS`](../../Language/System%20Functions/ws.htm) will report a `DOMAIN ERROR`. The names of the buttons are however case-insensitive, so the system will accept `'ok'`, `'Ok'`, `'oK'` or `'OK'`. If [Btns](./btns.md) is not specified, it assumes a default according to [Style](./style.md) as follows:
+
 
 | Style | Btns |
 | --- | ---  |
-| `'Msg'` or `'Info'` | `'OK'` |
-| `'Warn'` or `'Error'` | `'OK' 'CANCEL'` |
+| `'Msg'` **or** `'Info'` | `'OK'` |
+| `'Warn'` **or** `'Error'` | `'OK' 'CANCEL'` |
 | `'Query'` | `'YES' 'NO'` |
 
 
 The [Default](./default.md) property may be used to determine which of the buttons is the "default" button, i.e. the one which initially has the focus and is "selected" when the user presses the Enter key. It has the value 1, 2 or 3. If [Default](./default.md) is not specified, the first button is the "default" button. Note that if the user switches focus to another button and presses Enter, this action selects the button with the focus.
 
 
-Like a pop-up (floating) Menu, the MsgBox object is unusual in that it is strictly modal. It is created by `⎕WC` in the normal way, but at that stage is invisible and inactive. It is activated ONLY when `⎕DQ` is called with the name of the MsgBox as the argument. When this is done, the MsgBox object pops up and is activated. Because there is no other object specified in the argument to `⎕DQ`, all other objects are de-activated. The only thing that the user can do (within the APL application) is to press one of the buttons in the MsgBox. When this happens, the MsgBox automatically pops down, the callback function (if any) is fired, and then `⎕DQ` terminates.
+Like a pop-up (floating) [Menu](menu.md), the MsgBox object is unusual in that it is strictly modal. It is created by [`⎕WC`](../../Language/System%20Functions/wc.htm) in the normal way, but at that stage is invisible and inactive. It is activated ONLY when [`⎕DQ`](../../Language/System%20Functions/dq.htm) is called with the name of the MsgBox as the argument. When this is done, the MsgBox object pops up and is activated. Because there is no other object specified in the argument to [`⎕DQ`](../../Language/System%20Functions/dq.htm), all other objects are de-activated. The only thing that the user can do (within the APL application) is to press one of the buttons in the MsgBox. When this happens, the MsgBox automatically pops down, the callback function (if any) is fired, and then [`⎕DQ`](../../Language/System%20Functions/dq.htm) terminates.
 
 
 Notice that the position and size of the MsgBox are determined by Windows and are fixed, although the MsgBox may be moved by the user after it has been displayed.
@@ -96,6 +89,7 @@ The MsgBox object generates one of three events; [MsgBtn1](./msgbtn1.md) (61), [
    B←'ABORT' 'RETRY' 'IGNORE'
    'Msg' ⎕WC 'MsgBox' Caption Text 'Info' B ⋄ ⎕DQ 'Msg'
 ```
+
 
 | `'Msg'` | no icon (the default) |
 | --- | ---  |

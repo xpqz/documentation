@@ -4,34 +4,16 @@
 
 
 <h1 class="heading"><span class="name">MDIClient</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/MDIClient.htm) | [Children](../ChildLists/MDIClient.htm) | [Properties](../PropLists/MDIClient.htm) | [Methods](../MethodLists/MDIClient.htm) | [Events](../EventLists/MDIClient.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | Implements Multiple Document Interface (MDI) behaviour. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [MDICascade](../a-z/mdicascade.md) [MDITile](../a-z/mditile.md) [MDIArrange](../a-z/mdiarrange.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [MDICascade](../a-z/mdicascade.md) | [MDITile](../a-z/mditile.md) | [MDIArrange](../a-z/mdiarrange.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [MDICascade](../a-z/mdicascade.md) | [MDITile](../a-z/mditile.md) |
-| [MDIArrange](../a-z/mdiarrange.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Children | [Detach](../a-z/detach.md) [MDICascade](../a-z/mdicascade.md) [MDITile](../a-z/mditile.md) [MDIArrange](../a-z/mdiarrange.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [MDICascade](../a-z/mdicascade.md) | [MDITile](../a-z/mditile.md) | [MDIArrange](../a-z/mdiarrange.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [MDICascade](../a-z/mdicascade.md) | [MDITile](../a-z/mditile.md) |
-| [MDIArrange](../a-z/mdiarrange.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Properties | [Detach](../a-z/detach.md) [MDICascade](../a-z/mdicascade.md) [MDITile](../a-z/mditile.md) [MDIArrange](../a-z/mdiarrange.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [MDICascade](../a-z/mdicascade.md) | [MDITile](../a-z/mditile.md) | [MDIArrange](../a-z/mdiarrange.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [MDICascade](../a-z/mdicascade.md) | [MDITile](../a-z/mditile.md) |
-| [MDIArrange](../a-z/mdiarrange.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Methods | [Detach](../a-z/detach.md) [MDICascade](../a-z/mdicascade.md) [MDITile](../a-z/mditile.md) [MDIArrange](../a-z/mdiarrange.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [MDICascade](../a-z/mdicascade.md) | [MDITile](../a-z/mditile.md) | [MDIArrange](../a-z/mdiarrange.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [MDICascade](../a-z/mdicascade.md) | [MDITile](../a-z/mditile.md) |
-| [MDIArrange](../a-z/mdiarrange.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Events | [Detach](../a-z/detach.md) [MDICascade](../a-z/mdicascade.md) [MDITile](../a-z/mditile.md) [MDIArrange](../a-z/mdiarrange.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [MDICascade](../a-z/mdicascade.md) | [MDITile](../a-z/mditile.md) | [MDIArrange](../a-z/mdiarrange.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [MDICascade](../a-z/mdicascade.md) | [MDITile](../a-z/mditile.md) |
-| [MDIArrange](../a-z/mdiarrange.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The multiple-document interface (MDI) is a document-oriented interface that is commonly used by word-processors, spreadsheets and other applications that deal with *documents*. An MDI application allows the user to display multiple documents at the same time, with each document displayed in its own window.
@@ -54,6 +36,7 @@ The [MDIActive](../a-z/mdiactive.md) and [MDIActiveObject](../a-z/mdiactiveobjec
 
 
 You can call methods which cause the MDIClient to organise its child [SubForm](../a-z/subform.md)s in some way. These methods are as follows:
+
 
 | [MDICascade](../a-z/mdicascade.md) | Causes the MDIClient to organise its child Forms in an overlapping manner. |
 | --- | ---  |

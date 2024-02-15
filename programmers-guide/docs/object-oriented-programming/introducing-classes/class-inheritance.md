@@ -10,9 +10,9 @@ The following example specifies that `CLASS2` derives from `CLASS1`.
 
 Note that `CLASS1` is referred to as the *Base Class*of `CLASS2`.
 
-If a Class has a Base Class, it automatically acquires all of the Public Properties, Methods and Fields defined for its Base Class unless it replaces them with its own members of the same name. This principle of inheritance applies throughout the Class hierarchy. Note that Private members are not subject to inheritance.
+If a Class has a Base Class, it automatically acquires all of the **Public** Properties, Methods and Fields defined for its Base Class unless it replaces them with its own members of the same name. This principle of inheritance applies throughout the Class hierarchy. Note that **Private** members are **not** subject to inheritance.
 
-Warning: When a class is fixed, it keeps a reference (a pointer) to its base class. If the global name of the base class is expunged, the derived class will still have the base class reference, and the base class will therefore be kept *alive* in the workspace. The derived class will be fully functional, but attempts to edit it will fail when it attempts to locate the base class as the new definition is fixed.
+**Warning:**When a class is fixed, it keeps a reference (a pointer) to its base class. If the global name of the base class is expunged, the derived class will still have the base class reference, and the base class will therefore be kept *alive* in the workspace. The derived class will be fully functional, but attempts to edit it will fail when it attempts to locate the base class as the new definition is fixed.
 
 At this point, if a new class with the original base class name is created, the derived class has no way of detecting this, and it will continue to use the *old and invisible* version of the base class. Only when the derived class is re-fixed, will the new base class be detected.
 
@@ -20,10 +20,7 @@ If you edit, re-fix or copy an existing base class, APL will take care to patch 
 
 ## Copying Classes
 
-See  
-Programming Reference Guide: 
-
-Copy System CommandDependent Objects on page 1 and Referenced Objects on page 1.
+See [Dependent Objects on page 1](../../System%20Commands/copy.htm#Dependent_Objects) and [Referenced Objects on page 1](../../System%20Commands/copy.htm#Referenced_Objects).
 
 ## Classes that derive from .NET Types
 
@@ -49,4 +46,4 @@ For example, to define a Class named `Duck` that derives from a `Poly` object, t
 
 The Base Constructor for such a Class is the `⎕WC` system function.
 
-For further details see "Dyalog GUI Classes" on page 1.
+For further details see ["Dyalog GUI Classes" on page 1](../OO%20and%20the%20Dyalog%20GUI/GUIClasses.htm#GUIClasses).

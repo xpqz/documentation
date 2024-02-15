@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ChildEdge</span></h1>
+
 | Applies To: | [CoolBand](../a-z/coolband.md) |
 | --- | ---  |
 
-| Applies To: | [CoolBand](../a-z/coolband.md) | [CoolBand](../a-z/coolband.md) |  |  |
-| --- | --- | ---  |
-| [CoolBand](../a-z/coolband.md) |  |  |
 
-
-Description
+**Description**
 
 
 The ChildEdge property specifies whether or not the [CoolBand](../a-z/coolband.md) leaves space above and below its child window.

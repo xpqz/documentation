@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">FileWrite</span></h1>
+
 | Applies To: | [Bitmap](../a-z/bitmap.md) | [Cursor](../a-z/cursor.md) | [Icon](../a-z/icon.md) | [Metafile](../a-z/metafile.md) | [RichEdit](../a-z/richedit.md) |
 | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [Bitmap](../a-z/bitmap.md) [Cursor](../a-z/cursor.md) [Icon](../a-z/icon.md) [Metafile](../a-z/metafile.md) [RichEdit](../a-z/richedit.md) | [Bitmap](../a-z/bitmap.md) | [Cursor](../a-z/cursor.md) | [Icon](../a-z/icon.md) | [Metafile](../a-z/metafile.md) | [RichEdit](../a-z/richedit.md) |  |
-| --- | --- | ---  |
-| [Bitmap](../a-z/bitmap.md) | [Cursor](../a-z/cursor.md) | [Icon](../a-z/icon.md) |
-| [Metafile](../a-z/metafile.md) | [RichEdit](../a-z/richedit.md) |  |
 
-
-Description
+**Description**
 
 
 This method causes the object to be written to the file named in its [File](../a-z/file.md) property. For the Bitmap and Icon objects this method will write a file of type .BMP and .ICO to a file with the appropriate extension. If [File](../a-z/file.md) specifies any other extension, the method will fail with a `DOMAIN ERROR`:

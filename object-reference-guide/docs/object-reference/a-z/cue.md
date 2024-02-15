@@ -4,21 +4,18 @@
 
 
 <h1 class="heading"><span class="name">Cue</span></h1>
+
 | Applies To: | [ButtonEdit](./buttonedit.md) | [Edit](./edit.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ButtonEdit](./buttonedit.md) [Edit](./edit.md) | [ButtonEdit](./buttonedit.md) | [Edit](./edit.md) |  |
-| --- | --- | ---  |
-| [ButtonEdit](./buttonedit.md) | [Edit](./edit.md) |  |
 
-
-Description
+**Description**
 
 
 This  property specifies optional text to be displayed when a [ButtonEdit](./buttonedit.md) or an [Edit](./edit.md) object is empty. For an [Edit](./edit.md) object it applies only if the Style of the [Edit](./edit.md) object is `'Single'`.
 
 
-The  Boolean property ShowCueWhenFocused  determines whether or not the cue should also be displayed once the user has tabbed into or clicked on the input field (and thus given it the focus).
+The  Boolean property [ShowCueWhenFocused](showcuewhenfocused.md)  determines whether or not the cue should also be displayed once the user has tabbed into or clicked on the input field (and thus given it the focus).
 
 #### Example
 ```apl
@@ -33,13 +30,9 @@ The  Boolean property ShowCueWhenFocused  determines whether or not the cue shou
 
 
 
-Note that this feature only applies if Native Look and Feel 
-(see page 1)
- is enabled.
+**Note that this feature only applies if Native Look and Feel (see page 1) is enabled.**
 
 
-Note that this feature only applies if Native Look and Feel 
-(see page 1)
- is enabled.
+**Note that this feature only applies if Native Look and Feel (see page 1) is enabled.**
 
 

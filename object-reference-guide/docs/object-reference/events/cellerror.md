@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">CellError</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user inserts invalid data into the [Edit](../a-z/edit.md) object associated with a cell in a [Grid](../a-z/grid.md) object and then attempts to move to another cell or to another control outside the [Grid](../a-z/grid.md). It is also reported if the user selects a [MenuItem](../a-z/menuitem.md).
@@ -21,7 +18,8 @@ The default action for the CellError event is to sound the bell (beep). This act
 
 
 
-The event message reported as the result of `⎕DQ` or supplied as the right argument to your callback function, is an 8-element vector as follows:
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm) or supplied as the right argument to your callback function, is an 8-element vector as follows:
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

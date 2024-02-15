@@ -6,11 +6,6 @@ This parameter is used in conjunction with the AplCoreName parameter to control 
 2. Increments that number, then saves the **aplcore** in a new file ending with the new number.
 3. If necessary, deletes lower-numbered files to retain only the maximum number of files specified by MaxAplCores .
 
-See also:  AplCoreName on page 1.
+See also: [ AplCoreName on page 1](aplcorename.md).
 
-See also Set aplcore Parameters on page 1.
-
-See also 
-Language Reference Guide: 
-
- Set aplcore Parameters.
+See also [Set aplcore Parameters on page 1](../../../Language/I%20Beam%20Functions/Set%20aplcore%20Parameters.htm#set_aplcore_parameters).

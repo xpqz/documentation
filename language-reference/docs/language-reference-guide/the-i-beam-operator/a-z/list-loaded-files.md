@@ -13,6 +13,7 @@ The editor may be used to edit Dyalog script files (*.dyalog* files) and general
 
 `R` is a vector of vectors, one element per associated file. Each element is a 5 element vector:
 
+
 | Element | Contains |
 | --- | ---  |
 | 1 | File name |
@@ -22,10 +23,7 @@ The editor may be used to edit Dyalog script files (*.dyalog* files) and general
 | 5 | Flags |
 
 
-Encoding, newline and flags are defined the same as for `⎕NGET`. See File Encodings on page 1. Checksum is an 8-character hexadecimal value, see 
-Object Reference Guide: 
-
-GetBuildID MethodGetBuildID on page 1  for more information.
+Encoding, newline and flags are defined the same as for `⎕NGET`. See [File Encodings on page 1](../../system-functions/system-functions-a-z/system-functions-a-z/nget.md). Checksum is an 8-character hexadecimal value, see [GetBuildID on page 1](../../GUI/MethodOrEvents/GetBuildID.htm#GetBuildID_Method)  for more information.
 
 
 #### Examples:

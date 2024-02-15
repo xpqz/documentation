@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">DockChildren</span></h1>
+
 | Applies To: | [CoolBar](../a-z/coolbar.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) |
 | --- | --- | --- | ---  |
 
-| Applies To: | [CoolBar](../a-z/coolbar.md) [Form](../a-z/form.md) [SubForm](../a-z/subform.md) | [CoolBar](../a-z/coolbar.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) |
-| --- | --- | ---  |
-| [CoolBar](../a-z/coolbar.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) |
 
-
-Description
+**Description**
 
 
 The DockChildren property specifies the names of client objects that may be docked in a host object.

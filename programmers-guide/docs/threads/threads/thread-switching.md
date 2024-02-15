@@ -1,6 +1,6 @@
 # Thread Switching
 
-Programming with threads requires care.
+**Programming with threads requires care.**
 
 The interpreter may switch between running threads at the following points:
 

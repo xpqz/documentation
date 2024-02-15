@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">CellSelect</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 The [Grid](../a-z/grid.md) supports the selection of a contiguous block of cells by the user, using the mouse and/or the keyboard. The ability to select a range of cells is determined by the CellSelect property.
@@ -21,6 +18,7 @@ The [Grid](../a-z/grid.md) supports the selection of a contiguous block of cells
 
 
 CellSelect may be a character vector or a vector of character vectors comprising the following:
+
 
 | `'Rows'` | User may select an entire row by clicking on a row title and may select multiple rows by dragging the mouse over contiguous row titles. |
 | --- | ---  |
@@ -50,7 +48,7 @@ Setting CellSelect to (`'Rows' 'Columns' 'Whole' 'Partial'`) is equivalent to se
 When the user performs a selection, the [Grid](../a-z/grid.md) generates a [GridSelect](../a-z/gridselect.md) event.
 
 
-The range of cells currently selected is given by the [SelItems](../a-z/selitems.md) property. You can obtain the current selection by querying this property with `⎕WG` and you can set it with `⎕WS`.
+The range of cells currently selected is given by the [SelItems](../a-z/selitems.md) property. You can obtain the current selection by querying this property with [`⎕WG`](../../Language/System%20Functions/wg.htm) and you can set it with [`⎕WS`](../../Language/System%20Functions/ws.htm).
 
 
 Note that the user may delete the contents of the selected range, or cut and copy them to the clipboard by pressing Delete, Shift+Delete or Ctrl+Insert respectively. The user may also replace the current selection with the contents of the clipboard by pressing Shift+Insert.  These operations generate [GridDelete](../a-z/griddelete.md), [GridCut](../a-z/gridcut.md), [GridCopy](../a-z/gridcopy.md) and [GridPaste](../a-z/gridpaste.md) events which you may disable (by setting the event action code to `¯1` or to which you may attach a callback function.

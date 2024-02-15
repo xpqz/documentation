@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">PrintList</span></h1>
+
 | Applies To: | [Root](../a-z/root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](../a-z/root.md) | [Root](../a-z/root.md) |  |  |
-| --- | --- | ---  |
-| [Root](../a-z/root.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property provides a list of the printers that are installed on your computer system, i.e. those listed when you select "printers" from the MS-Windows Control Panel. It is a "read-only" property of the [Root](../a-z/root.md) object `'.'`.

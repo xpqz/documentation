@@ -5,28 +5,10 @@
 
 <h1 class="heading"><span class="name">Handle</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](./activexcontrol.md) [Animation](./animation.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Calendar](./calendar.md) [ColorButton](./colorbutton.md) [Combo](./combo.md) [ComboEx](./comboex.md) [CoolBar](./coolbar.md) [Cursor](./cursor.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [Font](./font.md) [Form](./form.md) [Grid](./grid.md) [Group](./group.md) [Icon](./icon.md) [ImageList](./imagelist.md) [Label](./label.md) [List](./list.md) [ListView](./listview.md) [MDIClient](./mdiclient.md) [Menu](./menu.md) [MenuBar](./menubar.md) [Metafile](./metafile.md) [OLEClient](./oleclient.md) [OLEServer](./oleserver.md) [Printer](./printer.md) [ProgressBar](./progressbar.md) [PropertySheet](./propertysheet.md) [RichEdit](./richedit.md) [Scroll](./scroll.md) [SM](./sm.md) [Spinner](./spinner.md) [Static](./static.md) [StatusBar](./statusbar.md) [SubForm](./subform.md) [TabBar](./tabbar.md) [TabControl](./tabcontrol.md) [ToolBar](./toolbar.md) [ToolControl](./toolcontrol.md) [TrackBar](./trackbar.md) [TreeView](./treeview.md) [UpDown](./updown.md) | [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [CoolBar](./coolbar.md) | [Cursor](./cursor.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Font](./font.md) | [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) | [Icon](./icon.md) | [ImageList](./imagelist.md) | [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) | [MDIClient](./mdiclient.md) | [Menu](./menu.md) | [MenuBar](./menubar.md) | [Metafile](./metafile.md) | [OLEClient](./oleclient.md) | [OLEServer](./oleserver.md) | [Printer](./printer.md) | [ProgressBar](./progressbar.md) | [PropertySheet](./propertysheet.md) | [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [SM](./sm.md) | [Spinner](./spinner.md) | [Static](./static.md) | [StatusBar](./statusbar.md) | [SubForm](./subform.md) | [TabBar](./tabbar.md) | [TabControl](./tabcontrol.md) | [ToolBar](./toolbar.md) | [ToolControl](./toolcontrol.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |  |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) |
-| [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [ColorButton](./colorbutton.md) |
-| [Combo](./combo.md) | [ComboEx](./comboex.md) | [CoolBar](./coolbar.md) |
-| [Cursor](./cursor.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) |
-| [Font](./font.md) | [Form](./form.md) | [Grid](./grid.md) |
-| [Group](./group.md) | [Icon](./icon.md) | [ImageList](./imagelist.md) |
-| [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) |
-| [MDIClient](./mdiclient.md) | [Menu](./menu.md) | [MenuBar](./menubar.md) |
-| [Metafile](./metafile.md) | [OLEClient](./oleclient.md) | [OLEServer](./oleserver.md) |
-| [Printer](./printer.md) | [ProgressBar](./progressbar.md) | [PropertySheet](./propertysheet.md) |
-| [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [SM](./sm.md) |
-| [Spinner](./spinner.md) | [Static](./static.md) | [StatusBar](./statusbar.md) |
-| [SubForm](./subform.md) | [TabBar](./tabbar.md) | [TabControl](./tabcontrol.md) |
-| [ToolBar](./toolbar.md) | [ToolControl](./toolcontrol.md) | [TrackBar](./trackbar.md) |
-| [TreeView](./treeview.md) | [UpDown](./updown.md) |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This is a read-only property that reports the *handle* associated with an object. For a visual object, such as a [Form](./form.md) or a [Button](./button.md), this is the window handle. For a [Printer](./printer.md), it is the *printer device context*.

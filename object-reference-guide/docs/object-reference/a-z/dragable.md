@@ -5,31 +5,17 @@
 
 <h1 class="heading"><span class="name">Dragable</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](./activexcontrol.md) [Animation](./animation.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Calendar](./calendar.md) [Circle](./circle.md) [ColorButton](./colorbutton.md) [Combo](./combo.md) [ComboEx](./comboex.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [Ellipse](./ellipse.md) [Grid](./grid.md) [Group](./group.md) [Image](./image.md) [Label](./label.md) [List](./list.md) [ListView](./listview.md) [Marker](./marker.md) [Poly](./poly.md) [ProgressBar](./progressbar.md) [Rect](./rect.md) [RichEdit](./richedit.md) [Scroll](./scroll.md) [SM](./sm.md) [Spinner](./spinner.md) [Static](./static.md) [StatusField](./statusfield.md) [Text](./text.md) [TrackBar](./trackbar.md) [TreeView](./treeview.md) [UpDown](./updown.md) | [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [Circle](./circle.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Ellipse](./ellipse.md) | [Grid](./grid.md) | [Group](./group.md) | [Image](./image.md) | [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) | [Marker](./marker.md) | [Poly](./poly.md) | [ProgressBar](./progressbar.md) | [Rect](./rect.md) | [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [SM](./sm.md) | [Spinner](./spinner.md) | [Static](./static.md) | [StatusField](./statusfield.md) | [Text](./text.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |  |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) |
-| [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [Circle](./circle.md) |
-| [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) |
-| [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Ellipse](./ellipse.md) |
-| [Grid](./grid.md) | [Group](./group.md) | [Image](./image.md) |
-| [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) |
-| [Marker](./marker.md) | [Poly](./poly.md) | [ProgressBar](./progressbar.md) |
-| [Rect](./rect.md) | [RichEdit](./richedit.md) | [Scroll](./scroll.md) |
-| [SM](./sm.md) | [Spinner](./spinner.md) | [Static](./static.md) |
-| [StatusField](./statusfield.md) | [Text](./text.md) | [TrackBar](./trackbar.md) |
-| [TreeView](./treeview.md) | [UpDown](./updown.md) |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property determines whether or not an object may be the subject of a "drag and drop" operation.
 
 
 
-Dragable is a single number with the value 0, 1 or 2. A value of 0 (which is the default) means that the object may not be drag/dropped. A value of 1 means that the object may be drag/dropped and that during the "drag" operation, a box representing the bounding rectangle around the object is displayed on the screen. A value of 2 means that the outline of the object is displayed as the object is dragged, or, if the object is an [Image](./image.md) with a Picture property containing the name of an [Icon](./icon.md) object, the icon itself is displayed as it is dragged. For rectangular non-graphical objects, values of 1 and 2 are equivalent.
+Dragable is a single number with the value 0, 1 or 2. A value of 0 (which is the default) means that the object may not be drag/dropped. A value of 1 means that the object may be drag/dropped and that during the "drag" operation, a box representing the bounding rectangle around the object is displayed on the screen. A value of 2 means that the **outline** of the object is displayed as the object is dragged, or, if the object is an [Image](./image.md) with a [Picture](picture.md) property containing the name of an [Icon](./icon.md) object, the icon itself is displayed as it is dragged. For rectangular non-graphical objects, values of 1 and 2 are equivalent.
 
 
 If an object is Dragable, the user may drag it by positioning the mouse pointer within the object, depressing the left mouse button, then moving the mouse with the button held down. During the drag operation, the mouse pointer is automatically changed to a "drag" symbol. The object is "dropped" by releasing the left mouse button. The effect depends upon where it is dropped, and on the action associated with the [DragDrop](./dragdrop.md) event for the object under the mouse pointer (if any).

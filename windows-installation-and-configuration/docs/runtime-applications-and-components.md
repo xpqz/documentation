@@ -85,10 +85,7 @@ To make an out-of-process COM Server, you must:
 
 The command-line for your COM Server must be specified in the field labelled **Command Line** in the **Export** dialog box. The field is initialised to invoke the Run-Time EXE with the name of your workspace in the same fashion as the workspace-based run-time discussed above. This command-line is recorded in the Windows Registry to be invoked when a client application requests it.
 
-You may change the contents of the **Command Line** field to use a configuration file, in the same way as for a workspace-based runtime. The following example uses the Loan COM Server. See The LOAN Workspace on page 1
-Interface Guide: 
-
-The LOAN Workspace.
+You may change the contents of the **Command Line** field to use a configuration file, in the same way as for a workspace-based runtime. The following example uses the Loan COM Server. See The LOAN Workspace on page 1.
 
 ### Example:
 ```apl

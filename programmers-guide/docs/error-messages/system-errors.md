@@ -7,19 +7,17 @@ Dyalog APL will generate a system error and (normally) terminate in one of two c
 - As a result of the failure of a workspace integrity check
 - As a result of a System Exception
 
-On Windows, if the DYALOG_NOPOPUPS parameter is 0 (the default), it will display the System Error dialog box (see System Error Dialog Box on page 1). This is suppressed if DYALOG_NOPOPUPS is 1.
+On Windows, if the [DYALOG_NOPOPUPS](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#DYALOG_NOPOPUPS) parameter is 0 (the default), it will display the System Error dialog box (see [System Error Dialog Box on page 1](#System_Error_Dialog)). This is suppressed if [DYALOG_NOPOPUPS](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#DYALOG_NOPOPUPS) is 1.
 
 ### aplcore file
 
-When a system error occurs, APL normally saves an **aplcore** file which may be sent to Dyalog for diagnosis. The name and location of the **aplcore** file may be specified by the AplCoreName parameter. If this parameter is not specified, the **aplcore** file is named aplcore and is saved in the current working directory.
+When a system error occurs, APL normally saves an **aplcore** file which may be sent to Dyalog for diagnosis. The name and location of the **aplcore** file may be specified by the [AplCoreName](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#APLCoreName) parameter. If this parameter is not specified, the **aplcore** file is named aplcore and is saved in the current working directory.
 
-Normally a new **aplcore** will replace a file of the same name. However, if AplCoreName contains an asterisk (*), the system will create a new file,  replacing the asterisk with a number incremented from the largest numbered file present.
+Normally a new **aplcore** will replace a file of the same name. However, if [AplCoreName](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#APLCoreName) contains an asterisk (*), the system will create a new file,  replacing the asterisk with a number incremented from the largest numbered file present.
 
-The number of **aplcore** files retained by the system is specified by the MaxAplCores parameter. If MaxAplCores is 0, the system will not save an **aplcore**. However, under Windows, if DYALOG_NOPOPUPS is 0, and the user checks the **Create an aplcore file** checkbox when the **System Error**dialog box is displayed, an **aplcore** will be saved regardless of the value of MaxAplCores. See System Error Dialog Box on page 1.
+The number of **aplcore** files retained by the system is specified by the [MaxAplCores](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#maxaplcores) parameter. If [MaxAplCores](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#maxaplcores) is 0, the system will not save an **aplcore**. However, under Windows, if [DYALOG_NOPOPUPS](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#DYALOG_NOPOPUPS) is 0, and the user checks the **Create an aplcore file** checkbox when the **System Error**dialog box is displayed, an **aplcore** will be saved regardless of the value of [MaxAplCores](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#maxaplcores). See [System Error Dialog Box on page 1](#System_Error_Dialog).
 
-Be aware that if your application contains any secure data, this data may be present in an **aplcore** file, and it may be appropriate to set both MaxAplCores and DYALOG_NOPOPUPS to 0 to prevent such data being saved on disk.
-
-For further information concerning the parameters AplCoreName, DYALOG_NOPOPUPS and MaxAplCores, see *Installation and Configuration Guide*.
+Be aware that if your application contains any secure data, this data may be present in an **aplcore** file, and it may be appropriate to set both [MaxAplCores](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#maxaplcores) and DYALOG_NOPOPUPS to 0 to prevent such data being saved on disk.
 
 Information that may prove useful in debugging the problem, including (where possible) the SI stack at the point where the **aplcore** was generated, is by default written to the end of **aplcore** files; the section begins with the string
 
@@ -29,7 +27,7 @@ Under UNIX, this interesting information section can be extracted from the **apl
 
 sed -n '/======== Interesting Information/,$p' aplcore
 
-To prevent this information from being written to the **aplcore** file, the APL_TextInAplCore parameter should be set to 0.
+To prevent this information from being written to the **aplcore** file, the [APL_TextInAplCore](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters/APL_TextInAplCore.htm) parameter should be set to 0.
 
 ### Workspace Integrity
 
@@ -39,7 +37,7 @@ A System Error code is displayed in the dialog box and should be reported to Dya
 
 Note that the internal error that caused the discrepancy could have occurred at any time prior to the execution of `)SAVE` and it may not be possible for Dyalog to identify the cause from this **aplcore** file.
 
-If APL is started in debug mode with the -Dc, -Dw or -DW flags, the Workspace Integrity check is performed more frequently, and it is more likely that the resulting **aplcore** file will contain information that will allow the problem to be identified and corrected. It is also possible to enable or alter the debugging level from within APL using the SetDFlags method; Dyalog support will direct the use of this feature when necessary.
+If APL is started in debug mode with the **-Dc**, **-Dw** or **-DW** flags, the Workspace Integrity check is performed more frequently, and it is more likely that the resulting **aplcore** file will contain information that will allow the problem to be identified and corrected. It is also possible to enable or alter the debugging level from within APL using the SetDFlags method; Dyalog support will direct the use of this feature when necessary.
 
 ### System Exceptions
 
@@ -103,7 +101,7 @@ Note: Under a 32-bit interpreter the `⎕NA` call should refer to dyalog32.
 | Create a process dump file | Dumps a complete core image, see below. |
 | Create Trappable Error | If you check this box (only enabled on System Error codes 995 and 996), APL will not terminate but will instead generate an error 91 ( `EXTERNAL DLL EXCEPTION` ) when you press **Dismiss** . |
 | Create an aplcore file | If this box is checked, an **aplcore** file will be created. |
-| Pass exception on to operating system | If this box is checked, the exception will be passed on to your current debugging tool (e.g. **Visual Studio** ). See Installation & Configuration Guide: PassExceptionsToOpSys PassExceptionsToOpSys . |
+| Pass exception on to operating system | If this box is checked, the exception will be passed on to your current debugging tool (e.g. **Visual Studio** ). See [PassExceptionsToOpSys](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#PassExceptionsToOpSys) . |
 | Copy to clipboard | Copies the contents of the APL stack trace window to the Clipboard. |
 
 ### Create a process dump file
@@ -122,7 +120,7 @@ After debugging, the System Exception dialog box appears again. Click on **Don't
 
 ### ErrorOnExternalException Parameter
 
-This parameter allows you to prevent APL from taking the actions described above when an exception caused by an external DLL occurs. The following example illustrates what happens when the functions above are run, but with the ErrorOnExternalException parameter set to 1.
+This parameter allows you to prevent APL from taking the actions described above when an exception caused by an external DLL occurs. The following example illustrates what happens when the functions above are run, but with the [ErrorOnExternalException](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#ErrorOnExternalException) parameter set to 1.
 ```apl
    ⎕←2 ⎕NQ'.' 'GetEnvironment' 'ErrorOnExternalException'
 1
@@ -139,7 +137,7 @@ goo[1]
 foo[1]
 ```
 
-Note: Dyalog recommends that enabling ErrorOnExternalException should only be done while developing or debugging an application; ignoring such errors may result in corruption in the workspace which could result to unexpected errors later in the application.
+Note: Dyalog recommends that enabling [ErrorOnExternalException](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#ErrorOnExternalException) should only be done while developing or debugging an application; ignoring such errors may result in corruption in the workspace which could result to unexpected errors later in the application.
 
 ### What should I do if Dyalog hangs?
 

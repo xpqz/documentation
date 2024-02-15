@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">EnterReadOnlyCells</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This is a Boolean property that specifies whether or not the user may visit read-only cells in a [Grid](../a-z/grid.md) object. Its default value is 1.

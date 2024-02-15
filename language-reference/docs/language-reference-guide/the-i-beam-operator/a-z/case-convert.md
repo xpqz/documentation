@@ -7,7 +7,7 @@
 #### Note:
 
 
-This i-beam function has been replaced by a system function and is deprecated. See Case Convert on page 1.
+This i-beam function has been replaced by a system function and is deprecated. See [Case Convert on page 1](../System%20Functions/c.htm#Case_Convert).
 
 
 Converts character data in `Y` to upper or lower-case. This function is considerably faster than any comparable function coded in APL, especially on nested arrays.

@@ -1,6 +1,6 @@
 # Getting Started
 
-This tutorial, as provided, supports the 64-bit Unicode version of Dyalog only.
+**This tutorial, as provided, supports the 64-bit Unicode version of Dyalog only.**
 
 The tutorial  described in this Chapter was originally designed (for Dyalog Version 10) to be exercised in a console window, with the user invoking the C# compiler directly using a command-line interface. It was originally envisaged to be run*in-situ* in the samples\aplclasses sub-directory.
 
@@ -26,7 +26,7 @@ Each of the sub-directories contained in `aplclasses`, namely `aplclasses1` - `a
 
 When the application is executed by VS it will be run  in the `bin` sub-diredctory.
 
-It is mandatory that the Dyalog .NET class, and all the Dyalog DLLs on which it depends, reside in the same directory as the host program.
+**It is mandatory that the Dyalog .NET class, and all the Dyalog DLLs on which it depends, reside in the same directory as the host program.**
 
 Therefore, copies of the requisite Dyalog DLLs are provided in the `bin`sub-directory. These DLLs are:
 

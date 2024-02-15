@@ -4,49 +4,19 @@
 
 
 <h1 class="heading"><span class="name">Root</span></h1>
-| Children | Properties | Methods | Events |
+
+| [Children](../ChildLists/Root.htm) | [Properties](../PropLists/Root.htm) | [Methods](../MethodLists/Root.htm) | [Events](../EventLists/Root.htm) |
 | --- | --- | --- | ---  |
 
+
 | Purpose: | This is an invisible "system" object that acts as the parent of all other objects. |
-| --- | --- | ---  |
-| Children | [ChooseFont](./choosefont.md) [Flush](./flush.md) [NameFromHandle](./namefromhandle.md) [GreetBitmap](./greetbitmap.md) [GetCommandLine](./getcommandline.md) [GetCommandLineArgs](./getcommandlineargs.md) [GetEnvironment](./getenvironment.md) [ListTypeLibs](./listtypelibs.md) [DeleteTypeLib](./deletetypelib.md) [SetServiceState](./setservicestate.md) [GetServiceState](./getservicestate.md) [GetTextSize](./gettextsize.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) [TCPGetHostID](./tcpgethostid.md) [GetBuildID](./getbuildid.md) [Wait](./wait.md) | [ChooseFont](./choosefont.md) | [Flush](./flush.md) | [NameFromHandle](./namefromhandle.md) | [GreetBitmap](./greetbitmap.md) | [GetCommandLine](./getcommandline.md) | [GetCommandLineArgs](./getcommandlineargs.md) | [GetEnvironment](./getenvironment.md) | [ListTypeLibs](./listtypelibs.md) | [DeleteTypeLib](./deletetypelib.md) | [SetServiceState](./setservicestate.md) | [GetServiceState](./getservicestate.md) | [GetTextSize](./gettextsize.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) | [TCPGetHostID](./tcpgethostid.md) | [GetBuildID](./getbuildid.md) | [Wait](./wait.md) |  |
-| [ChooseFont](./choosefont.md) | [Flush](./flush.md) | [NameFromHandle](./namefromhandle.md) |
-| [GreetBitmap](./greetbitmap.md) | [GetCommandLine](./getcommandline.md) | [GetCommandLineArgs](./getcommandlineargs.md) |
-| [GetEnvironment](./getenvironment.md) | [ListTypeLibs](./listtypelibs.md) | [DeleteTypeLib](./deletetypelib.md) |
-| [SetServiceState](./setservicestate.md) | [GetServiceState](./getservicestate.md) | [GetTextSize](./gettextsize.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) | [TCPGetHostID](./tcpgethostid.md) |
-| [GetBuildID](./getbuildid.md) | [Wait](./wait.md) |  |
-| Properties | [ChooseFont](./choosefont.md) [Flush](./flush.md) [NameFromHandle](./namefromhandle.md) [GreetBitmap](./greetbitmap.md) [GetCommandLine](./getcommandline.md) [GetCommandLineArgs](./getcommandlineargs.md) [GetEnvironment](./getenvironment.md) [ListTypeLibs](./listtypelibs.md) [DeleteTypeLib](./deletetypelib.md) [SetServiceState](./setservicestate.md) [GetServiceState](./getservicestate.md) [GetTextSize](./gettextsize.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) [TCPGetHostID](./tcpgethostid.md) [GetBuildID](./getbuildid.md) [Wait](./wait.md) | [ChooseFont](./choosefont.md) | [Flush](./flush.md) | [NameFromHandle](./namefromhandle.md) | [GreetBitmap](./greetbitmap.md) | [GetCommandLine](./getcommandline.md) | [GetCommandLineArgs](./getcommandlineargs.md) | [GetEnvironment](./getenvironment.md) | [ListTypeLibs](./listtypelibs.md) | [DeleteTypeLib](./deletetypelib.md) | [SetServiceState](./setservicestate.md) | [GetServiceState](./getservicestate.md) | [GetTextSize](./gettextsize.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) | [TCPGetHostID](./tcpgethostid.md) | [GetBuildID](./getbuildid.md) | [Wait](./wait.md) |  |
-| [ChooseFont](./choosefont.md) | [Flush](./flush.md) | [NameFromHandle](./namefromhandle.md) |
-| [GreetBitmap](./greetbitmap.md) | [GetCommandLine](./getcommandline.md) | [GetCommandLineArgs](./getcommandlineargs.md) |
-| [GetEnvironment](./getenvironment.md) | [ListTypeLibs](./listtypelibs.md) | [DeleteTypeLib](./deletetypelib.md) |
-| [SetServiceState](./setservicestate.md) | [GetServiceState](./getservicestate.md) | [GetTextSize](./gettextsize.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) | [TCPGetHostID](./tcpgethostid.md) |
-| [GetBuildID](./getbuildid.md) | [Wait](./wait.md) |  |
-| Methods | [ChooseFont](./choosefont.md) [Flush](./flush.md) [NameFromHandle](./namefromhandle.md) [GreetBitmap](./greetbitmap.md) [GetCommandLine](./getcommandline.md) [GetCommandLineArgs](./getcommandlineargs.md) [GetEnvironment](./getenvironment.md) [ListTypeLibs](./listtypelibs.md) [DeleteTypeLib](./deletetypelib.md) [SetServiceState](./setservicestate.md) [GetServiceState](./getservicestate.md) [GetTextSize](./gettextsize.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) [TCPGetHostID](./tcpgethostid.md) [GetBuildID](./getbuildid.md) [Wait](./wait.md) | [ChooseFont](./choosefont.md) | [Flush](./flush.md) | [NameFromHandle](./namefromhandle.md) | [GreetBitmap](./greetbitmap.md) | [GetCommandLine](./getcommandline.md) | [GetCommandLineArgs](./getcommandlineargs.md) | [GetEnvironment](./getenvironment.md) | [ListTypeLibs](./listtypelibs.md) | [DeleteTypeLib](./deletetypelib.md) | [SetServiceState](./setservicestate.md) | [GetServiceState](./getservicestate.md) | [GetTextSize](./gettextsize.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) | [TCPGetHostID](./tcpgethostid.md) | [GetBuildID](./getbuildid.md) | [Wait](./wait.md) |  |
-| [ChooseFont](./choosefont.md) | [Flush](./flush.md) | [NameFromHandle](./namefromhandle.md) |
-| [GreetBitmap](./greetbitmap.md) | [GetCommandLine](./getcommandline.md) | [GetCommandLineArgs](./getcommandlineargs.md) |
-| [GetEnvironment](./getenvironment.md) | [ListTypeLibs](./listtypelibs.md) | [DeleteTypeLib](./deletetypelib.md) |
-| [SetServiceState](./setservicestate.md) | [GetServiceState](./getservicestate.md) | [GetTextSize](./gettextsize.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) | [TCPGetHostID](./tcpgethostid.md) |
-| [GetBuildID](./getbuildid.md) | [Wait](./wait.md) |  |
-| Events | [ChooseFont](./choosefont.md) [Flush](./flush.md) [NameFromHandle](./namefromhandle.md) [GreetBitmap](./greetbitmap.md) [GetCommandLine](./getcommandline.md) [GetCommandLineArgs](./getcommandlineargs.md) [GetEnvironment](./getenvironment.md) [ListTypeLibs](./listtypelibs.md) [DeleteTypeLib](./deletetypelib.md) [SetServiceState](./setservicestate.md) [GetServiceState](./getservicestate.md) [GetTextSize](./gettextsize.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) [TCPGetHostID](./tcpgethostid.md) [GetBuildID](./getbuildid.md) [Wait](./wait.md) | [ChooseFont](./choosefont.md) | [Flush](./flush.md) | [NameFromHandle](./namefromhandle.md) | [GreetBitmap](./greetbitmap.md) | [GetCommandLine](./getcommandline.md) | [GetCommandLineArgs](./getcommandlineargs.md) | [GetEnvironment](./getenvironment.md) | [ListTypeLibs](./listtypelibs.md) | [DeleteTypeLib](./deletetypelib.md) | [SetServiceState](./setservicestate.md) | [GetServiceState](./getservicestate.md) | [GetTextSize](./gettextsize.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) | [TCPGetHostID](./tcpgethostid.md) | [GetBuildID](./getbuildid.md) | [Wait](./wait.md) |  |
-| [ChooseFont](./choosefont.md) | [Flush](./flush.md) | [NameFromHandle](./namefromhandle.md) |
-| [GreetBitmap](./greetbitmap.md) | [GetCommandLine](./getcommandline.md) | [GetCommandLineArgs](./getcommandlineargs.md) |
-| [GetEnvironment](./getenvironment.md) | [ListTypeLibs](./listtypelibs.md) | [DeleteTypeLib](./deletetypelib.md) |
-| [SetServiceState](./setservicestate.md) | [GetServiceState](./getservicestate.md) | [GetTextSize](./gettextsize.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) | [TCPGetHostID](./tcpgethostid.md) |
-| [GetBuildID](./getbuildid.md) | [Wait](./wait.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
-There is a single Root object called `'.'` which is always present. It cannot be created using `⎕WC` nor can it be destroyed.
+There is a single Root object called `'.'` which is always present. It cannot be created using [`⎕WC`](../../Language/System%20Functions/wc.htm) nor can it be destroyed.
 
 
 
@@ -56,7 +26,7 @@ The [Caption](./caption.md) and [IconObj](./iconobj.md) properties of `'.'` are 
 For the Root object, the value of [Posn](./posn.md) is (0,0). The value of [Size](./size.md) is either (100,100) if [Coord](./coord.md) is `'Prop'`, or the size of the screen in pixels if [Coord](./coord.md) is `'Pixel'`. [XRange](./xrange.md) and [YRange](./yrange.md) both have the value (0,100). The [DevCaps](./devcaps.md) property reports the physical size of the screen in terms of both pixels and millimetres. It also reports the number of colours available.
 
 
-The [FontList](./fontlist.md) property provides a list of all the character fonts that are available. The [PrintList](./printlist.md) property provides a list of all the installed printers. These properties are *read-only* and may not be changed using `⎕WS`
+The [FontList](./fontlist.md) property provides a list of all the character fonts that are available. The [PrintList](./printlist.md) property provides a list of all the installed printers. These properties are *read-only* and may not be changed using [`⎕WS`](../../Language/System%20Functions/ws.htm)
 
 
 As the default value of [Coord](./coord.md) is `'Inherit'` for all other objects, the value of [Coord](./coord.md) for `'.'` defines the default co-ordinate system. It may be either `'Prop'` (the default) or `'Pixel'`. `'Inherit'` and `'User'` are not allowed.
@@ -83,7 +53,7 @@ The [EdgeStyle](./edgestyle.md) property is used to determine whether or not obj
 The [ExitApp](./exitapp.md) and [ExitWindows](./exitwindows.md) events can be used to prevent the user closing your application from the Windows Task List or by terminating Windows.
 
 
-The expression `⎕EX '.'` deletes all objects owned by the current thread except the Root object itself. In addition, if this expression is executed by thread 0, it resets all the properties of `'.'` to their default values.
+The expression `⎕EX '.'` deletes all objects owned by the current thread **except** the Root object itself. In addition, if this expression is executed by thread 0, it resets all the properties of `'.'` to their default values.
 
 #### Exposing Root members
 
@@ -103,16 +73,7 @@ There are a number of elements that control whether or not Root members are expo
 2. This flag may be changed dynamically using the **Options/Object Syntax/Expose Root Properties** menu item on the Session or using `2401⌶`.  If the workspace is subsequently saved, the current value of the flag is saved with it.
 3. The value of the flag in a `CLEAR WS` is determined by the PropertyExposeRoot parameter. Under Windows, this parameter is associated with the **Expose properties of Root** checkbox on the **Object Syntax** Tab of the **Configuration** dialog box. When you change the value of this checkbox and close the **Configuration** dialog by clicking **OK**, the value of the PropertyExposeRoot parameter is immediately updated in the user's section of the Registry. However, the value of the flag *in the current workspace* is not changed. The PropertyExposeRoot parameter only defines the value of the flag in a `CLEAR WS`, so if you subsequently type `)CLEAR`, the current value of the parameter in the Registry determines whether or not Root members are exposed and sets the flag in the workspace accordingly.
 
-For further information, see 
-UI Guide: 
-
- Session Menubar/Options Menu, 
-Installation & Configuration Guide: 
-
-Configuration Dialog/Object Syntax Tab and PropertyExposeRoot Parameter and 
-Language Reference Guide: 
-
-Expose Root PropertiesThe Options Menu on page 1,  PropertyExposeRoot on page 1, and Expose Root Properties on page 1.
+For further information, see [The Options Menu on page 1](../../UserGuide/The%20APL%20Environment/Session%20MenuBar.htm#Options_Menu), [ PropertyExposeRoot on page 1](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#PropertyExposeRoot), and [Expose Root Properties on page 1](../../Language/I%20Beam%20Functions/Expose%20Root%20Properties.htm#ExposeRootPropertiesI-Beam).
 
 #### Notes:
 

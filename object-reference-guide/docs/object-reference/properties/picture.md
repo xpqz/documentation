@@ -5,18 +5,10 @@
 
 <h1 class="heading"><span class="name">Picture</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](../a-z/activexcontrol.md) [Button](../a-z/button.md) [Clipboard](../a-z/clipboard.md) [CoolBand](../a-z/coolband.md) [Form](../a-z/form.md) [Group](../a-z/group.md) [Image](../a-z/image.md) [MDIClient](../a-z/mdiclient.md) [SM](../a-z/sm.md) [Static](../a-z/static.md) [StatusBar](../a-z/statusbar.md) [StatusField](../a-z/statusfield.md) [SubForm](../a-z/subform.md) [TabBar](../a-z/tabbar.md) [ToolBar](../a-z/toolbar.md) | [ActiveXControl](../a-z/activexcontrol.md) | [Button](../a-z/button.md) | [Clipboard](../a-z/clipboard.md) | [CoolBand](../a-z/coolband.md) | [Form](../a-z/form.md) | [Group](../a-z/group.md) | [Image](../a-z/image.md) | [MDIClient](../a-z/mdiclient.md) | [SM](../a-z/sm.md) | [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [StatusField](../a-z/statusfield.md) | [SubForm](../a-z/subform.md) | [TabBar](../a-z/tabbar.md) | [ToolBar](../a-z/toolbar.md) |
-| --- | --- | ---  |
-| [ActiveXControl](../a-z/activexcontrol.md) | [Button](../a-z/button.md) | [Clipboard](../a-z/clipboard.md) |
-| [CoolBand](../a-z/coolband.md) | [Form](../a-z/form.md) | [Group](../a-z/group.md) |
-| [Image](../a-z/image.md) | [MDIClient](../a-z/mdiclient.md) | [SM](../a-z/sm.md) |
-| [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [StatusField](../a-z/statusfield.md) |
-| [SubForm](../a-z/subform.md) | [TabBar](../a-z/tabbar.md) | [ToolBar](../a-z/toolbar.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 The Picture property specifies a bitmap, icon, or other image for an object.
@@ -27,6 +19,7 @@ For [Button](../a-z/button.md), [Form](../a-z/form.md), [Group](../a-z/group.md)
 
 
 When it refers to a [Metafile](../a-z/metafile.md), the Picture property specifies the name of, or ref to, the [Metafile](../a-z/metafile.md) to be drawn in the object. When it refers to a [Bitmap](../a-z/bitmap.md) or [Icon](../a-z/icon.md), the value of the Picture property is a 2-element vector whose elements specify the name of, or ref to, the [Bitmap](../a-z/bitmap.md), or [Icon](../a-z/icon.md), and the manner in which it is displayed. This is specified as an integer as follows:
+
 
 | 0 | The [Bitmap](../a-z/bitmap.md) or [Icon](../a-z/icon.md) is drawn in        the top left corner of the object. |
 | --- | ---  |

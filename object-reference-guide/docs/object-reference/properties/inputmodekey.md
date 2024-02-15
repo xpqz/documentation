@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">InputModeKey</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property defines the keystroke used to switch from Scroll mode to InCell mode in a [Grid](../a-z/grid.md). It applies only where the [Grid](../a-z/grid.md) has a *floating*[Edit](../a-z/edit.md) control. See the description of the [InputMode](../a-z/inputmode.md) property for further details.

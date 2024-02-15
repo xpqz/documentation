@@ -76,7 +76,7 @@ For example: `NV`: numeric vector, `CM`: character matrix, `PV`: nested vector.
 
 `NA⊃¨⊂XV` is implemented as `XV[NA]`, which is significantly faster. The two are equivalent but the former now has no performance penalty.
 
-`,/` is special-cased only for vectors of vectors or scalars. Otherwise, the expression is evaluated as a series of concatenations. Recognition of this idiom turns join from an *n-squared* algorithm into a linear one. In other words, the improvement factor is proportional to the size of the argument vector.
+`,/` is special-cased only for vectors of vectors or scalars. Otherwise, the expression is evaluated as a series of concatenations. Recognition of this idiom turns **join** from an *n-squared* algorithm into a linear one. In other words, the improvement factor is proportional to the size of the argument vector.
 
 `⊃⌽` and `⊃⌽,` now take constant time. Without idiom recognition, the time taken depends linearly on the number of items in the argument.
 
@@ -160,7 +160,7 @@ Similarly, if `M` is a matrix, then:
 
 The idiom generalises uniformly to higher-rank arrays.
 
-Euler's idiom `*○NA` produces accurate results for right argument values that are a multiple of `0J0.5`. This is so that Euler's famous identity `0=1+*○0J1` holds, despite pi being represented as a floating point number.
+**Euler's idiom** `*○NA` produces accurate results for right argument values that are a multiple of `0J0.5`. This is so that Euler's famous identity `0=1+*○0J1` holds, despite pi being represented as a floating point number.
 
 For clarification; `XA↓⍨←NS`. If `NS` is `¯3` then the idiom removes the last `-¯3` (i.e. 3) items.
 

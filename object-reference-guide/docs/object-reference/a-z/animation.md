@@ -4,39 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Animation</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Animation.htm) | [Children](../ChildLists/Animation.htm) | [Properties](../PropLists/Animation.htm) | [Methods](../MethodLists/Animation.htm) | [Events](../EventLists/Animation.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The Animation object displays simple animations from basic .AVI files or resources. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [AnimOpen](./animopen.md) [AnimClose](./animclose.md) [AnimPlay](./animplay.md) [AnimStop](./animstop.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [AnimOpen](./animopen.md) | [AnimClose](./animclose.md) | [AnimPlay](./animplay.md) | [AnimStop](./animstop.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [AnimOpen](./animopen.md) | [AnimClose](./animclose.md) | [AnimPlay](./animplay.md) |
-| [AnimStop](./animstop.md) |  |  |
-| Children | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [AnimOpen](./animopen.md) [AnimClose](./animclose.md) [AnimPlay](./animplay.md) [AnimStop](./animstop.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [AnimOpen](./animopen.md) | [AnimClose](./animclose.md) | [AnimPlay](./animplay.md) | [AnimStop](./animstop.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [AnimOpen](./animopen.md) | [AnimClose](./animclose.md) | [AnimPlay](./animplay.md) |
-| [AnimStop](./animstop.md) |  |  |
-| Properties | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [AnimOpen](./animopen.md) [AnimClose](./animclose.md) [AnimPlay](./animplay.md) [AnimStop](./animstop.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [AnimOpen](./animopen.md) | [AnimClose](./animclose.md) | [AnimPlay](./animplay.md) | [AnimStop](./animstop.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [AnimOpen](./animopen.md) | [AnimClose](./animclose.md) | [AnimPlay](./animplay.md) |
-| [AnimStop](./animstop.md) |  |  |
-| Methods | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [AnimOpen](./animopen.md) [AnimClose](./animclose.md) [AnimPlay](./animplay.md) [AnimStop](./animstop.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [AnimOpen](./animopen.md) | [AnimClose](./animclose.md) | [AnimPlay](./animplay.md) | [AnimStop](./animstop.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [AnimOpen](./animopen.md) | [AnimClose](./animclose.md) | [AnimPlay](./animplay.md) |
-| [AnimStop](./animstop.md) |  |  |
-| Events | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [AnimOpen](./animopen.md) [AnimClose](./animclose.md) [AnimPlay](./animplay.md) [AnimStop](./animstop.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [AnimOpen](./animopen.md) | [AnimClose](./animclose.md) | [AnimPlay](./animplay.md) | [AnimStop](./animstop.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [AnimOpen](./animopen.md) | [AnimClose](./animclose.md) | [AnimPlay](./animplay.md) |
-| [AnimStop](./animstop.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The Animation object displays simple animations from basic .AVI files or resources.

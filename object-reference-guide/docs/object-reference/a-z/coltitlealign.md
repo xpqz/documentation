@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ColTitleAlign</span></h1>
+
 | Applies To: | [Grid](./grid.md) | [ListView](./listview.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) [ListView](./listview.md) | [Grid](./grid.md) | [ListView](./listview.md) |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) | [ListView](./listview.md) |  |
 
-
-Description
+**Description**
 
 
 The ColTitleAlign property specifies the alignment of column titles. For a [ListView](./listview.md) object this is only relevant only when the [View](view.md) property is set to `'Report'`. ColTitleAlign is either a simple character vector, or a vector of character vectors with one element per column.

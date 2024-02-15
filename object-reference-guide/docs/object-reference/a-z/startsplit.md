@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">StartSplit</span></h1>
+
 | Applies To: | [Splitter](./splitter.md) |
 | --- | ---  |
 
-| Applies To: | [Splitter](./splitter.md) | [Splitter](./splitter.md) |  |  |
-| --- | --- | ---  |
-| [Splitter](./splitter.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user depresses the left mouse button over a [Splitter](./splitter.md) object to signify the beginning of a drag operation.
@@ -22,6 +19,7 @@ This event is reported for information alone. You may not disable or nullify the
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

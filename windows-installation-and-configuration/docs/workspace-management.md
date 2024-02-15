@@ -34,11 +34,5 @@ The system function `⎕WA` may therefore be used judiciously (workspace reorgan
 
 Note that in Dyalog APL, the SYMBOL TABLE is entirely dynamic and grows and shrinks in size automatically. There is no `SYMBOL TABLE FULL` condition.
 
-Additional functions for managing the memory used by the workspace are described in  
-Language Reference Guide: 
-
-Memory Management Statistics Memory Manager Statistics: on page 1 and
-		                                                                                    
-Language Reference Guide: 
-
-Specify Workspace Available Specify Workspace Available: on page 1.
+Additional functions for managing the memory used by the workspace are described in   [Memory Manager Statistics: on page 1](../../Language/I%20Beam%20Functions/Memory%20Manager%20Statistics.htm#MemoryManagerStatistics) and
+		                                                                                     [Specify Workspace Available: on page 1](../../Language/I%20Beam%20Functions/Specify%20Workspace%20Available.htm#Specify_Workspace_Available).

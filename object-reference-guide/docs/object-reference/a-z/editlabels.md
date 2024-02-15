@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">EditLabels</span></h1>
+
 | Applies To: | [ListView](./listview.md) | [TreeView](./treeview.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ListView](./listview.md) [TreeView](./treeview.md) | [ListView](./listview.md) | [TreeView](./treeview.md) |  |
-| --- | --- | ---  |
-| [ListView](./listview.md) | [TreeView](./treeview.md) |  |
 
-
-Description
+**Description**
 
 
 The EditLabels property is Boolean and specifies whether or not the labels (specified by the Items property) in a [ListView](./listview.md) or [TreeView](./treeview.md) object may be edited by the user. Its default value is 0 (editing is not allowed).

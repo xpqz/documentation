@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">CurrentColor</span></h1>
+
 | Applies To: | [ColorButton](./colorbutton.md) |
 | --- | ---  |
 
-| Applies To: | [ColorButton](./colorbutton.md) | [ColorButton](./colorbutton.md) |  |  |
-| --- | --- | ---  |
-| [ColorButton](./colorbutton.md) |  |  |
 
-
-Description
+**Description**
 
 
 

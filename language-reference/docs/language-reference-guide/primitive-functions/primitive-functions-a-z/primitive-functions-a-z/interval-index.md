@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Interval Index</span><span class="command">R←X⍸Y</span></h1>
 
-Classic Edition:  the symbol `⍸` (Iota Underbar) is not available in Classic Edition, and Interval Index is instead represented by `⎕U2378`.
+**Classic Edition:**  the symbol `⍸` (Iota Underbar) is not available in Classic Edition, and Interval Index is instead represented by `⎕U2378`.
 
 
 `X` is an ordered non-scalar array that represents a set of intervals or ranges.
@@ -18,6 +18,7 @@ Note that the `i`th interval starts at  `X[i]`, then includes all subsequent val
 
 For example, if `X` is  `(1 3 5)` it defines 4 intervals numbered 0 to 3 as follows.
 
+
 | 0 | less than 1 | `<1` |
 | --- | --- | ---  |
 | 1 | between 1 and 3 | `(≥1)∧(<3)` |
@@ -28,6 +29,7 @@ For example, if `X` is  `(1 3 5)` it defines 4 intervals numbered 0 to 3 as foll
 
 
 If `X` is `'AEIOU'` it defines 6 intervals numbered 0 to 5 as follows:
+
 
 | 0 | before A | `⎕UCS 0,⍳64` |
 | --- | --- | ---  |

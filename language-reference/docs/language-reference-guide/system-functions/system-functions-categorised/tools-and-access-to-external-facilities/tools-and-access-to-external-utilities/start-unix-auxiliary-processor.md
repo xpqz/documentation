@@ -21,10 +21,10 @@ Although it is still possible for users to create their own APs, Dyalog strongly
 The shy result `R` is the process id of the Auxiliary Processor task.
 
 
-The effect of starting an AP is that one or more external functions are defined in the workspace. These appear as locked functions and may be used in exactly the same way as regular defined functions.
+The effect of starting an AP is that one or more **external functions** are defined in the workspace. These appear as locked functions and may be used in exactly the same way as regular defined functions.
 
 
-When an external function is used in an expression, the argument(s) (if any) are piped to the AP for processing. If the function returns a result, APL halts while the AP is processing and waits for the result. If not it continues processing in parallel.
+When an external function is used in an expression, the argument(s) (if any) are **piped** to the AP for processing. If the function returns a result, APL halts while the AP is processing and waits for the result. If not it continues processing in parallel.
 
 
 The syntax of dyadic `⎕SH` is similar to the UNIX execl(2) system call, where '`taskname`' is the name of the auxiliary processor to be executed and `arg0` through `argn` are the parameters of the calling line to be passed to the task, viz.

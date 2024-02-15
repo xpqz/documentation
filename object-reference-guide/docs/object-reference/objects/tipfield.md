@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">TipField</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/TipField.htm) | [Children](../ChildLists/TipField.htm) | [Properties](../PropLists/TipField.htm) | [Methods](../MethodLists/TipField.htm) | [Events](../EventLists/TipField.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | To display pop-up help. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| Children | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| Properties | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| Methods | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| Events | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The TipField is used to display pop-up help when the user moves the mouse pointer over an object.

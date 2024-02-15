@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">TCPGetHostID</span></h1>
+
 | Applies To: | [Root](./root.md) | [TCPSocket](./tcpsocket.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Root](./root.md) [TCPSocket](./tcpsocket.md) | [Root](./root.md) | [TCPSocket](./tcpsocket.md) |  |
-| --- | --- | ---  |
-| [Root](./root.md) | [TCPSocket](./tcpsocket.md) |  |
 
-
-Description
+**Description**
 
 
 This method is used to obtain the IP Address of your PC.

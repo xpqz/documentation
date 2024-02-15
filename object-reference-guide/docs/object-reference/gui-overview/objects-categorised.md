@@ -4,7 +4,8 @@
 
 <h1 class="heading"><span class="name">Objects Categorised</span></h1>
 
-Objects: A-Z
+[Objects: A-Z](objects-a-z.md)
+
 
 | System Objects | System Objects |
 | --- | ---  |
@@ -86,7 +87,7 @@ Objects: A-Z
 | [ActiveXControl](../a-z/activexcontrol.md) | represents an ActiveX control written in Dyalog APL |
 | [HTMLRenderer](../a-z/htmlrenderer.md) | displays HTML content |
 | [NetClient](../a-z/netclient.md) | provides access to .NET Classes |
-| NetControl | instantiates a .NET Control. |
+| [NetControl](../Objects/NetControl.htm) | instantiates a .NET Control. |
 | [NetType](../a-z/nettype.md) | exports an APL namespace as a Net Class |
 | [OCXClass](../a-z/ocxclass.md) | provides access to OLE Custom Controls |
 | [OLEClient](../a-z/oleclient.md) | provides access to OLE Automation objects |

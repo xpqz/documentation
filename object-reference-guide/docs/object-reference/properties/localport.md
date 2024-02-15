@@ -4,19 +4,16 @@
 
 
 <h1 class="heading"><span class="name">LocalPort</span></h1>
+
 | Applies To: | [TCPSocket](../a-z/tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](../a-z/tcpsocket.md) | [TCPSocket](../a-z/tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](../a-z/tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 The LocalPort property is a scalar integer in the range 1-65536 that
-identifies the port number associated with a [TCPSocket](../a-z/tcpsocket.md)
+identifies the [port number](../Miscellaneous/Port%20Number.htm) associated with a [TCPSocket](../a-z/tcpsocket.md)
  object.
 
 

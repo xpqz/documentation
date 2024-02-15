@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ShowComment</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, a [Grid](./grid.md) will generate a ShowComment event when the user rests the mouse pointer over a commented cell. You may use this event to modify the appearance of the comment dynamically.
@@ -21,6 +18,7 @@ If enabled, a [Grid](./grid.md) will generate a ShowComment event when the user 
 
 
 The event message reported as the result of `⎕DQ` or supplied as the right argument to your callback function is an 8-element vector containing the following:
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

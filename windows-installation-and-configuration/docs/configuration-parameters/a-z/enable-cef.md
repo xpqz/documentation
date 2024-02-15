@@ -1,6 +1,6 @@
 # Enable_CEF
 
-This parameter is a Boolean value with a default value of 1. If set to 0, it disables the [Chromium Embedded Framework (CEF)https://en.wikipedia.org/wiki/Chromium_Embedded_Framework.](https://en.wikipedia.org/wiki/Chromium_Embedded_Framework) and an attempt to create an HTMLRenderer object will fail with an error message.
+This parameter is a Boolean value with a default value of 1. If set to 0, it disables the [Chromium Embedded Framework (CEF).](https://en.wikipedia.org/wiki/Chromium_Embedded_Framework) and an attempt to create an [HTMLRenderer](../../../GUI/Objects/HTMLRenderer.htm#HTMLRenderer_Object) object will fail with an error message.
 
 ## Note
 

@@ -3,27 +3,24 @@
 
 
 <h1 class="heading"><span class="name">Change</span></h1>
+
 | Applies To: | [ButtonEdit](./buttonedit.md) | [Combo](./combo.md) | [Edit](./edit.md) | [RichEdit](./richedit.md) | [Spinner](./spinner.md) |
 | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [ButtonEdit](./buttonedit.md) [Combo](./combo.md) [Edit](./edit.md) [RichEdit](./richedit.md) [Spinner](./spinner.md) | [ButtonEdit](./buttonedit.md) | [Combo](./combo.md) | [Edit](./edit.md) | [RichEdit](./richedit.md) | [Spinner](./spinner.md) |  |
-| --- | --- | ---  |
-| [ButtonEdit](./buttonedit.md) | [Combo](./combo.md) | [Edit](./edit.md) |
-| [RichEdit](./richedit.md) | [Spinner](./spinner.md) |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user alters the text in a [Combo](./combo.md) or [Edit](./edit.md) object (by typing). The event is not applicable for a [Combo](./combo.md) with [Style](./style.md)`'Drop'` because this [Style](./style.md) does not allow the user to alter data. The Change event is not reported repeatedly as the user edits the data. Instead, it is reported when the user indicates that he has finished with the field by :
 
-1. clicking on another object, or
-2. causing an event on another object (without altering the input focus) which will fire a callback function or cause `⎕DQ` to terminate. This can occur if the user chooses a [MenuItem](./menuitem.md), or fires a [Button](./button.md) with the [Default](./default.md) or [Cancel](./cancel.md) property by pressing Enter or Esc, or selects an object using an accelerator key.
+1. clicking on another object, **or**
+2. causing an event on another object (without altering the input focus) which will fire a callback function or cause [`⎕DQ`](../../Language/System%20Functions/dq.htm) to terminate. This can occur if the user chooses a [MenuItem](./menuitem.md), or fires a [Button](./button.md) with the [Default](./default.md) or [Cancel](./cancel.md) property by pressing Enter or Esc, or selects an object using an accelerator key.
 
 The purpose of the Change event is to allow the application to validate data which has been newly entered to the field, before proceeding with another action. It is for this reason that the event is fired not just when the input focus changes, but also when the user takes some action that could cause the application to do something else.
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 3-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 3-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">GridPaste</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user presses Shift+Insert and there is data in the clipboard that is in a suitable format for the [Grid](../a-z/grid.md). The default action of the event is to copy the contents of the clipboard into the currently selected block of cells, or, if no cells are selected, into the block of cells starting at the current cell (CurCell). Note that if there is a selected range of cells and the shape of the data being pasted does not exactly match the size of the selected range, the system generates a [GridPasteError](../a-z/gridpasteerror.md) event in addition to the GridPaste event.
@@ -21,7 +18,8 @@ You may disable the paste facility entirely by setting the action code of the ev
 
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 6-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 6-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

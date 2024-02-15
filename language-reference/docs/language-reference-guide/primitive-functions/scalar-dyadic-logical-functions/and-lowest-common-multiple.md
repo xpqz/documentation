@@ -18,7 +18,7 @@
 
 
 
-Note that the ASCII caret (^) will also be interpreted as an APL And (`^`).
+Note that the ASCII caret (^) will also be interpreted as an APL **And** (`^`).
 
 
 #### Example

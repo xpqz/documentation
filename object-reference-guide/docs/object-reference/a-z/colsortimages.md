@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ColSortImages</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 The ColSortImages property identifies the names of, or refs to, up to three [Bitmap](./bitmap.md) objects that are used to specify the sort images for a [Grid](./grid.md) object.

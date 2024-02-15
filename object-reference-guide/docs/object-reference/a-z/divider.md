@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Divider</span></h1>
+
 | Applies To: | [ToolControl](./toolcontrol.md) |
 | --- | ---  |
 
-| Applies To: | [ToolControl](./toolcontrol.md) | [ToolControl](./toolcontrol.md) |  |  |
-| --- | --- | ---  |
-| [ToolControl](./toolcontrol.md) |  |  |
 
-
-Description
+**Description**
 
 
 The Divider property controls the presence or absence of a recessed line drawn above, below, to the left of, or to the right of a [ToolControl](./toolcontrol.md) object.

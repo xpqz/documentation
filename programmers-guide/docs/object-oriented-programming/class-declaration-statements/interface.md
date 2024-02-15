@@ -9,4 +9,4 @@ An Interface is defined by a Script containing skeleton declarations of Properti
 
 An Interface may not contain Fields.
 
-Properties and Methods defined in an Interface, and the Class functions that implement the Interface, may not contain :Access Statements.
+Properties and Methods defined in an Interface, and the Class functions that implement the Interface, **may not** contain :Access Statements.

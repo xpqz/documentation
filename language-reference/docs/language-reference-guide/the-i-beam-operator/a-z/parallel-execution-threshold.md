@@ -14,11 +14,8 @@ Prior to this call, the default value of the threshold is specified by an enviro
 `R` is the previous value.
 
 
-See 
-Programming Reference Guide: 
-
- Parallel ExecutionParallel Execution
-         on page 1 and Number of Threads on page 1.
+See [Parallel Execution
+         on page 1](../Introduction/Parallel%20Execution.htm#Parallel_Execution) and [Number of Threads on page 1](number-of-threads.md).
 
 
 

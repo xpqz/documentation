@@ -4,39 +4,16 @@
 
 
 <h1 class="heading"><span class="name">ListView</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/ListView.htm) | [Children](../ChildLists/ListView.htm) | [Properties](../PropLists/ListView.htm) | [Methods](../MethodLists/ListView.htm) | [Events](../EventLists/ListView.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The ListView object displays a collection of items. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [GetItemState](./getitemstate.md) [SetItemState](./setitemstate.md) [GetItemPosition](./getitemposition.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [GetItemState](./getitemstate.md) | [SetItemState](./setitemstate.md) | [GetItemPosition](./getitemposition.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [GetItemState](./getitemstate.md) | [SetItemState](./setitemstate.md) |
-| [GetItemPosition](./getitemposition.md) |  |  |
-| Children | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [GetItemState](./getitemstate.md) [SetItemState](./setitemstate.md) [GetItemPosition](./getitemposition.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [GetItemState](./getitemstate.md) | [SetItemState](./setitemstate.md) | [GetItemPosition](./getitemposition.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [GetItemState](./getitemstate.md) | [SetItemState](./setitemstate.md) |
-| [GetItemPosition](./getitemposition.md) |  |  |
-| Properties | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [GetItemState](./getitemstate.md) [SetItemState](./setitemstate.md) [GetItemPosition](./getitemposition.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [GetItemState](./getitemstate.md) | [SetItemState](./setitemstate.md) | [GetItemPosition](./getitemposition.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [GetItemState](./getitemstate.md) | [SetItemState](./setitemstate.md) |
-| [GetItemPosition](./getitemposition.md) |  |  |
-| Methods | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [GetItemState](./getitemstate.md) [SetItemState](./setitemstate.md) [GetItemPosition](./getitemposition.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [GetItemState](./getitemstate.md) | [SetItemState](./setitemstate.md) | [GetItemPosition](./getitemposition.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [GetItemState](./getitemstate.md) | [SetItemState](./setitemstate.md) |
-| [GetItemPosition](./getitemposition.md) |  |  |
-| Events | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [GetItemState](./getitemstate.md) [SetItemState](./setitemstate.md) [GetItemPosition](./getitemposition.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [GetItemState](./getitemstate.md) | [SetItemState](./setitemstate.md) | [GetItemPosition](./getitemposition.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [GetItemState](./getitemstate.md) | [SetItemState](./setitemstate.md) |
-| [GetItemPosition](./getitemposition.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The ListView object is a window that displays a collection of items, each
@@ -149,8 +126,6 @@ The [ItemGroups](./itemgroups.md) and [ItemGroupMetrics](./itemgroupmetrics.md)Â
 ![lvsg1](../img/lvsg1.gif)
 
 
-Note that this feature only applies if Native Look and Feel 
-(see page 1)
- is enabled.
+**Note that this feature only applies if Native Look and Feel (see page 1) is enabled.**
 
 

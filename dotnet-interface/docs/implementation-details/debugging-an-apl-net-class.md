@@ -2,7 +2,7 @@
 
 All DYALOG.NET objects are executed by the Dyalog DLL. The full development version of the Dyalog DLL contains all of the development and debug facilities of the APL Session, including the Editors and Tracer. The run-time version contains no debugging facilities at all. The choice of which version of the Dyalog DLL is used is made when the assembly is exported from APL using the **File|Export** menu, or compiled using dyalogc.exe.
 
-If an APL .NET object that is bound to the full development version generates an untrapped APL error (such as a `VALUE ERROR`) and the client application is configured so that it is allowed to interact with the desktop, the APL code will suspend and the APL Session window will be displayed. Otherwise, it will throw an exception.
+If an APL .NET object that is bound to the full development version generates an untrapped APL error (such as a `VALUE ERROR`) **and** the client application is configured so that it is allowed to interact with the desktop, the APL code will suspend and the APL Session window will be displayed. Otherwise, it will throw an exception.
 
 If an APL .NET object that is bound to the run-time version of the Dyalog DLL generates an untrapped APL error it will throw an exception.
 

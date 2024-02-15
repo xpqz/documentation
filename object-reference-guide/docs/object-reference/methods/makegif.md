@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">MakeGIF</span></h1>
+
 | Applies To: | [Bitmap](../a-z/bitmap.md) |
 | --- | ---  |
 
-| Applies To: | [Bitmap](../a-z/bitmap.md) | [Bitmap](../a-z/bitmap.md) |  |  |
-| --- | --- | ---  |
-| [Bitmap](../a-z/bitmap.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to generate a  GIF representation of a picture from a Bitmap object suitable for display by a Web browser.

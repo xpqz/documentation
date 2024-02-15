@@ -4,28 +4,17 @@
 
 <h1 class="heading"><span class="name">ChooseFont</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](../a-z/activexcontrol.md) [Button](../a-z/button.md) [ButtonEdit](../a-z/buttonedit.md) [Calendar](../a-z/calendar.md) [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [DateTimePicker](../a-z/datetimepicker.md) [Edit](../a-z/edit.md) [Font](../a-z/font.md) [Form](../a-z/form.md) [Grid](../a-z/grid.md) [Group](../a-z/group.md) [Label](../a-z/label.md) [List](../a-z/list.md) [ListView](../a-z/listview.md) [PropertyPage](../a-z/propertypage.md) [PropertySheet](../a-z/propertysheet.md) [RichEdit](../a-z/richedit.md) [Root](../a-z/root.md) [Spinner](../a-z/spinner.md) [Static](../a-z/static.md) [StatusBar](../a-z/statusbar.md) [SubForm](../a-z/subform.md) [TabBtn](../a-z/tabbtn.md) [Text](../a-z/text.md) [TipField](../a-z/tipfield.md) [TreeView](../a-z/treeview.md) | [ActiveXControl](../a-z/activexcontrol.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Calendar](../a-z/calendar.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [Font](../a-z/font.md) | [Form](../a-z/form.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) | [Label](../a-z/label.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [PropertyPage](../a-z/propertypage.md) | [PropertySheet](../a-z/propertysheet.md) | [RichEdit](../a-z/richedit.md) | [Root](../a-z/root.md) | [Spinner](../a-z/spinner.md) | [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [SubForm](../a-z/subform.md) | [TabBtn](../a-z/tabbtn.md) | [Text](../a-z/text.md) | [TipField](../a-z/tipfield.md) | [TreeView](../a-z/treeview.md) |
-| --- | --- | ---  |
-| [ActiveXControl](../a-z/activexcontrol.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) |
-| [Calendar](../a-z/calendar.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) |
-| [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [Font](../a-z/font.md) |
-| [Form](../a-z/form.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) |
-| [Label](../a-z/label.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) |
-| [PropertyPage](../a-z/propertypage.md) | [PropertySheet](../a-z/propertysheet.md) | [RichEdit](../a-z/richedit.md) |
-| [Root](../a-z/root.md) | [Spinner](../a-z/spinner.md) | [Static](../a-z/static.md) |
-| [StatusBar](../a-z/statusbar.md) | [SubForm](../a-z/subform.md) | [TabBtn](../a-z/tabbtn.md) |
-| [Text](../a-z/text.md) | [TipField](../a-z/tipfield.md) | [TreeView](../a-z/treeview.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This method is used to display the standard Windows font selection dialog box.
 
 
 The argument to ChooseFont is `⍬` or a 1 or 2-element array as follows:
+
 
 | `[1]` | Printer name | character scalar or vector. |
 | --- | --- | ---  |
@@ -39,6 +28,7 @@ The dialog box is initialised with the properties of the [Font](../a-z/font.md) 
 
 
 When the user presses the "OK" button, the "Cancel" button or closes the dialog box, ChooseFont terminates. Its result is either 0 (user pressed "Cancel") or a 2-element vector. In the latter case, the first element is an 8-element array that describes the selected font as described below, and the second element is a 3-element RGB colour vector.
+
 
 | `[1]` | Face name of selected font (character vector) |
 | --- | ---  |

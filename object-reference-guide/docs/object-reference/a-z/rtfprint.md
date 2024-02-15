@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">RTFPrint</span></h1>
+
 | Applies To: | [RichEdit](./richedit.md) |
 | --- | ---  |
 
-| Applies To: | [RichEdit](./richedit.md) | [RichEdit](./richedit.md) |  |  |
-| --- | --- | ---  |
-| [RichEdit](./richedit.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to print the contents ([RTFText](./rtftext.md)) of a [RichEdit](./richedit.md) object.
 
 
 The argument to RTFPrint is `⍬`, or a 1 to 4-element array as follows:
+
 
 | `[1]` | Printer name | Optional - character vector (see below) |
 | --- | --- | ---  |
@@ -31,6 +29,7 @@ The argument to RTFPrint is `⍬`, or a 1 to 4-element array as follows:
 
 
 *Print range*may be a simple character vector containing `'All'`, `'Pages'`, or `'Selection'`. Alternatively, it may be a 3 or 4-element nested vector containing:
+
 
 | `[1]` | `'All'` , `'Pages'` , or `'Selection'` |
 | --- | ---  |

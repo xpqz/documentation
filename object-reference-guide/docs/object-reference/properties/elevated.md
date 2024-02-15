@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Elevated</span></h1>
+
 | Applies To: | [Button](../a-z/button.md) |
 | --- | ---  |
 
-| Applies To: | [Button](../a-z/button.md) | [Button](../a-z/button.md) |  |  |
-| --- | --- | ---  |
-| [Button](../a-z/button.md) |  |  |
 
-
-Description
+**Description**
 
 
 The [Elevated](../a-z/elevated.md) property applies only to a [Button](../a-z/button.md) whose Style is `'CommandLink'`.

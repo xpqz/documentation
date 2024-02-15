@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Popup</span></h1>
+
 | Applies To: | [SysTrayItem](./systrayitem.md) | [ToolButton](./toolbutton.md) |
 | --- | --- | ---  |
 
-| Applies To: | [SysTrayItem](./systrayitem.md) [ToolButton](./toolbutton.md) | [SysTrayItem](./systrayitem.md) | [ToolButton](./toolbutton.md) |  |
-| --- | --- | ---  |
-| [SysTrayItem](./systrayitem.md) | [ToolButton](./toolbutton.md) |  |
 
-
-Description
+**Description**
 
 
 The Popup property specifies the name of, or ref to, a (popup) [Menu](./menu.md) object that is associated with a [SysTrayItem](./systrayitem.md) or [ToolButton](./toolbutton.md).

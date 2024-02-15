@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Expanding</span></h1>
+
 | Applies To: | [Grid](./grid.md) | [TreeView](./treeview.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) [TreeView](./treeview.md) | [Grid](./grid.md) | [TreeView](./treeview.md) |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) | [TreeView](./treeview.md) |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported by a [Grid](./grid.md) or a [TreeView](./treeview.md) object just before it is about to expand to show additional rows or children of the current item.
@@ -33,6 +30,7 @@ You may disable the expand operation by setting the action code for the event to
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 3-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

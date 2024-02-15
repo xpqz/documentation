@@ -13,6 +13,7 @@ Compiler User Guide
 
 The optional left-argument `X` must be one of the following:
 
+
 | `X` | Description |
 | --- | ---  |
 | `0` | Set automatic compilation options (default) |
@@ -31,6 +32,7 @@ The nature of `Y` and `R` depend on the value of `X` as follows:
 
 
 `Y` must be an integer 0, 1, 2, or 3.
+
 
 | `Y` | Description |
 | --- | ---  |
@@ -90,12 +92,13 @@ If `Y` is empty, discard any compiled bytecode for all functions and operators i
 The result `R` is a multi-line string (that is, a character vector with embedded newlines) or, if `Y` was either a matrix or a vector of vectors, a vector of such strings. Each string is a human-readable representation of the bytecode of a compiled function or operator.
 
 
-This functionality is provided for information and diagnostic purposes only. The human-readable form of the bytecode is subject to change at any time.
+**This functionality is provided for information and diagnostic purposes only. The human-readable form of the bytecode is subject to change at any time.**
 
 #### X is a namespace reference: Compile With Callbacks
 
 
 `Y` must be a character vector, matrix or vector of vectors specifying the name of a function or operator or a list of such names. The specified functions or operators are compiled in the same way as when `X` = 2  except that the compiler uses the user-defined callback functions in the namespace `X` to obtain information about global names. The namespace `X` can contain any or all of following callback functions:
+
 
 | Callback | Description |
 | --- | ---  |

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ScrollOpposite</span></h1>
+
 | Applies To: | [TabControl](./tabcontrol.md) |
 | --- | ---  |
 
-| Applies To: | [TabControl](./tabcontrol.md) | [TabControl](./tabcontrol.md) |  |  |
-| --- | --- | ---  |
-| [TabControl](./tabcontrol.md) |  |  |
 
-
-Description
+**Description**
 
 
 The ScrollOpposite property specifies that unneeded tabs scroll to the opposite side of a [TabControl](./tabcontrol.md), when a tab is selected.

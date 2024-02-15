@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">AddRow</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported by the [Grid](./grid.md) object if the user presses the Cursor Down key, and the current cell ([CurCell](./curcell.md))
@@ -21,9 +18,10 @@ If you attach a callback function to this event and have it return a value of 0,
 a new row will not be appended to the [Grid](./grid.md).
 
 
-The event message reported as the result of `⎕DQ`,
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm),
 or supplied as the right argument to your callback function, is a 3 element
 vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
@@ -32,6 +30,7 @@ vector as follows :
 
 
 An application may insert a new row into a [Grid](./grid.md) by calling AddRow as a method. The argument is a 1 to 7-element array as follows:
+
 
 | `[1]` | Row number | integer |
 | --- | --- | ---  |

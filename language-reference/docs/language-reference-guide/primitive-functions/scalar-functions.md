@@ -1,35 +1,35 @@
 # Scalar Functions
 
-There is a class of primitive functions termed scalar functions This class is identified in Table 1 below. Scalar functions are pervasive, i.e. their properties apply at all levels of nesting.  Scalar functions have the following properties:
+There is a class of primitive functions termed scalar functions This class is identified in [Table 1](#ScalarPrimitiveFunctions) below. Scalar functions are **pervasive**, i.e. their properties apply at all levels of nesting.  Scalar functions have the following properties:
 
 Scalar Primitive Functions
 
 | Symbol | Monadic | Dyadic |
 | --- | --- | ---  |
-| `+` | Conjugate | Plus (Add) |
-| `-` | Negative | Minus (Subtract) |
-| `×` | Direction (Signum) | Times (Multiply) |
-| `÷` | Reciproca l | Divide |
-| `|` | Magnitude | Residue |
-| `⌊` | Floor | Minimum |
-| `⌈` | Ceiling | Maximum |
-| `*` | Exponential | Power |
-| `⍟` | Natural Logarithm | Logarithm |
-| `○` | Pi Times | Circular |
-| `!` | Factorial | Binomial |
-| `~` | Not | $ |
-| `?` | Roll | $ |
-| `∊` | Type (See Enlist ) | $ |
-| `^` |  | And |
-| `∨` |  | Or |
-| `⍲` |  | Nand |
-| `⍱` |  | Nor |
-| `<` |  | Less |
-| `≤` |  | Less Or Equal |
-| `=` |  | Equal |
-| `≥` |  | Greater Or Equal |
-| `>` |  | Greater |
-| `≠` |  | Not Equal |
+| `+` | [Conjugate](primitive-functions-a-z/primitive-functions-a-z/conjugate.md) | [Plus (Add)](scalar-dyadic-arithmetic-functions/add.md) |
+| `-` | [Negative](scalar-monadic-functions/negative.md) | [Minus (Subtract)](scalar-dyadic-arithmetic-functions/subtract.md) |
+| `×` | [Direction (Signum)](scalar-monadic-functions/direction.md) | [Times (Multiply)](scalar-dyadic-arithmetic-functions/multiply.md) |
+| `÷` | [Reciproca](scalar-monadic-functions/reciprocal.md) l | [Divide](scalar-dyadic-arithmetic-functions/divide.md) |
+| `|` | [Magnitude](scalar-monadic-functions/magnitude.md) | [Residue](scalar-dyadic-arithmetic-functions/residue.md) |
+| `⌊` | [Floor](scalar-monadic-functions/floor.md) | [Minimum](scalar-dyadic-arithmetic-functions/minimum.md) |
+| `⌈` | [Ceiling](scalar-monadic-functions/ceiling.md) | [Maximum](scalar-dyadic-arithmetic-functions/maximum.md) |
+| `*` | [Exponential](scalar-monadic-functions/exponential.md) | [Power](scalar-dyadic-arithmetic-functions/power.md) |
+| `⍟` | [Natural Logarithm](scalar-monadic-functions/natural-logarithm.md) | [Logarithm](scalar-dyadic-arithmetic-functions/logarithm.md) |
+| `○` | [Pi Times](scalar-monadic-functions/pi-times.md) | [Circular](circular.md) |
+| `!` | [Factorial](scalar-monadic-functions/factorial.md) | [Binomial](scalar-dyadic-arithmetic-functions/binomial.md) |
+| `~` | [Not](scalar-monadic-functions/not.md) | $ |
+| `?` | [Roll](scalar-monadic-functions/roll.md) | $ |
+| `∊` | [Type](scalar-monadic-functions/type.md) (See [Enlist](non-scalar-monadic-structural-functions/enlist.md) ) | $ |
+| `^` |  | [And](scalar-dyadic-logical-functions/and-lowest-common-multiple.md) |
+| `∨` |  | [Or](scalar-dyadic-logical-functions/or-greatest-common-divisor.md) |
+| `⍲` |  | [Nand](scalar-dyadic-logical-functions/nand.md) |
+| `⍱` |  | [Nor](scalar-dyadic-logical-functions/nor.md) |
+| `<` |  | [Less](scalar-dyadic-logical-functions/less.md) |
+| `≤` |  | [Less Or Equal](scalar-dyadic-logical-functions/less-or-equal.md) |
+| `=` |  | [Equal](scalar-dyadic-logical-functions/equal.md) |
+| `≥` |  | [Greater Or Equal](scalar-dyadic-logical-functions/greater-or-equal.md) |
+| `>` |  | [Greater](scalar-dyadic-logical-functions/greater.md) |
+| `≠` |  | [Not Equal](scalar-dyadic-logical-functions/not-equal.md) |
 | $ Dyadic form is not scalar | $ Dyadic form is not scalar | $ Dyadic form is not scalar |
 
 ### Monadic Scalar Functions
@@ -77,4 +77,4 @@ Scalar Primitive Functions
 0  0 0
 ```
 
-Note:  The Axis operator applies to all scalar dyadic functions.
+**Note:**  The Axis operator applies to all scalar dyadic functions.

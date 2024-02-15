@@ -6,6 +6,7 @@
 
 [Objects: Categorised](objects-categorised.md)
 
+
 | Object | Description |
 | --- | ---  |
 | [ActiveXContainer](../a-z/activexcontainer.md) | represents the application hosting a Dyalog APL       ActiveXControl |
@@ -48,7 +49,7 @@
 | [Metafile](../a-z/metafile.md) | provides access to Windows [Metafile](../a-z/metafile.md) s |
 | [MsgBox](../a-z/msgbox.md) | displays message in dialog box and waits for response |
 | [NetClient](../a-z/netclient.md) | Provides access to .NET Classes |
-| NetControl | Provides access to .NET controls. |
+| [NetControl](../Objects/NetControl.htm) | Provides access to .NET controls. |
 | [NetType](../a-z/nettype.md) | Exports a namespace as a .NET class |
 | [OCXClass](../a-z/ocxclass.md) | provides access to OLE Custom Controls |
 | [OLEClient](../a-z/oleclient.md) | provides access to OLE Automation objects |

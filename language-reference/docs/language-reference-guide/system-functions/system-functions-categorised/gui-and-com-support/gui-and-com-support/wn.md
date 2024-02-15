@@ -24,10 +24,10 @@ Names of objects further down the tree are not returned, but can be obtained by 
 If `Y` refers to a namespace with no GUI element, a `VALUE ERROR` is reported.
 
 
-Note that `⎕WN` reports only those child objects visible from the current thread.
+Note that `⎕WN` reports **only** those child objects visible from the current thread.
 
 
-GUI objects are named relative to the current namespace.  The following examples are equivalent:
+GUI objects are named **relative** to the current namespace.  The following examples are equivalent:
 ```apl
       ⎕WN 'F1.B1'
       F1.⎕WN 'B1'
@@ -50,6 +50,6 @@ GUI objects are named relative to the current namespace.  The following example
 ```
 
 
-Windows only.
+**Windows only.**
 
 

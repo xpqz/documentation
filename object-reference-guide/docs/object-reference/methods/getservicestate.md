@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GetServiceState</span></h1>
+
 | Applies To: | [Root](../a-z/root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](../a-z/root.md) | [Root](../a-z/root.md) |  |  |
-| --- | --- | ---  |
-| [Root](../a-z/root.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to obtain the current state of a Dyalog APL service running under Windows. See  

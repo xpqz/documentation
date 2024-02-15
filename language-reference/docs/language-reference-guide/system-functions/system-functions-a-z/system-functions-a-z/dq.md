@@ -42,17 +42,17 @@ These are treated as follows:
 ##### Action = ¯1
 
 
-This disables the event.  The "standard" processing appropriate to the object and type of event is not performed, or in some cases is reversed.  For example, if the "action code" for a KeyPress event (22) is set to `¯1`,  `⎕DQ` simply ignores all keystrokes for the object in question.
+This disables the event.  The "standard" processing appropriate to the object and type of event is **not** performed, or in some cases is reversed.  For example, if the "action code" for a KeyPress event (22) is set to `¯1`,  `⎕DQ` simply ignores all keystrokes for the object in question.
 
 ##### Action = 1
 
 
-`⎕DQ` terminates and returns information pertaining to the event (the event message) in `R` as a nested vector whose first two elements are the name of the object (that generated the event) and the event code.  `R` may contain additional elements depending upon the type of event that occurred.
+`⎕DQ` terminates and returns information pertaining to the event (the **event message**) in `R` as a nested vector whose first two elements are the name of the object (that generated the event) and the event code.  `R` may contain additional elements depending upon the type of event that occurred.
 
 ##### Action = fn {larg}
 
 
-`fn` is a character vector containing the name of a *callback* function.  This function is automatically invoked by `⎕DQ` whenever the event occurs, and prior to the standard processing for the event.  The callback is supplied the event message (see above) as its right argument, and, if specified, the array `larg` as its left argument.  If the callback function fails to return a result, or returns the scalar value 1,  `⎕DQ` then performs the standard processing appropriate to the object and type of event.  If the callback function returns a scalar 0, the standard processing is not performed or in some cases is reversed.
+`fn` is a character vector containing the name of a *callback* function.  This function is automatically invoked by `⎕DQ` whenever the event occurs, and **prior**to the standard processing for the event.  The callback is supplied the **event message** (see above) as its right argument, and, if specified, the array `larg` as its left argument.  If the callback function fails to return a result, or returns the scalar value 1,  `⎕DQ` then performs the standard processing appropriate to the object and type of event.  If the callback function returns a scalar 0, the standard processing is not performed or in some cases is reversed.
 
 
 If the callback function returns its event message with some of the parameters changed, these changes are incorporated into the standard processing.  An example would be the processing of a keystroke message where the callback function substitutes upper case for lower case characters. The exact nature of this processing is described in the reference section on each event type.
@@ -74,7 +74,7 @@ If `Action` is set to a character vector whose first element is the execute symb
 `⎕DQ` terminates, returning the shy result `R`, in one of four instances.
 
 
-Firstly, `⎕DQ` terminates when an event occurs whose "action code" is 1.  In this case, its result is a nested vector containing the event message associated with the event.  The structure of an event message varies according to the event type (see *Object Reference*).  However, an event message has at least two elements of which the first is a ref to the object or a character vector containing the name of the object, and the second is a character vector or numeric code which identifies the event type.
+Firstly, `⎕DQ` terminates when an event occurs whose "action code" is 1.  In this case, its result is a nested vector containing the **event message** associated with the event.  The structure of an event message varies according to the event type (see *Object Reference*).  However, an event message has at least two elements of which the first is a ref to the object or a character vector containing the name of the object, and the second is a character vector or numeric code which identifies the event type.
 
 
 
@@ -87,6 +87,6 @@ Thirdly, `⎕DQ` terminates if the object named in its right argument is a speci
 Finally, `⎕DQ` terminates with a `VALUE ERROR` if it attempts to execute a callback function that is undefined.
 
 
-Windows only.
+**Windows only.**
 
 

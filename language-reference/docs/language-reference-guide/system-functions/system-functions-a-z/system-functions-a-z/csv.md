@@ -43,6 +43,7 @@ Fixed-width fields do not require these options and they are ignored if fixed-wi
 
 `Y` is an array that specifies just the source of the CSV data (see below) or a 1,2,3 or 4-element vector containing:
 
+
 | `[1]` | Source of CSV Data |
 | --- | ---  |
 | `[2]` | Description of the CSV data |
@@ -83,6 +84,7 @@ If `Y[1]` is a character array containing CSV data **Description** is a characte
 
 This is a scalar numeric code or vector of numeric codes that specifies the field types from the list below. If **Column Types** is zilde or omitted, the default is 1 (all fields are character).
 
+
 | `0` | The field is ignored. |
 | --- | ---  |
 | `1` | The field contains character data. |
@@ -108,6 +110,7 @@ This is a Boolean value (default 0) to specify whether or not the first record i
 
 
 Monadic `⎕CSV` may be applied using the  Variant operator with the following options. The Principal option is Invert.
+
 
 | Name | Meaning | Default |
 | --- | --- | ---  |
@@ -136,6 +139,7 @@ Other options defined for export are also accepted but ignored.
 
 
 This option specifies how the CSV data should be returned as follows:
+
 
 | 0 | A table (a matrix whose elements are character vectors or scalars or numbers). |
 | --- | ---  |
@@ -304,6 +308,7 @@ The left argument `X` is either:
 
 `Y` is a 1 or 2-element vector containing:
 
+
 | `[1]` | Destination of CSV Data (see below) |
 | --- | ---  |
 | `[2]` | Description of the CSV data (see below) |
@@ -336,6 +341,7 @@ If `Y[1]` is empty, **Description** may be a character scalar `'S'` (simple) or 
 
 
 Dyadic `⎕CSV` may be applied using the  Variant operator with the following options.
+
 
 | Name | Meaning | Default |
 | --- | --- | ---  |

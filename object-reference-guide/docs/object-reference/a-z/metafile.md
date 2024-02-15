@@ -4,37 +4,29 @@
 
 
 <h1 class="heading"><span class="name">Metafile</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Metafile.htm) | [Children](../ChildLists/Metafile.htm) | [Properties](../PropLists/Metafile.htm) | [Methods](../MethodLists/Metafile.htm) | [Events](../EventLists/Metafile.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | This object represents a picture in Windows Metafile format. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [FileRead](./fileread.md) [FileWrite](./filewrite.md) | [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| Children | [Detach](./detach.md) [FileRead](./fileread.md) [FileWrite](./filewrite.md) | [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| Properties | [Detach](./detach.md) [FileRead](./fileread.md) [FileWrite](./filewrite.md) | [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| Methods | [Detach](./detach.md) [FileRead](./fileread.md) [FileWrite](./filewrite.md) | [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| Events | [Detach](./detach.md) [FileRead](./fileread.md) [FileWrite](./filewrite.md) | [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
-| [Detach](./detach.md) | [FileRead](./fileread.md) | [FileWrite](./filewrite.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The Windows Metafile is a mechanism for representing a picture in terms of a collection of graphical components. Windows Metafiles are distributed in special files (.WMF) from which they are loaded into memory for use by an application. Once loaded a Metafile is a Windows "resource" that can be used in a variety of ways. The Metafile object represents this resource.
 
 
 
-The [File](./file.md) property specifies the name of a .WMF file from which the Metafile is to be loaded or to which it is to be saved. If you specify [File](./file.md) with `⎕WC` the Metafile object is loaded from it. If you specify [File](./file.md) with `⎕WS` no action takes place until you instruct the Metafile object to re-initialise itself from the file or to save itself to the file. These operations are performed using the [FileRead](./fileread.md) and [FileWrite](./filewrite.md) methods. If you omit the [File](./file.md) property in the argument to `⎕WC` or if you specify a null vector, the Metafile object is initially empty. The following example loads the picture defined by the GOLF.WMF Metafile that is distributed with Microsoft Office.
+The [File](./file.md) property specifies the name of a .WMF file from which the Metafile is to be loaded or to which it is to be saved. If you specify [File](./file.md) with [`⎕WC`](../../Language/System%20Functions/wc.htm) the Metafile object is loaded from it. If you specify [File](./file.md) with [`⎕WS`](../../Language/System%20Functions/ws.htm) no action takes place until you instruct the Metafile object to re-initialise itself from the file or to save itself to the file. These operations are performed using the [FileRead](./fileread.md) and [FileWrite](./filewrite.md) methods. If you omit the [File](./file.md) property in the argument to [`⎕WC`](../../Language/System%20Functions/wc.htm) or if you specify a null vector, the Metafile object is initially empty. The following example loads the picture defined by the GOLF.WMF Metafile that is distributed with Microsoft Office.
 ```apl
       'GOLF' ⎕WC 'Metafile' 'C:\MSOFFICE\CLIPART\GOLF'
 ```
 
 
-Whether or not the Metafile object is initialised from a file, you can add graphical components to it by creating child objects. However the Metafile behaves like a [Bitmap](bitmap.md) object in that its children cannot be modified using `⎕WS` nor can they be removed using `⎕EX`. The components of a Metafile that has been initialised from a .WMF file also cannot be referenced in any way. It is therefore recommended that you use unnamed objects when you create the graphical components of a Metafile.
+Whether or not the Metafile object is initialised from a file, you can add graphical components to it by creating child objects. However the Metafile behaves like a [Bitmap](bitmap.md) object in that its children cannot be modified using [`⎕WS`](../../Language/System%20Functions/ws.htm) nor can they be removed using `⎕EX`. The components of a Metafile that has been initialised from a .WMF file also cannot be referenced in any way. It is therefore recommended that you use unnamed objects when you create the graphical components of a Metafile.
 
 
 The following statements create an empty Metafile called `MF` and then draw a line and circle in it.

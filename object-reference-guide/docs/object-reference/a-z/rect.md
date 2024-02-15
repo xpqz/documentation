@@ -4,27 +4,19 @@
 
 
 <h1 class="heading"><span class="name">Rect</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Rect.htm) | [Children](../ChildLists/Rect.htm) | [Properties](../PropLists/Rect.htm) | [Methods](../MethodLists/Rect.htm) | [Events](../EventLists/Rect.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | A graphical object used to draw boxes. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Children | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Properties | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Methods | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Events | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
-The [Points](./points.md) property specifies one or more sets of co-ordinates which define the position(s) of one or more rectangles. The position of a rectangle is defined to be the position of the corner that is nearest to the origin of its parent. The default is therefore its top-left corner. The [Size](./size.md) property specifies the height and width of each rectangle, measuring away from the origin.
+The [Points](./points.md) property specifies one or more sets of co-ordinates which define the position(s) of one or more rectangles. The position of a rectangle is defined to be the position of the corner that is **nearest** to the origin of its parent. The default is therefore its top-left corner. The [Size](./size.md) property specifies the height and width of each rectangle, measuring away from the origin.
 
 
 
@@ -61,7 +53,7 @@ For a single rectangle, [Points](./points.md) is either a 2-column matrix of (y,
 [LStyle](./lstyle.md) and [LWidth](./lwidth.md) are both simple scalar numbers.
 
 
-[FStyle](./fstyle.md) is either a single number specifying a standard fill pattern, or the name of a Bitmap object which is to be used as a "brush" to fill the rectangle.
+[FStyle](./fstyle.md) is either a single number specifying a standard fill pattern, or the name of a [Bitmap](bitmap.md) object which is to be used as a "brush" to fill the rectangle.
 
 
 [FCol](./fcol.md), [BCol](./bcol.md) and [FillCol](./fillcol.md) are each either single numbers representing standard colours, or 3-element vectors which specify colours explicitly in terms of their RGB values.
@@ -70,7 +62,7 @@ For a single rectangle, [Points](./points.md) is either a 2-column matrix of (y,
 #### Examples:
 
 
-First make a Form :
+First make a [Form](form.md) :
 ```apl
       'F' ⎕WC 'Form'
 ```
@@ -103,19 +95,19 @@ Ditto, but fill in green
 #### Multiple Rectangles
 
 
-To draw a set of rectangles with a single name, [Points](./points.md) may be a simple 2-element vector (specifying the location of all the rectangles), or a 2-column matrix whose first column specifies their y-coordinates and whose second column specifies their x-coordinates, or a 2-element nested vector whose first element specifies their y-coordinate(s) and whose second element specifies their x-coordinate(s).
+To draw a set of rectangles with a single name, [Points](./points.md) may be a simple 2-element vector (specifying the location of all the rectangles), **or** a 2-column matrix whose first column specifies their y-coordinates and whose second column specifies their x-coordinates, **or** a 2-element nested vector whose first element specifies their y-coordinate(s) and whose second element specifies their x-coordinate(s).
 
 
-Likewise, [Size](./size.md) may be a simple 2-element vector (applying to all the rectangles), or a 2-column matrix whose first column specifies their heights and whose second column specifies their widths, or a 2-element nested vector whose first element specifies their height(s) and whose second element specifies their width(s).
+Likewise, [Size](./size.md) may be a simple 2-element vector (applying to all the rectangles), **or** a 2-column matrix whose first column specifies their heights and whose second column specifies their widths, **or** a 2-element nested vector whose first element specifies their height(s) and whose second element specifies their width(s).
 
 
-[Radius](./radius.md) may be a simple 2-element vector (applying to all the rectangles), or a 2-column matrix whose first column specifies major radii and whose second column specifies minor radii, or a 2-element nested vector whose first element specifies major radii and whose second element specifies minor radii.
+[Radius](./radius.md) may be a simple 2-element vector (applying to all the rectangles), **or** a 2-column matrix whose first column specifies major radii and whose second column specifies minor radii, **or** a 2-element nested vector whose first element specifies major radii and whose second element specifies minor radii.
 
 
 [LStyle](./lstyle.md) and [LWidth](./lwidth.md) may each be simple scalar values (applying to all the rectangles) or simple vectors whose elements refer to each of the corresponding rectangles in turn.
 
 
-[FStyle](./fstyle.md) may be a simple scalar numeric or a simple character vector (Bitmap name) applying to all rectangles, or a vector whose elements refer to each of the corresponding rectangles in turn.
+[FStyle](./fstyle.md) may be a simple scalar numeric or a simple character vector ([Bitmap](bitmap.md) name) applying to all rectangles, or a vector whose elements refer to each of the corresponding rectangles in turn.
 
 
 Similarly, [FCol](./fcol.md), [BCol](./bcol.md) and [FillCol](./fillcol.md) may each be single numbers or a single (enclosed) 3-element vector applying to all the rectangles. Alternatively, these properties may contain vectors whose elements refer to each of the rectangles in turn. If so, their elements may be single numbers or nested RGB triplets, or a combination of the two.
@@ -124,7 +116,7 @@ Similarly, [FCol](./fcol.md), [BCol](./bcol.md) and [FillCol](./fillcol.md) may 
 #### Examples:
 
 
-First make a Form :
+First make a [Form](form.md) :
 ```apl
       'F' ⎕WC 'Form'
 ```

@@ -32,6 +32,7 @@ If you map a file with read-only access you may modify the corresponding array i
 
 If `X` is specified, it defines the type and shape to be associated with *raw* data on file. `X` must be an integer scalar or vector. The first item of `X` specifies the data type and must be one of the following values:
 
+
 | Classic Edition | 11, 82, 83, 163, 323 or 645 |
 | --- | ---  |
 | Unicode Edition | 11, 80, 83, 160, 163, 320, 323 or 645 |

@@ -4,29 +4,16 @@
 
 
 <h1 class="heading"><span class="name">TCPSocket</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/TCPSocket.htm) | [Children](../ChildLists/TCPSocket.htm) | [Properties](../PropLists/TCPSocket.htm) | [Methods](../MethodLists/TCPSocket.htm) | [Events](../EventLists/TCPSocket.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The TCPSocket object provides an interface to TCP/IP. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [TCPSend](./tcpsend.md) [TCPGetHostID](./tcpgethostid.md) [TCPSendPicture](./tcpsendpicture.md) [Wait](./wait.md) | [Detach](./detach.md) | [TCPSend](./tcpsend.md) | [TCPGetHostID](./tcpgethostid.md) | [TCPSendPicture](./tcpsendpicture.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [TCPSend](./tcpsend.md) | [TCPGetHostID](./tcpgethostid.md) |
-| [TCPSendPicture](./tcpsendpicture.md) | [Wait](./wait.md) |  |
-| Children | [Detach](./detach.md) [TCPSend](./tcpsend.md) [TCPGetHostID](./tcpgethostid.md) [TCPSendPicture](./tcpsendpicture.md) [Wait](./wait.md) | [Detach](./detach.md) | [TCPSend](./tcpsend.md) | [TCPGetHostID](./tcpgethostid.md) | [TCPSendPicture](./tcpsendpicture.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [TCPSend](./tcpsend.md) | [TCPGetHostID](./tcpgethostid.md) |
-| [TCPSendPicture](./tcpsendpicture.md) | [Wait](./wait.md) |  |
-| Properties | [Detach](./detach.md) [TCPSend](./tcpsend.md) [TCPGetHostID](./tcpgethostid.md) [TCPSendPicture](./tcpsendpicture.md) [Wait](./wait.md) | [Detach](./detach.md) | [TCPSend](./tcpsend.md) | [TCPGetHostID](./tcpgethostid.md) | [TCPSendPicture](./tcpsendpicture.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [TCPSend](./tcpsend.md) | [TCPGetHostID](./tcpgethostid.md) |
-| [TCPSendPicture](./tcpsendpicture.md) | [Wait](./wait.md) |  |
-| Methods | [Detach](./detach.md) [TCPSend](./tcpsend.md) [TCPGetHostID](./tcpgethostid.md) [TCPSendPicture](./tcpsendpicture.md) [Wait](./wait.md) | [Detach](./detach.md) | [TCPSend](./tcpsend.md) | [TCPGetHostID](./tcpgethostid.md) | [TCPSendPicture](./tcpsendpicture.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [TCPSend](./tcpsend.md) | [TCPGetHostID](./tcpgethostid.md) |
-| [TCPSendPicture](./tcpsendpicture.md) | [Wait](./wait.md) |  |
-| Events | [Detach](./detach.md) [TCPSend](./tcpsend.md) [TCPGetHostID](./tcpgethostid.md) [TCPSendPicture](./tcpsendpicture.md) [Wait](./wait.md) | [Detach](./detach.md) | [TCPSend](./tcpsend.md) | [TCPGetHostID](./tcpgethostid.md) | [TCPSendPicture](./tcpsendpicture.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [TCPSend](./tcpsend.md) | [TCPGetHostID](./tcpgethostid.md) |
-| [TCPSendPicture](./tcpsendpicture.md) | [Wait](./wait.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The TCPSocket object provides an event-driven mechanism to communicate with

@@ -39,7 +39,7 @@ For indexed assignment, `A[I]←B`, the right argument will be `B`, and the left
 
 ### Operators
 
-In an expression in which an operator  takes primitive operands, APLMON will report the time for the operator itself.   If one of the operands is non-primitive, APLMON will report the time used by the operands.
+In an expression in which an operator  takes primitive operands, APLMON will report the time for the operator itself.   If one of the operands is non-primitive, APLMON will report the time used by the operands.
 
 ### Examples
 ```apl

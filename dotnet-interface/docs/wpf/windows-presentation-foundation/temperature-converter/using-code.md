@@ -2,7 +2,7 @@
 
 The functions for this example are provided in the workspace WPFIntro.dws in the namespace `WPF.UsingCode`. To run the example:
 ```apl
-      )LOAD wpfintro
+      )LOAD wpfintro
       WPF.UsingCode.TempConverter
 ```
 
@@ -147,14 +147,14 @@ As before, let us examine the code line-by-line.
 [5]    ⎕USING,←⊂'System.Windows,WPF/PresentationCore.dll'
 ```
 
-`TempConverter[8-9]` creates a `Window` and sets its SizeToContent and Title properties as in the XAML example. Notice however that whereas using XAML the string  SizeToContent="WidthandHeight" is sufficient, when using code it is necessary to get the *Type* right. In this case, the SizeToContent property must be set to a specific member (in this case WidthAndHeight) of the `System.Windows.SizeToContent` enumeration. Other members of this Type are Width, Height and Manual (the default).
+`TempConverter[8-9]` creates a `Window` and sets its SizeToContent and Title properties as in the XAML example. Notice however that whereas using XAML the string  SizeToContent="WidthandHeight" is sufficient, when using code it is necessary to get the *Type* right. In this case, the SizeToContent property must be set to a specific member (in this case WidthAndHeight) of the `System.Windows.SizeToContent` enumeration. Other members of this Type are Width, Height and Manual (the default).
 ```apl
 [7]    win←⎕NEW Window
 [8]    win.SizeToContent←SizeToContent.WidthAndHeight
 [9]    win.Title←'WPF Temperature Converter'
 ```
 
-`TempConverter[11-12]` create a `DockPanel` control and set its LastChildFill property to 0. In this case the APL value 0 is used instead of the string "False" in XAML.
+`TempConverter[11-12]` create a `DockPanel` control and set its LastChildFill property to 0. In this case the APL value 0 is used instead of the string "False" in XAML.
 ```apl
 
 [11]   dp←⎕NEW DockPanel
@@ -174,7 +174,7 @@ As before, let us examine the code line-by-line.
 [18]   sink←mnu.Items.Add mnuScale
 ```
 
-`TempConverter[20-25]` create a `MenuItem` control labelled **Fahrenheit**. The IsCheckable and IsChecked properties are set to 1, which is equivalent to "True" in XAML. The callback function `SET_F` is assigned to the Click event exactly as in the XAML version of this example. The last line in this section makes the **Fahrenheit** `MenuItem` a child of the **Scale** `MenuItem`.
+`TempConverter[20-25]` create a `MenuItem` control labelled **Fahrenheit**. The IsCheckable and IsChecked properties are set to 1, which is equivalent to "True" in XAML. The callback function `SET_F` is assigned to the Click event exactly as in the XAML version of this example. The last line in this section makes the **Fahrenheit** `MenuItem` a child of the **Scale** `MenuItem`.
 ```apl
 
 [20]   mnuFahrenheit←⎕NEW MenuItem

@@ -5,22 +5,10 @@
 
 <h1 class="heading"><span class="name">Style</span></h1>
 
-Applies To
-
-| Applies To: | [Button](./button.md) [ButtonEdit](./buttonedit.md) [Calendar](./calendar.md) [Combo](./combo.md) [ComboEx](./comboex.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [FileBox](./filebox.md) [Icon](./icon.md) [List](./list.md) [ListView](./listview.md) [Locator](./locator.md) [Marker](./marker.md) [MenuItem](./menuitem.md) [MsgBox](./msgbox.md) [ProgressBar](./progressbar.md) [PropertySheet](./propertysheet.md) [Separator](./separator.md) [Splitter](./splitter.md) [Static](./static.md) [StatusField](./statusfield.md) [TabControl](./tabcontrol.md) [TCPSocket](./tcpsocket.md) [ToolButton](./toolbutton.md) [ToolControl](./toolcontrol.md) [TrackBar](./trackbar.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [FileBox](./filebox.md) | [Icon](./icon.md) | [List](./list.md) | [ListView](./listview.md) | [Locator](./locator.md) | [Marker](./marker.md) | [MenuItem](./menuitem.md) | [MsgBox](./msgbox.md) | [ProgressBar](./progressbar.md) | [PropertySheet](./propertysheet.md) | [Separator](./separator.md) | [Splitter](./splitter.md) | [Static](./static.md) | [StatusField](./statusfield.md) | [TabControl](./tabcontrol.md) | [TCPSocket](./tcpsocket.md) | [ToolButton](./toolbutton.md) | [ToolControl](./toolcontrol.md) | [TrackBar](./trackbar.md) |  |
-| --- | --- | ---  |
-| [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) |
-| [Combo](./combo.md) | [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) |
-| [Edit](./edit.md) | [FileBox](./filebox.md) | [Icon](./icon.md) |
-| [List](./list.md) | [ListView](./listview.md) | [Locator](./locator.md) |
-| [Marker](./marker.md) | [MenuItem](./menuitem.md) | [MsgBox](./msgbox.md) |
-| [ProgressBar](./progressbar.md) | [PropertySheet](./propertysheet.md) | [Separator](./separator.md) |
-| [Splitter](./splitter.md) | [Static](./static.md) | [StatusField](./statusfield.md) |
-| [TabControl](./tabcontrol.md) | [TCPSocket](./tcpsocket.md) | [ToolButton](./toolbutton.md) |
-| [ToolControl](./toolcontrol.md) | [TrackBar](./trackbar.md) |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property determines a particular style of object within the general
@@ -52,12 +40,12 @@ selected a cross appears in the box. This style of button is known as a
 "check-box".
 
 
-`'CommandLink'` means that the button has an icon displayed to the left of its [Caption](caption.md), the appearance of which is controlled by the  Elevated property. 
-Note that this feature only applies if  is enabled.
+`'CommandLink'` means that the button has an icon displayed to the left of its [Caption](caption.md), the appearance of which is controlled by the  [Elevated](elevated.md) property. 
+**Note that this feature only applies if is enabled.**
 
 
 `'Split'` specifies a `'Push'` button with an additional drop-down button, similar to that provided by a [Combo](./combo.md) object. 
-Note that this feature only applies if  is enabled.
+**Note that this feature only applies if is enabled.**
 
 
 For a [Calendar](./calendar.md) object, The Style property
@@ -81,7 +69,7 @@ either `'Combo'` (the default) or `'UpDown'`.
 
 For an [Edit](./edit.md) object, Style may be `'Single'` or `'Multi'`. If Style is `'Single'` the object displays only a single line of text and the user may not enter any
 more lines. If the Style is `'Multi'` the
-number of lines displayed is governed by the Rows or [Size](size.md) property and the user may insert, add
+number of lines displayed is governed by the [Rows](rows.md) or [Size](size.md) property and the user may insert, add
 or delete lines as desired.
 
 
@@ -154,6 +142,7 @@ determines the appearance of its [ToolButton](./toolbutton.md) children and may
 For a [TrackBar](./trackbar.md), the Style property
 determines the appearance and behaviour of the TrackBar and may be `'Standard'` (the default) or `'Selection'`.
 
+
 | `'Msg'` | no icon (the default) |
 | --- | ---  |
 | `'Info'` | information message icon |
@@ -161,10 +150,12 @@ determines the appearance and behaviour of the TrackBar and may be `'Standard'` 
 | `'Warn'` | warning icon |
 | `'Error'` | critical error icon |
 
+
 | `'BlackFrame'` | `'BlackBox'` |
 | --- | ---  |
 | `'GreyFrame' or 'GrayFrame'` | `'GreyBox' or 'GrayBox'` |
 | `'WhiteFrame'` | `'WhiteBox'` |
+
 
 | CapsLock | Monitors state of Caps Lock key |
 | --- | ---  |

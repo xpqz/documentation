@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Splitting</span></h1>
+
 | Applies To: | [Splitter](../a-z/splitter.md) |
 | --- | ---  |
 
-| Applies To: | [Splitter](../a-z/splitter.md) | [Splitter](../a-z/splitter.md) |  |  |
-| --- | --- | ---  |
-| [Splitter](../a-z/splitter.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported while a [Splitter](../a-z/splitter.md) object is being dragged, between a [StartSplit](../a-z/startsplit.md) and an [EndSplit](../a-z/endsplit.md). This event is only reported if full-drag is enabled.
@@ -22,6 +19,7 @@ This event is reported for information alone. You may not disable or nullify the
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 6-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

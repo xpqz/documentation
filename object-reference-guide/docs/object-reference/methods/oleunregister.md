@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">OLEUnregister</span></h1>
+
 | Applies To: | [OLEServer](../a-z/oleserver.md) |
 | --- | ---  |
 
-| Applies To: | [OLEServer](../a-z/oleserver.md) | [OLEServer](../a-z/oleserver.md) |  |  |
-| --- | --- | ---  |
-| [OLEServer](../a-z/oleserver.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to unregister an [OLEServer](../a-z/oleserver.md) object that has previously been saved by Dyalog APL.

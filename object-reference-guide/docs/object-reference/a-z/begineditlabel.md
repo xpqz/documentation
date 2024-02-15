@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">BeginEditLabel</span></h1>
+
 | Applies To: | [ListView](./listview.md) | [TreeView](./treeview.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ListView](./listview.md) [TreeView](./treeview.md) | [ListView](./listview.md) | [TreeView](./treeview.md) |  |
-| --- | --- | ---  |
-| [ListView](./listview.md) | [TreeView](./treeview.md) |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user clicks on an item in a [ListView](./listview.md) or [TreeView](./treeview.md) object that has the focus, and signals the start of an edit operation. The default processing for the event is to display a pop-up edit box around the item and to permit the user to change its text.
@@ -22,6 +19,7 @@ You may disable the operation by setting the action code for the event to `¯1`.
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 3-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

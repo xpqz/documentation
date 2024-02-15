@@ -13,6 +13,7 @@ Column 1 :`⎕OR` form of user defined functions or operators on the state indic
 
 Column 2 :Indication of the type of the item on the stack.
 
+
 | `space` | user defined function or operator |
 | --- | ---  |
 | `⍎` | execute level |

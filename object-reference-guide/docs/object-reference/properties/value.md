@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Value</span></h1>
+
 | Applies To: | [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) | [Label](../a-z/label.md) | [Spinner](../a-z/spinner.md) |
 | --- | --- | --- | --- | ---  |
 
-| Applies To: | [ButtonEdit](../a-z/buttonedit.md) [Edit](../a-z/edit.md) [Label](../a-z/label.md) [Spinner](../a-z/spinner.md) | [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) | [Label](../a-z/label.md) | [Spinner](../a-z/spinner.md) |  |  |
-| --- | --- | ---  |
-| [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) | [Label](../a-z/label.md) |
-| [Spinner](../a-z/spinner.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies or reports the numeric value associated with an [Edit](../a-z/edit.md) or [Label](../a-z/label.md) object whose [FieldType](../a-z/fieldtype.md) property is set to Numeric, LongNumeric, Date, LongDate or Time.

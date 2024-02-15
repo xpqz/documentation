@@ -19,4 +19,4 @@ The default values for IniFile, for the 64-bit and 32-bit versions respectively,
     Software\Dyalog\Dyalog APL/W 
 ```
 
-See also Configuration saved in on page 1.
+See also [Configuration saved in on page 1](../../The%20APL%20Environment/Configuration%20Dialog%20General%20Tab.htm#IniFile).

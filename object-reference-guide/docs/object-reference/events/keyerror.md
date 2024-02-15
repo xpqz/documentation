@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">KeyError</span></h1>
+
 | Applies To: | [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) | [Spinner](../a-z/spinner.md) |
 | --- | --- | --- | ---  |
 
-| Applies To: | [ButtonEdit](../a-z/buttonedit.md) [Edit](../a-z/edit.md) [Spinner](../a-z/spinner.md) | [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) | [Spinner](../a-z/spinner.md) |
-| --- | --- | ---  |
-| [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) | [Spinner](../a-z/spinner.md) |
 
-
-Description
+**Description**
 
 
 If enabled, this event is generated when the user presses and releases a key
@@ -23,9 +20,10 @@ or modify it in any way.
 
 
 
-The event message reported as the result of `⎕DQ`,
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm),
 or supplied as the right argument to your callback function, is a 6-element
 vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

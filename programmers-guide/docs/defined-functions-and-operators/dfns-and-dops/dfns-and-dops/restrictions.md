@@ -1,7 +1,7 @@
 # Restrictions
 
 - Dfns need not return a result. However even a non-result-returning expression will terminate the function, so you can't, for example, call a non-result-returning function from the middle of a dfn.
-- You can trace a dfn only if it is defined on more than one line. Otherwise it is executed atomically in the same way as an execute (`⍎`) expression. This deliberate restriction is intended to avoid the confusion caused by tracing a line and seeing nothing change on the screen.
+- You can trace a dfn **only** if it is defined on more than one line. Otherwise it is executed atomically in the same way as an execute (`⍎`) expression. This deliberate restriction is intended to avoid the confusion caused by tracing a line and seeing nothing change on the screen.
 - dfns do not currently support `⎕CS` which, if used, generates a `NONCE ERROR`.
 - `⎕SHADOW` ignores dfns when looking down the stack for a traditional function (tradfn) in which to make a new local name.
 - dfns do not support control structures or branch.

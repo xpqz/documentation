@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ButtonsAcceptFocus</span></h1>
+
 | Applies To: | [ToolControl](./toolcontrol.md) |
 | --- | ---  |
 
-| Applies To: | [ToolControl](./toolcontrol.md) | [ToolControl](./toolcontrol.md) |  |  |
-| --- | --- | ---  |
-| [ToolControl](./toolcontrol.md) |  |  |
 
-
-Description
+**Description**
 
 
 This is a Boolean property that determines how the Tab key and other cursor movement keys are handled by a [ToolControl](./toolcontrol.md) object.

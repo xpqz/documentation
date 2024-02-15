@@ -4,32 +4,26 @@
 
 
 <h1 class="heading"><span class="name">ActiveXContainer</span></h1>
-| Parents | Properties | Methods | Events |
+
+| [Parents](../ParentLists/ActiveXContainer.htm) | [Properties](../PropLists/ActiveXContainer.htm) | [Methods](../MethodLists/ActiveXContainer.htm) | [Events](../EventLists/ActiveXContainer.htm) |
 | --- | --- | --- | ---  |
 
+
 | Purpose: | The ActiveXContainer object represents the application that is currently hosting an instance of an ActiveXControl object. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [OLEQueryInterface](./olequeryinterface.md) | [Detach](./detach.md) | [OLEQueryInterface](./olequeryinterface.md) |  |
-| [Detach](./detach.md) | [OLEQueryInterface](./olequeryinterface.md) |  |
-| Properties | [Detach](./detach.md) [OLEQueryInterface](./olequeryinterface.md) | [Detach](./detach.md) | [OLEQueryInterface](./olequeryinterface.md) |  |
-| [Detach](./detach.md) | [OLEQueryInterface](./olequeryinterface.md) |  |
-| Methods | [Detach](./detach.md) [OLEQueryInterface](./olequeryinterface.md) | [Detach](./detach.md) | [OLEQueryInterface](./olequeryinterface.md) |  |
-| [Detach](./detach.md) | [OLEQueryInterface](./olequeryinterface.md) |  |
-| Events | [Detach](./detach.md) [OLEQueryInterface](./olequeryinterface.md) | [Detach](./detach.md) | [OLEQueryInterface](./olequeryinterface.md) |  |
-| [Detach](./detach.md) | [OLEQueryInterface](./olequeryinterface.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
-An ActiveXContainer is used to represent the host application that is hosting an ActiveXControl object, and provides access to its ambient properties such as font, and colour.
+An ActiveXContainer is used to represent the host application that is hosting an [ActiveXControl](activexcontrol.md) object, and provides access to its ambient properties such as font, and colour.
 
 
 
-An ActiveXContainer object is created using the [Container](./container.md) property of the ActiveXControl object.
+An ActiveXContainer object is created using the [Container](./container.md) property of the [ActiveXControl](activexcontrol.md) object.
 
 
-For example, the following expression, executed within an ActiveXControl instance creates an ActiveXContainer named `'CONT'`
+For example, the following expression, executed within an [ActiveXControl](activexcontrol.md) instance creates an ActiveXContainer named `'CONT'`
 ```apl
       'CONT' ⎕NS ⎕WG'Container'
 ```

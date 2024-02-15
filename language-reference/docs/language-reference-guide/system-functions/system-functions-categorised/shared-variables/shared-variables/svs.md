@@ -17,6 +17,7 @@ If `Y` specifies a single name, the result `R`is a 4-element vector indicating i
 
 There are four possible shared variable states:
 
+
 | `0 0 1 1` | means that you and your partner are both aware of the current value, and neither has since reset it.  This is also the initial value of the state when the link is first established. |
 | --- | ---  |
 | `1 0 1 0` | means that you have reset the shared variable and your partner has not yet used it.  This state can only occur if both partners are APL workspaces. |

@@ -4,26 +4,23 @@
 
 
 <h1 class="heading"><span class="name">FillCol</span></h1>
+
 | Applies To: | [Circle](./circle.md) | [Ellipse](./ellipse.md) | [Poly](./poly.md) | [Rect](./rect.md) |
 | --- | --- | --- | --- | ---  |
 
-| Applies To: | [Circle](./circle.md) [Ellipse](./ellipse.md) [Poly](./poly.md) [Rect](./rect.md) | [Circle](./circle.md) | [Ellipse](./ellipse.md) | [Poly](./poly.md) | [Rect](./rect.md) |  |  |
-| --- | --- | ---  |
-| [Circle](./circle.md) | [Ellipse](./ellipse.md) | [Poly](./poly.md) |
-| [Rect](./rect.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property defines the fill colour in a graphics object.
 
 
 
-If FStyle is 0 (solid fill) FillCol defines the colour with which the object is filled. If FStyle is in the range 1-6 (pattern fill) it defines the colour of the lines that make up the pattern. The areas between the lines are filled using the colour specified by BCol, or are left undrawn (transparent) if BCol is not specified. If FStyle contains the name of a [Bitmap](./bitmap.md) object, the value of FillCol is ignored.
+If [FStyle](fstyle.md) is 0 (solid fill) FillCol defines the colour with which the object is filled. If [FStyle](fstyle.md) is in the range 1-6 (pattern fill) it defines the colour of the lines that make up the pattern. The areas between the lines are filled using the colour specified by [BCol](bcol.md), or are left undrawn (transparent) if [BCol](bcol.md) is not specified. If [FStyle](fstyle.md) contains the name of a [Bitmap](./bitmap.md) object, the value of FillCol is ignored.
 
 
 A single colour is represented by a single number which refers to a standard colour, or by a 3-element vector which defines a colour explicitly in terms of its red, green and blue intensities. A negative value of FillCol refers to a standard MS-Windows colour as described below. Positive values are reserved for a possible future extension.
+
 
 | FillCol | Colour Element | FillCol | Colour Element |
 | --- | --- | --- | ---  |

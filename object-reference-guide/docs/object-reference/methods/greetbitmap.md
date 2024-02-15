@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GreetBitmap</span></h1>
+
 | Applies To: | [Root](../a-z/root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](../a-z/root.md) | [Root](../a-z/root.md) |  |  |
-| --- | --- | ---  |
-| [Root](../a-z/root.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to display or remove a bitmap, typically during
@@ -21,6 +18,7 @@ initialisation of a Dyalog runtime application.
 
 The argument to GreetBitmap is `⍬` or a
 2 element vector as follows:
+
 
 | `[1]` | Display | 0 = off, 1 = on. |
 | --- | --- | ---  |
@@ -31,7 +29,7 @@ If the argument is `⍬`, the bitmap is
 removed.
 
 
-The image may also be displayed initially by setting parameter: greet_bitmap on the command line, e.g.:
+The image may also be displayed initially by setting parameter: **greet_bitmap** on the command line, e.g.:
 ```apl
 c:\myapp\dyalogrt greet_bitmap=mylogo myws
 ```

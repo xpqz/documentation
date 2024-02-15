@@ -4,20 +4,10 @@
 
 <h1 class="heading"><span class="name">Caption</span></h1>
 
-Applies To
-
-| Applies To: | [BrowseBox](../a-z/browsebox.md) [Button](../a-z/button.md) [ColorButton](../a-z/colorbutton.md) [CoolBand](../a-z/coolband.md) [FileBox](../a-z/filebox.md) [Form](../a-z/form.md) [Group](../a-z/group.md) [HTMLRenderer](../a-z/htmlrenderer.md) [Label](../a-z/label.md) [Menu](../a-z/menu.md) [MenuItem](../a-z/menuitem.md) [MsgBox](../a-z/msgbox.md) [PropertyPage](../a-z/propertypage.md) [PropertySheet](../a-z/propertysheet.md) [Root](../a-z/root.md) [StatusField](../a-z/statusfield.md) [SubForm](../a-z/subform.md) [TabBtn](../a-z/tabbtn.md) [TabButton](../a-z/tabbutton.md) [ToolButton](../a-z/toolbutton.md) | [BrowseBox](../a-z/browsebox.md) | [Button](../a-z/button.md) | [ColorButton](../a-z/colorbutton.md) | [CoolBand](../a-z/coolband.md) | [FileBox](../a-z/filebox.md) | [Form](../a-z/form.md) | [Group](../a-z/group.md) | [HTMLRenderer](../a-z/htmlrenderer.md) | [Label](../a-z/label.md) | [Menu](../a-z/menu.md) | [MenuItem](../a-z/menuitem.md) | [MsgBox](../a-z/msgbox.md) | [PropertyPage](../a-z/propertypage.md) | [PropertySheet](../a-z/propertysheet.md) | [Root](../a-z/root.md) | [StatusField](../a-z/statusfield.md) | [SubForm](../a-z/subform.md) | [TabBtn](../a-z/tabbtn.md) | [TabButton](../a-z/tabbutton.md) | [ToolButton](../a-z/toolbutton.md) |  |
-| --- | --- | ---  |
-| [BrowseBox](../a-z/browsebox.md) | [Button](../a-z/button.md) | [ColorButton](../a-z/colorbutton.md) |
-| [CoolBand](../a-z/coolband.md) | [FileBox](../a-z/filebox.md) | [Form](../a-z/form.md) |
-| [Group](../a-z/group.md) | [HTMLRenderer](../a-z/htmlrenderer.md) | [Label](../a-z/label.md) |
-| [Menu](../a-z/menu.md) | [MenuItem](../a-z/menuitem.md) | [MsgBox](../a-z/msgbox.md) |
-| [PropertyPage](../a-z/propertypage.md) | [PropertySheet](../a-z/propertysheet.md) | [Root](../a-z/root.md) |
-| [StatusField](../a-z/statusfield.md) | [SubForm](../a-z/subform.md) | [TabBtn](../a-z/tabbtn.md) |
-| [TabButton](../a-z/tabbutton.md) | [ToolButton](../a-z/toolbutton.md) |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 The Caption property is a character vector specifying fixed text associated with the object. For example, Caption defines the label on a [Button](../a-z/button.md), the title of a [Form](../a-z/form.md), [SubForm](../a-z/subform.md) or [MsgBox](../a-z/msgbox.md), the heading in a [Group](../a-z/group.md), and the text of a [Menu](../a-z/menu.md) or a [MenuItem](../a-z/menuitem.md).

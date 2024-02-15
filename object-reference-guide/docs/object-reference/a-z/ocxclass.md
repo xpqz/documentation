@@ -4,38 +4,16 @@
 
 
 <h1 class="heading"><span class="name">OCXClass</span></h1>
-| Parents | Properties | Methods | Events |
+
+| [Parents](../ParentLists/OCXClass.htm) | [Properties](../PropLists/OCXClass.htm) | [Methods](../MethodLists/OCXClass.htm) | [Events](../EventLists/OCXClass.htm) |
 | --- | --- | --- | ---  |
 
+
 | Purpose: | This object provides access to OLE (ActiveX) Controls. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [GetPropertyInfo](./getpropertyinfo.md) [GetEventInfo](./geteventinfo.md) [GetMethodInfo](./getmethodinfo.md) [GetTypeInfo](./gettypeinfo.md) [SetPropertyInfo](./setpropertyinfo.md) [SetMethodInfo](./setmethodinfo.md) [ShowHelp](./showhelp.md) [ShowProperties](./showproperties.md) [Browse](./browse.md) [OLEAddEventSink](./oleaddeventsink.md) [OLEDeleteEventSink](./oledeleteeventsink.md) [OLEListEventSinks](./olelisteventsinks.md) | [Detach](./detach.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetEventInfo](./geteventinfo.md) | [GetMethodInfo](./getmethodinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) | [SetMethodInfo](./setmethodinfo.md) | [ShowHelp](./showhelp.md) | [ShowProperties](./showproperties.md) | [Browse](./browse.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) |  |  |
-| [Detach](./detach.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetEventInfo](./geteventinfo.md) |
-| [GetMethodInfo](./getmethodinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) |
-| [SetMethodInfo](./setmethodinfo.md) | [ShowHelp](./showhelp.md) | [ShowProperties](./showproperties.md) |
-| [Browse](./browse.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) |
-| [OLEListEventSinks](./olelisteventsinks.md) |  |  |
-| Properties | [Detach](./detach.md) [GetPropertyInfo](./getpropertyinfo.md) [GetEventInfo](./geteventinfo.md) [GetMethodInfo](./getmethodinfo.md) [GetTypeInfo](./gettypeinfo.md) [SetPropertyInfo](./setpropertyinfo.md) [SetMethodInfo](./setmethodinfo.md) [ShowHelp](./showhelp.md) [ShowProperties](./showproperties.md) [Browse](./browse.md) [OLEAddEventSink](./oleaddeventsink.md) [OLEDeleteEventSink](./oledeleteeventsink.md) [OLEListEventSinks](./olelisteventsinks.md) | [Detach](./detach.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetEventInfo](./geteventinfo.md) | [GetMethodInfo](./getmethodinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) | [SetMethodInfo](./setmethodinfo.md) | [ShowHelp](./showhelp.md) | [ShowProperties](./showproperties.md) | [Browse](./browse.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) |  |  |
-| [Detach](./detach.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetEventInfo](./geteventinfo.md) |
-| [GetMethodInfo](./getmethodinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) |
-| [SetMethodInfo](./setmethodinfo.md) | [ShowHelp](./showhelp.md) | [ShowProperties](./showproperties.md) |
-| [Browse](./browse.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) |
-| [OLEListEventSinks](./olelisteventsinks.md) |  |  |
-| Methods | [Detach](./detach.md) [GetPropertyInfo](./getpropertyinfo.md) [GetEventInfo](./geteventinfo.md) [GetMethodInfo](./getmethodinfo.md) [GetTypeInfo](./gettypeinfo.md) [SetPropertyInfo](./setpropertyinfo.md) [SetMethodInfo](./setmethodinfo.md) [ShowHelp](./showhelp.md) [ShowProperties](./showproperties.md) [Browse](./browse.md) [OLEAddEventSink](./oleaddeventsink.md) [OLEDeleteEventSink](./oledeleteeventsink.md) [OLEListEventSinks](./olelisteventsinks.md) | [Detach](./detach.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetEventInfo](./geteventinfo.md) | [GetMethodInfo](./getmethodinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) | [SetMethodInfo](./setmethodinfo.md) | [ShowHelp](./showhelp.md) | [ShowProperties](./showproperties.md) | [Browse](./browse.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) |  |  |
-| [Detach](./detach.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetEventInfo](./geteventinfo.md) |
-| [GetMethodInfo](./getmethodinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) |
-| [SetMethodInfo](./setmethodinfo.md) | [ShowHelp](./showhelp.md) | [ShowProperties](./showproperties.md) |
-| [Browse](./browse.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) |
-| [OLEListEventSinks](./olelisteventsinks.md) |  |  |
-| Events | [Detach](./detach.md) [GetPropertyInfo](./getpropertyinfo.md) [GetEventInfo](./geteventinfo.md) [GetMethodInfo](./getmethodinfo.md) [GetTypeInfo](./gettypeinfo.md) [SetPropertyInfo](./setpropertyinfo.md) [SetMethodInfo](./setmethodinfo.md) [ShowHelp](./showhelp.md) [ShowProperties](./showproperties.md) [Browse](./browse.md) [OLEAddEventSink](./oleaddeventsink.md) [OLEDeleteEventSink](./oledeleteeventsink.md) [OLEListEventSinks](./olelisteventsinks.md) | [Detach](./detach.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetEventInfo](./geteventinfo.md) | [GetMethodInfo](./getmethodinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) | [SetMethodInfo](./setmethodinfo.md) | [ShowHelp](./showhelp.md) | [ShowProperties](./showproperties.md) | [Browse](./browse.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) |  |  |
-| [Detach](./detach.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetEventInfo](./geteventinfo.md) |
-| [GetMethodInfo](./getmethodinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) |
-| [SetMethodInfo](./setmethodinfo.md) | [ShowHelp](./showhelp.md) | [ShowProperties](./showproperties.md) |
-| [Browse](./browse.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) |
-| [OLEListEventSinks](./olelisteventsinks.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 This object loads an OLE Control into memory and defines a new class of object associated with it. The name of the new class is the name specified by the left argument of `⎕WC`  You may create an instance of the newly defined class using the name you assigned to the OCXClass object as the Type property.

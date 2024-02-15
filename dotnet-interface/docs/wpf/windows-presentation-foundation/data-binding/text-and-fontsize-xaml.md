@@ -1,6 +1,6 @@
 # Example 4
 
-This example uses XAML to specify the user-interface and the main components of the data binding.
+This example uses XAML to specify the user-interface and the main components of the data binding.
 
 ## The XAML
 

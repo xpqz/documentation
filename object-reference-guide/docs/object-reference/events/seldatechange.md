@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SelDateChange</span></h1>
+
 | Applies To: | [Calendar](../a-z/calendar.md) |
 | --- | ---  |
 
-| Applies To: | [Calendar](../a-z/calendar.md) | [Calendar](../a-z/calendar.md) |  |  |
-| --- | --- | ---  |
-| [Calendar](../a-z/calendar.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user changes the date, or range of dates, that is selected in a [Calendar](../a-z/calendar.md) object. This event is also reported when the [Calendar](../a-z/calendar.md) object is scrolled and the selection changes automatically to another month.
@@ -22,6 +19,7 @@ This event is reported for information alone. You may not disable or nullify the
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

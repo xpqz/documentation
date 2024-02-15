@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RemoteAddr</span></h1>
+
 | Applies To: | [TCPSocket](../a-z/tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](../a-z/tcpsocket.md) | [TCPSocket](../a-z/tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](../a-z/tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 The RemoteAddr property is a character vector that specifies the IP address of the remote computer.

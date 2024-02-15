@@ -67,6 +67,7 @@ which (normally) specifies <Enter>, <Esc> and <Shift+Esc>.
 
 This is a vector of between 3 and 6 elements with the following meanings and defaults:
 
+
 | Element | Description | Default |
 | --- | --- | ---  |
 | 1 | Initial Field | N/A |
@@ -99,7 +100,8 @@ Structure of  INITIAL_CONTEXT
 #### EXIT_CONTEXT
 
 
-The result `EXIT_CONTEXT` is a 6 or 9-element vector whose first 6 elements have the same structure as the `INITIAL_CONTEXT`.  Elements 7-9 only apply to those versions of Dyalog APL that provide mouse support.
+The result `EXIT_CONTEXT` is a 6 or 9-element vector whose first 6 elements have the same structure as the `INITIAL_CONTEXT`.  Elements 7-9 **only** apply to those versions of Dyalog APL that provide mouse support.
+
 
 | Element | Description |
 | --- | ---  |
@@ -127,15 +129,15 @@ Structure of the Result of `⎕SR`
 `EXIT_CONTEXT[4]` is a 2-element character vector specifying the last keystroke pressed by the user before `⎕SR` terminated.  Unless `⎕SR` terminated due to an event, `EXIT_CONTEXT[4]` will contain one of the exit keys defined by `X`.  The keystroke is defined in terms of an Input Translate Table code.
 
 
-`EXIT_CONTEXT[5]` contains the sum of the event codes that caused `⎕SR` to terminate.  For example, if the user pressed a mouse button on a `BUTTON` field (event code 64) and the current field has `MODIFIED` behaviour (event code 2) `EXIT_CONTEXT[5]` will have the value 66.
+`EXIT_CONTEXT[5]` contains the **sum** of the event codes that caused `⎕SR` to terminate.  For example, if the user pressed a mouse button on a `BUTTON` field (event code 64) **and** the current field has `MODIFIED` behaviour (event code 2) `EXIT_CONTEXT[5]` will have the value 66.
 
 
-`EXIT_CONTEXT[6]` is a Boolean scalar or vector the same length as `Y`.  It specifies which of the fields in `Y` has been modified by the user during this `⎕SR`, ORed with `INITIAL_CONTEXT[6]`.  Thus if the `EXIT_CONTEXT` of one call to `⎕SR` is fed back as the `INITIAL_CONTEXT` of the next, `EXIT_CONTEXT[6]` records the fields changed since the start of the process.
+`EXIT_CONTEXT[6]` is a Boolean scalar or vector the same length as `Y`.  It specifies which of the fields in `Y` has been modified by the user during **this**`⎕SR`, ORed with `INITIAL_CONTEXT[6]`.  Thus if the `EXIT_CONTEXT` of one call to `⎕SR` is fed back as the `INITIAL_CONTEXT` of the next, `EXIT_CONTEXT[6]` records the fields changed since the start of the process.
 
 #### EXIT_CONTEXT (Window Versions)
 
 
-`⎕SR` returns a 9-element result ONLY if it is terminated by the user pressing a mouse button.  In this case:
+`⎕SR` returns a 9-element result **ONLY** if it is terminated by the user pressing a mouse button.  In this case:
 
 
 `EXIT_CONTEXT[7]` contains the field over which the mouse pointer was positioned when the user pressed a button. It is an integer scalar or vector, and a member of `Y`.

@@ -27,6 +27,6 @@ In both cases, omitting `X` results in the default behaviour being restored.
 `R` is the previous value specified; if there was no previous value then this function will perform its task but generate a `VALUE ERROR`.
 
 
-Windows only.
+**Windows only.**
 
 

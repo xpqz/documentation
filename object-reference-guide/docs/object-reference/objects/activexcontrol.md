@@ -4,39 +4,16 @@
 
 
 <h1 class="heading"><span class="name">ActiveXControl</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/ActiveXControl.htm) | [Children](../ChildLists/ActiveXControl.htm) | [Properties](../PropLists/ActiveXControl.htm) | [Methods](../MethodLists/ActiveXControl.htm) | [Events](../EventLists/ActiveXControl.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The ActiveXControl object represents a Dyalog APL namespace as an ActiveX control. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [SetFnInfo](../a-z/setfninfo.md) [SetVarInfo](../a-z/setvarinfo.md) [SetEventInfo](../a-z/seteventinfo.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [SetFnInfo](../a-z/setfninfo.md) | [SetVarInfo](../a-z/setvarinfo.md) | [SetEventInfo](../a-z/seteventinfo.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) | [SetFnInfo](../a-z/setfninfo.md) | [SetVarInfo](../a-z/setvarinfo.md) |
-| [SetEventInfo](../a-z/seteventinfo.md) |  |  |
-| Children | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [SetFnInfo](../a-z/setfninfo.md) [SetVarInfo](../a-z/setvarinfo.md) [SetEventInfo](../a-z/seteventinfo.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [SetFnInfo](../a-z/setfninfo.md) | [SetVarInfo](../a-z/setvarinfo.md) | [SetEventInfo](../a-z/seteventinfo.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) | [SetFnInfo](../a-z/setfninfo.md) | [SetVarInfo](../a-z/setvarinfo.md) |
-| [SetEventInfo](../a-z/seteventinfo.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [SetFnInfo](../a-z/setfninfo.md) [SetVarInfo](../a-z/setvarinfo.md) [SetEventInfo](../a-z/seteventinfo.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [SetFnInfo](../a-z/setfninfo.md) | [SetVarInfo](../a-z/setvarinfo.md) | [SetEventInfo](../a-z/seteventinfo.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) | [SetFnInfo](../a-z/setfninfo.md) | [SetVarInfo](../a-z/setvarinfo.md) |
-| [SetEventInfo](../a-z/seteventinfo.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [SetFnInfo](../a-z/setfninfo.md) [SetVarInfo](../a-z/setvarinfo.md) [SetEventInfo](../a-z/seteventinfo.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [SetFnInfo](../a-z/setfninfo.md) | [SetVarInfo](../a-z/setvarinfo.md) | [SetEventInfo](../a-z/seteventinfo.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) | [SetFnInfo](../a-z/setfninfo.md) | [SetVarInfo](../a-z/setvarinfo.md) |
-| [SetEventInfo](../a-z/seteventinfo.md) |  |  |
-| Events | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [SetFnInfo](../a-z/setfninfo.md) [SetVarInfo](../a-z/setvarinfo.md) [SetEventInfo](../a-z/seteventinfo.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [SetFnInfo](../a-z/setfninfo.md) | [SetVarInfo](../a-z/setvarinfo.md) | [SetEventInfo](../a-z/seteventinfo.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) | [SetFnInfo](../a-z/setfninfo.md) | [SetVarInfo](../a-z/setvarinfo.md) |
-| [SetEventInfo](../a-z/seteventinfo.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 

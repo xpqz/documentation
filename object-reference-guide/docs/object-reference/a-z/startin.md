@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">StartIn</span></h1>
+
 | Applies To: | [BrowseBox](./browsebox.md) |
 | --- | ---  |
 
-| Applies To: | [BrowseBox](./browsebox.md) | [BrowseBox](./browsebox.md) |  |  |
-| --- | --- | ---  |
-| [BrowseBox](./browsebox.md) |  |  |
 
-
-Description
+**Description**
 
 
 The StartIn property is a character string that specifies the start point and root for a [BrowseBox](./browsebox.md) object.

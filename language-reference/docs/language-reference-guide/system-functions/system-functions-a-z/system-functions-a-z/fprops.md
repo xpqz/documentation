@@ -20,6 +20,7 @@
 
 If the left argument is a simple character array, the result `R` contains the current values for the properties identified by `X`. If the left argument is nested, the result `R` contains the previous values for the properties identified by `X`.
 
+
 | Identifier | Property | Description / Legal Values |
 | --- | --- | ---  |
 | `S` | File Size (read only) | 32 = Small-span Component Files (<4GB) 64 = Large-span Component Files |
@@ -42,18 +43,18 @@ The default properties for a newly created file are as follows:
 - E depends upon the computer architecture.
 
 
-Note that the defaults for C and J can be overridden by calling `⎕FCREATE` via the Variant operator `⍠`. For further information, see File Properties on page 1.
+Note that the defaults for C and J can be overridden by calling `⎕FCREATE` via the Variant operator `⍠`. For further information, see [File Properties on page 1](fcreate.md).
 
 #### Journaling Levels
 
 
-Level 1 journaling (APL crash-proof) automatically protects a component file from damage in the event of abnormal termination of the APL process. The file state will be implicitly committed between updates and an incomplete update will automatically be rolled forward or back when the file is re-tied. In the event of an operating system crash the file may be more seriously damaged. If checksum was also enabled it may be repaired using `⎕ FCHK` but some components may be restored to a previous state or not restored at all.
+**Level 1** journaling (APL crash-proof) automatically protects a component file from damage in the event of abnormal termination of the APL process. The file state will be implicitly committed between updates and an incomplete update will automatically be rolled forward or back when the file is re-tied. In the event of an operating system crash the file may be more seriously damaged. If checksum was also enabled it may be repaired using `⎕ FCHK` but some components may be restored to a previous state or not restored at all.
 
 
-Level 2 journaling (system crash-proof – repair needed on recovery) extends level 1 by ensuring that a component file is fully repairable using `⎕FCHK` with no component loss in the event of an operating system failure. If an update was in progress when the system crashed the affected component will be rolled back to the previous state. Tying and modifying such a file without first running `⎕FCHK` may however render it un-repairable.
+**Level 2** journaling (system crash-proof – repair needed on recovery) extends level 1 by ensuring that a component file is fully repairable using `⎕FCHK` with no component loss in the event of an operating system failure. If an update was in progress when the system crashed the affected component will be rolled back to the previous state. Tying and modifying such a file without first running `⎕FCHK` may however render it un-repairable.
 
 
-Level 3 journaling (system crash-proof) extends level 2 by protecting a component file from damage in the event of abnormal termination of the APL process and also the operating system. Rollback of an incomplete update will be automatic and no explicit repair will be needed.
+**Level 3** journaling (system crash-proof) extends level 2 by protecting a component file from damage in the event of abnormal termination of the APL process and also the operating system. Rollback of an incomplete update will be automatic and no explicit repair will be needed.
 
 
 Enabling journaling on a component file will reduce performance of file updates; higher journaling levels have a greater impact.

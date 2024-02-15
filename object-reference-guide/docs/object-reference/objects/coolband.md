@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">CoolBand</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/CoolBand.htm) | [Children](../ChildLists/CoolBand.htm) | [Properties](../PropLists/CoolBand.htm) | [Methods](../MethodLists/CoolBand.htm) | [Events](../EventLists/CoolBand.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The CoolBand object represents an area in a CoolBar that contains a         child window. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Children | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Events | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The CoolBand object is a container object that represents a band in a [CoolBar](../a-z/coolbar.md).
@@ -86,7 +78,7 @@ changing its [NewLine](../a-z/newline.md) property (using `⎕WS`) from 1 to 0, 
 The 2nd element of the [Size](../a-z/size.md) property determines the width of the CoolBand; the value of the 1st element is read-only.
 
 
-[Size](../a-z/size.md) may only be specified by `⎕WC`.
+[Size](../a-z/size.md) may **only** be specified by `⎕WC`.
 However, when you create a CoolBand, it will automatically occupy all the
 available space in the current row, to the right of any preceding CoolBands.
 Only when you create *another* CoolBand in the *same* row, will the [Size](../a-z/size.md) of the first CoolBand be honoured. The rightmost CoolBand will always extend to

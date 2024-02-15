@@ -1,8 +1,8 @@
 # System Variables
 
-System variables retain information used by the system in some way. Many system variables affect the behaviour of primitive functions and operators to which they act as**implicit arguments**For further information, see System Settings on page 1.
+System variables retain information used by the system in some way. Many system variables affect the behaviour of primitive functions and operators to which they act as**implicit arguments**For further information, see [System Settings on page 1](system-functions-categorised/system-settings/system-settings.md).
 
-System variables may be localised by inclusion in the header line of a defined function or in the argument list of the system function `⎕SHADOW`. When a system variable is localised, it retains its previous value until it is assigned a new one. This feature is known as "pass-through localisation".  The exception to this rule is `⎕TRAP`.
+System variables may be localised by inclusion in the header line of a defined function or in the argument list of the system function `⎕SHADOW`. When a system variable is localised, it retains its previous value until it is assigned a new one. This feature is known as "pass-through localisation".  The exception to this rule is `⎕TRAP`.
 
 A system variable can never be undefined. Default values are assigned to all system variables in a clear workspace.
 
@@ -28,7 +28,7 @@ A system variable can never be undefined. Default values are assigned to all sys
 | `⎕WSID` | Workspace ID | Workspace |
 | `⎕WX` | Window Expose | Namespace |
 
-In other words,  `⎕PATH` and `⎕PW` relate to the session.  `⎕LX`, `⎕SM`, `⎕TRAP` and `⎕WSID` relate to the active workspace.  All the other system variables relate to the current namespace.
+In other words,  `⎕PATH` and `⎕PW` relate to the session.  `⎕LX`, `⎕SM`, `⎕TRAP` and `⎕WSID` relate to the active workspace.  All the other system variables relate to the current namespace.
 
 | Session | Workspace | Namespace |
 | --- | --- | ---  |
@@ -49,8 +49,8 @@ Note that the value assigned to a system variable must be appropriate; otherwise
 
 ### Example
 ```apl
-      ⎕IO←3
+      ⎕IO←3
 DOMAIN ERROR
-      ⎕IO←3
-      ^
+      ⎕IO←3
+      ^
 ```

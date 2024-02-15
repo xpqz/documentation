@@ -5,29 +5,10 @@
 
 <h1 class="heading"><span class="name">Translate</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](./activexcontrol.md) [Animation](./animation.md) [Bitmap](./bitmap.md) [BrowseBox](./browsebox.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Clipboard](./clipboard.md) [ColorButton](./colorbutton.md) [Combo](./combo.md) [ComboEx](./comboex.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [Form](./form.md) [Grid](./grid.md) [Group](./group.md) [HTMLRenderer](./htmlrenderer.md) [ImageList](./imagelist.md) [Label](./label.md) [List](./list.md) [ListView](./listview.md) [MDIClient](./mdiclient.md) [Menu](./menu.md) [MenuBar](./menubar.md) [MenuItem](./menuitem.md) [Metafile](./metafile.md) [OCXClass](./ocxclass.md) [Printer](./printer.md) [ProgressBar](./progressbar.md) [PropertyPage](./propertypage.md) [PropertySheet](./propertysheet.md) [RichEdit](./richedit.md) [Root](./root.md) [Scroll](./scroll.md) [Separator](./separator.md) [Spinner](./spinner.md) [Static](./static.md) [StatusBar](./statusbar.md) [StatusField](./statusfield.md) [SubForm](./subform.md) [SysTrayItem](./systrayitem.md) [TabBar](./tabbar.md) [TabBtn](./tabbtn.md) [Text](./text.md) [TipField](./tipfield.md) [ToolBar](./toolbar.md) [TrackBar](./trackbar.md) [TreeView](./treeview.md) [UpDown](./updown.md) | [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Bitmap](./bitmap.md) | [BrowseBox](./browsebox.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Clipboard](./clipboard.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) | [HTMLRenderer](./htmlrenderer.md) | [ImageList](./imagelist.md) | [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) | [MDIClient](./mdiclient.md) | [Menu](./menu.md) | [MenuBar](./menubar.md) | [MenuItem](./menuitem.md) | [Metafile](./metafile.md) | [OCXClass](./ocxclass.md) | [Printer](./printer.md) | [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) | [PropertySheet](./propertysheet.md) | [RichEdit](./richedit.md) | [Root](./root.md) | [Scroll](./scroll.md) | [Separator](./separator.md) | [Spinner](./spinner.md) | [Static](./static.md) | [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) | [SubForm](./subform.md) | [SysTrayItem](./systrayitem.md) | [TabBar](./tabbar.md) | [TabBtn](./tabbtn.md) | [Text](./text.md) | [TipField](./tipfield.md) | [ToolBar](./toolbar.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Bitmap](./bitmap.md) |
-| [BrowseBox](./browsebox.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) |
-| [Clipboard](./clipboard.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) |
-| [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) |
-| [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) |
-| [HTMLRenderer](./htmlrenderer.md) | [ImageList](./imagelist.md) | [Label](./label.md) |
-| [List](./list.md) | [ListView](./listview.md) | [MDIClient](./mdiclient.md) |
-| [Menu](./menu.md) | [MenuBar](./menubar.md) | [MenuItem](./menuitem.md) |
-| [Metafile](./metafile.md) | [OCXClass](./ocxclass.md) | [Printer](./printer.md) |
-| [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) | [PropertySheet](./propertysheet.md) |
-| [RichEdit](./richedit.md) | [Root](./root.md) | [Scroll](./scroll.md) |
-| [Separator](./separator.md) | [Spinner](./spinner.md) | [Static](./static.md) |
-| [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) | [SubForm](./subform.md) |
-| [SysTrayItem](./systrayitem.md) | [TabBar](./tabbar.md) | [TabBtn](./tabbtn.md) |
-| [Text](./text.md) | [TipField](./tipfield.md) | [ToolBar](./toolbar.md) |
-| [TrackBar](./trackbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property specifies whether or not character data is to be translated.
@@ -52,7 +33,7 @@ passed between APL and the object with no translation.
 
 If you set the value of the Translate property to `'ANSI'`,
 APL does not attempt to resolve characters as they are typed by the user via the
-Input Translate Table. Using Translate `'ANSI'` in combination with the appropriate value of CharSet and the corresponding National Language keyboard will permit users to enter
+Input Translate Table. Using Translate `'ANSI'` in combination with the appropriate value of [CharSet](charset.md) and the corresponding National Language keyboard will permit users to enter
 strings in non-western languages.
 
 

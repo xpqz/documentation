@@ -5,21 +5,10 @@
 
 <h1 class="heading"><span class="name">KeyPress</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](./activexcontrol.md) [Animation](./animation.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Calendar](./calendar.md) [ColorButton](./colorbutton.md) [Combo](./combo.md) [ComboEx](./comboex.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [Form](./form.md) [Grid](./grid.md) [Group](./group.md) [List](./list.md) [ListView](./listview.md) [MDIClient](./mdiclient.md) [ProgressBar](./progressbar.md) [PropertyPage](./propertypage.md) [RichEdit](./richedit.md) [Scroll](./scroll.md) [Spinner](./spinner.md) [SubForm](./subform.md) [TrackBar](./trackbar.md) [TreeView](./treeview.md) | [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) | [List](./list.md) | [ListView](./listview.md) | [MDIClient](./mdiclient.md) | [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) | [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [Spinner](./spinner.md) | [SubForm](./subform.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) |
-| [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [ColorButton](./colorbutton.md) |
-| [Combo](./combo.md) | [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) |
-| [Edit](./edit.md) | [Form](./form.md) | [Grid](./grid.md) |
-| [Group](./group.md) | [List](./list.md) | [ListView](./listview.md) |
-| [MDIClient](./mdiclient.md) | [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) |
-| [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [Spinner](./spinner.md) |
-| [SubForm](./subform.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 If enabled, this event is generated when the user presses and releases a key
@@ -29,9 +18,10 @@ the time.
 
 
 
-The event message reported as the result of `⎕DQ`,
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm),
 or supplied as the right argument to your callback function, is a 6-element
 vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
@@ -78,6 +68,7 @@ pressed.
 The Shift State indicates which (if any) of the Shift, Ctrl and Alt keys are
 down at the same time as the key is pressed. It is the sum of the following
 numbers :
+
 
 | 1 | Shift key down |
 | --- | ---  |

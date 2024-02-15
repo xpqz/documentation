@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">IDNToDate</span></h1>
+
 | Applies To: | [Calendar](../a-z/calendar.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Root](../a-z/root.md) |
 | --- | --- | --- | ---  |
 
-| Applies To: | [Calendar](../a-z/calendar.md) [DateTimePicker](../a-z/datetimepicker.md) [Root](../a-z/root.md) | [Calendar](../a-z/calendar.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Root](../a-z/root.md) |
-| --- | --- | ---  |
-| [Calendar](../a-z/calendar.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Root](../a-z/root.md) |
+
+**Description**
 
 
-Description
-
-
-This method is used to convert a date from an IDN into `⎕TS` format (year, month, day). The corresponding day of the week is also obtained.
+This method is used to convert a date from an [IDN](../Miscellaneous/International%20Day%20Number.htm) into `⎕TS` format (year, month, day). The corresponding day of the week is also obtained.
 
 
 The argument to IDNToDate is a single item as follows:
+
 
 | `[1]` | IDN | Integer |
 | --- | --- | ---  |

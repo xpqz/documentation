@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">DateTime</span></h1>
+
 | Applies To: | [DateTimePicker](../a-z/datetimepicker.md) |
 | --- | ---  |
 
-| Applies To: | [DateTimePicker](../a-z/datetimepicker.md) | [DateTimePicker](../a-z/datetimepicker.md) |  |  |
-| --- | --- | ---  |
-| [DateTimePicker](../a-z/datetimepicker.md) |  |  |
 
-
-Description
+**Description**
 
 
 Specifies the value of date/time in a [DateTimePicker](../a-z/datetimepicker.md).

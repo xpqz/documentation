@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ShowDevTools</span></h1>
+
 | Applies To: | [HTMLRenderer](./htmlrenderer.md) |
 | --- | ---  |
 
-| Applies To: | [HTMLRenderer](./htmlrenderer.md) | [HTMLRenderer](./htmlrenderer.md) |  |  |
-| --- | --- | ---  |
-| [HTMLRenderer](./htmlrenderer.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method displays or hides the CEF development tools window that displays information about the content being displayed by the HTMLRenderer.

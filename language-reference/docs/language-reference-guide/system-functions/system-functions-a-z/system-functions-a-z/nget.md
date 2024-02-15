@@ -24,6 +24,7 @@ The optional left-argument `X` is either
 
 File Encodings
 
+
 | Encoding | Description |
 | --- | ---  |
 | `UTF-8` | The data is encoded as UTF-8 format. |
@@ -48,6 +49,7 @@ Whether or not `X` is specified, if the start of the file contains a recognised
 
 The result `R` is a 3-element vector comprising `(content) (encoding) (newline)`  where:
 
+
 | `content` | A simple character vector, or a vector of character vectors, according to the value of `flags` . |
 | --- | ---  |
 | `encoding` | The encoding that was actually used to read the file. If this is a UTF format, it will always include the appropriate endianness (except for UTF-8 to which endianness doesn't apply) and a -BOM or -NOBOM suffix to indicate whether or not a BOM is actually present in the file. For example, UTF-16LE-BOM. If `X` specified a user-defined encoding as a 256-element numeric vector, `encoding` will be that same vector. |
@@ -61,11 +63,12 @@ If `content` is simple then all its line separators (listed in the table below) 
 If `content` is nested, it is formed by splitting the contents of the file on the occurrence of any of the line separators  shown in the table below. These line separators are  removed.
 
 
-The 3rd element of the result `newline` is a numeric vector from the **Value** column of the table below corresponding to the first occurrence of any of the newline characters in the file. If none of these characters are present, the value is `⍬`.
+The 3rd element of the result `newline` is a numeric vector from the **Value** column of the table below corresponding to the first occurrence of any of the **newline characters** in the file. If none of these characters are present, the value is `⍬`.
 
 
 
 Line separators:
+
 
 | Value | Code | Description |
 | --- | --- | ---  |

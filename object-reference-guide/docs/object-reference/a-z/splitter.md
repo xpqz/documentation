@@ -4,27 +4,19 @@
 
 
 <h1 class="heading"><span class="name">Splitter</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Splitter.htm) | [Children](../ChildLists/Splitter.htm) | [Properties](../PropLists/Splitter.htm) | [Methods](../MethodLists/Splitter.htm) | [Events](../EventLists/Splitter.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The Splitter object divides a container into resizable panes. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Children | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Properties | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Methods | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Events | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
-The Splitter divides the client area of a Form or [SubForm](subform.md) into resizable panes. Each pane created this way may be empty or be occupied by a single object. If the object in a pane is itself a container object, such as a [SubForm](subform.md), it may have a number of other controls within it.
+The Splitter divides the client area of a [Form](form.md) or [SubForm](subform.md) into resizable panes. Each pane created this way may be empty or be occupied by a single object. If the object in a pane is itself a container object, such as a [SubForm](subform.md), it may have a number of other controls within it.
 
 
 
@@ -106,84 +98,11 @@ If you have two or more vertical Splitters or two or more horizontal Splitters i
 
 When Splitters collide, the object being dragged by the user (a Splitter or a border of the parent) takes precedence over the setting of Align, and temporarily *pushes* other Splitters along in its direction of travel. If and when the operation is reversed, the other Splitters are *pulled* back to their original positions.
 
+
 | Button | Calendar | Combo | Edit | Grid | Group |
 | --- | --- | --- | --- | --- | ---  |
 | Label | List | ListView | MDIClient | ProgressBar | RichEdit |
 | Scroll | Spinner | Static | StatusBar | SubForm | TabBar |
 | TabControl | ToolBar | TrackBar | TreeView | UpDown |  |
-
-```apl
-'F'⎕WC'Form' 'Vertical Splitter'('Size' 25 25)
-'F.E1'⎕WC'Edit'(10 6⍴'Edit 1')('Style' 'Multi')
-'F.E2'⎕WC'Edit'(10 6⍴'Edit 2')('Style' 'Multi')
-'F.S'⎕WC'Splitter' 'F.E1' 'F.E2'
-```
-
-
-![split1](../img/split1.gif)
-
-```apl
-'F'⎕WC'Form' 'Horizontal Splitter'('Size' 25 25)
-'F.E1'⎕WC'Edit'(5 6⍴'Edit 1')('Style' 'Multi')
-'F.E2'⎕WC'Edit'(5 6⍴'Edit 2')('Style' 'Multi')
-'F.S'⎕WC'Splitter' 'F.E1' 'F.E2'('Style' 'Horz')
-```
-
-
-![split2](../img/split2.gif)
-
-```apl
-'F'⎕WC'Form' 'Multiple Splitters: hierarchical using SubForms'('Size' 25 50)
-'F.E1'⎕WC'Edit'(10 6⍴'Edit 1')('Style' 'Multi')
-'F.SF1'⎕WC'SubForm'('EdgeStyle' 'Default')
-'F.S1'⎕WC'Splitter' 'F.E1' 'F.SF1'
-'F.SF1.E1'⎕WC'Edit'(10 6⍴'Edit 2')('Style' 'Multi')
-'F.SF1.E2'⎕WC'Edit'(10 6⍴'Edit 3')('Style' 'Multi')
-'F.SF1.S1'⎕WC'Splitter' 'F.SF1.E1' 'F.SF1.E2'
-```
-
-
-![split3](../img/split3.gif)
-
-
-![split3a](../img/split3a.gif)
-
-
-After dragging the first Splitter to the left.
-
-```apl
-'F'⎕WC'Form' 'Multiple Splitters: non-hierarchical'('Size' 25 50)
-'F.E1'⎕WC'Edit'(10 6⍴'Edit 1')('Style' 'Multi')
-'F.E2'⎕WC'Edit'(10 6⍴'Edit 2')('Style' 'Multi')
-'F.E3'⎕WC'Edit'(10 6⍴'Edit 3')('Style' 'Multi')
-'F.S1'⎕WC'Splitter' 'F.E1'
-'F.S2'⎕WC'Splitter' 'F.E2' 'F.E3'
-```
-
-
-![split4](../img/split4.gif)
-
-
-![split4a](../img/split4a.gif)
-
-
-After dragging the first Splitter to the left.
-
-```apl
-'F'⎕WC'Form' 'Combining Horizontal and Vertical Splitters'
-'F.E1'⎕WC'Edit'(20 6⍴'Edit 1')('Style' 'Multi')
-'F.E2'⎕WC'Edit'(10 6⍴'Edit 2')('Style' 'Multi')
-'F.E3'⎕WC'Edit'(10 6⍴'Edit 3')('Style' 'Multi')
-'F.E4'⎕WC'Edit'(5 6⍴'Edit 4')('Style' 'Multi')
-'F.E5'⎕WC'Edit'(5 6⍴'Edit 5')('Style' 'Multi')
-
-'F.S1'⎕WC'Splitter' 'F.E1'('Style' 'Vert')
-'F.S2'⎕WC'Splitter' 'F.E2'('Style' 'Horz')
-'F.S3'⎕WC'Splitter' 'F.E3'('Style' 'Vert')
-'F.S4'⎕WC'Splitter' 'F.E4' 'F.E5'('Style' 'Horz')
-```
-
-
-![split5](../img/split5.gif)
 
 

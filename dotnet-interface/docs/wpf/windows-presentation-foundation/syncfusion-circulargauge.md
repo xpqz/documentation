@@ -70,7 +70,7 @@ Note that if both `CircularPointer` objects had callbacks on `TempChanged` at th
 
 ```
 
-The `LoadXAML` function used in this example is subtly different from previous examples.
+The `LoadXAML` function used in this example is subtly different from previous examples.
 ```apl
      ∇ win←LoadXAML xaml;⎕USING;str;xml
 [1]    ⎕USING←'System.IO'

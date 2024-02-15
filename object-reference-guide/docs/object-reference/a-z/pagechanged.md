@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">PageChanged</span></h1>
+
 | Applies To: | [PropertyPage](./propertypage.md) |
 | --- | ---  |
 
-| Applies To: | [PropertyPage](./propertypage.md) | [PropertyPage](./propertypage.md) |  |  |
-| --- | --- | ---  |
-| [PropertyPage](./propertypage.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the [Changed](./changed.md) property of a [PropertyPage](./propertypage.md) is altered by user action. It is *not* reported if you reset the [Changed](./changed.md) property using `⎕WS`.
@@ -25,6 +22,7 @@ The PageChanged event is reported for information only and may not itself be dis
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 3-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

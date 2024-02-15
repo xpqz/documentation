@@ -4,29 +4,16 @@
 
 
 <h1 class="heading"><span class="name">CoolBar</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/CoolBar.htm) | [Children](../ChildLists/CoolBar.htm) | [Properties](../PropLists/CoolBar.htm) | [Methods](../MethodLists/CoolBar.htm) | [Events](../EventLists/CoolBar.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The CoolBar object acts as a container for CoolBand objects. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| Children | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| Properties | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| Methods | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| Events | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The CoolBar and [CoolBand](coolband.md) objects provide

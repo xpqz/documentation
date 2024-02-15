@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Create Namespace</span><span class="command">)NS {nm}</span></h1>
 
-`)NS` creates a global namespace and displays its full name, `nm`.
+`)NS` creates a **global** namespace and displays its full name, `nm`.
 
 
 `nm` may be either a simple name or a compound name separated by `'.'`, including one of the special names `'#'` (Root) or `'##'` (Parent).

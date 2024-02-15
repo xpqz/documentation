@@ -5,16 +5,10 @@
 
 <h1 class="heading"><span class="name">IconObj</span></h1>
 
-Applies To
-
-| Applies To: | [Form](../a-z/form.md) [HTMLRenderer](../a-z/htmlrenderer.md) [MDIClient](../a-z/mdiclient.md) [Root](../a-z/root.md) [SubForm](../a-z/subform.md) [SysTrayItem](../a-z/systrayitem.md) [TabBar](../a-z/tabbar.md) [ToolBar](../a-z/toolbar.md) | [Form](../a-z/form.md) | [HTMLRenderer](../a-z/htmlrenderer.md) | [MDIClient](../a-z/mdiclient.md) | [Root](../a-z/root.md) | [SubForm](../a-z/subform.md) | [SysTrayItem](../a-z/systrayitem.md) | [TabBar](../a-z/tabbar.md) | [ToolBar](../a-z/toolbar.md) |  |
-| --- | --- | ---  |
-| [Form](../a-z/form.md) | [HTMLRenderer](../a-z/htmlrenderer.md) | [MDIClient](../a-z/mdiclient.md) |
-| [Root](../a-z/root.md) | [SubForm](../a-z/subform.md) | [SysTrayItem](../a-z/systrayitem.md) |
-| [TabBar](../a-z/tabbar.md) | [ToolBar](../a-z/toolbar.md) |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property is used to specify a *large* and *small* icon for a [Form](../a-z/form.md) or [SubForm](../a-z/subform.md), or for the [Root](../a-z/root.md) object which represents your application as a whole. Its value is either a single ref or character scalar or vector containing the name of, or ref to, an Icon object, or a 2-element vector of character vectors or refs that specifies 2 [Icon](../a-z/icon.md) objects.

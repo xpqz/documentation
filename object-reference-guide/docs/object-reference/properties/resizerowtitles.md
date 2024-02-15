@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ResizeRowTitles</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property determines whether or not the user may alter the width of the row titles in the [Grid](../a-z/grid.md). It is either 1, which indicates that the width of the row titles is adjustable by the user, or 0 which means that it is not.

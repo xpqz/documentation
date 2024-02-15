@@ -23,6 +23,7 @@
 
 If `Y[2]` is omitted, the system tries to open the file with the default value of 66 (read and write access for this process and for any subsequent processes that attempt to access the file). If this fails, the system attempts to open the file with the value 64 (read access for this process, read and write for subsequent processes).
 
+
 | Needed from existing users | Needed from existing users | Granted to subsequent users | Granted to subsequent users |
 | --- | --- | --- | ---  |
 | 0 | read access | 0 | see note The original meaning of this value is no longer relevant. 0 now means the same as 16 (no access). |

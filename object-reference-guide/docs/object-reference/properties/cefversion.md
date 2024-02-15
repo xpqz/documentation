@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">CEFVersion</span></h1>
+
 | Applies To: | [HTMLRenderer](../a-z/htmlrenderer.md) |
 | --- | ---  |
 
-| Applies To: | [HTMLRenderer](../a-z/htmlrenderer.md) | [HTMLRenderer](../a-z/htmlrenderer.md) |  |  |
-| --- | --- | ---  |
-| [HTMLRenderer](../a-z/htmlrenderer.md) |  |  |
+
+**Description**
 
 
-Description
-
-
-CEFVersion is a read-only property that reports the version of the [Chromium Embedded Framework (CEF) https://en.wikipedia.org/wiki/Chromium_Embedded_Framework](https://en.wikipedia.org/wiki/Chromium_Embedded_Framework) that is being used. This information is primarily used for debugging and support.
+CEFVersion is a read-only property that reports the version of the [Chromium Embedded Framework (CEF)](https://en.wikipedia.org/wiki/Chromium_Embedded_Framework) that is being used. This information is primarily used for debugging and support.
 
 
 It is a 10-element vector containing the following:
+
 
 | Index | Description |
 | --- | --- | ---  |

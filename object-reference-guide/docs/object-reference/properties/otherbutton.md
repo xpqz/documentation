@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">OtherButton</span></h1>
+
 | Applies To: | [ColorButton](../a-z/colorbutton.md) |
 | --- | ---  |
 
-| Applies To: | [ColorButton](../a-z/colorbutton.md) | [ColorButton](../a-z/colorbutton.md) |  |  |
-| --- | --- | ---  |
-| [ColorButton](../a-z/colorbutton.md) |  |  |
 
-
-Description
+**Description**
 
 
 The OtherButton property is Boolean and specifies whether or not the user can select a colour from a [ColorButton](../a-z/colorbutton.md) object using the Windows colour selection dialog box.

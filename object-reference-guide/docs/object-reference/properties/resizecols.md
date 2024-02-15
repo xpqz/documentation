@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ResizeCols</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property determines whether or not the user may resize columns in the [Grid](../a-z/grid.md). It is a Boolean scalar or vector with one element per column. A value of 1 indicates that the corresponding column is resizable by the user. A value of  0 means that the corresponding column may not be resized by the user.

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Default</span></h1>
+
 | Applies To: | [Button](../a-z/button.md) | [MsgBox](../a-z/msgbox.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Button](../a-z/button.md) [MsgBox](../a-z/msgbox.md) | [Button](../a-z/button.md) | [MsgBox](../a-z/msgbox.md) |  |
-| --- | --- | ---  |
-| [Button](../a-z/button.md) | [MsgBox](../a-z/msgbox.md) |  |
 
-
-Description
+**Description**
 
 
 This property determines which of a set of push buttons in a [Form](../a-z/form.md), [SubForm](../a-z/subform.md) or [MsgBox](../a-z/msgbox.md) is the default button.

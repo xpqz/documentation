@@ -4,27 +4,19 @@
 
 
 <h1 class="heading"><span class="name">Rect</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Rect.htm) | [Children](../ChildLists/Rect.htm) | [Properties](../PropLists/Rect.htm) | [Methods](../MethodLists/Rect.htm) | [Events](../EventLists/Rect.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | A graphical object used to draw boxes. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Children | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Events | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
-The [Points](../a-z/points.md) property specifies one or more sets of co-ordinates which define the position(s) of one or more rectangles. The position of a rectangle is defined to be the position of the corner that is nearest to the origin of its parent. The default is therefore its top-left corner. The [Size](../a-z/size.md) property specifies the height and width of each rectangle, measuring away from the origin.
+The [Points](../a-z/points.md) property specifies one or more sets of co-ordinates which define the position(s) of one or more rectangles. The position of a rectangle is defined to be the position of the corner that is **nearest** to the origin of its parent. The default is therefore its top-left corner. The [Size](../a-z/size.md) property specifies the height and width of each rectangle, measuring away from the origin.
 
 
 
@@ -103,13 +95,13 @@ Ditto, but fill in green
 #### Multiple Rectangles
 
 
-To draw a set of rectangles with a single name, [Points](../a-z/points.md) may be a simple 2-element vector (specifying the location of all the rectangles), or a 2-column matrix whose first column specifies their y-coordinates and whose second column specifies their x-coordinates, or a 2-element nested vector whose first element specifies their y-coordinate(s) and whose second element specifies their x-coordinate(s).
+To draw a set of rectangles with a single name, [Points](../a-z/points.md) may be a simple 2-element vector (specifying the location of all the rectangles), **or** a 2-column matrix whose first column specifies their y-coordinates and whose second column specifies their x-coordinates, **or** a 2-element nested vector whose first element specifies their y-coordinate(s) and whose second element specifies their x-coordinate(s).
 
 
-Likewise, [Size](../a-z/size.md) may be a simple 2-element vector (applying to all the rectangles), or a 2-column matrix whose first column specifies their heights and whose second column specifies their widths, or a 2-element nested vector whose first element specifies their height(s) and whose second element specifies their width(s).
+Likewise, [Size](../a-z/size.md) may be a simple 2-element vector (applying to all the rectangles), **or** a 2-column matrix whose first column specifies their heights and whose second column specifies their widths, **or** a 2-element nested vector whose first element specifies their height(s) and whose second element specifies their width(s).
 
 
-[Radius](../a-z/radius.md) may be a simple 2-element vector (applying to all the rectangles), or a 2-column matrix whose first column specifies major radii and whose second column specifies minor radii, or a 2-element nested vector whose first element specifies major radii and whose second element specifies minor radii.
+[Radius](../a-z/radius.md) may be a simple 2-element vector (applying to all the rectangles), **or** a 2-column matrix whose first column specifies major radii and whose second column specifies minor radii, **or** a 2-element nested vector whose first element specifies major radii and whose second element specifies minor radii.
 
 
 [LStyle](../a-z/lstyle.md) and [LWidth](../a-z/lwidth.md) may each be simple scalar values (applying to all the rectangles) or simple vectors whose elements refer to each of the corresponding rectangles in turn.

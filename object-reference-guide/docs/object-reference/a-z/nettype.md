@@ -4,19 +4,16 @@
 
 
 <h1 class="heading"><span class="name">NetType</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/NetType.htm) | [Children](../ChildLists/NetType.htm) | [Properties](../PropLists/NetType.htm) | [Methods](../MethodLists/NetType.htm) | [Events](../EventLists/NetType.htm) |
 | --- | --- | --- | --- | ---  |
+
 
 | Purpose: | The NetType object is used to export a namespace as a Microsoft.NET class. |
 | --- | ---  |
-| Parents |  |
-| Children |  |
-| Properties |  |
-| Methods |  |
-| Events |  |
 
 
-Description
+**Description**
 
 
 The NetType object allows you to export an APL namespace as a .NET class that can be accessed by any conforming .NET client application.

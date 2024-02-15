@@ -4,4 +4,4 @@ This parameter specifies the name of the keyboard to be selected on startup. Whe
 
 See also Keyboard on page 1.
 
-Unicode Edition only.
+**Unicode Edition only.**

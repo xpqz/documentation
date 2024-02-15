@@ -17,7 +17,7 @@ The result `R` is a copy of `Y` that has been created in a separate area of memo
 This is an experimental function that may  improve the overall performance of an application by reducing workspace management activity.
 
 
-Externalising an array isolates it from the dynamic workspace management process that occurs constantly as objects are created, modified and destroyed. Moving data around in memory consumes computing power. Removing a large nested constant from this  managed area guarantees that it will not be subjected to such movement and potentially reduces the amount of data shuffling entailed during a compaction which in turn may improve overall performance.
+Externalising an array isolates it from the dynamic workspace management process that occurs constantly as objects are created, modified and destroyed. Moving data around in memory consumes computing power. Removing a **large nested constant**from this  managed area guarantees that it will not be subjected to such movement and potentially reduces the amount of data shuffling entailed during a compaction which in turn may improve overall performance.
 
 
 

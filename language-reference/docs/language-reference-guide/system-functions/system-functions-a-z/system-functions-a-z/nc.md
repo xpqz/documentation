@@ -8,7 +8,8 @@
 `Y` must be a simple  character scalar, vector, matrix, or vector of vectors that specifies a list of names. `R` is a simple numeric vector containing one element per name in `Y`. Each element of `R` is the name class of the active referent to the object named in `Y`.
 
 
-If `Y` is simple, a name class may be:
+If `Y` is **simple**, a name class may be:
+
 
 | Name Class | Description |
 | --- | ---  |
@@ -23,7 +24,8 @@ If `Y` is simple, a name class may be:
 
 
 
-If `Y` is nested a more precise analysis of name class is obtained whereby different types  are identified by a decimal extension. For example, defined functions have name class 3.1, dfns have name class 3.2, and so forth. The complete set of name classification is as follows:
+If `Y` is **nested** a more precise analysis of name class is obtained whereby different types  are identified by a decimal extension. For example, defined functions have name class 3.1, dfns have name class 3.2, and so forth. The complete set of name classification is as follows:
+
 
 |  | Array (2) | Function (3) | Operator (4) | Namespace (9) |
 | --- | --- | --- | --- | ---  |

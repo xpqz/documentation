@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">TCPReady</span></h1>
+
 | Applies To: | [TCPSocket](./tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](./tcpsocket.md) | [TCPSocket](./tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](./tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the TCP/IP buffers are free and there is no data waiting to be sent in the internal APL queue.
@@ -28,6 +25,7 @@ You may not disable or nullify the operation by setting the action code for the 
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

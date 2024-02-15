@@ -4,18 +4,16 @@
 
 
 <h1 class="heading"><span class="name">CharFormat</span></h1>
+
 | Applies To: | [RichEdit](../a-z/richedit.md) |
 | --- | ---  |
 
-| Applies To: | [RichEdit](../a-z/richedit.md) | [RichEdit](../a-z/richedit.md) |  |  |
-| --- | --- | ---  |
-| [RichEdit](../a-z/richedit.md) |  |  |
 
-
-Description
+**Description**
 
 
 The CharFormat property describes or applies formatting to the currently selected text in a [RichEdit](../a-z/richedit.md) object. If the selection is empty, it reports or specifies the default character formatting for the object. It is a 5-element nested array structured as follows:
+
 
 
 | `[1]` | A vector of character vectors which describes the text attributes and is comprised of the following keywords: 'Autocolour' default colour (Windows text colour) 'Bold' bold text 'Italic' bold text 'Underline' underlined 'StrikeOut' line through text 'Protected' protected (read-only) text | 'Autocolour' | default colour (Windows text colour) | 'Bold' | bold text | 'Italic' | bold text | 'Underline' | underlined | 'StrikeOut' | line through text | 'Protected' | protected (read-only) text |
@@ -27,9 +25,9 @@ The CharFormat property describes or applies formatting to the currently selecte
 | 'StrikeOut' | line through text |
 | 'Protected' | protected (read-only) text |
 | `[2]` | A character vector that specifies the face name of the font used to draw the text |
-| `[3]` | Character height in Twips . |
+| `[3]` | Character height in [Twips](../Miscellaneous/Twips.htm) . |
 | `[4]` | Text colour. A single integer or an enclosed vector of 3 RGB values. The default is 0 which implies the standard Windows text colour. |
-| `[5]` | Integer specifying the vertical offset of the character from the base line in Twips . This is used to specify superscript (positive offset) and subscript (negative offset) symbols. The default value is 0. |
+| `[5]` | Integer specifying the vertical offset of the character from the base line in [Twips](../Miscellaneous/Twips.htm) . This is used to specify superscript (positive offset) and subscript (negative offset) symbols. The default value is 0. |
 
 
 When you set the character format using `⎕WC` or `⎕WS` the following rules apply:

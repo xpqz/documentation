@@ -14,4 +14,4 @@ mapchars is a string containing pairs of hexadecimal values which refer to 0-ori
 
 To clear all mappings, set MAPCHARS=0000 .
 
-Classic Edition only.
+**Classic Edition only.**

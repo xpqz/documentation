@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">BtnPix</span></h1>
+
 | Applies To: | [Button](../a-z/button.md) | [Menu](../a-z/menu.md) | [MenuItem](../a-z/menuitem.md) |
 | --- | --- | --- | ---  |
 
-| Applies To: | [Button](../a-z/button.md) [Menu](../a-z/menu.md) [MenuItem](../a-z/menuitem.md) | [Button](../a-z/button.md) | [Menu](../a-z/menu.md) | [MenuItem](../a-z/menuitem.md) |
-| --- | --- | ---  |
-| [Button](../a-z/button.md) | [Menu](../a-z/menu.md) | [MenuItem](../a-z/menuitem.md) |
 
-
-Description
+**Description**
 
 
 This property is used to customise the appearance of a [Button](../a-z/button.md), [Menu](../a-z/menu.md) or [MenuItem](../a-z/menuitem.md). It specifies the names of or refs to up to 3 [Bitmap](../a-z/bitmap.md) objects to be used to display the object under different circumstances. In general, BtnPix is a 3-element vector of character vectors or refs. However, if it defines a single [Bitmap](../a-z/bitmap.md), it may be a single ref, a simple character scalar or vector, or an enclosed character vector.

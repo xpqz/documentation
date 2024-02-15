@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">CellTypes</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies the type of each cell in a [Grid](../a-z/grid.md) object. It is a matrix whose elements are origin-1 indices into other property arrays ([FCol](../a-z/fcol.md), [BCol](../a-z/bcol.md), [CellFonts](../a-z/cellfonts.md) and [Input](../a-z/input.md)).

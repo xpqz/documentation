@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">DoPopup</span></h1>
+
 | Applies To: | [HTMLRenderer](./htmlrenderer.md) |
 | --- | ---  |
 
-| Applies To: | [HTMLRenderer](./htmlrenderer.md) | [HTMLRenderer](./htmlrenderer.md) |  |  |
-| --- | --- | ---  |
-| [HTMLRenderer](./htmlrenderer.md) |  |  |
 
-
-Description
+**Description**
 
 
 This event is triggered when the [HTMLRenderer](./htmlrenderer.md) client attempts to open a new window. This could be fired by an HTML <a> tag with the target attribute set to open a URL in a new window or by a JavaScript window.open() call. Note that this does not apply to JavaScript Popup Boxes.
@@ -23,7 +20,8 @@ By default the HTMLRenderer ignores a request for a new window, but if  the DoPo
 
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows:
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 4-element vector as follows:
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
@@ -34,6 +32,7 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 
 
 Attributes is a 7-element nested vector that specifies the requested attributes for the new window. The HTMLRenderer  currently provides no mechanism to use this information.
+
 
 | `[1]` | 2-element vector of top, left positions – positions not specified are ⍬ |
 | --- | ---  |

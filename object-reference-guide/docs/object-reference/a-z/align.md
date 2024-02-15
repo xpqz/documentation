@@ -5,19 +5,10 @@
 
 <h1 class="heading"><span class="name">Align</span></h1>
 
-Applies To
-
-| Applies To: | [Animation](./animation.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [CoolBar](./coolbar.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [ListView](./listview.md) [Menu](./menu.md) [MenuItem](./menuitem.md) [Scroll](./scroll.md) [Spinner](./spinner.md) [Splitter](./splitter.md) [StatusBar](./statusbar.md) [TabBar](./tabbar.md) [TabBtn](./tabbtn.md) [TabControl](./tabcontrol.md) [ToolBar](./toolbar.md) [ToolControl](./toolcontrol.md) | [Animation](./animation.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [CoolBar](./coolbar.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [ListView](./listview.md) | [Menu](./menu.md) | [MenuItem](./menuitem.md) | [Scroll](./scroll.md) | [Spinner](./spinner.md) | [Splitter](./splitter.md) | [StatusBar](./statusbar.md) | [TabBar](./tabbar.md) | [TabBtn](./tabbtn.md) | [TabControl](./tabcontrol.md) | [ToolBar](./toolbar.md) | [ToolControl](./toolcontrol.md) |
-| --- | --- | ---  |
-| [Animation](./animation.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) |
-| [CoolBar](./coolbar.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) |
-| [ListView](./listview.md) | [Menu](./menu.md) | [MenuItem](./menuitem.md) |
-| [Scroll](./scroll.md) | [Spinner](./spinner.md) | [Splitter](./splitter.md) |
-| [StatusBar](./statusbar.md) | [TabBar](./tabbar.md) | [TabBtn](./tabbtn.md) |
-| [TabControl](./tabcontrol.md) | [ToolBar](./toolbar.md) | [ToolControl](./toolcontrol.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 For an [Animation](./animation.md), the Align property may be `'None'` or `'Centre'` (`'Center'`). If Align is `'None'`, the [Animation](./animation.md) window is automatically resized to fit the AVI being played. If Align is `'Centre'`, the AVI is centred in the [Animation](./animation.md) window. If the window is too small, the AVI is clipped.
@@ -39,7 +30,8 @@ For a single-line [Edit](./edit.md), Align specifies the vertical alignment of t
 For a [Menu](./menu.md), [MenuItem](./menuitem.md), or [StatusField](./statusfield.md), Align `'Right'` is used to position the object at the right end of its parent [MenuBar](./menubar.md) or [StatusBar](./statusbar.md). `'None'` is equivalent to `'Left'` which is the default.
 
 
-For objects of type [CoolBar](./coolbar.md), [Splitter](./splitter.md), [Scroll](./scroll.md), [StatusBar](./statusbar.md), [TabBar](./tabbar.md), [ToolBar](./toolbar.md) and [ToolControl](./toolcontrol.md), Align may be `'None'`, `'Top'`, `'Bottom'`, `'Left'` or `'Right'`. It specifies to which (if any) of the four sides of the parent the object is anchored and also the default position and size of the object. Specifying Align typically causes the Attach property to be set to appropriate values as follows :
+For objects of type [CoolBar](./coolbar.md), [Splitter](./splitter.md), [Scroll](./scroll.md), [StatusBar](./statusbar.md), [TabBar](./tabbar.md), [ToolBar](./toolbar.md) and [ToolControl](./toolcontrol.md), Align may be `'None'`, `'Top'`, `'Bottom'`, `'Left'` or `'Right'`. It specifies to which (if any) of the four sides of the parent the object is anchored and also the default position and size of the object. Specifying Align typically causes the [Attach](attach.md) property to be set to appropriate values as follows :
+
 
 | `Align` | `Attach` |
 | --- | ---  |
@@ -55,14 +47,14 @@ These settings cause the object to remain at a fixed distance (in pixels) from t
 Note that this does not apply to a [TabControl](./tabcontrol.md) for which the default value of Attach is `'None'  'None'  'None'  'None'`, regardless of the value of Align.
 
 
-The default value of Align is `'Right'` for a vertical [Scroll](./scroll.md), `'Bottom'` for a horizontal [Scroll](./scroll.md), and `'Top'` for a [CoolBar](./coolbar.md), [TabBar](./tabbar.md), [TabControl](./tabcontrol.md), [ToolBar](./toolbar.md) and [ToolControl](./toolcontrol.md). Furthermore, unless Posn and Size are specified explicitly, the object is placed along the corresponding edge of its parent.
+The default value of Align is `'Right'` for a vertical [Scroll](./scroll.md), `'Bottom'` for a horizontal [Scroll](./scroll.md), and `'Top'` for a [CoolBar](./coolbar.md), [TabBar](./tabbar.md), [TabControl](./tabcontrol.md), [ToolBar](./toolbar.md) and [ToolControl](./toolcontrol.md). Furthermore, unless [Posn](posn.md) and [Size](size.md) are specified explicitly, the object is placed along the corresponding edge of its parent.
 
 
-For a [Scroll](./scroll.md) object, Align also determines the direction of a [Scroll](./scroll.md) object unless it is overridden by setting HScroll or VScroll directly. If neither HScroll or VScroll is defined and Align is `'Top'` or `'Bottom'`, a horizontal scrollbar is provided. If neither HScroll or VScroll is defined and Align is `'None'`, `'Left'` or `'Right'`, a vertical scrollbar is provided.
+For a [Scroll](./scroll.md) object, Align also determines the direction of a [Scroll](./scroll.md) object unless it is overridden by setting [HScroll](hscroll.md) or [VScroll](vscroll.md) directly. If neither [HScroll](hscroll.md) or VScroll is defined and Align is `'Top'` or `'Bottom'`, a horizontal scrollbar is provided. If neither [HScroll](hscroll.md) or [VScroll](vscroll.md) is defined and Align is `'None'`, `'Left'` or `'Right'`, a vertical scrollbar is provided.
 
 #### Note
 
 
-The value of the Align property may only be assigned by `⎕WC` and may not be changed using `⎕WS`.
+The value of the Align property may **only** be assigned by [`⎕WC`](../../Language/System%20Functions/wc.htm) and may **not** be changed using [`⎕WS`](../../Language/System%20Functions/ws.htm).
 
 

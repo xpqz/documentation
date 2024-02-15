@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">CBits</span></h1>
+
 | Applies To: | [Bitmap](../a-z/bitmap.md) | [Clipboard](../a-z/clipboard.md) | [Icon](../a-z/icon.md) |
 | --- | --- | --- | ---  |
 
-| Applies To: | [Bitmap](../a-z/bitmap.md) [Clipboard](../a-z/clipboard.md) [Icon](../a-z/icon.md) | [Bitmap](../a-z/bitmap.md) | [Clipboard](../a-z/clipboard.md) | [Icon](../a-z/icon.md) |
-| --- | --- | ---  |
-| [Bitmap](../a-z/bitmap.md) | [Clipboard](../a-z/clipboard.md) | [Icon](../a-z/icon.md) |
 
-
-Description
+**Description**
 
 
 The CBits property represents the pixels that make up a picture..

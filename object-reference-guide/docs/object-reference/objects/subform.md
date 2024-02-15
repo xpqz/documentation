@@ -4,34 +4,16 @@
 
 
 <h1 class="heading"><span class="name">SubForm</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/SubForm.htm) | [Children](../ChildLists/SubForm.htm) | [Properties](../PropLists/SubForm.htm) | [Methods](../MethodLists/SubForm.htm) | [Events](../EventLists/SubForm.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | This object represents a window that is owned by and constrained         within another [Form](../a-z/form.md) or an [MDIClient](../a-z/mdiclient.md) . |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| Children | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| Events | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 If the SubForm is the child of a [Form](../a-z/form.md), it is
@@ -55,7 +37,7 @@ centre of its parent object.
 
 
 The [Posn](../a-z/posn.md) property specifies the location of
-the internal top-left corner of the SubForm relative to its parent. If
+the **internal** top-left corner of the SubForm relative to its parent. If
 the SubForm has a title bar, border, or a 3-dimensional shadow, you must allow
 sufficient space for these components. Similarly, the [Size](../a-z/size.md) property specifies the internal size of the SubForm excluding the title bar and
 border.

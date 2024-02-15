@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Image</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Image.htm) | [Children](../ChildLists/Image.htm) | [Properties](../PropLists/Image.htm) | [Methods](../MethodLists/Image.htm) | [Events](../EventLists/Image.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | Positions bitmaps and icons within an object. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Children | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Events | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The [Points](../a-z/points.md) property specifies the co-ordinates of one or more points at which the specified graphical objects are to be drawn.

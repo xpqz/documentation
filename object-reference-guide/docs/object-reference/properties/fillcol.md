@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">FillCol</span></h1>
+
 | Applies To: | [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Poly](../a-z/poly.md) | [Rect](../a-z/rect.md) |
 | --- | --- | --- | --- | ---  |
 
-| Applies To: | [Circle](../a-z/circle.md) [Ellipse](../a-z/ellipse.md) [Poly](../a-z/poly.md) [Rect](../a-z/rect.md) | [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Poly](../a-z/poly.md) | [Rect](../a-z/rect.md) |  |  |
-| --- | --- | ---  |
-| [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Poly](../a-z/poly.md) |
-| [Rect](../a-z/rect.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property defines the fill colour in a graphics object.
@@ -24,6 +20,7 @@ If [FStyle](../a-z/fstyle.md) is 0 (solid fill) FillCol defines the colour with 
 
 
 A single colour is represented by a single number which refers to a standard colour, or by a 3-element vector which defines a colour explicitly in terms of its red, green and blue intensities. A negative value of FillCol refers to a standard MS-Windows colour as described below. Positive values are reserved for a possible future extension.
+
 
 | FillCol | Colour Element | FillCol | Colour Element |
 | --- | --- | --- | ---  |

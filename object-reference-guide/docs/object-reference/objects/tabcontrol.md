@@ -4,29 +4,16 @@
 
 
 <h1 class="heading"><span class="name">TabControl</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/TabControl.htm) | [Children](../ChildLists/TabControl.htm) | [Properties](../PropLists/TabControl.htm) | [Methods](../MethodLists/TabControl.htm) | [Events](../EventLists/TabControl.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The TabControl object provides access to the native Windows tab         control. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Children | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Properties | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Methods | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Events | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The standard tab control is analogous to a set of dividers in a notebook and
@@ -51,7 +38,7 @@ Otherwise, the appearance of the tabs or buttons is determined by properties of
 the TabControl itself.
 
 
-To implement a multiple page tabbed dialog (see Example 1), you should create a [Form](../a-z/form.md), then a
+To implement a multiple page tabbed dialog [(see Example 1)](../Examples/TabControl%20Example%201.htm), you should create a [Form](../a-z/form.md), then a
 TabControl with Style `'Tabs'` as a child of
 the [Form](../a-z/form.md). Next, create one or more pairs of [TabButton](../a-z/tabbutton.md) and [SubForm](../a-z/subform.md) objects as children of the
 TabControl. You associate each [SubForm](../a-z/subform.md) with a
@@ -61,7 +48,7 @@ correctly. You may alternatively create your [SubForms](../a-z/subform.md) as c
 appropriate resize behaviour using their [Attach](../a-z/attach.md) property.
 
 
-A TabControl object with [Style](../a-z/style.md) `'Buttons'` (Example 2) or `'FlatButtons'` (Example 3) may be used in a similar
+A TabControl object with [Style](../a-z/style.md) `'Buttons'` [(Example 2)](../Examples/TabControl%20Example%202.htm) or `'FlatButtons'`[ (Example 3)](../Examples/TabControl%20Example%203.htm) may be used in a similar
 way (i.e. to display a set of alternative pages), although buttons in this type
 of TabControl are more normally used to execute commands. For this reason, these
 styles of TabControl are without borders.
@@ -74,7 +61,7 @@ value of [FlatSeparators](../a-z/flatseparators.md) is 0 (no
 separators).
 
 
-Example 3a shows the
+[Example 3a](../Examples/TabControl%20Example%203a.htm) shows the
 effect of setting [FlatSeparators](../a-z/flatseparators.md) to
 1.
 
@@ -85,12 +72,12 @@ TabButton. [Align](../a-z/align.md) may be Top (the default),
 Bottom, Left or Right.
 
 
-If [Align](../a-z/align.md) is `'Top'` or `'Bottom'` (Example
-4), the tabs or buttons are arranged along the top or bottom edge of the
+If [Align](../a-z/align.md) is `'Top'` or `'Bottom'`[ (Example
+4)](../Examples/TabControl%20Example%204.htm), the tabs or buttons are arranged along the top or bottom edge of the
 TabControl and picture is drawn to the left of the Caption.
 
 
-If [Align](../a-z/align.md) is `'Left'` (Example 5), the tabs or buttons are
+If [Align](../a-z/align.md) is `'Left'` [(Example 5)](../Examples/TabControl%20Example%205.htm), the tabs or buttons are
 arranged top-to-bottom along the left edge of the TabControl, and the pictures
 are drawn below the Captions.
 
@@ -113,12 +100,12 @@ multiple rows/columns.
 The default value of [MultiLine](../a-z/multiline.md) is 0,
 in which case, if you have more tabs or buttons than will fit in the space
 provided, the TabControl displays an UpDown control to permit the user to scroll
-them. See Example 7.
+them. [See Example 7.](../Examples/TabControl%20Example%207.htm)
 
 
 If [MultiLine](../a-z/multiline.md) is set to 1, the tabs are
-displayed in multiple flights (Example 8) or the buttons are displayed in multiple rows (Example
-9).
+displayed in multiple flights [(Example 8)](../Examples/TabControl%20Example%208.htm) or the buttons are displayed in multiple rows [(Example
+9)](../Examples/TabControl%20Example%209.htm).
 
 
 The [ScrollOpposite](../a-z/scrollopposite.md) property
@@ -126,7 +113,7 @@ specifies that unneeded tabs scroll to the opposite side of a TabControl, when a
 tab is selected. Setting [ScrollOpposite](../a-z/scrollopposite.md) to 1 forces [MultiLine](../a-z/multiline.md) to 1 also.
 
 
-Example 10 illustrates a
+[Example 10](../Examples/TabControl%20Example%2010.htm) illustrates a
 TabControl with [ScrollOpposite](../a-z/scrollopposite.md) set
 to 1, after the user has clicked *Third Tab*. Notice that, in this example,
 the SubForms have been created as children of the TabControl. This is necessary
@@ -144,7 +131,7 @@ Otherwise, if [Justify](../a-z/justify.md) is empty or `'None'`,
 the rows are ragged.
 
 
-See Example 11 (for tabs) and Example 12 (for
+See [Example 11](../Examples/TabControl%20Example%2011.htm) (for tabs) and [Example 12](../Examples/TabControl%20Example%2012.htm) (for
 buttons).
 
 
@@ -162,8 +149,8 @@ which may be `'Centre'`, `'Edge'`,
 or `'IconEdge'`.
 
 
-Example
-13 illustrates these different settings.
+[Example
+13](../Examples/TabControl%20Example%2013.htm) illustrates these different settings.
 
 
 The font used to draw the captions in the [TabButton](../a-z/tabbutton.md) objects is determined by the [FontObj](../a-z/fontobj.md) property of the TabControl.
@@ -193,33 +180,5 @@ default), `'Never'` or `'ButtonDown'`.
 The [HotTrack](../a-z/hottrack.md) property specifies whether
 or not the tabs or buttons are automatically highlighted by the mouse pointer.
 The default is 0 (no highlighting).
-
-
-Note that the icons used in this example are provided in the ws sub-directory.
-```apl
-icodir←(2 ⎕NQ'.' 'GetEnvironment' 'Dyalog'),'\ws\'
-```
-```apl
-'F'⎕WC'Form' 'TabControl: Default'('Size' 25 50)
-'F.TC'⎕WC'TabControl'
-
-'F.TC.IL'⎕WC'ImageList'
-'F.TC.IL.'⎕WC'Icon'(icodir,'aplicon.ico')
-'F.TC.IL.'⎕WC'Icon'(icodir,'funicon.ico')
-'F.TC.IL.'⎕WC'Icon'(icodir,'editicon.ico')
-
-'F.TC'⎕WS'ImageListObj' 'F.TC.IL'
-
-'F.TC.T1'⎕WC'TabButton' 'One'('ImageIndex' 1)
-'F.TC.T2'⎕WC'TabButton' 'Two'('ImageIndex' 2)
-'F.TC.T3'⎕WC'TabButton' 'Three'('ImageIndex' 3)
-
-'F.TC.S1'⎕WC'SubForm'('TabObj' 'F.TC.T1')
-'F.TC.S2'⎕WC'SubForm'('TabObj' 'F.TC.T2')
-'F.TC.S3'⎕WC'SubForm'('TabObj' 'F.TC.T3')
-```
-
-
-![tab1](../img/tab1.gif)
 
 

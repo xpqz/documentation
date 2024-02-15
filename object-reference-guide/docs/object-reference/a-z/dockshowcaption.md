@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">DockShowCaption</span></h1>
+
 | Applies To: | [Form](./form.md) | [SubForm](./subform.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Form](./form.md) [SubForm](./subform.md) | [Form](./form.md) | [SubForm](./subform.md) |  |
-| --- | --- | ---  |
-| [Form](./form.md) | [SubForm](./subform.md) |  |
 
-
-Description
+**Description**
 
 
 The DockShowCaption property specifies whether or not a Form displays a title bar when it is docked as a SubForm.

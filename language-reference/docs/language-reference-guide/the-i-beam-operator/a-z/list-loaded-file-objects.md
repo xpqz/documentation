@@ -15,6 +15,7 @@ The editor may be used to edit Dyalog script files (*.dyalog* files) and general
 
 `R` is a vector of 8-element vectors, one vector per object in the workspace that is associated with a file.
 
+
 | Element | Contains |
 | --- | ---  |
 | 1 | Object name or ref (refs are returned for all types of namespace) |

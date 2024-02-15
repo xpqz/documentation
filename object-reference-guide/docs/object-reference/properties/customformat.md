@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">CustomFormat</span></h1>
+
 | Applies To: | [DateTimePicker](../a-z/datetimepicker.md) |
 | --- | ---  |
 
-| Applies To: | [DateTimePicker](../a-z/datetimepicker.md) | [DateTimePicker](../a-z/datetimepicker.md) |  |  |
-| --- | --- | ---  |
-| [DateTimePicker](../a-z/datetimepicker.md) |  |  |
 
-
-Description
+**Description**
 
 
 Specifies a custom format for the date/time display in a [DateTimePicker](../a-z/datetimepicker.md).
@@ -23,6 +20,7 @@ CustomFormat is a character vector that may contain a mixture of date/time forma
 
 
 The date/time elements are defined by the following groups of characters, notice that they are case-sensitive:
+
 
 | Element | Description |
 | --- | ---  |
@@ -64,6 +62,6 @@ To include a single quote in your body text, use two consecutive single quotes. 
 
 
 
-Note: Non format characters that are not delimited by single quotes will result in unpredictable display by the [DateTimePicker](../a-z/datetimepicker.md) object.
+**Note:** Non format characters that are not delimited by single quotes will result in unpredictable display by the [DateTimePicker](../a-z/datetimepicker.md) object.
 
 

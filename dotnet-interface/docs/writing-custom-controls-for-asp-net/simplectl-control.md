@@ -22,10 +22,7 @@ The `SimpleCtl` Class is illustrated below:
 
 ```
 
-The `Render` function supercedes (see 
-Programming Reference Guide: 
-
-Access Statement:Access Statement on page 1) the Render method that `SimpleCtl` has inherited from its base class, System.Web.UI.Control.
+The `Render` function **supercedes** (see [:Access Statement on page 1](../../Language/Control%20Structures/Class%20Declaration%20Statements/access.htm#Access_Statement)) the Render method that `SimpleCtl` has inherited from its base class, System.Web.UI.Control.
 
 The Render method defined by the System.Web.UI.Control base class is void and takes a parameter of type HtmlTextWriter. When the SimpleCtl control is referenced in a Web Page, ASP.NET creates an instance of it and calls its Render method because it is a Control and is expected to have one. Moreover, ASP.NET supplies an object of type HtmlTextWriter as its parameter. You do not need to worry where this object came from, or what it actually represents. You need only know that an HtmlTextWriter provides a method called WriteLine that may be used to output a text string to the browser. The mechanics of how this actually happens are handled by the HtmlTextWriter object itself.
 

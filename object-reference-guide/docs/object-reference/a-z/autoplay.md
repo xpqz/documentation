@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">AutoPlay</span></h1>
+
 | Applies To: | [Animation](./animation.md) |
 | --- | ---  |
 
-| Applies To: | [Animation](./animation.md) | [Animation](./animation.md) |  |  |
-| --- | --- | ---  |
-| [Animation](./animation.md) |  |  |
 
-
-Description
+**Description**
 
 
 Specifies whether or not an AVI clip is played immediately when loaded in an [Animation](./animation.md) object.

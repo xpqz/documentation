@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">ImageList</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/ImageList.htm) | [Children](../ChildLists/ImageList.htm) | [Properties](../PropLists/ImageList.htm) | [Methods](../MethodLists/ImageList.htm) | [Events](../EventLists/ImageList.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The ImageList object represents a set of bitmapped images. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Children | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Events | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 An ImageList object represents an array of bitmapped images which are used to depict items in a [ListView](../a-z/listview.md) or [TreeView](../a-z/treeview.md) object, or the images in a [CoolBar](../a-z/coolbar.md), [Menu](../a-z/menu.md), [TabControl](../a-z/tabcontrol.md) or [ToolControl](../a-z/toolcontrol.md).

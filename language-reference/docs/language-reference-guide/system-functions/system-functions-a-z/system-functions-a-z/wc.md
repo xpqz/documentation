@@ -5,14 +5,14 @@
 
 <h1 class="heading"><span class="name">Window Create Object</span><span class="command">{R}←{X}⎕WC Y</span></h1>
 
-This system function creates a GUI object.  `Y` is either a vector which specifies properties that determine the new object's appearance and behaviour, or a ref to or the `⎕OR` of a GUI object that exists or previously existed.  `X` is a character vector which specifies the name of the new object, and its position in the object hierarchy.
+This system function creates a GUI **object**.  `Y` is either a vector which specifies **properties** that determine the new object's appearance and behaviour, or a ref to or the `⎕OR` of a GUI object that exists or previously existed.  `X` is a character vector which specifies the name of the new object, and its position in the object hierarchy.
 
 
 
 If `X` is omitted, `⎕WC` attaches a GUI component to the current namespace, retaining any functions, variables and other namespaces that it may contain.  Monadic `⎕WC` is discussed in detail at the end of this section.
 
 
-If `Y` is a nested vector each element specifies a property.  The `Type` property (which specifies the class of the object) must be specified.  Most other properties take default values and need not be explicitly stated.  Properties (including `Type`) may be declared either positionally or with a keyword followed by a value. Note that `Type` must always be the first property specified. Properties are specified positionally by placing their values in `Y` in the order prescribed for an object of that type.
+If `Y` is a nested vector each element specifies a property.  The `Type` property (which specifies the class of the object) **must** be specified.  Most other properties take default values and need not be explicitly stated.  Properties (including `Type`) may be declared either positionally or with a keyword followed by a value. Note that `Type` must always be the first property specified. Properties are specified positionally by placing their values in `Y` in the order prescribed for an object of that type.
 
 
 If `Y` is a ref or the result of `⎕OR`, the new object is a complete copy of the other, including any child objects, namespaces, functions and variables that it contained at that time.
@@ -29,6 +29,7 @@ Names for sub-objects follow the same rules except that the character "`.`" is u
 
 
 The following are examples of legal and illegal names:
+
 
 | Legal | Illegal |
 | --- | ---  |
@@ -48,7 +49,7 @@ If `Y` refers to a non-existent property, or to a property that is not defined f
 A "top-level" object created by `⎕WC` whose name is localised in a function/operator header, is deleted on exit from the function/operator.  All objects, including sub-objects, can be deleted using `⎕EX`.
 
 
-GUI objects are named relative to the current namespace, so the following examples are equivalent:
+GUI objects are named **relative** to the current namespace, so the following examples are equivalent:
 ```apl
       'F1.B1' ⎕WC 'Button'
 ```
@@ -123,6 +124,6 @@ Monadic `⎕WC` is used to *attach* a GUI component to an existing object.  The
 
 
 
-Windows only.
+**Windows only.**
 
 

@@ -29,6 +29,6 @@ DOMAIN ERROR
 ```
 
 
-Windows only.
+**Windows only.**
 
 

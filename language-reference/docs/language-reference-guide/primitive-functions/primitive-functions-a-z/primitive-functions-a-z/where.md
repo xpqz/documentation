@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Where</span><span class="command">R←⍸Y</span></h1>
 
-Classic Edition:  the symbol `⍸` (Iota Underbar) is not available in Classic Edition, and Where is instead represented by `⎕U2378`.
+**Classic Edition:**  the symbol `⍸` (Iota Underbar) is not available in Classic Edition, and Where is instead represented by `⎕U2378`.
 
 
 `Y` must be a simple Boolean or numeric array of non-negative integers.

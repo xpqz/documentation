@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">PaperSource</span></h1>
+
 | Applies To: | [Printer](./printer.md) |
 | --- | ---  |
 
-| Applies To: | [Printer](./printer.md) | [Printer](./printer.md) |  |  |
-| --- | --- | ---  |
-| [Printer](./printer.md) |  |  |
 
-
-Description
+**Description**
 
 
 The PaperSource property is a character vector that specifies the name of the paper bin to be used as the paper source for printing.

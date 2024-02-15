@@ -35,10 +35,10 @@ If `Y` is a simple character vector, `⎕CMD` invokes the Windows Command Proces
 ```
 
 
-If the command specified in `Y` already contains the redirection symbol (`>`) the capture of output through a pipe is avoided and the result `R` is empty.  If the command specified by `Y` issues prompts and expects user input, it is ESSENTIAL to explicitly redirect input and output to the console.
+If the command specified in `Y` already contains the redirection symbol (`>`) the capture of output through a pipe is avoided and the result `R` is empty.  If the command specified by `Y` issues prompts and expects user input, it is **ESSENTIAL** to explicitly redirect input and output to the console.
 
 
-If this is done, APL detects the presence of a "`>`" in the command line, runs the command processor in a visible window, and does not direct output to the pipe.  If you fail to do this your system will appear to hang because there is no mechanism for you to receive or respond to the prompt.
+If this is done, APL detects the presence of a "`>`" in the command line, runs the command processor in a **visible** window, and does not direct output to the pipe.  If you fail to do this your system will appear to hang because there is no mechanism for you to receive or respond to the prompt.
 
 
 #### Example
@@ -74,7 +74,7 @@ For example, to start a version of Excel to which the pathname is:
 
 the argument to `⎕CMD` should be:
 ```apl
-⎕CMD '"c:\program files\microsoft office\office11\excel.exe"'
+⎕CMD '**"**c:\program files\microsoft office\office11\excel.exe**"**'
 
 ```
 
@@ -88,20 +88,20 @@ The Windows Command Processor does not permit more than one set of double-quotes
 The following statements are all valid:
 ```apl
 ⎕CMD 'c:\windows\system32\notepad.exe c:\myfile.txt'  
-⎕CMD 'c:\windows\system32\notepad.exe "c:\myfile.txt"'
-⎕CMD '"c:\windows\system32\notepad.exe" c:\myfile.txt'
+⎕CMD 'c:\windows\system32\notepad.exe **"**c:\myfile.txt**"**'
+⎕CMD '**"**c:\windows\system32\notepad.exe**"** c:\myfile.txt'
 ```
 
 
 Whereas the next statement, which contains two sets of double-quotes, will fail:
 ```apl
-⎕CMD '"c:\windows\system32\notepad.exe" "c:\myfile.txt"'
+⎕CMD '**"**c:\windows\system32\notepad.exe**"** **"**c:\myfile.txt**"**'
 ```
 
 
 Such a statement can however be executed using the second form of `⎕CMD`(where the argument is a 2-element vector of character vectors) which does not use the Windows Command Processor and is not subject to this restriction. However, the call to `⎕CMD` will return immediately, and no output from the command will be returned.
 ```apl
-⎕CMD'"c:\windows\system32\notepad.exe" "c:\myfile.txt"' ''
+⎕CMD'**"**c:\windows\system32\notepad.exe**"** **"**c:\myfile.txt**"**' ''
 ```
 
 ##### Implementation Notes
@@ -118,6 +118,7 @@ Before execution, the argument is prefixed and postfixed with strings defined by
 
 
 `⎕CMD` treats certain characters as having special meaning as follows:
+
 
 | `#` | marks the start of a trailing comment, |
 | --- | ---  |
@@ -152,6 +153,7 @@ Note that `Y[1]` may contain the complete command line, including any suitable p
 
 
 `Y[2]` specifies the window parameter and may be one of the following.  If not, a `DOMAIN ERROR` is reported.
+
 
 | `'Normal' ''` | Application is started in a normal window, which is given the input focus |
 | --- | ---  |

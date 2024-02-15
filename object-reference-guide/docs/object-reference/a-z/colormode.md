@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ColorMode</span></h1>
+
 | Applies To: | [Printer](./printer.md) |
 | --- | ---  |
 
-| Applies To: | [Printer](./printer.md) | [Printer](./printer.md) |  |  |
-| --- | --- | ---  |
-| [Printer](./printer.md) |  |  |
 
-
-Description
+**Description**
 
 
 Specifies whether or not printing is done in colour.

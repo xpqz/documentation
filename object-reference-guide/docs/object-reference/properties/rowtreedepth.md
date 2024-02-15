@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RowTreeDepth</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 The RowTreeDepth property specifies the structure of the rows in a [Grid](../a-z/grid.md) object. It is either a scalar 0 or an integer vector of the same length as the number of rows in the [Grid](../a-z/grid.md). RowTreeDepth is similar to the [Depth](../a-z/depth.md) property of the [TreeView](../a-z/treeview.md) object.

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RowHiddenDepth</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 The RowHiddenDepth property is read-only and identifies which rows of a Grid are currently hidden.

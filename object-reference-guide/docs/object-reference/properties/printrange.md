@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">PrintRange</span></h1>
+
 | Applies To: | [Printer](../a-z/printer.md) |
 | --- | ---  |
 
-| Applies To: | [Printer](../a-z/printer.md) | [Printer](../a-z/printer.md) |  |  |
-| --- | --- | ---  |
-| [Printer](../a-z/printer.md) |  |  |
 
-
-Description
+**Description**
 
 
 The PrintRange property specifies the range of pages to be printed.
@@ -22,6 +19,7 @@ PrintRange may be an empty character vector (the default), or `'All'`, either of
 
 
 Alternatively, PrintRange may be a 3 or 4-element nested array whose items are:
+
 
 | `[1]` | `'Pages'` |
 | --- | ---  |

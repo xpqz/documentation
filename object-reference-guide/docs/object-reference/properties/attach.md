@@ -5,25 +5,10 @@
 
 <h1 class="heading"><span class="name">Attach</span></h1>
 
-Applies To
-
-| Applies To: | [Animation](../a-z/animation.md) [Button](../a-z/button.md) [ButtonEdit](../a-z/buttonedit.md) [Calendar](../a-z/calendar.md) [ColorButton](../a-z/colorbutton.md) [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [CoolBar](../a-z/coolbar.md) [DateTimePicker](../a-z/datetimepicker.md) [Edit](../a-z/edit.md) [Grid](../a-z/grid.md) [Group](../a-z/group.md) [HTMLRenderer](../a-z/htmlrenderer.md) [Label](../a-z/label.md) [List](../a-z/list.md) [ListView](../a-z/listview.md) [MDIClient](../a-z/mdiclient.md) [ProgressBar](../a-z/progressbar.md) [RichEdit](../a-z/richedit.md) [Scroll](../a-z/scroll.md) [SM](../a-z/sm.md) [Spinner](../a-z/spinner.md) [Static](../a-z/static.md) [StatusBar](../a-z/statusbar.md) [StatusField](../a-z/statusfield.md) [SubForm](../a-z/subform.md) [TabBar](../a-z/tabbar.md) [TabBtn](../a-z/tabbtn.md) [TabControl](../a-z/tabcontrol.md) [ToolBar](../a-z/toolbar.md) [ToolControl](../a-z/toolcontrol.md) [TrackBar](../a-z/trackbar.md) [TreeView](../a-z/treeview.md) [UpDown](../a-z/updown.md) | [Animation](../a-z/animation.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Calendar](../a-z/calendar.md) | [ColorButton](../a-z/colorbutton.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [CoolBar](../a-z/coolbar.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) | [HTMLRenderer](../a-z/htmlrenderer.md) | [Label](../a-z/label.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [MDIClient](../a-z/mdiclient.md) | [ProgressBar](../a-z/progressbar.md) | [RichEdit](../a-z/richedit.md) | [Scroll](../a-z/scroll.md) | [SM](../a-z/sm.md) | [Spinner](../a-z/spinner.md) | [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [StatusField](../a-z/statusfield.md) | [SubForm](../a-z/subform.md) | [TabBar](../a-z/tabbar.md) | [TabBtn](../a-z/tabbtn.md) | [TabControl](../a-z/tabcontrol.md) | [ToolBar](../a-z/toolbar.md) | [ToolControl](../a-z/toolcontrol.md) | [TrackBar](../a-z/trackbar.md) | [TreeView](../a-z/treeview.md) | [UpDown](../a-z/updown.md) |  |  |
-| --- | --- | ---  |
-| [Animation](../a-z/animation.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) |
-| [Calendar](../a-z/calendar.md) | [ColorButton](../a-z/colorbutton.md) | [Combo](../a-z/combo.md) |
-| [ComboEx](../a-z/comboex.md) | [CoolBar](../a-z/coolbar.md) | [DateTimePicker](../a-z/datetimepicker.md) |
-| [Edit](../a-z/edit.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) |
-| [HTMLRenderer](../a-z/htmlrenderer.md) | [Label](../a-z/label.md) | [List](../a-z/list.md) |
-| [ListView](../a-z/listview.md) | [MDIClient](../a-z/mdiclient.md) | [ProgressBar](../a-z/progressbar.md) |
-| [RichEdit](../a-z/richedit.md) | [Scroll](../a-z/scroll.md) | [SM](../a-z/sm.md) |
-| [Spinner](../a-z/spinner.md) | [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) |
-| [StatusField](../a-z/statusfield.md) | [SubForm](../a-z/subform.md) | [TabBar](../a-z/tabbar.md) |
-| [TabBtn](../a-z/tabbtn.md) | [TabControl](../a-z/tabcontrol.md) | [ToolBar](../a-z/toolbar.md) |
-| [ToolControl](../a-z/toolcontrol.md) | [TrackBar](../a-z/trackbar.md) | [TreeView](../a-z/treeview.md) |
-| [UpDown](../a-z/updown.md) |  |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property specifies how an object responds to its parent being resized. It is a 4-element vector of character vectors which defines how each of the four edges of the object moves in response to a resize request made by the parent. Note that this property is only effective if the value of [AutoConf](../a-z/autoconf.md) on the parent is 2 or 3 and [AutoConf](../a-z/autoconf.md) for the object itself is 1 or 3.
@@ -32,6 +17,7 @@ This property specifies how an object responds to its parent being resized. It i
 
 
 The 4 elements of Attach refer to the Top, Left, Bottom and Right edges of the object respectively. Their values may be defined as follows :
+
 
 | Element | Value | Meaning |
 | --- | --- | ---  |

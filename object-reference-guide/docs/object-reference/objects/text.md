@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Text</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Text.htm) | [Children](../ChildLists/Text.htm) | [Properties](../PropLists/Text.htm) | [Methods](../MethodLists/Text.htm) | [Events](../EventLists/Text.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | Writes text. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| Children | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| Properties | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| Methods | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| Events | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The Text object is used to write arbitrary text. It can be used in a [Form](../a-z/form.md),
@@ -66,7 +58,7 @@ is written at the specified point.
 5. If Text is a matrix, each row of Text is written at the corresponding
     position in [Points](../a-z/points.md).
 
-[FontObj](../a-z/fontobj.md) specifies a single font
+[FontObj](../a-z/fontobj.md) specifies a **single** font
 to be used to write the Text. See a description of the [FontObj](../a-z/fontobj.md) property for details.
 
 

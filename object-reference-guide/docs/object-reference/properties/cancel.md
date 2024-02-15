@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Cancel</span></h1>
+
 | Applies To: | [Button](../a-z/button.md) |
 | --- | ---  |
 
-| Applies To: | [Button](../a-z/button.md) | [Button](../a-z/button.md) |  |  |
-| --- | --- | ---  |
-| [Button](../a-z/button.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property determines which (if any) Push button in a [Form](../a-z/form.md) or [SubForm](../a-z/subform.md) is to be associated with the Escape key. It has the value 1 or 0.

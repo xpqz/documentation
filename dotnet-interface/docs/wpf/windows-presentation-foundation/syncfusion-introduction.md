@@ -26,11 +26,6 @@ In common with all .NET types, when a Syncfusion control is loaded using XAML or
 
        ⎕USING,←⊂'Syncfusion.Windows.Gauge,Syncfusion/4.6/Syncfusion.Gauge.WPF.dll'
 ```
-```apl
-
-       ⎕USING,←⊂'Syncfusion.Windows.Gauge,
-                 Syncfusion/4.6/Syncfusion.Gauge.WPF.dll'
-```
 
 This statement tells APL to search the .NET namespace named **Syncfusion.Windows.Gauge**, which is located in the assembly file whose path (relative to the Dyalog installation directory) is  Syncfusion/4.6/Syncfusion.Gauge.WPF.dll.
 

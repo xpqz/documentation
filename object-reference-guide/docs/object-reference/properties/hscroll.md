@@ -5,21 +5,17 @@
 
 <h1 class="heading"><span class="name">HScroll</span></h1>
 
-Applies To
-
-| Applies To: | [Form](../a-z/form.md) [SubForm](../a-z/subform.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) |  |
-| --- | --- | ---  |
-| [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 For most objects to which it applies, this property determines whether or not a horizontal scrollbar is provided.
 
 
 
-HScroll may only be set when the object is created with `⎕WC` and may not subsequently be changed with `⎕WS` or assignment.
+**HScroll may only be set when the object is created with ⎕WC and may not subsequently be changed with ⎕WS or assignment.**
 
 
 When applied to a [Combo](../a-z/combo.md), or to an [Edit](../a-z/edit.md) object with [Style ](../a-z/style.md)`'Single'` (i.e. a single-line edit field), the value 0 inhibits scrolling, and prevents the user from entering more data when the field is full. If instead it has the value `¯2`, the field is scrollable, and the length of data that may be entered is not limited by the length of the field.

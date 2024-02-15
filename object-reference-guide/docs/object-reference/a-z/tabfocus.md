@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">TabFocus</span></h1>
+
 | Applies To: | [TabControl](./tabcontrol.md) |
 | --- | ---  |
 
-| Applies To: | [TabControl](./tabcontrol.md) | [TabControl](./tabcontrol.md) |  |  |
-| --- | --- | ---  |
-| [TabControl](./tabcontrol.md) |  |  |
 
-
-Description
+**Description**
 
 
 The TabFocus property specifies the focus behaviour for the [TabControl](./tabcontrol.md) object and may

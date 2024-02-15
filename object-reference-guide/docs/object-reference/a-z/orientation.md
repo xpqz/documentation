@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Orientation</span></h1>
+
 | Applies To: | [Printer](./printer.md) |
 | --- | ---  |
 
-| Applies To: | [Printer](./printer.md) | [Printer](./printer.md) |  |  |
-| --- | --- | ---  |
-| [Printer](./printer.md) |  |  |
 
-
-Description
+**Description**
 
 
 The Orientation property specifies the orientation of the paper on a [Printer](./printer.md) object. It is a simple character vector which is either `'Portrait'` or `'Landscape'`. When you create a [Printer](./printer.md) object, the default value of the Orientation property is determined by the current setting for the corresponding printer device.

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">MDITile</span></h1>
+
 | Applies To: | [MDIClient](../a-z/mdiclient.md) |
 | --- | ---  |
 
-| Applies To: | [MDIClient](../a-z/mdiclient.md) | [MDIClient](../a-z/mdiclient.md) |  |  |
-| --- | --- | ---  |
-| [MDIClient](../a-z/mdiclient.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method causes the [MDIClient](../a-z/mdiclient.md) object
@@ -31,6 +28,7 @@ event entirely.
 
 The argument to MDITile is `⍬`, or
 a single item as follows:
+
 
 | `[1]` | Tile Mode | 0 (vertical) 1 (horizontal) |
 | --- | --- | ---  |

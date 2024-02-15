@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">PreCreate</span></h1>
+
 | Applies To: | [ActiveXControl](./activexcontrol.md) |
 | --- | ---  |
 
-| Applies To: | [ActiveXControl](./activexcontrol.md) | [ActiveXControl](./activexcontrol.md) |  |  |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when an instance of an [ActiveXControl](./activexcontrol.md) is created. The PreCreate event is generated at the point the *instance* is made.
@@ -28,6 +25,7 @@ This event is reported for information alone. You may not disable or nullify the
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

@@ -4,39 +4,16 @@
 
 
 <h1 class="heading"><span class="name">ListView</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/ListView.htm) | [Children](../ChildLists/ListView.htm) | [Properties](../PropLists/ListView.htm) | [Methods](../MethodLists/ListView.htm) | [Events](../EventLists/ListView.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The ListView object displays a collection of items. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [GetItemState](../a-z/getitemstate.md) [SetItemState](../a-z/setitemstate.md) [GetItemPosition](../a-z/getitemposition.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) | [GetItemPosition](../a-z/getitemposition.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) |
-| [GetItemPosition](../a-z/getitemposition.md) |  |  |
-| Children | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [GetItemState](../a-z/getitemstate.md) [SetItemState](../a-z/setitemstate.md) [GetItemPosition](../a-z/getitemposition.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) | [GetItemPosition](../a-z/getitemposition.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) |
-| [GetItemPosition](../a-z/getitemposition.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [GetItemState](../a-z/getitemstate.md) [SetItemState](../a-z/setitemstate.md) [GetItemPosition](../a-z/getitemposition.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) | [GetItemPosition](../a-z/getitemposition.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) |
-| [GetItemPosition](../a-z/getitemposition.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [GetItemState](../a-z/getitemstate.md) [SetItemState](../a-z/setitemstate.md) [GetItemPosition](../a-z/getitemposition.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) | [GetItemPosition](../a-z/getitemposition.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) |
-| [GetItemPosition](../a-z/getitemposition.md) |  |  |
-| Events | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [GetItemState](../a-z/getitemstate.md) [SetItemState](../a-z/setitemstate.md) [GetItemPosition](../a-z/getitemposition.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) | [GetItemPosition](../a-z/getitemposition.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) |
-| [GetItemPosition](../a-z/getitemposition.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The ListView object is a window that displays a collection of items, each
@@ -149,8 +126,6 @@ The [ItemGroups](../a-z/itemgroups.md) and [ItemGroupMetrics](../a-z/itemgroupme
 ![lvsg1](../img/lvsg1.gif)
 
 
-Note that this feature only applies if Native Look and Feel 
-(see page 1)
- is enabled.
+**Note that this feature only applies if Native Look and Feel (see page 1) is enabled.**
 
 

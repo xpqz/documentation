@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">DyalogCustomMessage1</span></h1>
+
 | Applies To: | [Form](../a-z/form.md) |
 | --- | ---  |
 
-| Applies To: | [Form](../a-z/form.md) | [Form](../a-z/form.md) |  |  |
-| --- | --- | ---  |
-| [Form](../a-z/form.md) |  |  |
 
-
-Description
+**Description**
 
 
 This event allows external applications and dynamic link libraries to insert
@@ -47,13 +44,14 @@ This event is reported for information alone. You may not disable or nullify
 the event by setting the action code for the event to `¯1` or by returning 0 from a callback function.
 
 
-The result of a callback function is not returned to the external
+The result of a callback function is **not** returned to the external
 application.
 
 
 The event message reported as the result of `⎕DQ`,
 or supplied as the right argument to your callback function, is a 4-element
 vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

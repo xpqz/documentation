@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">DockMove</span></h1>
+
 | Applies To: | [CoolBand](../a-z/coolband.md) | [CoolBar](../a-z/coolbar.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) | [ToolControl](../a-z/toolcontrol.md) |
 | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [CoolBand](../a-z/coolband.md) [CoolBar](../a-z/coolbar.md) [Form](../a-z/form.md) [SubForm](../a-z/subform.md) [ToolControl](../a-z/toolcontrol.md) | [CoolBand](../a-z/coolband.md) | [CoolBar](../a-z/coolbar.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) | [ToolControl](../a-z/toolcontrol.md) |  |
-| --- | --- | ---  |
-| [CoolBand](../a-z/coolband.md) | [CoolBar](../a-z/coolbar.md) | [Form](../a-z/form.md) |
-| [SubForm](../a-z/subform.md) | [ToolControl](../a-z/toolcontrol.md) |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported by a host object when a dockable object (the client) is dragged over it. The event will only be reported if the name of the client object is included in the list of objects that the host object will accept, which is defined by its DockChildren property.
@@ -22,6 +18,7 @@ If enabled, this event is reported by a host object when a dockable object (the 
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 7-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

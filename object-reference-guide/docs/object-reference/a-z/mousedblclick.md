@@ -5,33 +5,17 @@
 
 <h1 class="heading"><span class="name">MouseDblClick</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](./activexcontrol.md) [Animation](./animation.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Calendar](./calendar.md) [Circle](./circle.md) [ColorButton](./colorbutton.md) [Combo](./combo.md) [ComboEx](./comboex.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [Ellipse](./ellipse.md) [Form](./form.md) [Group](./group.md) [Image](./image.md) [Label](./label.md) [List](./list.md) [ListView](./listview.md) [Marker](./marker.md) [MDIClient](./mdiclient.md) [Poly](./poly.md) [ProgressBar](./progressbar.md) [PropertyPage](./propertypage.md) [Rect](./rect.md) [RichEdit](./richedit.md) [Scroll](./scroll.md) [SM](./sm.md) [Spinner](./spinner.md) [Static](./static.md) [StatusBar](./statusbar.md) [StatusField](./statusfield.md) [SubForm](./subform.md) [SysTrayItem](./systrayitem.md) [TabBar](./tabbar.md) [TabBtn](./tabbtn.md) [Text](./text.md) [ToolBar](./toolbar.md) [ToolButton](./toolbutton.md) [ToolControl](./toolcontrol.md) [TreeView](./treeview.md) | [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [Circle](./circle.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Ellipse](./ellipse.md) | [Form](./form.md) | [Group](./group.md) | [Image](./image.md) | [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) | [Marker](./marker.md) | [MDIClient](./mdiclient.md) | [Poly](./poly.md) | [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) | [Rect](./rect.md) | [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [SM](./sm.md) | [Spinner](./spinner.md) | [Static](./static.md) | [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) | [SubForm](./subform.md) | [SysTrayItem](./systrayitem.md) | [TabBar](./tabbar.md) | [TabBtn](./tabbtn.md) | [Text](./text.md) | [ToolBar](./toolbar.md) | [ToolButton](./toolbutton.md) | [ToolControl](./toolcontrol.md) | [TreeView](./treeview.md) |  |  |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) |
-| [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [Circle](./circle.md) |
-| [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) |
-| [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Ellipse](./ellipse.md) |
-| [Form](./form.md) | [Group](./group.md) | [Image](./image.md) |
-| [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) |
-| [Marker](./marker.md) | [MDIClient](./mdiclient.md) | [Poly](./poly.md) |
-| [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) | [Rect](./rect.md) |
-| [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [SM](./sm.md) |
-| [Spinner](./spinner.md) | [Static](./static.md) | [StatusBar](./statusbar.md) |
-| [StatusField](./statusfield.md) | [SubForm](./subform.md) | [SysTrayItem](./systrayitem.md) |
-| [TabBar](./tabbar.md) | [TabBtn](./tabbtn.md) | [Text](./text.md) |
-| [ToolBar](./toolbar.md) | [ToolButton](./toolbutton.md) | [ToolControl](./toolcontrol.md) |
-| [TreeView](./treeview.md) |  |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 If enabled, this event is reported when the user presses and then releases a mouse button twice within a short space of time. The duration of this time is set through the Windows Control Panel.
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 6-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 6-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

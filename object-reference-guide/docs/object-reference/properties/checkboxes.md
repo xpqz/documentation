@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">CheckBoxes</span></h1>
+
 | Applies To: | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ListView](../a-z/listview.md) [TreeView](../a-z/treeview.md) | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |  |
-| --- | --- | ---  |
-| [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |  |
 
-
-Description
+**Description**
 
 
 The CheckBoxes property specifies whether or not check boxes are displayed

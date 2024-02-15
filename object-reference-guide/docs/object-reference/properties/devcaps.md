@@ -4,18 +4,16 @@
 
 
 <h1 class="heading"><span class="name">DevCaps</span></h1>
+
 | Applies To: | [Printer](../a-z/printer.md) | [Root](../a-z/root.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Printer](../a-z/printer.md) [Root](../a-z/root.md) | [Printer](../a-z/printer.md) | [Root](../a-z/root.md) |  |
-| --- | --- | ---  |
-| [Printer](../a-z/printer.md) | [Root](../a-z/root.md) |  |
 
-
-Description
+**Description**
 
 
 This property reports the device capabilities of the screen or printer. It is a 4-element nested vector as follows:
+
 
 | `[1]` | Height and Width:2-element numeric vector of device in pixels |
 | --- | --- | ---  |

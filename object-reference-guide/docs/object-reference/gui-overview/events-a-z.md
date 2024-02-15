@@ -3,6 +3,7 @@
 
 
 <h1 class="heading"><span class="name">Events A-Z</span></h1>
+
 | Event | Num | Description |
 | --- | --- | ---  |
 | All | 0 | This is shorthand for "all events".  It is not an event in its own right. See [Special Case for All events on page 1](../a-z/event.md) . |

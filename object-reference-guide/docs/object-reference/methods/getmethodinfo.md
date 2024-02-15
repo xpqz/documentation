@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GetMethodInfo</span></h1>
+
 | Applies To: | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |
 | --- | --- | ---  |
 
-| Applies To: | [OCXClass](../a-z/ocxclass.md) [OLEClient](../a-z/oleclient.md) | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |  |
-| --- | --- | ---  |
-| [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |  |
 
-
-Description
+**Description**
 
 
 This method is used to obtain information about a particular method or set of methods supported by a COM object.
@@ -24,6 +21,7 @@ For each method supported by a COM object the author will have registered a help
 
 
 The argument to GetMethodInfo is a single item as follows:
+
 
 | `[1]` | Method name(s) | see below |
 | --- | --- | ---  |

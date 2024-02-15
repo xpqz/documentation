@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Repeat Statement</span><span class="command">:Repeat</span></h1>
 
-Formal Definition
+[Formal Definition](Repeat%20Statement%20Definition.htm)
 
 
 The simplest type of `:Repeat` loop is as follows.  This example executes lines `[3-5]` 100 times.  Notice that as there is no conditional test at the beginning of a `:Repeat` structure, its code statements are executed at least once.
@@ -42,27 +42,5 @@ A `:Repeat` structure may be terminated by an `:EndRepeat` (or `:End`) statement
 
 
 
-
-#### :Repeat Statement
-```apl
- 
-       |
-       :Repeat
-       |
-       code
-       |
-       .---------------.
-       |               |
-       :End[Repeat]    :Until bexp
-       |               |
-       |               .-------.
-       |               |       |
-       |               |       andor
-       |               |       |
-       |               |<------'
-       |               |
-       |<--------------'
-       |
-```
 
 

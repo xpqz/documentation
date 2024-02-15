@@ -5,17 +5,10 @@
 
 <h1 class="heading"><span class="name">OnTop</span></h1>
 
-Applies To
-
-| Applies To: | [Circle](../a-z/circle.md) [Ellipse](../a-z/ellipse.md) [Form](../a-z/form.md) [Image](../a-z/image.md) [Marker](../a-z/marker.md) [Poly](../a-z/poly.md) [PropertySheet](../a-z/propertysheet.md) [Rect](../a-z/rect.md) [SubForm](../a-z/subform.md) [TabBar](../a-z/tabbar.md) [Text](../a-z/text.md) [ToolBar](../a-z/toolbar.md) | [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Form](../a-z/form.md) | [Image](../a-z/image.md) | [Marker](../a-z/marker.md) | [Poly](../a-z/poly.md) | [PropertySheet](../a-z/propertysheet.md) | [Rect](../a-z/rect.md) | [SubForm](../a-z/subform.md) | [TabBar](../a-z/tabbar.md) | [Text](../a-z/text.md) | [ToolBar](../a-z/toolbar.md) |
-| --- | --- | ---  |
-| [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Form](../a-z/form.md) |
-| [Image](../a-z/image.md) | [Marker](../a-z/marker.md) | [Poly](../a-z/poly.md) |
-| [PropertySheet](../a-z/propertysheet.md) | [Rect](../a-z/rect.md) | [SubForm](../a-z/subform.md) |
-| [TabBar](../a-z/tabbar.md) | [Text](../a-z/text.md) | [ToolBar](../a-z/toolbar.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property may be used to cause a [Form](../a-z/form.md) or [SubForm](../a-z/subform.md) to be displayed on top of all other windows, even those owned by other applications.
@@ -28,6 +21,7 @@ More than one [Form](../a-z/form.md) may have OnTop set to 1. If so, these [Form
 
 
 For a graphical object, the OnTop property controls how it is drawn in a [Grid](../a-z/grid.md) relative to the grid lines and cell text. OnTop is applicable only if the graphic is the child of a [Grid](../a-z/grid.md) and is otherwise ignored.
+
 
 | 0 | Graphical object is drawn behind grid lines and cell text |
 | --- | ---  |

@@ -18,12 +18,14 @@ The result `R` depends upon the value of the  Variant option Invert. This the p
 
 #### Invert Option (Boolean)
 
+
 | 0 | The result `R` is a matrix with the same shape as the `DataTable` referenced by `⊃Y` . |
 | --- | ---  |
 | `1` | The result `R` is vector whose length is the same as the number of columns in the `DataTable` referenced by `⊃Y` . |
 
 
 The optional left argument `X` is a numeric vector with the same length as the number of columns in the result in the `DataTable` referenced by `⊃Y`:
+
 
 | 1 | Specifies that the corresponding column of the result  should be converted to a string using the `ToString` method of the data type of column in question. |
 | --- | ---  |
@@ -168,6 +170,6 @@ The left argument to `2011⌶` allows you to flag columns which should be return
 Depending on your application, you may need to process the text in the fourth column in some way – but the overall performance will probably still be very much better than it would be if `DateTime` objects were used.
 
 
-.NET Framework only
+**.NET Framework only**
 
 

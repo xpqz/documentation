@@ -1,7 +1,7 @@
 # :Field Statement
 ```apl
- :Field <Private|Public> <Instance|Shared> <ReadOnly>...
-       ... FieldName <← expr>
+ :Field <Private|Public> <Instance|Shared> <ReadOnly>...
+       ... FieldName <← expr>
 ```
 
 A `:Field` statement is a single statement whose elements are as follows:

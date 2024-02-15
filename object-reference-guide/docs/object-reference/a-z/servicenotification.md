@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ServiceNotification</span></h1>
+
 | Applies To: | [Root](./root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](./root.md) | [Root](./root.md) |  |  |
-| --- | --- | ---  |
-| [Root](./root.md) |  |  |
 
-
-Description
+**Description**
 
 
 This event is generated in an APL service whenever the Windows Service Control Manager (SCM) requests a change of state. See 
@@ -21,7 +18,8 @@ Installation & Configuration Guide:
 APL Application as a ServiceAPL Application as a Service on page 1.
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 4-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

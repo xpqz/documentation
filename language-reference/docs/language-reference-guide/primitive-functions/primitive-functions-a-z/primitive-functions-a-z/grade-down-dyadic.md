@@ -32,6 +32,7 @@ The process is repeated using each axis in turn, from the last to the first, res
 
 For example, if index origin is 1:
 
+
 | Left argument: | Right argument: |
 | --- | ---  |
 | abc ABA | ab ac Aa Ac |
@@ -41,6 +42,7 @@ For example, if index origin is 1:
 
 Along last axis:
 
+
 | Character: | Value: | Ordering: |
 | --- | --- | ---  |
 | ab ac Aa Ac | 1 2 1 3 1 1 1 3 | 3 =1   <-duplicate ordering with 4 =1   <-respect to last axis. |
@@ -49,6 +51,7 @@ Along last axis:
 
 
 Duplicates exist, so resolve these with respect to the first axis:
+
 
 | Character: | Value: | Ordering: |
 | --- | --- | ---  |

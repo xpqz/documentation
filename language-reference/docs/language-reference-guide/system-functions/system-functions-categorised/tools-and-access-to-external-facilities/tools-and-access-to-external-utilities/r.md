@@ -5,10 +5,10 @@
 
 <h1 class="heading"><span class="name">Replace</span><span class="command">R←{X}(A ⎕R B) Y</span></h1>
 
-`⎕R` (Replace) and `⎕S` (Search) are system operators which take search pattern(s) as their left arguments and transformation rule(s) as their right arguments; the derived function operates on text data to perform either a search, or a search and replace operation.
+`⎕R` (Replace) and `⎕S` (Search) are system operators which take search pattern(s) as their left arguments and transformation rule(s) as their right arguments; the derived function operates on text data to perform either a **search**, or a search and **replace** operation.
 
 
-The search patterns may include *Regular Expressions* so that complex searches may be performed. `⎕R` and `⎕S` utilise the open-source regular-expression search engine PCRE, which is built into Dyalog APL and distributed according to the PCRE licence which is published separately.
+The search patterns may include *Regular Expressions* so that complex searches may be performed. `⎕R` and `⎕S` utilise the open-source regular-expression search engine PCRE, which is built into Dyalog APL and distributed according to the [PCRE licence](../Appendices/PCRE%20License.htm#PCRE_Licence) which is published separately.
 
 
 The transformation rules are applied to the text which matches the search patterns; they may be given as a simple character vector, numeric codes, or  a function.
@@ -130,7 +130,7 @@ Explicitly, as
 The implicit line ending character may be set using the EOL option. Explicit line ending characters may also be replaced by this character - so that all line endings are normalised - using the NEOL option.
 
 
-The input document may be processed in line mode, document mode or mixed mode. In document mode and mixed mode, the entire input document, line ending characters included, is passed to the search engine; in line mode the document is split on line endings and passed to the search engine in sections without the line ending characters. The choice of mode affects both memory usage and behaviour, as documented in the section 'Line, document and mixed modes'.
+The input document may be processed in **line** mode, **document** mode or **mixed** mode. In document mode and mixed mode, the entire input document, line ending characters included, is passed to the search engine; in line mode the document is split on line endings and passed to the search engine in sections without the line ending characters. The choice of mode affects both memory usage and behaviour, as documented in the section 'Line, document and mixed modes'.
 
 
 #### Output
@@ -148,19 +148,19 @@ An output data stream may optionally be specified. Currently, the only supported
 With no output stream specified and unless overridden by the ResultText option, the derived function result will be a document which closely matches the format of the input document, as follows:
 
 
-A character scalar or vector input will result in a character vector output. Any and all line endings in the output will be represented by line ending characters within the character vector.
+A **character scalar or vector** input will result in a **character vector** output. Any and all line endings in the output will be represented by line ending characters within the character vector.
 
 
-A vector of character vectors as input will result in a vector of character vectors as document output. Any and all line endings in the output document will be implied at the end of each character vector.
+A **vector of character vectors** as input will result in a **vector of character vectors** as document output. Any and all line endings in the output document will be implied at the end of each character vector.
 
 
-A stream as input will result in a vector of character vectors document output. Any and all line endings in the output document will be implied at the end of each character vector.
+A **stream** as input will result in a **vector of character vectors** document output. Any and all line endings in the output document will be implied at the end of each character vector.
 
 
 Note that the shape of the output document may be significantly different to that of the input document.
 
 
-If the ResultText option is specified, the output type may be forced to be a character vector or vector of character vectors as described above, regardless of the input document.
+If the ResultText option is specified, the output type may be forced to be a **character vector** or **vector of character vectors** as described above, regardless of the input document.
 
 
 With an output stream specified the text is appended to the stream. If the appended text does not end with a line ending character then the line ending character specified by the EOL option is also appended. The resulting length of the file  is returned as a shy result.
@@ -181,11 +181,10 @@ With an output stream specified each match is appended to the stream. If any mat
 #### Search pattern
 
 
-A summary of the syntax of the search pattern is reproduced from the PCRE documentation. See Appendix A - PCRE Syntax Summary on page 1[PCRE Regular Expression Syntax Summary](../../../../pcre-specifications/pcre-regular-expression-syntax-summary.md).
+A summary of the syntax of the search pattern is reproduced from the PCRE documentation. See [PCRE Regular Expression Syntax Summary](../../../../pcre-specifications/pcre-regular-expression-syntax-summary.md).
 
 
-A full description is provided in Appendix B - PCRE Regular Expression Details
-		 on page 1[PCRE Regular Expression Details](../../../../pcre-specifications/pcre-regular-expression-details.md).
+A full description is provided in [PCRE Regular Expression Details](../../../../pcre-specifications/pcre-regular-expression-details.md).
 
 
 
@@ -208,6 +207,7 @@ Transformation patterns may not be mixed with transformation codes or functions.
 
 The following characters have special meaning:
 
+
 | Character | Meaning |
 | --- | ---  |
 | % | acts as a placeholder for the entire line (line mode) or document (document mode or mixed mode) which contained the match |
@@ -225,10 +225,11 @@ The following characters have special meaning:
 
 
 
-The above may be qualified so that matching text is folded, or mapped to upper- or lower-case, by using the f, u, and l modifiers respectively; the effect is as if the text was processed by `⎕C`. See Case Convert on page 1.
+The above may be qualified so that matching text is folded, or mapped to upper- or lower-case, by using the **f**, **u**, and **l** modifiers respectively; the effect is as if the text was processed by `⎕C`. See Case Convert on page 1.
 
 
 Character sequences beginning with the backslash place the modifier after the backslash; character sequences with no leading backslash add both a backslash and the modifier to the start of the sequence, for example:
+
 
 | \u& | acts as a placeholder for the entire portion of text which matched, folded to upper case |
 | --- | ---  |
@@ -244,6 +245,7 @@ Character sequences beginning with the backslash other that those shown are inva
 
 The transformation codes are a numeric scalar or vector. Transformation codes may only be used with `⎕S`. For each match in the input document, a numeric scalar or vector of the same shape as the transformation codes is created, with the codes replaced with values as follows:
 
+
 | 0 | The offset from the start of the line (line mode) or document (document mode or mixed mode) of the start of the match. |
 | --- | ---  |
 | 1 | The length of the match. |
@@ -256,6 +258,7 @@ The transformation codes are a numeric scalar or vector. Transformation codes ma
 
 
 The transformation function is called for each match within the input document.  The function is monadic and is passed a namespace, containing the following variables:
+
 
 | `Block` | The entire line (line mode) or document (document mode or mixed mode) in which the match was found. |
 | --- | ---  |
@@ -332,6 +335,7 @@ Default values are highlighted thus.
 
 When set, case is ignored in searches.
 
+
 | `1` | Matches are not case sensitive. |
 | --- | ---  |
 | 0 | Matches are case sensitive. |
@@ -349,7 +353,8 @@ XBCDX XbcdX
 #### Mode Option
 
 
-Specifies whether the input document is interpreted in line mode, document mode or mixed mode.
+Specifies whether the input document is interpreted in **line** mode, **document** mode or **mixed** mode.
+
 
 | L | When line mode is set, the input document is split into separate lines (discarding the line ending characters themselves), and each line is processed separately. This means that the ML option applies per line, and the '^' and '$' anchors match the start and end respectively of each line. Because the document is split, searches can never match across multiple lines, nor can searches for line ending characters ever succeed. Setting line mode can result in significantly reduced memory requirements compared with the other modes. |
 | --- | ---  |
@@ -375,6 +380,7 @@ Specifies whether the input document is interpreted in line mode, document mode 
 
 Specifies whether the dot ('.') character in search patterns matches line ending characters.
 
+
 | 0 | The '.' character in search patterns matches most characters, but not line endings. |
 | --- | ---  |
 | `1` | The '.' character in search patterns matches all characters. |
@@ -396,6 +402,7 @@ This option is invalid in line mode, because line endings are stripped from the 
 
 
 Sets the line ending character which is implicitly present between character vectors, when the input document is a vector of character vectors.
+
 
 | CR | Carriage Return (U+000D) |
 | --- | ---  |
@@ -426,6 +433,7 @@ Here, the implied line ending between 'ABC' and 'DEF' is '\n', not the default '
 
 Specifies whether explicit line ending sequences in the input document are normalised by replacing them with the character specified using the EOL option.
 
+
 | 0 | Line endings are not normalised. |
 | --- | ---  |
 | 1 | Line endings are normalised. |
@@ -447,6 +455,7 @@ Specifies whether explicit line ending sequences in the input document are norma
 
 
 Sets a limit to the number of processed pattern matches per line (line mode) or document (document mode and mixed mode).
+
 
 | Positive value n | Sets the limit to the first n matches. |
 | --- | ---  |
@@ -471,6 +480,7 @@ Sets a limit to the number of processed pattern matches per line (line mode) or 
 
 Controls whether patterns are "greedy" (and match the maximum input possible) or are not (and match the minimum). Within the pattern itself it is possible to specify greediness for individual elements of the pattern; this option sets the default.
 
+
 | 1 | Greedy by default. |
 | --- | ---  |
 | 0 | Not greedy by default. |
@@ -490,6 +500,7 @@ X23 X56
 
 
 Specifies whether matches may overlap.
+
 
 | 1 | Searching continues for all patterns and then from the character following the *start* of the match, thus permitting overlapping matches. |
 | --- | ---  |
@@ -520,6 +531,7 @@ This option specifies the encoding of the input stream when it cannot be determi
 
 When the stream is read from its start, and the start of the stream contains a recognised Byte Order Mark (BOM), the encoding is taken as that specified by the BOM and this option is ignored. Otherwise, the encoding is assumed to be as specified by this option.
 
+
 | UTF-8 | The stream is processed as UTF-8 data. Note that ASCII is a subset of UTF-8, so this default is also suitable for ASCII data. |
 | --- | ---  |
 | UTF-16 | The stream is processed as UTF16 little-endian data on little-ended systems, or as UTF16 big-endian data on big-endian systems. |
@@ -544,6 +556,7 @@ When the output is written to a stream, this option specifies how the data is to
 
 - a character vector that specifies the file-encoding as shown in the table below.
 - a 256-element numeric vector that maps each possible byte value (0-255) to a  Unicode code point (1st element = Unicode code point corresponding to byte value 0, and so on). ¯1 indicates that the corresponding byte value is not mapped to any character. Apart from ¯1, no value may appear in the table more than once.
+
 
 | Implied | If input came from a stream then the encoding format is the same as the input stream, otherwise UTF-8 |
 | --- | ---  |
@@ -575,10 +588,11 @@ This option sets both InEnc and OutEnc simultaneously, with the same given value
 
 For `⎕R`, this option determines the format of the result.
 
-| Implied | The output will either be a character vector or a vector of character vectors , dependent on the input document type |
+
+| Implied | The output will either be a **character vector** or **a vector of character vectors** , dependent on the input document type |
 | --- | ---  |
-| Simple | The output will be a character vector . Any and all line endings in the output will be represented by line ending characters within the character vector. |
-| Nested | The output will be a vector of character vectors . Any and all line endings in the output document will be implied at the end of each character vector. |
+| Simple | The output will be a **character vector** . Any and all line endings in the output will be represented by line ending characters within the character vector. |
+| Nested | The output will be a **vector of character vectors** . Any and all line endings in the output document will be implied at the end of each character vector. |
 
 
 This option may only be used with `⎕R`.
@@ -600,12 +614,13 @@ This option may only be used with `⎕R`.
 This affects the way PCRE that processes \B, \b, \D, \d, \S, \s,  \W,
 \w,  and  some  of  the POSIX character classes.
 
+
 | 1 | Unicode  properties are  used to classify characters. |
 | --- | ---  |
 | 0 | Only ASCII characters are recognized. |
 
 
-Implementation Note: this option is implemented by setting or not setting the PCRE_UCP option when calling pcre_compile(). More information can be found in the PCRE documentation.
+**Implementation Note**: this option is implemented by setting or not setting the PCRE_UCP option when calling pcre_compile(). More information can be found in the PCRE documentation.
 
 #### Examples
 
@@ -792,11 +807,13 @@ The currency conversion requires the use of a function. Note the nested use of `
 
 Input file:
 
+
 | 01/03/1980,Widgets,DEM 10.20 02/04/1980,Bolts,DEM 61.75 17/06/1980,Nuts; special rate DEM 17.00,DEM 17.00 18/07/1980,Hammer,DEM 1.25 |
 | ---  |
 
 
 Output file:
+
 
 | 1980-03-01,Widgets,€ 5.21 1980-04-02,Bolts,€ 31.57 1980-06-17,Nuts; special rate DEM 17.00,€ 8.69 1980-07-18,Hammer,€ 0.63 |
 | ---  |
@@ -862,6 +879,7 @@ Or \u0 take arms against a sea of troubles
 
 
 This option may be used to disable regular expression matching which is enabled by default. It is a singleton Boolean value that applies to both search and transformation patterns, or a 2-element vector of Boolean values that applies to them separately.
+
 
 | 1 | Regular expression matching is applied. |
 | --- | ---  |

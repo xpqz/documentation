@@ -5,17 +5,18 @@
 
 <h1 class="heading"><span class="name">Screen Map</span><span class="command">⎕SM</span></h1>
 
-`⎕SM` is a system variable that defines a character-based user interface (as opposed to a graphical user interface).  In versions of Dyalog APL that support asynchronous terminals, `⎕SM` defines a form that is displayed on the USER SCREEN.  The implementation of `⎕SM` in "window" environments is compatible with these versions.  In Dyalog APL/X, `⎕SM` occupies its own separate window on the display, but is otherwise equivalent.  In versions of Dyalog APL with GUI support, `⎕SM` either occupies its own separate window (as in Dyalog APL/X) or, if it exists, uses the window assigned to the SM object.  This allows `⎕SM` to be used in a GUI application in conjunction with other GUI components.
+`⎕SM` is a system variable that defines a character-based user interface (as opposed to a graphical user interface).  In versions of Dyalog APL that support asynchronous terminals, `⎕SM` defines a **form** that is displayed on the **USER SCREEN**.  The implementation of `⎕SM` in "window" environments is compatible with these versions.  In Dyalog APL/X, `⎕SM` occupies its own separate window on the display, but is otherwise equivalent.  In versions of Dyalog APL with GUI support, `⎕SM` either occupies its own separate window (as in Dyalog APL/X) or, if it exists, uses the window assigned to the SM object.  This allows `⎕SM` to be used in a GUI application in conjunction with other GUI components.
 
 
 `⎕SM` has workspace scope.
 
 
-In general `⎕SM` is a nested matrix containing between 3 and 13 columns.  Each row of `⎕SM` represents a field; each column a field attribute.
+In general `⎕SM` is a nested matrix containing between 3 and 13 columns.  Each row of `⎕SM` represents a **field**; each column a **field attribute**.
 
 
 
 The columns have the following meanings:
+
 
 | Column | Description | Default |
 | --- | --- | ---  |
@@ -89,7 +90,7 @@ or
 #### Screen Management (Window Versions)
 
 
-In Dyalog APL/X, and optionally in Dyalog APL/W, `⎕SM` is displayed in a separate USER WINDOW on the screen.  In an end-user application this may be the only Dyalog APL window.  However, during development, there will be a SESSION window, and perhaps EDIT and TRACE windows too.
+In Dyalog APL/X, and optionally in Dyalog APL/W, `⎕SM` is displayed in a separate **USER WINDOW** on the screen.  In an end-user application this may be the only Dyalog APL window.  However, during development, there will be a SESSION window, and perhaps EDIT and TRACE windows too.
 
 
 The USER Window will only accept input during execution of `⎕SR`.  It is otherwise "output-only".  Furthermore, during the execution of `⎕SR` it is the only active window, and the SESSION, EDIT and TRACE Windows will not respond to user input.
@@ -107,6 +108,7 @@ Like all system variables (with the exception of `⎕TRAP`) `⎕SM` is subject t
 
 
 The user may edit the form defined by `⎕SM` using the system function `⎕SR`.  Under the control of `⎕SR` the user may change the following elements in `⎕SM` which may afterwards be referenced to obtain the new values.
+
 
 | Column 1 | Field Contents |
 | --- | ---  |

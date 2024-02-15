@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GetPropertyInfo</span></h1>
+
 | Applies To: | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |
 | --- | --- | ---  |
 
-| Applies To: | [OCXClass](../a-z/ocxclass.md) [OLEClient](../a-z/oleclient.md) | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |  |
-| --- | --- | ---  |
-| [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |  |
 
-
-Description
+**Description**
 
 
 This method is used to obtain information about a particular property or set of properties supported by a COM object.
@@ -24,6 +21,7 @@ For each property supported by a COM object, the author will have registered the
 
 
 The argument to GetPropertyInfo is a single item as follows:
+
 
 | `[1]` | Property name(s) | see below |
 | --- | --- | ---  |

@@ -20,6 +20,6 @@ This section defines an ASP.NET language named dyalog so that the expression  La
 
 ### DyalogIsolationMode
 
-This parameter specifies the isolation method. See Isolation Mode on page 1 for further details.
+This parameter specifies the isolation method. See [Isolation Mode on page 1](isolation-mode.md) for further details.
 
 DyalogCacheDirectory may be used to define the directory used to save the cached files.

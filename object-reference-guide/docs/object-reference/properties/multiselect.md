@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">MultiSelect</span></h1>
+
 | Applies To: | [TabControl](../a-z/tabcontrol.md) |
 | --- | ---  |
 
-| Applies To: | [TabControl](../a-z/tabcontrol.md) | [TabControl](../a-z/tabcontrol.md) |  |  |
-| --- | --- | ---  |
-| [TabControl](../a-z/tabcontrol.md) |  |  |
 
-
-Description
+**Description**
 
 
 The [TabControl](../a-z/tabcontrol.md) property specifies whether or not the user can select more than one button in a [TabControl](../a-z/tabcontrol.md) at the same time, by holding down the Ctrl key when clicking.

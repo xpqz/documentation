@@ -60,7 +60,7 @@ If the list of names includes the name of:
 - a Class but not a Class upon which it depends
 - an array or a namespace that contains a ref to another namespace, but not the namespace to which it refers
 
-the dependent object(s) will also be copied but will be unnamed and hidden. In such as case, the system will issue a warning message.
+the dependent object(s) **will also be copied** but will be **unnamed** and **hidden**. In such as case, the system will issue a warning message.
 
 
 For example, if a saved workspace named CFWS contains a Class named `#.CompFile` and an Instance (of `CompFile`) named `icf`,

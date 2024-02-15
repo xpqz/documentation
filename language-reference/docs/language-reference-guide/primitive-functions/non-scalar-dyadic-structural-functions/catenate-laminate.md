@@ -14,7 +14,7 @@ The form `R←X⍪Y` may be used to imply catenation along the first axis.
 Two cases of the function catenate  are permitted:
 
 1. With an integer axis specification, or implied axis specification.
-2. With a fractional axis specification, also called laminate. 
+2. With a fractional axis specification, also called **laminate**. 
 
 #### Catenation with Integer or Implied Axis Specification
 

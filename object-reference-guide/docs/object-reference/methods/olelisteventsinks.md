@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">OLEListEventSinks</span></h1>
+
 | Applies To: | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |
 | --- | --- | ---  |
 
-| Applies To: | [OCXClass](../a-z/ocxclass.md) [OLEClient](../a-z/oleclient.md) | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |  |
-| --- | --- | ---  |
-| [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |  |
 
-
-Description
+**Description**
 
 
 This method returns the names of *event sinks* that are currently connected to a COM object.

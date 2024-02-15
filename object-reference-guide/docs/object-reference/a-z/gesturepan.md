@@ -5,21 +5,10 @@
 
 <h1 class="heading"><span class="name">GesturePan</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](./activexcontrol.md) [Animation](./animation.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Calendar](./calendar.md) [ColorButton](./colorbutton.md) [Combo](./combo.md) [ComboEx](./comboex.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [Form](./form.md) [Group](./group.md) [List](./list.md) [ListView](./listview.md) [MDIClient](./mdiclient.md) [ProgressBar](./progressbar.md) [PropertyPage](./propertypage.md) [RichEdit](./richedit.md) [Scroll](./scroll.md) [Spinner](./spinner.md) [SubForm](./subform.md) [TreeView](./treeview.md) | [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Form](./form.md) | [Group](./group.md) | [List](./list.md) | [ListView](./listview.md) | [MDIClient](./mdiclient.md) | [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) | [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [Spinner](./spinner.md) | [SubForm](./subform.md) | [TreeView](./treeview.md) |  |  |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) |
-| [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [ColorButton](./colorbutton.md) |
-| [Combo](./combo.md) | [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) |
-| [Edit](./edit.md) | [Form](./form.md) | [Group](./group.md) |
-| [List](./list.md) | [ListView](./listview.md) | [MDIClient](./mdiclient.md) |
-| [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) | [RichEdit](./richedit.md) |
-| [Scroll](./scroll.md) | [Spinner](./spinner.md) | [SubForm](./subform.md) |
-| [TreeView](./treeview.md) |  |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This event is reported when the user touches one or two fingers on an object and drags them .
@@ -27,7 +16,8 @@ This event is reported when the user touches one or two fingers on an object and
 
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 5-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 5-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
@@ -40,6 +30,7 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 
 
 The Flags parameter [3] which reports the state of the Gesture, is an integer with the value 0, 1 (**GF_BEGIN**), 2 (GF_INERTIA), 4 (**GF_END**) or 6 (**GF_END**+**GF_INERTIA**) with the following meanings:
+
 
 | Name | Value | Description |
 | --- | --- | ---  |
@@ -65,7 +56,7 @@ No other event will be reported between the start and end of a series of Gesture
 Returning zero from the callback disables any default handling by the operating system.
 
 
-The associated callback is run immediately while the windows notification is still on the stack. See 
+The associated callback is run **immediately** while the windows notification is still on the stack. See 
 Interface Guide: 
 
 High-Priority Callback FunctionsHigh-Priority Callback Functions on page 1.

@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">TCPSend</span></h1>
+
 | Applies To: | [TCPSocket](./tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](./tcpsocket.md) | [TCPSocket](./tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](./tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to send data to a remote process connected to a [TCPSocket](./tcpsocket.md) object
 
 
 The argument to TCPSend is a 1 or 3-element array as follows:
+
 
 | `[1]` | Data | the data to be sent |
 | --- | --- | ---  |

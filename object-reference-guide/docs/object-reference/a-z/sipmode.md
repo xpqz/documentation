@@ -4,18 +4,15 @@
 
 
 <h1 class="heading"><span class="name">SIPMode</span></h1>
+
 | Applies To: | [Form](./form.md) |
 | --- | ---  |
 
-| Applies To: | [Form](./form.md) | [Form](./form.md) |  |  |
-| --- | --- | ---  |
-| [Form](./form.md) |  |  |
+
+**Description**
 
 
-Description
-
-
-SIPMode applies only to PocketAPL. In versions of Dyalog APL for other platforms, it has no effect.
+**SIPMode applies only to PocketAPL. In versions of Dyalog APL for other platforms, it has no effect.**
 
 
 This is a Boolean property that specifies the behaviour of the Input Panel with respect to the Pocket APL GUI.

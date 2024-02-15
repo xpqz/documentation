@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">TCPRecv</span></h1>
+
 | Applies To: | [TCPSocket](./tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](./tcpsocket.md) | [TCPSocket](./tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](./tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when data is received by a [TCPSocket](./tcpsocket.md) object.
@@ -26,6 +23,7 @@ event artificially using `⎕NQ`.
 The event message reported as the result of `⎕DQ`,
 or supplied as the right argument to your callback function, is a 5-element
 vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

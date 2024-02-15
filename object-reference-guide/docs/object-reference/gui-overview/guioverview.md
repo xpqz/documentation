@@ -37,17 +37,3 @@ Methods are effectively functions that an object provides; they are things that 
 This is a set of system functions used to create objects, set properties, respond to events, and call methods.
 
 
-This chapter provides a summary listing all the objects, properties, events and methods with a brief description.
-
-
-The following Chapter describes each item in detail in alphabetical order.
-
-| `⎕DQ` | Dequeue | processes user actions, invoking callbacks |
-| --- | --- | ---  |
-| `⎕NQ` | Enqueue | generates an event under program control |
-| `⎕WC` | Create       Object | creates new object with specified properties |
-| `⎕WG` | Get       Properties | gets values of properties from an object |
-| `⎕WN` | Object       Names | reports names of all children of an object |
-| `⎕WS` | Set       Properties | sets values of properties for an object |
-
-

@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">SetMethodInfo</span></h1>
+
 | Applies To: | [OCXClass](./ocxclass.md) | [OLEClient](./oleclient.md) |
 | --- | --- | ---  |
 
-| Applies To: | [OCXClass](./ocxclass.md) [OLEClient](./oleclient.md) | [OCXClass](./ocxclass.md) | [OLEClient](./oleclient.md) |  |
-| --- | --- | ---  |
-| [OCXClass](./ocxclass.md) | [OLEClient](./oleclient.md) |  |
 
-
-Description
+**Description**
 
 
 This method is used to redefine the arguments or data types associated with a method that is exported by a COM object. SetMethodInfo is used to override the information provided by the object's Type Library.
@@ -19,6 +16,7 @@ This method is used to redefine the arguments or data types associated with a me
 
 
 The argument to SetMethodInfo is a 2 or 3-element array as follows:
+
 
 | `[1]` | Method name | character vector |
 | --- | --- | ---  |

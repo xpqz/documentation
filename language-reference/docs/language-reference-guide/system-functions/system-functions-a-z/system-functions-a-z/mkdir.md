@@ -11,12 +11,13 @@ This function creates new directories.
 `Y` is a character vector or scalar containing a single directory name, or a vector of character vectors containing zero or more directory names. Names must conform to the naming rules of the host Operating System.
 
 
-By default, for each file in `Y` the path must exist and the base name must not exist (see File Name Parts on page 1), otherwise an error is signalled.
+By default, for each file in `Y` the path must exist and the base name must not exist (see [File Name Parts on page 1](nparts.md)), otherwise an error is signalled.
 
 
 
 
 The optional left argument `X` is the numeric scalar 0, 1, 2 or 3 which amends this behaviour as shown in the following table. If omitted, it is assumed to be 0.
+
 
 | `0` | Default behaviour. |
 | --- | ---  |

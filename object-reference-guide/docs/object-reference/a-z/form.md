@@ -4,39 +4,21 @@
 
 
 <h1 class="heading"><span class="name">Form</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Form.htm) | [Children](../ChildLists/Form.htm) | [Properties](../PropLists/Form.htm) | [Methods](../MethodLists/Form.htm) | [Events](../EventLists/Form.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | This is a top-level window used to contain other objects (controls). |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) [Wait](./wait.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) | [Wait](./wait.md) |  |
-| Children | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) [Wait](./wait.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) | [Wait](./wait.md) |  |
-| Properties | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) [Wait](./wait.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) | [Wait](./wait.md) |  |
-| Methods | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) [Wait](./wait.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) | [Wait](./wait.md) |  |
-| Events | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) [Wait](./wait.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) | [Wait](./wait.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 
 The [Posn](./posn.md) property specifies the location of
-the internal top-left corner of the window relative to the top-left
+the **internal** top-left corner of the window relative to the top-left
 corner of the screen. If the window has a title bar and/or border, you must
 allow sufficient space for them. Similarly, the [Size](./size.md) property specifies the internal size of the window excluding the title bar and
 border. The default for [Size](./size.md) is 50% of the
@@ -57,11 +39,11 @@ to the [Help](./help.md) event on the control.
 
 By default, a Form may be moved and resized using the mouse. These actions
 are achieved by dragging on the title bar and border respectively. It follows
-that a Form that is [Moveable ](./moveable.md)must have a title bar, and one that is [Sizeable](./sizeable.md) must have a border, regardless of the value of other properties. Also, if
+that a Form that is [Moveable ](./moveable.md)**must** have a title bar, and one that is [Sizeable](./sizeable.md) **must** have a border, regardless of the value of other properties. Also, if
 you specify any of [SysMenu](./sysmenu.md), [MaxButton](./maxbutton.md) or [MinButton](./minbutton.md), the window must have a
 title bar in which to place these controls. A title bar itself requires a
 border. To obtain a window without a title bar, you must therefore set [Moveable](./moveable.md),
-[SysMenu](./sysmenu.md), [MaxButton](./maxbutton.md) and [MinButton](./minbutton.md) to 0. Note that setting [Caption](./caption.md) does not force a title bar on the window.
+[SysMenu](./sysmenu.md), [MaxButton](./maxbutton.md) and [MinButton](./minbutton.md) to 0. Note that setting [Caption](./caption.md) does **not** force a title bar on the window.
 
 
 If [Sizeable](./sizeable.md) is 1, the window will have
@@ -97,7 +79,7 @@ thumb in the vertical and horizontal scrollbars respectively. When the user
 attempts to move the thumb in one of the scrollbars, the Form generates a [VScroll](./vscroll.md) or [HScroll](./hscroll.md) event.
 
 
-[VScroll](./vscroll.md) and [HScroll](./hscroll.md) cannot be changed using `⎕WS`.
+[VScroll](./vscroll.md) and [HScroll](./hscroll.md) cannot be changed using [`⎕WS`](../../Language/System%20Functions/ws.htm).
 However, you can make a scrollbar disappear by setting the corresponding element
 of [Range](./range.md) to 1, thus allowing you to
 dynamically switch the scrollbar off and on. Note however that doing so will
@@ -112,7 +94,7 @@ The background of the Form may be coloured using [BCol](./bcol.md).
 The default value for [BCol](./bcol.md) is the Windows
 Button Face colour unless [EdgeStyle](./edgestyle.md) is
 set to `'None'` or `'Default'` in which case it is the Windows background colour. Alternatively, the background
-of a Form can be defined using a [Bitmap](bitmap.md) or Metafile object whose name is defined by the [Picture](./picture.md) property. A Metafile is automatically scaled
+of a Form can be defined using a [Bitmap](bitmap.md) or [Metafile](metafile.md) object whose name is defined by the [Picture](./picture.md) property. A [Metafile](metafile.md) is automatically scaled
 to fit the Form. A [Bitmap](bitmap.md) can be tiled *or* scaled. See [Picture](./picture.md) property for details.
 
 

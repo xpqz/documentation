@@ -110,7 +110,7 @@ Similarly, `EG1[32]` defines the BorderStyle property of the form using the Form
      ∇
 ```
 
-Warning: The use of modal forms in .NET can lead to problematic situations while debugging. As the control is passed to .NET the APL interpreter cannot regain control in the event of an unforeseen error. It is advisable to change the code to something like the following until the code is fully tested:
+**Warning:** The use of modal forms in .NET can lead to problematic situations while debugging. As the control is passed to .NET the APL interpreter cannot regain control in the event of an unforeseen error. It is advisable to change the code to something like the following until the code is fully tested:
 ```apl
 [52]   form1.Visible←1
 [53]   :While form1.Visible ⋄ :endwhile

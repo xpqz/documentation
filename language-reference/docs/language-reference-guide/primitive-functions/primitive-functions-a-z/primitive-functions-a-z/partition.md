@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Partition</span><span class="command"></span></h1>
 
-Classic Edition:  the symbol `⊆` (Left Shoe Underbar) is not available in Classic Edition, and Partition is instead represented by `⎕U2286`.
+**Classic Edition:**  the symbol `⊆` (Left Shoe Underbar) is not available in Classic Edition, and Partition is instead represented by `⎕U2286`.
 
 
 `Y` may be any non-scalar array.

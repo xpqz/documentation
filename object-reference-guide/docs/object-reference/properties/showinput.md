@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ShowInput</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies whether or not the cells in a [Grid](../a-z/grid.md) are displayed using their associated input objects.

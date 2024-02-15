@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">AutoExpand</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property is a 2-element Boolean value that specifies whether or not rows and columns may be added to a [Grid](./grid.md) object by the user.
@@ -23,7 +20,7 @@ If the first element of AutoExpand is 1, a row is added when the current cell is
 Similarly, if the second element is 1, a column is added when the current cell is within the last column of the [Grid](./grid.md) and the user presses Cursor Right.
 
 
-Note that when a row or column is added, the appropriate properties (including [Values](values.md) and CellTypes) are expanded accordingly.
+Note that when a row or column is added, the appropriate properties (including [Values](values.md) and [CellTypes](celltypes.md)) are expanded accordingly.
 
 
 The default value for AutoExpand is (0 0).

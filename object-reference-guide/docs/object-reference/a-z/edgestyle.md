@@ -5,28 +5,10 @@
 
 <h1 class="heading"><span class="name">EdgeStyle</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](./activexcontrol.md) [Animation](./animation.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Calendar](./calendar.md) [ColorButton](./colorbutton.md) [Combo](./combo.md) [ComboEx](./comboex.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [FileBox](./filebox.md) [Form](./form.md) [Grid](./grid.md) [Group](./group.md) [Image](./image.md) [Label](./label.md) [List](./list.md) [ListView](./listview.md) [MDIClient](./mdiclient.md) [Menu](./menu.md) [MenuBar](./menubar.md) [MenuItem](./menuitem.md) [MsgBox](./msgbox.md) [Printer](./printer.md) [ProgressBar](./progressbar.md) [PropertyPage](./propertypage.md) [PropertySheet](./propertysheet.md) [Rect](./rect.md) [RichEdit](./richedit.md) [Root](./root.md) [Scroll](./scroll.md) [Separator](./separator.md) [SM](./sm.md) [Spinner](./spinner.md) [Static](./static.md) [StatusBar](./statusbar.md) [StatusField](./statusfield.md) [SubForm](./subform.md) [TabBtn](./tabbtn.md) [ToolBar](./toolbar.md) [TrackBar](./trackbar.md) [TreeView](./treeview.md) [UpDown](./updown.md) | [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [FileBox](./filebox.md) | [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) | [Image](./image.md) | [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) | [MDIClient](./mdiclient.md) | [Menu](./menu.md) | [MenuBar](./menubar.md) | [MenuItem](./menuitem.md) | [MsgBox](./msgbox.md) | [Printer](./printer.md) | [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) | [PropertySheet](./propertysheet.md) | [Rect](./rect.md) | [RichEdit](./richedit.md) | [Root](./root.md) | [Scroll](./scroll.md) | [Separator](./separator.md) | [SM](./sm.md) | [Spinner](./spinner.md) | [Static](./static.md) | [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) | [SubForm](./subform.md) | [TabBtn](./tabbtn.md) | [ToolBar](./toolbar.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |  |  |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) |
-| [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [ColorButton](./colorbutton.md) |
-| [Combo](./combo.md) | [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) |
-| [Edit](./edit.md) | [FileBox](./filebox.md) | [Form](./form.md) |
-| [Grid](./grid.md) | [Group](./group.md) | [Image](./image.md) |
-| [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) |
-| [MDIClient](./mdiclient.md) | [Menu](./menu.md) | [MenuBar](./menubar.md) |
-| [MenuItem](./menuitem.md) | [MsgBox](./msgbox.md) | [Printer](./printer.md) |
-| [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) | [PropertySheet](./propertysheet.md) |
-| [Rect](./rect.md) | [RichEdit](./richedit.md) | [Root](./root.md) |
-| [Scroll](./scroll.md) | [Separator](./separator.md) | [SM](./sm.md) |
-| [Spinner](./spinner.md) | [Static](./static.md) | [StatusBar](./statusbar.md) |
-| [StatusField](./statusfield.md) | [SubForm](./subform.md) | [TabBtn](./tabbtn.md) |
-| [ToolBar](./toolbar.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) |
-| [UpDown](./updown.md) |  |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property is used to give a 3-dimensional appearance to screen objects.
@@ -38,13 +20,14 @@ and by drawing a border around it using various combinations of black, white and
 dark grey lines. Note that this border is drawn *outside* a control but *inside* a [Form](./form.md) or [SubForm](./subform.md).
 
 
-Note that EdgeStyle is not honoured for objects which have a natural
-		built-in 3-dimensional appearance.
+**Note that EdgeStyle is not honoured for objects which have a natural
+		built-in 3-dimensional appearance.**
 
 
 
 The value of the EdgeStyle property is a character vector chosen from the
 following :
+
 
 | `'None'` | Object is drawn with no 3-dimensional effects and the EdgeStyle       properties of its children are ignored (treated as `None` ). |
 | --- | ---  |
@@ -54,7 +37,7 @@ following :
 | `'Ridge'` | Object is drawn with a border that has the appearance of a ridge. |
 | `'Shadow'` | Object is drawn with a dark border line along its top and left edges. |
 | `'Default'` | Object itself is drawn with no 3-dimensional border, but the values of       the EdgeStyle properties of its children are observed. |
-| `'Dialog'` | Used in conjunction with ( `'Border' 2` ),       this gives a Form the appearance of a standard 3-dimensional dialog box.       This setting applies only to a [Form](./form.md) or a [SubForm](./subform.md) |
+| `'Dialog'` | Used in conjunction with ( `'Border' 2` ),       this gives a Form the appearance of a standard 3-dimensional dialog box.       This setting applies **only** to a [Form](./form.md) or a [SubForm](./subform.md) |
 
 
 

@@ -1,6 +1,6 @@
 # Example 3
 
-This example uses APL code to both build the user-interface (instead of using XAML) and handle the data binding. In this case both the Text and the FontSize properties are bound to APL variables. The function is shown below:
+This example uses APL code to both build the user-interface (instead of using XAML) and handle the data binding. In this case both the Text and the FontSize properties are bound to APL variables. The function is shown below:
 ```apl
      ∇ TextFontSize(txt size);⎕USING;win;sink
 [1]    ⎕USING←'System'
@@ -41,7 +41,7 @@ This example uses APL code to both build the user-interface (instead of using XA
 
 ```
 
-Apart from the code that creates the controls, the only material difference between this and the previous examples is the way that the bindings are handled.
+Apart from the code that creates the controls, the only material difference between this and the previous examples is the way that the bindings are handled.
 
 In code (as opposed to using XAML) this is done using explicit `Binding` objectsBinding objects are implicit in all binding operations, but are created declaratively when using XAML. The code for binding the Text property to the `txtSource` variable is as follows:
 ```apl

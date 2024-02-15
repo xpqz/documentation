@@ -5,11 +5,12 @@
 
 <h1 class="heading"><span class="name">Axis (with Dyadic Operand)</span><span class="command">R←Xf[B]Y</span></h1>
 
-`f` must be a dyadic primitive scalar function, or a dyadic primitive mixed function taken from Table 1 below. `B` must be a numeric scalar or vector. `X` and `Y` may be any arrays whose items are appropriate to function `f`. Axis does not follow the normal syntax of an operator.
+`f` must be a dyadic primitive scalar function, or a dyadic primitive mixed function taken from [Table 1](#DyadicMixed) below. `B` must be a numeric scalar or vector. `X` and `Y` may be any arrays whose items are appropriate to function `f`. Axis does not follow the normal syntax of an operator.
 
 
 
 Primitive dyadic mixed functions with optional axis.
+
 
 | Function | Name | Range of B |
 | --- | --- | ---  |
@@ -27,7 +28,7 @@ Primitive dyadic mixed functions with optional axis.
 In most cases, `B` must be an integer value identifying the axis of `X` and `Y` along which function `f` is to be applied.
 
 
-Exceptionally, `B` must be a fractional value for the Laminate function (`,`) whose upper and lower integer bounds identify a pair of axes or an extreme axis of `X` and `Y`. For Take (`↑`) and Drop (`↓`), `B` can be a vector of two or more axes.
+Exceptionally, `B` must be a fractional value for the Laminate function (`,`) whose upper and lower integer bounds identify a pair of axes or an extreme axis of `X` and `Y`. For Take (`↑`) and Drop (`↓`), `B` can be a **vector** of two or more axes.
 
 
 `⎕IO` is an implicit argument of the derived function which determines the meaning of `B`.

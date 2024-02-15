@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">GridCut</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user presses Shift+Delete and there are selected cells in the [Grid](./grid.md). The default action of the event is to copy the contents of the selected block(s) of cells to the clipboard and then to empty the selected cells. You may disable this effect entirely by setting the action code of the event to `¯1`. You may also disable the cut operation by returning 0 from a callback function.
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 5-element vector as follows:
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 5-element vector as follows:
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

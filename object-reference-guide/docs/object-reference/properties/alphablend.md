@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">AlphaBlend</span></h1>
+
 | Applies To: | [Form](../a-z/form.md) |
 | --- | ---  |
 
-| Applies To: | [Form](../a-z/form.md) | [Form](../a-z/form.md) |  |  |
-| --- | --- | ---  |
-| [Form](../a-z/form.md) |  |  |
 
-
-Description
+**Description**
 
 
 The AlphaBlend property specifies a level of translucency which allows the

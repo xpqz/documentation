@@ -1,6 +1,6 @@
 # Error-Guards
 
-An error-guard is (an expression that evaluates to) a vector of error numbers (see [APL Error Messages on page 1](../../../error-messages/apl-errors.md)), followed by the digraph: `::`, followed by an expression, the *body* of the guard, to be evaluated as the result of the function. For example:
+An **error-guard** is (an expression that evaluates to) a vector of error numbers (see [APL Error Messages on page 1](../../../error-messages/apl-errors.md)), followed by the digraph: `::`, followed by an expression, the *body* of the guard, to be evaluated as the result of the function. For example:
 ```apl
       11 5 :: ⍵×0 ⍝ Trap DOMAIN and LENGTH errors.
 ```

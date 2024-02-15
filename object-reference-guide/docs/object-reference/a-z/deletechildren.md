@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">DeleteChildren</span></h1>
+
 | Applies To: | [TreeView](./treeview.md) |
 | --- | ---  |
 
-| Applies To: | [TreeView](./treeview.md) | [TreeView](./treeview.md) |  |  |
-| --- | --- | ---  |
-| [TreeView](./treeview.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to delete child items from a parent item in a [TreeView](./treeview.md) object.
 
 
 The argument to DeleteChildren is a scalar or 1 element array as follows:
+
 
 | `[1]` | Item number | Integer. |
 | --- | --- | ---  |

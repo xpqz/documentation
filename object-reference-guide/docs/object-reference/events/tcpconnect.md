@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">TCPConnect</span></h1>
+
 | Applies To: | [TCPSocket](../a-z/tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](../a-z/tcpsocket.md) | [TCPSocket](../a-z/tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](../a-z/tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when a server accepts the connection of a client [TCPSocket](../a-z/tcpsocket.md) object and is reported by the client.
@@ -22,6 +19,7 @@ You may not disable or nullify the operation by setting the action code for the 
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

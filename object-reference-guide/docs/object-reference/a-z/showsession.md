@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ShowSession</span></h1>
+
 | Applies To: | [OLEServer](./oleserver.md) |
 | --- | ---  |
 
-| Applies To: | [OLEServer](./oleserver.md) | [OLEServer](./oleserver.md) |  |  |
-| --- | --- | ---  |
-| [OLEServer](./oleserver.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies whether or not the APL Session window is displayed when an [OLEServer](./oleserver.md) object is started by an OLE client.

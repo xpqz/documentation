@@ -4,16 +4,16 @@
 
 
 <h1 class="heading"><span class="name">NetClient</span></h1>
-| Parents | Children |
+
+| [Parents](../ParentLists/NetClient.htm) | [Children](../ChildLists/NetClient.htm) |
 | --- | ---  |
+
 
 | Purpose: | The NetClient object represents an instance of a Microsoft .NET class. |
 | --- | ---  |
-| Parents |  |
-| Children |  |
 
 
-Description
+**Description**
 
 
 The NetClient object represents an instance of a .NET class.

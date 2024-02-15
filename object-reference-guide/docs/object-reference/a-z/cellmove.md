@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">CellMove</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user attempts to position the cursor over a cell in a [Grid](./grid.md) by clicking the left mouse button or by pressing a cursor movement key. The purpose of this event is to allow an application to perform some action prior to the user entering a cell,  to inhibit entry to a cell, or to deny exit from the current cell.
@@ -23,7 +20,8 @@ The default action is to position the user on the new cell. This action can be p
 
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is an 8 element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is an 8 element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
@@ -33,8 +31,8 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 | `[5]` | Scroll flag | 0 or 1 |
 | `[6]` | Selection flag | 0, 1 or 2 |
 | `[7]` | Mouse flag | 0 or 1 |
-| `[8]` | Changed flag | 0 or 1 (relates to current cell) |
-| `[9]` | New value | new value of current cell or `⍬` |
+| `[8]` | Changed flag | 0 or 1 (relates to **current** cell) |
+| `[9]` | New value | new value of **current** cell or `⍬` |
 
 
 
@@ -53,7 +51,7 @@ The 8th element of the event message is 1 if the user is attempting to move to t
 The 9th element of the event message is the intended new value in the current cell or `⍬` (zilde) if **Changed flag** is 0.
 
 
-The CellMove event may be used to validate and refuse changes as the user navigates between cells.  See also CellChange on page 1.
+The CellMove event may be used to validate and refuse changes as the user navigates between cells.  See also [CellChange on page 1](cellchange.md).
 
 
 An application can position the user on a particular cell in a [Grid](./grid.md) by calling CellMove as a method. If so, the argument need contain only the **New cell row** and **New cell column** parameters.

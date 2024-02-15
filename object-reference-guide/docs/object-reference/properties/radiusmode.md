@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RadiusMode</span></h1>
+
 | Applies To: | [Circle](../a-z/circle.md) | [Root](../a-z/root.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Circle](../a-z/circle.md) [Root](../a-z/root.md) | [Circle](../a-z/circle.md) | [Root](../a-z/root.md) |  |
-| --- | --- | ---  |
-| [Circle](../a-z/circle.md) | [Root](../a-z/root.md) |  |
 
-
-Description
+**Description**
 
 
 A perfectly round circle can only be drawn if the diameter is an odd number of pixels. The RadiusMode property specifies whether or not a circle is adjusted by a single pixel, if necessary, so as to appear perfectly round.

@@ -5,26 +5,10 @@
 
 <h1 class="heading"><span class="name">CursorObj</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](./activexcontrol.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Calendar](./calendar.md) [Circle](./circle.md) [ColorButton](./colorbutton.md) [Combo](./combo.md) [ComboEx](./comboex.md) [CoolBar](./coolbar.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [Ellipse](./ellipse.md) [Form](./form.md) [Grid](./grid.md) [Group](./group.md) [Label](./label.md) [List](./list.md) [ListView](./listview.md) [Locator](./locator.md) [MDIClient](./mdiclient.md) [Poly](./poly.md) [ProgressBar](./progressbar.md) [Rect](./rect.md) [RichEdit](./richedit.md) [Root](./root.md) [Scroll](./scroll.md) [SM](./sm.md) [Spinner](./spinner.md) [Splitter](./splitter.md) [Static](./static.md) [StatusBar](./statusbar.md) [SubForm](./subform.md) [TabBar](./tabbar.md) [Text](./text.md) [ToolBar](./toolbar.md) [TrackBar](./trackbar.md) [TreeView](./treeview.md) [UpDown](./updown.md) | [ActiveXControl](./activexcontrol.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [Circle](./circle.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [CoolBar](./coolbar.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Ellipse](./ellipse.md) | [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) | [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) | [Locator](./locator.md) | [MDIClient](./mdiclient.md) | [Poly](./poly.md) | [ProgressBar](./progressbar.md) | [Rect](./rect.md) | [RichEdit](./richedit.md) | [Root](./root.md) | [Scroll](./scroll.md) | [SM](./sm.md) | [Spinner](./spinner.md) | [Splitter](./splitter.md) | [Static](./static.md) | [StatusBar](./statusbar.md) | [SubForm](./subform.md) | [TabBar](./tabbar.md) | [Text](./text.md) | [ToolBar](./toolbar.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |  |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) |
-| [Calendar](./calendar.md) | [Circle](./circle.md) | [ColorButton](./colorbutton.md) |
-| [Combo](./combo.md) | [ComboEx](./comboex.md) | [CoolBar](./coolbar.md) |
-| [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Ellipse](./ellipse.md) |
-| [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) |
-| [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) |
-| [Locator](./locator.md) | [MDIClient](./mdiclient.md) | [Poly](./poly.md) |
-| [ProgressBar](./progressbar.md) | [Rect](./rect.md) | [RichEdit](./richedit.md) |
-| [Root](./root.md) | [Scroll](./scroll.md) | [SM](./sm.md) |
-| [Spinner](./spinner.md) | [Splitter](./splitter.md) | [Static](./static.md) |
-| [StatusBar](./statusbar.md) | [SubForm](./subform.md) | [TabBar](./tabbar.md) |
-| [Text](./text.md) | [ToolBar](./toolbar.md) | [TrackBar](./trackbar.md) |
-| [TreeView](./treeview.md) | [UpDown](./updown.md) |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property is used to associate a particular cursor with an object.
@@ -35,6 +19,7 @@ This property is used to associate a particular cursor with an object.
 Its
 value is either a simple scalar number which specifies a standard Windows
 cursor, or the name of, or ref to, a [Cursor](./cursor.md) object. The standard Windows cursors are :
+
 
 | 0 | arrow (Windows default) |
 | --- | ---  |
@@ -65,7 +50,7 @@ certain objects which have special cursors by default.
 
 
 If the value of CursorObj for the [Root](./root.md) object
-is set to anything other than an empty vector, it applies to all[ Form](./form.md)s
+is set to anything other than an empty vector, it applies to **all**[ Form](./form.md)s
 and their children, irrespective of their own CursorObj values. Therefore, if
 you want to indicate that your application is "working" and is not
 responsive to input, you can simply do:

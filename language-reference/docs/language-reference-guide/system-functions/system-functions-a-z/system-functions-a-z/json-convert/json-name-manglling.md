@@ -4,12 +4,12 @@ When Dyalog converts from JSON to APL data, and a member of a JSON object has a 
 
 ## Example:
 
-In this example, the JSON describes an object containing two numeric items, one named **a** (which is a valid APL name) and the other named **2a** (which is not):
+In this example, the JSON describes an object containing two numeric items, one named **a** (which is a valid APL name) and the other named **2a** (which is not):
 ```apl
 {"a": 1, "2a": 2}
 ```
 
-When this JSON is imported as an APL namespace using `⎕JSON`, Dyalog converts the name **2a** to a valid APL name. The *name mangling* algorithm creates a name beginning with `⍙`.
+When this JSON is imported as an APL namespace using `⎕JSON`, Dyalog converts the name **2a** to a valid APL name. The *name mangling* algorithm creates a name beginning with `⍙`.
 ```apl
       (⎕JSON'{"a": 1, "2a": 2}').⎕NL 2
 a  

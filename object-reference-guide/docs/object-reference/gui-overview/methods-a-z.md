@@ -3,6 +3,7 @@
 
 
 <h1 class="heading"><span class="name">Methods A-Z</span></h1>
+
 | Method | Num | Description |
 | --- | --- | ---  |
 | [Abort](../a-z/abort.md) | 103 | abort a print job |

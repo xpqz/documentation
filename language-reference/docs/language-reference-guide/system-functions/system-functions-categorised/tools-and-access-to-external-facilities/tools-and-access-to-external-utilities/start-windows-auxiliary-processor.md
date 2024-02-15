@@ -21,7 +21,7 @@ The shy result `R` is the process id of the Auxiliary Processor task.
 
 
 
-The effect of starting an AP is that one or more external functions are defined in the workspace.  These appear as locked functions and may be used in exactly the same way as regular defined functions.
+The effect of starting an AP is that one or more **external functions** are defined in the workspace.  These appear as locked functions and may be used in exactly the same way as regular defined functions.
 
 
 When an external function is used in an expression, the argument(s) (if any) are passed to the AP for processing via the communications area described above.  APL halts whilst the AP is processing, and waits for a result.  Under Windows, unlike under UNIX, it is not possible for external functions to run in parallel with APL.

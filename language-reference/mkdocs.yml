@@ -380,13 +380,13 @@ nav:
         - Tools and Access to External Utilities:
           - Execute Windows Command: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/execute-windows-command.md
           - Start Windows Auxiliary Processor: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/start-windows-auxiliary-processor.md
-          - JSON Convert: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/json-convert/json.md
+          - language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/json-convert/json.md
           - Data Representation (Monadic): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/data-representation-monadic.md
           - Data Representation (Dyadic): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/data-representation-dyadic.md
           - Format (Monadic): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/format-monadic.md
           - Format (Dyadic): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/format-dyadic.md
           - Map File: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/map.md
-          - Name Association: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/na.md
+          - language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/na.md
           - Replace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/r.md
           - Search: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/s.md
           - Execute (UNIX) Command: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/execute-unix-command.md
@@ -639,7 +639,7 @@ nav:
         - Instances: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/instances.md
         - Index Origin: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/io.md
         - JSON Convert:
-          - JSON Convert: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/json-convert/json.md
+          - language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/json-convert/json.md
           - language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/json-convert/json-name-manglling.md
         - Key Label: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/kl.md
         - Line Count: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/lc.md
@@ -651,7 +651,7 @@ nav:
         - Migration Level: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ml.md
         - Set Monitor: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/set-monitor.md
         - Query Monitor: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/query-monitor.md
-        - Name Association: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/na.md
+        - language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/na.md
         - Native File Append: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nappend.md
         - Name Classification: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nc.md
         - Native File Create: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ncreate.md

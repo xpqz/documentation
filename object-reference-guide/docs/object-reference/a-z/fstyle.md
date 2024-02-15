@@ -4,19 +4,16 @@
 
 
 <h1 class="heading"><span class="name">FStyle</span></h1>
+
 | Applies To: | [Circle](./circle.md) | [Ellipse](./ellipse.md) | [Poly](./poly.md) | [Rect](./rect.md) |
 | --- | --- | --- | --- | ---  |
 
-| Applies To: | [Circle](./circle.md) [Ellipse](./ellipse.md) [Poly](./poly.md) [Rect](./rect.md) | [Circle](./circle.md) | [Ellipse](./ellipse.md) | [Poly](./poly.md) | [Rect](./rect.md) |  |  |
-| --- | --- | ---  |
-| [Circle](./circle.md) | [Ellipse](./ellipse.md) | [Poly](./poly.md) |
-| [Rect](./rect.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property determines how a graphics object is filled. It takes one of the following values, or, if the object has more than one component, a vector of such values.
+
 
 | FStyle | Effect |
 | --- | ---  |

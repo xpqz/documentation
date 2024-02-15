@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Underscored Alphabetic Characters</span><span class="command">R←⎕Ⓐ</span></h1>
 
-`⎕Ⓐ` is a deprecated feature. Dyalog strongly recommends that you move away from the use of `⎕Ⓐ`and of the underscored alphabet itself, as these symbols now constitute the sole remaining non-standard use of characters in Dyalog applications.
+`⎕Ⓐ` is a deprecated feature. Dyalog **strongly** recommends that you move away from the use of `⎕Ⓐ`and of the underscored alphabet itself, as these symbols now constitute the sole remaining non-standard use of characters in Dyalog applications.
 
 
 In Versions of Dyalog APL prior to Version 11.0, `⎕Ⓐ` was a simple character vector, composed of the letters of the alphabet with underscores. If the Dyalog Alt font was in use, these symbols displayed as additional National Language characters.

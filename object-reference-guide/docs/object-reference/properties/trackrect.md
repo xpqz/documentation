@@ -4,18 +4,16 @@
 
 
 <h1 class="heading"><span class="name">TrackRect</span></h1>
+
 | Applies To: | [TrackBar](../a-z/trackbar.md) |
 | --- | ---  |
 
-| Applies To: | [TrackBar](../a-z/trackbar.md) | [TrackBar](../a-z/trackbar.md) |  |  |
-| --- | --- | ---  |
-| [TrackBar](../a-z/trackbar.md) |  |  |
 
-
-Description
+**Description**
 
 
 TrackRect is a *read-only* property that reports the position and size of the bounding rectangle of the slider in a [TrackBar](../a-z/trackbar.md) object. It is a 4-element integer vector containing:
+
 
 | [1] | Vertical position of the top-left corner of the bounding    rectangle |
 | --- | ---  |

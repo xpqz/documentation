@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">With Statement</span><span class="command">:With obj</span></h1>
 
-Formal Definition
+[Formal Definition](With%20Statement%20Definition.htm)
 
 
 
@@ -41,18 +41,6 @@ On leaving the `:With` control structure, execution reverts to the original name
 [7]   :EndWith            ⍝ Back to #
 
 
-```
-
-#### :With Statement
-
-```apl
-       |
-       :With namespace (ref or name)
-       |
-       code
-       |
-       :End[With]
-       |
 ```
 
 

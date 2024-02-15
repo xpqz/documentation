@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">HotSpot</span></h1>
+
 | Applies To: | [Cursor](./cursor.md) |
 | --- | ---  |
 
-| Applies To: | [Cursor](./cursor.md) | [Cursor](./cursor.md) |  |  |
-| --- | --- | ---  |
-| [Cursor](./cursor.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies the point within a [Cursor](./cursor.md) object that registers the cursor's position over another object. The mouse position, which is reported by various events, is actually the position of the cursor's HotSpot over the object in question.

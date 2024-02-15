@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">InstanceMode</span></h1>
+
 | Applies To: | [OLEClient](./oleclient.md) |
 | --- | ---  |
 
-| Applies To: | [OLEClient](./oleclient.md) | [OLEClient](./oleclient.md) |  |  |
-| --- | --- | ---  |
-| [OLEClient](./oleclient.md) |  |  |
 
-
-Description
+**Description**
 
 
 The InstanceMode property specifies how APL attempts to connect the [OLEClient](./oleclient.md) to an OLE Server.

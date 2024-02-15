@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RowTitleDepth</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 RolTitleDepth specifies the structure of a set of hierarchical row titles.

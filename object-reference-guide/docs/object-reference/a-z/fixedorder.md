@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">FixedOrder</span></h1>
+
 | Applies To: | [CoolBar](./coolbar.md) |
 | --- | ---  |
 
-| Applies To: | [CoolBar](./coolbar.md) | [CoolBar](./coolbar.md) |  |  |
-| --- | --- | ---  |
-| [CoolBar](./coolbar.md) |  |  |
 
-
-Description
+**Description**
 
 
 The FixedOrder property specifies whether or not the [CoolBar](./coolbar.md) displays [CoolBands](./coolband.md) in the same order.

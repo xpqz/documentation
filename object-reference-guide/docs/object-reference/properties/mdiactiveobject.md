@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">MDIActiveObject</span></h1>
+
 | Applies To: | [MDIClient](../a-z/mdiclient.md) |
 | --- | ---  |
 
-| Applies To: | [MDIClient](../a-z/mdiclient.md) | [MDIClient](../a-z/mdiclient.md) |  |  |
-| --- | --- | ---  |
-| [MDIClient](../a-z/mdiclient.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property contains a ref to the [SubForm](../a-z/subform.md) owned by the [MDIClient](../a-z/mdiclient.md) that is currently active.

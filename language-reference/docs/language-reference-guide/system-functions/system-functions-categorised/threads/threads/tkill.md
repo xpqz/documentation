@@ -11,7 +11,7 @@
 The shy result `R` is a vector of the numbers of all threads that have been terminated.
 
 
-The base thread 0 is always excluded from the cull.
+The **base thread** 0 is always excluded from the cull.
 
 
 #### Examples

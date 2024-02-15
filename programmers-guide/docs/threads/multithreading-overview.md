@@ -6,7 +6,7 @@ This unique capability allows you to perform background processing, such as prin
 
 Multithreading may be used to improve throughput and system responsiveness.
 
-A *thread* is a strand of execution in the APL workspace.
+**A thread is a strand of execution in the APL workspace.**
 
 A thread is created by calling a function *asynchronously*, using the primitive operator `Spawn`: *&* or by the asynchronous invocation of a callback function.
 

@@ -4,41 +4,23 @@
 
 
 <h1 class="heading"><span class="name">HTMLRenderer</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/HTMLRenderer.htm) | [Children](../ChildLists/HTMLRenderer.htm) | [Properties](../PropLists/HTMLRenderer.htm) | [Methods](../MethodLists/HTMLRenderer.htm) | [Events](../EventLists/HTMLRenderer.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The HTMLRenderer Object is a cross-platform mechanism for producing Graphical User Interfaces (GUI), based on HyperText Markup Language (HTML). |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [SetZoomLevel](../a-z/setzoomlevel.md) [GetZoomLevel](../a-z/getzoomlevel.md) [ExecuteJavaScript](../a-z/executejavascript.md) [WebSocketClose](../a-z/websocketclose.md) [PrintToPDF](../a-z/printtopdf.md) [WebSocketSend](../a-z/websocketsend.md) [ShowDevTools](../a-z/showdevtools.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [SetZoomLevel](../a-z/setzoomlevel.md) | [GetZoomLevel](../a-z/getzoomlevel.md) | [ExecuteJavaScript](../a-z/executejavascript.md) | [WebSocketClose](../a-z/websocketclose.md) | [PrintToPDF](../a-z/printtopdf.md) | [WebSocketSend](../a-z/websocketsend.md) | [ShowDevTools](../a-z/showdevtools.md) | [Wait](../a-z/wait.md) |
-| [Detach](../a-z/detach.md) | [SetZoomLevel](../a-z/setzoomlevel.md) | [GetZoomLevel](../a-z/getzoomlevel.md) |
-| [ExecuteJavaScript](../a-z/executejavascript.md) | [WebSocketClose](../a-z/websocketclose.md) | [PrintToPDF](../a-z/printtopdf.md) |
-| [WebSocketSend](../a-z/websocketsend.md) | [ShowDevTools](../a-z/showdevtools.md) | [Wait](../a-z/wait.md) |
-| Children | [Detach](../a-z/detach.md) [SetZoomLevel](../a-z/setzoomlevel.md) [GetZoomLevel](../a-z/getzoomlevel.md) [ExecuteJavaScript](../a-z/executejavascript.md) [WebSocketClose](../a-z/websocketclose.md) [PrintToPDF](../a-z/printtopdf.md) [WebSocketSend](../a-z/websocketsend.md) [ShowDevTools](../a-z/showdevtools.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [SetZoomLevel](../a-z/setzoomlevel.md) | [GetZoomLevel](../a-z/getzoomlevel.md) | [ExecuteJavaScript](../a-z/executejavascript.md) | [WebSocketClose](../a-z/websocketclose.md) | [PrintToPDF](../a-z/printtopdf.md) | [WebSocketSend](../a-z/websocketsend.md) | [ShowDevTools](../a-z/showdevtools.md) | [Wait](../a-z/wait.md) |
-| [Detach](../a-z/detach.md) | [SetZoomLevel](../a-z/setzoomlevel.md) | [GetZoomLevel](../a-z/getzoomlevel.md) |
-| [ExecuteJavaScript](../a-z/executejavascript.md) | [WebSocketClose](../a-z/websocketclose.md) | [PrintToPDF](../a-z/printtopdf.md) |
-| [WebSocketSend](../a-z/websocketsend.md) | [ShowDevTools](../a-z/showdevtools.md) | [Wait](../a-z/wait.md) |
-| Properties | [Detach](../a-z/detach.md) [SetZoomLevel](../a-z/setzoomlevel.md) [GetZoomLevel](../a-z/getzoomlevel.md) [ExecuteJavaScript](../a-z/executejavascript.md) [WebSocketClose](../a-z/websocketclose.md) [PrintToPDF](../a-z/printtopdf.md) [WebSocketSend](../a-z/websocketsend.md) [ShowDevTools](../a-z/showdevtools.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [SetZoomLevel](../a-z/setzoomlevel.md) | [GetZoomLevel](../a-z/getzoomlevel.md) | [ExecuteJavaScript](../a-z/executejavascript.md) | [WebSocketClose](../a-z/websocketclose.md) | [PrintToPDF](../a-z/printtopdf.md) | [WebSocketSend](../a-z/websocketsend.md) | [ShowDevTools](../a-z/showdevtools.md) | [Wait](../a-z/wait.md) |
-| [Detach](../a-z/detach.md) | [SetZoomLevel](../a-z/setzoomlevel.md) | [GetZoomLevel](../a-z/getzoomlevel.md) |
-| [ExecuteJavaScript](../a-z/executejavascript.md) | [WebSocketClose](../a-z/websocketclose.md) | [PrintToPDF](../a-z/printtopdf.md) |
-| [WebSocketSend](../a-z/websocketsend.md) | [ShowDevTools](../a-z/showdevtools.md) | [Wait](../a-z/wait.md) |
-| Methods | [Detach](../a-z/detach.md) [SetZoomLevel](../a-z/setzoomlevel.md) [GetZoomLevel](../a-z/getzoomlevel.md) [ExecuteJavaScript](../a-z/executejavascript.md) [WebSocketClose](../a-z/websocketclose.md) [PrintToPDF](../a-z/printtopdf.md) [WebSocketSend](../a-z/websocketsend.md) [ShowDevTools](../a-z/showdevtools.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [SetZoomLevel](../a-z/setzoomlevel.md) | [GetZoomLevel](../a-z/getzoomlevel.md) | [ExecuteJavaScript](../a-z/executejavascript.md) | [WebSocketClose](../a-z/websocketclose.md) | [PrintToPDF](../a-z/printtopdf.md) | [WebSocketSend](../a-z/websocketsend.md) | [ShowDevTools](../a-z/showdevtools.md) | [Wait](../a-z/wait.md) |
-| [Detach](../a-z/detach.md) | [SetZoomLevel](../a-z/setzoomlevel.md) | [GetZoomLevel](../a-z/getzoomlevel.md) |
-| [ExecuteJavaScript](../a-z/executejavascript.md) | [WebSocketClose](../a-z/websocketclose.md) | [PrintToPDF](../a-z/printtopdf.md) |
-| [WebSocketSend](../a-z/websocketsend.md) | [ShowDevTools](../a-z/showdevtools.md) | [Wait](../a-z/wait.md) |
-| Events | [Detach](../a-z/detach.md) [SetZoomLevel](../a-z/setzoomlevel.md) [GetZoomLevel](../a-z/getzoomlevel.md) [ExecuteJavaScript](../a-z/executejavascript.md) [WebSocketClose](../a-z/websocketclose.md) [PrintToPDF](../a-z/printtopdf.md) [WebSocketSend](../a-z/websocketsend.md) [ShowDevTools](../a-z/showdevtools.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [SetZoomLevel](../a-z/setzoomlevel.md) | [GetZoomLevel](../a-z/getzoomlevel.md) | [ExecuteJavaScript](../a-z/executejavascript.md) | [WebSocketClose](../a-z/websocketclose.md) | [PrintToPDF](../a-z/printtopdf.md) | [WebSocketSend](../a-z/websocketsend.md) | [ShowDevTools](../a-z/showdevtools.md) | [Wait](../a-z/wait.md) |
-| [Detach](../a-z/detach.md) | [SetZoomLevel](../a-z/setzoomlevel.md) | [GetZoomLevel](../a-z/getzoomlevel.md) |
-| [ExecuteJavaScript](../a-z/executejavascript.md) | [WebSocketClose](../a-z/websocketclose.md) | [PrintToPDF](../a-z/printtopdf.md) |
-| [WebSocketSend](../a-z/websocketsend.md) | [ShowDevTools](../a-z/showdevtools.md) | [Wait](../a-z/wait.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The HTMLRenderer object renders HTML in a window on the screen. It may appear as a top-level window, similar to a Form, or be displayed within another GUI object according to the value of the Boolean [AsChild](../a-z/aschild.md) property which must be specified when the HTMLRenderer is created. Several HTMLRenderer objects may co-exist in the Dyalog application.
 
 
 
-The HTMLRenderer is implemented using the  [Chromium Embedded Framework (CEF) https://en.wikipedia.org/wiki/Chromium_Embedded_Framework.](https://en.wikipedia.org/wiki/Chromium_Embedded_Framework) Note that if the  ENABLE_CEF parameter is set to 0 (its default value is 1) the CEF is disabled and an attempt to create an HTMLRenderer object will fail with an error message.
+The HTMLRenderer is implemented using the  [Chromium Embedded Framework (CEF).](https://en.wikipedia.org/wiki/Chromium_Embedded_Framework) Note that if the  [ENABLE_CEF parameter](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#ENABLE_CEF) is set to 0 (its default value is 1) the CEF is disabled and an attempt to create an HTMLRenderer object will fail with an error message.
 
 
 The HTMLRenderer object can be considered as two components; a client implemented using CEF and an internal server which implements an interface from the APL workspace to the client.  The client may communicate with both the internal server and external servers on the web. Thus it can combine and display information from external and internal feeds.

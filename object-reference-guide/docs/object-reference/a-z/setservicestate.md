@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SetServiceState</span></h1>
+
 | Applies To: | [Root](./root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](./root.md) | [Root](./root.md) |  |  |
-| --- | --- | ---  |
-| [Root](./root.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to set the state of a Dyalog APL service running under Windows. See 
@@ -22,6 +19,7 @@ APL Application as a ServiceAPL Application as a Service on page 1.
 
 
 The argument to the SetServiceState method is the desired state of the service. This should be one of the following numeric values:
+
 
 | SERVICE_STOPPED | 1 |
 | --- | ---  |

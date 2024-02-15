@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Docked</span></h1>
+
 | Applies To: | [Form](./form.md) | [SubForm](./subform.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Form](./form.md) [SubForm](./subform.md) | [Form](./form.md) | [SubForm](./subform.md) |  |
-| --- | --- | ---  |
-| [Form](./form.md) | [SubForm](./subform.md) |  |
 
-
-Description
+**Description**
 
 
 The Docked property is a read-only property that indicates whether or not an object is currently docked.

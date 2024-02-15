@@ -4,4 +4,4 @@ This Boolean parameter specifies whether or not the keyboard specified by Initia
 
 See also Activate selected keyboard on page 1.
 
-Unicode Edition only.
+**Unicode Edition only.**

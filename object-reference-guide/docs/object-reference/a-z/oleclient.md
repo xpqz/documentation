@@ -4,44 +4,16 @@
 
 
 <h1 class="heading"><span class="name">OLEClient</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/OLEClient.htm) | [Children](../ChildLists/OLEClient.htm) | [Properties](../PropLists/OLEClient.htm) | [Methods](../MethodLists/OLEClient.htm) | [Events](../EventLists/OLEClient.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The OLEClient object provides access to an OLE Automation Server |
-| --- | --- | ---  |
-| Parents | [Browse](./browse.md) [Detach](./detach.md) [GetEventInfo](./geteventinfo.md) [GetMethodInfo](./getmethodinfo.md) [GetPropertyInfo](./getpropertyinfo.md) [GetTypeInfo](./gettypeinfo.md) [OLEAddEventSink](./oleaddeventsink.md) [OLEDeleteEventSink](./oledeleteeventsink.md) [OLEListEventSinks](./olelisteventsinks.md) [OLEQueryInterface](./olequeryinterface.md) [SetMethodInfo](./setmethodinfo.md) [SetPropertyInfo](./setpropertyinfo.md) [ShowHelp](./showhelp.md) | [Browse](./browse.md) | [Detach](./detach.md) | [GetEventInfo](./geteventinfo.md) | [GetMethodInfo](./getmethodinfo.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) | [OLEQueryInterface](./olequeryinterface.md) | [SetMethodInfo](./setmethodinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) | [ShowHelp](./showhelp.md) |  |  |
-| [Browse](./browse.md) | [Detach](./detach.md) | [GetEventInfo](./geteventinfo.md) |
-| [GetMethodInfo](./getmethodinfo.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetTypeInfo](./gettypeinfo.md) |
-| [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) |
-| [OLEQueryInterface](./olequeryinterface.md) | [SetMethodInfo](./setmethodinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) |
-| [ShowHelp](./showhelp.md) |  |  |
-| Children | [Browse](./browse.md) [Detach](./detach.md) [GetEventInfo](./geteventinfo.md) [GetMethodInfo](./getmethodinfo.md) [GetPropertyInfo](./getpropertyinfo.md) [GetTypeInfo](./gettypeinfo.md) [OLEAddEventSink](./oleaddeventsink.md) [OLEDeleteEventSink](./oledeleteeventsink.md) [OLEListEventSinks](./olelisteventsinks.md) [OLEQueryInterface](./olequeryinterface.md) [SetMethodInfo](./setmethodinfo.md) [SetPropertyInfo](./setpropertyinfo.md) [ShowHelp](./showhelp.md) | [Browse](./browse.md) | [Detach](./detach.md) | [GetEventInfo](./geteventinfo.md) | [GetMethodInfo](./getmethodinfo.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) | [OLEQueryInterface](./olequeryinterface.md) | [SetMethodInfo](./setmethodinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) | [ShowHelp](./showhelp.md) |  |  |
-| [Browse](./browse.md) | [Detach](./detach.md) | [GetEventInfo](./geteventinfo.md) |
-| [GetMethodInfo](./getmethodinfo.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetTypeInfo](./gettypeinfo.md) |
-| [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) |
-| [OLEQueryInterface](./olequeryinterface.md) | [SetMethodInfo](./setmethodinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) |
-| [ShowHelp](./showhelp.md) |  |  |
-| Properties | [Browse](./browse.md) [Detach](./detach.md) [GetEventInfo](./geteventinfo.md) [GetMethodInfo](./getmethodinfo.md) [GetPropertyInfo](./getpropertyinfo.md) [GetTypeInfo](./gettypeinfo.md) [OLEAddEventSink](./oleaddeventsink.md) [OLEDeleteEventSink](./oledeleteeventsink.md) [OLEListEventSinks](./olelisteventsinks.md) [OLEQueryInterface](./olequeryinterface.md) [SetMethodInfo](./setmethodinfo.md) [SetPropertyInfo](./setpropertyinfo.md) [ShowHelp](./showhelp.md) | [Browse](./browse.md) | [Detach](./detach.md) | [GetEventInfo](./geteventinfo.md) | [GetMethodInfo](./getmethodinfo.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) | [OLEQueryInterface](./olequeryinterface.md) | [SetMethodInfo](./setmethodinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) | [ShowHelp](./showhelp.md) |  |  |
-| [Browse](./browse.md) | [Detach](./detach.md) | [GetEventInfo](./geteventinfo.md) |
-| [GetMethodInfo](./getmethodinfo.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetTypeInfo](./gettypeinfo.md) |
-| [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) |
-| [OLEQueryInterface](./olequeryinterface.md) | [SetMethodInfo](./setmethodinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) |
-| [ShowHelp](./showhelp.md) |  |  |
-| Methods | [Browse](./browse.md) [Detach](./detach.md) [GetEventInfo](./geteventinfo.md) [GetMethodInfo](./getmethodinfo.md) [GetPropertyInfo](./getpropertyinfo.md) [GetTypeInfo](./gettypeinfo.md) [OLEAddEventSink](./oleaddeventsink.md) [OLEDeleteEventSink](./oledeleteeventsink.md) [OLEListEventSinks](./olelisteventsinks.md) [OLEQueryInterface](./olequeryinterface.md) [SetMethodInfo](./setmethodinfo.md) [SetPropertyInfo](./setpropertyinfo.md) [ShowHelp](./showhelp.md) | [Browse](./browse.md) | [Detach](./detach.md) | [GetEventInfo](./geteventinfo.md) | [GetMethodInfo](./getmethodinfo.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) | [OLEQueryInterface](./olequeryinterface.md) | [SetMethodInfo](./setmethodinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) | [ShowHelp](./showhelp.md) |  |  |
-| [Browse](./browse.md) | [Detach](./detach.md) | [GetEventInfo](./geteventinfo.md) |
-| [GetMethodInfo](./getmethodinfo.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetTypeInfo](./gettypeinfo.md) |
-| [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) |
-| [OLEQueryInterface](./olequeryinterface.md) | [SetMethodInfo](./setmethodinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) |
-| [ShowHelp](./showhelp.md) |  |  |
-| Events | [Browse](./browse.md) [Detach](./detach.md) [GetEventInfo](./geteventinfo.md) [GetMethodInfo](./getmethodinfo.md) [GetPropertyInfo](./getpropertyinfo.md) [GetTypeInfo](./gettypeinfo.md) [OLEAddEventSink](./oleaddeventsink.md) [OLEDeleteEventSink](./oledeleteeventsink.md) [OLEListEventSinks](./olelisteventsinks.md) [OLEQueryInterface](./olequeryinterface.md) [SetMethodInfo](./setmethodinfo.md) [SetPropertyInfo](./setpropertyinfo.md) [ShowHelp](./showhelp.md) | [Browse](./browse.md) | [Detach](./detach.md) | [GetEventInfo](./geteventinfo.md) | [GetMethodInfo](./getmethodinfo.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetTypeInfo](./gettypeinfo.md) | [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) | [OLEQueryInterface](./olequeryinterface.md) | [SetMethodInfo](./setmethodinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) | [ShowHelp](./showhelp.md) |  |  |
-| [Browse](./browse.md) | [Detach](./detach.md) | [GetEventInfo](./geteventinfo.md) |
-| [GetMethodInfo](./getmethodinfo.md) | [GetPropertyInfo](./getpropertyinfo.md) | [GetTypeInfo](./gettypeinfo.md) |
-| [OLEAddEventSink](./oleaddeventsink.md) | [OLEDeleteEventSink](./oledeleteeventsink.md) | [OLEListEventSinks](./olelisteventsinks.md) |
-| [OLEQueryInterface](./olequeryinterface.md) | [SetMethodInfo](./setmethodinfo.md) | [SetPropertyInfo](./setpropertyinfo.md) |
-| [ShowHelp](./showhelp.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The OLEClient object allows you to control OLE Servers, which may be written
@@ -68,7 +40,7 @@ Object in addition to the generic properties and methods of the OLEClient class.
 
 
 If you call an OLE method with an invalid parameter, set a read-only
-property, or assign it an invalid value, the [LastError](./lasterror.md) property of the OLEClient and Root objects will
+property, or assign it an invalid value, the [LastError](./lasterror.md) property of the OLEClient and [Root](root.md) objects will
 contain error information generated by OLE.
 
 

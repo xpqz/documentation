@@ -4,27 +4,19 @@
 
 
 <h1 class="heading"><span class="name">MenuItem</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/MenuItem.htm) | [Children](../ChildLists/MenuItem.htm) | [Properties](../PropLists/MenuItem.htm) | [Methods](../MethodLists/MenuItem.htm) | [Events](../EventLists/MenuItem.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | This object allows the user to initiate an action or to select an option from a menu. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Children | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Events | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
-The [Caption](../a-z/caption.md) property determines the text string that is displayed in its parent as the menu option. The size of a MenuItem is determined by the size of its [Caption](../a-z/caption.md), or by the size of the largest object ([Menu](../a-z/menu.md), MenuItem or [Separator](../a-z/separator.md)) with the same parent. The position of the MenuItem is normally determined by the order in which it is created in relation to other objects with the same parent. However, you can use the [Posn](../a-z/posn.md) property to insert a new MenuItem into an existing structure. For example, having defined three MenuItem objects as children of a [Menu](../a-z/menu.md), you can insert a fourth one between the first and the second by specifying its [Posn](../a-z/posn.md) to be 2. Note that the value of [Posn](../a-z/posn.md) for the MenuItems that were previously second and third will then be reset to 3 and 4 respectively.
+The [Caption](../a-z/caption.md) property determines the text string that is displayed in its parent as the menu option. The size of a MenuItem is determined by the size of its [Caption](../a-z/caption.md), or by the size of the largest object ([Menu](../a-z/menu.md), MenuItem or [Separator](../a-z/separator.md)) with the same parent. The position of the MenuItem is normally determined by the order in which it is created in relation to other objects with the same parent. However, you can use the [Posn](../a-z/posn.md) property to **insert** a new MenuItem into an existing structure. For example, having defined three MenuItem objects as children of a [Menu](../a-z/menu.md), you can insert a fourth one between the first and the second by specifying its [Posn](../a-z/posn.md) to be 2. Note that the value of [Posn](../a-z/posn.md) for the MenuItems that were previously second and third will then be reset to 3 and 4 respectively.
 
 
 
@@ -40,7 +32,7 @@ If a MenuItem is a child of a [MenuBar](../a-z/menubar.md) which is itself a chi
 If you set the [EdgeStyle](../a-z/edgestyle.md) property to `'Plinth'`, the MenuItem will take on an appearance that is similar to a pushbutton and be raised when not selected and recessed when selected. Note that to enable 3-dimensional appearance, you must set [EdgeStyle](../a-z/edgestyle.md) to something other than `'None'` for all the objects above the MenuItem in the tree.
 
 
-The [BtnPix](../a-z/btnpix.md) property is used to display a picture in a MenuItem. [BtnPix](../a-z/btnpix.md) specifies the names of, or refs to, three [Bitmap](../a-z/bitmap.md) objects. The first [Bitmap](../a-z/bitmap.md) is displayed when the MenuItem does not have the focus (normal), the second when it does have the focus (highlighted). The third [Bitmap](../a-z/bitmap.md) is displayed when the MenuItem is made inactive ([Active](../a-z/active.md) property is 0). If [Caption](../a-z/caption.md) is also defined, it is displayed on top of the bitmaps.
+The [BtnPix](../a-z/btnpix.md) property is used to display a picture in a MenuItem. [BtnPix](../a-z/btnpix.md) specifies the names of, or refs to, three [Bitmap](../a-z/bitmap.md) objects. The first [Bitmap](../a-z/bitmap.md) is displayed when the MenuItem does not have the focus (normal), the second when it does have the focus (highlighted). The third [Bitmap](../a-z/bitmap.md) is displayed when the MenuItem is made inactive ([Active](../a-z/active.md) property is 0). If [Caption](../a-z/caption.md) is also defined, it is displayed **on top of** the bitmaps.
 
 
 Alternatively, you may display an image alongside the [Caption](../a-z/caption.md) using the [ImageIndex](../a-z/imageindex.md) property. This selects a picture from the [ImageList](../a-z/imagelist.md) associated with the [ImageListObj](../a-z/imagelistobj.md) property of the parent [Menu](../a-z/menu.md).

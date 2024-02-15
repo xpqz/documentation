@@ -4,18 +4,15 @@
 
 
 <h1 class="heading"><span class="name">SIPResize</span></h1>
+
 | Applies To: | [Form](../a-z/form.md) |
 | --- | ---  |
 
-| Applies To: | [Form](../a-z/form.md) | [Form](../a-z/form.md) |  |  |
-| --- | --- | ---  |
-| [Form](../a-z/form.md) |  |  |
+
+**Description**
 
 
-Description
-
-
-SIPResize applies only to PocketAPL. In versions of Dyalog APL for other platforms, it has no effect.
+**SIPResize applies only to PocketAPL. In versions of Dyalog APL for other platforms, it has no effect.**
 
 
 This is a Boolean property that specifies the behaviour of a Form when the Input Panel is raised or lowered.

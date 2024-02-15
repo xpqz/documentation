@@ -354,6 +354,7 @@ There are two types of event; ElementChanged and CellsChanged. The CellsChanged 
 
 The event message  supplied as the right argument to your callback function, is a 2-element vector as follows :
 
+
 | `[1]` | Object | ref |
 | --- | --- | ---  |
 | `[2]` | EventArgs | ref |
@@ -365,6 +366,7 @@ EventArgs is an instance of the internal class `Dyalog.Data.ElementChangedEventA
 
 `Dyalog.Data.ElementChangedEventArgs` fields
 
+
 | `Indices` | An indication of which member has changed. Typically this will either be `¯1` to indicate that the indices are unavailable or a scalar value indicating (origin 0), which element of an array has been modified or added. |
 | --- | ---  |
 | `Name` | The name of the variable that has been modified. This is especially useful when the datasource corresponds to a namespace. |
@@ -374,6 +376,7 @@ EventArgs is an instance of the internal class `Dyalog.Data.ElementChangedEventA
 
 
 `Dyalog.Data.CellsChangedEventArgs` fields
+
 
 | `Path` | Identifies the cell or row that was changed. See below. |
 | --- | ---  |
@@ -389,6 +392,6 @@ If Reason is `'CellChanged'`, Path is the row and column number (in origin 0) of
 If Reason is `'RowDeleted'` or `'RowInserted'`, Path is the number of the row that has been added or removed (in origin 0) and Value is `⎕NULL`.
 
 
-.NET Framework only
+**.NET Framework only**
 
 

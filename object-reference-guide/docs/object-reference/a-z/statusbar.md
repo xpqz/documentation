@@ -4,34 +4,16 @@
 
 
 <h1 class="heading"><span class="name">StatusBar</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/StatusBar.htm) | [Children](../ChildLists/StatusBar.htm) | [Properties](../PropLists/StatusBar.htm) | [Methods](../MethodLists/StatusBar.htm) | [Events](../EventLists/StatusBar.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | This object is used to manage [StatusField](statusfield.md) objects which display  information for the user. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
-| Children | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
-| Properties | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
-| Methods | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
-| Events | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The StatusBar is a container object that manages [StatusField](statusfield.md)s. [StatusField](statusfield.md) objects display textual information and are typically used for help messages and for monitoring the status of an application. They can also be used to automatically report the status of the Caps Lock, Num Lock, Scroll Lock, and Insert keys.

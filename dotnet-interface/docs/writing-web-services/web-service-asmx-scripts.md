@@ -1,6 +1,6 @@
 # Web Service (.asmx) Scripts
 
-Web Services may be written in a variety of languages, including APLScript, the scripting version of Dyalog APL. See APLScript on page 1.
+Web Services may be written in a variety of languages, including APLScript, the scripting version of Dyalog APL. See [APLScript on page 1](../APLScript/Chapter%20Heading.htm#Chapter_Heading).
 
 The first statement in the script file declares the language and the name of the service. For example, the following statement declares a Dyalog APL Web Service named GolfService.
 ```apl
@@ -25,4 +25,4 @@ Because the functions usually take arguments and return results whose types must
    :Using System
 ```
 
-must almost always appear immediately after the `:Class` statement to locate them.
+must almost always appear **immediately** after the `:Class` statement to locate them.

@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">AutoExpand</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property is a 2-element Boolean value that specifies whether or not rows and columns may be added to a [Grid](../a-z/grid.md) object by the user.

@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">BrowseBox</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/BrowseBox.htm) | [Children](../ChildLists/BrowseBox.htm) | [Properties](../PropLists/BrowseBox.htm) | [Methods](../MethodLists/BrowseBox.htm) | [Events](../EventLists/BrowseBox.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The BrowseBox object allows the user to browse for and select a folder         or other resource. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [Wait](../a-z/wait.md) |  |
-| Children | [Detach](../a-z/detach.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [Wait](../a-z/wait.md) |  |
-| Properties | [Detach](../a-z/detach.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [Wait](../a-z/wait.md) |  |
-| Methods | [Detach](../a-z/detach.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [Wait](../a-z/wait.md) |  |
-| Events | [Detach](../a-z/detach.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [Wait](../a-z/wait.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The BrowseBox object is a dialog box that allows the user to browse for and
@@ -29,10 +21,10 @@ The BrowseBox object is a dialog box that allows the user to browse for and
 
 
 
-For full functionality as described here, the BrowseBox object requires
+**For full functionality as described here, the BrowseBox object requires
 the Windows Shell Library SHELL32.DLL Version 4.71 or higher. The BrowseBox
 object also supports the enhanced functionality provided by SHELL32.DLL Version
-5 (Windows 2000) if present.
+5 (Windows 2000) if present.**
 
 
 The [BrowseFor](../a-z/browsefor.md) property specifies the

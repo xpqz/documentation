@@ -5,25 +5,10 @@
 
 <h1 class="heading"><span class="name">Animate</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](./activexcontrol.md) [Animation](./animation.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Calendar](./calendar.md) [ColorButton](./colorbutton.md) [Combo](./combo.md) [ComboEx](./comboex.md) [CoolBar](./coolbar.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [Form](./form.md) [Grid](./grid.md) [Group](./group.md) [Label](./label.md) [List](./list.md) [ListView](./listview.md) [MDIClient](./mdiclient.md) [ProgressBar](./progressbar.md) [PropertyPage](./propertypage.md) [RichEdit](./richedit.md) [Scroll](./scroll.md) [SM](./sm.md) [Spinner](./spinner.md) [Static](./static.md) [StatusBar](./statusbar.md) [SubForm](./subform.md) [TabBar](./tabbar.md) [TabControl](./tabcontrol.md) [ToolBar](./toolbar.md) [ToolControl](./toolcontrol.md) [TrackBar](./trackbar.md) [TreeView](./treeview.md) [UpDown](./updown.md) | [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [CoolBar](./coolbar.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) | [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) | [MDIClient](./mdiclient.md) | [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) | [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [SM](./sm.md) | [Spinner](./spinner.md) | [Static](./static.md) | [StatusBar](./statusbar.md) | [SubForm](./subform.md) | [TabBar](./tabbar.md) | [TabControl](./tabcontrol.md) | [ToolBar](./toolbar.md) | [ToolControl](./toolcontrol.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |  |  |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) |
-| [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [ColorButton](./colorbutton.md) |
-| [Combo](./combo.md) | [ComboEx](./comboex.md) | [CoolBar](./coolbar.md) |
-| [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Form](./form.md) |
-| [Grid](./grid.md) | [Group](./group.md) | [Label](./label.md) |
-| [List](./list.md) | [ListView](./listview.md) | [MDIClient](./mdiclient.md) |
-| [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) | [RichEdit](./richedit.md) |
-| [Scroll](./scroll.md) | [SM](./sm.md) | [Spinner](./spinner.md) |
-| [Static](./static.md) | [StatusBar](./statusbar.md) | [SubForm](./subform.md) |
-| [TabBar](./tabbar.md) | [TabControl](./tabcontrol.md) | [ToolBar](./toolbar.md) |
-| [ToolControl](./toolcontrol.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) |
-| [UpDown](./updown.md) |  |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 The Animate method enables you to produce special effects when showing or hiding objects. There are three types of animation: roll, slide, and alpha-blended fade.
@@ -33,6 +18,7 @@ The Animate method enables you to produce special effects when showing or hiding
 
 The argument to Animate is a 1 or 2-element array as follows:
 
+
 | `[1]` | Effects | integer |
 | --- | --- | ---  |
 | `[2]` | Play time | integer |
@@ -41,6 +27,7 @@ The argument to Animate is a 1 or 2-element array as follows:
 
 
 The value of the *Effects* parameter is the sum of the following flags:
+
 
 | Flag | Value | Description |
 | --- | --- | ---  |

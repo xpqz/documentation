@@ -5,29 +5,14 @@
 
 <h1 class="heading"><span class="name">AutoConf</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](../a-z/activexcontrol.md) [Animation](../a-z/animation.md) [Button](../a-z/button.md) [ButtonEdit](../a-z/buttonedit.md) [Calendar](../a-z/calendar.md) [Circle](../a-z/circle.md) [ColorButton](../a-z/colorbutton.md) [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [DateTimePicker](../a-z/datetimepicker.md) [Edit](../a-z/edit.md) [Ellipse](../a-z/ellipse.md) [Form](../a-z/form.md) [Grid](../a-z/grid.md) [Group](../a-z/group.md) [Image](../a-z/image.md) [Label](../a-z/label.md) [List](../a-z/list.md) [ListView](../a-z/listview.md) [Marker](../a-z/marker.md) [Poly](../a-z/poly.md) [ProgressBar](../a-z/progressbar.md) [Rect](../a-z/rect.md) [RichEdit](../a-z/richedit.md) [Scroll](../a-z/scroll.md) [SM](../a-z/sm.md) [Spinner](../a-z/spinner.md) [Static](../a-z/static.md) [StatusBar](../a-z/statusbar.md) [StatusField](../a-z/statusfield.md) [SubForm](../a-z/subform.md) [TabBar](../a-z/tabbar.md) [TabBtn](../a-z/tabbtn.md) [Text](../a-z/text.md) [ToolBar](../a-z/toolbar.md) [TrackBar](../a-z/trackbar.md) [TreeView](../a-z/treeview.md) [UpDown](../a-z/updown.md) | [ActiveXControl](../a-z/activexcontrol.md) | [Animation](../a-z/animation.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Calendar](../a-z/calendar.md) | [Circle](../a-z/circle.md) | [ColorButton](../a-z/colorbutton.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [Ellipse](../a-z/ellipse.md) | [Form](../a-z/form.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) | [Image](../a-z/image.md) | [Label](../a-z/label.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [Marker](../a-z/marker.md) | [Poly](../a-z/poly.md) | [ProgressBar](../a-z/progressbar.md) | [Rect](../a-z/rect.md) | [RichEdit](../a-z/richedit.md) | [Scroll](../a-z/scroll.md) | [SM](../a-z/sm.md) | [Spinner](../a-z/spinner.md) | [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [StatusField](../a-z/statusfield.md) | [SubForm](../a-z/subform.md) | [TabBar](../a-z/tabbar.md) | [TabBtn](../a-z/tabbtn.md) | [Text](../a-z/text.md) | [ToolBar](../a-z/toolbar.md) | [TrackBar](../a-z/trackbar.md) | [TreeView](../a-z/treeview.md) | [UpDown](../a-z/updown.md) |  |
-| --- | --- | ---  |
-| [ActiveXControl](../a-z/activexcontrol.md) | [Animation](../a-z/animation.md) | [Button](../a-z/button.md) |
-| [ButtonEdit](../a-z/buttonedit.md) | [Calendar](../a-z/calendar.md) | [Circle](../a-z/circle.md) |
-| [ColorButton](../a-z/colorbutton.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) |
-| [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [Ellipse](../a-z/ellipse.md) |
-| [Form](../a-z/form.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) |
-| [Image](../a-z/image.md) | [Label](../a-z/label.md) | [List](../a-z/list.md) |
-| [ListView](../a-z/listview.md) | [Marker](../a-z/marker.md) | [Poly](../a-z/poly.md) |
-| [ProgressBar](../a-z/progressbar.md) | [Rect](../a-z/rect.md) | [RichEdit](../a-z/richedit.md) |
-| [Scroll](../a-z/scroll.md) | [SM](../a-z/sm.md) | [Spinner](../a-z/spinner.md) |
-| [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [StatusField](../a-z/statusfield.md) |
-| [SubForm](../a-z/subform.md) | [TabBar](../a-z/tabbar.md) | [TabBtn](../a-z/tabbtn.md) |
-| [Text](../a-z/text.md) | [ToolBar](../a-z/toolbar.md) | [TrackBar](../a-z/trackbar.md) |
-| [TreeView](../a-z/treeview.md) | [UpDown](../a-z/updown.md) |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
-This property determines what happens to an object when its parent is resized, and how resizing an object affects its children. It may take one of the following values; the default is 3.
+This property determines what happens to an object when its **parent** is resized, and how resizing an object affects its children. It may take one of the following values; the default is 3.
+
 
 
 | 0 | Ignore resize by parent. Do not propagate resize to children. |
@@ -37,13 +22,13 @@ This property determines what happens to an object when its parent is resized, a
 | 3 | Accept resize by parent. Propagate resize to children. |
 
 
-If AutoConf is 0 or 2, the object's physical size (in pixels) and position (in pixels) relative to the top left corner of its parent remains unchanged when its parent is resized. If the object has `'Prop'` or `'User'` co-ordinates, the values of its [Posn](../a-z/posn.md) and [Size](../a-z/size.md) properties will change as a result.
+If AutoConf is 0 or 2, the object's **physical** size (in pixels) and position (in pixels) relative to the top left corner of its parent remains unchanged when its parent is resized. If the object has `'Prop'` or `'User'` co-ordinates, the values of its [Posn](../a-z/posn.md) and [Size](../a-z/size.md) properties will change as a result.
 
 
-If AutoConf is 1 or 3, by default, the object is physically reconfigured when its parent is resized such that its relative size and position within its parent remain unchanged. If the object has `'Pixel'` co-ordinates, the values of its [Posn](../a-z/posn.md) and [Size](../a-z/size.md) properties will change as a result. Note that this default processing can be prevented by inhibiting the [Configure](../a-z/configure.md) (31) Event.
+If AutoConf is 1 or 3, by default, the object is physically reconfigured when its parent is resized such that its **relative** size and position within its parent remain unchanged. If the object has `'Pixel'` co-ordinates, the values of its [Posn](../a-z/posn.md) and [Size](../a-z/size.md) properties will change as a result. Note that this default processing can be prevented by inhibiting the [Configure](../a-z/configure.md) (31) Event.
 
 
-If AutoConf is 0 or 1 and the object is resized, either by its parent or directly by the user, it does not attempt to physically reconfigure its children. This means that if the children have `'Prop'` or `'User'` co-ordinates, the values of their [Posn](../a-z/posn.md) and [Size](../a-z/size.md) co-ordinates will change as a result.
+If AutoConf is 0 or 1 and the object is resized, either by its parent or directly by the user, it does **not** attempt to physically reconfigure its children. This means that if the children have `'Prop'` or `'User'` co-ordinates, the values of their [Posn](../a-z/posn.md) and [Size](../a-z/size.md) co-ordinates will change as a result.
 
 
 If AutoConf is 2 or 3 and the object is resized, either by its parent or directly by the user, it propagates a [Configure](../a-z/configure.md) (31) Event to each of its children. By default this means that the object's children will be physically reconfigured so that they maintain their relative positions and sizes within it. If their co-ordinate system is `'Pixel'`, the values of their [Posn](../a-z/posn.md) and [Size](../a-z/size.md) properties will change as a result.

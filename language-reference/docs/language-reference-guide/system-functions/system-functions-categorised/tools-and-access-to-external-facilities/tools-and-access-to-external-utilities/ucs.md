@@ -88,7 +88,7 @@ Because integers are *signed*, numbers greater than 127 will be represented as 2
 
 
 
-Note regarding UTF-16: For most characters in the first plane of Unicode (0000-FFFF), UTF-16 and UCS-2 are identical. However, UTF-16 has the potential to encode all Unicode characters, by using more than 2 bytes for characters outside plane 1.
+**Note regarding UTF-16:** For most characters in the first plane of Unicode (0000-FFFF), UTF-16 and UCS-2 are identical. However, UTF-16 has the potential to encode all Unicode characters, by using more than 2 bytes for characters outside plane 1.
 ```apl
 
       'UTF-16' ⎕UCS 'ABCÆØÅ⍒⍋'

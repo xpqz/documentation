@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">GetCellRect</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method returns the rectangle associated with a particular cell in a Grid.
 
 
 The argument to GetCellRect is a 2-element vector as follows:
+
 
 | `[1]` | Row | integer |
 | --- | --- | ---  |

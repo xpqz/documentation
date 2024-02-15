@@ -3,21 +3,19 @@
 
 
 <h1 class="heading"><span class="name">AddChildren</span></h1>
+
 | Applies To: | [TreeView](./treeview.md) |
 | --- | ---  |
 
-| Applies To: | [TreeView](./treeview.md) | [TreeView](./treeview.md) |  |  |
-| --- | --- | ---  |
-| [TreeView](./treeview.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to add child items to an item in a [TreeView](./treeview.md) object
 
 
 The argument to AddChildren is a 3, 4 or 5 element array as follows:
+
 
 | `[1]` | Item number | Integer. |
 | --- | --- | ---  |

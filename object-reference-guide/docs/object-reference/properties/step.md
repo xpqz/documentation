@@ -4,16 +4,10 @@
 
 <h1 class="heading"><span class="name">Step</span></h1>
 
-Applies To
-
-| Applies To: | [Form](../a-z/form.md) [Locator](../a-z/locator.md) [ProgressBar](../a-z/progressbar.md) [Scroll](../a-z/scroll.md) [Spinner](../a-z/spinner.md) [SubForm](../a-z/subform.md) [TrackBar](../a-z/trackbar.md) [UpDown](../a-z/updown.md) | [Form](../a-z/form.md) | [Locator](../a-z/locator.md) | [ProgressBar](../a-z/progressbar.md) | [Scroll](../a-z/scroll.md) | [Spinner](../a-z/spinner.md) | [SubForm](../a-z/subform.md) | [TrackBar](../a-z/trackbar.md) | [UpDown](../a-z/updown.md) |  |
-| --- | --- | ---  |
-| [Form](../a-z/form.md) | [Locator](../a-z/locator.md) | [ProgressBar](../a-z/progressbar.md) |
-| [Scroll](../a-z/scroll.md) | [Spinner](../a-z/spinner.md) | [SubForm](../a-z/subform.md) |
-| [TrackBar](../a-z/trackbar.md) | [UpDown](../a-z/updown.md) |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property determines the size of changes reported when the user clicks a scroll arrow (small change) or clicks on the body of the scrollbar (large change). The object's [Thumb](../a-z/thumb.md) property increases or decreases by this amount.

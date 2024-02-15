@@ -16,7 +16,8 @@
 
 
 
-The format specification consists of a series of control phrases, with adjacent phrases separated by a single comma, selected from the following:
+The **format specification** consists of a series of control phrases, with adjacent phrases separated by a single comma, selected from the following:
+
 
 | `rAw` | Alphanumeric format |
 | --- | ---  |
@@ -35,6 +36,7 @@ The format specification consists of a series of control phrases, with adjacent 
 
 ##### where:
 
+
 | r | is an optional repetition factor indicating that the format phrase is to be applied to r columns of `Y` |
 | --- | ---  |
 | q | is an optional usage of qualifiers or affixtures from those described below. |
@@ -43,11 +45,12 @@ The format specification consists of a series of control phrases, with adjacent 
 | d | is an integer value specifying the number of places of decimal in Decimal format; `d` must be less than `w` . |
 | n | is an integer value specifying a tab position relative to the notional left margin (for `T` -format) or relative to the last formatted position (for `X` -format) at which to begin the next format. |
 | t | is any arbitrary text excluding the surrounding character pair.  Double quotes imply a single quote in the result. |
-| pattern | see following section G format |
+| pattern | see following section **G format** |
 
 
 
 ##### Qualifiers q are as follows:
+
 
 | B | leaves the field blank if the result would otherwise be zero. |
 | --- | ---  |
@@ -61,6 +64,7 @@ The format specification consists of a series of control phrases, with adjacent 
 
 
 ##### Affixtures are as follows:
+
 
 | M⍞t⍞ | prefixes negative results with the text t instead of the negative sign. |
 | --- | ---  |
@@ -215,7 +219,7 @@ One or more format phrases may be surrounded by parentheses and preceded by an o
 Only the `B`, `K`, `S` and `O` qualifiers are valid with the `G` option
 
 
-`⍞pattern⍞` is an arbitrary string of characters, excluding the delimiter characters.  Characters '9' and '`Z`' (unless altered with the `S` qualifier) are special and are known as digit selectors.
+`⍞pattern⍞` is an arbitrary string of characters, excluding the delimiter characters.  Characters '9' and '`Z`' (unless altered with the `S` qualifier) are special and are known as **digit selectors**.
 
 
 The result of a `G` format will have length equal to the length of the pattern.
@@ -266,6 +270,7 @@ The O format qualifier replaces a specific numeric value with a text string and 
 
 
 An O-qualifier consists of the letter "O" followed by the optional numeric value which is to be substituted (if omitted, the default is 0) and then the text string within pairs of symbols such as "`<>`". For example:
+
 
 | O - qualifier | Description |
 | --- | ---  |

@@ -13,6 +13,7 @@ Note that `⎕MONITOR` does not apply to  dfns or dops.
 
 `R` is a simple non-negative integer matrix of 5 columns with one row for each line in the function or operator `Y` which has the monitor set, giving:
 
+
 | Column 1 | Line number |
 | --- | ---  |
 | Column 2 | Number of times the line was executed |

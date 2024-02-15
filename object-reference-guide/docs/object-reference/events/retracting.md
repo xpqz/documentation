@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">Retracting</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) | [TreeView](../a-z/treeview.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) [TreeView](../a-z/treeview.md) | [Grid](../a-z/grid.md) | [TreeView](../a-z/treeview.md) |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) | [TreeView](../a-z/treeview.md) |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported by a [Grid](../a-z/grid.md) or a [TreeView](../a-z/treeview.md) object just before it is about to retract to hide the children of the current item.
@@ -30,6 +27,7 @@ You may disable the retract operation by setting the action code for the event t
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 3-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

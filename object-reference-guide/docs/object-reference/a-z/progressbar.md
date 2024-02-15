@@ -4,41 +4,23 @@
 
 
 <h1 class="heading"><span class="name">ProgressBar</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/ProgressBar.htm) | [Children](../ChildLists/ProgressBar.htm) | [Properties](../PropLists/ProgressBar.htm) | [Methods](../MethodLists/ProgressBar.htm) | [Events](../EventLists/ProgressBar.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The ProgressBar object is used to indicate the progress of a lengthy operation. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ProgressStep](./progressstep.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ProgressStep](./progressstep.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ProgressStep](./progressstep.md) |  |  |
-| Children | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ProgressStep](./progressstep.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ProgressStep](./progressstep.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ProgressStep](./progressstep.md) |  |  |
-| Properties | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ProgressStep](./progressstep.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ProgressStep](./progressstep.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ProgressStep](./progressstep.md) |  |  |
-| Methods | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ProgressStep](./progressstep.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ProgressStep](./progressstep.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ProgressStep](./progressstep.md) |  |  |
-| Events | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ProgressStep](./progressstep.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ProgressStep](./progressstep.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ProgressStep](./progressstep.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The ProgressBar object is a window that an application can use to indicate the progress of a lengthy operation. The appearance of the bar in the ProgressBar is determined by the [ProgressStyle](./progressstyle.md) property.
 
 
 
-If ProgressStyle is `Normal` or`Smooth`, the  size of the bar, intended to indicate the amount of progress, is determined using the [Thumb](./thumb.md) property in relation to its [Limits](./limits.md) property, and/or using the [ProgressStep](./progressstep.md) method. This can be updated as appropriate in the application logic or by using a Timer.
+If ProgressStyle is `Normal` or`Smooth`, the  size of the bar, intended to indicate the amount of progress, is determined using the [Thumb](./thumb.md) property in relation to its [Limits](./limits.md) property, and/or using the [ProgressStep](./progressstep.md) method. This can be updated as appropriate in the application logic or by using a [Timer](timer.md).
 
 
 The range of a ProgressBar is specified by the [Limits](./limits.md) property. This is a 2-element integer vector defining its minimum and maximum values. The position of the filled rectangle is specified by the Thumb property. You can update the ProgressBar by using `⎕WS` to set the value of the [Thumb](./thumb.md) directly, or by using the [ProgressStep](./progressstep.md) method. The latter causes the [Thumb](./thumb.md) to be updated by the value of the [Step](./step.md) property.

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SplitObj2</span></h1>
+
 | Applies To: | [Splitter](../a-z/splitter.md) |
 | --- | ---  |
 
-| Applies To: | [Splitter](../a-z/splitter.md) | [Splitter](../a-z/splitter.md) |  |  |
-| --- | --- | ---  |
-| [Splitter](../a-z/splitter.md) |  |  |
 
-
-Description
+**Description**
 
 
 The SplitObj2 property specifies the name of, or ref to, one of up to two objects managed by a [Splitter](../a-z/splitter.md) object. The object must be one of the following types:
@@ -25,6 +22,7 @@ If the [Style](../a-z/style.md) property of the [Splitter](../a-z/splitter.md) i
 
 
 If SplitObj2 is empty, the [Splitter](../a-z/splitter.md) manages the single object specified by [SplitObj1](../a-z/splitobj1.md) and the space to the right or below the [Splitter](../a-z/splitter.md) is empty or controlled by a second [Splitter](../a-z/splitter.md).
+
 
 
 | Button | Calendar | Combo | Edit | Grid | Group |

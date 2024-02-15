@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">MinButton</span></h1>
+
 | Applies To: | [Form](../a-z/form.md) | [HTMLRenderer](../a-z/htmlrenderer.md) | [SubForm](../a-z/subform.md) |
 | --- | --- | --- | ---  |
 
-| Applies To: | [Form](../a-z/form.md) [HTMLRenderer](../a-z/htmlrenderer.md) [SubForm](../a-z/subform.md) | [Form](../a-z/form.md) | [HTMLRenderer](../a-z/htmlrenderer.md) | [SubForm](../a-z/subform.md) |
-| --- | --- | ---  |
-| [Form](../a-z/form.md) | [HTMLRenderer](../a-z/htmlrenderer.md) | [SubForm](../a-z/subform.md) |
 
-
-Description
+**Description**
 
 
 This property determines whether or not an object has a "minimise" button. Pressing this button will cause the object to be iconified. Pressing it again will restore the object to its original size. MinButton is a single number with the value 0 (no minimise button) or 1 (minimise button is provided). The default is 1.

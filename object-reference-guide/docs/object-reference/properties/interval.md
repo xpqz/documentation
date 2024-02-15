@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Interval</span></h1>
+
 | Applies To: | [ProgressBar](../a-z/progressbar.md) | [Timer](../a-z/timer.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ProgressBar](../a-z/progressbar.md) [Timer](../a-z/timer.md) | [ProgressBar](../a-z/progressbar.md) | [Timer](../a-z/timer.md) |  |
-| --- | --- | ---  |
-| [ProgressBar](../a-z/progressbar.md) | [Timer](../a-z/timer.md) |  |
 
-
-Description
+**Description**
 
 
 Interval is an integer value specified in milliseconds and has a default of 1000.

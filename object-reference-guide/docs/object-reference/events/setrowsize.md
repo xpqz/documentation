@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SetRowSize</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user changes the height of a row or changes the height of the column titles. This may be done by dragging a border with the mouse or by double-clicking over a border. In the former case, the default action is to adjust the height of the appropriate row or the height of the column title area to the size selected by the user. In the latter case, the default action is to adjust the height to the maximum required to display all the data.
@@ -23,7 +20,8 @@ In either case, you can disable the default action by setting the event action c
 
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 5-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 5-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

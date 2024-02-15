@@ -18,7 +18,7 @@ Assignment statements are used to set up system variables, such as `⎕ML`, `⎕
 
 These statements are extracted from the APLScript and executed by the compiler in the order that they appear. It is important to recognise that they are executed at compile time, and not at run-time, and may therefore only be used for initialisation.
 
-Notice that it is acceptable to execute `⎕CY` to bring in functions and variables from a workspace that are to be incorporated into the code. This is especially useful to import a set of utilities. Note also that it is possible to export these functions as methods of .NET classes if the functions contain the appropriate colon statements.
+Notice that it **is** acceptable to execute `⎕CY` to bring in functions and variables from a workspace that are to be incorporated into the code. This is especially useful to import a set of utilities. Note also that it is possible to export these functions as methods of .NET classes if the functions contain the appropriate colon statements.
 
 The APLScript compiler will in fact execute any valid APL expression that you include. However, the results may not be useful and may indeed simply terminate the compiler. For example, it is not sensible to execute statements such as `⎕LOAD`, or `⎕OFF`.
 

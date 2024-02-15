@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">ToolButton</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/ToolButton.htm) | [Children](../ChildLists/ToolButton.htm) | [Properties](../PropLists/ToolButton.htm) | [Methods](../MethodLists/ToolButton.htm) | [Events](../EventLists/ToolButton.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The ToolButton object represents a button in a ToolControl. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Children | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Events | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The ToolButton object represents a selectable button in a [ToolControl](../a-z/toolcontrol.md) object.

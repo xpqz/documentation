@@ -5,18 +5,10 @@
 
 <h1 class="heading"><span class="name">Picture</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](./activexcontrol.md) [Button](./button.md) [Clipboard](./clipboard.md) [CoolBand](./coolband.md) [Form](./form.md) [Group](./group.md) [Image](./image.md) [MDIClient](./mdiclient.md) [SM](./sm.md) [Static](./static.md) [StatusBar](./statusbar.md) [StatusField](./statusfield.md) [SubForm](./subform.md) [TabBar](./tabbar.md) [ToolBar](./toolbar.md) | [ActiveXControl](./activexcontrol.md) | [Button](./button.md) | [Clipboard](./clipboard.md) | [CoolBand](./coolband.md) | [Form](./form.md) | [Group](./group.md) | [Image](./image.md) | [MDIClient](./mdiclient.md) | [SM](./sm.md) | [Static](./static.md) | [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) | [SubForm](./subform.md) | [TabBar](./tabbar.md) | [ToolBar](./toolbar.md) |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) | [Button](./button.md) | [Clipboard](./clipboard.md) |
-| [CoolBand](./coolband.md) | [Form](./form.md) | [Group](./group.md) |
-| [Image](./image.md) | [MDIClient](./mdiclient.md) | [SM](./sm.md) |
-| [Static](./static.md) | [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) |
-| [SubForm](./subform.md) | [TabBar](./tabbar.md) | [ToolBar](./toolbar.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 The Picture property specifies a bitmap, icon, or other image for an object.
@@ -27,6 +19,7 @@ For [Button](./button.md), [Form](./form.md), [Group](./group.md), [MDIClient](.
 
 
 When it refers to a [Metafile](./metafile.md), the Picture property specifies the name of, or ref to, the [Metafile](./metafile.md) to be drawn in the object. When it refers to a [Bitmap](./bitmap.md) or [Icon](./icon.md), the value of the Picture property is a 2-element vector whose elements specify the name of, or ref to, the [Bitmap](./bitmap.md), or [Icon](./icon.md), and the manner in which it is displayed. This is specified as an integer as follows:
+
 
 | 0 | The [Bitmap](./bitmap.md) or [Icon](./icon.md) is drawn in        the top left corner of the object. |
 | --- | ---  |
@@ -47,7 +40,7 @@ For example, the following statements produce a [Form](./form.md) filled with th
 An easy way to provide a customised pushbutton is to create a [Button](./button.md) whose Picture property specifies the name of, or ref to, a [Bitmap](./bitmap.md) or [Icon](./icon.md), using drawmode 3 (the default). This causes the corresponding bitmap or icon to be drawn in the centre of the [Button](./button.md). So long as the [Button](./button.md) is larger than the bitmap or icon, its borders (which give it its 3-dimensional appearance and "pushbutton" behaviour) will be unaffected.
 
 
-Note that if Picture is set on a [Button](./button.md) whose Style is `'Radio'` or `'Check'`, the Button assumes pushbutton appearance, although its radio/check behaviour is preserved.
+Note that if Picture is set on a [Button](./button.md) whose [Style](style.md) is `'Radio'` or `'Check'`, the Button assumes pushbutton appearance, although its radio/check behaviour is preserved.
 
 
 For an [Image](./image.md) object, the Picture property specifies the name of, or ref to, a [Bitmap](./bitmap.md), [Icon](./icon.md) or [Metafile](./metafile.md) object to be drawn, or a vector of names or refs. The [Image](./image.md) is a graphical object and is drawn *on top of* the background. It does not support the drawmode options provided by the objects in which Picture specifies the background.

@@ -1,12 +1,12 @@
 # Namespace Script Example
 
-The DiaryStuff example illustrates the manner in which classes may be defined and used in a Namespace script.
+The [DiaryStuff](DiaryStuff%20Example%20Namespace.htm) example illustrates the manner in which classes may be defined and used in a Namespace script.
 
-DiaryStuff defines two Classes named `Diary` and `DiaryEntry`.
+[DiaryStuff](DiaryStuff%20Example%20Namespace.htm) defines two Classes named `Diary` and `DiaryEntry`.
 
 `Diary` contains a (private) Field named `entries`, which is simply a vector of instances of `DiaryEntry`. These are 2-element vectors containing a .NET DateTime object and a description.
 
-The `entries` Field is initialised to an empty vector of `DiaryEntry` instances which causes the invocation of the default constructor `DiaryEntry.Make0` when `Diary` is fixed. See "Empty Arrays of Instances: Why ?" on page 1 for further explanation.
+The `entries` Field is initialised to an empty vector of `DiaryEntry` instances which causes the invocation of the default constructor `DiaryEntry.Make0` when `Diary` is fixed. See ["Empty Arrays of Instances: Why ?" on page 1](../constructors/empty-arrays-of-instances-why.md) for further explanation.
 
 The `entries` Field is referenced through the `Entry` Property, which is defined as the [Default Property](../class-members/properties/default-property.md). This allows individual entries to be referenced and changed using indexing on a `Diary` Instance.
 
@@ -64,60 +64,4 @@ and the complete Diary is...
 ```apl
       ⌷D
   30/04/2006 09:00:00  Meeting with John  
-```
-
-```apl
-:Namespace DiaryStuff
-:Using System
-    
-    :Class DiaryEntry
-        :Field Public When
-        :Field Public What
-        ∇ Make(ymdhm wot)
-          :Access Public
-          :Implements Constructor
-          When What←(⎕NEW DateTime(6↑5↑ymdhm))wot
-          ⎕DF⍕When What
-        ∇
-        ∇ Make0
-          :Access Public
-          :Implements Constructor
-          When What←⎕NULL''
-        ∇
-    :EndClass ⍝ DiaryEntry
-```
-
-```apl
-    :Class Diary
-        :Field Private entries←0⍴⎕NEW DiaryEntry
-        ∇ R←Add(ymdhm wot)
-          :Access Public
-          R←⎕NEW DiaryEntry(ymdhm wot)
-          entries,←R
-        ∇
-        ∇ R←DoingOn ymd;X
-          :Access Public
-          X←,(↑entries.When.(Year Month Day))^.=3 1⍴3↑ymd
-          R←X/entries
-        ∇
-        ∇ R←Remove ymdhm;X
-          :Access Public
-          :If R←∨/X←entries.When=⎕NEW DateTime(6↑5↑ymdhm)
-              entries←(~X)/entries
-          :EndIf
-        ∇
-        :Property Numbered Default Entry
-            ∇ R←Shape
-              R←⍴entries
-            ∇
-            ∇ R←Get arg
-              R←arg.Indexers⊃entries
-            ∇
-            ∇ Set arg
-              entries[arg.Indexers]←arg.NewValue
-            ∇
-        :EndProperty
-    :EndClass ⍝ Diary
-    
-:EndNamespace
 ```

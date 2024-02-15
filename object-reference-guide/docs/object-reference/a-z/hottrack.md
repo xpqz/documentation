@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">HotTrack</span></h1>
+
 | Applies To: | [TabControl](./tabcontrol.md) |
 | --- | ---  |
 
-| Applies To: | [TabControl](./tabcontrol.md) | [TabControl](./tabcontrol.md) |  |  |
-| --- | --- | ---  |
-| [TabControl](./tabcontrol.md) |  |  |
 
-
-Description
+**Description**
 
 
 The HotTrack property specifies whether or not the tabs or buttons in a [TabControl](./tabcontrol.md) object ( which are represented by [TabButton](./tabbutton.md) objects), are automatically highlighted by the mouse pointer.

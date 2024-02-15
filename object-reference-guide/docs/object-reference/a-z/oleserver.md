@@ -4,29 +4,16 @@
 
 
 <h1 class="heading"><span class="name">OLEServer</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/OLEServer.htm) | [Children](../ChildLists/OLEServer.htm) | [Properties](../PropLists/OLEServer.htm) | [Methods](../MethodLists/OLEServer.htm) | [Events](../EventLists/OLEServer.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The OLEServer object is used to establish a namespace as an OLE Server         object that can be used by an OLE Automation client. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [OLERegister](./oleregister.md) [OLEUnregister](./oleunregister.md) [SetFnInfo](./setfninfo.md) [SetVarInfo](./setvarinfo.md) [SetEventInfo](./seteventinfo.md) | [Detach](./detach.md) | [OLERegister](./oleregister.md) | [OLEUnregister](./oleunregister.md) | [SetFnInfo](./setfninfo.md) | [SetVarInfo](./setvarinfo.md) | [SetEventInfo](./seteventinfo.md) |
-| [Detach](./detach.md) | [OLERegister](./oleregister.md) | [OLEUnregister](./oleunregister.md) |
-| [SetFnInfo](./setfninfo.md) | [SetVarInfo](./setvarinfo.md) | [SetEventInfo](./seteventinfo.md) |
-| Children | [Detach](./detach.md) [OLERegister](./oleregister.md) [OLEUnregister](./oleunregister.md) [SetFnInfo](./setfninfo.md) [SetVarInfo](./setvarinfo.md) [SetEventInfo](./seteventinfo.md) | [Detach](./detach.md) | [OLERegister](./oleregister.md) | [OLEUnregister](./oleunregister.md) | [SetFnInfo](./setfninfo.md) | [SetVarInfo](./setvarinfo.md) | [SetEventInfo](./seteventinfo.md) |
-| [Detach](./detach.md) | [OLERegister](./oleregister.md) | [OLEUnregister](./oleunregister.md) |
-| [SetFnInfo](./setfninfo.md) | [SetVarInfo](./setvarinfo.md) | [SetEventInfo](./seteventinfo.md) |
-| Properties | [Detach](./detach.md) [OLERegister](./oleregister.md) [OLEUnregister](./oleunregister.md) [SetFnInfo](./setfninfo.md) [SetVarInfo](./setvarinfo.md) [SetEventInfo](./seteventinfo.md) | [Detach](./detach.md) | [OLERegister](./oleregister.md) | [OLEUnregister](./oleunregister.md) | [SetFnInfo](./setfninfo.md) | [SetVarInfo](./setvarinfo.md) | [SetEventInfo](./seteventinfo.md) |
-| [Detach](./detach.md) | [OLERegister](./oleregister.md) | [OLEUnregister](./oleunregister.md) |
-| [SetFnInfo](./setfninfo.md) | [SetVarInfo](./setvarinfo.md) | [SetEventInfo](./seteventinfo.md) |
-| Methods | [Detach](./detach.md) [OLERegister](./oleregister.md) [OLEUnregister](./oleunregister.md) [SetFnInfo](./setfninfo.md) [SetVarInfo](./setvarinfo.md) [SetEventInfo](./seteventinfo.md) | [Detach](./detach.md) | [OLERegister](./oleregister.md) | [OLEUnregister](./oleunregister.md) | [SetFnInfo](./setfninfo.md) | [SetVarInfo](./setvarinfo.md) | [SetEventInfo](./seteventinfo.md) |
-| [Detach](./detach.md) | [OLERegister](./oleregister.md) | [OLEUnregister](./oleunregister.md) |
-| [SetFnInfo](./setfninfo.md) | [SetVarInfo](./setvarinfo.md) | [SetEventInfo](./seteventinfo.md) |
-| Events | [Detach](./detach.md) [OLERegister](./oleregister.md) [OLEUnregister](./oleunregister.md) [SetFnInfo](./setfninfo.md) [SetVarInfo](./setvarinfo.md) [SetEventInfo](./seteventinfo.md) | [Detach](./detach.md) | [OLERegister](./oleregister.md) | [OLEUnregister](./oleunregister.md) | [SetFnInfo](./setfninfo.md) | [SetVarInfo](./setvarinfo.md) | [SetEventInfo](./seteventinfo.md) |
-| [Detach](./detach.md) | [OLERegister](./oleregister.md) | [OLEUnregister](./oleunregister.md) |
-| [SetFnInfo](./setfninfo.md) | [SetVarInfo](./setvarinfo.md) | [SetEventInfo](./seteventinfo.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The OLEServer object allows you to export an APL namespace so that its

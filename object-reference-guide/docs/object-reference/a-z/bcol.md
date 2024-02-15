@@ -5,27 +5,10 @@
 
 <h1 class="heading"><span class="name">BCol</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXContainer](./activexcontainer.md) [ActiveXControl](./activexcontrol.md) [Animation](./animation.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Circle](./circle.md) [Combo](./combo.md) [ComboEx](./comboex.md) [CoolBand](./coolband.md) [CoolBar](./coolbar.md) [Edit](./edit.md) [Ellipse](./ellipse.md) [Form](./form.md) [Grid](./grid.md) [Group](./group.md) [Label](./label.md) [List](./list.md) [ListView](./listview.md) [MDIClient](./mdiclient.md) [Menu](./menu.md) [MenuItem](./menuitem.md) [Poly](./poly.md) [ProgressBar](./progressbar.md) [Rect](./rect.md) [RichEdit](./richedit.md) [Scroll](./scroll.md) [Separator](./separator.md) [SM](./sm.md) [Spinner](./spinner.md) [Splitter](./splitter.md) [Static](./static.md) [StatusBar](./statusbar.md) [StatusField](./statusfield.md) [SubForm](./subform.md) [TabBar](./tabbar.md) [TabBtn](./tabbtn.md) [Text](./text.md) [TipField](./tipfield.md) [ToolBar](./toolbar.md) [TrackBar](./trackbar.md) [TreeView](./treeview.md) [UpDown](./updown.md) | [ActiveXContainer](./activexcontainer.md) | [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Circle](./circle.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) | [Edit](./edit.md) | [Ellipse](./ellipse.md) | [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) | [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) | [MDIClient](./mdiclient.md) | [Menu](./menu.md) | [MenuItem](./menuitem.md) | [Poly](./poly.md) | [ProgressBar](./progressbar.md) | [Rect](./rect.md) | [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [Separator](./separator.md) | [SM](./sm.md) | [Spinner](./spinner.md) | [Splitter](./splitter.md) | [Static](./static.md) | [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) | [SubForm](./subform.md) | [TabBar](./tabbar.md) | [TabBtn](./tabbtn.md) | [Text](./text.md) | [TipField](./tipfield.md) | [ToolBar](./toolbar.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |
-| --- | --- | ---  |
-| [ActiveXContainer](./activexcontainer.md) | [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) |
-| [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Circle](./circle.md) |
-| [Combo](./combo.md) | [ComboEx](./comboex.md) | [CoolBand](./coolband.md) |
-| [CoolBar](./coolbar.md) | [Edit](./edit.md) | [Ellipse](./ellipse.md) |
-| [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) |
-| [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) |
-| [MDIClient](./mdiclient.md) | [Menu](./menu.md) | [MenuItem](./menuitem.md) |
-| [Poly](./poly.md) | [ProgressBar](./progressbar.md) | [Rect](./rect.md) |
-| [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [Separator](./separator.md) |
-| [SM](./sm.md) | [Spinner](./spinner.md) | [Splitter](./splitter.md) |
-| [Static](./static.md) | [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) |
-| [SubForm](./subform.md) | [TabBar](./tabbar.md) | [TabBtn](./tabbtn.md) |
-| [Text](./text.md) | [TipField](./tipfield.md) | [ToolBar](./toolbar.md) |
-| [TrackBar](./trackbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property defines the background colour(s) of an object.
@@ -51,6 +34,7 @@ If BCol is set to `⍬` (Zilde), Dyalog APL will never paint the background of 
 
 A negative value of BCol refers to a standard MS-Windows colour as described
 below. Positive values are reserved for a possible future extension.
+
 
 | BCol | Colour Element | BCol | Colour Element |
 | --- | --- | --- | ---  |
@@ -81,7 +65,7 @@ For a [Button](./button.md), BCol is only effective if the
 [Style](style.md) is `'Radio'` or `'Check'` and is ignored if the [Style](style.md) is `'Push'`.
 
 
-It is recommended that you only use pure background colours in [Combo](./combo.md) and [Edit](./edit.md) objects. This is because the text
+It is recommended that you only use **pure** background colours in [Combo](./combo.md) and [Edit](./edit.md) objects. This is because the text
 written in these objects cannot itself have a dithered background.
 
 

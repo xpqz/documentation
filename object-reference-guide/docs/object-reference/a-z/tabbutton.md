@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">TabButton</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/TabButton.htm) | [Children](../ChildLists/TabButton.htm) | [Properties](../PropLists/TabButton.htm) | [Methods](../MethodLists/TabButton.htm) | [Events](../EventLists/TabButton.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The TabButton object represents an individual tab or button in a [TabControl](tabcontrol.md) |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Children | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Properties | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Methods | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Events | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The TabButton object represents an individual tab or button in a [TabControl](tabcontrol.md)

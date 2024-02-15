@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RowLineTypes</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies the appearance of the horizontal grid lines in a [Grid](../a-z/grid.md) object.

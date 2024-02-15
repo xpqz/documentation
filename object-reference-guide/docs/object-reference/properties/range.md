@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Range</span></h1>
+
 | Applies To: | [Form](../a-z/form.md) | [Scroll](../a-z/scroll.md) | [SubForm](../a-z/subform.md) |
 | --- | --- | --- | ---  |
 
-| Applies To: | [Form](../a-z/form.md) [Scroll](../a-z/scroll.md) [SubForm](../a-z/subform.md) | [Form](../a-z/form.md) | [Scroll](../a-z/scroll.md) | [SubForm](../a-z/subform.md) |
-| --- | --- | ---  |
-| [Form](../a-z/form.md) | [Scroll](../a-z/scroll.md) | [SubForm](../a-z/subform.md) |
 
-
-Description
+**Description**
 
 
 This property determines the maximum value of the thumb in a scrollbar (the minimum value is always 1). This may be any positive integer value that is greater than 1.

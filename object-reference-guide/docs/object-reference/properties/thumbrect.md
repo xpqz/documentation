@@ -4,18 +4,16 @@
 
 
 <h1 class="heading"><span class="name">ThumbRect</span></h1>
+
 | Applies To: | [TrackBar](../a-z/trackbar.md) |
 | --- | ---  |
 
-| Applies To: | [TrackBar](../a-z/trackbar.md) | [TrackBar](../a-z/trackbar.md) |  |  |
-| --- | --- | ---  |
-| [TrackBar](../a-z/trackbar.md) |  |  |
 
-
-Description
+**Description**
 
 
 ThumbRect is a *read-only* property that reports the position and size of the bounding rectangle of the thumb in a [TrackBar](../a-z/trackbar.md) object. It is a 4-element integer vector containing:
+
 
 | [1] | Vertical position of the top-left corner of the bounding    rectangle |
 | --- | ---  |

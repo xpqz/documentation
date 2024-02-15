@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">WantsReturn</span></h1>
+
 | Applies To: | [Edit](../a-z/edit.md) | [RichEdit](../a-z/richedit.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Edit](../a-z/edit.md) [RichEdit](../a-z/richedit.md) | [Edit](../a-z/edit.md) | [RichEdit](../a-z/richedit.md) |  |
-| --- | --- | ---  |
-| [Edit](../a-z/edit.md) | [RichEdit](../a-z/richedit.md) |  |
 
-
-Description
+**Description**
 
 
 This Boolean property specifies the behaviour of the Enter key for a multi-line [Edit](../a-z/edit.md) (Style `'Multi'`) and a [RichEdit](../a-z/richedit.md) object.

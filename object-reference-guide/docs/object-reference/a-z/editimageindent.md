@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">EditImageIndent</span></h1>
+
 | Applies To: | [ComboEx](./comboex.md) |
 | --- | ---  |
 
-| Applies To: | [ComboEx](./comboex.md) | [ComboEx](./comboex.md) |  |  |
-| --- | --- | ---  |
-| [ComboEx](./comboex.md) |  |  |
 
-
-Description
+**Description**
 
 
 Specifies whether or not the indents associated with items in a ComboEx object are honoured in the edit control portion of the ComboEx.

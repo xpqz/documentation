@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">DuplicateRow</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to duplicate a row in a [Grid](./grid.md) object.
 
 
 The argument to DuplicateRow is a 2, 3, 4 or 5-element vector as follows:
+
 
 | `[1]` | Source Row number | number of the row (integer) to be duplicated |
 | --- | --- | ---  |

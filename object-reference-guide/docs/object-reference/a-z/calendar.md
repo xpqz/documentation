@@ -4,39 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Calendar</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Calendar.htm) | [Children](../ChildLists/Calendar.htm) | [Properties](../PropLists/Calendar.htm) | [Methods](../MethodLists/Calendar.htm) | [Events](../EventLists/Calendar.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The Calendar object provides an interface to the Month Calendar Control |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [GetVisibleRange](./getvisiblerange.md) [GetMinSize](./getminsize.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [GetVisibleRange](./getvisiblerange.md) | [GetMinSize](./getminsize.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [GetVisibleRange](./getvisiblerange.md) | [GetMinSize](./getminsize.md) |
-| [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |  |
-| Children | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [GetVisibleRange](./getvisiblerange.md) [GetMinSize](./getminsize.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [GetVisibleRange](./getvisiblerange.md) | [GetMinSize](./getminsize.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [GetVisibleRange](./getvisiblerange.md) | [GetMinSize](./getminsize.md) |
-| [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |  |
-| Properties | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [GetVisibleRange](./getvisiblerange.md) [GetMinSize](./getminsize.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [GetVisibleRange](./getvisiblerange.md) | [GetMinSize](./getminsize.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [GetVisibleRange](./getvisiblerange.md) | [GetMinSize](./getminsize.md) |
-| [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |  |
-| Methods | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [GetVisibleRange](./getvisiblerange.md) [GetMinSize](./getminsize.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [GetVisibleRange](./getvisiblerange.md) | [GetMinSize](./getminsize.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [GetVisibleRange](./getvisiblerange.md) | [GetMinSize](./getminsize.md) |
-| [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |  |
-| Events | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [GetVisibleRange](./getvisiblerange.md) [GetMinSize](./getminsize.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [GetVisibleRange](./getvisiblerange.md) | [GetMinSize](./getminsize.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [GetVisibleRange](./getvisiblerange.md) | [GetMinSize](./getminsize.md) |
-| [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The Calendar object displays a calendar and allows the user to select a date or range of dates. The following illustration shows a default Calendar object.
@@ -56,7 +33,7 @@ The Calendar object will display as many full months as it can fit into the area
 ![cal2](../img/cal2.gif)
 
 
-The [Today](./today.md) property is an IDN that specifies the current day. Its default value is today's date, i.e. the local date set on your computer.
+The [Today](./today.md) property is an [IDN](../Miscellaneous/International%20Day%20Number.htm) that specifies the current day. Its default value is today's date, i.e. the local date set on your computer.
 
 
 The [CircleToday](./circletoday.md) property is either 0 or 1 (the default) and specifies whether or not the Today date is circled when the Calendar object is showing the corresponding month.
@@ -81,7 +58,7 @@ The following example shows a Calendar with both [CircleToday](./circletoday.md)
 The [FirstDay](./firstday.md) property is an integer whose value is in the range 0-6. [FirstDay](./firstday.md) specifies the day that is considered to be the first day of the week and which appears first in the Calendar. The default value for [FirstDay](./firstday.md) depends upon your International Settings.
 
 
-The [MinDate](./mindate.md) and [MaxDate](./maxdate.md) properties are integers that specify the minimum and maximum IDN values that the user may display and select in the Calendar object. By default these properties specify the entire range of dates that the Windows Month Calendar control can provide.
+The [MinDate](./mindate.md) and [MaxDate](./maxdate.md) properties are integers that specify the minimum and maximum [IDN](../Miscellaneous/International%20Day%20Number.htm) values that the user may display and select in the Calendar object. By default these properties specify the entire range of dates that the Windows Month Calendar control can provide.
 
 
 The [MonthDelta](./monthdelta.md) property specifies the number of months by which the Calendar object scrolls when the user clicks its scroll buttons. The default is empty (zilde) which implies the number of months currently shown.
@@ -90,7 +67,7 @@ The [MonthDelta](./monthdelta.md) property specifies the number of months by whi
 The [Style](./style.md) property may be either `'Single'` (the default) or '`Multi'`. If [Style](./style.md) is `'Single'`, the user may select a single date. If [Style](./style.md) is '`Multi'`, the user may select a contiguous range of dates. In this case, the maximum number of contiguous days that can be selected is defined by the [MaxSelCount](./maxselcount.md) property which is an integer whose default value is 7.
 
 
-The [SelDate](./seldate.md) property is a 2-element integer vector of IDN values that identifies the first and last dates that are currently selected.
+The [SelDate](./seldate.md) property is a 2-element integer vector of [IDN](../Miscellaneous/International%20Day%20Number.htm) values that identifies the first and last dates that are currently selected.
 
 
 When the user selects one or more dates, the Calendar object generates a [SelDateChange](./seldatechange.md) event. This event is also generated when the Calendar object is scrolled, and the selection changes automatically to another month.
@@ -111,7 +88,7 @@ You may also set the font attribute for particular days in the range currently d
 The [CalendarCols](./calendarcols.md) property specifies the colours used for various elements in the Calendar object.
 
 
-You may convert dates between IDN and `⎕TS` representations using the [IDNToDate](./idntodate.md) and [DateToIDN](./datetoidn.md) methods. Note that these methods apply to all objects and not just to the Calendar object itself.
+You may convert dates between [IDN](../Miscellaneous/International%20Day%20Number.htm) and `⎕TS` representations using the [IDNToDate](./idntodate.md) and [DateToIDN](./datetoidn.md) methods. Note that these methods apply to **all** objects and not just to the Calendar object itself.
 
 
 The [GetVisibleRange](./getvisiblerange.md) method reports the range of dates that is currently visible in the Calendar object.

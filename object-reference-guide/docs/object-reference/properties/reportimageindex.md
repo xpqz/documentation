@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ReportImageIndex</span></h1>
+
 | Applies To: | [ListView](../a-z/listview.md) |
 | --- | ---  |
 
-| Applies To: | [ListView](../a-z/listview.md) | [ListView](../a-z/listview.md) |  |  |
-| --- | --- | ---  |
-| [ListView](../a-z/listview.md) |  |  |
 
-
-Description
+**Description**
 
 
 The ReportImageIndex property is an integer scalar or matrix  that specifies the images to be displayed alongside each item  in a [ListView](../a-z/listview.md) object in Report View.

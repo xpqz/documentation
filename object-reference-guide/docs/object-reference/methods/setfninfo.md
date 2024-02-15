@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SetFnInfo</span></h1>
+
 | Applies To: | [ActiveXControl](../a-z/activexcontrol.md) | [OLEServer](../a-z/oleserver.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ActiveXControl](../a-z/activexcontrol.md) [OLEServer](../a-z/oleserver.md) | [ActiveXControl](../a-z/activexcontrol.md) | [OLEServer](../a-z/oleserver.md) |  |
-| --- | --- | ---  |
-| [ActiveXControl](../a-z/activexcontrol.md) | [OLEServer](../a-z/oleserver.md) |  |
 
-
-Description
+**Description**
 
 
 This method is used to describe an APL function that is to be exported as a method, a Property Get Function, or a Property Put Function of an [ActiveXControl](../a-z/activexcontrol.md) or [OLEServer](../a-z/oleserver.md) object.
@@ -31,6 +28,7 @@ A function exported by SetFnInfo will be called by a host application with the n
 
 The argument to SetFnInfo is a 2, 3, 4, 5 or 6-element array as follows:
 
+
 | `[1]` | Function name | character vector |
 | --- | --- | ---  |
 | `[2]` | Function info | nested array (see below) |
@@ -46,7 +44,7 @@ The argument to SetFnInfo is a 2, 3, 4, 5 or 6-element array as follows:
 This specifies an optional help string which describes what the function does, the data type of the result (if any) and the names and data types of its arguments.
 
 
-If the function syntax is fully described, each element of *Function Info* is a 2-element vector of character vectors. The first element contains the help string and the COM data type of the function's result. Subsequent elements contain the name and COM data type of each parameter.
+If the function syntax is fully described, each element of *Function Info* is a 2-element vector of character vectors. The first element contains the help string and the [COM data type](../Miscellaneous/COM%20data%20types.htm) of the function's result. Subsequent elements contain the name and [COM data type](../Miscellaneous/COM%20data%20types.htm) of each parameter.
 
 
 However, both the help string and the names of the parameters are optional and may be omitted. If so, one or more elements of *Function Info* may be a simple character vector.
@@ -86,6 +84,7 @@ This is an integer value that identifies the help context id within the help fil
 
 
 This specifies the type of function being exported. This is an integer with one of the following values:
+
 
 | 1 | Function is a method |
 | --- | ---  |

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">AddCol</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported by the [Grid](./grid.md) object if the user presses the Cursor Right key, and the current cell ([CurCell](./curcell.md)) is within the last column on the [Grid](./grid.md). The default action is to append a new column to the contents of the [Grid](./grid.md). If you attach a callback function to this event and have it return a value of 0, a new column will not be appended to the [Grid](./grid.md). Note that the event will not be generated unless the second element of the [AutoExpand](./autoexpand.md) property is set to 1.
@@ -20,7 +17,8 @@ If enabled, this event is reported by the [Grid](./grid.md) object if the user p
 
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 3-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 3-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
@@ -33,6 +31,7 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 An application may insert a new column into a [Grid](./grid.md) by calling 
       AddCol as a method. The argument is a 1 to 7-element array as 
       follows:
+
 
 | `[1]` | Column number | number of the new column (integer) |
 | --- | --- | ---  |

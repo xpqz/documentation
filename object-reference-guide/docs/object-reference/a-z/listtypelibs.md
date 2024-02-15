@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ListTypeLibs</span></h1>
+
 | Applies To: | [Root](./root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](./root.md) | [Root](./root.md) |  |  |
-| --- | --- | ---  |
-| [Root](./root.md) |  |  |
 
-
-Description
+**Description**
 
 
 The ListTypeLibs method reports the names and CLSIDs of all the loaded Type Libraries.

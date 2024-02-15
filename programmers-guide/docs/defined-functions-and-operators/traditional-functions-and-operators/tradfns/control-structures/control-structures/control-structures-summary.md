@@ -44,6 +44,6 @@ A potential use for code before a `:OrIf` or `:AndIf` is to prepare for the cond
 
 ## Warning
 
-With the exception of a diamondised statement, a control statement that should not be followed by an expression will generate an error if an expression is supplied.
+With the exception of a diamondised statement, a control statement that should **not** be followed by an expression will generate an error if an expression is supplied.
 
-A line in a function consisting of a control statement followed by a `⋄` and subsequent expression(s) is not currently disallowed but may exhibit unexpected behaviour. In particular, the line will not honour  `⎕STOP` and will not be metered by `⎕MONITOR`. This syntax is not recommended.
+A line in a function consisting of a control statement followed by a `⋄` and subsequent expression(s) is not **currently** disallowed but may exhibit unexpected behaviour. In particular, the line will not honour  `⎕STOP` and will not be metered by `⎕MONITOR`. This syntax is not recommended.

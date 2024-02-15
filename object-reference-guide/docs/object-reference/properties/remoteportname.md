@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RemotePortName</span></h1>
+
 | Applies To: | [TCPSocket](../a-z/tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](../a-z/tcpsocket.md) | [TCPSocket](../a-z/tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](../a-z/tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 The RemotePortName property is a character vector that specifies the port name of the remote service to which you wish to make a connection.

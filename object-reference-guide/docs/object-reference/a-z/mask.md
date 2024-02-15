@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Mask</span></h1>
+
 | Applies To: | [Cursor](./cursor.md) | [Icon](./icon.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Cursor](./cursor.md) [Icon](./icon.md) | [Cursor](./cursor.md) | [Icon](./icon.md) |  |
-| --- | --- | ---  |
-| [Cursor](./cursor.md) | [Icon](./icon.md) |  |
 
-
-Description
+**Description**
 
 
 This property is used to specify how the bitmap for a [Cursor](./cursor.md) or [Icon](./icon.md) interacts with the pixels of the screen when it is displayed.
@@ -20,7 +17,7 @@ This property is used to specify how the bitmap for a [Cursor](./cursor.md) or [
 
 When a [Cursor](./cursor.md) or [Icon](./icon.md) is displayed, the colour of each pixel occupied by the object on the screen is determined by :
 
-- The colour specified by [Bits](bits.md) via CMap
+- The colour specified by [Bits](bits.md) via [CMap](cmap.md)
 - The value of Mask
 - The existing colour of the screen pixel
 

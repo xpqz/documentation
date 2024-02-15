@@ -9,6 +9,7 @@
 
 `Y` must be a simple integer vector of length 2 or 3 whose elements are:
 
+
 | `[1]` | a file tie number |
 | --- | ---  |
 | `[2]` | a number specifying the position and number of components to be dropped.  A positive value indicates that components are to be removed from the beginning of the file; a negative value indicates that components are to be removed from the end of the file |

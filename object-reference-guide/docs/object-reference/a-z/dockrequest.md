@@ -4,22 +4,19 @@
 
 
 <h1 class="heading"><span class="name">DockRequest</span></h1>
+
 | Applies To: | [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) | [Form](./form.md) | [SubForm](./subform.md) | [ToolControl](./toolcontrol.md) |
 | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [CoolBand](./coolband.md) [CoolBar](./coolbar.md) [Form](./form.md) [SubForm](./subform.md) [ToolControl](./toolcontrol.md) | [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) | [Form](./form.md) | [SubForm](./subform.md) | [ToolControl](./toolcontrol.md) |  |
-| --- | --- | ---  |
-| [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) | [Form](./form.md) |
-| [SubForm](./subform.md) | [ToolControl](./toolcontrol.md) |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported by a client object just before it is docked in a host object, when the user releases the mouse button.
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 7-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

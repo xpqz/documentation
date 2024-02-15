@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">LicenseKey</span></h1>
+
 | Applies To: | [OCXClass](./ocxclass.md) |
 | --- | ---  |
 
-| Applies To: | [OCXClass](./ocxclass.md) | [OCXClass](./ocxclass.md) |  |  |
-| --- | --- | ---  |
-| [OCXClass](./ocxclass.md) |  |  |
 
-
-Description
+**Description**
 
 
 The LicenseKey property is a character string that contains the license key for an ActiveX control.

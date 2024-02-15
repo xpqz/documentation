@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">ShowBalloonTip</span></h1>
+
 | Applies To: | [SysTrayItem](../a-z/systrayitem.md) |
 | --- | ---  |
 
-| Applies To: | [SysTrayItem](../a-z/systrayitem.md) | [SysTrayItem](../a-z/systrayitem.md) |  |  |
-| --- | --- | ---  |
-| [SysTrayItem](../a-z/systrayitem.md) |  |  |
 
-
-Description
+**Description**
 
 
 The ShowBalloonTip method displays a BalloonTip in a [SysTrayItem](../a-z/systrayitem.md) object.
 
 
 The argument to ShowBalloonTip is a  1, 2, 3 or 4-element array as follows:
+
 
 | `[1]` | Title | character vector |
 | --- | --- | ---  |
@@ -34,6 +32,7 @@ The **Text** parameter is the text (maximum length 256) to be displayed in the B
 
 
 If the **Icon** parameter is an integer, it means:
+
 
 | 0 | No icon |
 | --- | ---  |

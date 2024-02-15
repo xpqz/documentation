@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">PageSize</span></h1>
+
 | Applies To: | [Form](../a-z/form.md) | [Scroll](../a-z/scroll.md) | [SubForm](../a-z/subform.md) |
 | --- | --- | --- | ---  |
 
-| Applies To: | [Form](../a-z/form.md) [Scroll](../a-z/scroll.md) [SubForm](../a-z/subform.md) | [Form](../a-z/form.md) | [Scroll](../a-z/scroll.md) | [SubForm](../a-z/subform.md) |
-| --- | --- | ---  |
-| [Form](../a-z/form.md) | [Scroll](../a-z/scroll.md) | [SubForm](../a-z/subform.md) |
 
-
-Description
+**Description**
 
 
 For a [Form](../a-z/form.md) and [SubForm](../a-z/subform.md), the PageSize property is a 2-element integer vector which specifies the size of the thumb in the vertical and horizontal scrollbars respectively.

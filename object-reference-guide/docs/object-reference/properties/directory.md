@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Directory</span></h1>
+
 | Applies To: | [FileBox](../a-z/filebox.md) |
 | --- | ---  |
 
-| Applies To: | [FileBox](../a-z/filebox.md) | [FileBox](../a-z/filebox.md) |  |  |
-| --- | --- | ---  |
-| [FileBox](../a-z/filebox.md) |  |  |
 
-
-Description
+**Description**
 
 
 The Directory property contains a simple character vector which specifies the initial directory from which a list of suitable files is displayed.

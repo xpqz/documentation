@@ -10,6 +10,7 @@
 
 This statement identifies the name and signature by which a function is exported as a method to be called from outside Dyalog APL. Several :Signature statements may be specified to allow the method to be called with different arguments and/or to specify a different result type.
 
+
 | Element | Description |
 | --- | ---  |
 | `rslttype` | Specifies the data type for the result of the method |

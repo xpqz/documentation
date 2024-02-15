@@ -111,7 +111,7 @@ The third callback, `CHANGE_TABLES`, is called by sla_tab.aspx when the user sel
 
 Like the `Page_Load` function, callback functions must be declared as being *Public*methods. This is done using the :*Access* statement.
 
-In addition, and this is essential, APL callback functions must be declared to have the correct signature expected of .NET callback functions. This means that they must be monadic, and their argument must be declared to be a 2-element nested array containing two .NET objects; the object that generated the event, and an object that represents the arguments to the event.
+In addition, and this is **essential**, APL callback functions must be declared to have the correct signature expected of .NET callback functions. This means that they must be monadic, and their argument must be declared to be a 2-element nested array containing two .NET objects; the object that generated the event, and an object that represents the arguments to the event.
 
 Specifically, these parameters must be of type System.Object and System.EventArgs respectively. However, as our `⎕USING` contains System, it is not necessary to include the System prefix.
 

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RemoteAddrName</span></h1>
+
 | Applies To: | [TCPSocket](../a-z/tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](../a-z/tcpsocket.md) | [TCPSocket](../a-z/tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](../a-z/tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 The RemoteAddrName property is a character vector that specifies the host name of the remote computer to which you wish to make a connection.

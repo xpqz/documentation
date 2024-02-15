@@ -4,18 +4,16 @@
 
 
 <h1 class="heading"><span class="name">WebSocketSend</span></h1>
+
 | Applies To: | [HTMLRenderer](../a-z/htmlrenderer.md) |
 | --- | ---  |
 
-| Applies To: | [HTMLRenderer](../a-z/htmlrenderer.md) | [HTMLRenderer](../a-z/htmlrenderer.md) |  |  |
-| --- | --- | ---  |
-| [HTMLRenderer](../a-z/htmlrenderer.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to send data to a WebSocket. The argument to WebSocketSend is a 2, 3 or 4-element vector as follows:
+
 
 | `[1]` | ID | Character vector containing the ID of the WebSocket |
 | --- | --- | ---  |

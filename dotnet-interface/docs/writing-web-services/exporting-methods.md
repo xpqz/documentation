@@ -5,7 +5,7 @@ Your Web Service will be of no use unless it exports at least one method. To exp
 :Access WebMethod
 ```
 
-This statement causes the function to be exported as a method and must be present.
+This statement causes the function to be exported as a method and **must** be present.
 ```apl
 :Signature type ← fnname type name1, type name2, ...
 ```

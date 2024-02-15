@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">AsChild</span></h1>
+
 | Applies To: | [HTMLRenderer](./htmlrenderer.md) |
 | --- | ---  |
 
-| Applies To: | [HTMLRenderer](./htmlrenderer.md) | [HTMLRenderer](./htmlrenderer.md) |  |  |
-| --- | --- | ---  |
-| [HTMLRenderer](./htmlrenderer.md) |  |  |
 
-
-Description
+**Description**
 
 
 The AsChild property is a Boolean (default 0) indicating how the [HTMLRenderer](./htmlrenderer.md) object is displayed. AsChild must be set when the object is created and may not subsequently be changed.

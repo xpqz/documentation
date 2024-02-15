@@ -4,32 +4,19 @@
 
 
 <h1 class="heading"><span class="name">SM</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/SM.htm) | [Children](../ChildLists/SM.htm) | [Properties](../PropLists/SM.htm) | [Methods](../MethodLists/SM.htm) | [Events](../EventLists/SM.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | Defines a window for `⎕SM` / `⎕SR` . |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| Children | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| Properties | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| Methods | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| Events | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
-This object defines a window for `⎕SM`/`⎕SR` and allows you to combine the functionality of `⎕SM`/`⎕SR` with the "windows" GUI. For example, you can define a [Form](form.md) with a MenuBar at the top and a `⎕SM` window beneath it, with perhaps some [Button](button.md)s alongside.
+This object defines a window for `⎕SM`/`⎕SR` and allows you to combine the functionality of `⎕SM`/`⎕SR` with the "windows" GUI. For example, you can define a [Form](form.md) with a [MenuBar](menubar.md) at the top and a `⎕SM` window beneath it, with perhaps some [Button](button.md)s alongside.
 
 
 
@@ -39,7 +26,7 @@ To allow the user to interact with both `⎕SM` and other top-level objects, you
 ```
 
 
-allows the user to interact with fields (rows) 1-3 of `⎕SM` and with the object `'Form1'` and its children. Callback functions associated with events in `'Form1'` will be executed automatically by `⎕SR`. If an enabled event without a callback occurs, the event will be placed on `⎕DQ`'s internal queue and `⎕SR` will terminate. The nature of the termination (i.e. that it was caused by an event in an object) is reported by the value 131072 (2*17) in the fourth element of `⎕SR`'s result. The specific event ([Configure](./configure.md), [MouseUp](./mouseup.md), etc.) is however not reported. It is therefore generally preferable to use callbacks.
+allows the user to interact with fields (rows) 1-3 of `⎕SM` **and** with the object `'Form1'` and its children. Callback functions associated with events in `'Form1'` will be executed automatically by `⎕SR`. If an enabled event without a callback occurs, the event will be placed on [`⎕DQ`](../../Language/System%20Functions/dq.htm)'s internal queue and `⎕SR` will terminate. The nature of the termination (i.e. that it was caused by an event in an object) is reported by the value 131072 (2*17) in the fourth element of `⎕SR`'s result. The specific event ([Configure](./configure.md), [MouseUp](./mouseup.md), etc.) is however not reported. It is therefore generally preferable to use callbacks.
 
 
 The [Posn](./posn.md), [Size](./size.md) and [Coord](./coord.md) properties allow you to specify the position and size of the window occupied by `⎕SM` within its parent [Form](form.md). Note however that the `⎕SM` window will automatically be sized to be an exact number of characters in height and width which will be reported in `⎕SD`.

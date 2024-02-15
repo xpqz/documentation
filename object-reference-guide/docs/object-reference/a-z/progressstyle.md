@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ProgressStyle</span></h1>
+
 | Applies To: | [ProgressBar](./progressbar.md) |
 | --- | ---  |
 
-| Applies To: | [ProgressBar](./progressbar.md) | [ProgressBar](./progressbar.md) |  |  |
-| --- | --- | ---  |
-| [ProgressBar](./progressbar.md) |  |  |
 
-
-Description
+**Description**
 
 
 The ProgressStyle property specifies the appearance of a [ProgressBar](./progressbar.md) control.
@@ -31,7 +28,7 @@ If ProgressStyle is `'Smooth'`, the highlight in the centre of the [ProgressBar]
 If ProgressStyle is `'Marquee'`,  the highlight in the centre of the [ProgressBar](./progressbar.md) is displayed as a broken bar that moves continuously from left to right. The speed is controlled by the [Interval](interval.md) Property which determines the frequency in milliseconds with which the highlight is redrawn, each time further along the [ProgressBar](./progressbar.md). The special value of `¯1` causes the animation to stop.
 
 
-Note that this feature only applies if  is enabled.
+**Note that this feature only applies if is enabled.**
  If not,  `'Marquee'` will produce the same behaviour as `'Normal'`.
 
 

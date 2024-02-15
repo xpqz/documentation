@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Radius</span></h1>
+
 | Applies To: | [Circle](../a-z/circle.md) | [Rect](../a-z/rect.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Circle](../a-z/circle.md) [Rect](../a-z/rect.md) | [Circle](../a-z/circle.md) | [Rect](../a-z/rect.md) |  |
-| --- | --- | ---  |
-| [Circle](../a-z/circle.md) | [Rect](../a-z/rect.md) |  |
 
-
-Description
+**Description**
 
 
 For a [Circle](../a-z/circle.md) object, this property is a single number that specifies the radius of the circle/arc or a numeric vector that specifies the radii of a set of circles/arcs.

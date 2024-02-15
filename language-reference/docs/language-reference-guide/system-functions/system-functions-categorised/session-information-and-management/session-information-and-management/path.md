@@ -8,7 +8,7 @@
 `⎕PATH` is a simple character vector representing a blank-separated list of namespaces.  It is approximately analogous to the PATH variable in Windows or UNIX.
 
 
-The `⎕PATH` variable can be used to identify a namespace in which commonly used utility functions reside.  Functions or operators (NOT variables) which are copied into this namespace and *exported* (see ["Export Object" on page 1](../../../system-functions-a-z/system-functions-a-z/export.md)) can then be used directly from anywhere in the workspace without giving their full path names. `⎕PATH` has Session scope.
+The `⎕PATH` variable can be used to identify a namespace in which commonly used utility functions reside.  Functions or operators (**NOT** variables) which are copied into this namespace and *exported* (see ["Export Object" on page 1](../../../system-functions-a-z/system-functions-a-z/export.md)) can then be used directly from anywhere in the workspace without giving their full path names. `⎕PATH` has Session scope.
 
 
 

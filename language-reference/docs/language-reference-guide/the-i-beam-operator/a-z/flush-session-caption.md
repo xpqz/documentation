@@ -21,6 +21,6 @@ This I-Beam causes the Session Caption to be updated (flushed) when called. Note
 
 
 
-Windows only.
+**Windows only.**
 
 

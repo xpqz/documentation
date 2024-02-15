@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">CellSet</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property identifies which cells in a [Grid](../a-z/grid.md) are *set* (i.e. have values) and which are empty. Its purpose is to allow large numeric matrices containing blank cells to be displayed and edited efficiently.

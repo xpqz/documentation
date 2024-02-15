@@ -4,34 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Combo</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Combo.htm) | [Children](../ChildLists/Combo.htm) | [Properties](../PropLists/Combo.htm) | [Methods](../MethodLists/Combo.htm) | [Events](../EventLists/Combo.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | This object combines an input area with a list box and allows the user to enter a selection by typing text or by choosing an item from the list. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [ChooseFont](../a-z/choosefont.md) |  |  |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [ChooseFont](../a-z/choosefont.md) |  |  |
-| Children | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [ChooseFont](../a-z/choosefont.md) |  |  |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [ChooseFont](../a-z/choosefont.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [ChooseFont](../a-z/choosefont.md) |  |  |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [ChooseFont](../a-z/choosefont.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [ChooseFont](../a-z/choosefont.md) |  |  |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [ChooseFont](../a-z/choosefont.md) |  |  |
-| Events | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [ChooseFont](../a-z/choosefont.md) |  |  |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [ChooseFont](../a-z/choosefont.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 Three types of Combo box are provided by the [Style](../a-z/style.md) property which may be `'Drop'` (the default), `'Simple'` or `'DropEdit'`.
@@ -50,10 +32,10 @@ If the [Style](../a-z/style.md) is `'Simple'` or `'DropEdit'`, the user may type
 Note that if the user first selects an item from the list box, then changes it in the edit field, the entry in the list box is automatically deselected. There is therefore no conflict between the value of [Text](../a-z/text.md) and the value of [SelItems](../a-z/selitems.md).
 
 
-Warning: Windows truncates the contents of the edit field (reflected in the value of the [Text](../a-z/text.md) property) to 510 characters.
+**Warning: Windows truncates the contents of the edit field (reflected in the value of the Text property) to 510 characters.**
 
 
-For a Combo with [Style ](../a-z/style.md)`'Simple'`, the [Index](../a-z/index.md) property specifies or reports the position of [Items](../a-z/items.md) in the list box as a positive integer value. If [Index](../a-z/index.md) has the value "n", it means that the "nth" item in [Items](../a-z/items.md) is displayed on the top line in the list box. Note that [Index](../a-z/index.md) can only be set using `⎕WS` and not by `⎕WC` and is ignored if all the [Items](../a-z/items.md) fit in the list box. The default value for [Index](../a-z/index.md) is `⎕IO`.
+For a Combo with [Style ](../a-z/style.md)`'Simple'`, the [Index](../a-z/index.md) property specifies or reports the position of [Items](../a-z/items.md) in the list box as a positive integer value. If [Index](../a-z/index.md) has the value "n", it means that the "nth" item in [Items](../a-z/items.md) is displayed on the top line in the list box. Note that [Index](../a-z/index.md) can only be set using [`⎕WS`](../../Language/System%20Functions/ws.htm) and **not** by [`⎕WC`](../../Language/System%20Functions/wc.htm) and is ignored if all the [Items](../a-z/items.md) fit in the list box. The default value for [Index](../a-z/index.md) is `⎕IO`.
 
 
 The [SelText](../a-z/seltext.md) property identifies the portion of the edit field that is highlighted. It is not applicable to a Combo with [Style ](../a-z/style.md)`'Drop'` as the user cannot enter or change data in its edit field.
@@ -71,7 +53,7 @@ If the [Style](../a-z/style.md) is `'Simple'` or `'DropEdit'`, the [HScroll](../
 [VScroll](../a-z/vscroll.md) and [HScroll](../a-z/hscroll.md) may only be set when the object is created and may not subsequently be changed.
 
 
-Note that when you change the [Items](../a-z/items.md) property using `⎕WS`, the [Text](../a-z/text.md), [SelItems](../a-z/selitems.md) and [SelText](../a-z/seltext.md) properties are all reset to their default values.
+Note that when you change the [Items](../a-z/items.md) property using [`⎕WS`](../../Language/System%20Functions/ws.htm), the [Text](../a-z/text.md), [SelItems](../a-z/selitems.md) and [SelText](../a-z/seltext.md) properties are all reset to their default values.
 
 
 The Combo object will report a [Select](../a-z/select.md) event (if enabled) when the user chooses an item from the list box. It will generate a [Change](../a-z/change.md) event (if enabled) when the user manually alters the contents of the edit field and then changes the focus to another object.

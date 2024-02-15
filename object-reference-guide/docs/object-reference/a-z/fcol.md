@@ -5,24 +5,10 @@
 
 <h1 class="heading"><span class="name">FCol</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXContainer](./activexcontainer.md) [ActiveXControl](./activexcontrol.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Circle](./circle.md) [Combo](./combo.md) [ComboEx](./comboex.md) [CoolBand](./coolband.md) [CoolBar](./coolbar.md) [Edit](./edit.md) [Ellipse](./ellipse.md) [Grid](./grid.md) [Group](./group.md) [Label](./label.md) [List](./list.md) [ListView](./listview.md) [Marker](./marker.md) [Menu](./menu.md) [MenuItem](./menuitem.md) [Poly](./poly.md) [Rect](./rect.md) [RichEdit](./richedit.md) [Separator](./separator.md) [Spinner](./spinner.md) [Static](./static.md) [StatusBar](./statusbar.md) [StatusField](./statusfield.md) [TabBtn](./tabbtn.md) [Text](./text.md) [TipField](./tipfield.md) [ToolBar](./toolbar.md) [TreeView](./treeview.md) [UpDown](./updown.md) | [ActiveXContainer](./activexcontainer.md) | [ActiveXControl](./activexcontrol.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Circle](./circle.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) | [Edit](./edit.md) | [Ellipse](./ellipse.md) | [Grid](./grid.md) | [Group](./group.md) | [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) | [Marker](./marker.md) | [Menu](./menu.md) | [MenuItem](./menuitem.md) | [Poly](./poly.md) | [Rect](./rect.md) | [RichEdit](./richedit.md) | [Separator](./separator.md) | [Spinner](./spinner.md) | [Static](./static.md) | [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) | [TabBtn](./tabbtn.md) | [Text](./text.md) | [TipField](./tipfield.md) | [ToolBar](./toolbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |
-| --- | --- | ---  |
-| [ActiveXContainer](./activexcontainer.md) | [ActiveXControl](./activexcontrol.md) | [Button](./button.md) |
-| [ButtonEdit](./buttonedit.md) | [Circle](./circle.md) | [Combo](./combo.md) |
-| [ComboEx](./comboex.md) | [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) |
-| [Edit](./edit.md) | [Ellipse](./ellipse.md) | [Grid](./grid.md) |
-| [Group](./group.md) | [Label](./label.md) | [List](./list.md) |
-| [ListView](./listview.md) | [Marker](./marker.md) | [Menu](./menu.md) |
-| [MenuItem](./menuitem.md) | [Poly](./poly.md) | [Rect](./rect.md) |
-| [RichEdit](./richedit.md) | [Separator](./separator.md) | [Spinner](./spinner.md) |
-| [Static](./static.md) | [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) |
-| [TabBtn](./tabbtn.md) | [Text](./text.md) | [TipField](./tipfield.md) |
-| [ToolBar](./toolbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property defines the foreground colour(s) of an object.
@@ -46,6 +32,7 @@ not specifying FCol or by setting it to 0.
 
 A negative value of FCol refers to a standard MS-Windows colour as described
 below. Positive values are reserved for a possible future extension.
+
 
 | FCol | Colour Element | FCol | Colour Element |
 | --- | --- | --- | ---  |
@@ -76,7 +63,7 @@ display adapter and driver, and the current Windows colour map.
 For a [Button](./button.md), [Combo](./combo.md),
 [Edit](./edit.md), [Label](./label.md), [List](./list.md),
 [Menu](./menu.md) and [MenuItem](./menuitem.md),
-FCol refers to the colour of the text in the object. [Border](border.md)s
+FCol refers to the colour of the **text** in the object. [Border](border.md)s
 around these objects (where applicable) are drawn using the standard Windows
 colour. For a [Static](./static.md) object however, FCol
 specifies the colour of its border.

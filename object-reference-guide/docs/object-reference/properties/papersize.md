@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">PaperSize</span></h1>
+
 | Applies To: | [Printer](../a-z/printer.md) |
 | --- | ---  |
 
-| Applies To: | [Printer](../a-z/printer.md) | [Printer](../a-z/printer.md) |  |  |
-| --- | --- | ---  |
-| [Printer](../a-z/printer.md) |  |  |
 
-
-Description
+**Description**
 
 
 The PaperSize property specifies the size of paper to be used for printing

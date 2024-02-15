@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">MenuBar</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/MenuBar.htm) | [Children](../ChildLists/MenuBar.htm) | [Properties](../PropLists/MenuBar.htm) | [Methods](../MethodLists/MenuBar.htm) | [Events](../EventLists/MenuBar.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | Specifies a horizontal menu bar displayed at the top of a [Form](../a-z/form.md) . |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Children | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Events | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 Unless it is made invisible the MenuBar is always available to the user to initiate actions or to select options. A MenuBar has a fixed position and size.
@@ -51,7 +43,7 @@ The following example illustrates how a menu structure can be built up from a Me
 Note that putting a [Separator](../a-z/separator.md) (either [Style](../a-z/style.md)) in a MenuBar has the effect of breaking the bar vertically, i.e. the next [Menu](../a-z/menu.md) or [MenuItem](../a-z/menuitem.md) you add will appear on the left-hand side on the line below.
 
 
-The [EdgeStyle](../a-z/edgestyle.md) property has no effect on the appearance of a MenuBar or of a direct child of a MenuBar. However, if you want the sub-menus to have a 3-dimensional appearance, you must set the [EdgeStyle](../a-z/edgestyle.md) property of the MenuBar to something other than `'None'`.
+The [EdgeStyle](../a-z/edgestyle.md) property has no effect on the appearance of a MenuBar or of a direct child of a MenuBar. However, if you want the sub-menus to have a 3-dimensional appearance, you **must** set the [EdgeStyle](../a-z/edgestyle.md) property of the MenuBar to something other than `'None'`.
 
 
 If the MenuBar is owned by a [Form](../a-z/form.md) that is the parent of an [MDIClient](../a-z/mdiclient.md), you can set the [MDIMenu](../a-z/mdimenu.md) property to the name of the [Menu](../a-z/menu.md) you wish to nominate as the *window*  menu. This menu will automatically be updated with the [Caption](../a-z/caption.md)s of the child [SubForm](../a-z/subform.md) and may be used to select the currently active one.

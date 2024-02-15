@@ -50,7 +50,7 @@ The `Access`Property has both `get` and `set` functions which are used, in this 
     :EndProperty ⍝ Access
 ```
 
-Note that the `set` function must be monadic. Its argument, supplied by APL, will be an Instance of `PropertyArguments`. This is an internal Class whose `NewValue` field contains the value that was assigned to the Property.
+Note that the `set` function **must** be monadic. Its argument, supplied by APL, will be an Instance of `PropertyArguments`. This is an internal Class whose `NewValue` field contains the value that was assigned to the Property.
 
 Note too that the set function does not have to accept the new value that has been assigned. The function may validate the value reject or accept it (as in this example), or perform whatever processing is appropriate.
 ```apl

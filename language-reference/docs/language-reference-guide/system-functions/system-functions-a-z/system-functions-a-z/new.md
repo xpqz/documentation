@@ -70,7 +70,7 @@ Noname
 
 
 
-Note that .NET Types are accessed as follows.
+Note that **.NET Types** are accessed as follows.
 
 
 If the name specified by the first item of `Y` would otherwise generate a `VALUE ERROR`, and `⎕USING` has been set, APL attempts to load the Type specified by `Y` from the .NET assemblies (DLLs) specified in `⎕USING`. If successful, the name specified by `Y` is entered into the SYMBOL TABLE with a name-class of `9.6`. Subsequent references to that symbol (in this case `DateTime`) are resolved directly and do not involve any assembly searching.

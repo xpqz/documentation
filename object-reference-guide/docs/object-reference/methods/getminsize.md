@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GetMinSize</span></h1>
+
 | Applies To: | [Calendar](../a-z/calendar.md) |
 | --- | ---  |
 
-| Applies To: | [Calendar](../a-z/calendar.md) | [Calendar](../a-z/calendar.md) |  |  |
-| --- | --- | ---  |
-| [Calendar](../a-z/calendar.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to obtain the minimum size that you must specify for a [Calendar](../a-z/calendar.md) object for it to display a complete month.

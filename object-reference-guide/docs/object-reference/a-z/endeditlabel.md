@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">EndEditLabel</span></h1>
+
 | Applies To: | [ListView](./listview.md) | [TreeView](./treeview.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ListView](./listview.md) [TreeView](./treeview.md) | [ListView](./listview.md) | [TreeView](./treeview.md) |  |
-| --- | --- | ---  |
-| [ListView](./listview.md) | [TreeView](./treeview.md) |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user signals completion of an edit operation in a [ListView](./listview.md) or [TreeView](./treeview.md) object. This occurs when the item being edited loses the focus or when the user presses the Enter key. The default processing for the event is to update the item label (string) with the edited text in the pop-up edit box.
@@ -22,6 +19,7 @@ You may disable the update operation by setting the action code for the event to
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

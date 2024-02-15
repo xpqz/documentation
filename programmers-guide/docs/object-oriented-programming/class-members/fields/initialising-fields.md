@@ -28,4 +28,4 @@ Dicky
 
 Note that if a Field is ReadOnly, this is the only way that it may be assigned a value.
 
-See also: "Shared Fields" on page 1.
+See also: ["Shared Fields" on page 1.](shared-fields.md)

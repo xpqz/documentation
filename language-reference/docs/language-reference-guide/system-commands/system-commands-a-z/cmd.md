@@ -30,7 +30,7 @@ Note that under Windows, you may not execute `)CMD` without a command.  If you 
 ```
 
 
-If cmd issues prompts and expects user input, it is ESSENTIAL to explicitly redirect input and output to the console.  If this is done, APL detects the presence of a "`>`" in the command line and runs the command processor in a visible window and does not direct output to the pipe.  If you fail to do this your system will appear to hang because there is no mechanism for you to receive or respond to the prompt.
+If **cmd** issues prompts and expects user input, it is **ESSENTIAL** to explicitly redirect input and output to the console.  If this is done, APL detects the presence of a "`>`" in the command line and runs the command processor in a visible window and does not direct output to the pipe.  If you fail to do this your system will appear to hang because there is no mechanism for you to receive or respond to the prompt.
 
 #### Example
 ```apl

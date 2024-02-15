@@ -4,18 +4,16 @@
 
 
 <h1 class="heading"><span class="name">CurrentState</span></h1>
+
 | Applies To: | [TCPSocket](../a-z/tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](../a-z/tcpsocket.md) | [TCPSocket](../a-z/tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](../a-z/tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 The CurrentState property is a read-only property that reports the current state of a [TCPSocket](../a-z/tcpsocket.md) object. Its possible values and their means are as follows:
+
 
 | CurrentState | Description |
 | --- | ---  |

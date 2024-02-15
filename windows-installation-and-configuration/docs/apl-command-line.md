@@ -10,43 +10,43 @@ dyalog [ options ] [ debug ] [ ws ] [param] [param] [param]...
 
 where:
 
-[dyalog]
+**[dyalog]**
 
 | Is the location of the Dyalog executable. Usually this is the full pathname, surrounded by double quotes. |
 | ---  |
 
-[options]
+**[options]**
 
-| -x | Disables the execution of the `⎕LX` expression and the derived expression when code is loaded from a source code file or directory.  This applies only at start-up and does not apply to workspaces or source files that are loaded subsequently. See Language Reference Guide: Latent Expression Latent Expression on page 1 and Load on page 1 |
+| -x | Disables the execution of the `⎕LX` expression and the derived expression when code is loaded from a source code file or directory.  This applies only at start-up and does not apply to workspaces or source files that are loaded subsequently. See Latent Expression on page 1 and Load on page 1 |
 | --- | ---  |
 | -a | Start in USER mode. |
 | -b | Suppress the banner in the Session.. |
 | -s | Disable the Session. This option is ignored in Windows versions. |
 | +s | Force the display of the Session when it would otherwise not be shown. |
 | -q | Don't quit APL on error (used when piping input into APL). |
-| +q | Quit APL on error. In earlier versions of Dyalog, quitting on error saved a workspace with the reserved name CONTINUE; this behaviour can be re-enabled using `2704⌶` . See Language Reference Guide: Contine Autosave Continue Autosave on page 1 . |
+| +q | Quit APL on error. In earlier versions of Dyalog, quitting on error saved a workspace with the reserved name CONTINUE; this behaviour can be re-enabled using `2704⌶` . See Continue Autosave on page 1 . |
 | -c | Signifies a command-line comment. All characters to the right are ignored. |
-| -cef -cef_all | Instructs Dyalog to ignore the parameter that immediately follows or all the parameters that follow. These options are intended to isolate parameters intended for the built-in Chromium Embedded Framework (CEF). See Object Reference Guide: HTMLRenderer Object HTMLRenderer on page 1 . |
+| -cef -cef_all | Instructs Dyalog to ignore the parameter that immediately follows or all the parameters that follow. These options are intended to isolate parameters intended for the built-in Chromium Embedded Framework (CEF). See HTMLRenderer on page 1 . |
 
-[debug]
+**[debug]**
 
 | -Dc | Check workspace integrity after every callback function. |
 | --- | ---  |
 | -Dw | Check workspace integrity on return to session input. |
 | -DW | Check workspace integrity after every line of APL (application will run slowly as a result) |
-| -DK | Log session keystrokes in (binary) file ./apllog . |
+| -DK | Log session keystrokes in (binary) file **./apllog** . |
 
-[ws]
+**[ws]**
 
 | The name of a Dyalog APL workspace to be loaded. Unless specified, on Windows the file extension .DWS is assumed. |
 | ---  |
 
-[param]
+**[param]**
 
 | A parameter name followed by an equals sign ( = ) and a value. The parameter name may be one of the standard APL parameters (see Configuration Parameters on page 1 ) or a name and value of your own choosing (see GetEnvironment Method GetEnvironment on page 1 ) . If the parameter is in a registry sub-folder (see Registry Sub-Folders on page 1 ), its name must be preceded by the name of the sub-folder, followed by a backslash ( \ ) or underscore ( _ ). |
 | ---  |
 
-Note that instead of  a loading a workspace specified by the ws option, APL can be instructed to load a program from a script file. For further information, see Load on page 1.
+Note that instead of  a loading a workspace specified by the **ws** option, APL can be instructed to load a program from a script file. For further information, see Load on page 1.
 
 ### Examples:
 

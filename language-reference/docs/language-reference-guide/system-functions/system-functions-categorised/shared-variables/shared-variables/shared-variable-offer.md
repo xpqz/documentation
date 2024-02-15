@@ -5,10 +5,10 @@
 
 <h1 class="heading"><span class="name">Shared Variable Offer</span><span class="command">R←X ⎕SVO Y</span></h1>
 
-This system function offers to share one or more variables with another APL workspace or with another application.  Shared variables are implemented using Dynamic Data Exchange (DDE) and may be used to communicate with any other application that supports this protocol.  See *Interface Guide* for further details.
+This system function offers to share one or more variables with another APL workspace or with another application.  Shared variables are implemented using Dynamic Data Exchange (**DDE**) and may be used to communicate with any other application that supports this protocol.  See *Interface Guide* for further details.
 
 
-`Y` is a character scalar, vector or matrix.  If it is a vector it contains a name and optionally an external name or surrogate.  The first name is the name used internally in the current workspace.  The external name is the name used to make the connection with the partner and, if specified, must be separated from the internal name by one or more blanks.  If the partner is another application, the external name corresponds to the DDE item specified by that application.  If the external name is omitted, the internal name is used instead.  The internal name must be a valid APL name and be either undefined or be the name of a variable.  There are no such restrictions on the content of the external name.
+`Y` is a character scalar, vector or matrix.  If it is a vector it contains a name and optionally an external name or surrogate.  The first name is the name used internally in the current workspace.  The external name is the name used to make the connection with the partner and, if specified, must be separated from the internal name by one or more blanks.  If the partner is another application, the external name corresponds to the DDE **item** specified by that application.  If the external name is omitted, the internal name is used instead.  The internal name must be a valid APL name and be either undefined or be the name of a variable.  There are no such restrictions on the content of the external name.
 
 
 
@@ -18,7 +18,7 @@ Instead of an external name, `Y` may contain the special symbol `'⍎'` separate
 If `Y` is a scalar, it specifies a single 1-character name.  If `Y` is a matrix, each row of `Y` specifies a name and an optional external name as for the vector case.
 
 
-The left argument `X` is a character vector or matrix.  If it is a vector, it contains a string that defines the protocol, the application to which the shared variable is to be connected, and the topic of the conversation.  These three components are separated by the characters `':'` and `'|'` respectively.  The protocol is currently always `'DDE'`, but future implementations of Dyalog APL may support additional communications protocols if applicable.  If `Y` specifies more than one name, `X` may be a vector or a matrix with one row per row in `Y`.
+The left argument `X` is a character vector or matrix.  If it is a vector, it contains a string that defines the **protocol**, the **application** to which the shared variable is to be connected, and the **topic** of the conversation.  These three components are separated by the characters `':'` and `'|'` respectively.  The protocol is currently always `'DDE'`, but future implementations of Dyalog APL may support additional communications protocols if applicable.  If `Y` specifies more than one name, `X` may be a vector or a matrix with one row per row in `Y`.
 
 
 If the shared variable offer is a general one (server), `X`, or the corresponding row of `X`, should just contain `'DDE:'`. In this case, Dyalog automatically defines the application name and topic to be dyalog and `⎕WSID` respectively.

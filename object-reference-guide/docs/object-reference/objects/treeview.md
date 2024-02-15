@@ -4,49 +4,16 @@
 
 
 <h1 class="heading"><span class="name">TreeView</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/TreeView.htm) | [Children](../ChildLists/TreeView.htm) | [Properties](../PropLists/TreeView.htm) | [Methods](../MethodLists/TreeView.htm) | [Events](../EventLists/TreeView.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The TreeView object displays a hierarchical list of items. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetItemState](../a-z/getitemstate.md) [SetItemState](../a-z/setitemstate.md) [AddItems](../a-z/additems.md) [DeleteItems](../a-z/deleteitems.md) [AddChildren](../a-z/addchildren.md) [DeleteChildren](../a-z/deletechildren.md) [GetParentItem](../a-z/getparentitem.md) [GetItemHandle](../a-z/getitemhandle.md) [SetItemImage](../a-z/setitemimage.md) [ShowItem](../a-z/showitem.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) | [AddItems](../a-z/additems.md) | [DeleteItems](../a-z/deleteitems.md) | [AddChildren](../a-z/addchildren.md) | [DeleteChildren](../a-z/deletechildren.md) | [GetParentItem](../a-z/getparentitem.md) | [GetItemHandle](../a-z/getitemhandle.md) | [SetItemImage](../a-z/setitemimage.md) | [ShowItem](../a-z/showitem.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetItemState](../a-z/getitemstate.md) |
-| [SetItemState](../a-z/setitemstate.md) | [AddItems](../a-z/additems.md) | [DeleteItems](../a-z/deleteitems.md) |
-| [AddChildren](../a-z/addchildren.md) | [DeleteChildren](../a-z/deletechildren.md) | [GetParentItem](../a-z/getparentitem.md) |
-| [GetItemHandle](../a-z/getitemhandle.md) | [SetItemImage](../a-z/setitemimage.md) | [ShowItem](../a-z/showitem.md) |
-| [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) |
-| [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |
-| Children | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetItemState](../a-z/getitemstate.md) [SetItemState](../a-z/setitemstate.md) [AddItems](../a-z/additems.md) [DeleteItems](../a-z/deleteitems.md) [AddChildren](../a-z/addchildren.md) [DeleteChildren](../a-z/deletechildren.md) [GetParentItem](../a-z/getparentitem.md) [GetItemHandle](../a-z/getitemhandle.md) [SetItemImage](../a-z/setitemimage.md) [ShowItem](../a-z/showitem.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) | [AddItems](../a-z/additems.md) | [DeleteItems](../a-z/deleteitems.md) | [AddChildren](../a-z/addchildren.md) | [DeleteChildren](../a-z/deletechildren.md) | [GetParentItem](../a-z/getparentitem.md) | [GetItemHandle](../a-z/getitemhandle.md) | [SetItemImage](../a-z/setitemimage.md) | [ShowItem](../a-z/showitem.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetItemState](../a-z/getitemstate.md) |
-| [SetItemState](../a-z/setitemstate.md) | [AddItems](../a-z/additems.md) | [DeleteItems](../a-z/deleteitems.md) |
-| [AddChildren](../a-z/addchildren.md) | [DeleteChildren](../a-z/deletechildren.md) | [GetParentItem](../a-z/getparentitem.md) |
-| [GetItemHandle](../a-z/getitemhandle.md) | [SetItemImage](../a-z/setitemimage.md) | [ShowItem](../a-z/showitem.md) |
-| [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) |
-| [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |
-| Properties | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetItemState](../a-z/getitemstate.md) [SetItemState](../a-z/setitemstate.md) [AddItems](../a-z/additems.md) [DeleteItems](../a-z/deleteitems.md) [AddChildren](../a-z/addchildren.md) [DeleteChildren](../a-z/deletechildren.md) [GetParentItem](../a-z/getparentitem.md) [GetItemHandle](../a-z/getitemhandle.md) [SetItemImage](../a-z/setitemimage.md) [ShowItem](../a-z/showitem.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) | [AddItems](../a-z/additems.md) | [DeleteItems](../a-z/deleteitems.md) | [AddChildren](../a-z/addchildren.md) | [DeleteChildren](../a-z/deletechildren.md) | [GetParentItem](../a-z/getparentitem.md) | [GetItemHandle](../a-z/getitemhandle.md) | [SetItemImage](../a-z/setitemimage.md) | [ShowItem](../a-z/showitem.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetItemState](../a-z/getitemstate.md) |
-| [SetItemState](../a-z/setitemstate.md) | [AddItems](../a-z/additems.md) | [DeleteItems](../a-z/deleteitems.md) |
-| [AddChildren](../a-z/addchildren.md) | [DeleteChildren](../a-z/deletechildren.md) | [GetParentItem](../a-z/getparentitem.md) |
-| [GetItemHandle](../a-z/getitemhandle.md) | [SetItemImage](../a-z/setitemimage.md) | [ShowItem](../a-z/showitem.md) |
-| [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) |
-| [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |
-| Methods | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetItemState](../a-z/getitemstate.md) [SetItemState](../a-z/setitemstate.md) [AddItems](../a-z/additems.md) [DeleteItems](../a-z/deleteitems.md) [AddChildren](../a-z/addchildren.md) [DeleteChildren](../a-z/deletechildren.md) [GetParentItem](../a-z/getparentitem.md) [GetItemHandle](../a-z/getitemhandle.md) [SetItemImage](../a-z/setitemimage.md) [ShowItem](../a-z/showitem.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) | [AddItems](../a-z/additems.md) | [DeleteItems](../a-z/deleteitems.md) | [AddChildren](../a-z/addchildren.md) | [DeleteChildren](../a-z/deletechildren.md) | [GetParentItem](../a-z/getparentitem.md) | [GetItemHandle](../a-z/getitemhandle.md) | [SetItemImage](../a-z/setitemimage.md) | [ShowItem](../a-z/showitem.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetItemState](../a-z/getitemstate.md) |
-| [SetItemState](../a-z/setitemstate.md) | [AddItems](../a-z/additems.md) | [DeleteItems](../a-z/deleteitems.md) |
-| [AddChildren](../a-z/addchildren.md) | [DeleteChildren](../a-z/deletechildren.md) | [GetParentItem](../a-z/getparentitem.md) |
-| [GetItemHandle](../a-z/getitemhandle.md) | [SetItemImage](../a-z/setitemimage.md) | [ShowItem](../a-z/showitem.md) |
-| [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) |
-| [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |
-| Events | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetItemState](../a-z/getitemstate.md) [SetItemState](../a-z/setitemstate.md) [AddItems](../a-z/additems.md) [DeleteItems](../a-z/deleteitems.md) [AddChildren](../a-z/addchildren.md) [DeleteChildren](../a-z/deletechildren.md) [GetParentItem](../a-z/getparentitem.md) [GetItemHandle](../a-z/getitemhandle.md) [SetItemImage](../a-z/setitemimage.md) [ShowItem](../a-z/showitem.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetItemState](../a-z/getitemstate.md) | [SetItemState](../a-z/setitemstate.md) | [AddItems](../a-z/additems.md) | [DeleteItems](../a-z/deleteitems.md) | [AddChildren](../a-z/addchildren.md) | [DeleteChildren](../a-z/deletechildren.md) | [GetParentItem](../a-z/getparentitem.md) | [GetItemHandle](../a-z/getitemhandle.md) | [SetItemImage](../a-z/setitemimage.md) | [ShowItem](../a-z/showitem.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetItemState](../a-z/getitemstate.md) |
-| [SetItemState](../a-z/setitemstate.md) | [AddItems](../a-z/additems.md) | [DeleteItems](../a-z/deleteitems.md) |
-| [AddChildren](../a-z/addchildren.md) | [DeleteChildren](../a-z/deletechildren.md) | [GetParentItem](../a-z/getparentitem.md) |
-| [GetItemHandle](../a-z/getitemhandle.md) | [SetItemImage](../a-z/setitemimage.md) | [ShowItem](../a-z/showitem.md) |
-| [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) |
-| [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 A TreeView object displays a hierarchical list of items, such as the headings in a document, the entries in an index, or the files and directories on a disk. Each item consists of a label and an optional bitmapped image, and each item can have a list of sub-items associated with it. By clicking an item, the user can expand and collapse the associated list of sub-items.
@@ -95,6 +62,6 @@ The [EditLabels](../a-z/editlabels.md) is a Boolean property (default 0) that de
 The [SelItems](../a-z/selitems.md) property is a Boolean vector that indicates which of the items is currently selected and has the focus. If more items are visible than can fit within the object, a scrollbar is automatically provided. The [Index](../a-z/index.md) property is a `⎕IO` sensitive integer that reports the index number of the first item displayed in the object and changes as the items are scrolled.
 
 
-Warning: Due to the limitations of the Win32 TreeView object, it is necessary to query the state of each item in a TreeView in order to obtain the value of the [SelItems](../a-z/selitems.md) property, making it a comparatively slow operation if there are a lot of [Items](../a-z/items.md).
+**Warning:**Due to the limitations of the Win32 TreeView object, it is necessary to query the state of each item in a TreeView in order to obtain the value of the [SelItems](../a-z/selitems.md) property, making it a comparatively slow operation if there are a lot of [Items](../a-z/items.md).
 
 

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">AmbientChanged</span></h1>
+
 | Applies To: | [ActiveXContainer](./activexcontainer.md) | [ActiveXControl](./activexcontrol.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ActiveXContainer](./activexcontainer.md) [ActiveXControl](./activexcontrol.md) | [ActiveXContainer](./activexcontainer.md) | [ActiveXControl](./activexcontrol.md) |  |
-| --- | --- | ---  |
-| [ActiveXContainer](./activexcontainer.md) | [ActiveXControl](./activexcontrol.md) |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when any of the ambient properties change in an application hosting an [ActiveXControl](./activexcontrol.md) object. The new values of the ambient properties are available from the [FontObj](./fontobj.md), [BCol](./fcol.md) and [FCol](./bcol.md) properties of the [ActiveXContainer](./activexcontainer.md).
@@ -23,6 +20,7 @@ This event is reported for information alone. You may not disable or nullify the
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
+
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
 | `[2]` | Event | `'AmbientChanged'` or 533 |
@@ -31,6 +29,7 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 
 
 For properties supported by Dyalog APL, Property code and Description may be one of the following:
+
 
 | Property code | Description | Meaning |
 | --- | --- | ---  |

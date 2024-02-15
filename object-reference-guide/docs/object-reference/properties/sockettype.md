@@ -4,18 +4,15 @@
 
 
 <h1 class="heading"><span class="name">SocketType</span></h1>
+
 | Applies To: | [TCPSocket](../a-z/tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](../a-z/tcpsocket.md) | [TCPSocket](../a-z/tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](../a-z/tcpsocket.md) |  |  |
+
+**Description**
 
 
-Description
-
-
-The SocketType property is a character vector that specifies the type of the TCP/IP socket. This is either `Stream` (which is the default), or `UDP`.
+The SocketType property is a character vector that specifies the type of the TCP/IP socket. This is either [`Stream`](../Miscellaneous/Stream%20Sockets.htm) (which is the default), or [`UDP`](../Miscellaneous/User%20Datagram%20Protocol%20UDP.htm).
 
 
 SocketType must be defined when the object is created and may not be set or changed using `⎕WS`.

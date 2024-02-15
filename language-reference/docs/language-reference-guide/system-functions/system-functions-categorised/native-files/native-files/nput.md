@@ -12,6 +12,7 @@ This function writes character data to a text file. See also Read Text File on p
 
 If `flags` is 0 (the default value if omitted) the file will not be overwritten if it already exists and `⎕NPUT` will signal an error. If `flags` is 1 the file will be overwritten. If flags is 2 the file will be appended to; i.e.
 
+
 | flags | file does not exist | file exists |
 | --- | --- | ---  |
 | `0` | data is written to new file | error signalled, file is unchanged |
@@ -41,7 +42,7 @@ Note: If a non-empty file is appended to:
 - No check is made that the existing file content is text in the same encoding format.
 
 
-If specified, `newline` is numeric and is either  `⍬` or a scalar or vector  from the  column labelled **Value** in the newline characters section of the table Line separators: on page 1. Any other value causes `DOMAIN ERROR`. If `newline` is omitted it defaults to `(13 10)` on Windows and `10` on other platforms.
+If specified, `newline` is numeric and is either  `⍬` or a scalar or vector  from the  column labelled **Value** in the **newline characters** section of the table Line separators: on page 1. Any other value causes `DOMAIN ERROR`. If `newline` is omitted it defaults to `(13 10)` on Windows and `10` on other platforms.
 
 
 In all cases, `newline` is appended if required to a simple vector or to each vector in a vector of vectors.
@@ -80,6 +81,7 @@ The shy result `R` is the number of bytes written to the file.
 
 
 The NEOL variant option specifies how embedded line separators are treated.
+
 
 | `0` | embedded line separator characters are preserved as is,and a `newline` is added to the last line if required. |
 | --- | ---  |

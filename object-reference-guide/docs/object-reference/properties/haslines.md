@@ -4,18 +4,16 @@
 
 
 <h1 class="heading"><span class="name">HasLines</span></h1>
+
 | Applies To: | [TreeView](../a-z/treeview.md) |
 | --- | ---  |
 
-| Applies To: | [TreeView](../a-z/treeview.md) | [TreeView](../a-z/treeview.md) |  |  |
-| --- | --- | ---  |
-| [TreeView](../a-z/treeview.md) |  |  |
 
-
-Description
+**Description**
 
 
 The HasLines property specifies whether or not tree lines are drawn in a [TreeView](../a-z/treeview.md) object. It is a single integer with the value 0, 1 or 2:
+
 
 | 0 | No tree lines |
 | --- | ---  |

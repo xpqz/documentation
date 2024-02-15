@@ -4,22 +4,19 @@
 
 
 <h1 class="heading"><span class="name">DockAccept</span></h1>
+
 | Applies To: | [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) | [Form](./form.md) | [SubForm](./subform.md) | [ToolControl](./toolcontrol.md) |
 | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [CoolBand](./coolband.md) [CoolBar](./coolbar.md) [Form](./form.md) [SubForm](./subform.md) [ToolControl](./toolcontrol.md) | [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) | [Form](./form.md) | [SubForm](./subform.md) | [ToolControl](./toolcontrol.md) |  |
-| --- | --- | ---  |
-| [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) | [Form](./form.md) |
-| [SubForm](./subform.md) | [ToolControl](./toolcontrol.md) |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported by a host object just before it accepts a client object docking operation. This event is reported (by the host) immediately after the [DockRequest](./dockrequest.md) is reported (by the client).
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 7-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

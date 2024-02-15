@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">DeleteItems</span></h1>
+
 | Applies To: | [TreeView](../a-z/treeview.md) |
 | --- | ---  |
 
-| Applies To: | [TreeView](../a-z/treeview.md) | [TreeView](../a-z/treeview.md) |  |  |
-| --- | --- | ---  |
-| [TreeView](../a-z/treeview.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to delete items from a [TreeView](../a-z/treeview.md) object.
 
 
 The argument to DeleteItems is a 2-element array as follows:
+
 
 | `[1]` | Item number | Integer. |
 | --- | --- | ---  |

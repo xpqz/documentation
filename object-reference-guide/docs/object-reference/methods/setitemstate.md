@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SetItemState</span></h1>
+
 | Applies To: | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ListView](../a-z/listview.md) [TreeView](../a-z/treeview.md) | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |  |
-| --- | --- | ---  |
-| [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |  |
 
-
-Description
+**Description**
 
 
 This method is used to set the status of a particular item in a [ListView](../a-z/listview.md) or [TreeView](../a-z/treeview.md) object.
@@ -20,12 +17,14 @@ This method is used to set the status of a particular item in a [ListView](../a-
 
 The argument to SetItemState is a 2-element array as follows:
 
+
 | `[1]` | Item number | Integer. The index of the item concerned. |
 | --- | --- | ---  |
 | `[2]` | Status | Integer |
 
 
 The status of an item is calculated as the sum of one or more of the following state codes:
+
 
 
 | `¯1` | Error (most likely the Item number is invalid) |

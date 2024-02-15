@@ -8,7 +8,7 @@
 I-Beam is a monadic operator that provides a range of system related services.
 
 
-WARNING: Although documentation is provided for I-Beam functions, any service provided using I-Beam should be considered as "experimental" and subject to change – without notice - from one release to the next. Any use of I-Beams in applications should therefore be carefully isolated in cover-functions that can be adjusted if necessary. See also: [RIDE and Experimental Features-related I-Beams on page 1](a-z/supplementary-i-beam-functions.md).
+**WARNING:** Although documentation is provided for I-Beam functions, any service provided using I-Beam should be considered as "experimental" and subject to change – without notice - from one release to the next. Any use of I-Beams in applications should therefore be carefully isolated in cover-functions that can be adjusted if necessary. See also: [RIDE and Experimental Features-related I-Beams on page 1](a-z/supplementary-i-beam-functions.md).
 
 
 
@@ -34,6 +34,7 @@ that are valid in other editions or on other platforms other than the current in
 
 The column labelled **O/S** indicates if a function applies only on Windows (W), only on Windows .NET Framework, (WF), only under IBM AIX (AIX), or only on non-Windows (X) platforms.
 
+
 | A | Derived Function | O/S |
 | --- | --- | ---  |
 | `8` | [Inverted Table Index-of](a-z/inverted-table-index-of.md) |  |
@@ -42,25 +43,25 @@ The column labelled **O/S** indicates if a function applies only on Windows (W),
 | `180` | [Canonical Representation](a-z/canonical-representation.md) |  |
 | `181` | [Unsqueezed Type](a-z/unsqueezed-type.md) |  |
 | `200` | [Syntax Colouring](a-z/syntax-colouring.md) |  |
-| `201` | Syntax Colour Tokens |  |
+| `201` | [Syntax Colour Tokens](../I%20Beam%20Functions/Syntax%20Colour%20Tokens.htm) |  |
 | `219` | [Compress/Decompress Vector of Short Integers](a-z/compress-vector-of-short-integers.md) |  |
 | `220` | [Serialise/Deserialise Array](a-z/serialise-array.md) |  |
 | `400` | [Compiler Control](a-z/compiler-control.md) |  |
 | `600` | [Trap Control](a-z/trap-control.md) |  |
-| `739` | Temporary Directory |  |
+| `739` | [Temporary Directory](../I%20Beam%20Functions/Temporary%20Directory.htm#Temporary_Directory) |  |
 | `819` | [Case Convert](a-z/case-convert.md) |  |
 | `900` | [Called Monadically](a-z/called-monadically.md) |  |
 | `950` | [Loaded Libraries](a-z/loaded-libraries.md) |  |
-| `1010` | Set Shell Script Debug Options |  |
+| `1010` | [Set Shell Script Debug Options](../I%20Beam%20Functions/Set%20Shell%20Script%20Debug%20Options.htm) |  |
 | `1111` | [Number of Threads](a-z/number-of-threads.md) |  |
 | `1112` | [Parallel Execution Threshold](a-z/parallel-execution-threshold.md) |  |
 | `1159` | [Update Function Time and User Stamp](a-z/update-function-timestamp.md) |  |
-| `1200` | Format Date-time |  |
-| `1302` | Set aplcore Parameters |  |
+| `1200` | [Format Date-time](../I%20Beam%20Functions/Format%20Datetime.htm) |  |
+| `1302` | [Set aplcore Parameters](../I%20Beam%20Functions/Set%20aplcore%20Parameters.htm) |  |
 | `1500` | [Hash Array](a-z/hash-array.md) |  |
 | `2000` | [Memory Manager Statistics](a-z/memory-manager-statistics.md) |  |
 | `2002` | [Specify Workspace Available](a-z/specify-workspace-available.md) |  |
-| `2007` | Disable Global Triggers |  |
+| `2007` | [Disable Global Triggers](../I%20Beam%20Functions/Disable%20Global%20Triggers.htm#Trigger_Control) |  |
 | `2010` | [Update DataTable](a-z/update-datatable.md) | WF |
 | `2011` | [Read DataTable](a-z/read-datatable.md) | WF |
 | `2014` | [Remove Data Binding](a-z/remove-data-binding.md) | WF |
@@ -73,16 +74,16 @@ The column labelled **O/S** indicates if a function applies only on Windows (W),
 | `2041` | [Override COM Default Value](a-z/override-com-default-value.md) | W |
 | `2100` | [Export to Memory](a-z/export-to-memory.md) | W |
 | `2101` | [Close .NET AppDomain](a-z/close-net-appdomain.md) | WF |
-| `2250` | Verify .NET Interface |  |
+| `2250` | [Verify .NET Interface](../I%20Beam%20Functions/Verify%20.NET%20Interface.htm) |  |
 | `2400` | [Set Workspace Save Options](a-z/set-workspace-save-options.md) |  |
 | `2401` | [Expose Root Properties](a-z/expose-root-properties.md) |  |
 | `2501` | [Discard thread on exit](a-z/discard-thread-on-exit.md) | W |
 | `2502` | [Discard parked threads](a-z/discard-parked-threads.md) | W |
 | `2503` | [Mark Thread as Uninterruptible](a-z/mark-thread-as-uninterruptible.md) |  |
 | `2520` | [Use Separate Thread For .NET](a-z/use-separate-thread-for-net.md) | WF |
-| `2704` | Continue Autosave |  |
+| `2704` | [Continue Autosave](../I%20Beam%20Functions/Continue%20Autosave.htm#Continue_Autosave) |  |
 | `3002` | [Disable Component Checksum Validation](a-z/disable-component-checksum-validation.md) |  |
-| `3012` | Enable Compression of Large Components |  |
+| `3012` | [Enable Compression of Large Components](../I%20Beam%20Functions/Enable%20Compression%20of%20Large%20Components.htm#Enable_LZ4_Frames) |  |
 | `3500` | [Send Text to RIDE-embedded Browser](a-z/send-text-to-ride-embedded-browser.md) |  |
 | `3501` | [Connected to the RIDE](a-z/connected-to-the-ride.md) |  |
 | `3502` | [Manage RIDE Connections](a-z/manage-ride-connections.md) |  |
@@ -90,17 +91,17 @@ The column labelled **O/S** indicates if a function applies only on Windows (W),
 | `4001` | [Change User](a-z/change-user.md) | X |
 | `4002` | [Reap Forked Tasks](a-z/reap-forked-tasks.md) | AIX |
 | `4007` | [Signal Counts](a-z/signal-counts.md) | X |
-| `5171` | Discard Source Information |  |
-| `5172` | Discard Source Code |  |
+| `5171` | [Discard Source Information](../I%20Beam%20Functions/Discard%20Source%20Information.htm#Discard_Source_Information) |  |
+| `5172` | [Discard Source Code](../I%20Beam%20Functions/Discard%20Source%20Code.htm#Discard_Source_Code) |  |
 | `5176` | [List Loaded Files](a-z/list-loaded-files.md) |  |
 | `5177` | [List Loaded File Objects](a-z/list-loaded-file-objects.md) |  |
-| `5178` | Remove Loaded File Object Info |  |
-| `5179` | Loaded File Object Info |  |
+| `5178` | [Remove Loaded File Object Info](../I%20Beam%20Functions/Remove%20Loaded%20File%20Object%20Info.htm) |  |
+| `5179` | [Loaded File Object Info](../I%20Beam%20Functions/Loaded%20File%20Object%20Info.htm) |  |
 | `7162` | [JSON Translate Name](a-z/json-translate-name.md) |  |
 | `8415` | [Singular Value Decomposition](a-z/singular-value-decomposition.md) |  |
 | `8674` | [Externalise Array](a-z/externalise-array.md) |  |
-| `9468` | Hash Table Size |  |
-| `9469` | Lookup Table Size |  |
+| `9468` | [Hash Table Size](../I%20Beam%20Functions/Hash%20Table%20Size.htm#Hash_Table_Size) |  |
+| `9469` | [Lookup Table Size](../I%20Beam%20Functions/Lookup%20Table%20Size.htm#Lookup_Table_Size) |  |
 | `16808` | [Sample Probability Distribution](a-z/sample-probability-distribution.md) |  |
 | `50100` | [Line Count](a-z/line-count.md) |  |
 

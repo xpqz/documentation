@@ -4,34 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Printer</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Printer.htm) | [Children](../ChildLists/Printer.htm) | [Properties](../PropLists/Printer.htm) | [Methods](../MethodLists/Printer.htm) | [Events](../EventLists/Printer.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | To provide printer output. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [Print](../a-z/print.md) [Setup](../a-z/setup.md) [NewPage](../a-z/newpage.md) [Abort](../a-z/abort.md) [RTFPrintSetup](../a-z/rtfprintsetup.md) [GetTextSize](../a-z/gettextsize.md) | [Detach](../a-z/detach.md) | [Print](../a-z/print.md) | [Setup](../a-z/setup.md) | [NewPage](../a-z/newpage.md) | [Abort](../a-z/abort.md) | [RTFPrintSetup](../a-z/rtfprintsetup.md) | [GetTextSize](../a-z/gettextsize.md) |  |  |
-| [Detach](../a-z/detach.md) | [Print](../a-z/print.md) | [Setup](../a-z/setup.md) |
-| [NewPage](../a-z/newpage.md) | [Abort](../a-z/abort.md) | [RTFPrintSetup](../a-z/rtfprintsetup.md) |
-| [GetTextSize](../a-z/gettextsize.md) |  |  |
-| Children | [Detach](../a-z/detach.md) [Print](../a-z/print.md) [Setup](../a-z/setup.md) [NewPage](../a-z/newpage.md) [Abort](../a-z/abort.md) [RTFPrintSetup](../a-z/rtfprintsetup.md) [GetTextSize](../a-z/gettextsize.md) | [Detach](../a-z/detach.md) | [Print](../a-z/print.md) | [Setup](../a-z/setup.md) | [NewPage](../a-z/newpage.md) | [Abort](../a-z/abort.md) | [RTFPrintSetup](../a-z/rtfprintsetup.md) | [GetTextSize](../a-z/gettextsize.md) |  |  |
-| [Detach](../a-z/detach.md) | [Print](../a-z/print.md) | [Setup](../a-z/setup.md) |
-| [NewPage](../a-z/newpage.md) | [Abort](../a-z/abort.md) | [RTFPrintSetup](../a-z/rtfprintsetup.md) |
-| [GetTextSize](../a-z/gettextsize.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) [Print](../a-z/print.md) [Setup](../a-z/setup.md) [NewPage](../a-z/newpage.md) [Abort](../a-z/abort.md) [RTFPrintSetup](../a-z/rtfprintsetup.md) [GetTextSize](../a-z/gettextsize.md) | [Detach](../a-z/detach.md) | [Print](../a-z/print.md) | [Setup](../a-z/setup.md) | [NewPage](../a-z/newpage.md) | [Abort](../a-z/abort.md) | [RTFPrintSetup](../a-z/rtfprintsetup.md) | [GetTextSize](../a-z/gettextsize.md) |  |  |
-| [Detach](../a-z/detach.md) | [Print](../a-z/print.md) | [Setup](../a-z/setup.md) |
-| [NewPage](../a-z/newpage.md) | [Abort](../a-z/abort.md) | [RTFPrintSetup](../a-z/rtfprintsetup.md) |
-| [GetTextSize](../a-z/gettextsize.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) [Print](../a-z/print.md) [Setup](../a-z/setup.md) [NewPage](../a-z/newpage.md) [Abort](../a-z/abort.md) [RTFPrintSetup](../a-z/rtfprintsetup.md) [GetTextSize](../a-z/gettextsize.md) | [Detach](../a-z/detach.md) | [Print](../a-z/print.md) | [Setup](../a-z/setup.md) | [NewPage](../a-z/newpage.md) | [Abort](../a-z/abort.md) | [RTFPrintSetup](../a-z/rtfprintsetup.md) | [GetTextSize](../a-z/gettextsize.md) |  |  |
-| [Detach](../a-z/detach.md) | [Print](../a-z/print.md) | [Setup](../a-z/setup.md) |
-| [NewPage](../a-z/newpage.md) | [Abort](../a-z/abort.md) | [RTFPrintSetup](../a-z/rtfprintsetup.md) |
-| [GetTextSize](../a-z/gettextsize.md) |  |  |
-| Events | [Detach](../a-z/detach.md) [Print](../a-z/print.md) [Setup](../a-z/setup.md) [NewPage](../a-z/newpage.md) [Abort](../a-z/abort.md) [RTFPrintSetup](../a-z/rtfprintsetup.md) [GetTextSize](../a-z/gettextsize.md) | [Detach](../a-z/detach.md) | [Print](../a-z/print.md) | [Setup](../a-z/setup.md) | [NewPage](../a-z/newpage.md) | [Abort](../a-z/abort.md) | [RTFPrintSetup](../a-z/rtfprintsetup.md) | [GetTextSize](../a-z/gettextsize.md) |  |  |
-| [Detach](../a-z/detach.md) | [Print](../a-z/print.md) | [Setup](../a-z/setup.md) |
-| [NewPage](../a-z/newpage.md) | [Abort](../a-z/abort.md) | [RTFPrintSetup](../a-z/rtfprintsetup.md) |
-| [GetTextSize](../a-z/gettextsize.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The [PName](../a-z/pname.md) property is a character vector which specifies the name of an installed printer and the device to which it is attached. The name and device are separated by a comma (,). All valid values of [PName](../a-z/pname.md) can be obtained from the [PrintList](../a-z/printlist.md) property of the [Root](../a-z/root.md) object.
@@ -56,7 +38,7 @@ The graphics objects listed above may be printed in much the same way as they ma
 Once an object has been created, it will be printed, even if its name is subsequently expunged.
 
 
-An object does not replace an existing one which has the same name.
+An object does not **replace** an existing one which has the same name.
 
 
 The act of changing one or more properties of a named object causes the object to be printed a second time. For example, changing the [Posn](../a-z/posn.md) of an object will print it again at a different place.
@@ -66,6 +48,7 @@ In general it is recommended that you use unnamed objects for printing.
 
 
 The Printer object five methods :
+
 
 | Name | Event | Description |
 | --- | --- | ---  |

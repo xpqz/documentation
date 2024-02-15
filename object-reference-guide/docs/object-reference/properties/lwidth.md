@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">LWidth</span></h1>
+
 | Applies To: | [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Poly](../a-z/poly.md) | [Rect](../a-z/rect.md) |
 | --- | --- | --- | --- | ---  |
 
-| Applies To: | [Circle](../a-z/circle.md) [Ellipse](../a-z/ellipse.md) [Poly](../a-z/poly.md) [Rect](../a-z/rect.md) | [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Poly](../a-z/poly.md) | [Rect](../a-z/rect.md) |  |  |
-| --- | --- | ---  |
-| [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Poly](../a-z/poly.md) |
-| [Rect](../a-z/rect.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property determines the width of line used to draw a graphics object. A positive value specifies the line width in pixels. A negative value specifies line width in units of the co-ordinate system defined for the object in the x direction. If the object contains more than one component, LWidth may be a vector.

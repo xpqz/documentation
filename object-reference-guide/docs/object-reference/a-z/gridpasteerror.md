@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GridPasteError</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user presses Shift+Insert and
@@ -24,9 +21,10 @@ the data in starting at the current cell (CurCell) would overflow the [Grid](./g
 Setting the action code of this event to `¯1`, or returning a 0 from a callback function attached to it, has no effect.
 
 
-The event message reported as the result of `⎕DQ`,
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm),
 or supplied as the right argument to your callback function, is a 6-element
 vector as follows:
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

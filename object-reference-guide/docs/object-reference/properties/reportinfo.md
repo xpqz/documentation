@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ReportInfo</span></h1>
+
 | Applies To: | [ListView](../a-z/listview.md) |
 | --- | ---  |
 
-| Applies To: | [ListView](../a-z/listview.md) | [ListView](../a-z/listview.md) |  |  |
-| --- | --- | ---  |
-| [ListView](../a-z/listview.md) |  |  |
 
-
-Description
+**Description**
 
 
 The ReportInfo property is a matrix that is displayed alongside each item in a [ListView](../a-z/listview.md) object when its [View](../a-z/view.md) property is `'Report'`. Each element of the matrix may be a character vector or a number.

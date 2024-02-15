@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">CalendarDblClick</span></h1>
+
 | Applies To: | [Calendar](./calendar.md) |
 | --- | ---  |
 
-| Applies To: | [Calendar](./calendar.md) | [Calendar](./calendar.md) |  |  |
-| --- | --- | ---  |
-| [Calendar](./calendar.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user double-clicks the left mouse
@@ -26,6 +23,7 @@ the event by setting the action code for the event to `¯1` or by returning 0 fr
 The event message reported as the result of `⎕DQ`,
 or supplied as the right argument to your callback function, is a 5-element
 vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

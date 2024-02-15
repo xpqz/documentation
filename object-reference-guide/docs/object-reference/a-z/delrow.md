@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">DelRow</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to delete a specified row from a [Grid](./grid.md) object.
 
 
 The argument to DelRow is a 1 or 2-element array as follows:
+
 
 | `[1]` | Row number | number of the row (integer) to delete |
 | --- | --- | ---  |

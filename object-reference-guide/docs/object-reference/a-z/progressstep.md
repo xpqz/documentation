@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">ProgressStep</span></h1>
+
 | Applies To: | [ProgressBar](./progressbar.md) |
 | --- | ---  |
 
-| Applies To: | [ProgressBar](./progressbar.md) | [ProgressBar](./progressbar.md) |  |  |
-| --- | --- | ---  |
-| [ProgressBar](./progressbar.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to increment the thumb in a [ProgressBar](./progressbar.md) object.

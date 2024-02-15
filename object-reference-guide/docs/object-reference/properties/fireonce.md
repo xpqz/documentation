@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">FireOnce</span></h1>
+
 | Applies To: | [Timer](../a-z/timer.md) |
 | --- | ---  |
 
-| Applies To: | [Timer](../a-z/timer.md) | [Timer](../a-z/timer.md) |  |  |
-| --- | --- | ---  |
-| [Timer](../a-z/timer.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies one-off  behaviour for a [Timer](../a-z/timer.md) object. It has the value 0, 1 or 2.

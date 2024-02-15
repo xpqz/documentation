@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Items</span></h1>
+
 | Applies To: | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [Spinner](../a-z/spinner.md) | [TreeView](../a-z/treeview.md) |
 | --- | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [List](../a-z/list.md) [ListView](../a-z/listview.md) [Spinner](../a-z/spinner.md) [TreeView](../a-z/treeview.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [Spinner](../a-z/spinner.md) | [TreeView](../a-z/treeview.md) |
-| --- | --- | ---  |
-| [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [List](../a-z/list.md) |
-| [ListView](../a-z/listview.md) | [Spinner](../a-z/spinner.md) | [TreeView](../a-z/treeview.md) |
 
-
-Description
+**Description**
 
 
 This property specifies the list of items from which the user may choose.
@@ -28,7 +24,7 @@ An empty character vector is treated the same as a vector of blanks, and represe
 A zero-length vector of vectors or an empty matrix represents 0 items. The default value for Items is an empty matrix.
 
 
-`⎕WG 'Items'` returns an array of the same structure as was assigned by `⎕WC` or `⎕WS`.
+`⎕WG 'Items'` returns an array of the same structure as was assigned by [`⎕WC`](../../Language/System%20Functions/wc.htm) or [`⎕WS`](../../Language/System%20Functions/ws.htm).
 
 
 

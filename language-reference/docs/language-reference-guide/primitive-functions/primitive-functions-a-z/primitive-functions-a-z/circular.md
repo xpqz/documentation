@@ -10,6 +10,7 @@
 
 `X` determines which of a family of trigonometric, hyperbolic, Pythagorean  and complex functions to apply to `Y`, from the following table. Note that when `Y` is complex, `a` and  `b` are used to represent its real and imaginary parts, while `θ` represents its phase.
 
+
 | (-X) ○ Y | X | X ○ Y |
 | --- | --- | ---  |
 | `(1-Y*2)*.5` | `0` | `(1-Y*2)*.5` |

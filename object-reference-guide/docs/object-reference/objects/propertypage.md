@@ -4,34 +4,16 @@
 
 
 <h1 class="heading"><span class="name">PropertyPage</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/PropertyPage.htm) | [Children](../ChildLists/PropertyPage.htm) | [Properties](../PropLists/PropertyPage.htm) | [Methods](../MethodLists/PropertyPage.htm) | [Events](../EventLists/PropertyPage.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The PropertyPage object represents a single page in a PropertySheet. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| Children | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| Events | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |  |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) | [GetTextSize](../a-z/gettextsize.md) |
-| [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) |
-| [GetFocusObj](../a-z/getfocusobj.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The PropertyPage object represents a single page within a [PropertySheet](../a-z/propertysheet.md).

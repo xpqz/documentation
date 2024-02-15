@@ -10,23 +10,20 @@
 This function holds component file(s) and/or external variable(s). It is used  to synchronise access to resources shared between multiple cooperating Dyalog processes. It is not intended to synchronise access between Dyalog threads; for this purpose you should use  `:Hold`.
 
 
-For a  multi-threaded and multi-process application, a single `⎕FHOLD` is used to synchronise inter-process access, while `:Hold` is used in multiple threads to synchronise access between  threads in the same process. See also Hold Statement on page 1
-Programming Reference Guide: 
-
-Hold Statement.
+For a  multi-threaded and multi-process application, a single `⎕FHOLD` is used to synchronise inter-process access, while `:Hold` is used in multiple threads to synchronise access between  threads in the same process. See also [Hold Statement on page 1](../Control%20Structures/hold.htm#HoldStatement).
 
 
 
 If applied to component files, then `Y` is an integer scalar, vector, or one-row matrix of file tie numbers, or a two-row matrix whose first row contains file tie numbers and whose second row contains passnumbers.
 
 
-If applied to external variables, then `Y` is a simple scalar character, a character vector, a non-simple scalar character vector, or a vector of character vectors that specifies one or more names of external variable(s) (NOT the file names associated with those variables). Note that when `Y` is simple, each character in `Y` is interpreted as a  variable name. If applied to component files and external variables, `Y` is a vector whose elements are either integer scalars representing tie numbers, or character scalars or vectors containing names of external variables.
+If applied to external variables, then `Y` is a simple scalar character, a character vector, a non-simple scalar character vector, or a vector of character vectors that specifies one or more names of external variable(s) (NOT the file names associated with those variables). Note that when `Y` is simple, each character in `Y` is interpreted as a  variable name. If applied to component files **and** external variables, `Y` is a vector whose elements are either integer scalars representing tie numbers, or character scalars or vectors containing names of external variables.
 
 
 
 The effect is as follows:
 
-1. All of the user's preceding holds (if any) are released, whether referenced in `Y` or not.
+1. **All** of the user's preceding holds (if any) are released, whether referenced in `Y` or not.
 2. Execution is suspended until the designated files are free of holds by any other task.
 3. When all the designated files are free, execution proceeds.  Until the hold is released, other tasks using `⎕FHOLD` on any of the designated files will wait.
 

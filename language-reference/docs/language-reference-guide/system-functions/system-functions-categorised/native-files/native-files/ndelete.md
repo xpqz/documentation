@@ -13,6 +13,7 @@ This function deletes files and directories.
 
 The optional left argument `X` is a numeric scalar; valid values are  shown in the following table. If omitted, its default value is 0.
 
+
 | `0` | Each file or directory with the given name must exist. |
 | --- | ---  |
 | `1` | If the file or directory with the given name does not exist then no action is taken. The result `R` may be used to determine whether the file or directory was deleted or not. |
@@ -81,6 +82,7 @@ If the file is in use or the current user is not authorised to delete it, `⎕ND
 When multiple names are specified they are processed in the order given. If an error occurs at any point whilst deleting files or directories, processing will immediately stop and an error will be signalled. The operation is not atomic; the directory contents may be partially deleted before this happens. In the event of an error there will be no result and therefore no indication of how many files were deleted before the error occurred.
 
 #### Wildcard Option (Boolean)
+
 
 | 0 | The name or names in `Y` identifies a specific file name. |
 | --- | ---  |

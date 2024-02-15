@@ -5,38 +5,10 @@
 
 <h1 class="heading"><span class="name">Event</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXContainer](./activexcontainer.md) [ActiveXControl](./activexcontrol.md) [Animation](./animation.md) [Bitmap](./bitmap.md) [BrowseBox](./browsebox.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Calendar](./calendar.md) [Circle](./circle.md) [Clipboard](./clipboard.md) [ColorButton](./colorbutton.md) [Combo](./combo.md) [ComboEx](./comboex.md) [CoolBand](./coolband.md) [CoolBar](./coolbar.md) [Cursor](./cursor.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [Ellipse](./ellipse.md) [FileBox](./filebox.md) [Form](./form.md) [Grid](./grid.md) [Group](./group.md) [HTMLRenderer](./htmlrenderer.md) [Icon](./icon.md) [Image](./image.md) [ImageList](./imagelist.md) [Label](./label.md) [List](./list.md) [ListView](./listview.md) [Locator](./locator.md) [Marker](./marker.md) [MDIClient](./mdiclient.md) [Menu](./menu.md) [MenuBar](./menubar.md) [MenuItem](./menuitem.md) [Metafile](./metafile.md) [MsgBox](./msgbox.md) [OCXClass](./ocxclass.md) [OLEClient](./oleclient.md) [OLEServer](./oleserver.md) [Poly](./poly.md) [Printer](./printer.md) [ProgressBar](./progressbar.md) [PropertyPage](./propertypage.md) [PropertySheet](./propertysheet.md) [Rect](./rect.md) [RichEdit](./richedit.md) [Root](./root.md) [Scroll](./scroll.md) [Separator](./separator.md) [SM](./sm.md) [Spinner](./spinner.md) [Splitter](./splitter.md) [Static](./static.md) [StatusBar](./statusbar.md) [StatusField](./statusfield.md) [SubForm](./subform.md) [SysTrayItem](./systrayitem.md) [TabBar](./tabbar.md) [TabBtn](./tabbtn.md) [TabButton](./tabbutton.md) [TabControl](./tabcontrol.md) [TCPSocket](./tcpsocket.md) [Text](./text.md) [Timer](./timer.md) [TipField](./tipfield.md) [ToolBar](./toolbar.md) [ToolButton](./toolbutton.md) [ToolControl](./toolcontrol.md) [TrackBar](./trackbar.md) [TreeView](./treeview.md) [UpDown](./updown.md) | [ActiveXContainer](./activexcontainer.md) | [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) | [Bitmap](./bitmap.md) | [BrowseBox](./browsebox.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [Circle](./circle.md) | [Clipboard](./clipboard.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) | [Cursor](./cursor.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Ellipse](./ellipse.md) | [FileBox](./filebox.md) | [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) | [HTMLRenderer](./htmlrenderer.md) | [Icon](./icon.md) | [Image](./image.md) | [ImageList](./imagelist.md) | [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) | [Locator](./locator.md) | [Marker](./marker.md) | [MDIClient](./mdiclient.md) | [Menu](./menu.md) | [MenuBar](./menubar.md) | [MenuItem](./menuitem.md) | [Metafile](./metafile.md) | [MsgBox](./msgbox.md) | [OCXClass](./ocxclass.md) | [OLEClient](./oleclient.md) | [OLEServer](./oleserver.md) | [Poly](./poly.md) | [Printer](./printer.md) | [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) | [PropertySheet](./propertysheet.md) | [Rect](./rect.md) | [RichEdit](./richedit.md) | [Root](./root.md) | [Scroll](./scroll.md) | [Separator](./separator.md) | [SM](./sm.md) | [Spinner](./spinner.md) | [Splitter](./splitter.md) | [Static](./static.md) | [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) | [SubForm](./subform.md) | [SysTrayItem](./systrayitem.md) | [TabBar](./tabbar.md) | [TabBtn](./tabbtn.md) | [TabButton](./tabbutton.md) | [TabControl](./tabcontrol.md) | [TCPSocket](./tcpsocket.md) | [Text](./text.md) | [Timer](./timer.md) | [TipField](./tipfield.md) | [ToolBar](./toolbar.md) | [ToolButton](./toolbutton.md) | [ToolControl](./toolcontrol.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |  |  |
-| --- | --- | ---  |
-| [ActiveXContainer](./activexcontainer.md) | [ActiveXControl](./activexcontrol.md) | [Animation](./animation.md) |
-| [Bitmap](./bitmap.md) | [BrowseBox](./browsebox.md) | [Button](./button.md) |
-| [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [Circle](./circle.md) |
-| [Clipboard](./clipboard.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) |
-| [ComboEx](./comboex.md) | [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) |
-| [Cursor](./cursor.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) |
-| [Ellipse](./ellipse.md) | [FileBox](./filebox.md) | [Form](./form.md) |
-| [Grid](./grid.md) | [Group](./group.md) | [HTMLRenderer](./htmlrenderer.md) |
-| [Icon](./icon.md) | [Image](./image.md) | [ImageList](./imagelist.md) |
-| [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) |
-| [Locator](./locator.md) | [Marker](./marker.md) | [MDIClient](./mdiclient.md) |
-| [Menu](./menu.md) | [MenuBar](./menubar.md) | [MenuItem](./menuitem.md) |
-| [Metafile](./metafile.md) | [MsgBox](./msgbox.md) | [OCXClass](./ocxclass.md) |
-| [OLEClient](./oleclient.md) | [OLEServer](./oleserver.md) | [Poly](./poly.md) |
-| [Printer](./printer.md) | [ProgressBar](./progressbar.md) | [PropertyPage](./propertypage.md) |
-| [PropertySheet](./propertysheet.md) | [Rect](./rect.md) | [RichEdit](./richedit.md) |
-| [Root](./root.md) | [Scroll](./scroll.md) | [Separator](./separator.md) |
-| [SM](./sm.md) | [Spinner](./spinner.md) | [Splitter](./splitter.md) |
-| [Static](./static.md) | [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) |
-| [SubForm](./subform.md) | [SysTrayItem](./systrayitem.md) | [TabBar](./tabbar.md) |
-| [TabBtn](./tabbtn.md) | [TabButton](./tabbutton.md) | [TabControl](./tabcontrol.md) |
-| [TCPSocket](./tcpsocket.md) | [Text](./text.md) | [Timer](./timer.md) |
-| [TipField](./tipfield.md) | [ToolBar](./toolbar.md) | [ToolButton](./toolbutton.md) |
-| [ToolControl](./toolcontrol.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) |
-| [UpDown](./updown.md) |  |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property defines how an object responds to user actions.
@@ -70,6 +42,7 @@ However, certain special considerations apply which are discussed later.
 
 
 When you specify the Event property using `⎕WC` or `⎕WS`, the action to be taken for an event type or types is specified by a 2 or 3-element vector containing:
+
 
 | Element | Item | Description |
 | --- | --- | ---  |
@@ -111,8 +84,8 @@ to `¯1`, all keystrokes for the object in
 question will be ignored. Similarly, if you set the *action* on a Close
 event for a Form to `¯1`, the user will be
 unable to close the Form. This is possible because APL intercepts most events before Windows itself takes any action. However, certain events (e.g. focus
-change events) are not notified to APL until after the event has occurred
-and after Windows has itself responded in some way. In these
+change events) are not notified to APL until **after** the event has occurred
+and **after** Windows has itself responded in some way. In these
 circumstances it is not always practical for APL to undo what Windows has
 already done, and an action code of `¯1` is
 treated as if it were 0. For further details, see the individual entries for
@@ -163,7 +136,7 @@ Unless the callback function is niladic, it will be supplied a right argument (`
 The function may be defined to return no result, a result, or a shy result. The result determines how the event is handled.
 
 
-The **default processing** of the event is deferred until after the callback has
+The **default processing** of the event is deferred until **after** the callback has
 been run, and may be inhibited or modified by its result. If the callback
 function returns no result, or returns a scalar 1, normal processing of the
 event is allowed to continue as soon as the callback completes. If the callback
@@ -543,7 +516,7 @@ MouseDown, MouseUp and MouseMove
 
 
 In addition to the standard events supported directly by Dyalog APL, you may
-specify your own events. For these, you must use event numbers;
+specify your own events. For these, you **must** use event numbers;
 user-defined event names are not allowed.
 
 
@@ -552,7 +525,7 @@ that you choose numbers greater than 1000 to avoid potential conflict with
 future releases of Dyalog APL.
 
 
-You can only generate user-defined events under program control with `⎕NQ`.
+You can only **generate** user-defined events under program control with `⎕NQ`.
 
 #### Examples
 ```apl
@@ -729,7 +702,7 @@ When using regular event names, case is unimportant. For example, the system wil
 
 
 The event number 0 and the event name `'All'`,
-are convenient shorthands to associate a particular action (such as a callback) with all the built-in events supported by an object.
+are convenient shorthands to associate a particular action (such as a callback) with **all** the built-in events supported by an object.
 
 #### Example
 ```apl

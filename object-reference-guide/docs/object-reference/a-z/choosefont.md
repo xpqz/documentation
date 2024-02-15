@@ -4,28 +4,17 @@
 
 <h1 class="heading"><span class="name">ChooseFont</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXControl](./activexcontrol.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Calendar](./calendar.md) [Combo](./combo.md) [ComboEx](./comboex.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [Font](./font.md) [Form](./form.md) [Grid](./grid.md) [Group](./group.md) [Label](./label.md) [List](./list.md) [ListView](./listview.md) [PropertyPage](./propertypage.md) [PropertySheet](./propertysheet.md) [RichEdit](./richedit.md) [Root](./root.md) [Spinner](./spinner.md) [Static](./static.md) [StatusBar](./statusbar.md) [SubForm](./subform.md) [TabBtn](./tabbtn.md) [Text](./text.md) [TipField](./tipfield.md) [TreeView](./treeview.md) | [ActiveXControl](./activexcontrol.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Font](./font.md) | [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) | [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) | [PropertyPage](./propertypage.md) | [PropertySheet](./propertysheet.md) | [RichEdit](./richedit.md) | [Root](./root.md) | [Spinner](./spinner.md) | [Static](./static.md) | [StatusBar](./statusbar.md) | [SubForm](./subform.md) | [TabBtn](./tabbtn.md) | [Text](./text.md) | [TipField](./tipfield.md) | [TreeView](./treeview.md) |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) |
-| [Calendar](./calendar.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) |
-| [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Font](./font.md) |
-| [Form](./form.md) | [Grid](./grid.md) | [Group](./group.md) |
-| [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) |
-| [PropertyPage](./propertypage.md) | [PropertySheet](./propertysheet.md) | [RichEdit](./richedit.md) |
-| [Root](./root.md) | [Spinner](./spinner.md) | [Static](./static.md) |
-| [StatusBar](./statusbar.md) | [SubForm](./subform.md) | [TabBtn](./tabbtn.md) |
-| [Text](./text.md) | [TipField](./tipfield.md) | [TreeView](./treeview.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This method is used to display the standard Windows font selection dialog box.
 
 
 The argument to ChooseFont is `⍬` or a 1 or 2-element array as follows:
+
 
 | `[1]` | Printer name | character scalar or vector. |
 | --- | --- | ---  |
@@ -39,6 +28,7 @@ The dialog box is initialised with the properties of the [Font](./font.md) objec
 
 
 When the user presses the "OK" button, the "Cancel" button or closes the dialog box, ChooseFont terminates. Its result is either 0 (user pressed "Cancel") or a 2-element vector. In the latter case, the first element is an 8-element array that describes the selected font as described below, and the second element is a 3-element RGB colour vector.
+
 
 | `[1]` | Face name of selected font (character vector) |
 | --- | ---  |

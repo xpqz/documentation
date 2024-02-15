@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SelText</span></h1>
+
 | Applies To: | [ButtonEdit](../a-z/buttonedit.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [Edit](../a-z/edit.md) | [RichEdit](../a-z/richedit.md) |
 | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [ButtonEdit](../a-z/buttonedit.md) [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [Edit](../a-z/edit.md) [RichEdit](../a-z/richedit.md) | [ButtonEdit](../a-z/buttonedit.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [Edit](../a-z/edit.md) | [RichEdit](../a-z/richedit.md) |  |
-| --- | --- | ---  |
-| [ButtonEdit](../a-z/buttonedit.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) |
-| [Edit](../a-z/edit.md) | [RichEdit](../a-z/richedit.md) |  |
 
-
-Description
+**Description**
 
 
 This property determines or identifies the portion of text in an object that is currently selected and highlighted. It can be used to pre-select all or part of the text to be replaced or deleted when the user starts typing. It can also be used to query the area of text that the user has highlighted. This can be useful if you want to implement your own cut/paste/replace features.

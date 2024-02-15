@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">UndocksToRoot</span></h1>
+
 | Applies To: | [CoolBand](../a-z/coolband.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) | [ToolControl](../a-z/toolcontrol.md) |
 | --- | --- | --- | --- | ---  |
 
-| Applies To: | [CoolBand](../a-z/coolband.md) [Form](../a-z/form.md) [SubForm](../a-z/subform.md) [ToolControl](../a-z/toolcontrol.md) | [CoolBand](../a-z/coolband.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) | [ToolControl](../a-z/toolcontrol.md) |  |  |
-| --- | --- | ---  |
-| [CoolBand](../a-z/coolband.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) |
-| [ToolControl](../a-z/toolcontrol.md) |  |  |
 
-
-Description
+**Description**
 
 
 Specifies the parent adopted by an object when its Type changes to a Form as a result of an undocking operation.

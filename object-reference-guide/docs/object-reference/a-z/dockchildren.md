@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">DockChildren</span></h1>
+
 | Applies To: | [CoolBar](./coolbar.md) | [Form](./form.md) | [SubForm](./subform.md) |
 | --- | --- | --- | ---  |
 
-| Applies To: | [CoolBar](./coolbar.md) [Form](./form.md) [SubForm](./subform.md) | [CoolBar](./coolbar.md) | [Form](./form.md) | [SubForm](./subform.md) |
-| --- | --- | ---  |
-| [CoolBar](./coolbar.md) | [Form](./form.md) | [SubForm](./subform.md) |
 
-
-Description
+**Description**
 
 
 The DockChildren property specifies the names of client objects that may be docked in a host object.
@@ -22,7 +19,7 @@ The DockChildren property specifies the names of client objects that may be dock
 DockChildren may be a single ref or simple character scalar or vector, or a vector of refs or character vectors. Each item represents an object that may be docked. Notice that if you use a name, you must specify the simple name of the object, excluding any part of its full pathname that refers to a parent; i.e. the specified names must not contain any leading pathname information.
 
 
-If the name of, or ref to, a dockable object occurs in the DockChildren property, the host object will generate DockMove events when the client is dragged over it, and will generate a DockAccept event when a docking operation takes place.
+If the name of, or ref to, a [dockable](dockable.md) object occurs in the DockChildren property, the host object will generate DockMove events when the client is dragged over it, and will generate a DockAccept event when a docking operation takes place.
 
 
 If the name of, or ref to, the client object is not present in its DockChildren property, the object will not respond in any way as the client is dragged over it.

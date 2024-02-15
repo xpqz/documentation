@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">DrawMode</span></h1>
+
 | Applies To: | [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Marker](../a-z/marker.md) | [Poly](../a-z/poly.md) | [Rect](../a-z/rect.md) | [Text](../a-z/text.md) |
 | --- | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [Circle](../a-z/circle.md) [Ellipse](../a-z/ellipse.md) [Marker](../a-z/marker.md) [Poly](../a-z/poly.md) [Rect](../a-z/rect.md) [Text](../a-z/text.md) | [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Marker](../a-z/marker.md) | [Poly](../a-z/poly.md) | [Rect](../a-z/rect.md) | [Text](../a-z/text.md) |
-| --- | --- | ---  |
-| [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Marker](../a-z/marker.md) |
-| [Poly](../a-z/poly.md) | [Rect](../a-z/rect.md) | [Text](../a-z/text.md) |
 
-
-Description
+**Description**
 
 
 The DrawMode property provides direct control over the low-level drawing operation performed by graphical objects.
@@ -31,6 +27,7 @@ You could use DrawMode to move or animate graphical objects in circumstances whe
 
 
 DrawMode is an integer with one of the following values:
+
 
 | Value | Name | Resulting Pixel Colour |
 | --- | --- | ---  |

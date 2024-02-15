@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">AlignChar</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 The AlignChar property specifies a character on which the data displayed in a column of a Grid is to be aligned vertically. It is useful to align columns of numbers that are formatted by the [FormatString](../a-z/formatstring.md) property. AlignChar may be a scalar or singleton that applies to all columns of the Grid, or a vector with one element per column.

@@ -17,6 +17,7 @@ This function returns information about one or more files or directories. `Y` ma
 
 #### Recurse Option
 
+
 | 0 | the name(s) in `Y` are searched for only in the corresponding specified directory. |
 | --- | ---  |
 | `1` | the name(s) in `Y` are searched for in the corresponding specified directory as well as all sub-directories. If Wildcard is also 1, the wild card search is performed recursively. |
@@ -24,6 +25,7 @@ This function returns information about one or more files or directories. `Y` ma
 | `2 (n)` | same as 1 but if any unreadable directories are encountered they are skipped (whereas if Recurse is `1 (n)` , `⎕NINFO` stops and generates an error). |
 
 #### Follow Option (Boolean)
+
 
 | `0` | the properties reported are those of the symbolic link itself |
 | --- | ---  |
@@ -33,6 +35,7 @@ This function returns information about one or more files or directories. `Y` ma
 
 
 The optional left argument `X` is a simple numeric array containing values shown in the following table.
+
 
 | `X` | Property | Default |
 | --- | --- | ---  |
@@ -179,6 +182,7 @@ The following expression will return all Word document (`.docx` and .doc) in the
 Of the file timestamps which are reported by the operating system, only the last modification time should be considered reliable and portable. Neither the access time or creation time are well supported across all platforms. Furthermore, they may not accurately reflect the actual time that the operation occurred.
 
 #### Wildcard Option (Boolean)
+
 
 | 0 | The name or names in `Y` identifies a specific file name. |
 | --- | ---  |

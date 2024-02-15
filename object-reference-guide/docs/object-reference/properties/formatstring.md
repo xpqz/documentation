@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">FormatString</span></h1>
+
 | Applies To: | [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) | [Grid](../a-z/grid.md) | [Label](../a-z/label.md) | [Spinner](../a-z/spinner.md) |
 | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [ButtonEdit](../a-z/buttonedit.md) [Edit](../a-z/edit.md) [Grid](../a-z/grid.md) [Label](../a-z/label.md) [Spinner](../a-z/spinner.md) | [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) | [Grid](../a-z/grid.md) | [Label](../a-z/label.md) | [Spinner](../a-z/spinner.md) |  |
-| --- | --- | ---  |
-| [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) | [Grid](../a-z/grid.md) |
-| [Label](../a-z/label.md) | [Spinner](../a-z/spinner.md) |  |
 
-
-Description
+**Description**
 
 
 The FormatString property specifies one or more `⎕FMT` format specifications to be used to format data in an Grid or single-line Edit. When applied to a Grid, it is either a simple character vector that specifies the format specification for the entire Grid, or a vector of character vectors. If it is a vector, its elements are mapped to individual cells via the CellTypes property. When applied to an Edit object, FormatString must be a simple character vector.

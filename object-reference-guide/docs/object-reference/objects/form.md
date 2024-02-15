@@ -4,39 +4,21 @@
 
 
 <h1 class="heading"><span class="name">Form</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Form.htm) | [Children](../ChildLists/Form.htm) | [Properties](../PropLists/Form.htm) | [Methods](../MethodLists/Form.htm) | [Events](../EventLists/Form.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | This is a top-level window used to contain other objects (controls). |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [ChooseFont](../a-z/choosefont.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [ChooseFont](../a-z/choosefont.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [ChooseFont](../a-z/choosefont.md) | [Wait](../a-z/wait.md) |  |
-| Children | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [ChooseFont](../a-z/choosefont.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [ChooseFont](../a-z/choosefont.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [ChooseFont](../a-z/choosefont.md) | [Wait](../a-z/wait.md) |  |
-| Properties | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [ChooseFont](../a-z/choosefont.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [ChooseFont](../a-z/choosefont.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [ChooseFont](../a-z/choosefont.md) | [Wait](../a-z/wait.md) |  |
-| Methods | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [ChooseFont](../a-z/choosefont.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [ChooseFont](../a-z/choosefont.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [ChooseFont](../a-z/choosefont.md) | [Wait](../a-z/wait.md) |  |
-| Events | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) [ChooseFont](../a-z/choosefont.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) | [ChooseFont](../a-z/choosefont.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [ChooseFont](../a-z/choosefont.md) | [Wait](../a-z/wait.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 
 The [Posn](../a-z/posn.md) property specifies the location of
-the internal top-left corner of the window relative to the top-left
+the **internal** top-left corner of the window relative to the top-left
 corner of the screen. If the window has a title bar and/or border, you must
 allow sufficient space for them. Similarly, the [Size](../a-z/size.md) property specifies the internal size of the window excluding the title bar and
 border. The default for [Size](../a-z/size.md) is 50% of the
@@ -57,11 +39,11 @@ to the [Help](../a-z/help.md) event on the control.
 
 By default, a Form may be moved and resized using the mouse. These actions
 are achieved by dragging on the title bar and border respectively. It follows
-that a Form that is [Moveable ](../a-z/moveable.md)must have a title bar, and one that is [Sizeable](../a-z/sizeable.md) must have a border, regardless of the value of other properties. Also, if
+that a Form that is [Moveable ](../a-z/moveable.md)**must** have a title bar, and one that is [Sizeable](../a-z/sizeable.md) **must** have a border, regardless of the value of other properties. Also, if
 you specify any of [SysMenu](../a-z/sysmenu.md), [MaxButton](../a-z/maxbutton.md) or [MinButton](../a-z/minbutton.md), the window must have a
 title bar in which to place these controls. A title bar itself requires a
 border. To obtain a window without a title bar, you must therefore set [Moveable](../a-z/moveable.md),
-[SysMenu](../a-z/sysmenu.md), [MaxButton](../a-z/maxbutton.md) and [MinButton](../a-z/minbutton.md) to 0. Note that setting [Caption](../a-z/caption.md) does not force a title bar on the window.
+[SysMenu](../a-z/sysmenu.md), [MaxButton](../a-z/maxbutton.md) and [MinButton](../a-z/minbutton.md) to 0. Note that setting [Caption](../a-z/caption.md) does **not** force a title bar on the window.
 
 
 If [Sizeable](../a-z/sizeable.md) is 1, the window will have
@@ -97,7 +79,7 @@ thumb in the vertical and horizontal scrollbars respectively. When the user
 attempts to move the thumb in one of the scrollbars, the Form generates a [VScroll](../a-z/vscroll.md) or [HScroll](../a-z/hscroll.md) event.
 
 
-[VScroll](../a-z/vscroll.md) and [HScroll](../a-z/hscroll.md) cannot be changed using `⎕WS`.
+[VScroll](../a-z/vscroll.md) and [HScroll](../a-z/hscroll.md) cannot be changed using [`⎕WS`](../../Language/System%20Functions/ws.htm).
 However, you can make a scrollbar disappear by setting the corresponding element
 of [Range](../a-z/range.md) to 1, thus allowing you to
 dynamically switch the scrollbar off and on. Note however that doing so will

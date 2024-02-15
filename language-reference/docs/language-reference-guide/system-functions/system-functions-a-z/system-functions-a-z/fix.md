@@ -30,7 +30,7 @@ If `X` is `1`, `Y` must specify a single valid *namespace* which may or may not 
 If `X` is `2`, `Y` is either a character vector containing the name of a script file, or a vector of character vectors that represents a script.
 
 
-`Y` may specify a series of named *namespaces* or function definitions,   or a combination of functions and namespaces.
+`Y` may specify a series of **named** *namespaces* or function definitions,   or a combination of functions and namespaces.
 
 - If the script contains more than one item,  tradfn definitions must be delimited by `∇`symbols.
 - Derived and assigned functions may be specified only within namespaces.
@@ -135,11 +135,13 @@ DOMAIN ERROR: There were errors processing the script
 
 #### Quiet Option
 
+
 | 0 | If the script contains errors, these are displayed in the Status Window. |
 | --- | ---  |
 | `1` | If the script contains errors, the errors are not shown  in the Status Window. |
 
 #### FixWithErrors Option
+
 
 | 0 | If the script contains errors, `⎕FIX` fails with `DOMAIN ERROR` . |
 | --- | ---  |
@@ -148,11 +150,13 @@ DOMAIN ERROR: There were errors processing the script
 
 #### AllowLateBinding Option
 
+
 | 0 | `⎕FIX` will only fix a Class whose Base class (if specified) is defined in the script or is present in the workspace. |
 | --- | ---  |
 | `1` | `⎕FIX` will fixes a Class whose Base class is neither defined in the script nor present in the workspace. |
 
 #### InjectReferences Option
+
 
 | `'All'` | In order to implement lexical scope, `⎕FIX` will insert internal references into all objects in the script. |
 | --- | ---  |
@@ -160,7 +164,7 @@ DOMAIN ERROR: There were errors processing the script
 | `'None'` | No internal references are inserted and lexical scope does not apply. |
 
 
-See Lexical Scope in Scripts on page 1.
+See [Lexical Scope in Scripts on page 1](../../RelNotes19.0/Lexical%20Scope%20in%20Scripts.htm#LexicalScope).
 
 
 The following examples illustrate how different values of the InjectReferences option affect the scope of objects in scripts. The examples are based on the following family tree:
@@ -236,6 +240,7 @@ But after executing:
 The following tables show which objects in Namespace `Pete` can *see* (i.e. refer to) which other objects representing members of the family, in each case; `All`, `InClasses` and `None`.
 
 
+
 | 'All' | Pete | Andy | Aisha | Katherine | Woody | George |
 | --- | --- | --- | --- | --- | --- | ---  |
 | Pete |  | ✔ | ✔ | ✔ | ✔ | ✔ |
@@ -245,6 +250,7 @@ The following tables show which objects in Namespace `Pete` can *see* (i.e. refe
 | Woody |  |  |  |  |  | ✔ |
 | George |  |  |  |  | ✔ |  |
 
+
 | 'InClasses' | Pete | Andy | Aisha | Katherine | Woody | George |
 | --- | --- | --- | --- | --- | --- | ---  |
 | Pete |  | ✔ |  | ✔ |  |  |
@@ -253,6 +259,7 @@ The following tables show which objects in Namespace `Pete` can *see* (i.e. refe
 | Katherine | ✔ | ✔ |  | ✔ | ✔ | ✔ |
 | Woody |  |  |  |  |  |  |
 | George |  |  |  |  |  |  |
+
 
 
 | 'None' | Pete | Andy | Aisha | Katherine | Woody | George |
@@ -268,6 +275,7 @@ The following tables show which objects in Namespace `Pete` can *see* (i.e. refe
 
 Whilst the next set of tables show the same for Class `Jill`.
 
+
 | 'All' | Jill | Andy | Aisha | Katherine | Woody | George |
 | --- | --- | --- | --- | --- | --- | ---  |
 | Jill | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
@@ -278,6 +286,7 @@ Whilst the next set of tables show the same for Class `Jill`.
 | George |  |  |  |  | ✔ |  |
 
 
+
 | 'InClasses' | Jill | Andy | Aisha | Katherine | Woody | George |
 | --- | --- | --- | --- | --- | --- | ---  |
 | Jill | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
@@ -286,6 +295,7 @@ Whilst the next set of tables show the same for Class `Jill`.
 | Katherine | ✔ | ✔ |  | ✔ | ✔ | ✔ |
 | Woody |  |  |  |  |  |  |
 | George |  |  |  |  |  |  |
+
 
 | 'None' | Jill | Andy | Aisha | Katherine | Woody | George |
 | --- | --- | --- | --- | --- | --- | ---  |

@@ -13,6 +13,7 @@ This function is used to temporarily disable the error trapping mechanism used b
 
 `R` is the previous value (0, 1, or 2) of the trap state.
 
+
 | `Y` | Effect |
 | --- | ---  |
 | `0` | Enable all traps. |

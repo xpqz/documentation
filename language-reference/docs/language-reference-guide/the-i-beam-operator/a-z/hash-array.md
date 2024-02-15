@@ -18,6 +18,7 @@ If `X` is omitted, the result `R` is a copy of `Y` that has been invisibly marke
 
 If `X` is 1, the result `R` returns an indication of whether `Y` has been marked for hashing or whether the hash has been created:
 
+
 | `R` | State of `Y` |
 | --- | ---  |
 | `0` | `Y` has not been marked for hashing |

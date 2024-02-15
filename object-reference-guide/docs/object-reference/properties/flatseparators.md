@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">FlatSeparators</span></h1>
+
 | Applies To: | [TabControl](../a-z/tabcontrol.md) |
 | --- | ---  |
 
-| Applies To: | [TabControl](../a-z/tabcontrol.md) | [TabControl](../a-z/tabcontrol.md) |  |  |
-| --- | --- | ---  |
-| [TabControl](../a-z/tabcontrol.md) |  |  |
 
-
-Description
+**Description**
 
 
 The FlatSeparators property specifies whether or not separators are drawn between buttons in a [TabControl](../a-z/tabcontrol.md) object. FlatSeparators only affects a [TabControl](../a-z/tabcontrol.md) if [Style](../a-z/style.md) is `'FlatButtons'` and is otherwise ignored.

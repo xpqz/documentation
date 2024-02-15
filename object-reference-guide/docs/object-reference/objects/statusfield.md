@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">StatusField</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/StatusField.htm) | [Children](../ChildLists/StatusField.htm) | [Properties](../PropLists/StatusField.htm) | [Methods](../MethodLists/StatusField.htm) | [Events](../EventLists/StatusField.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | This object is used to display information for the user. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Children | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Events | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The StatusField object provides an area for displaying context sensitive help messages, keyboard status, and other application dependent information.
@@ -47,6 +39,7 @@ If [Style](../a-z/style.md) is KeyMode, the StatusField displays the name for th
 
 
 If [Style](../a-z/style.md) is set to one of the above, you may still use the [Caption](../a-z/caption.md) property to give the StatusField a title. You may even set the value of the [Text](../a-z/text.md) property, but be aware that this value will be reset when the user next presses the key the StatusField is monitoring.
+
 
 | CapsLock | Monitors state of Caps Lock key |
 | --- | ---  |

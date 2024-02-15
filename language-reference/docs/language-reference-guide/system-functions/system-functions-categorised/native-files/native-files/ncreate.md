@@ -21,11 +21,13 @@ The shy result of `⎕NCREATE` is the tie number of the new file.
 
 #### Unique Option (Boolean)
 
+
 | 0 | the file named by `X` will be created |
 | --- | ---  |
 | `1` | a uniquely named file will be created by extending the base name (see [File Name Parts on page 1](../../../system-functions-a-z/system-functions-a-z/nparts.md) ) with random characters. If a unique name cannot be created then an error will be signalled. The actual name of the file can be determined from `⎕NNAMES` or `⎕NINFO` . |
 
 #### IfExists Option (character vector)
+
 
 | Error | `⎕NCREATE` will generate a `FILE NAME ERROR` if the file already exists |
 | --- | ---  |

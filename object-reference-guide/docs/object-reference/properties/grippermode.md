@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GripperMode</span></h1>
+
 | Applies To: | [CoolBand](../a-z/coolband.md) |
 | --- | ---  |
 
-| Applies To: | [CoolBand](../a-z/coolband.md) | [CoolBand](../a-z/coolband.md) |  |  |
-| --- | --- | ---  |
-| [CoolBand](../a-z/coolband.md) |  |  |
 
-
-Description
+**Description**
 
 
 The GripperMode property specifies whether or not the [CoolBand](../a-z/coolband.md) has a gripper bar which is used to reposition and resize the [CoolBand](../a-z/coolband.md) within its parent [CoolBar](../a-z/coolbar.md).

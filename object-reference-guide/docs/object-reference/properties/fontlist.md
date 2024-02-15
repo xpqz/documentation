@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">FontList</span></h1>
+
 | Applies To: | [Printer](../a-z/printer.md) | [Root](../a-z/root.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Printer](../a-z/printer.md) [Root](../a-z/root.md) | [Printer](../a-z/printer.md) | [Root](../a-z/root.md) |  |
-| --- | --- | ---  |
-| [Printer](../a-z/printer.md) | [Root](../a-z/root.md) |  |
 
-
-Description
+**Description**
 
 
 The FontList property is a read-only property (you cannot set its value) that
@@ -21,6 +18,7 @@ provides a list of available fonts.
 
 Its value is a vector (1 per font) of 8-element character vectors, each of
 which is as follows :
+
 
 | `[1]` | Face name (character vector) |
 | --- | ---  |

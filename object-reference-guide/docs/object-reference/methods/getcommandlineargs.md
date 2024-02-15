@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GetCommandLineArgs</span></h1>
+
 | Applies To: | [Root](../a-z/root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](../a-z/root.md) | [Root](../a-z/root.md) |  |  |
-| --- | --- | ---  |
-| [Root](../a-z/root.md) |  |  |
 
-
-Description
+**Description**
 
 
 The GetCommandLineArgs method returns the command and the arguments to the command that was used to start the current Dyalog APL session or application.

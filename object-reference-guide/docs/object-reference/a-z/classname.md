@@ -4,20 +4,16 @@
 
 
 <h1 class="heading"><span class="name">ClassName</span></h1>
+
 | Applies To: | [ActiveXControl](./activexcontrol.md) | [OCXClass](./ocxclass.md) | [OLEClient](./oleclient.md) | [OLEServer](./oleserver.md) |
 | --- | --- | --- | --- | ---  |
 
-| Applies To: | [ActiveXControl](./activexcontrol.md) [OCXClass](./ocxclass.md) [OLEClient](./oleclient.md) [OLEServer](./oleserver.md) | [ActiveXControl](./activexcontrol.md) | [OCXClass](./ocxclass.md) | [OLEClient](./oleclient.md) | [OLEServer](./oleserver.md) |  |  |
-| --- | --- | ---  |
-| [ActiveXControl](./activexcontrol.md) | [OCXClass](./ocxclass.md) | [OLEClient](./oleclient.md) |
-| [OLEServer](./oleserver.md) |  |  |
 
-
-Description
+**Description**
 
 
 For an [OLEClient](./oleclient.md), the ClassName property specifies the name of the OLE object to which an [OLEClient](./oleclient.md) object named by the left argument of `⎕WC` is to be connected.
-Similarly, for a NetControl the ClassName property specifies the name of the .NET class to be instantiated.
+Similarly, for a [NetControl](../Objects/NetControl.htm) the ClassName property specifies the name of the .NET class to be instantiated.
 Note that ClassName is mandatory for `⎕WC` and may not subsequently be changed using `⎕WS`.
 
 

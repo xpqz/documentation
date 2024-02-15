@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">OLEQueryInterface</span></h1>
+
 | Applies To: | [ActiveXContainer](../a-z/activexcontainer.md) | [OLEClient](../a-z/oleclient.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ActiveXContainer](../a-z/activexcontainer.md) [OLEClient](../a-z/oleclient.md) | [ActiveXContainer](../a-z/activexcontainer.md) | [OLEClient](../a-z/oleclient.md) |  |
-| --- | --- | ---  |
-| [ActiveXContainer](../a-z/activexcontainer.md) | [OLEClient](../a-z/oleclient.md) |  |
 
-
-Description
+**Description**
 
 
 This method is used to obtain the methods and properties associated with a particular *interface* that is provided by a COM object. An interface is simply a pointer to a table of methods (not properties) that are exported by an object.
@@ -21,6 +18,7 @@ Note that methods and properties exported using the standard IDispatch interface
 
 
 The argument to OLEQueryInterface is a single item as follows:
+
 
 | `[1]` | Interface name | character vector |
 | --- | --- | ---  |

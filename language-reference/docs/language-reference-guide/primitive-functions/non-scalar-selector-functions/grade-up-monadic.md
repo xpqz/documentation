@@ -47,7 +47,7 @@
 ```
 
 
-Note that character arrays sort differently in the Unicode and Classic Editions.
+**Note that character arrays sort differently in the Unicode and Classic Editions.**
 ```apl
       M
 Goldilocks
@@ -55,6 +55,7 @@ porridge
 Porridge   
 3 bears   
 ```
+
 
 
 

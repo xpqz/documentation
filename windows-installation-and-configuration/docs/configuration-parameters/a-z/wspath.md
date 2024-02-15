@@ -9,4 +9,4 @@ The following Windows example causes `)COPY` , `)LOAD` and `)LIB` to look first 
 WSPath=.;D:\MYWS
 ```
 
-See also Workspace search path on page 1.
+See also [Workspace search path on page 1](../../The%20APL%20Environment/Configuration%20Dialog%20Workspace%20Tab.htm#WSPath).

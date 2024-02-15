@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">AddItems</span></h1>
+
 | Applies To: | [TreeView](../a-z/treeview.md) |
 | --- | ---  |
 
-| Applies To: | [TreeView](../a-z/treeview.md) | [TreeView](../a-z/treeview.md) |  |  |
-| --- | --- | ---  |
-| [TreeView](../a-z/treeview.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to add items to a [TreeView](../a-z/treeview.md) object
@@ -21,6 +18,7 @@ This method is used to add items to a [TreeView](../a-z/treeview.md) object
 
 
 The argument to AddItems is a 3, 4 or 5-element array as follows:
+
 
 | `[1]` | Item number | Integer. |
 | --- | --- | ---  |

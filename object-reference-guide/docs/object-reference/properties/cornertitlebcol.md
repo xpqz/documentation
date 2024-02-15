@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">CornerTitleBCol</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies the colour used to fill  the area in the left corner  a [Grid](../a-z/grid.md) . This is the rectangle above the row titles and to the left of the column titles.

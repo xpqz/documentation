@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">EditImage</span></h1>
+
 | Applies To: | [ComboEx](./comboex.md) |
 | --- | ---  |
 
-| Applies To: | [ComboEx](./comboex.md) | [ComboEx](./comboex.md) |  |  |
-| --- | --- | ---  |
-| [ComboEx](./comboex.md) |  |  |
 
-
-Description
+**Description**
 
 
 Specifies whether or not the edit control portion of the ComboEx displays an image for selected items.

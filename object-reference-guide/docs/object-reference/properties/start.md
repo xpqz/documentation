@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Start</span></h1>
+
 | Applies To: | [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Circle](../a-z/circle.md) [Ellipse](../a-z/ellipse.md) | [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) |  |
-| --- | --- | ---  |
-| [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) |  |
 
-
-Description
+**Description**
 
 
 This property specifies one or more start-angles for an arc, pie-slice, or chord of a circle or ellipse. It may be used in conjunction with [End](../a-z/end.md) which specifies end angles. Angles are measured counter-clockwise from the x-axis at the centre of the object.

@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">ItemGroupMetrics</span></h1>
+
 | Applies To: | [ListView](../a-z/listview.md) |
 | --- | ---  |
 
-| Applies To: | [ListView](../a-z/listview.md) | [ListView](../a-z/listview.md) |  |  |
-| --- | --- | ---  |
-| [ListView](../a-z/listview.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property is used to specify colours and spacing elements for a [ListView](../a-z/listview.md) that is displaying its Items in groupings (see [ItemGroups](../a-z/itemgroups.md)).
 
 
 ItemGroupMetrics is a 3-item nested vector as follows:
+
 
 | `[1]` | Text Colours | 2-element vector of 3 element RGB values that specifies the colour of        the group caption and group footer respectively. |
 | --- | --- | ---  |
@@ -36,8 +34,6 @@ The following expression, coupled with the code shown in the SetGroups example, 
 
 
 
-Note that this feature only applies if Native Look and Feel 
-(see page 1)
- is enabled.
+**Note that this feature only applies if Native Look and Feel (see page 1) is enabled.**
 
 

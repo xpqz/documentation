@@ -18,7 +18,7 @@ Notice that the state indicator displays the entire .NET calling structure, and 
 
 Notice too that `IndexGen` has been started on APL thread 1 which, in this case, is associated with system thread 8752. If the client application were to call `IndexGen` on multiple system threads, this would be reflected by multiple APL threads in the workspace. This topic is discussed in further detail below.
 
-The possibility for the client to execute code in several instances of an object at the same time requires that each executing instance is separated from all the others. Each instance will be created as an unnamed object in the workspace, within the relevant appdomain and assembly namespaces.
+The possibility for the client to execute code in several instances of an object at the same time requires that each executing instance is separated from all the others. Each instance will be created as an **unnamed** object in the workspace, within the relevant appdomain and assembly namespaces.
 
 The picture below shows the workspace structure when the assembly was generated with isolation mode set to **Each assembly has its own workspace**. In this case, the AppDomain and Assembly structure is not created above the classes  in the workspace, so the workspace structure is somewhat simpler:
 

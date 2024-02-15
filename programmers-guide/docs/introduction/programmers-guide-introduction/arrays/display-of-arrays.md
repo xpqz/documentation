@@ -133,7 +133,7 @@ If the display of an array is wider than the page width, as set by the system va
 
 ## The ]display User Command
 
-The user command `]display`  illustrates the structure of an array.
+The user command `]display`   illustrates the structure of an array.
 
 ## Examples
 ```apl
@@ -237,13 +237,9 @@ A shy  or suppressed result is a result that is not automatically displayed in t
 
 See also:
 
-- Model Syntax on page 1.
+- [Model Syntax on page 1.](../../../defined-functions-and-operators/traditional-functions-and-operators/tradfns/model-syntax.md)
 
-- Shy Result on page 1.
+- [Shy Result on page 1.](../../../defined-functions-and-operators/dfns-and-dops/dfns-and-dops/shy-result.md)
 
-- Execute Expression on page 1
-
-Language Reference Guide:
-
-Execute Expression
+- [Execute Expression on page 1](../../I%20Beam%20Functions/Execute%20Expression.htm#Execute_Expression)
 .

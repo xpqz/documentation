@@ -4,18 +4,16 @@
 
 
 <h1 class="heading"><span class="name">ArcMode</span></h1>
+
 | Applies To: | [Circle](./circle.md) | [Ellipse](./ellipse.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Circle](./circle.md) [Ellipse](./ellipse.md) | [Circle](./circle.md) | [Ellipse](./ellipse.md) |  |
-| --- | --- | ---  |
-| [Circle](./circle.md) | [Ellipse](./ellipse.md) |  |
 
-
-Description
+**Description**
 
 
 This property determines how arcs are drawn. Its value is 0, 1 or 2.
+
 
 | 0 | only the arc is drawn |
 | --- | ---  |

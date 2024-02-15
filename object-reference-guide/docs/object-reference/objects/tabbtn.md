@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">TabBtn</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/TabBtn.htm) | [Children](../ChildLists/TabBtn.htm) | [Properties](../PropLists/TabBtn.htm) | [Methods](../MethodLists/TabBtn.htm) | [Events](../EventLists/TabBtn.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | To tab a [SubForm](../a-z/subform.md) . |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| Children | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| Properties | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| Methods | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| Events | [Detach](../a-z/detach.md) [ChooseFont](../a-z/choosefont.md) | [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
-| [Detach](../a-z/detach.md) | [ChooseFont](../a-z/choosefont.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 TabBtn objects are associated with [SubForm](../a-z/subform.md)s which are positioned on top of one another. When the user clicks on a TabBtn, the corresponding [SubForm](../a-z/subform.md) is brought to the top and given the focus.

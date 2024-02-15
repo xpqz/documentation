@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GetEventInfo</span></h1>
+
 | Applies To: | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |
 | --- | --- | ---  |
 
-| Applies To: | [OCXClass](../a-z/ocxclass.md) [OLEClient](../a-z/oleclient.md) | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |  |
-| --- | --- | ---  |
-| [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |  |
 
-
-Description
+**Description**
 
 
 This method is used to obtain information about a particular event or set of events supported by a COM object.
@@ -24,6 +21,7 @@ For each event supported by a COM object, the author will have registered the da
 
 
 The argument to GetEventInfo is a single item as follows:
+
 
 | `[1]` | Event name(s) | see below |
 | --- | --- | ---  |

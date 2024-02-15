@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">FirstDay</span></h1>
+
 | Applies To: | [Calendar](../a-z/calendar.md) |
 | --- | ---  |
 
-| Applies To: | [Calendar](../a-z/calendar.md) | [Calendar](../a-z/calendar.md) |  |  |
-| --- | --- | ---  |
-| [Calendar](../a-z/calendar.md) |  |  |
 
-
-Description
+**Description**
 
 
 The FirstDay property specifies the day that is considered to be the first day of the week and which appears first in the [Calendar](../a-z/calendar.md).

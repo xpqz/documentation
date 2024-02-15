@@ -4,34 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Edit</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Edit.htm) | [Children](../ChildLists/Edit.htm) | [Properties](../PropLists/Edit.htm) | [Methods](../MethodLists/Edit.htm) | [Events](../EventLists/Edit.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | Allows user to enter or edit data. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
-| Children | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
-| Properties | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
-| Methods | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
-| Events | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The value of the [Style](./style.md) property, which may be `'Single'` or `'Multi'`, determines whether the object presents a single-line data entry field or an area for viewing and editing a large block of text.
@@ -72,13 +54,13 @@ The [HScroll](./hscroll.md) property determines whether or not the data may be s
 If the [Style](./style.md) is `'Multi'`, [Text](./text.md) may set using a simple character vector, a simple matrix, or a vector of vectors. If  [Text](./text.md) is specified by a matrix or by a vector of vectors, "new-line" characters are automatically added at the end of each line in the Edit control.
 
 
-The user may insert a "new-line" character in the text by pressing Ctrl-Enter. If [Text](./text.md) was set by a matrix, it is returned as a matrix. Otherwise it is returned as a vector of vectors. "New-line" characters are not returned. If [Text](./text.md) was not specified  by `⎕WC` or  `⎕WS` it is returned  an empty matrix (`1 0⍴''`). However,  if [Text](./text.md) was not specified, but the user types and then empties the field, it is returned as an empty nested array  (`,⊂''`)
+The user may insert a "new-line" character in the text by pressing Ctrl-Enter. If [Text](./text.md) was set by a matrix, it is returned as a matrix. Otherwise it is returned as a vector of vectors. "New-line" characters are not returned. If [Text](./text.md) was not specified  by [`⎕WC`](../../Language/System%20Functions/wc.htm) or  [`⎕WS`](../../Language/System%20Functions/ws.htm) it is returned  an empty matrix (`1 0⍴''`). However,  if [Text](./text.md) was not specified, but the user types and then empties the field, it is returned as an empty nested array  (`,⊂''`)
 
 
 The [Justify](./justify.md) property determines whether the text in a multi-line Edit object is `'Left'`, `'Right'`, or `'Centre'` justified. Setting [Justify](./justify.md) to `'Centre'` or `'Right'` also forces word-wrapping and disables horizontal scrolling, whatever the value of [HScroll](./hscroll.md). Note that the keyword `'Centre'` may also be spelled `'Center'`. [Justify](./justify.md) may only be specified when the object is created using `⎕WC`.
 
 
-If [Justify](./justify.md) is `'Left'`, the [HScroll](./hscroll.md) property determines whether or not text may be scrolled horizontally. If [HScroll](./hscroll.md) is set to `¯2`, each individual line may be any length, but the object does not have a horizontal scrollbar. Sideways scrolling is achieved using the cursor keys, or by typing. If [HScroll](./hscroll.md) is `¯1`, each individual line may be of any length and the object will have a horizontal scrollbar. If [HScroll](./hscroll.md) is `0`, lines are automatically "word-wrapped" at the right edge of the object. This means that the number of lines displayed may be greater than the number of lines implied by the rows of the matrix or the number of vectors supplied. In particular, if you specify a single long vector, it will be broken up into lines for you on the display, but still returned as a single vector by `⎕WG`.
+If [Justify](./justify.md) is `'Left'`, the [HScroll](./hscroll.md) property determines whether or not text may be scrolled horizontally. If [HScroll](./hscroll.md) is set to `¯2`, each individual line may be any length, but the object does not have a horizontal scrollbar. Sideways scrolling is achieved using the cursor keys, or by typing. If [HScroll](./hscroll.md) is `¯1`, each individual line may be of any length and the object will have a horizontal scrollbar. If [HScroll](./hscroll.md) is `0`, lines are automatically "word-wrapped" at the right edge of the object. This means that the number of lines displayed may be greater than the number of lines implied by the rows of the matrix or the number of vectors supplied. In particular, if you specify a single long vector, it will be broken up into lines for you on the display, but still returned as a single vector by [`⎕WG`](../../Language/System%20Functions/wg.htm).
 
 
 The [VScroll](./vscroll.md) property determines whether or not data may be scrolled vertically and whether or not the object has a vertical scrollbar. A value of `0` inhibits scrolling; `¯2` means scrollable, without a scrollbar; `¯1` means scrollable with a scrollbar. [VScroll](./vscroll.md) may only be set when the object is created and may not subsequently be changed.
@@ -90,12 +72,12 @@ The setting of [Justify](./justify.md) forces word-wrapping.
 The [SelText](./seltext.md) property identifies the portion of the text that is selected. It may be used to pre-select (and highlight) a part of the text, or to report the part of the text selected by the user. [SelText](./seltext.md) is a 2-element integer vector which specifies the start and end of the selected area. Its structure depends upon the nature of the data specified by [Text](./text.md). See the description of [SelText](./seltext.md) for details.
 
 
-If the user changes any data in the field and attempts to change focus to another object, the Edit object will generate a [Change](./change.md) event. You can use this to validate the new data in the field.
+If the user changes any data in the field **and** attempts to change focus to another object, the Edit object will generate a [Change](./change.md) event. You can use this to validate the new data in the field.
 
 #### Note
 
 
-For full functionality (in particular, for the [Cue](./cue.md) property to apply), the Edit object requires that  Native Look and Feel 
+For full functionality (in particular, for the [Cue](./cue.md) property to apply), the Edit object requires that  [Native Look and Feel ](../../Miscellaneous/Windows%20XP%20Look%20and%20Feel.htm)
 (see page 1)
  is enabled.
 

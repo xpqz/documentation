@@ -15,6 +15,6 @@ The result `R` is 1 if the operation succeeded or 0 if it failed.
 
 
 
-Windows only.
+**Windows only.**
 
 

@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Poly</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Poly.htm) | [Children](../ChildLists/Poly.htm) | [Properties](../PropLists/Poly.htm) | [Methods](../MethodLists/Poly.htm) | [Events](../EventLists/Poly.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | A graphical object used to draw lines, polygons, and filled areas. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Children | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Properties | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Methods | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Events | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The [Points](./points.md) property specifies one or more sets of co-ordinates through which one or more lines are drawn. The resulting polygon(s) may also be filled.
@@ -34,7 +26,7 @@ The [Points](./points.md) property specifies one or more sets of co-ordinates th
 [FStyle](./fstyle.md) specifies whether or not the polygon(s) are filled, and if so, how. For a solid fill ([FStyle](./fstyle.md) 0), [FillCol](./fillcol.md) defines the fill colour used. For a pattern fill ([FStyle](./fstyle.md) 1-6) [FillCol](./fillcol.md) defines the colour of the hatch lines and [BCol](./bcol.md) the colour of the areas between them.
 
 
-Note that if you specify filling, you do not have to define a closed polygon. The first and last points will automatically be joined for you if necessary.
+Note that if you specify filling, you do not have to define a **closed** polygon. The first and last points will automatically be joined for you if necessary.
 
 
 The value of [Dragable](./dragable.md) determines whether or not the object can be dragged. The value of [AutoConf](./autoconf.md) determines whether or not the Poly object is resized when its parent is resized.

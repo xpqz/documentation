@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SysMenu</span></h1>
+
 | Applies To: | [Form](./form.md) | [HTMLRenderer](./htmlrenderer.md) | [SubForm](./subform.md) |
 | --- | --- | --- | ---  |
 
-| Applies To: | [Form](./form.md) [HTMLRenderer](./htmlrenderer.md) [SubForm](./subform.md) | [Form](./form.md) | [HTMLRenderer](./htmlrenderer.md) | [SubForm](./subform.md) |
-| --- | --- | ---  |
-| [Form](./form.md) | [HTMLRenderer](./htmlrenderer.md) | [SubForm](./subform.md) |
 
-
-Description
+**Description**
 
 
 This property determines whether or not a [Form](./form.md) or [SubForm](./subform.md) has a "System Menu " box in the top-left corner of its border. Pressing the left mouse button in this box brings up the standard window control menu for the [Form](./form.md). Double clicking the box closes the [Form](./form.md).

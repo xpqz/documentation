@@ -4,18 +4,15 @@
 
 
 <h1 class="heading"><span class="name">Today</span></h1>
+
 | Applies To: | [Calendar](../a-z/calendar.md) | [DateTimePicker](../a-z/datetimepicker.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Calendar](../a-z/calendar.md) [DateTimePicker](../a-z/datetimepicker.md) | [Calendar](../a-z/calendar.md) | [DateTimePicker](../a-z/datetimepicker.md) |  |
-| --- | --- | ---  |
-| [Calendar](../a-z/calendar.md) | [DateTimePicker](../a-z/datetimepicker.md) |  |
+
+**Description**
 
 
-Description
-
-
-The Today property is an IDN that specifies today's date in a [Calendar](../a-z/calendar.md) or [DateTimePicker](../a-z/datetimepicker.md) object. Its default value is the current date that is set on your computer.
+The Today property is an [IDN](../Miscellaneous/International%20Day%20Number.htm) that specifies today's date in a [Calendar](../a-z/calendar.md) or [DateTimePicker](../a-z/datetimepicker.md) object. Its default value is the current date that is set on your computer.
 
 
 See also [CircleToday](../a-z/circletoday.md) and [HasToday](../a-z/hastoday.md) properties.

@@ -1,6 +1,6 @@
 # APL_COMPLEX_AS_V12
 
-Support for Complex Numbers means that some functions produce different results from older Versions of Dyalog APL. If APL_COMPLEX_AS_V12 is set to 1 the behaviour of code developed using Version 12.1 or earlier will be unchanged; in particular:
+Support for Complex Numbers means that some functions produce different results from older Versions of Dyalog APL. If **APL_COMPLEX_AS_V12** is set to 1 the behaviour of code developed using Version 12.1 or earlier will be unchanged; in particular:
 
 - Power (`*` ) and logarithm (`⍟` ) do not produce Complex Numbers as results from non-complex arguments.
 - `⎕VFI` will not honour "J" or "j" as part of a number.

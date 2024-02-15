@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">WeekNumbers</span></h1>
+
 | Applies To: | [Calendar](./calendar.md) | [DateTimePicker](./datetimepicker.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Calendar](./calendar.md) [DateTimePicker](./datetimepicker.md) | [Calendar](./calendar.md) | [DateTimePicker](./datetimepicker.md) |  |
-| --- | --- | ---  |
-| [Calendar](./calendar.md) | [DateTimePicker](./datetimepicker.md) |  |
 
-
-Description
+**Description**
 
 
 The WeekNumbers property specifies whether or not a [Calendar](./calendar.md)

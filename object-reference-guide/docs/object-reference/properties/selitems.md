@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SelItems</span></h1>
+
 | Applies To: | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [Grid](../a-z/grid.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
 | --- | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [Grid](../a-z/grid.md) [List](../a-z/list.md) [ListView](../a-z/listview.md) [TreeView](../a-z/treeview.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [Grid](../a-z/grid.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
-| --- | --- | ---  |
-| [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [Grid](../a-z/grid.md) |
-| [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
 
-
-Description
+**Description**
 
 
 This property determines which (if any) of the items in an object are currently selected and highlighted. Except in a Grid, it is a Boolean vector with one element per item in the list. A value of 1 means "selected"; 0 means "not selected".

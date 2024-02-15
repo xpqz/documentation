@@ -4,29 +4,16 @@
 
 
 <h1 class="heading"><span class="name">TCPSocket</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/TCPSocket.htm) | [Children](../ChildLists/TCPSocket.htm) | [Properties](../PropLists/TCPSocket.htm) | [Methods](../MethodLists/TCPSocket.htm) | [Events](../EventLists/TCPSocket.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The TCPSocket object provides an interface to TCP/IP. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [TCPSend](../a-z/tcpsend.md) [TCPGetHostID](../a-z/tcpgethostid.md) [TCPSendPicture](../a-z/tcpsendpicture.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [TCPSend](../a-z/tcpsend.md) | [TCPGetHostID](../a-z/tcpgethostid.md) | [TCPSendPicture](../a-z/tcpsendpicture.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [TCPSend](../a-z/tcpsend.md) | [TCPGetHostID](../a-z/tcpgethostid.md) |
-| [TCPSendPicture](../a-z/tcpsendpicture.md) | [Wait](../a-z/wait.md) |  |
-| Children | [Detach](../a-z/detach.md) [TCPSend](../a-z/tcpsend.md) [TCPGetHostID](../a-z/tcpgethostid.md) [TCPSendPicture](../a-z/tcpsendpicture.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [TCPSend](../a-z/tcpsend.md) | [TCPGetHostID](../a-z/tcpgethostid.md) | [TCPSendPicture](../a-z/tcpsendpicture.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [TCPSend](../a-z/tcpsend.md) | [TCPGetHostID](../a-z/tcpgethostid.md) |
-| [TCPSendPicture](../a-z/tcpsendpicture.md) | [Wait](../a-z/wait.md) |  |
-| Properties | [Detach](../a-z/detach.md) [TCPSend](../a-z/tcpsend.md) [TCPGetHostID](../a-z/tcpgethostid.md) [TCPSendPicture](../a-z/tcpsendpicture.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [TCPSend](../a-z/tcpsend.md) | [TCPGetHostID](../a-z/tcpgethostid.md) | [TCPSendPicture](../a-z/tcpsendpicture.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [TCPSend](../a-z/tcpsend.md) | [TCPGetHostID](../a-z/tcpgethostid.md) |
-| [TCPSendPicture](../a-z/tcpsendpicture.md) | [Wait](../a-z/wait.md) |  |
-| Methods | [Detach](../a-z/detach.md) [TCPSend](../a-z/tcpsend.md) [TCPGetHostID](../a-z/tcpgethostid.md) [TCPSendPicture](../a-z/tcpsendpicture.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [TCPSend](../a-z/tcpsend.md) | [TCPGetHostID](../a-z/tcpgethostid.md) | [TCPSendPicture](../a-z/tcpsendpicture.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [TCPSend](../a-z/tcpsend.md) | [TCPGetHostID](../a-z/tcpgethostid.md) |
-| [TCPSendPicture](../a-z/tcpsendpicture.md) | [Wait](../a-z/wait.md) |  |
-| Events | [Detach](../a-z/detach.md) [TCPSend](../a-z/tcpsend.md) [TCPGetHostID](../a-z/tcpgethostid.md) [TCPSendPicture](../a-z/tcpsendpicture.md) [Wait](../a-z/wait.md) | [Detach](../a-z/detach.md) | [TCPSend](../a-z/tcpsend.md) | [TCPGetHostID](../a-z/tcpgethostid.md) | [TCPSendPicture](../a-z/tcpsendpicture.md) | [Wait](../a-z/wait.md) |  |
-| [Detach](../a-z/detach.md) | [TCPSend](../a-z/tcpsend.md) | [TCPGetHostID](../a-z/tcpgethostid.md) |
-| [TCPSendPicture](../a-z/tcpsendpicture.md) | [Wait](../a-z/wait.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The TCPSocket object provides an event-driven mechanism to communicate with

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">BandBorders</span></h1>
+
 | Applies To: | [CoolBar](./coolbar.md) |
 | --- | ---  |
 
-| Applies To: | [CoolBar](./coolbar.md) | [CoolBar](./coolbar.md) |  |  |
-| --- | --- | ---  |
-| [CoolBar](./coolbar.md) |  |  |
 
-
-Description
+**Description**
 
 
 The BandBorders property specifies whether or not narrow lines are drawn to separate adjacent bands in a [CoolBar](./coolbar.md).

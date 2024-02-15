@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Locale</span></h1>
+
 | Applies To: | [OLEClient](./oleclient.md) |
 | --- | ---  |
 
-| Applies To: | [OLEClient](./oleclient.md) | [OLEClient](./oleclient.md) |  |  |
-| --- | --- | ---  |
-| [OLEClient](./oleclient.md) |  |  |
 
-
-Description
+**Description**
 
 
 The Locale property specifies the language in which the OLE server, attached to an OLEClient, exposes its methods (functions) and properties (variables).
@@ -25,10 +22,11 @@ When you create an OLEClient object, Dyalog APL/W requests the default Type Libr
 Locale is an integer; for example, the value 9 specifies English and the value 12 specifies French.
 
 
-Locale may only be specified by the `⎕WC` statement that is used to create the OLEClient; it may not subsequently be changed using `⎕WS`. A table of commonly used Locale values is given below.
+Locale may **only** be specified by the `⎕WC` statement that is used to create the OLEClient; it may not subsequently be changed using `⎕WS`. A table of commonly used Locale values is given below.
 
 
 Note that Dyalog cannot guarantee that you will actually be given the Locale you specify. This is a function of your specific installation and the OLE server in question. However, Dyalog believes that for Microsoft products, it is a fairly safe bet that the US/English interface will be available in most countries.
+
 
 | Language | Locale |
 | --- | ---  |

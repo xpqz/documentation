@@ -4,22 +4,19 @@
 
 
 <h1 class="heading"><span class="name">OKButton</span></h1>
+
 | Applies To: | [Form](../a-z/form.md) |
 | --- | ---  |
 
-| Applies To: | [Form](../a-z/form.md) | [Form](../a-z/form.md) |  |  |
-| --- | --- | ---  |
-| [Form](../a-z/form.md) |  |  |
 
-
-Description
+**Description**
 
 
 This is a Boolean property that specifies whether or not an [OK] button appears in the title bar of a [Form](../a-z/form.md). Its default value is 0.
 
 
 
-OKButton applies only to PocketAPL. In versions of Dyalog APL for other platforms, it has no effect.
+**OKButton applies only to PocketAPL. In versions of Dyalog APL for other platforms, it has no effect.**
 
 
 OKButton may only be specified when the [Form](../a-z/form.md) is created using `⎕WC`; you cannot subsequently change its value.

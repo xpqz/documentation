@@ -4,19 +4,16 @@
 
 
 <h1 class="heading"><span class="name">LStyle</span></h1>
+
 | Applies To: | [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Locator](../a-z/locator.md) | [Poly](../a-z/poly.md) | [Rect](../a-z/rect.md) |
 | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [Circle](../a-z/circle.md) [Ellipse](../a-z/ellipse.md) [Locator](../a-z/locator.md) [Poly](../a-z/poly.md) [Rect](../a-z/rect.md) | [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Locator](../a-z/locator.md) | [Poly](../a-z/poly.md) | [Rect](../a-z/rect.md) |  |
-| --- | --- | ---  |
-| [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) | [Locator](../a-z/locator.md) |
-| [Poly](../a-z/poly.md) | [Rect](../a-z/rect.md) |  |
 
-
-Description
+**Description**
 
 
 This property determines the type of line used to draw a graphics object. It takes one of the following integer values, or, if the object contains more than one component, a vector of such values.
+
 
 | 0 | solid line |
 | --- | ---  |

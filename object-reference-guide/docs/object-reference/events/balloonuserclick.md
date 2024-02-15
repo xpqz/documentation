@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">BalloonUserClick</span></h1>
+
 | Applies To: | [SysTrayItem](../a-z/systrayitem.md) |
 | --- | ---  |
 
-| Applies To: | [SysTrayItem](../a-z/systrayitem.md) | [SysTrayItem](../a-z/systrayitem.md) |  |  |
-| --- | --- | ---  |
-| [SysTrayItem](../a-z/systrayitem.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported by an [SysTrayItem](../a-z/systrayitem.md) object when a BalloonTip is dismissed because the user clicked the mouse in the body of the BalloonTip. It is not reported when the user clicks the **close** (X) button.
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">LocalAddr</span></h1>
+
 | Applies To: | [TCPSocket](../a-z/tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](../a-z/tcpsocket.md) | [TCPSocket](../a-z/tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](../a-z/tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 The LocalAddr property is a character vector that specifies the IP address of your computer. Its default value is `'0.0.0.0'`.

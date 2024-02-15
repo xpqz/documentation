@@ -313,4 +313,4 @@ The bad news is, our user is locked out of the whole system, even though it may 
   [24] END:
 ```
 
-Suppose the user runs this version of `REPORT` and chooses `REP3`. When the unexpected error occurs in `DIV`, APL will check its trap specifications, and see that the relevant trap was set in `REPORT` with a cut-back code. APL therefore cuts back the stack to the function in which the trap was localised, THEN takes the specified action. Looking at the SI stack above, we can see that APL must jump out of `DIV`, then`REP3`, then `⍎`, to return to line 7 of `REPORT`; THEN it takes the specified action.
+Suppose the user runs this version of `REPORT` and chooses `REP3`. When the unexpected error occurs in `DIV`, APL will check its trap specifications, and see that the relevant trap was set in `REPORT` with a cut-back code. APL therefore **cuts back the stack to the function in which the trap was localised, THEN takes the specified action**. Looking at the SI stack above, we can see that APL must jump out of `DIV`, then`REP3`, then `⍎`, to return to line 7 of `REPORT`; THEN it takes the specified action.

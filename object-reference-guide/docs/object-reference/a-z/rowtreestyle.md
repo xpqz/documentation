@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">RowTreeStyle</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 RowTreeStyle specifies the visible attributes of the tree displayed in the Row titles of a [Grid](./grid.md).
 
 
 The value of the RowTreeStyle property is a character vector chosen from the following :
+
 
 | `'LinesOnly'` | Only the lines of the tree structure are drawn. |
 | --- | ---  |

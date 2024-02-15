@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">SetItemImage</span></h1>
+
 | Applies To: | [TreeView](./treeview.md) |
 | --- | ---  |
 
-| Applies To: | [TreeView](./treeview.md) | [TreeView](./treeview.md) |  |  |
-| --- | --- | ---  |
-| [TreeView](./treeview.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to allocate a picture icon to a particular item in a [TreeView](./treeview.md) object.
 
 
 The argument to SetItemImage is a 2-element array as follows:
+
 
 | `[1]` | Item number | Integer. |
 | --- | --- | ---  |

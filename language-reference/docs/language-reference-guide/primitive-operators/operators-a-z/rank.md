@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Rank</span><span class="command">R←{X}(f⍤B)Y</span></h1>
 
-Classic Edition:  the symbol `⍤` is not available in Classic Edition, and the Rank operator is instead represented by `⎕U2364`.
+**Classic Edition:**  the symbol `⍤` is not available in Classic Edition, and the Rank operator is instead represented by `⎕U2364`.
 
 
 The Rank operator `⍤` applies monadic function `f` successively to sub-arrays of `Y`, or dyadic function `f` between sub-arrays of `X` and `Y`. Sub-arrays are selected by right operand `B`.

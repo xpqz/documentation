@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">TabJustify</span></h1>
+
 | Applies To: | [TabControl](../a-z/tabcontrol.md) |
 | --- | ---  |
 
-| Applies To: | [TabControl](../a-z/tabcontrol.md) | [TabControl](../a-z/tabcontrol.md) |  |  |
-| --- | --- | ---  |
-| [TabControl](../a-z/tabcontrol.md) |  |  |
 
-
-Description
+**Description**
 
 
 The TabJustify property specifies, the positions at which the picture and caption are drawn within each tab or button implemented by a [TabButton](../a-z/tabbutton.md) in a TabControl object.

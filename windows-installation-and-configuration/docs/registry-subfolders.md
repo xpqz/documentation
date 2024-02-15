@@ -98,7 +98,3 @@ The Array Editor stores its settings in the following registry sub-folder:
 ```apl
 HKEY_CURRENT_USER\Software\DavidLiebtag.com\Array Editor\1.1\Options
 ```
-```apl
-HKEY_CURRENT_USER\Software\DavidLiebtag.com\Array Editor\1.1\
-                                            Options
-```

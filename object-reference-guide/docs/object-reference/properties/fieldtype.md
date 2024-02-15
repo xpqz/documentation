@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">FieldType</span></h1>
+
 | Applies To: | [ButtonEdit](../a-z/buttonedit.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [Label](../a-z/label.md) | [Spinner](../a-z/spinner.md) |
 | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [ButtonEdit](../a-z/buttonedit.md) [DateTimePicker](../a-z/datetimepicker.md) [Edit](../a-z/edit.md) [Label](../a-z/label.md) [Spinner](../a-z/spinner.md) | [ButtonEdit](../a-z/buttonedit.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [Label](../a-z/label.md) | [Spinner](../a-z/spinner.md) |  |
-| --- | --- | ---  |
-| [ButtonEdit](../a-z/buttonedit.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) |
-| [Label](../a-z/label.md) | [Spinner](../a-z/spinner.md) |  |
 
-
-Description
+**Description**
 
 
 The FieldType property controls data conversion, formatting and validation.
@@ -29,6 +25,7 @@ FieldType is a character vector. If it is empty (the default), the [Text](../a-z
 
 For a [DateTimePicker](../a-z/datetimepicker.md), FieldType may be one of the following:
 
+
 | `'Date'` | Uses Windows "short date" format |
 | --- | ---  |
 | `'DateCentury'` | Uses Windows "short date" format but with a 4-digit year regardless of user preference |
@@ -43,6 +40,7 @@ The value of the date or time is represented by the [DateTime](../a-z/datetime.m
 
 
 For an [Edit](../a-z/edit.md), [Label](../a-z/label.md) and [Spinner](../a-z/spinner.md), if FieldType is defined, the contents of the object are defined by its [Value](../a-z/value.md) property, which is a number, rather than by its [Text](../a-z/text.md) property, and special formatting and validation rules are applied. FieldType may be one of the following :
+
 
 | `'Numeric'` | Simple numeric formatting and validation |
 | --- | ---  |

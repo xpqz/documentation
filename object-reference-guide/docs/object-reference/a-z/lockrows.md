@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">LockRows</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to lock one or more Rows of a [Grid](./grid.md).
@@ -20,6 +17,7 @@ as specified by the [RowTitleDepth](./rowtitledepth.md) property.
 
 
 The argument to LockRows is a 1 or 2-element vector as follows.
+
 
 | `[1]` | Row(s) | integer scalar, vector or matrix |
 | --- | --- | ---  |

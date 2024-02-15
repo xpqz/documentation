@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">FullRowSelect</span></h1>
+
 | Applies To: | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ListView](../a-z/listview.md) [TreeView](../a-z/treeview.md) | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |  |
-| --- | --- | ---  |
-| [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |  |
 
-
-Description
+**Description**
 
 
 The FullRowSelect property specifies whether or not the entire row is highlighted when an item in a [ListView](../a-z/listview.md) or a [TreeView](../a-z/treeview.md) is selected.

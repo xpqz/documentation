@@ -8,10 +8,11 @@
 `⎕PROFILE` facilitates the profiling of either CPU consumption or elapsed time for a workspace. It does so by retaining time measurements collected for APL functions/operators and function/operator lines. `⎕PROFILE` is used to both control the state of profiling and retrieve the collected profiling data.
 
 
-See also: [Application Tuning Guide](https://docs.dyalog.com/18.0/Application Tuning Guide.pdf).
+See also: [Application Tuning Guide](https://docs.dyalog.com/18.0/Application%20Tuning%20Guide.pdf).
 
 
 `Y` specifies the action to perform and any options for that action, if applicable. `Y` is case-insensitive. Note that the result `R` is in some cases shy.
+
 
 | Use | Description |
 | --- | ---  |
@@ -34,6 +35,7 @@ See also: [Application Tuning Guide](https://docs.dyalog.com/18.0/Application Tu
 
 
 For most actions, the result of `⎕PROFILE` is its current state and contains:
+
 
 | [1] | character vector indicating the `⎕PROFILE` state having one of the values `'active'` or `'inactive'` |
 | --- | ---  |
@@ -105,6 +107,7 @@ clear ws
 
 Retrieves the collected profiling data. If the optional left argument `X` is omitted, the result is a matrix with the following columns:
 
+
 | [;1] | function name |
 | --- | ---  |
 | [;2] | function line number or `⍬` for a whole function entry |
@@ -134,6 +137,7 @@ If column 2 is included in the result, the value `¯1` is used instead of `⍬` 
 
 
 Retrieve the collected profiling data in tree format:
+
 
 | [;1] | depth level |
 | --- | ---  |

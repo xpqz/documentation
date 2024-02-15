@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">RowChange</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to change the data in a row of a [Grid](./grid.md) object.
 
 
 The argument to RowChange is a 2-element array as follows.
+
 
 | `[1]` | Row number | integer |
 | --- | --- | ---  |

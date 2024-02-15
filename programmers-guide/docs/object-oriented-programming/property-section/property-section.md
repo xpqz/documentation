@@ -28,19 +28,19 @@ Numbered and Keyed Properties are designed to allow APL to perform selections an
 Within the body of a Property Section there may be:
 
 - one or more `:Access` statements 
-- a single PropertyGet function.
-- a single PropertySet function
-- a single PropertyShape function
+- a single [PropertyGet](propertyget-function-syntax.md) function.
+- a single [PropertySet](propertyset-function-syntax.md) function
+- a single [PropertyShape](propertyshape-function-syntax.md) function
 
 The three functions are identified by case-independent names `Get`, `Set` and `Shape`.
 
 ### Errors
 
-When a Class is fixed by the Editor or by `⎕FIX`, APL checks the validity of each Property section and the syntax of PropertyGet, PropertySet and PropertyShape functions within them.
+When a Class is fixed by the Editor or by `⎕FIX`, APL checks the validity of each Property section and the syntax of [PropertyGet](propertyget-function-syntax.md), [PropertySet](propertyset-function-syntax.md) and [PropertyShape](propertyshape-function-syntax.md) functions within them.
 
 - You may not specify a name which is the same as one of the keywords.
-- There must be at least a PropertyGet, or a PropertySet or a PropertyShape function defined.
-- You may only define a PropertyShape function if the Property is Numbered.
+- There must be at least a [PropertyGet](propertyget-function-syntax.md), or a [PropertySet](propertyset-function-syntax.md) or a [PropertyShape](propertyshape-function-syntax.md) function defined.
+- You may only define a [PropertyShape](propertyshape-function-syntax.md) function if the Property is Numbered.
 
 If anything is wrong,  the Class is not fixed and an error message is displayed in the Status Window. For example:
 ```apl

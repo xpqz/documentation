@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">CustomColors</span></h1>
+
 | Applies To: | [ColorButton](../a-z/colorbutton.md) |
 | --- | ---  |
 
-| Applies To: | [ColorButton](../a-z/colorbutton.md) | [ColorButton](../a-z/colorbutton.md) |  |  |
-| --- | --- | ---  |
-| [ColorButton](../a-z/colorbutton.md) |  |  |
 
-
-Description
+**Description**
 
 
 The CustomColors property is a 1-row, 16-column nested matrix which specifies the RGB values of the colours displayed in the *Custom colors* section of the Windows colour selection dialog box when displayed by a [ColorButton](../a-z/colorbutton.md) object.

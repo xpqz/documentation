@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Encoding</span></h1>
+
 | Applies To: | [TCPSocket](../a-z/tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](../a-z/tcpsocket.md) | [TCPSocket](../a-z/tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](../a-z/tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 The Encoding property is a character vector that specifies how character data
@@ -27,6 +24,7 @@ The possible values are `'None'`,
 
 Unicode Edition
 
+
 | Style | Encoding | Description |
 | --- | ---  |
 | `'Raw'` | 'None' | Not applicable. Only integer data may be transmitted/received. |
@@ -39,6 +37,7 @@ Unicode Edition
 
 
 Classic Edition
+
 
 | Style | Encoding | Description |
 | --- | ---  |

@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Circle</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Circle.htm) | [Children](../ChildLists/Circle.htm) | [Properties](../PropLists/Circle.htm) | [Methods](../MethodLists/Circle.htm) | [Events](../EventLists/Circle.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | A Graphical object to draw circles, arcs, and pie-slices. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Children | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Properties | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Methods | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
-| Events | [Detach](./detach.md) | [Detach](./detach.md) |  |  |
-| [Detach](./detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The [Points](./points.md) property contains the co-ordinates of the centre of the circle. The size of the circle is determined by the [Radius](./radius.md) property. This specifies the radius along the x-axis, the height is calculated so that the object is circular.
@@ -35,6 +27,7 @@ round and perfectly centred. The default value is 0 (no adjustment is made).
 The [Start](./start.md) and/or [End](./end.md) properties are used to draw partial circles. They specify start and end angles respectively, measuring from the x-axis in a counter-clockwise direction and are expressed in radians. The type of arc is controlled by [ArcMode](./arcmode.md) as follows :
 
 #### ArcMode Effect
+
 
 | 0 | An arc is drawn from [Start](./start.md) to [End](./end.md) . |
 | --- | ---  |

@@ -10,6 +10,7 @@
 
 The result `R` is a 4 element vector whose elements are as follows.
 
+
 | `[1]` | `U` | a unitary matrix |
 | --- | --- | ---  |
 | `[2]` | `S` | a diagonal matrix |

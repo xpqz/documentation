@@ -36,7 +36,7 @@ A Property is defined by a `:Property ... :EndProperty` section in a Class Scrip
 
 Within the body of a Property Section there may be:
 
-- one or more `:Access` statements which must appear first in the body of the Property.
+- one or more `:Access` statements which **must appear first** in the body of the Property.
 - a single PropertyGet function.
 - a single PropertySet function
 - a single PropertyShape function

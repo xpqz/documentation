@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">LateBind</span></h1>
+
 | Applies To: | [OLEClient](../a-z/oleclient.md) | [OLEServer](../a-z/oleserver.md) |
 | --- | --- | ---  |
 
-| Applies To: | [OLEClient](../a-z/oleclient.md) [OLEServer](../a-z/oleserver.md) | [OLEClient](../a-z/oleclient.md) | [OLEServer](../a-z/oleserver.md) |  |
-| --- | --- | ---  |
-| [OLEClient](../a-z/oleclient.md) | [OLEServer](../a-z/oleserver.md) |  |
 
-
-Description
+**Description**
 
 
 

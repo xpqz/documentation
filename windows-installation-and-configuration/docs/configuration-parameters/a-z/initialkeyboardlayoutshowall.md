@@ -4,4 +4,4 @@ This Boolean parameter specifies whether or not all installed keyboards are list
 
 See also Show keyboards for all Languages on page 1.
 
-Unicode Edition only.
+**Unicode Edition only.**

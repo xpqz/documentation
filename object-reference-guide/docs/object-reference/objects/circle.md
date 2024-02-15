@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Circle</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Circle.htm) | [Children](../ChildLists/Circle.htm) | [Properties](../PropLists/Circle.htm) | [Methods](../MethodLists/Circle.htm) | [Events](../EventLists/Circle.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | A Graphical object to draw circles, arcs, and pie-slices. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Children | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Events | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The [Points](../a-z/points.md) property contains the co-ordinates of the centre of the circle. The size of the circle is determined by the [Radius](../a-z/radius.md) property. This specifies the radius along the x-axis, the height is calculated so that the object is circular.
@@ -35,6 +27,7 @@ round and perfectly centred. The default value is 0 (no adjustment is made).
 The [Start](../a-z/start.md) and/or [End](../a-z/end.md) properties are used to draw partial circles. They specify start and end angles respectively, measuring from the x-axis in a counter-clockwise direction and are expressed in radians. The type of arc is controlled by [ArcMode](../a-z/arcmode.md) as follows :
 
 #### ArcMode Effect
+
 
 | 0 | An arc is drawn from [Start](../a-z/start.md) to [End](../a-z/end.md) . |
 | --- | ---  |

@@ -3,21 +3,19 @@
 
 
 <h1 class="heading"><span class="name">AnimOpen</span></h1>
+
 | Applies To: | [Animation](../a-z/animation.md) |
 | --- | ---  |
 
-| Applies To: | [Animation](../a-z/animation.md) | [Animation](../a-z/animation.md) |  |  |
-| --- | --- | ---  |
-| [Animation](../a-z/animation.md) |  |  |
 
-
-Description
+**Description**
 
 
 The AnimOpen method opens an AVI file in an Animation object.
 
 
 The argument to AnimOpen is a 1 or 2-element array as follows:
+
 
 | `[1]` | File | character vector |
 | --- | --- | ---  |

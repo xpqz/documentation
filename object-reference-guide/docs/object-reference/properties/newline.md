@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">NewLine</span></h1>
+
 | Applies To: | [CoolBand](../a-z/coolband.md) |
 | --- | ---  |
 
-| Applies To: | [CoolBand](../a-z/coolband.md) | [CoolBand](../a-z/coolband.md) |  |  |
-| --- | --- | ---  |
-| [CoolBand](../a-z/coolband.md) |  |  |
 
-
-Description
+**Description**
 
 
 The NewLine property specifies whether or not a [CoolBand](../a-z/coolband.md) occupies the same row as an existing [CoolBand](../a-z/coolband.md), or is displayed on a new line within its [CoolBar](../a-z/coolbar.md) parent.

@@ -1,6 +1,6 @@
 # Operators Summarised
 
-Table 1 and Table 1 below summarise the Monadic and Dyadic primitive operators whose detailed descriptions  follow in alphabetical order in this section.
+[Table 1](#MonadicOperators) and [Table 1](#DyadicOperators) below summarise the Monadic and Dyadic primitive operators whose detailed descriptions  follow in alphabetical order in this section.
 
 Some operators may include an axis specification (indicated `[]`in the tables). Note that in these case `⎕IO` is an implicit argument of the derived function.
 

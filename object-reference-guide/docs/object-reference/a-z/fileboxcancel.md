@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">FileBoxCancel</span></h1>
+
 | Applies To: | [BrowseBox](./browsebox.md) | [FileBox](./filebox.md) |
 | --- | --- | ---  |
 
-| Applies To: | [BrowseBox](./browsebox.md) [FileBox](./filebox.md) | [BrowseBox](./browsebox.md) | [FileBox](./filebox.md) |  |
-| --- | --- | ---  |
-| [BrowseBox](./browsebox.md) | [FileBox](./filebox.md) |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when a [FileBox](./filebox.md) is closed because the user has pressed the "Cancel" button or closed it.
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 3-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 3-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

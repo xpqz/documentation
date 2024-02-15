@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">URL</span></h1>
+
 | Applies To: | [HTMLRenderer](./htmlrenderer.md) |
 | --- | ---  |
 
-| Applies To: | [HTMLRenderer](./htmlrenderer.md) | [HTMLRenderer](./htmlrenderer.md) |  |  |
-| --- | --- | ---  |
-| [HTMLRenderer](./htmlrenderer.md) |  |  |
 
-
-Description
+**Description**
 
 
 The URL property is a character vector that  specifies the url of a resource to be requested by the [HTMLRenderer](./htmlrenderer.md). Its default value is an empty character vector.

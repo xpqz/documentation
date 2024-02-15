@@ -24,7 +24,7 @@ Periodically, APL checks the existence of all of the system threads in the inter
 
 In these cases, all calls to Microsoft .NET are initiated by Dyalog APL. However, these calls may well result in calls being made back from .NET into APL.
 
-When you make a .NET call from APL thread 0, the .NET call is run on the same system thread that is running APL itself.
+When you make a .NET call from APL thread 0, the .NET call is run on **the same system thread** that is running APL itself.
 
 When you make a .NET call from any other APL thread, the .NET call is run on a different system thread. Once again, the correspondence between the APL thread number and the associated system thread is maintained (for the duration of the APL thread) so that there are no thread/GUI ownership problems. Furthermore, APL callbacks invoked by .NET calls back into APL will automatically be routed to the appropriate APL thread. Notice that, unlike a call to a DLL via `⎕NA`, there is no way to control whether or not the system uses a different system thread for a .NET call. It will always do so if called from an APL thread other than APL thread 0.
 

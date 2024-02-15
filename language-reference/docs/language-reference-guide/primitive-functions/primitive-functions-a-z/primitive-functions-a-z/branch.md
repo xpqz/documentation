@@ -10,6 +10,7 @@
 
 The following distinct usages of the branch function occur:
 
+
 |  | Entered in a Statement in a Defined Function | Entered in Immediate Execution Mode |
 | --- | --- | ---  |
 | `→LINE` | Continue with the specific line | Restart execution at the specific line of the most recently suspended function |
@@ -56,6 +57,7 @@ In general it is better to branch to a LABEL than to a line number.  A label occ
 
 
 The previous examples illustrate unconditional branching. There are numerous APL idioms which result in conditional branching. Some popular idioms are identified in the following table:
+
 
 | Branch Expression | Comment |
 | --- | ---  |

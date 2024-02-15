@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">LockColumns</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to lock one or more columns of a [Grid](../a-z/grid.md) object. However, LockColumns is not supported in combination with hierarchical
@@ -22,6 +19,7 @@ column titles as specified by the [ColTitleDepth](../a-z/coltitledepth.md) prop
 
 
 The argument to LockColumns is a 1 or 2-element vector as follows.
+
 
 | `[1]` | Column(s) | integer scalar, vector or matrix |
 | --- | --- | ---  |

@@ -4,64 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Grid</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Grid.htm) | [Children](../ChildLists/Grid.htm) | [Properties](../PropLists/Grid.htm) | [Methods](../MethodLists/Grid.htm) | [Events](../EventLists/Grid.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | Spreadsheet object for displaying and editing data. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [DelRow](./delrow.md) [DelCol](./delcol.md) [SetCellType](./setcelltype.md) [RowChange](./rowchange.md) [ColChange](./colchange.md) [Undo](./undo.md) [SetCellSet](./setcellset.md) [RowSetVisibleDepth](./rowsetvisibledepth.md) [ColSorted](./colsorted.md) [DuplicateRow](./duplicaterow.md) [DuplicateColumn](./duplicatecolumn.md) [CellFromPoint](./cellfrompoint.md) [GetCellRect](./getcellrect.md) [LockRows](./lockrows.md) [LockColumns](./lockcolumns.md) [AddComment](./addcomment.md) [DelComment](./delcomment.md) [GetComment](./getcomment.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [DelRow](./delrow.md) | [DelCol](./delcol.md) | [SetCellType](./setcelltype.md) | [RowChange](./rowchange.md) | [ColChange](./colchange.md) | [Undo](./undo.md) | [SetCellSet](./setcellset.md) | [RowSetVisibleDepth](./rowsetvisibledepth.md) | [ColSorted](./colsorted.md) | [DuplicateRow](./duplicaterow.md) | [DuplicateColumn](./duplicatecolumn.md) | [CellFromPoint](./cellfrompoint.md) | [GetCellRect](./getcellrect.md) | [LockRows](./lockrows.md) | [LockColumns](./lockcolumns.md) | [AddComment](./addcomment.md) | [DelComment](./delcomment.md) | [GetComment](./getcomment.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [DelRow](./delrow.md) | [DelCol](./delcol.md) |
-| [SetCellType](./setcelltype.md) | [RowChange](./rowchange.md) | [ColChange](./colchange.md) |
-| [Undo](./undo.md) | [SetCellSet](./setcellset.md) | [RowSetVisibleDepth](./rowsetvisibledepth.md) |
-| [ColSorted](./colsorted.md) | [DuplicateRow](./duplicaterow.md) | [DuplicateColumn](./duplicatecolumn.md) |
-| [CellFromPoint](./cellfrompoint.md) | [GetCellRect](./getcellrect.md) | [LockRows](./lockrows.md) |
-| [LockColumns](./lockcolumns.md) | [AddComment](./addcomment.md) | [DelComment](./delcomment.md) |
-| [GetComment](./getcomment.md) |  |  |
-| Children | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [DelRow](./delrow.md) [DelCol](./delcol.md) [SetCellType](./setcelltype.md) [RowChange](./rowchange.md) [ColChange](./colchange.md) [Undo](./undo.md) [SetCellSet](./setcellset.md) [RowSetVisibleDepth](./rowsetvisibledepth.md) [ColSorted](./colsorted.md) [DuplicateRow](./duplicaterow.md) [DuplicateColumn](./duplicatecolumn.md) [CellFromPoint](./cellfrompoint.md) [GetCellRect](./getcellrect.md) [LockRows](./lockrows.md) [LockColumns](./lockcolumns.md) [AddComment](./addcomment.md) [DelComment](./delcomment.md) [GetComment](./getcomment.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [DelRow](./delrow.md) | [DelCol](./delcol.md) | [SetCellType](./setcelltype.md) | [RowChange](./rowchange.md) | [ColChange](./colchange.md) | [Undo](./undo.md) | [SetCellSet](./setcellset.md) | [RowSetVisibleDepth](./rowsetvisibledepth.md) | [ColSorted](./colsorted.md) | [DuplicateRow](./duplicaterow.md) | [DuplicateColumn](./duplicatecolumn.md) | [CellFromPoint](./cellfrompoint.md) | [GetCellRect](./getcellrect.md) | [LockRows](./lockrows.md) | [LockColumns](./lockcolumns.md) | [AddComment](./addcomment.md) | [DelComment](./delcomment.md) | [GetComment](./getcomment.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [DelRow](./delrow.md) | [DelCol](./delcol.md) |
-| [SetCellType](./setcelltype.md) | [RowChange](./rowchange.md) | [ColChange](./colchange.md) |
-| [Undo](./undo.md) | [SetCellSet](./setcellset.md) | [RowSetVisibleDepth](./rowsetvisibledepth.md) |
-| [ColSorted](./colsorted.md) | [DuplicateRow](./duplicaterow.md) | [DuplicateColumn](./duplicatecolumn.md) |
-| [CellFromPoint](./cellfrompoint.md) | [GetCellRect](./getcellrect.md) | [LockRows](./lockrows.md) |
-| [LockColumns](./lockcolumns.md) | [AddComment](./addcomment.md) | [DelComment](./delcomment.md) |
-| [GetComment](./getcomment.md) |  |  |
-| Properties | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [DelRow](./delrow.md) [DelCol](./delcol.md) [SetCellType](./setcelltype.md) [RowChange](./rowchange.md) [ColChange](./colchange.md) [Undo](./undo.md) [SetCellSet](./setcellset.md) [RowSetVisibleDepth](./rowsetvisibledepth.md) [ColSorted](./colsorted.md) [DuplicateRow](./duplicaterow.md) [DuplicateColumn](./duplicatecolumn.md) [CellFromPoint](./cellfrompoint.md) [GetCellRect](./getcellrect.md) [LockRows](./lockrows.md) [LockColumns](./lockcolumns.md) [AddComment](./addcomment.md) [DelComment](./delcomment.md) [GetComment](./getcomment.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [DelRow](./delrow.md) | [DelCol](./delcol.md) | [SetCellType](./setcelltype.md) | [RowChange](./rowchange.md) | [ColChange](./colchange.md) | [Undo](./undo.md) | [SetCellSet](./setcellset.md) | [RowSetVisibleDepth](./rowsetvisibledepth.md) | [ColSorted](./colsorted.md) | [DuplicateRow](./duplicaterow.md) | [DuplicateColumn](./duplicatecolumn.md) | [CellFromPoint](./cellfrompoint.md) | [GetCellRect](./getcellrect.md) | [LockRows](./lockrows.md) | [LockColumns](./lockcolumns.md) | [AddComment](./addcomment.md) | [DelComment](./delcomment.md) | [GetComment](./getcomment.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [DelRow](./delrow.md) | [DelCol](./delcol.md) |
-| [SetCellType](./setcelltype.md) | [RowChange](./rowchange.md) | [ColChange](./colchange.md) |
-| [Undo](./undo.md) | [SetCellSet](./setcellset.md) | [RowSetVisibleDepth](./rowsetvisibledepth.md) |
-| [ColSorted](./colsorted.md) | [DuplicateRow](./duplicaterow.md) | [DuplicateColumn](./duplicatecolumn.md) |
-| [CellFromPoint](./cellfrompoint.md) | [GetCellRect](./getcellrect.md) | [LockRows](./lockrows.md) |
-| [LockColumns](./lockcolumns.md) | [AddComment](./addcomment.md) | [DelComment](./delcomment.md) |
-| [GetComment](./getcomment.md) |  |  |
-| Methods | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [DelRow](./delrow.md) [DelCol](./delcol.md) [SetCellType](./setcelltype.md) [RowChange](./rowchange.md) [ColChange](./colchange.md) [Undo](./undo.md) [SetCellSet](./setcellset.md) [RowSetVisibleDepth](./rowsetvisibledepth.md) [ColSorted](./colsorted.md) [DuplicateRow](./duplicaterow.md) [DuplicateColumn](./duplicatecolumn.md) [CellFromPoint](./cellfrompoint.md) [GetCellRect](./getcellrect.md) [LockRows](./lockrows.md) [LockColumns](./lockcolumns.md) [AddComment](./addcomment.md) [DelComment](./delcomment.md) [GetComment](./getcomment.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [DelRow](./delrow.md) | [DelCol](./delcol.md) | [SetCellType](./setcelltype.md) | [RowChange](./rowchange.md) | [ColChange](./colchange.md) | [Undo](./undo.md) | [SetCellSet](./setcellset.md) | [RowSetVisibleDepth](./rowsetvisibledepth.md) | [ColSorted](./colsorted.md) | [DuplicateRow](./duplicaterow.md) | [DuplicateColumn](./duplicatecolumn.md) | [CellFromPoint](./cellfrompoint.md) | [GetCellRect](./getcellrect.md) | [LockRows](./lockrows.md) | [LockColumns](./lockcolumns.md) | [AddComment](./addcomment.md) | [DelComment](./delcomment.md) | [GetComment](./getcomment.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [DelRow](./delrow.md) | [DelCol](./delcol.md) |
-| [SetCellType](./setcelltype.md) | [RowChange](./rowchange.md) | [ColChange](./colchange.md) |
-| [Undo](./undo.md) | [SetCellSet](./setcellset.md) | [RowSetVisibleDepth](./rowsetvisibledepth.md) |
-| [ColSorted](./colsorted.md) | [DuplicateRow](./duplicaterow.md) | [DuplicateColumn](./duplicatecolumn.md) |
-| [CellFromPoint](./cellfrompoint.md) | [GetCellRect](./getcellrect.md) | [LockRows](./lockrows.md) |
-| [LockColumns](./lockcolumns.md) | [AddComment](./addcomment.md) | [DelComment](./delcomment.md) |
-| [GetComment](./getcomment.md) |  |  |
-| Events | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [DelRow](./delrow.md) [DelCol](./delcol.md) [SetCellType](./setcelltype.md) [RowChange](./rowchange.md) [ColChange](./colchange.md) [Undo](./undo.md) [SetCellSet](./setcellset.md) [RowSetVisibleDepth](./rowsetvisibledepth.md) [ColSorted](./colsorted.md) [DuplicateRow](./duplicaterow.md) [DuplicateColumn](./duplicatecolumn.md) [CellFromPoint](./cellfrompoint.md) [GetCellRect](./getcellrect.md) [LockRows](./lockrows.md) [LockColumns](./lockcolumns.md) [AddComment](./addcomment.md) [DelComment](./delcomment.md) [GetComment](./getcomment.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [DelRow](./delrow.md) | [DelCol](./delcol.md) | [SetCellType](./setcelltype.md) | [RowChange](./rowchange.md) | [ColChange](./colchange.md) | [Undo](./undo.md) | [SetCellSet](./setcellset.md) | [RowSetVisibleDepth](./rowsetvisibledepth.md) | [ColSorted](./colsorted.md) | [DuplicateRow](./duplicaterow.md) | [DuplicateColumn](./duplicatecolumn.md) | [CellFromPoint](./cellfrompoint.md) | [GetCellRect](./getcellrect.md) | [LockRows](./lockrows.md) | [LockColumns](./lockcolumns.md) | [AddComment](./addcomment.md) | [DelComment](./delcomment.md) | [GetComment](./getcomment.md) |  |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [DelRow](./delrow.md) | [DelCol](./delcol.md) |
-| [SetCellType](./setcelltype.md) | [RowChange](./rowchange.md) | [ColChange](./colchange.md) |
-| [Undo](./undo.md) | [SetCellSet](./setcellset.md) | [RowSetVisibleDepth](./rowsetvisibledepth.md) |
-| [ColSorted](./colsorted.md) | [DuplicateRow](./duplicaterow.md) | [DuplicateColumn](./duplicatecolumn.md) |
-| [CellFromPoint](./cellfrompoint.md) | [GetCellRect](./getcellrect.md) | [LockRows](./lockrows.md) |
-| [LockColumns](./lockcolumns.md) | [AddComment](./addcomment.md) | [DelComment](./delcomment.md) |
-| [GetComment](./getcomment.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The [Values](./values.md) property is a matrix whose
@@ -112,12 +64,12 @@ The [Input](./input.md) property is a character vector
 that specifies the name of an object which is to be associated with every cell
 in the Grid, or a vector of names whose elements are mapped to individual cells
 through the [CellTypes](./celltypes.md) property. These
-objects may be of type Button, ColorButton,
-Combo, Edit, Label,
-Spinner or TrackBar.
+objects may be of type [Button](button.md), [ColorButton](colorbutton.md),
+[Combo](combo.md), [Edit](edit.md), [Label](label.md),
+[Spinner](spinner.md) or [TrackBar](trackbar.md).
 In addition, the [Input](./input.md) property may specify
-instances of OCXClass objects (ActiveX
-controls) and NetType objects (.NET classes).
+instances of [OCXClass](ocxclass.md) objects (ActiveX
+controls) and [NetType](nettype.md) objects (.NET classes).
 
 
 If the [Input](./input.md) property is empty (the
@@ -134,15 +86,15 @@ to impose formatting and validation.
 
 
 If the [Input](./input.md) property specifies the name
-of a Label object, that object is used to
-impose formatting, but the data is protected and may not be changed. If the Label is a child of the Grid, it moves from cell to cell, and its characteristics ([Border](./border.md),
+of a [Label](label.md) object, that object is used to
+impose formatting, but the data is protected and may not be changed. If the [Label](label.md) is a child of the Grid, it moves from cell to cell, and its characteristics ([Border](./border.md),
 [FCol](./fcol.md), [BCol](./bcol.md) and [FontObj](./fontobj.md)) can be used to identify the
-current cell. If the Label is an external one,
+current cell. If the [Label](label.md) is an external one,
 no visual feedback is provided; even though the current cell (reflected by the [CurCell](./curcell.md) property) changes as the user moves around the Grid.
 
 
 If the Input property specifies one or more instances of OCXClass objects
-(ActiveX controls) and NetType objects (.NET
+(ActiveX controls) and [NetType](nettype.md) objects (.NET
 classes), the [InputProperties](./inputproperties.md) property is used to map the [Values](./values.md) property
 of the Grid to specific properties of the external object.
 
@@ -192,7 +144,7 @@ callback to the [AddRow](./addrow.md) and selectively disable
 this default action if required. The [AddCol](./addcol.md) event works in a similar manner for columns. Although the user has no direct
 means of *inserting* a row or column, your application can do this by
 calling [AddRow](./addrow.md) or [AddCol](./addcol.md) as a method on the Grid object. Typically this would be done in response to the
-user selecting a MenuItem or pressing a Button.
+user selecting a [MenuItem](menuitem.md) or pressing a [Button](button.md).
 
 
 The [ColChange](./colchange.md), [RowChange](./rowchange.md),
@@ -202,7 +154,7 @@ perform these corresponding operations.
 
 The Grid object maintains a buffer of the most recent 8 changes made by the
 user since the [Values](./values.md) property was last set
-by `⎕WC` or `⎕WS`.
+by [`⎕WC`](../../Language/System%20Functions/wc.htm) or [`⎕WS`](../../Language/System%20Functions/ws.htm).
 Your application can restore these changes one by one by calling the [Undo](./undo.md) method. The [Undo](./undo.md) method restores the most recent
 change made by the user and removes that change from the undo stack. It is
 therefore not possible to "undo an undo".

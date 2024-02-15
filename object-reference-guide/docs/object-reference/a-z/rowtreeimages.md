@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RowTreeImages</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 The RowTreeImages property is a simple character vector or ref, or a vector of character vectors or refs, that specifies the names(s) of, or ref(s) to, Bitmap objects that are used to display the tree nodes for a [Grid](./grid.md) object.

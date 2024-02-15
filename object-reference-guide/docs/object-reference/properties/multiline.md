@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">MultiLine</span></h1>
+
 | Applies To: | [TabControl](../a-z/tabcontrol.md) | [ToolControl](../a-z/toolcontrol.md) |
 | --- | --- | ---  |
 
-| Applies To: | [TabControl](../a-z/tabcontrol.md) [ToolControl](../a-z/toolcontrol.md) | [TabControl](../a-z/tabcontrol.md) | [ToolControl](../a-z/toolcontrol.md) |  |
-| --- | --- | ---  |
-| [TabControl](../a-z/tabcontrol.md) | [ToolControl](../a-z/toolcontrol.md) |  |
 
-
-Description
+**Description**
 
 
 The MultiLine property determines whether or not the tabs or buttons will be arranged in multiple flights or multiple rows/columns in a [TabControl](../a-z/tabcontrol.md) or [ToolControl](../a-z/toolcontrol.md) object.

@@ -33,6 +33,6 @@ Then, when calling a .NET method that requires a `Delegate` of type `System.Eve
 
 
 
-.NET Framework only
+**.NET Framework only**
 
 

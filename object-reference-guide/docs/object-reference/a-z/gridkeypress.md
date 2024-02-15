@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">GridKeyPress</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is generated when the user presses and releases a key in a [Grid](./grid.md) cell.
@@ -21,6 +18,7 @@ The GridKeyPress is reported on the [Grid](./grid.md), *after* the [KeyPress](ke
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 6-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

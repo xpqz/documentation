@@ -3,21 +3,19 @@
 
 
 <h1 class="heading"><span class="name">AnimPlay</span></h1>
+
 | Applies To: | [Animation](./animation.md) |
 | --- | ---  |
 
-| Applies To: | [Animation](./animation.md) | [Animation](./animation.md) |  |  |
-| --- | --- | ---  |
-| [Animation](./animation.md) |  |  |
 
-
-Description
+**Description**
 
 
 The AnimPlay method plays an AVI clip in an Animation object.
 
 
 The argument to AnimPlay is a 3-element array as follows:
+
 
 | `[1]` | Repeat | integer |
 | --- | --- | ---  |

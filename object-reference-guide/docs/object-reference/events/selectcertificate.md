@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SelectCertificate</span></h1>
+
 | Applies To: | [HTMLRenderer](../a-z/htmlrenderer.md) |
 | --- | ---  |
 
-| Applies To: | [HTMLRenderer](../a-z/htmlrenderer.md) | [HTMLRenderer](../a-z/htmlrenderer.md) |  |  |
-| --- | --- | ---  |
-| [HTMLRenderer](../a-z/htmlrenderer.md) |  |  |
 
-
-Description
+**Description**
 
 
 This event is triggered when [HTMLRenderer](../a-z/htmlrenderer.md) requests a resource from a server that requires a certificate.
@@ -21,6 +18,7 @@ This event is triggered when [HTMLRenderer](../a-z/htmlrenderer.md) requests a r
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 7-element vector as follows:
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
@@ -36,6 +34,7 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 
 Certificates is a vector of namespaces, each of which represents an available certificate and contains the following variables:
 
+
 | Name | Description |
 | --- | ---  |
 | `DER` | Distinguished Encoding Rules. Character Vector. |
@@ -47,6 +46,7 @@ Certificates is a vector of namespaces, each of which represents an available ce
 
 
 The Subject and Issuer namespaces contain the following variables:
+
 
 | Name | Description |
 | --- | ---  |

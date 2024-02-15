@@ -1,12 +1,12 @@
 # Constructor Overloading
 
-NameList header syntax is used to define different versions of a Constructor each with a different number of parameters, referred to as its *signature*. See  "Namelists" on page 1 for details. The Clover Class illustrates this principle.
+NameList header syntax is used to define different versions of a Constructor each with a different number of parameters, referred to as its *signature*. See  "Namelists" on page 1 for details. The [Clover Class](Constructor%20Overload%20Example%20Class.htm) illustrates this principle.
 
 In deciding which Constructor to call, APL matches the shape of the Constructor argument with the signature of each of the Constructors that are defined. If a constructor with the same number of arguments exists (remembering that 0 arguments will match a niladic Constructor), it is called. If there is no exact match, and there is a Constructor with a general signature (an un-parenthesised right argument), it is called. If no suitable constructor is found, a `LENGTH ERROR` is reported.
 
 There may be one and only one constructor with a particular signature.
 
-In the Clover Class example Class, the following Constructors are defined:
+In the [Clover Class](Constructor%20Overload%20Example%20Class.htm) example Class, the following Constructors are defined:
 
 | Constructor | Implied argument |
 | --- | ---  |
@@ -16,7 +16,7 @@ In the Clover Class example Class, the following Constructors are defined:
 | `Make0` | No argument |
 | `MakeAny` | Any array accepted |
 
-In the following examples, the `Make` function (see Clover Class  for details) displays:
+In the following examples, the `Make` function (see [Clover Class](Constructor%20Overload%20Example%20Class.htm)  for details) displays:
 ```apl
 <shape of argument> <name of Constructor called><argument>
 (see function make)
@@ -58,39 +58,3 @@ and finally, creating an Instance without a Constructor argument causes the syst
 ```
 
 The only way a Constructor function should be invoked is by `⎕NEW`. See "Base Constructors" on page 1 for further details. If you attempt to call a Constructor function  from outside its Class, it will cause a `SYNTAX ERROR`. A Constructor function should not call another Constructor function within the same Class, although it will not generate an error. This would cause the Base Constructor to be called twice, with unpredictable consequences.
-
-## Clover Class Example
-
-```apl
-:Class Clover ⍝ Constructor Overload Example
-    :Field Public Con
-    ∇ Make0
-      :Access Public
-      :Implements Constructor
-      make 0
-    ∇
-    ∇ Make1(arg)
-      :Access Public
-      :Implements Constructor
-      make arg
-    ∇
-    ∇ Make2(arg1 arg2)
-      :Access Public
-      :Implements Constructor
-      make arg1 arg2
-    ∇
-    ∇ Make3(arg1 arg2 arg3)
-      :Access Public
-      :Implements Constructor
-      make arg1 arg2 arg3
-    ∇
-    ∇ MakeAny args
-      :Access Public
-      :Implements Constructor
-      make args
-    ∇
-    ∇ make args
-      Con←(⍴args)(2⊃⎕SI)args
-    ∇
-:EndClass ⍝ Clover
-```

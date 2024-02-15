@@ -5,27 +5,10 @@
 
 <h1 class="heading"><span class="name">BCol</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXContainer](../a-z/activexcontainer.md) [ActiveXControl](../a-z/activexcontrol.md) [Animation](../a-z/animation.md) [Button](../a-z/button.md) [ButtonEdit](../a-z/buttonedit.md) [Circle](../a-z/circle.md) [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [CoolBand](../a-z/coolband.md) [CoolBar](../a-z/coolbar.md) [Edit](../a-z/edit.md) [Ellipse](../a-z/ellipse.md) [Form](../a-z/form.md) [Grid](../a-z/grid.md) [Group](../a-z/group.md) [Label](../a-z/label.md) [List](../a-z/list.md) [ListView](../a-z/listview.md) [MDIClient](../a-z/mdiclient.md) [Menu](../a-z/menu.md) [MenuItem](../a-z/menuitem.md) [Poly](../a-z/poly.md) [ProgressBar](../a-z/progressbar.md) [Rect](../a-z/rect.md) [RichEdit](../a-z/richedit.md) [Scroll](../a-z/scroll.md) [Separator](../a-z/separator.md) [SM](../a-z/sm.md) [Spinner](../a-z/spinner.md) [Splitter](../a-z/splitter.md) [Static](../a-z/static.md) [StatusBar](../a-z/statusbar.md) [StatusField](../a-z/statusfield.md) [SubForm](../a-z/subform.md) [TabBar](../a-z/tabbar.md) [TabBtn](../a-z/tabbtn.md) [Text](../a-z/text.md) [TipField](../a-z/tipfield.md) [ToolBar](../a-z/toolbar.md) [TrackBar](../a-z/trackbar.md) [TreeView](../a-z/treeview.md) [UpDown](../a-z/updown.md) | [ActiveXContainer](../a-z/activexcontainer.md) | [ActiveXControl](../a-z/activexcontrol.md) | [Animation](../a-z/animation.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Circle](../a-z/circle.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [CoolBand](../a-z/coolband.md) | [CoolBar](../a-z/coolbar.md) | [Edit](../a-z/edit.md) | [Ellipse](../a-z/ellipse.md) | [Form](../a-z/form.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) | [Label](../a-z/label.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [MDIClient](../a-z/mdiclient.md) | [Menu](../a-z/menu.md) | [MenuItem](../a-z/menuitem.md) | [Poly](../a-z/poly.md) | [ProgressBar](../a-z/progressbar.md) | [Rect](../a-z/rect.md) | [RichEdit](../a-z/richedit.md) | [Scroll](../a-z/scroll.md) | [Separator](../a-z/separator.md) | [SM](../a-z/sm.md) | [Spinner](../a-z/spinner.md) | [Splitter](../a-z/splitter.md) | [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [StatusField](../a-z/statusfield.md) | [SubForm](../a-z/subform.md) | [TabBar](../a-z/tabbar.md) | [TabBtn](../a-z/tabbtn.md) | [Text](../a-z/text.md) | [TipField](../a-z/tipfield.md) | [ToolBar](../a-z/toolbar.md) | [TrackBar](../a-z/trackbar.md) | [TreeView](../a-z/treeview.md) | [UpDown](../a-z/updown.md) |
-| --- | --- | ---  |
-| [ActiveXContainer](../a-z/activexcontainer.md) | [ActiveXControl](../a-z/activexcontrol.md) | [Animation](../a-z/animation.md) |
-| [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Circle](../a-z/circle.md) |
-| [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [CoolBand](../a-z/coolband.md) |
-| [CoolBar](../a-z/coolbar.md) | [Edit](../a-z/edit.md) | [Ellipse](../a-z/ellipse.md) |
-| [Form](../a-z/form.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) |
-| [Label](../a-z/label.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) |
-| [MDIClient](../a-z/mdiclient.md) | [Menu](../a-z/menu.md) | [MenuItem](../a-z/menuitem.md) |
-| [Poly](../a-z/poly.md) | [ProgressBar](../a-z/progressbar.md) | [Rect](../a-z/rect.md) |
-| [RichEdit](../a-z/richedit.md) | [Scroll](../a-z/scroll.md) | [Separator](../a-z/separator.md) |
-| [SM](../a-z/sm.md) | [Spinner](../a-z/spinner.md) | [Splitter](../a-z/splitter.md) |
-| [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [StatusField](../a-z/statusfield.md) |
-| [SubForm](../a-z/subform.md) | [TabBar](../a-z/tabbar.md) | [TabBtn](../a-z/tabbtn.md) |
-| [Text](../a-z/text.md) | [TipField](../a-z/tipfield.md) | [ToolBar](../a-z/toolbar.md) |
-| [TrackBar](../a-z/trackbar.md) | [TreeView](../a-z/treeview.md) | [UpDown](../a-z/updown.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property defines the background colour(s) of an object.
@@ -51,6 +34,7 @@ If BCol is set to `⍬` (Zilde), Dyalog APL will never paint the background of 
 
 A negative value of BCol refers to a standard MS-Windows colour as described
 below. Positive values are reserved for a possible future extension.
+
 
 | BCol | Colour Element | BCol | Colour Element |
 | --- | --- | --- | ---  |
@@ -81,7 +65,7 @@ For a [Button](../a-z/button.md), BCol is only effective if the
 [Style](../a-z/style.md) is `'Radio'` or `'Check'` and is ignored if the [Style](../a-z/style.md) is `'Push'`.
 
 
-It is recommended that you only use pure background colours in [Combo](../a-z/combo.md) and [Edit](../a-z/edit.md) objects. This is because the text
+It is recommended that you only use **pure** background colours in [Combo](../a-z/combo.md) and [Edit](../a-z/edit.md) objects. This is because the text
 written in these objects cannot itself have a dithered background.
 
 

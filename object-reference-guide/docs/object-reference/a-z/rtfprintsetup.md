@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RTFPrintSetup</span></h1>
+
 | Applies To: | [Printer](./printer.md) | [RichEdit](./richedit.md) |
 | --- | --- | ---  |
 
-| Applies To: | [Printer](./printer.md) [RichEdit](./richedit.md) | [Printer](./printer.md) | [RichEdit](./richedit.md) |  |
-| --- | --- | ---  |
-| [Printer](./printer.md) | [RichEdit](./richedit.md) |  |
 
-
-Description
+**Description**
 
 
 This method is used to display a print set-up dialog box. The dialog box allows the user to select a particular printer, the pages to be printed and other information. The user's choices are returned in the result.
@@ -24,6 +21,7 @@ This method is used to display a print set-up dialog box. The dialog box allows 
 
 
 The argument to RTFPrintSetup is `⍬`, or a 1 to 3-element array as follows:
+
 
 | `[1]` | Print range | Optional - (see below) |
 | --- | --- | ---  |
@@ -38,6 +36,7 @@ The argument to RTFPrintSetup is `⍬`, or a 1 to 3-element array as follows:
 
 Alternatively, it may be a 3 or 4-element nested vector containing:
 
+
 | `[1]` | `'All'` , `'Pages'` , or `'Selection'` |
 | --- | ---  |
 | `[2]` | Start page (integer) |
@@ -51,6 +50,7 @@ Maximum pages (4th element of Print range) may be an integer number, or the name
 
 
 If the user presses OK, the result is a 4-element vector containing the user's choices as follows:
+
 
 | `[1]` | Printer name | character vector |
 | --- | --- | ---  |

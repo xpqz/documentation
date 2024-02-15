@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GridLineFCol</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 The GridLineFCol property specifies the colours of the grid lines in a [Grid](../a-z/grid.md) object. GridLineFCol should be used if different coloured grid lines are required. If all the grid lines are the same colour, use [GridFCol](../a-z/gridfcol.md).

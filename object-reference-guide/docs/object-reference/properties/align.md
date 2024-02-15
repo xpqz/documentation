@@ -5,19 +5,10 @@
 
 <h1 class="heading"><span class="name">Align</span></h1>
 
-Applies To
-
-| Applies To: | [Animation](../a-z/animation.md) [Button](../a-z/button.md) [ButtonEdit](../a-z/buttonedit.md) [CoolBar](../a-z/coolbar.md) [DateTimePicker](../a-z/datetimepicker.md) [Edit](../a-z/edit.md) [ListView](../a-z/listview.md) [Menu](../a-z/menu.md) [MenuItem](../a-z/menuitem.md) [Scroll](../a-z/scroll.md) [Spinner](../a-z/spinner.md) [Splitter](../a-z/splitter.md) [StatusBar](../a-z/statusbar.md) [TabBar](../a-z/tabbar.md) [TabBtn](../a-z/tabbtn.md) [TabControl](../a-z/tabcontrol.md) [ToolBar](../a-z/toolbar.md) [ToolControl](../a-z/toolcontrol.md) | [Animation](../a-z/animation.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [CoolBar](../a-z/coolbar.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [ListView](../a-z/listview.md) | [Menu](../a-z/menu.md) | [MenuItem](../a-z/menuitem.md) | [Scroll](../a-z/scroll.md) | [Spinner](../a-z/spinner.md) | [Splitter](../a-z/splitter.md) | [StatusBar](../a-z/statusbar.md) | [TabBar](../a-z/tabbar.md) | [TabBtn](../a-z/tabbtn.md) | [TabControl](../a-z/tabcontrol.md) | [ToolBar](../a-z/toolbar.md) | [ToolControl](../a-z/toolcontrol.md) |
-| --- | --- | ---  |
-| [Animation](../a-z/animation.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) |
-| [CoolBar](../a-z/coolbar.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) |
-| [ListView](../a-z/listview.md) | [Menu](../a-z/menu.md) | [MenuItem](../a-z/menuitem.md) |
-| [Scroll](../a-z/scroll.md) | [Spinner](../a-z/spinner.md) | [Splitter](../a-z/splitter.md) |
-| [StatusBar](../a-z/statusbar.md) | [TabBar](../a-z/tabbar.md) | [TabBtn](../a-z/tabbtn.md) |
-| [TabControl](../a-z/tabcontrol.md) | [ToolBar](../a-z/toolbar.md) | [ToolControl](../a-z/toolcontrol.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 For an [Animation](../a-z/animation.md), the Align property may be `'None'` or `'Centre'` (`'Center'`). If Align is `'None'`, the [Animation](../a-z/animation.md) window is automatically resized to fit the AVI being played. If Align is `'Centre'`, the AVI is centred in the [Animation](../a-z/animation.md) window. If the window is too small, the AVI is clipped.
@@ -41,6 +32,7 @@ For a [Menu](../a-z/menu.md), [MenuItem](../a-z/menuitem.md), or [StatusField](.
 
 For objects of type [CoolBar](../a-z/coolbar.md), [Splitter](../a-z/splitter.md), [Scroll](../a-z/scroll.md), [StatusBar](../a-z/statusbar.md), [TabBar](../a-z/tabbar.md), [ToolBar](../a-z/toolbar.md) and [ToolControl](../a-z/toolcontrol.md), Align may be `'None'`, `'Top'`, `'Bottom'`, `'Left'` or `'Right'`. It specifies to which (if any) of the four sides of the parent the object is anchored and also the default position and size of the object. Specifying Align typically causes the [Attach](../a-z/attach.md) property to be set to appropriate values as follows :
 
+
 | `Align` | `Attach` |
 | --- | ---  |
 | `'Top'` | `'Top' 'Left' 'Top' 'Right'` |
@@ -63,6 +55,6 @@ For a [Scroll](../a-z/scroll.md) object, Align also determines the direction of 
 #### Note
 
 
-The value of the Align property may only be assigned by `⎕WC` and may not be changed using `⎕WS`.
+The value of the Align property may **only** be assigned by [`⎕WC`](../../Language/System%20Functions/wc.htm) and may **not** be changed using [`⎕WS`](../../Language/System%20Functions/ws.htm).
 
 

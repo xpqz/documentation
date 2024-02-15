@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RowTitleBCol</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 The RowTitleBCol property specifies the background colour of the row titles in a [Grid](../a-z/grid.md) object

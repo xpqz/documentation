@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GetEnvironment</span></h1>
+
 | Applies To: | [Root](../a-z/root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](../a-z/root.md) | [Root](../a-z/root.md) |  |  |
-| --- | --- | ---  |
-| [Root](../a-z/root.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to obtain information about one or more parameters that were specified in the Dyalog command line, your Windows registry, or defined as environment variables. If a value is defined in several places (for example, MAXWS in the command line overriding MAXWS in the registry), GetEnvironment follows exactly the same logic as is used by Dyalog APL itself and so obtains the same value.
@@ -21,6 +18,7 @@ This method is used to obtain information about one or more parameters that were
 
 
 The argument to GetEnvironment is a single item as follows:
+
 
 | `[1]` | Parameter name(s) | see below |
 | --- | --- | ---  |

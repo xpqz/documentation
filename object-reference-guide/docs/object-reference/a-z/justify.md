@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Justify</span></h1>
+
 | Applies To: | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Edit](./edit.md) | [Label](./label.md) | [Spinner](./spinner.md) | [TabControl](./tabcontrol.md) |
 | --- | --- | --- | --- | --- | --- | ---  |
 
-| Applies To: | [Button](./button.md) [ButtonEdit](./buttonedit.md) [Edit](./edit.md) [Label](./label.md) [Spinner](./spinner.md) [TabControl](./tabcontrol.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Edit](./edit.md) | [Label](./label.md) | [Spinner](./spinner.md) | [TabControl](./tabcontrol.md) |
-| --- | --- | ---  |
-| [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Edit](./edit.md) |
-| [Label](./label.md) | [Spinner](./spinner.md) | [TabControl](./tabcontrol.md) |
 
-
-Description
+**Description**
 
 
 This property determines the manner in which text is justified within the object. It is a character vector that may take the value `'Left'` (the default), `'Centre'` or `'Right'`. The keyword `'Centre'` may also be spelled `'Center'`.

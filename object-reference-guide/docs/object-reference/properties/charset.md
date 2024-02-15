@@ -4,28 +4,26 @@
 
 
 <h1 class="heading"><span class="name">CharSet</span></h1>
+
 | Applies To: | [Font](../a-z/font.md) |
 | --- | ---  |
 
-| Applies To: | [Font](../a-z/font.md) | [Font](../a-z/font.md) |  |  |
-| --- | --- | ---  |
-| [Font](../a-z/font.md) |  |  |
 
-
-Description
+**Description**
 
 
 CharSet is an integer that specifies the character encoding of the [Font](../a-z/font.md) object.
 
 
 
-This property applies to the Classic Edition only. In the Unicode Edition,
-its value typically has no effect.
+**This property applies to the Classic Edition only. In the Unicode Edition,
+its value typically has no effect.**
 
 
 The following table illustrates some of the character set encodings supported
 by Windows. Note that this set may vary according to the edition of Windows that
 is installed.
+
 
 | Language | CharSet |
 | --- | ---  |

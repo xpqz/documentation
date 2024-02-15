@@ -33,6 +33,7 @@ This function obtains syntax colouring information for a function.
 
 In this example:
 
+
 | 21 | is the syntax identifier for "character constant" |
 | --- | ---  |
 | 19 | is the syntax identifier for "primitive" |
@@ -43,6 +44,6 @@ In this example:
 
 
 
-The list of syntax colour elements supported by the current interpreter is given by `201⌶`. It is important to note that the values may change within a release, and are very likely to change across releases .. you should always call `201⌶` rather than relying the results from a different interpreter. See Syntax Colour Tokens on page 1.
+The list of syntax colour elements supported by the current interpreter is given by `201⌶`. It is important to note that the values may change within a release, and are very likely to change across releases .. you should always call `201⌶` rather than relying the results from a different interpreter. See [Syntax Colour Tokens on page 1](Syntax%20Colour%20Tokens.htm#SyntaxColourTokens).
 
 

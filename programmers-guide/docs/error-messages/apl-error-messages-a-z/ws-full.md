@@ -8,10 +8,7 @@
 This report is given when there is insufficient workspace in which to perform an operation.  Workspace available is identified by the system constant `⎕WA`.
 
 
-The maximum workspace size allowed is defined by the environment variable MAXWS. See 
-Installation & Configuration Guide: 
-
-maxws parametermaxws parameter for details.
+The maximum workspace size allowed is defined by the environment variable MAXWS. See [maxws parameter](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#maxws) for details.
 
 #### Example
 ```apl

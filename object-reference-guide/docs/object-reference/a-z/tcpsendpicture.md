@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">TCPSendPicture</span></h1>
+
 | Applies To: | [TCPSocket](./tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](./tcpsocket.md) | [TCPSocket](./tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](./tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to transmit a picture represented by a [Bitmap](./bitmap.md) object to a TCP/IP socket. The picture may be transmitted in GIF or in PNG format.
@@ -21,6 +18,7 @@ This method is used to transmit a picture represented by a [Bitmap](./bitmap.md)
 
 
 The argument to TCPSendPicture is a 1 or 2-element array as follows:
+
 
 | `[1]` | Bitmap name | character vector |
 | --- | --- | ---  |
@@ -43,7 +41,7 @@ The (shy) result of the method is an integer that reports the number of bytes th
 ```
 
 
-Note: Although PNG is recognised as the latest graphics standard for displaying pictures, not all Web browsers support it.
+**Note:** Although PNG is recognised as the latest graphics standard for displaying pictures, not all Web browsers support it.
 
 
 See also: [MakeGIF](./makegif.md), [MakePNG](./makepng.md)

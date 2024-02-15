@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">LocalAddrName</span></h1>
+
 | Applies To: | [TCPSocket](./tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](./tcpsocket.md) | [TCPSocket](./tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](./tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 The LocalAddrName property is a character vector that specifies the host name of your computer. It may be useful when you have more than one network adapter (perhaps an Ethernet adapter and a token ring adapter) and you wish to avoid hard-coding the IP address.

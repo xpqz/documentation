@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Indents</span></h1>
+
 | Applies To: | [ComboEx](./comboex.md) |
 | --- | ---  |
 
-| Applies To: | [ComboEx](./comboex.md) | [ComboEx](./comboex.md) |  |  |
-| --- | --- | ---  |
-| [ComboEx](./comboex.md) |  |  |
 
-
-Description
+**Description**
 
 
 Specifies the amount by which items in a ComboEx object are indented.

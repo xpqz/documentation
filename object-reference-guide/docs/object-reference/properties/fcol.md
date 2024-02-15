@@ -5,24 +5,10 @@
 
 <h1 class="heading"><span class="name">FCol</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXContainer](../a-z/activexcontainer.md) [ActiveXControl](../a-z/activexcontrol.md) [Button](../a-z/button.md) [ButtonEdit](../a-z/buttonedit.md) [Circle](../a-z/circle.md) [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [CoolBand](../a-z/coolband.md) [CoolBar](../a-z/coolbar.md) [Edit](../a-z/edit.md) [Ellipse](../a-z/ellipse.md) [Grid](../a-z/grid.md) [Group](../a-z/group.md) [Label](../a-z/label.md) [List](../a-z/list.md) [ListView](../a-z/listview.md) [Marker](../a-z/marker.md) [Menu](../a-z/menu.md) [MenuItem](../a-z/menuitem.md) [Poly](../a-z/poly.md) [Rect](../a-z/rect.md) [RichEdit](../a-z/richedit.md) [Separator](../a-z/separator.md) [Spinner](../a-z/spinner.md) [Static](../a-z/static.md) [StatusBar](../a-z/statusbar.md) [StatusField](../a-z/statusfield.md) [TabBtn](../a-z/tabbtn.md) [Text](../a-z/text.md) [TipField](../a-z/tipfield.md) [ToolBar](../a-z/toolbar.md) [TreeView](../a-z/treeview.md) [UpDown](../a-z/updown.md) | [ActiveXContainer](../a-z/activexcontainer.md) | [ActiveXControl](../a-z/activexcontrol.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Circle](../a-z/circle.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [CoolBand](../a-z/coolband.md) | [CoolBar](../a-z/coolbar.md) | [Edit](../a-z/edit.md) | [Ellipse](../a-z/ellipse.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) | [Label](../a-z/label.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [Marker](../a-z/marker.md) | [Menu](../a-z/menu.md) | [MenuItem](../a-z/menuitem.md) | [Poly](../a-z/poly.md) | [Rect](../a-z/rect.md) | [RichEdit](../a-z/richedit.md) | [Separator](../a-z/separator.md) | [Spinner](../a-z/spinner.md) | [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [StatusField](../a-z/statusfield.md) | [TabBtn](../a-z/tabbtn.md) | [Text](../a-z/text.md) | [TipField](../a-z/tipfield.md) | [ToolBar](../a-z/toolbar.md) | [TreeView](../a-z/treeview.md) | [UpDown](../a-z/updown.md) |
-| --- | --- | ---  |
-| [ActiveXContainer](../a-z/activexcontainer.md) | [ActiveXControl](../a-z/activexcontrol.md) | [Button](../a-z/button.md) |
-| [ButtonEdit](../a-z/buttonedit.md) | [Circle](../a-z/circle.md) | [Combo](../a-z/combo.md) |
-| [ComboEx](../a-z/comboex.md) | [CoolBand](../a-z/coolband.md) | [CoolBar](../a-z/coolbar.md) |
-| [Edit](../a-z/edit.md) | [Ellipse](../a-z/ellipse.md) | [Grid](../a-z/grid.md) |
-| [Group](../a-z/group.md) | [Label](../a-z/label.md) | [List](../a-z/list.md) |
-| [ListView](../a-z/listview.md) | [Marker](../a-z/marker.md) | [Menu](../a-z/menu.md) |
-| [MenuItem](../a-z/menuitem.md) | [Poly](../a-z/poly.md) | [Rect](../a-z/rect.md) |
-| [RichEdit](../a-z/richedit.md) | [Separator](../a-z/separator.md) | [Spinner](../a-z/spinner.md) |
-| [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [StatusField](../a-z/statusfield.md) |
-| [TabBtn](../a-z/tabbtn.md) | [Text](../a-z/text.md) | [TipField](../a-z/tipfield.md) |
-| [ToolBar](../a-z/toolbar.md) | [TreeView](../a-z/treeview.md) | [UpDown](../a-z/updown.md) |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property defines the foreground colour(s) of an object.
@@ -46,6 +32,7 @@ not specifying FCol or by setting it to 0.
 
 A negative value of FCol refers to a standard MS-Windows colour as described
 below. Positive values are reserved for a possible future extension.
+
 
 | FCol | Colour Element | FCol | Colour Element |
 | --- | --- | --- | ---  |
@@ -76,7 +63,7 @@ display adapter and driver, and the current Windows colour map.
 For a [Button](../a-z/button.md), [Combo](../a-z/combo.md),
 [Edit](../a-z/edit.md), [Label](../a-z/label.md), [List](../a-z/list.md),
 [Menu](../a-z/menu.md) and [MenuItem](../a-z/menuitem.md),
-FCol refers to the colour of the text in the object. [Border](../a-z/border.md)s
+FCol refers to the colour of the **text** in the object. [Border](../a-z/border.md)s
 around these objects (where applicable) are drawn using the standard Windows
 colour. For a [Static](../a-z/static.md) object however, FCol
 specifies the colour of its border.

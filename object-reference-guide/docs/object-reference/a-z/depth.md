@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Depth</span></h1>
+
 | Applies To: | [TreeView](./treeview.md) |
 | --- | ---  |
 
-| Applies To: | [TreeView](./treeview.md) | [TreeView](./treeview.md) |  |  |
-| --- | --- | ---  |
-| [TreeView](./treeview.md) |  |  |
 
-
-Description
+**Description**
 
 
 The Depth property specifies the structure of the items in a [TreeView](./treeview.md) object. It is either a scalar 0 or an integer vector of the same length as the Items property.
@@ -24,6 +21,7 @@ A value of 0 indicates that the corresponding item is a top-level item. A value 
 
 
 For example:
+
 
 | AIRPORTS | DEPTH | Description |
 | --- | --- | ---  |

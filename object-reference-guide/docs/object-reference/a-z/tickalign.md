@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">TickAlign</span></h1>
+
 | Applies To: | [TrackBar](./trackbar.md) |
 | --- | ---  |
 
-| Applies To: | [TrackBar](./trackbar.md) | [TrackBar](./trackbar.md) |  |  |
-| --- | --- | ---  |
-| [TrackBar](./trackbar.md) |  |  |
 
-
-Description
+**Description**
 
 
 TickAlign determines the position of the tick marks in a [TrackBar](./trackbar.md) object. For a horizontal [TrackBar](./trackbar.md), TickAlign may be either `'Bottom'` (the default), `'Top'` or `'Both'`. If TickAlign is `'Bottom'`, the ticks are drawn *below* the slider. If TickAlign is `'Top'`, the ticks are drawn above it. If TickAlign is `'Both'`, the ticks are drawn above and below.

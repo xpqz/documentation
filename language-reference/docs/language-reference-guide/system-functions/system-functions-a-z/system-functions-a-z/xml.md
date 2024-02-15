@@ -14,6 +14,7 @@ Options for `⎕XML` are specified using the Variant operator `⍠` or by the op
 
 For conversion *from* XML, `Y` is a character vector containing an XML string. The result `R` is a 5 column matrix whose columns are made up as follows:
 
+
 | Column | Description |
 | --- | ---  |
 | 1 | Numeric value which indicates the level of nesting |
@@ -24,6 +25,7 @@ For conversion *from* XML, `Y` is a character vector containing an XML string. T
 
 
 The values in column 5  have the following meanings:
+
 
 | Value | Description |
 | --- | ---  |
@@ -137,11 +139,11 @@ The content of elements may be zero or more mixed occurrences of character data 
 Because certain markup which describes the format of allowable data (such as element type declarations and attribute-list declarations) is not processed, no error will be reported if element contents and attributes do not conform to their restricted declarations, nor are attributes automatically added to tags if not explicitly given.
 
 
-Attributes with names beginning xml: are reserved. Only xml:space is treated specially by `⎕XML`. When converting both from and to XML, the value for this attribute has the following effects on space normalization for the character data within this element and child elements within it (unless subsequently overridden):
+Attributes with names beginning **xml:** are reserved. Only **xml:space** is treated specially by `⎕XML`. When converting both from and to XML, the value for this attribute has the following effects on space normalization for the character data within this element and child elements within it (unless subsequently overridden):
 
-- default – space normalization is as determined by the whitespace option. 
-- preserve - space normalization is disabled – all whitespace is preserved as given.
-- any other value – rejected.
+- **default** – space normalization is as determined by the **whitespace** option. 
+- **preserve** - space normalization is disabled – all whitespace is preserved as given.
+- **any other value** – rejected.
 
 Regardless of whether the attribute name and value have a recognised meaning, the attribute will be included in the APL array / generated XML. Note that when the names and values of attributes are examined, the comparisons are case-sensitive and take place after entity references and character references have been expanded.
 
@@ -177,7 +179,7 @@ The remainder of XML markup, including document type declarations,  XML declarat
 - <xml><document id="001">An introduction to XML </document></xml>
 - The *xml* element is at level 0 and the *document id* element is at level 1. The text within the *document id* element is at level 2.
 - Each tag in the XML contains an element name and zero or more attribute name and value pairs, delimited by '<' and '>' characters. The delimiters are not included in the result matrix. The element name of a tag is stored in column 2 and the attribute(s) in column 4.
-- All XML markup other than tags are delimited by either '<!' and '>', or '<?' and '>' characters. By default these are not stored in the result matrix but the markup option may be used to specify that they are. The elements are stored in their entirety, except for the leading and trailing '<' and '>' characters, in column 2. Nested constructs are treated as a single block. Because the leading and trailing '<' and '>' characters are stripped, such entries will always have either '!' or '&' as the first character.
+- All XML markup other than tags are delimited by either '<!' and '>', or '<?' and '>' characters. By default these are not stored in the result matrix but the **markup** option may be used to specify that they are. The elements are stored in their entirety, except for the leading and trailing '<' and '>' characters, in column 2. Nested constructs are treated as a single block. Because the leading and trailing '<' and '>' characters are stripped, such entries will always have either '!' or '&' as the first character.
 - Character data itself has no tag name or attributes. As an optimisation, when character data is the sole content of an element, it is included with its parent rather than as a separate row in the result. Note that when this happens, the level number stored is that of the parent; the data itself implicitly has a level number one greater.
 - Attribute name and value pairs associated with the element name are stored in the fourth column, in an (*n x 2*) matrix of character values, for the *n* (including zero) pairs.
 - Each row is further described in the fifth column as a convenience to simplify processing of the array (although this information could be deduced). Any given row may contain an entry for an element, character data, markup not otherwise defined, a comment or a processing instruction. Furthermore, an element will have zero or more of these as children. For all types except elements, the value in the fifth column is as shown above. For elements, the value is computed by adding together the value of the row itself (1) and those of its children. For example, the value for a row for an element which contains one or more sub-elements and character data is 7 – that is 1 (element) + 2 (child element) + 4 (character data). It should be noted that:
@@ -211,6 +213,7 @@ Then, character references and entity references are emitted in place of charact
 
 There are 3 options which may be specified using the Variant operator `⍠` (recommended) or by the optional left argument `X` (retained for backwards compatibility). The names are different and are case-sensitive; they must be spelled exactly as shown below.
 
+
 | Option names for Variant | Option names for left argument |
 | --- | ---  |
 | Whitespace | whitespace |
@@ -218,7 +221,7 @@ There are 3 options which may be specified using the Variant operator `⍠` (rec
 | UnknownEntity | unknown-entity |
 
 
-The values of each option are tabulated below. In each case the value of the option for Variant is given first, followed by its equivalent for the optional left argument in brackets; e.g. UnknownEntity (unknown-entity).
+The values of each option are tabulated below. In each case the value of the option for Variant is given first, followed by its equivalent for the optional left argument in brackets; e.g.**UnknownEntity (unknown-entity)**.
 
 
 Note that the default value is shown first, and that the option names and values are case-sensitive.
@@ -238,6 +241,7 @@ Errors detected in the input arrays or options will all cause `DOMAIN ERROR`.
 
 
 When converting from XML `Whitespace` specifies the default handling of white space surrounding and within character data. When converting to XML `Whitespace` specifies the default formatting of the XML. Note that attribute values are not comprised of character data so white space in attribute values is always preserved.
+
 
 | Converting from XML | Converting from XML |
 | --- | ---  |
@@ -363,6 +367,7 @@ When converting from XML `Whitespace` specifies the default handling of white sp
 
 When converting from XML, `Markup` determines whether markup (other than entity tags) appears in the output array or not. When converting to XML `Markup` has no effect.
 
+
 | Converting from XML | Converting from XML |
 | --- | ---  |
 | Strip (strip) | Markup data is not included in the output array |
@@ -473,6 +478,7 @@ When converting from XML, `Markup` determines whether markup (other than entity 
 
 
 When converting from XML, this option determines what happens when an unknown entity reference, or a character reference for a Unicode character which cannot be represented as an APL character, is encountered. In Classic versions of Dyalog APL that is any Unicode character which does not appear in `⎕AVU`. When converting to XML, this option determines what happens to Esc characters (`⎕UCS 27`) in data.
+
 
 | Converting from XML | Converting from XML |
 | --- | ---  |

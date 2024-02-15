@@ -7,6 +7,7 @@
 
 `Y` must be a simple character scalar or vector which is taken to be the name of an APL object or a system variable. The result returned is a nested vector of 4 elements as described below. `⎕STATE` supplies information about shadowed or localised objects that is otherwise unobtainable.
 
+
 | `1⊃R` | Boolean vector, element set to 1 if and only if this level shadows `Y` . Note: `(⍴1⊃R)=⍴⎕LC` |
 | --- | ---  |
 | `2⊃R` | Numeric vector giving the stack state of this name as it entered this level. Note: `(⍴2⊃R)=⍴⎕LC` 0=not on stack 1=suspended 2=pendent (may also be suspended) 3=active (may also be pendent or suspended) |

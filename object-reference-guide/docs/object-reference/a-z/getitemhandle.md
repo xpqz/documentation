@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">GetItemHandle</span></h1>
+
 | Applies To: | [TreeView](./treeview.md) |
 | --- | ---  |
 
-| Applies To: | [TreeView](./treeview.md) | [TreeView](./treeview.md) |  |  |
-| --- | --- | ---  |
-| [TreeView](./treeview.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to obtain the window handle of a particular item in a [TreeView](./treeview.md) object.
 
 
 The argument for GetItemHandle is a single item as follows:
+
 
 | `[1]` | Item number | Integer. |
 | --- | --- | ---  |

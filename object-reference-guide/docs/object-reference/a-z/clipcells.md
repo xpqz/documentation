@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ClipCells</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property determines whether or not the [Grid](./grid.md) displays partial cells. The default is 1. If you set ClipCells to 0, the [Grid](./grid.md) displays only complete cells and automatically fills the space between the last visible cell and the edge of the [Grid](./grid.md) with the [GridBCol](gridbcol.md) colour.

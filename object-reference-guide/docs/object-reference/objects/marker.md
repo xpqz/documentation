@@ -4,24 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Marker</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Marker.htm) | [Children](../ChildLists/Marker.htm) | [Properties](../PropLists/Marker.htm) | [Methods](../MethodLists/Marker.htm) | [Events](../EventLists/Marker.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | A graphical object used to draw polymarkers. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Children | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
-| Events | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
-| [Detach](../a-z/detach.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The [Points](../a-z/points.md) property specifies one or more sets of points at which one or more sets of polymarkers are to be drawn.
@@ -29,6 +21,7 @@ The [Points](../a-z/points.md) property specifies one or more sets of points at 
 
 
 The [Style](../a-z/style.md) property determines the symbol that is drawn at each of a set of points. Marker styles are specified either by numbers which represent the following symbol shapes .
+
 
 | 0 | . |
 | --- | ---  |

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">View</span></h1>
+
 | Applies To: | [ListView](../a-z/listview.md) |
 | --- | ---  |
 
-| Applies To: | [ListView](../a-z/listview.md) | [ListView](../a-z/listview.md) |  |  |
-| --- | --- | ---  |
-| [ListView](../a-z/listview.md) |  |  |
 
-
-Description
+**Description**
 
 
 The View property specifies how the items in a [ListView](../a-z/listview.md) object are displayed. It is a character vector which may have one of the following values; `'Icon'` (the default), `'SmallIcon'`, `'List'` or `'Report'`.

@@ -4,34 +4,16 @@
 
 
 <h1 class="heading"><span class="name">MDIClient</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/MDIClient.htm) | [Children](../ChildLists/MDIClient.htm) | [Properties](../PropLists/MDIClient.htm) | [Methods](../MethodLists/MDIClient.htm) | [Events](../EventLists/MDIClient.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | Implements Multiple Document Interface (MDI) behaviour. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [MDICascade](./mdicascade.md) [MDITile](./mditile.md) [MDIArrange](./mdiarrange.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [MDICascade](./mdicascade.md) | [MDITile](./mditile.md) | [MDIArrange](./mdiarrange.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [MDICascade](./mdicascade.md) | [MDITile](./mditile.md) |
-| [MDIArrange](./mdiarrange.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| Children | [Detach](./detach.md) [MDICascade](./mdicascade.md) [MDITile](./mditile.md) [MDIArrange](./mdiarrange.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [MDICascade](./mdicascade.md) | [MDITile](./mditile.md) | [MDIArrange](./mdiarrange.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [MDICascade](./mdicascade.md) | [MDITile](./mditile.md) |
-| [MDIArrange](./mdiarrange.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| Properties | [Detach](./detach.md) [MDICascade](./mdicascade.md) [MDITile](./mditile.md) [MDIArrange](./mdiarrange.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [MDICascade](./mdicascade.md) | [MDITile](./mditile.md) | [MDIArrange](./mdiarrange.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [MDICascade](./mdicascade.md) | [MDITile](./mditile.md) |
-| [MDIArrange](./mdiarrange.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| Methods | [Detach](./detach.md) [MDICascade](./mdicascade.md) [MDITile](./mditile.md) [MDIArrange](./mdiarrange.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [MDICascade](./mdicascade.md) | [MDITile](./mditile.md) | [MDIArrange](./mdiarrange.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [MDICascade](./mdicascade.md) | [MDITile](./mditile.md) |
-| [MDIArrange](./mdiarrange.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| Events | [Detach](./detach.md) [MDICascade](./mdicascade.md) [MDITile](./mditile.md) [MDIArrange](./mdiarrange.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) | [Detach](./detach.md) | [MDICascade](./mdicascade.md) | [MDITile](./mditile.md) | [MDIArrange](./mdiarrange.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [Detach](./detach.md) | [MDICascade](./mdicascade.md) | [MDITile](./mditile.md) |
-| [MDIArrange](./mdiarrange.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The multiple-document interface (MDI) is a document-oriented interface that is commonly used by word-processors, spreadsheets and other applications that deal with *documents*. An MDI application allows the user to display multiple documents at the same time, with each document displayed in its own window.
@@ -41,7 +23,7 @@ The multiple-document interface (MDI) is a document-oriented interface that is c
 The MDIClient object is a container object that effectively specifies the client area within the parent [Form](form.md) in which the [SubForm](subform.md) are displayed. The MDIClient object also imposes special MDI behaviour which is quite different from that where a [SubForm](subform.md) is simply the child of another [Form](form.md).
 
 
-By default, the MDIClient occupies the entire client area within its parent [Form](form.md). This is the area within the [Form](form.md) that is not occupied by [CoolBar](coolbar.md)s, MenuBars, [ToolBar](toolbar.md)s, ToolControls, [TabBar](tabbar.md)s, [TabControls](tabcontrol.md) and StatusBars. In most applications it is therefore not necessary to specify the position and size of the MDIClient object, although you may do so if you want to reserve additional space in the parent [Form](form.md) for other objects.
+By default, the MDIClient occupies the entire client area within its parent [Form](form.md). This is the area within the [Form](form.md) that is not occupied by [CoolBar](coolbar.md)s, [MenuBar](menubar.md)s, [ToolBar](toolbar.md)s, [ToolControl](toolcontrol.md)s, [TabBar](tabbar.md)s, [TabControls](tabcontrol.md) and [StatusBar](statusbar.md)s. In most applications it is therefore not necessary to specify the position and size of the MDIClient object, although you may do so if you want to reserve additional space in the parent [Form](form.md) for other objects.
 
 
 Each of the four sides of an MDIClient object is automatically *attached* to the corresponding side of its parent [Form](form.md) and maintains its position when the parent [Form](form.md) is resized. This means that a default MDIClient always occupies the entire client area of its parent [Form](form.md), regardless of how the parent is resized.
@@ -54,6 +36,7 @@ The [MDIActive](./mdiactive.md) and [MDIActiveObject](./mdiactiveobject.md) prop
 
 
 You can call methods which cause the MDIClient to organise its child [SubForm](subform.md)s in some way. These methods are as follows:
+
 
 | [MDICascade](./mdicascade.md) | Causes the MDIClient to organise its child Forms in an overlapping manner. |
 | --- | ---  |

@@ -4,38 +4,16 @@
 
 
 <h1 class="heading"><span class="name">OCXClass</span></h1>
-| Parents | Properties | Methods | Events |
+
+| [Parents](../ParentLists/OCXClass.htm) | [Properties](../PropLists/OCXClass.htm) | [Methods](../MethodLists/OCXClass.htm) | [Events](../EventLists/OCXClass.htm) |
 | --- | --- | --- | ---  |
 
+
 | Purpose: | This object provides access to OLE (ActiveX) Controls. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [GetPropertyInfo](../a-z/getpropertyinfo.md) [GetEventInfo](../a-z/geteventinfo.md) [GetMethodInfo](../a-z/getmethodinfo.md) [GetTypeInfo](../a-z/gettypeinfo.md) [SetPropertyInfo](../a-z/setpropertyinfo.md) [SetMethodInfo](../a-z/setmethodinfo.md) [ShowHelp](../a-z/showhelp.md) [ShowProperties](../a-z/showproperties.md) [Browse](../a-z/browse.md) [OLEAddEventSink](../a-z/oleaddeventsink.md) [OLEDeleteEventSink](../a-z/oledeleteeventsink.md) [OLEListEventSinks](../a-z/olelisteventsinks.md) | [Detach](../a-z/detach.md) | [GetPropertyInfo](../a-z/getpropertyinfo.md) | [GetEventInfo](../a-z/geteventinfo.md) | [GetMethodInfo](../a-z/getmethodinfo.md) | [GetTypeInfo](../a-z/gettypeinfo.md) | [SetPropertyInfo](../a-z/setpropertyinfo.md) | [SetMethodInfo](../a-z/setmethodinfo.md) | [ShowHelp](../a-z/showhelp.md) | [ShowProperties](../a-z/showproperties.md) | [Browse](../a-z/browse.md) | [OLEAddEventSink](../a-z/oleaddeventsink.md) | [OLEDeleteEventSink](../a-z/oledeleteeventsink.md) | [OLEListEventSinks](../a-z/olelisteventsinks.md) |  |  |
-| [Detach](../a-z/detach.md) | [GetPropertyInfo](../a-z/getpropertyinfo.md) | [GetEventInfo](../a-z/geteventinfo.md) |
-| [GetMethodInfo](../a-z/getmethodinfo.md) | [GetTypeInfo](../a-z/gettypeinfo.md) | [SetPropertyInfo](../a-z/setpropertyinfo.md) |
-| [SetMethodInfo](../a-z/setmethodinfo.md) | [ShowHelp](../a-z/showhelp.md) | [ShowProperties](../a-z/showproperties.md) |
-| [Browse](../a-z/browse.md) | [OLEAddEventSink](../a-z/oleaddeventsink.md) | [OLEDeleteEventSink](../a-z/oledeleteeventsink.md) |
-| [OLEListEventSinks](../a-z/olelisteventsinks.md) |  |  |
-| Properties | [Detach](../a-z/detach.md) [GetPropertyInfo](../a-z/getpropertyinfo.md) [GetEventInfo](../a-z/geteventinfo.md) [GetMethodInfo](../a-z/getmethodinfo.md) [GetTypeInfo](../a-z/gettypeinfo.md) [SetPropertyInfo](../a-z/setpropertyinfo.md) [SetMethodInfo](../a-z/setmethodinfo.md) [ShowHelp](../a-z/showhelp.md) [ShowProperties](../a-z/showproperties.md) [Browse](../a-z/browse.md) [OLEAddEventSink](../a-z/oleaddeventsink.md) [OLEDeleteEventSink](../a-z/oledeleteeventsink.md) [OLEListEventSinks](../a-z/olelisteventsinks.md) | [Detach](../a-z/detach.md) | [GetPropertyInfo](../a-z/getpropertyinfo.md) | [GetEventInfo](../a-z/geteventinfo.md) | [GetMethodInfo](../a-z/getmethodinfo.md) | [GetTypeInfo](../a-z/gettypeinfo.md) | [SetPropertyInfo](../a-z/setpropertyinfo.md) | [SetMethodInfo](../a-z/setmethodinfo.md) | [ShowHelp](../a-z/showhelp.md) | [ShowProperties](../a-z/showproperties.md) | [Browse](../a-z/browse.md) | [OLEAddEventSink](../a-z/oleaddeventsink.md) | [OLEDeleteEventSink](../a-z/oledeleteeventsink.md) | [OLEListEventSinks](../a-z/olelisteventsinks.md) |  |  |
-| [Detach](../a-z/detach.md) | [GetPropertyInfo](../a-z/getpropertyinfo.md) | [GetEventInfo](../a-z/geteventinfo.md) |
-| [GetMethodInfo](../a-z/getmethodinfo.md) | [GetTypeInfo](../a-z/gettypeinfo.md) | [SetPropertyInfo](../a-z/setpropertyinfo.md) |
-| [SetMethodInfo](../a-z/setmethodinfo.md) | [ShowHelp](../a-z/showhelp.md) | [ShowProperties](../a-z/showproperties.md) |
-| [Browse](../a-z/browse.md) | [OLEAddEventSink](../a-z/oleaddeventsink.md) | [OLEDeleteEventSink](../a-z/oledeleteeventsink.md) |
-| [OLEListEventSinks](../a-z/olelisteventsinks.md) |  |  |
-| Methods | [Detach](../a-z/detach.md) [GetPropertyInfo](../a-z/getpropertyinfo.md) [GetEventInfo](../a-z/geteventinfo.md) [GetMethodInfo](../a-z/getmethodinfo.md) [GetTypeInfo](../a-z/gettypeinfo.md) [SetPropertyInfo](../a-z/setpropertyinfo.md) [SetMethodInfo](../a-z/setmethodinfo.md) [ShowHelp](../a-z/showhelp.md) [ShowProperties](../a-z/showproperties.md) [Browse](../a-z/browse.md) [OLEAddEventSink](../a-z/oleaddeventsink.md) [OLEDeleteEventSink](../a-z/oledeleteeventsink.md) [OLEListEventSinks](../a-z/olelisteventsinks.md) | [Detach](../a-z/detach.md) | [GetPropertyInfo](../a-z/getpropertyinfo.md) | [GetEventInfo](../a-z/geteventinfo.md) | [GetMethodInfo](../a-z/getmethodinfo.md) | [GetTypeInfo](../a-z/gettypeinfo.md) | [SetPropertyInfo](../a-z/setpropertyinfo.md) | [SetMethodInfo](../a-z/setmethodinfo.md) | [ShowHelp](../a-z/showhelp.md) | [ShowProperties](../a-z/showproperties.md) | [Browse](../a-z/browse.md) | [OLEAddEventSink](../a-z/oleaddeventsink.md) | [OLEDeleteEventSink](../a-z/oledeleteeventsink.md) | [OLEListEventSinks](../a-z/olelisteventsinks.md) |  |  |
-| [Detach](../a-z/detach.md) | [GetPropertyInfo](../a-z/getpropertyinfo.md) | [GetEventInfo](../a-z/geteventinfo.md) |
-| [GetMethodInfo](../a-z/getmethodinfo.md) | [GetTypeInfo](../a-z/gettypeinfo.md) | [SetPropertyInfo](../a-z/setpropertyinfo.md) |
-| [SetMethodInfo](../a-z/setmethodinfo.md) | [ShowHelp](../a-z/showhelp.md) | [ShowProperties](../a-z/showproperties.md) |
-| [Browse](../a-z/browse.md) | [OLEAddEventSink](../a-z/oleaddeventsink.md) | [OLEDeleteEventSink](../a-z/oledeleteeventsink.md) |
-| [OLEListEventSinks](../a-z/olelisteventsinks.md) |  |  |
-| Events | [Detach](../a-z/detach.md) [GetPropertyInfo](../a-z/getpropertyinfo.md) [GetEventInfo](../a-z/geteventinfo.md) [GetMethodInfo](../a-z/getmethodinfo.md) [GetTypeInfo](../a-z/gettypeinfo.md) [SetPropertyInfo](../a-z/setpropertyinfo.md) [SetMethodInfo](../a-z/setmethodinfo.md) [ShowHelp](../a-z/showhelp.md) [ShowProperties](../a-z/showproperties.md) [Browse](../a-z/browse.md) [OLEAddEventSink](../a-z/oleaddeventsink.md) [OLEDeleteEventSink](../a-z/oledeleteeventsink.md) [OLEListEventSinks](../a-z/olelisteventsinks.md) | [Detach](../a-z/detach.md) | [GetPropertyInfo](../a-z/getpropertyinfo.md) | [GetEventInfo](../a-z/geteventinfo.md) | [GetMethodInfo](../a-z/getmethodinfo.md) | [GetTypeInfo](../a-z/gettypeinfo.md) | [SetPropertyInfo](../a-z/setpropertyinfo.md) | [SetMethodInfo](../a-z/setmethodinfo.md) | [ShowHelp](../a-z/showhelp.md) | [ShowProperties](../a-z/showproperties.md) | [Browse](../a-z/browse.md) | [OLEAddEventSink](../a-z/oleaddeventsink.md) | [OLEDeleteEventSink](../a-z/oledeleteeventsink.md) | [OLEListEventSinks](../a-z/olelisteventsinks.md) |  |  |
-| [Detach](../a-z/detach.md) | [GetPropertyInfo](../a-z/getpropertyinfo.md) | [GetEventInfo](../a-z/geteventinfo.md) |
-| [GetMethodInfo](../a-z/getmethodinfo.md) | [GetTypeInfo](../a-z/gettypeinfo.md) | [SetPropertyInfo](../a-z/setpropertyinfo.md) |
-| [SetMethodInfo](../a-z/setmethodinfo.md) | [ShowHelp](../a-z/showhelp.md) | [ShowProperties](../a-z/showproperties.md) |
-| [Browse](../a-z/browse.md) | [OLEAddEventSink](../a-z/oleaddeventsink.md) | [OLEDeleteEventSink](../a-z/oledeleteeventsink.md) |
-| [OLEListEventSinks](../a-z/olelisteventsinks.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 This object loads an OLE Control into memory and defines a new class of object associated with it. The name of the new class is the name specified by the left argument of `⎕WC`  You may create an instance of the newly defined class using the name you assigned to the OCXClass object as the Type property.

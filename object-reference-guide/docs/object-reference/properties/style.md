@@ -5,22 +5,10 @@
 
 <h1 class="heading"><span class="name">Style</span></h1>
 
-Applies To
-
-| Applies To: | [Button](../a-z/button.md) [ButtonEdit](../a-z/buttonedit.md) [Calendar](../a-z/calendar.md) [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [DateTimePicker](../a-z/datetimepicker.md) [Edit](../a-z/edit.md) [FileBox](../a-z/filebox.md) [Icon](../a-z/icon.md) [List](../a-z/list.md) [ListView](../a-z/listview.md) [Locator](../a-z/locator.md) [Marker](../a-z/marker.md) [MenuItem](../a-z/menuitem.md) [MsgBox](../a-z/msgbox.md) [ProgressBar](../a-z/progressbar.md) [PropertySheet](../a-z/propertysheet.md) [Separator](../a-z/separator.md) [Splitter](../a-z/splitter.md) [Static](../a-z/static.md) [StatusField](../a-z/statusfield.md) [TabControl](../a-z/tabcontrol.md) [TCPSocket](../a-z/tcpsocket.md) [ToolButton](../a-z/toolbutton.md) [ToolControl](../a-z/toolcontrol.md) [TrackBar](../a-z/trackbar.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Calendar](../a-z/calendar.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [FileBox](../a-z/filebox.md) | [Icon](../a-z/icon.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [Locator](../a-z/locator.md) | [Marker](../a-z/marker.md) | [MenuItem](../a-z/menuitem.md) | [MsgBox](../a-z/msgbox.md) | [ProgressBar](../a-z/progressbar.md) | [PropertySheet](../a-z/propertysheet.md) | [Separator](../a-z/separator.md) | [Splitter](../a-z/splitter.md) | [Static](../a-z/static.md) | [StatusField](../a-z/statusfield.md) | [TabControl](../a-z/tabcontrol.md) | [TCPSocket](../a-z/tcpsocket.md) | [ToolButton](../a-z/toolbutton.md) | [ToolControl](../a-z/toolcontrol.md) | [TrackBar](../a-z/trackbar.md) |  |
-| --- | --- | ---  |
-| [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Calendar](../a-z/calendar.md) |
-| [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [DateTimePicker](../a-z/datetimepicker.md) |
-| [Edit](../a-z/edit.md) | [FileBox](../a-z/filebox.md) | [Icon](../a-z/icon.md) |
-| [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [Locator](../a-z/locator.md) |
-| [Marker](../a-z/marker.md) | [MenuItem](../a-z/menuitem.md) | [MsgBox](../a-z/msgbox.md) |
-| [ProgressBar](../a-z/progressbar.md) | [PropertySheet](../a-z/propertysheet.md) | [Separator](../a-z/separator.md) |
-| [Splitter](../a-z/splitter.md) | [Static](../a-z/static.md) | [StatusField](../a-z/statusfield.md) |
-| [TabControl](../a-z/tabcontrol.md) | [TCPSocket](../a-z/tcpsocket.md) | [ToolButton](../a-z/toolbutton.md) |
-| [ToolControl](../a-z/toolcontrol.md) | [TrackBar](../a-z/trackbar.md) |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property determines a particular style of object within the general
@@ -53,11 +41,11 @@ selected a cross appears in the box. This style of button is known as a
 
 
 `'CommandLink'` means that the button has an icon displayed to the left of its [Caption](../a-z/caption.md), the appearance of which is controlled by the  [Elevated](../a-z/elevated.md) property. 
-Note that this feature only applies if  is enabled.
+**Note that this feature only applies if is enabled.**
 
 
 `'Split'` specifies a `'Push'` button with an additional drop-down button, similar to that provided by a [Combo](../a-z/combo.md) object. 
-Note that this feature only applies if  is enabled.
+**Note that this feature only applies if is enabled.**
 
 
 For a [Calendar](../a-z/calendar.md) object, The Style property
@@ -154,6 +142,7 @@ determines the appearance of its [ToolButton](../a-z/toolbutton.md) children an
 For a [TrackBar](../a-z/trackbar.md), the Style property
 determines the appearance and behaviour of the TrackBar and may be `'Standard'` (the default) or `'Selection'`.
 
+
 | `'Msg'` | no icon (the default) |
 | --- | ---  |
 | `'Info'` | information message icon |
@@ -161,10 +150,12 @@ determines the appearance and behaviour of the TrackBar and may be `'Standard'` 
 | `'Warn'` | warning icon |
 | `'Error'` | critical error icon |
 
+
 | `'BlackFrame'` | `'BlackBox'` |
 | --- | ---  |
 | `'GreyFrame' or 'GrayFrame'` | `'GreyBox' or 'GrayBox'` |
 | `'WhiteFrame'` | `'WhiteBox'` |
+
 
 | CapsLock | Monitors state of Caps Lock key |
 | --- | ---  |

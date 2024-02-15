@@ -10,11 +10,11 @@ The entire file, viewed in Notepad, is shown below.
 
 Given this instruction, ASP.NET will locate the APLServices.Example Web Service by searching the bin sub-directory for assemblies. Therefore, to make this work, we have only to create a .NET assembly in samples\asp.net\aplservices\bin. The assembly should contain a .NET Namespace named APLServices, which in turn defines a class named Example.
 
-The procedure for creating .NET classes and assemblies in Dyalog APL was discussed in Writing .NET Classes in Dyalog APL on page 1. Making a WebService class is done in exactly the same way.
+The procedure for creating .NET classes and assemblies in Dyalog APL was discussed in [Writing .NET Classes in Dyalog APL on page 1](../Writing%20.Net%20Classes/Chapter%20Heading.htm#Chapter_Heading). Making a WebService class is done in exactly the same way.
 
 Note that the sub-directory samples\asp.net\aplservices\bin already contains copies of the dependent Dyalog DLLs that are required to execute the code.
 
-Start Dyalog as Administrator. This is essential both to allow you to create an assembly.
+**Start Dyalog as Administrator.** This is essential both to allow you to create an assembly.
 
 Starting with a `CLEAR WS`,  create a namespace called `APLServices`. This will act as the container corresponding to a .NET Namespace in the assembly.
 ```apl

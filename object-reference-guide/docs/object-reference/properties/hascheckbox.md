@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">HasCheckBox</span></h1>
+
 | Applies To: | [DateTimePicker](../a-z/datetimepicker.md) |
 | --- | ---  |
 
-| Applies To: | [DateTimePicker](../a-z/datetimepicker.md) | [DateTimePicker](../a-z/datetimepicker.md) |  |  |
-| --- | --- | ---  |
-| [DateTimePicker](../a-z/datetimepicker.md) |  |  |
 
-
-Description
+**Description**
 
 
 Specifies whether or not a checkbox is displayed alongside the value in a DateTimePicker.

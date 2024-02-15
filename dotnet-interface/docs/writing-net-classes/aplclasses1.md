@@ -28,10 +28,7 @@ Its syntax is:
                                  [,argNtype [argNname]]*]
 ```
 
-that is: The type of the result returned by the function - followed by arrow - if any, the exported name (it can be different from the APL function name but it must be provided), and, if any arguments are to be supplied, their types and optional names, each type-name pair separated from the next by a comma. In the example above the function returns an array of 32-bit integers and takes a single integer as its argument. For further details, see 
-Language Reference Guide: 
-
-Signature StatementSignature Statement on page 1.
+that is: The type of the result returned by the function - followed by arrow - if any, the exported name (it can be different from the APL function name but it must be provided), and, if any arguments are to be supplied, their types and optional names, each type-name pair separated from the next by a comma. In the example above the function returns an array of 32-bit integers and takes a single integer as its argument. For further details, see [Signature Statement on page 1](../../Language/Control%20Structures/signature.htm#SignatureStatement).
 
 Note that, when the class is fixed, APL will try to find the .NET data types you have specified for the result and for the parameters. If one or more of the data types are not recognised as available .NET Types, you will be informed in the status window and APL will refuse to fix the class. If you see such a warning you have either entered an incorrect data type name, or you have not set `:Using` correctly, or some other syntax problem has been detected (for example the function is missing a terminating `∇`. In the previous example, the only data type used is System.Int32. Since we have set `:Using System,` the name `Int32` is found in the right place and all is well.
 

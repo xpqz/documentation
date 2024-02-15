@@ -127,7 +127,7 @@ clear ws
 ```
 
 
-This example illustrates how `⎕OR` can be used to clone a GUI object; in this case a Group containing some Button objects.  Note that `⎕WC` will accept only a `⎕OR` object as its argument (or preceded by the "Type" keyword).  You may not specify any other properties in the same `⎕WC` statement, but you must instead use `⎕WS` to reset them afterwards.
+This example illustrates how `⎕OR` can be used to clone a GUI object; in this case a Group containing some Button objects.  Note that `⎕WC` will accept **only** a `⎕OR` object as its argument (or preceded by the "Type" keyword).  You may not specify any other properties in the same `⎕WC` statement, but you must instead use `⎕WS` to reset them afterwards.
 ```apl
     'F'⎕WC'Form'
     'F.G1' ⎕WC 'Group' '&One' (10 10)(80 30)

@@ -250,35 +250,6 @@ The function `TempConverter` shown below contains the code needed to display and
      ∇
 
 ```
-```apl
-     ∇ TempConverter;str;xml;win;txtFahrenheit;txtCentigrade;
-                        mnuFahrenheit;mnuCentigrade;btnF2C;
-                        btnC2F;btnQuit;scrTemp;sink
-[1]    ⎕USING←'System'
-[2]    ⎕USING,←⊂'System.IO'
-[3]    ⎕USING,←⊂'System.Windows.Markup'
-[4]    ⎕USING,←⊂'System.Xml,system.xml.dll'
-[5]    ⎕USING,←⊂'System.Windows.Controls.Primitives,
-                  WPF/PresentationFramework.dll'
-[6]
-[7]    str←⎕NEW StringReader(⊂XAML)
-[8]    xml←⎕NEW XmlTextReader str
-[9]    win←XamlReader.Load xml
-[10]
-[11]   txtFahrenheit←win.FindName⊂'txtFahrenheit'
-[12]   txtCentigrade←win.FindName⊂'txtCentigrade'
-[13]   mnuFahrenheit←win.FindName⊂'mnuFahrenheit'
-[14]   mnuFahrenheit.onClick←'SET_F'
-[15]   mnuCentigrade←win.FindName⊂'mnuCentigrade'
-[16]   mnuCentigrade.onClick←'SET_C'
-[17]   (btnF2C←win.FindName⊂'btnF2C').onClick←'f2c'
-[18]   (btnC2F←win.FindName⊂'btnC2F').onClick←'c2f'
-[19]   (btnQuit←win.FindName⊂'btnQuit').onClick←'Quit'
-[20]   (scrTemp←win.FindName⊂'scrTemp').onScroll←'F2C'
-[21]   sink←win.ShowDialog
-     ∇
-
-```
 
 The variable `XAML` (a character vector) contains the XAML described previously.
 

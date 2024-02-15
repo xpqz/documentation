@@ -39,6 +39,7 @@ Note that when Wildcard is 1, element(s) of `R` can  be 0 or `>1`. If Wildcard i
 
 The IfExists variant option determines what happens when a source file is to be copied to a target file that already exists. It does not apply to directories, only to the files within them.
 
+
 | Value | Description |
 | --- | ---  |
 | 'Error' | Existing files will not be overwritten and an error will be signalled. |
@@ -53,6 +54,7 @@ The following cases cause an error to be signalled  regardless of the value of t
 
 
 The RenameOnly option  determines what happens when it is not possible to rename the source.
+
 
 | 0 | The source will be copied and the original deleted |
 | --- | ---  |
@@ -166,6 +168,7 @@ When `⎕NMOVE` copies and deletes files:
 
 #### Wildcard Option (Boolean)
 
+
 | 0 | The name or names in `Y` identifies a specific file name. |
 | --- | ---  |
 | `1` | The name or names in `Y` that specify the **base name** and **extension** (see NParts on page 1 ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character. |
@@ -187,6 +190,7 @@ The callback function is invoked once at the start of the operation, during the 
 
 The value of the ProgressCallback variant option may be:
 
+
 | `fn` | The name of the callback function. |
 | --- | ---  |
 | `fn data` | The name of the callback function, and an array or namespace which is to be passed to the callback in its left argument. |
@@ -194,6 +198,7 @@ The value of the ProgressCallback variant option may be:
 
 
 The right argument given to the callback function is a 3-element vector:
+
 
 | `[1]` | Function | Character vector which identifies the function that caused the callback to be executed; either `'⎕NCOPY'` or `'⎕NMOVE'` |
 | --- | --- | ---  |
@@ -206,6 +211,7 @@ The right argument given to the callback function is a 3-element vector:
 
 
 Event is a character vector which indicates the stage of the copy or move operation..
+
 
 | `'Start'` | Reported by the first invocation of the callback which occurs before any files are scanned or processed. This may be used to set the parameters that control the operation. See Options on page 1 . |
 | --- | ---  |
@@ -223,6 +229,7 @@ Note that there will always be at least 2 invocations of the callback to indicat
 
 Info is a ref to a namespace that contains information about the event. This namespace persists for the duration of the execution of the system function and contains the following fields:
 
+
 | `Progress` | A number between `0` and `Limit` . When the event code is `'Start'` , `Progress` is `0` . Every time a file or directory is processed, `Progress` is increased by 1. Finally when the  event code is `'Done'` , `Progress` will be equal to `Limit` . |
 | --- | ---  |
 | `Limit` | The maximum value of `Progress` . This value might change during the file operation if it doesn't do a full discovery first (the `ScanFirst` option is 0), or if the file structure changes between the scan and the copy/move. |
@@ -237,12 +244,13 @@ Info is a ref to a namespace that contains information about the event. This nam
 
 This is a namespace which contains options that control future invocations of the callback. The options persist between these invocations, so there is no need to set them again unless they should be changed. The fields and their default values are:
 
+
 | Field | Default | Description |
 | --- | --- | ---  |
 | `ScanFirst` | 1 | Specifies if the file operation should do a "scan pass" before moving/copying the files. This stage just enumerates  the files to determine how many there are. This will ensure `Limit` has a realistic value when the actual processing of the files happens. The overhead is small in comparirsion with the time it takes to process the files. The `ScanFirst` field is only inspected right after the first invocation of the callback function, with the event code `'Start'` . |
 | `Delay` | 0 | Specifies the number of milliseconds to wait, until the callback will be called again. If the entire file operation finishes before this time, the callback function is called anyway, with the event code `'Done'` . If a slow file operation is happening (such as copying a big file), the actual delay before the callback is invoked might be longer than the value of `Delay` . |
 | `Skip` | 0 | Specifies a number of files to skip between invocations of the callback function. If you are only interested in getting a callback for each 10th file, you should set this option to 9 for example. |
-| `LastFileCount` | 1 | An integer, specifying the maximum number of the latest filenames to be stored in the `Last` field. The default is to only store the last file processed, but if `Delay` or `Skip` are non-zero, multiple files could have been processed between calls to the callback function. A value of 5 for example, will make sure that the 5 last files processed before calling the callback, will have their names in the `Last` field. The `Last` field might have fewer elements than `LastFileCount` , if the number of files processed since the last call is less than `LastFileCount` .The special value `¯1` indicates that the `Last` field should contain all the last files since the last call (no limit). |
+| `LastFileCount` | 1 | An integer, specifying the maximum number of the latest filenames to be stored in the `Last` field. The default is to only store the last file processed, but if `Delay` or `Skip` are non-zero, multiple files could have been processed between calls to the callback function. A value of 5 for example, will make sure that the 5 last files processed before calling the callback, will have their names in the `Last` field. The `Last` field might have fewer elements than `LastFileCount` , if the number of files processed since the last call is less than `LastFileCount` .The special value `¯1` indicates that the `Last` field should contain **all** the last files since the last call (no limit). |
 
 
 

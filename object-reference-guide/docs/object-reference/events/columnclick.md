@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">ColumnClick</span></h1>
+
 | Applies To: | [ListView](../a-z/listview.md) |
 | --- | ---  |
 
-| Applies To: | [ListView](../a-z/listview.md) | [ListView](../a-z/listview.md) |  |  |
-| --- | --- | ---  |
-| [ListView](../a-z/listview.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user clicks on the column heading in a [ListView](../a-z/listview.md) object. This event may not be disabled or affected by a callback function in any way.
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 5-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

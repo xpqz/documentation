@@ -10,11 +10,8 @@ In the Classic Edition, there are two types of APL font provided; bitmap (screen
 
 The bitmap fonts are designed for the screen alone and are named *Dyalog Std* and *Dyalog Alt*. The TrueType fonts have a traditional 2741-style italic appearance and are named *Dyalog Std TT* and *Dyalog Alt TT*1.
 
-The *Std* layout, which was the standard layout for Versions of Dyalog APL up to Version 10.1 contains the APL underscored alphabet `Ⓐ-Ⓩ`. The underscored alphabet is a deprecated feature and is only supported in this Version of Dyalog APL for backwards compatibility.
+The *Std* layout, which was the standard layout for Versions of Dyalog APL up to Version 10.1 contains the APL underscored alphabet `Ⓐ-Ⓩ`. **The underscored alphabet is a deprecated feature and is only supported in this Version of Dyalog APL for backwards compatibility.**
 
 The *Alt* layout, which replaced the *Std* layout as the standard layout for Version 12.0 Classic Edition onwards, does not have the underscored alphabet, but contains additional National Language characters in their place. Note that the extra National Language symbols share the same `⎕AV` positions with the underscored alphabet. If, for example, you switch from the *Std* font layout to the alternative one, you will see the symbol `Á` (A-acute) instead of the symbol `Ⓐ` (A-underscore).
 
-You may use either a bitmap font or a TrueType font in your APL session (see " Session Operations" on page 1
-UI Guide: 
-
-Session Operations for details). You MUST use a TrueType font for printing APL functions.
+You may use either a bitmap font or a TrueType font in your APL session (see [" Session Operations" on page 1](../The%20APL%20Environment/Session%20ToolBars.htm#Session_Operations) for details). You MUST use a TrueType font for printing APL functions.

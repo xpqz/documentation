@@ -4,22 +4,16 @@
 
 
 <h1 class="heading"><span class="name">ActiveXContainer</span></h1>
-| Parents | Properties | Methods | Events |
+
+| [Parents](../ParentLists/ActiveXContainer.htm) | [Properties](../PropLists/ActiveXContainer.htm) | [Methods](../MethodLists/ActiveXContainer.htm) | [Events](../EventLists/ActiveXContainer.htm) |
 | --- | --- | --- | ---  |
 
+
 | Purpose: | The ActiveXContainer object represents the application that is currently hosting an instance of an ActiveXControl object. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [OLEQueryInterface](../a-z/olequeryinterface.md) | [Detach](../a-z/detach.md) | [OLEQueryInterface](../a-z/olequeryinterface.md) |  |
-| [Detach](../a-z/detach.md) | [OLEQueryInterface](../a-z/olequeryinterface.md) |  |
-| Properties | [Detach](../a-z/detach.md) [OLEQueryInterface](../a-z/olequeryinterface.md) | [Detach](../a-z/detach.md) | [OLEQueryInterface](../a-z/olequeryinterface.md) |  |
-| [Detach](../a-z/detach.md) | [OLEQueryInterface](../a-z/olequeryinterface.md) |  |
-| Methods | [Detach](../a-z/detach.md) [OLEQueryInterface](../a-z/olequeryinterface.md) | [Detach](../a-z/detach.md) | [OLEQueryInterface](../a-z/olequeryinterface.md) |  |
-| [Detach](../a-z/detach.md) | [OLEQueryInterface](../a-z/olequeryinterface.md) |  |
-| Events | [Detach](../a-z/detach.md) [OLEQueryInterface](../a-z/olequeryinterface.md) | [Detach](../a-z/detach.md) | [OLEQueryInterface](../a-z/olequeryinterface.md) |  |
-| [Detach](../a-z/detach.md) | [OLEQueryInterface](../a-z/olequeryinterface.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 An ActiveXContainer is used to represent the host application that is hosting an [ActiveXControl](../a-z/activexcontrol.md) object, and provides access to its ambient properties such as font, and colour.

@@ -130,7 +130,7 @@ Traps can be nested. In the following example, code in the inner trap structure 
 
 The second way of trapping errors is to use the system variable: `⎕TRAP`.
 
-`⎕TRAP`, can be assigned a nested vector of trap specifications. Each trap specification is itself a nested vector, of length 3, with each element defined as:
+`⎕TRAP`, can be assigned a nested vector of **trap specifications**. Each trap specification is itself a nested vector, of length 3, with each element defined as:
 
 | list of error numbers | The error numbers we are interested in. |
 | --- | ---  |

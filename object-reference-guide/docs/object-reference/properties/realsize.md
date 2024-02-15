@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">RealSize</span></h1>
+
 | Applies To: | [Metafile](../a-z/metafile.md) |
 | --- | ---  |
 
-| Applies To: | [Metafile](../a-z/metafile.md) | [Metafile](../a-z/metafile.md) |  |  |
-| --- | --- | ---  |
-| [Metafile](../a-z/metafile.md) |  |  |
 
-
-Description
+**Description**
 
 
 There are several distinct types of Windows metafiles. A *placeable* metafile is one that carries with it its *suggested size*. Certain programs (such as Word for Windows) only support placeable metafiles.

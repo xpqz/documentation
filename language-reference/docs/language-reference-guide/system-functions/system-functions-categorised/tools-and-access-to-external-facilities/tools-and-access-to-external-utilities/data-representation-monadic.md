@@ -12,6 +12,7 @@ Monadic `⎕DR` returns the type of its argument `Y`.  The result `R` is an inte
 
 Unicode Edition
 
+
 | Value | Data Type |
 | --- | ---  |
 | 11 | 1 bit Boolean |
@@ -30,6 +31,7 @@ Unicode Edition
 
 
 Classic Edition
+
 
 | Value | Data Type |
 | --- | ---  |

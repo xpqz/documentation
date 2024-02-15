@@ -61,7 +61,7 @@ FILES/COSTS
 
 
 
-If the named object is a GUI object, the object and all its children are deleted and removed from the screen. The expression `⎕EX'.'` deletes all GUI objects owned by the current thread in the Root namespace but not those in sub-namespaces. In addition, if this expression is executed by thread 0, it resets all the properties of  `'.'` to their default values. Furthermore, any unprocessed events in the event queue are discarded.
+If the named object is a GUI object, the object and all its children are deleted and removed from the screen. The expression `⎕EX'.'` deletes all GUI objects owned by the current thread in the Root namespace **but not** those in sub-namespaces. In addition, if this expression is executed by thread 0, it resets all the properties of  `'.'` to their default values. Furthermore, any unprocessed events in the event queue are discarded.
 
 
 If the named object is a shared variable, the variable is retracted.

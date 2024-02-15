@@ -4,29 +4,16 @@
 
 
 <h1 class="heading"><span class="name">Scroll</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/Scroll.htm) | [Children](../ChildLists/Scroll.htm) | [Properties](../PropLists/Scroll.htm) | [Methods](../MethodLists/Scroll.htm) | [Events](../EventLists/Scroll.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | Provides a vertical or horizontal scrollbar. |
-| --- | --- | ---  |
-| Parents | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Children | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Properties | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Methods | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| Events | [Detach](../a-z/detach.md) [GetTextSize](../a-z/gettextsize.md) [Animate](../a-z/animate.md) [GetFocus](../a-z/getfocus.md) [ShowSIP](../a-z/showsip.md) [GetFocusObj](../a-z/getfocusobj.md) | [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) | [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
-| [Detach](../a-z/detach.md) | [GetTextSize](../a-z/gettextsize.md) | [Animate](../a-z/animate.md) |
-| [GetFocus](../a-z/getfocus.md) | [ShowSIP](../a-z/showsip.md) | [GetFocusObj](../a-z/getfocusobj.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The Scroll object provides a vertical or horizontal scrollbar that can be used as a "free-standing" object or can be "attached" to the side of its parent.
@@ -36,7 +23,7 @@ The Scroll object provides a vertical or horizontal scrollbar that can be used a
 An "attached" scrollbar is one that extends along one edge of a [Form](../a-z/form.md), [SubForm](../a-z/subform.md) or [Group](../a-z/group.md) and has a standard width or height. When the [Form](../a-z/form.md) or [Group](../a-z/group.md) is resized, a vertical attached scrollbar is resized vertically but remains the same width and stays fixed to the side of its parent. Similarly, a horizontal attached scrollbar is resized horizontally but remains the same height.
 
 
-For most purposes, the use of the Scroll object to provide attached scrollbars in a [Form](../a-z/form.md) has been superseded by the provision of scrollbars as a property of a [Form](../a-z/form.md).
+For most purposes, the use of the Scroll object to provide attached scrollbars in a [Form](../a-z/form.md) has been superseded by the provision of scrollbars as a **property** of a [Form](../a-z/form.md).
 
 
 A "free-standing" scrollbar is typically used as a "scale" for selecting a numeric value from a range and may appear and behave rather differently from a standard attached scrollbar. Firstly, a free-standing scrollbar will normally be positioned at an arbitrary position within its parent [Form](../a-z/form.md) or [Group](../a-z/group.md) and be associated with other objects such as [Label](../a-z/label.md)s and [Edit](../a-z/edit.md) fields. Secondly, when its parent [Form](../a-z/form.md) or [Group](../a-z/group.md) is resized, it is probably desirable that the scrollbar reacts in the same way as the other child objects, so that the overall appearance of the layout is maintained.
@@ -63,7 +50,7 @@ The [Align](../a-z/align.md) property is a character vector containing `'Top'`, 
 Note that the default value of [Align](../a-z/align.md) is `'Right'` unless [HScroll](../a-z/hscroll.md) is set to `¯1` in which case it is `'Bottom'`. It must therefore be explicitly set to `'None'` if you want a non-attached "free-standing" scrollbar.
 
 
-[VScroll](../a-z/vscroll.md) and [HScroll](../a-z/hscroll.md) are used to specify the orientation of the scrollbar explicitly, usually in conjunction with [Align](../a-z/align.md) set to `'None'`. [VScroll](../a-z/vscroll.md) or [HScroll](../a-z/hscroll.md) may be specified when the object is created by `⎕WC`, but cannot be changed using `⎕WS`. The two properties are mutually exclusive. Each of them may be set to 0 or `¯1`, where `¯1` means "true" and 0 means "false". Thus ([VScroll](../a-z/vscroll.md)`¯1`) defines a vertical scrollbar, while ([HScroll](../a-z/hscroll.md)`¯1`) specifies a horizontal one. Setting either property to `¯1` automatically causes the other to be set to 0. If you try to set both to `¯1`, [VScroll](../a-z/vscroll.md) takes precedence and [HScroll](../a-z/hscroll.md) is reset to 0.
+[VScroll](../a-z/vscroll.md) and [HScroll](../a-z/hscroll.md) are used to specify the orientation of the scrollbar explicitly, usually in conjunction with [Align](../a-z/align.md) set to `'None'`. [VScroll](../a-z/vscroll.md) or [HScroll](../a-z/hscroll.md) may be specified when the object is created by [`⎕WC`](../../Language/System%20Functions/wc.htm), but cannot be changed using [`⎕WS`](../../Language/System%20Functions/ws.htm). The two properties are mutually exclusive. Each of them may be set to 0 or `¯1`, where `¯1` means "true" and 0 means "false". Thus ([VScroll](../a-z/vscroll.md)`¯1`) defines a vertical scrollbar, while ([HScroll](../a-z/hscroll.md)`¯1`) specifies a horizontal one. Setting either property to `¯1` automatically causes the other to be set to 0. If you try to set both to `¯1`, [VScroll](../a-z/vscroll.md) takes precedence and [HScroll](../a-z/hscroll.md) is reset to 0.
 
 
 [Note: the reason for using two properties where one would be sufficient is to allow for the possible future implementation of scrolling groups as provided by `⎕SM`/`⎕SR`.]

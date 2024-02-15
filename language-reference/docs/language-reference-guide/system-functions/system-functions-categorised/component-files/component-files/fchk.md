@@ -28,6 +28,7 @@ In either case, the default behaviour is as follows:
 
 The result `R` is a vector of the numbers of missing or damaged components. `R` may include non-positive numbers of "pseudo components" that indicate damage to parts of the file other than in specific components:
 
+
 | `0` | ACCESS MATRIX. |
 | --- | ---  |
 | `¯1` | Free-block tree. |
@@ -53,6 +54,7 @@ Using Variant, the options are as follows:
 
 ##### Task
 
+
 | Scan | causes the file to be checked and optionally repaired (see `'Repair'` below) |
 | --- | ---  |
 | `Rebuild` | causes the file to be unconditionally rebuilt |
@@ -61,6 +63,7 @@ Using Variant, the options are as follows:
 
 ##### Repair (principle option)
 
+
 | 0 | do not repair |
 | --- | ---  |
 | `1` | causes the file to be repaired if damage is found |
@@ -68,6 +71,7 @@ Using Variant, the options are as follows:
 
 
 ##### Force
+
 
 | 0 | do not validate the file if it appears to have been properly closed |
 | --- | ---  |

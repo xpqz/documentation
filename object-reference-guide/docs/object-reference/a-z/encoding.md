@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Encoding</span></h1>
+
 | Applies To: | [TCPSocket](./tcpsocket.md) |
 | --- | ---  |
 
-| Applies To: | [TCPSocket](./tcpsocket.md) | [TCPSocket](./tcpsocket.md) |  |  |
-| --- | --- | ---  |
-| [TCPSocket](./tcpsocket.md) |  |  |
 
-
-Description
+**Description**
 
 
 The Encoding property is a character vector that specifies how character data
@@ -21,11 +18,12 @@ are encoded or translated.
 
 
 The possible values are `'None'`,
-`'UTF-8'`, `'Classic'`, or `'Unicode'`, depending upon the value of the Style property.
+`'UTF-8'`, `'Classic'`, or `'Unicode'`, depending upon the value of the [Style](style.md) property.
 
 
 
 Unicode Edition
+
 
 | Style | Encoding | Description |
 | --- | ---  |
@@ -40,6 +38,7 @@ Unicode Edition
 
 Classic Edition
 
+
 | Style | Encoding | Description |
 | --- | ---  |
 | `'Raw'` | 'None' | Not applicable. Only integer data may be transmitted/received. |
@@ -50,15 +49,15 @@ Classic Edition
 
 
 
-The default value of Encoding depends upon the value of Style as indicated.  Default values are highlighted thus.  in the above tables.
+The default value of Encoding depends upon the value of [Style](style.md) as indicated.  Default values are highlighted thus.  in the above tables.
 
 
-An attempt to set the value of Encoding to a value not valid for the current Style,
+An attempt to set the value of Encoding to a value not valid for the current [Style](style.md),
 as implied by the above tables, will cause `DOMAIN ERROR`.
 
 
-If you change the value of the Style property, the value of Encoding will remain unchanged if it is valid for the new
-Style. Otherwise it will revert to the default value for the new value of Style.
+If you change the value of the [Style](style.md) property, the value of Encoding will remain unchanged if it is valid for the new
+Style. Otherwise it will revert to the default value for the new value of [Style](style.md).
 ```apl
       's0'⎕WC'TCPSocket' ('LocalPort' 2001)
       s0.(Style Encoding)

@@ -5,38 +5,10 @@
 
 <h1 class="heading"><span class="name">Event</span></h1>
 
-Applies To
-
-| Applies To: | [ActiveXContainer](../a-z/activexcontainer.md) [ActiveXControl](../a-z/activexcontrol.md) [Animation](../a-z/animation.md) [Bitmap](../a-z/bitmap.md) [BrowseBox](../a-z/browsebox.md) [Button](../a-z/button.md) [ButtonEdit](../a-z/buttonedit.md) [Calendar](../a-z/calendar.md) [Circle](../a-z/circle.md) [Clipboard](../a-z/clipboard.md) [ColorButton](../a-z/colorbutton.md) [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [CoolBand](../a-z/coolband.md) [CoolBar](../a-z/coolbar.md) [Cursor](../a-z/cursor.md) [DateTimePicker](../a-z/datetimepicker.md) [Edit](../a-z/edit.md) [Ellipse](../a-z/ellipse.md) [FileBox](../a-z/filebox.md) [Form](../a-z/form.md) [Grid](../a-z/grid.md) [Group](../a-z/group.md) [HTMLRenderer](../a-z/htmlrenderer.md) [Icon](../a-z/icon.md) [Image](../a-z/image.md) [ImageList](../a-z/imagelist.md) [Label](../a-z/label.md) [List](../a-z/list.md) [ListView](../a-z/listview.md) [Locator](../a-z/locator.md) [Marker](../a-z/marker.md) [MDIClient](../a-z/mdiclient.md) [Menu](../a-z/menu.md) [MenuBar](../a-z/menubar.md) [MenuItem](../a-z/menuitem.md) [Metafile](../a-z/metafile.md) [MsgBox](../a-z/msgbox.md) [OCXClass](../a-z/ocxclass.md) [OLEClient](../a-z/oleclient.md) [OLEServer](../a-z/oleserver.md) [Poly](../a-z/poly.md) [Printer](../a-z/printer.md) [ProgressBar](../a-z/progressbar.md) [PropertyPage](../a-z/propertypage.md) [PropertySheet](../a-z/propertysheet.md) [Rect](../a-z/rect.md) [RichEdit](../a-z/richedit.md) [Root](../a-z/root.md) [Scroll](../a-z/scroll.md) [Separator](../a-z/separator.md) [SM](../a-z/sm.md) [Spinner](../a-z/spinner.md) [Splitter](../a-z/splitter.md) [Static](../a-z/static.md) [StatusBar](../a-z/statusbar.md) [StatusField](../a-z/statusfield.md) [SubForm](../a-z/subform.md) [SysTrayItem](../a-z/systrayitem.md) [TabBar](../a-z/tabbar.md) [TabBtn](../a-z/tabbtn.md) [TabButton](../a-z/tabbutton.md) [TabControl](../a-z/tabcontrol.md) [TCPSocket](../a-z/tcpsocket.md) [Text](../a-z/text.md) [Timer](../a-z/timer.md) [TipField](../a-z/tipfield.md) [ToolBar](../a-z/toolbar.md) [ToolButton](../a-z/toolbutton.md) [ToolControl](../a-z/toolcontrol.md) [TrackBar](../a-z/trackbar.md) [TreeView](../a-z/treeview.md) [UpDown](../a-z/updown.md) | [ActiveXContainer](../a-z/activexcontainer.md) | [ActiveXControl](../a-z/activexcontrol.md) | [Animation](../a-z/animation.md) | [Bitmap](../a-z/bitmap.md) | [BrowseBox](../a-z/browsebox.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Calendar](../a-z/calendar.md) | [Circle](../a-z/circle.md) | [Clipboard](../a-z/clipboard.md) | [ColorButton](../a-z/colorbutton.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [CoolBand](../a-z/coolband.md) | [CoolBar](../a-z/coolbar.md) | [Cursor](../a-z/cursor.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [Ellipse](../a-z/ellipse.md) | [FileBox](../a-z/filebox.md) | [Form](../a-z/form.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) | [HTMLRenderer](../a-z/htmlrenderer.md) | [Icon](../a-z/icon.md) | [Image](../a-z/image.md) | [ImageList](../a-z/imagelist.md) | [Label](../a-z/label.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [Locator](../a-z/locator.md) | [Marker](../a-z/marker.md) | [MDIClient](../a-z/mdiclient.md) | [Menu](../a-z/menu.md) | [MenuBar](../a-z/menubar.md) | [MenuItem](../a-z/menuitem.md) | [Metafile](../a-z/metafile.md) | [MsgBox](../a-z/msgbox.md) | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) | [OLEServer](../a-z/oleserver.md) | [Poly](../a-z/poly.md) | [Printer](../a-z/printer.md) | [ProgressBar](../a-z/progressbar.md) | [PropertyPage](../a-z/propertypage.md) | [PropertySheet](../a-z/propertysheet.md) | [Rect](../a-z/rect.md) | [RichEdit](../a-z/richedit.md) | [Root](../a-z/root.md) | [Scroll](../a-z/scroll.md) | [Separator](../a-z/separator.md) | [SM](../a-z/sm.md) | [Spinner](../a-z/spinner.md) | [Splitter](../a-z/splitter.md) | [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [StatusField](../a-z/statusfield.md) | [SubForm](../a-z/subform.md) | [SysTrayItem](../a-z/systrayitem.md) | [TabBar](../a-z/tabbar.md) | [TabBtn](../a-z/tabbtn.md) | [TabButton](../a-z/tabbutton.md) | [TabControl](../a-z/tabcontrol.md) | [TCPSocket](../a-z/tcpsocket.md) | [Text](../a-z/text.md) | [Timer](../a-z/timer.md) | [TipField](../a-z/tipfield.md) | [ToolBar](../a-z/toolbar.md) | [ToolButton](../a-z/toolbutton.md) | [ToolControl](../a-z/toolcontrol.md) | [TrackBar](../a-z/trackbar.md) | [TreeView](../a-z/treeview.md) | [UpDown](../a-z/updown.md) |  |  |
-| --- | --- | ---  |
-| [ActiveXContainer](../a-z/activexcontainer.md) | [ActiveXControl](../a-z/activexcontrol.md) | [Animation](../a-z/animation.md) |
-| [Bitmap](../a-z/bitmap.md) | [BrowseBox](../a-z/browsebox.md) | [Button](../a-z/button.md) |
-| [ButtonEdit](../a-z/buttonedit.md) | [Calendar](../a-z/calendar.md) | [Circle](../a-z/circle.md) |
-| [Clipboard](../a-z/clipboard.md) | [ColorButton](../a-z/colorbutton.md) | [Combo](../a-z/combo.md) |
-| [ComboEx](../a-z/comboex.md) | [CoolBand](../a-z/coolband.md) | [CoolBar](../a-z/coolbar.md) |
-| [Cursor](../a-z/cursor.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) |
-| [Ellipse](../a-z/ellipse.md) | [FileBox](../a-z/filebox.md) | [Form](../a-z/form.md) |
-| [Grid](../a-z/grid.md) | [Group](../a-z/group.md) | [HTMLRenderer](../a-z/htmlrenderer.md) |
-| [Icon](../a-z/icon.md) | [Image](../a-z/image.md) | [ImageList](../a-z/imagelist.md) |
-| [Label](../a-z/label.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) |
-| [Locator](../a-z/locator.md) | [Marker](../a-z/marker.md) | [MDIClient](../a-z/mdiclient.md) |
-| [Menu](../a-z/menu.md) | [MenuBar](../a-z/menubar.md) | [MenuItem](../a-z/menuitem.md) |
-| [Metafile](../a-z/metafile.md) | [MsgBox](../a-z/msgbox.md) | [OCXClass](../a-z/ocxclass.md) |
-| [OLEClient](../a-z/oleclient.md) | [OLEServer](../a-z/oleserver.md) | [Poly](../a-z/poly.md) |
-| [Printer](../a-z/printer.md) | [ProgressBar](../a-z/progressbar.md) | [PropertyPage](../a-z/propertypage.md) |
-| [PropertySheet](../a-z/propertysheet.md) | [Rect](../a-z/rect.md) | [RichEdit](../a-z/richedit.md) |
-| [Root](../a-z/root.md) | [Scroll](../a-z/scroll.md) | [Separator](../a-z/separator.md) |
-| [SM](../a-z/sm.md) | [Spinner](../a-z/spinner.md) | [Splitter](../a-z/splitter.md) |
-| [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [StatusField](../a-z/statusfield.md) |
-| [SubForm](../a-z/subform.md) | [SysTrayItem](../a-z/systrayitem.md) | [TabBar](../a-z/tabbar.md) |
-| [TabBtn](../a-z/tabbtn.md) | [TabButton](../a-z/tabbutton.md) | [TabControl](../a-z/tabcontrol.md) |
-| [TCPSocket](../a-z/tcpsocket.md) | [Text](../a-z/text.md) | [Timer](../a-z/timer.md) |
-| [TipField](../a-z/tipfield.md) | [ToolBar](../a-z/toolbar.md) | [ToolButton](../a-z/toolbutton.md) |
-| [ToolControl](../a-z/toolcontrol.md) | [TrackBar](../a-z/trackbar.md) | [TreeView](../a-z/treeview.md) |
-| [UpDown](../a-z/updown.md) |  |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property defines how an object responds to user actions.
@@ -70,6 +42,7 @@ However, certain special considerations apply which are discussed later.
 
 
 When you specify the Event property using `⎕WC` or `⎕WS`, the action to be taken for an event type or types is specified by a 2 or 3-element vector containing:
+
 
 | Element | Item | Description |
 | --- | --- | ---  |
@@ -111,8 +84,8 @@ to `¯1`, all keystrokes for the object in
 question will be ignored. Similarly, if you set the *action* on a Close
 event for a Form to `¯1`, the user will be
 unable to close the Form. This is possible because APL intercepts most events before Windows itself takes any action. However, certain events (e.g. focus
-change events) are not notified to APL until after the event has occurred
-and after Windows has itself responded in some way. In these
+change events) are not notified to APL until **after** the event has occurred
+and **after** Windows has itself responded in some way. In these
 circumstances it is not always practical for APL to undo what Windows has
 already done, and an action code of `¯1` is
 treated as if it were 0. For further details, see the individual entries for
@@ -163,7 +136,7 @@ Unless the callback function is niladic, it will be supplied a right argument (`
 The function may be defined to return no result, a result, or a shy result. The result determines how the event is handled.
 
 
-The **default processing** of the event is deferred until after the callback has
+The **default processing** of the event is deferred until **after** the callback has
 been run, and may be inhibited or modified by its result. If the callback
 function returns no result, or returns a scalar 1, normal processing of the
 event is allowed to continue as soon as the callback completes. If the callback
@@ -543,7 +516,7 @@ MouseDown, MouseUp and MouseMove
 
 
 In addition to the standard events supported directly by Dyalog APL, you may
-specify your own events. For these, you must use event numbers;
+specify your own events. For these, you **must** use event numbers;
 user-defined event names are not allowed.
 
 
@@ -552,7 +525,7 @@ that you choose numbers greater than 1000 to avoid potential conflict with
 future releases of Dyalog APL.
 
 
-You can only generate user-defined events under program control with `⎕NQ`.
+You can only **generate** user-defined events under program control with `⎕NQ`.
 
 #### Examples
 ```apl
@@ -729,7 +702,7 @@ When using regular event names, case is unimportant. For example, the system wil
 
 
 The event number 0 and the event name `'All'`,
-are convenient shorthands to associate a particular action (such as a callback) with all the built-in events supported by an object.
+are convenient shorthands to associate a particular action (such as a callback) with **all** the built-in events supported by an object.
 
 #### Example
 ```apl

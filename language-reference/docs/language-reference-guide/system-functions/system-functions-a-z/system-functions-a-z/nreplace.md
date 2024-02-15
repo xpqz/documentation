@@ -13,6 +13,7 @@
 
 `Y` is a 2- or 3-element integer vector whose elements are as follows:
 
+
 | `[1]` | negative tie number, |
 | --- | ---  |
 | `[2]` | start byte, counting from 0, at which the data is to be written; the value `¯1` causes the data to be written from the current position in the file (initially, 0). |
@@ -47,7 +48,7 @@ As a consequence of these two rules, you must specify the data type (either 160 
 #### Example
 ```apl
 
-      n←'test'⎕NTIE 0 ⍝ See "Example" on page 1
+      n←'test'⎕NTIE 0 ⍝ See ["Example" on page 1](nappend.md)
 
       ⎕NREAD n 80 3 0
 abc

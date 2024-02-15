@@ -11,6 +11,7 @@
 
 The `:Access` statement is used to specify characteristics for functions  that represent Methods in classes (see ["Methods" on page 1](../../../../../object-oriented-programming/class-members/methods/methods.md)). It is also applicable to Classes and Properties.
 
+
 | Element | Description |
 | --- | ---  |
 | `Private|Public` | Specifies whether or not the method is accessible from outside the Class or an Instance of the Class. The default is `Private` . |

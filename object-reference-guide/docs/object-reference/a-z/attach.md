@@ -5,25 +5,10 @@
 
 <h1 class="heading"><span class="name">Attach</span></h1>
 
-Applies To
-
-| Applies To: | [Animation](./animation.md) [Button](./button.md) [ButtonEdit](./buttonedit.md) [Calendar](./calendar.md) [ColorButton](./colorbutton.md) [Combo](./combo.md) [ComboEx](./comboex.md) [CoolBar](./coolbar.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [Grid](./grid.md) [Group](./group.md) [HTMLRenderer](./htmlrenderer.md) [Label](./label.md) [List](./list.md) [ListView](./listview.md) [MDIClient](./mdiclient.md) [ProgressBar](./progressbar.md) [RichEdit](./richedit.md) [Scroll](./scroll.md) [SM](./sm.md) [Spinner](./spinner.md) [Static](./static.md) [StatusBar](./statusbar.md) [StatusField](./statusfield.md) [SubForm](./subform.md) [TabBar](./tabbar.md) [TabBtn](./tabbtn.md) [TabControl](./tabcontrol.md) [ToolBar](./toolbar.md) [ToolControl](./toolcontrol.md) [TrackBar](./trackbar.md) [TreeView](./treeview.md) [UpDown](./updown.md) | [Animation](./animation.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) | [Calendar](./calendar.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [CoolBar](./coolbar.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Grid](./grid.md) | [Group](./group.md) | [HTMLRenderer](./htmlrenderer.md) | [Label](./label.md) | [List](./list.md) | [ListView](./listview.md) | [MDIClient](./mdiclient.md) | [ProgressBar](./progressbar.md) | [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [SM](./sm.md) | [Spinner](./spinner.md) | [Static](./static.md) | [StatusBar](./statusbar.md) | [StatusField](./statusfield.md) | [SubForm](./subform.md) | [TabBar](./tabbar.md) | [TabBtn](./tabbtn.md) | [TabControl](./tabcontrol.md) | [ToolBar](./toolbar.md) | [ToolControl](./toolcontrol.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) | [UpDown](./updown.md) |  |  |
-| --- | --- | ---  |
-| [Animation](./animation.md) | [Button](./button.md) | [ButtonEdit](./buttonedit.md) |
-| [Calendar](./calendar.md) | [ColorButton](./colorbutton.md) | [Combo](./combo.md) |
-| [ComboEx](./comboex.md) | [CoolBar](./coolbar.md) | [DateTimePicker](./datetimepicker.md) |
-| [Edit](./edit.md) | [Grid](./grid.md) | [Group](./group.md) |
-| [HTMLRenderer](./htmlrenderer.md) | [Label](./label.md) | [List](./list.md) |
-| [ListView](./listview.md) | [MDIClient](./mdiclient.md) | [ProgressBar](./progressbar.md) |
-| [RichEdit](./richedit.md) | [Scroll](./scroll.md) | [SM](./sm.md) |
-| [Spinner](./spinner.md) | [Static](./static.md) | [StatusBar](./statusbar.md) |
-| [StatusField](./statusfield.md) | [SubForm](./subform.md) | [TabBar](./tabbar.md) |
-| [TabBtn](./tabbtn.md) | [TabControl](./tabcontrol.md) | [ToolBar](./toolbar.md) |
-| [ToolControl](./toolcontrol.md) | [TrackBar](./trackbar.md) | [TreeView](./treeview.md) |
-| [UpDown](./updown.md) |  |  |
+**Applies To**
 
 
-Description
+**Description**
 
 
 This property specifies how an object responds to its parent being resized. It is a 4-element vector of character vectors which defines how each of the four edges of the object moves in response to a resize request made by the parent. Note that this property is only effective if the value of [AutoConf](autoconf.md) on the parent is 2 or 3 and [AutoConf](autoconf.md) for the object itself is 1 or 3.
@@ -32,6 +17,7 @@ This property specifies how an object responds to its parent being resized. It i
 
 
 The 4 elements of Attach refer to the Top, Left, Bottom and Right edges of the object respectively. Their values may be defined as follows :
+
 
 | Element | Value | Meaning |
 | --- | --- | ---  |

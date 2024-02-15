@@ -4,34 +4,16 @@
 
 
 <h1 class="heading"><span class="name">PropertySheet</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/PropertySheet.htm) | [Children](../ChildLists/PropertySheet.htm) | [Properties](../PropLists/PropertySheet.htm) | [Methods](../MethodLists/PropertySheet.htm) | [Events](../EventLists/PropertySheet.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The PropertySheet object represents a standard multi-page dialog box. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [ChooseFont](./choosefont.md) [SetWizard](./setwizard.md) [SetFinishText](./setfinishtext.md) [CancelToClose](./canceltoclose.md) [GetFocus](./getfocus.md) [GetFocusObj](./getfocusobj.md) [Wait](./wait.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [SetWizard](./setwizard.md) | [SetFinishText](./setfinishtext.md) | [CancelToClose](./canceltoclose.md) | [GetFocus](./getfocus.md) | [GetFocusObj](./getfocusobj.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [SetWizard](./setwizard.md) |
-| [SetFinishText](./setfinishtext.md) | [CancelToClose](./canceltoclose.md) | [GetFocus](./getfocus.md) |
-| [GetFocusObj](./getfocusobj.md) | [Wait](./wait.md) |  |
-| Children | [Detach](./detach.md) [ChooseFont](./choosefont.md) [SetWizard](./setwizard.md) [SetFinishText](./setfinishtext.md) [CancelToClose](./canceltoclose.md) [GetFocus](./getfocus.md) [GetFocusObj](./getfocusobj.md) [Wait](./wait.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [SetWizard](./setwizard.md) | [SetFinishText](./setfinishtext.md) | [CancelToClose](./canceltoclose.md) | [GetFocus](./getfocus.md) | [GetFocusObj](./getfocusobj.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [SetWizard](./setwizard.md) |
-| [SetFinishText](./setfinishtext.md) | [CancelToClose](./canceltoclose.md) | [GetFocus](./getfocus.md) |
-| [GetFocusObj](./getfocusobj.md) | [Wait](./wait.md) |  |
-| Properties | [Detach](./detach.md) [ChooseFont](./choosefont.md) [SetWizard](./setwizard.md) [SetFinishText](./setfinishtext.md) [CancelToClose](./canceltoclose.md) [GetFocus](./getfocus.md) [GetFocusObj](./getfocusobj.md) [Wait](./wait.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [SetWizard](./setwizard.md) | [SetFinishText](./setfinishtext.md) | [CancelToClose](./canceltoclose.md) | [GetFocus](./getfocus.md) | [GetFocusObj](./getfocusobj.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [SetWizard](./setwizard.md) |
-| [SetFinishText](./setfinishtext.md) | [CancelToClose](./canceltoclose.md) | [GetFocus](./getfocus.md) |
-| [GetFocusObj](./getfocusobj.md) | [Wait](./wait.md) |  |
-| Methods | [Detach](./detach.md) [ChooseFont](./choosefont.md) [SetWizard](./setwizard.md) [SetFinishText](./setfinishtext.md) [CancelToClose](./canceltoclose.md) [GetFocus](./getfocus.md) [GetFocusObj](./getfocusobj.md) [Wait](./wait.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [SetWizard](./setwizard.md) | [SetFinishText](./setfinishtext.md) | [CancelToClose](./canceltoclose.md) | [GetFocus](./getfocus.md) | [GetFocusObj](./getfocusobj.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [SetWizard](./setwizard.md) |
-| [SetFinishText](./setfinishtext.md) | [CancelToClose](./canceltoclose.md) | [GetFocus](./getfocus.md) |
-| [GetFocusObj](./getfocusobj.md) | [Wait](./wait.md) |  |
-| Events | [Detach](./detach.md) [ChooseFont](./choosefont.md) [SetWizard](./setwizard.md) [SetFinishText](./setfinishtext.md) [CancelToClose](./canceltoclose.md) [GetFocus](./getfocus.md) [GetFocusObj](./getfocusobj.md) [Wait](./wait.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [SetWizard](./setwizard.md) | [SetFinishText](./setfinishtext.md) | [CancelToClose](./canceltoclose.md) | [GetFocus](./getfocus.md) | [GetFocusObj](./getfocusobj.md) | [Wait](./wait.md) |  |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [SetWizard](./setwizard.md) |
-| [SetFinishText](./setfinishtext.md) | [CancelToClose](./canceltoclose.md) | [GetFocus](./getfocus.md) |
-| [GetFocusObj](./getfocusobj.md) | [Wait](./wait.md) |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 There are two different kinds of PropertySheet which you select using the Style property. This may only be set when the PropertySheet is created using `⎕WC` and Style may not subsequently be changed using `⎕WS`.

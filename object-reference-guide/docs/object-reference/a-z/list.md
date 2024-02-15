@@ -4,34 +4,16 @@
 
 
 <h1 class="heading"><span class="name">List</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/List.htm) | [Children](../ChildLists/List.htm) | [Properties](../PropLists/List.htm) | [Methods](../MethodLists/List.htm) | [Events](../EventLists/List.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | Allows the user to select one or more items from a list. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
-| Children | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
-| Properties | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
-| Methods | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
-| Events | [Detach](./detach.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [ChooseFont](./choosefont.md) | [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [ChooseFont](./choosefont.md) |  |  |
-| [Detach](./detach.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) |
-| [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) |
-| [ChooseFont](./choosefont.md) |  |  |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The [Items](./items.md) property is either a vector of character vectors or a character matrix, and determines the items in the List.
@@ -41,7 +23,7 @@ The [Items](./items.md) property is either a vector of character vectors or a ch
 The size and position of the area used to display the list is defined by [Size](./size.md) and [Posn](./posn.md). If [Size](./size.md) is not chosen to represent an exact number of lines of text, the bottom line of text may be clipped.
 
 
-The [Index](./index.md) property specifies or reports the position of [Items](./items.md) in the list box as a positive integer value. If [Index](./index.md) has the value "n", it means that the "nth" item in [Items](./items.md) is displayed on the top line in the list box. However, it is ignored if all the [Items](./items.md) fit within the List object. Note that [Index](./index.md) can only be set using `⎕WS` and not by `⎕WC`. The default value for [Index](./index.md) is `⎕IO`.
+The [Index](./index.md) property specifies or reports the position of [Items](./items.md) in the list box as a positive integer value. If [Index](./index.md) has the value "n", it means that the "nth" item in [Items](./items.md) is displayed on the top line in the list box. However, it is ignored if all the [Items](./items.md) fit within the List object. Note that [Index](./index.md) can only be set using [`⎕WS`](../../Language/System%20Functions/ws.htm) and not by [`⎕WC`](../../Language/System%20Functions/wc.htm). The default value for [Index](./index.md) is `⎕IO`.
 
 
 The [Style](./style.md) property may be `'Single'` (the default) or `'Multi'`. `'Single'` allows only a single item to be selected. `'Multi'` allows several items to be chosen. In either case, if the [Select](./select.md) event is enabled, it is generated whenever the selection changes. If [Style](./style.md) is `'Multi'` the List will generate a [Select](./select.md) event every time an item is added to the selected list.
@@ -54,6 +36,7 @@ The [SelItems](./selitems.md) property is a Boolean vector with one element per 
 
 
 The [VScroll](./vscroll.md) property determines whether or not the list has a scrollbar. Its possible values are :
+
 
 | `¯2` | scrollbar if required |
 | --- | ---  |

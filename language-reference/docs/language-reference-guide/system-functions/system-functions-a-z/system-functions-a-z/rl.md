@@ -27,6 +27,7 @@ If the seed is set to `⍬`, Dyalog is able to take advantage of certain optimis
 
 The 3 random number generators are listed in the table below. The 4th column of the table contains the values of seeds that may be assigned to them.
 
+
 | Id | Name | Algorithm | Valid Seed Values |
 | --- | --- | --- | ---  |
 | 0 | RNG0 | Lehmer linear congruential generator. | `0` , `⍬` , or an integer in the range 1 to `¯2+2*31` |

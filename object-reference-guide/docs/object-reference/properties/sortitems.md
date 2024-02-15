@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">SortItems</span></h1>
+
 | Applies To: | [List](../a-z/list.md) |
 | --- | ---  |
 
-| Applies To: | [List](../a-z/list.md) | [List](../a-z/list.md) |  |  |
-| --- | --- | ---  |
-| [List](../a-z/list.md) |  |  |
 
-
-Description
+**Description**
 
 
 The SortItems property specifies whether or not the items in a [List](../a-z/list.md) object are sorted.

@@ -3,15 +3,12 @@
 
 
 <h1 class="heading"><span class="name">GetCommandLine</span></h1>
+
 | Applies To: | [Root](./root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](./root.md) | [Root](./root.md) |  |  |
-| --- | --- | ---  |
-| [Root](./root.md) |  |  |
 
-
-Description
+**Description**
 
 
 The GetCommandLine method returns the command line that was used to start the current Dyalog APL session or application.
@@ -35,6 +32,6 @@ The result is a character vector.
 #### Note
 
 
-GetCommandLine only works on Windows, and its use is deprecated in favour of GetCommandLineArgs, which works on all platforms.
+GetCommandLine only works on Windows, and its use is deprecated in favour of [GetCommandLineArgs](getcommandlineargs.md), which works on all platforms.
 
 

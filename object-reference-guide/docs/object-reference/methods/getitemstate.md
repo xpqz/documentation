@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">GetItemState</span></h1>
+
 | Applies To: | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
 | --- | --- | ---  |
 
-| Applies To: | [ListView](../a-z/listview.md) [TreeView](../a-z/treeview.md) | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |  |
-| --- | --- | ---  |
-| [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |  |
 
-
-Description
+**Description**
 
 
 This method is used to obtain the status of a particular item in a [ListView](../a-z/listview.md) or [TreeView](../a-z/treeview.md) object.
 
 
 The argument for GetItemState is a single item as follows:
+
 
 | `[1]` | Item number | Integer |
 | --- | --- | ---  |
@@ -28,6 +26,7 @@ The argument for GetItemState is a single item as follows:
 
 
 The result indicates the state of the item as the sum of one or more of the following codes:
+
 
 
 | `¯1` | Error (most likely the Item number is invalid) |

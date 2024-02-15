@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">CellDown</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when the user presses a mouse button down whilst over a cell in a [Grid](../a-z/grid.md). The purpose of this event is to allow an application to display a pop-up [Menu](../a-z/menu.md) or a [Locator](../a-z/locator.md) over a cell in a [Grid](../a-z/grid.md) or to take some other special action.
@@ -23,7 +20,8 @@ The default action is to generate a [CellMove](../a-z/cellmove.md) event which w
 
 
 
-The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is an 9 element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is an 9 element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
@@ -47,6 +45,6 @@ The cell row and column are `⎕IO` dependent
 If the user clicks over a row *title*, the value reported for the column is `¯1`, and the value reported for Title index is the index of that row title in [RowTitles](../a-z/rowtitles.md), or, if [RowTitles](../a-z/rowtitles.md) is not defined, the row number. Column titles are handled in a similar fashion.
 
 
-An application can position the user on a particular cell in a [Grid](../a-z/grid.md) by calling CellDown as a method, but it is recommended that a [CellMove](../a-z/cellmove.md) event is used instead.
+An application **can** position the user on a particular cell in a [Grid](../a-z/grid.md) by calling CellDown as a method, but it is recommended that a [CellMove](../a-z/cellmove.md) event is used instead.
 
 

@@ -23,6 +23,7 @@ The optional left-argument `X` specifies whether or not the name or names specif
 
 If `Y` is a scalar or vector, the result `R` is a 3-element vector of character vectors as follows:
 
+
 | `[1]` | **path** |
 | --- | ---  |
 | `[2]` | **base name** |

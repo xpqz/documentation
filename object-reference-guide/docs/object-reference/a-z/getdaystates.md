@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">GetDayStates</span></h1>
+
 | Applies To: | [Calendar](./calendar.md) |
 | --- | ---  |
 
-| Applies To: | [Calendar](./calendar.md) | [Calendar](./calendar.md) |  |  |
-| --- | --- | ---  |
-| [Calendar](./calendar.md) |  |  |
 
-
-Description
+**Description**
 
 
 If enabled, this event is reported when a [Calendar](./calendar.md) object requires the APL program to provide *day state* information for the range of dates it is about to display.
@@ -25,7 +22,7 @@ The [Calendar](./calendar.md) object displays day numbers using either the norma
 When the [Calendar](./calendar.md) control scrolls (and potentially at other times), it generates a GetDayStates event to ask you (the APL program) to tell it which of the dates that are about to be shown, should be displayed using the bold font attribute.
 
 
-If you wish any dates to be displayed using the bold font attribute, you must attach a callback function to this event which returns day state information in its result.
+If you wish any dates to be displayed using the bold font attribute, you **must** attach a callback function to this event which returns day state information in its result.
 
 
 By default, all dates are displayed using the normal font attribute, so you need only do this if you want any dates highlighted in bold.
@@ -36,6 +33,7 @@ You may not disable or nullify the operation that caused GetDayStates to fire by
 
 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 5-element vector as follows :
+
 
 | `[1]` | Object | ref or character vector |
 | --- | --- | ---  |

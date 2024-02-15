@@ -2,12 +2,12 @@
 
 A Class or Namespace script in the workspace or in a script file may specify that other  script files are to be loaded prior to the fixing of the script itself. To do so, it must begin with one or more `:Require` statements, with the following syntax:
 ```apl
-:Require file://[path]/file
+**:Require file://**[path]/file
 ```
 
 If no `path` is specified, the path is taken to be relative to the current script file or, if in a workspace script, the current working directory. Note that a leading `'./'` or `'.\'` in `path` is not  allowed, to avoid any potential confusion with "current directory".
 
-`:Require` is a directive to the Editor (more specifically, to the internal mechanism that fixes a script as an object in the workspace) and can appear in any script containing APL code, but must precede all code in the script. `:Require` is thus not valid within a function, class, namespace or any other definition.
+`:Require` is a directive to the Editor (more specifically, to the internal mechanism that fixes a script as an object in the workspace) and can appear in any script containing APL code, but **must** precede all code in the script. `:Require` is thus not valid within a function, class, namespace or any other definition.
 
 The prefix `file://`  allows for the possibility of a future extension of `http://` and `ftp://`.
 

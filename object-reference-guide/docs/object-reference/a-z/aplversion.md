@@ -4,19 +4,17 @@
 
 
 <h1 class="heading"><span class="name">APLVersion</span></h1>
+
 | Applies To: | [Root](./root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](./root.md) | [Root](./root.md) |  |  |
-| --- | --- | ---  |
-| [Root](./root.md) |  |  |
 
-
-Description
+**Description**
 
 
 This is a read-only property that provides information about the Version of Dyalog APL that you are using. It is
 a 4-element vector of character vectors as described in the table below. In future releases these values may change, be removed, or new ones added.
+
 
 | Index | Description | Possible Values |
 | --- | --- | ---  |

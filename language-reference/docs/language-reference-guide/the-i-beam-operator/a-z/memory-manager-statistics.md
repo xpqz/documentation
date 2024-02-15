@@ -14,6 +14,7 @@ This function returns information about the state of the workspace and provides 
 
 If `X` is omitted, the result `R` is an array with the same structure as `Y`, but with values in `Y` replaced by the following statistics.  For any value in `Y` outside those listed below, the result is undefined.
 
+
 | Value | Description |
 | --- | ---  |
 | 0 | Workspace available (a "quick" `⎕WA` ) |
@@ -52,6 +53,7 @@ See also Specify Workspace Available on page 1.
 
 
 If `X` is specified, it must be either a simple integer scalar, or a vector of the same length as `Y`, and the result `R` is `⍬`. In this case, the value in `Y` specifies the item to be set and `X` specifies its new value according to the table below.
+
 
 | Value | Description |
 | --- | ---  |

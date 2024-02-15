@@ -3,21 +3,19 @@
 
 
 <h1 class="heading"><span class="name">DeleteTypeLib</span></h1>
+
 | Applies To: | [Root](../a-z/root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](../a-z/root.md) | [Root](../a-z/root.md) |  |  |
-| --- | --- | ---  |
-| [Root](../a-z/root.md) |  |  |
 
-
-Description
+**Description**
 
 
 The DeleteTypeLib method removes a loaded Type Library from the workspace.
 
 
 The argument to DeleteTypeLib is as follows:
+
 
 | `[1]` | TypeLib | character vector |
 | --- | --- | ---  |

@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">ItemGroups</span></h1>
+
 | Applies To: | [ListView](./listview.md) |
 | --- | ---  |
 
-| Applies To: | [ListView](./listview.md) | [ListView](./listview.md) |  |  |
-| --- | --- | ---  |
-| [ListView](./listview.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies item groupings for a [ListView](./listview.md) object.
 
 
 ItemGroups is a nested scalar or nested vector each of whose elements specifies a grouping. Each grouping is a 5-element vector as follows:
+
 
 | `[1]` | Group caption | character vector |
 | --- | --- | ---  |
@@ -54,8 +52,6 @@ You can control the appearance of the groupings using the [ItemGroupMetrics](ite
 
 
 
-Note that this feature only applies if Native Look and Feel 
-(see page 1)
- is enabled.
+**Note that this feature only applies if Native Look and Feel (see page 1) is enabled.**
 
 

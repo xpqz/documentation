@@ -2,7 +2,7 @@
 
 A Numbered Property behaves like an array (conceptually a vector) which is only ever *partially* accessed and set (one element at a time) via indices.
 
-To implement a Numbered Property, you must specify a PropertyShape function and either or both a PropertyGet and PropertySet function.
+To implement a Numbered Property, you **must** specify a PropertyShape function and either or both a PropertyGet and PropertySet function.
 
 When an expression references or makes an assignment to a Numbered Property, APL first calls its PropertyShape function which returns the dimensions of the Property. Note that the shape of the result of this function determines the *rank* of the Property.
 

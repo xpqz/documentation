@@ -16,6 +16,7 @@ The `:Implements` statement identifies the function to be one of the following t
 			
 ```
 
+
 | Element | Description |
 | --- | ---  |
 | `Constructor` | Specifies that the function is a [Class Constructor](../../../../../object-oriented-programming/constructors/constructors.md) . |

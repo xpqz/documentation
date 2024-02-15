@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">PrintToPDF</span></h1>
+
 | Applies To: | [HTMLRenderer](./htmlrenderer.md) |
 | --- | ---  |
 
-| Applies To: | [HTMLRenderer](./htmlrenderer.md) | [HTMLRenderer](./htmlrenderer.md) |  |  |
-| --- | --- | ---  |
-| [HTMLRenderer](./htmlrenderer.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method writes the content displayed in an [HTMLRenderer](./htmlrenderer.md) object to a specified file in Portable Document Format (pdf).

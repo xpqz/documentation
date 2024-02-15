@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Input</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies objects to be associated with cells in a Grid.
@@ -37,6 +34,7 @@ When a cell becomes the current cell, its value (defined by the appropriate
 element of the [Values](../a-z/values.md) property) defines the
 value of a *corresponding property*of the associated object The
 property that corresponds to the value in the cell, depends upon the [Type](../a-z/type.md) of the associated object as shown in the following table:
+
 
 | Associate Object Type | Corresponding Property |
 | --- | ---  |

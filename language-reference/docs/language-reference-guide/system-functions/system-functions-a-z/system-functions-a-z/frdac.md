@@ -10,10 +10,7 @@
 `Y` must be a simple integer scalar or 1 or 2 element vector containing the file tie number followed by an optional passnumber.  If the passnumber is omitted it is assumed to be zero.  The result is the access matrix for the designated file.
 
 
-For details see File Access Control on page 1
-Programming Reference Guide: 
-
-Component Files.
+For details see [File Access Control on page 1](../APL%20Component%20Files/Component%20Files.htm#File_Access_Control).
 
 #### Examples
 ```apl

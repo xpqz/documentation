@@ -4,34 +4,16 @@
 
 
 <h1 class="heading"><span class="name">DateTimePicker</span></h1>
-| Parents | Children | Properties | Methods | Events |
+
+| [Parents](../ParentLists/DateTimePicker.htm) | [Children](../ChildLists/DateTimePicker.htm) | [Properties](../PropLists/DateTimePicker.htm) | [Methods](../MethodLists/DateTimePicker.htm) | [Events](../EventLists/DateTimePicker.htm) |
 | --- | --- | --- | --- | ---  |
 
+
 | Purpose: | The DateTimePicker object is an editable date/time field with an         optional drop-down Calendar. |
-| --- | --- | ---  |
-| Parents | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |
-| Children | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |
-| Properties | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |
-| Methods | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |
-| Events | [Detach](./detach.md) [ChooseFont](./choosefont.md) [GetTextSize](./gettextsize.md) [Animate](./animate.md) [GetFocus](./getfocus.md) [ShowSIP](./showsip.md) [GetFocusObj](./getfocusobj.md) [IDNToDate](./idntodate.md) [DateToIDN](./datetoidn.md) | [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) | [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) | [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |
-| [Detach](./detach.md) | [ChooseFont](./choosefont.md) | [GetTextSize](./gettextsize.md) |
-| [Animate](./animate.md) | [GetFocus](./getfocus.md) | [ShowSIP](./showsip.md) |
-| [GetFocusObj](./getfocusobj.md) | [IDNToDate](./idntodate.md) | [DateToIDN](./datetoidn.md) |
+| --- | ---  |
 
 
-Description
+**Description**
 
 
 The DateTimePicker object represents the built-in Windows date and time

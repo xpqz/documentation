@@ -3,21 +3,19 @@
 
 
 <h1 class="heading"><span class="name">RowSetVisibleDepth</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to set the maximum visible depth of data in rows of a [Grid](../a-z/grid.md).
 
 
 The argument to RowSetVisibleDepth is a numeric scalar as follows
+
 
 | `[1]` | Depth | integer |
 | --- | --- | ---  |

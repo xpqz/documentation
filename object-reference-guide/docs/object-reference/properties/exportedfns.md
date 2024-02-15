@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ExportedFns</span></h1>
+
 | Applies To: | [OLEServer](../a-z/oleserver.md) |
 | --- | ---  |
 
-| Applies To: | [OLEServer](../a-z/oleserver.md) | [OLEServer](../a-z/oleserver.md) |  |  |
-| --- | --- | ---  |
-| [OLEServer](../a-z/oleserver.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies the functions to be exposed as methods by an [OLEServer](../a-z/oleserver.md) object.

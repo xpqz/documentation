@@ -7,7 +7,7 @@
 I-Beam is a monadic operator that provides a range of system related services.
 
 
-WARNING: Although documentation is provided for I-Beam functions, any service provided using I-Beam should be considered as "experimental" and subject to change – without notice - from one release to the next. Any use of I-Beams in applications should therefore be carefully isolated in cover-functions that can be adjusted if necessary.
+**WARNING:** Although documentation is provided for I-Beam functions, any service provided using I-Beam should be considered as "experimental" and subject to change – without notice - from one release to the next. Any use of I-Beams in applications should therefore be carefully isolated in cover-functions that can be adjusted if necessary.
 
 
 `A` is an integer that specifies the type of operation to be performed. `Y` is an array that supplies further information about what is to be done.

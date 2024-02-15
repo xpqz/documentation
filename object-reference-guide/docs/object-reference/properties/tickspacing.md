@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">TickSpacing</span></h1>
+
 | Applies To: | [TrackBar](../a-z/trackbar.md) |
 | --- | ---  |
 
-| Applies To: | [TrackBar](../a-z/trackbar.md) | [TrackBar](../a-z/trackbar.md) |  |  |
-| --- | --- | ---  |
-| [TrackBar](../a-z/trackbar.md) |  |  |
 
-
-Description
+**Description**
 
 
 The TickSpacing property specifies the spacing between each tick mark in a [TrackBar](../a-z/trackbar.md) object. It is an integer between 1 and the maximum value of the [TrackBar](../a-z/trackbar.md) which is defined by the 2nd element of the [Limits](../a-z/limits.md) property.

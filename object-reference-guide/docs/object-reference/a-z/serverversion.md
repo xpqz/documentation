@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ServerVersion</span></h1>
+
 | Applies To: | [OLEServer](./oleserver.md) |
 | --- | ---  |
 
-| Applies To: | [OLEServer](./oleserver.md) | [OLEServer](./oleserver.md) |  |  |
-| --- | --- | ---  |
-| [OLEServer](./oleserver.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property specifies the version number of an [OLEServer](./oleserver.md) object.

@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">Collate</span></h1>
+
 | Applies To: | [Printer](../a-z/printer.md) |
 | --- | ---  |
 
-| Applies To: | [Printer](../a-z/printer.md) | [Printer](../a-z/printer.md) |  |  |
-| --- | --- | ---  |
-| [Printer](../a-z/printer.md) |  |  |
 
-
-Description
+**Description**
 
 
 Specifies whether or not multiple copies of printer output are collated.

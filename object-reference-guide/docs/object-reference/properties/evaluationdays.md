@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">EvaluationDays</span></h1>
+
 | Applies To: | [Root](../a-z/root.md) |
 | --- | ---  |
 
-| Applies To: | [Root](../a-z/root.md) | [Root](../a-z/root.md) |  |  |
-| --- | --- | ---  |
-| [Root](../a-z/root.md) |  |  |
 
-
-Description
+**Description**
 
 
 This is a read-only property that reports the number of days remaining before an evaluation version of a Dyalog APL run-time application expires.
@@ -21,7 +18,7 @@ This is a read-only property that reports the number of days remaining before an
 It is provided so that you can display an appropriate message box to notify your end-user when your application is started.
 
 
-PocketAPL only
+**PocketAPL only**
 
 
 

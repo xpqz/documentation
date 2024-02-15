@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">InterceptedURLs</span></h1>
+
 | Applies To: | [HTMLRenderer](./htmlrenderer.md) |
 | --- | ---  |
 
-| Applies To: | [HTMLRenderer](./htmlrenderer.md) | [HTMLRenderer](./htmlrenderer.md) |  |  |
-| --- | --- | ---  |
-| [HTMLRenderer](./htmlrenderer.md) |  |  |
 
-
-Description
+**Description**
 
 
 The InterceptedURLs property is a 2-column matrix that specifies whether the [HTMLRenderer](./htmlrenderer.md) will attempt to satisfy a request for a resource from the workspace or, via the CEF, from the internet. If directed to the workspace, the request will trigger an [HTTPRequest](./httprequest.md) event if the protocol is http, or a [WebSocketUpgrade](./websocketupgrade.md) event if the protocol is ws.
@@ -20,6 +17,7 @@ The InterceptedURLs property is a 2-column matrix that specifies whether the [HT
 
 
 The first column is a wild-carded character scalar or vector containing a pattern to match. The second column is numeric indicating whether or not the [HTMLRenderer](./htmlrenderer.md) should trigger an event as shown in the table below. InterceptedURLs may contain any number of rows.
+
 
 | Value | Meaning |
 | --- | ---  |
@@ -29,7 +27,7 @@ The first column is a wild-carded character scalar or vector containing a patter
 
 
 
-If the requested url is a relative rather than an absolute URL, it is prepended by the string http://dyalog_root/. So, for example, if the HTML property contains :
+If the requested url is a relative rather than an absolute URL, it is prepended by the string http://dyalog_root/. So, for example, if the [HTML](html.md) property contains :
 ```apl
 <link rel="stylesheet" href="style.css">
 <script src="app.js"></script>

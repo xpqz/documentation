@@ -4,16 +4,12 @@
 
 
 <h1 class="heading"><span class="name">HasClearButton</span></h1>
+
 | Applies To: | [ButtonEdit](./buttonedit.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [Edit](./edit.md) |
 | --- | --- | --- | --- | ---  |
 
-| Applies To: | [ButtonEdit](./buttonedit.md) [Combo](./combo.md) [ComboEx](./comboex.md) [Edit](./edit.md) | [ButtonEdit](./buttonedit.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) | [Edit](./edit.md) |  |  |
-| --- | --- | ---  |
-| [ButtonEdit](./buttonedit.md) | [Combo](./combo.md) | [ComboEx](./comboex.md) |
-| [Edit](./edit.md) |  |  |
 
-
-Description
+**Description**
 
 
 Specifies whether or not an![clearbutton](../img/clearbutton.png)button is displayed in the right-hand end of an edit box. Clicking this button clears the text from the field.
@@ -29,8 +25,6 @@ HasClearButton is only effective for Edit objects with Style Single; it is silen
 ![hasclearbutton](../img/hasclearbutton.png)
 
 
-Note that this feature only applies if Native Look and Feel 
-(see page 1)
- is enabled.
+**Note that this feature only applies if Native Look and Feel (see page 1) is enabled.**
 
 

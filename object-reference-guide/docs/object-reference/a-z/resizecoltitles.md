@@ -4,15 +4,12 @@
 
 
 <h1 class="heading"><span class="name">ResizeColTitles</span></h1>
+
 | Applies To: | [Grid](./grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](./grid.md) | [Grid](./grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](./grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This property determines whether or not the user may alter the height of the column titles in the [Grid](./grid.md). It is either 1, which indicates that the height of the column titles is adjustable by the user, or 0 which means that it is not.

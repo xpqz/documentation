@@ -4,21 +4,19 @@
 
 
 <h1 class="heading"><span class="name">DelComment</span></h1>
+
 | Applies To: | [Grid](../a-z/grid.md) |
 | --- | ---  |
 
-| Applies To: | [Grid](../a-z/grid.md) | [Grid](../a-z/grid.md) |  |  |
-| --- | --- | ---  |
-| [Grid](../a-z/grid.md) |  |  |
 
-
-Description
+**Description**
 
 
 This method is used to delete a comment from a [Grid](../a-z/grid.md).
 
 
 The argument to DelComment is a 2 array as follows or `⍬`:
+
 
 | `[1]` | Row | integer |
 | --- | --- | ---  |
