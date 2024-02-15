@@ -92,7 +92,7 @@ When you fix the script, the version of the function in the script will replace 
 
 ```
 
-![changing scripts](site:img/changing-scripts.png)
+![changing scripts](../img/changing-scripts.png)
 
 Note that the Editor displays the description `Unscripted Function` in the status bar of the window showing the new version of `foo`.
 

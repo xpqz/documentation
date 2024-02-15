@@ -1,4 +1,4 @@
-![accordion](site:img/accordion.png)
+![accordion](../img/accordion.png)
 
 <h1 class="heading"><span class="name">JSON Convert</span><span class="command">R←{X}⎕JSON Y</span></h1>
 

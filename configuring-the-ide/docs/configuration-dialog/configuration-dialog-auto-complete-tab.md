@@ -1,6 +1,6 @@
 # Auto Complete Tab
 
-![configuration dialog auto complete tab](site:img/configuration-dialog-auto-complete-tab.png)
+![configuration dialog auto complete tab](../img/configuration-dialog-auto-complete-tab.png)
 
 Note: To enter values in the **OK Key** and **Cancel Key**fields, click on the field with the mouse and then press the desired keystroke.
 

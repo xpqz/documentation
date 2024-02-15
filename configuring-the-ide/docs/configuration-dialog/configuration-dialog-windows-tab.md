@@ -1,6 +1,6 @@
 # Windows Tab
 
-![configuration dialog windows tab](site:img/configuration-dialog-windows-tab.png)
+![configuration dialog windows tab](../img/configuration-dialog-windows-tab.png)
 
 Configuration dialog: Windows (Edit Windows)
 

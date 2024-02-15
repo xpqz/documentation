@@ -8,7 +8,7 @@ Note that the printing parameters are stored in the Registry in the Printing sub
 
 ### Setup Tab
 
-![print configuration dialog setup tab](site:img/print-configuration-dialog-setup-tab.png)
+![print configuration dialog setup tab](../img/print-configuration-dialog-setup-tab.png)
 
 Print Configuration dialog: Setup
 
@@ -26,7 +26,7 @@ Print Configuration dialog: Setup
 
 ### Margins Tab
 
-![print configuration margins tab](site:img/print-configuration-margins-tab.png)
+![print configuration margins tab](../img/print-configuration-margins-tab.png)
 
 Print Configuration dialog: Margins
 
@@ -42,7 +42,7 @@ Print Configuration dialog: Margins
 
 ### Header/Footer Tab
 
-![print configuration header footer tab](site:img/print-configuration-header-footer-tab.png)
+![print configuration header footer tab](../img/print-configuration-header-footer-tab.png)
 
 Print Configuration dialog: Header/Footer
 
@@ -88,7 +88,7 @@ Workspace: U:\WS\WDESIGN WIZ_change_toolbar   Printed 14:40:11 02 March 1998
 
 ### Printer Tab
 
-![print configuration print tab](site:img/print-configuration-print-tab.png)
+![print configuration print tab](../img/print-configuration-print-tab.png)
 
 Print Configuration dialog: Print
 

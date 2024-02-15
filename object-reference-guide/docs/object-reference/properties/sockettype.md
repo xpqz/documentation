@@ -1,0 +1,27 @@
+
+
+
+
+
+<h1 class="heading"><span class="name">SocketType</span></h1>
+| Applies To: | [TCPSocket](../a-z/tcpsocket.md) |
+| --- | ---  |
+
+| Applies To: | [TCPSocket](../a-z/tcpsocket.md) | [TCPSocket](../a-z/tcpsocket.md) |  |  |
+| --- | --- | ---  |
+| [TCPSocket](../a-z/tcpsocket.md) |  |  |
+
+
+Description
+
+
+The SocketType property is a character vector that specifies the type of the TCP/IP socket. This is either `Stream` (which is the default), or `UDP`.
+
+
+SocketType must be defined when the object is created and may not be set or changed using `⎕WS`.
+
+
+For two Dyalog APL applications to communicate, their [TCPSocket](../a-z/tcpsocket.md) objects must have the same SocketType.
+
+
+

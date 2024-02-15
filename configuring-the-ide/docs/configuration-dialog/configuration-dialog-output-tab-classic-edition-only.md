@@ -1,6 +1,6 @@
 # Output Tab (Classic Edition Only)
 
-![configuration dialog output tab](site:img/configuration-dialog-output-tab.png)
+![configuration dialog output tab](../img/configuration-dialog-output-tab.png)
 
 Configuration dialog: Output
 

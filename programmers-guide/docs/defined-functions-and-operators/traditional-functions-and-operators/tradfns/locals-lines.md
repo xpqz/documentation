@@ -24,4 +24,4 @@ The local names defined in Locals Lines are syntax-coloured as locals.
 
 You may skip Locals Lines when Tracing by checking the option labelled**Skip Locals Lines when Tracing** on the **Trace/Edit** tab of the **Options/Configure Dialog**,
 
-![configuration dialog trace edit tab skip locals](site:img/configuration-dialog-trace-edit-tab-skip-locals.png)
+![configuration dialog trace edit tab skip locals](../img/configuration-dialog-trace-edit-tab-skip-locals.png)

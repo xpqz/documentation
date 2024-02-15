@@ -7,6 +7,6 @@ Welcome! This is the official documentation for Dyalog APL version {{ version_ma
 - [UNIX Installation](./unix-installation-and-configuration-guide)
 - [Programmer's Guide](./programmer-s-guide/introduction/programmers-guide-introduction/workspaces/)
 - [Language Reference](./language-reference)
-- [Object Reference](object-reference-guide)
+- [Object Reference](./object-reference-guide)
 - [.NET Interface](./net-interface)
 

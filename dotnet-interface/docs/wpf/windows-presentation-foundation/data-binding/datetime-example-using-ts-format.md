@@ -57,7 +57,7 @@ Then, `Tides[7]` creates a binding source object from this array and assigns it 
       DataBinding.NetObjects.Tides
 ```
 ```apl
-![tides](site:img/tides.png)
+![tides](../img/tides.png)
 ```
 
 `Tides[3]` uses FindName to obtain a ref to the `ListBox` (defined in the XAML) named **TideTimes**:
@@ -80,5 +80,5 @@ Then, `Tides[7]` creates a binding source object from this array and assigns it 
       DataBinding.NetObjects.Tides
 ```
 ```apl
-![tides](site:img/tides.png)
+![tides](../img/tides.png)
 ```

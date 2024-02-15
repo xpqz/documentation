@@ -1,6 +1,6 @@
 # Colour Selection Dialog
 
-![colour selection dialog](site:img/colour-selection-dialog.png)
+![colour selection dialog](../img/colour-selection-dialog.png)
 
 The Colour Selection dialog box allows you to select colours for:
 

@@ -1,6 +1,6 @@
 # Object Syntax Tab
 
-![configuration dialog object syntax tab](site:img/configuration-dialog-object-syntax-tab.png)
+![configuration dialog object syntax tab](../img/configuration-dialog-object-syntax-tab.png)
 
 The **Object Syntax** tab of the **Configuration** dialog is used to set your *default preferences*for Object Syntax. Use **Options/Object Syntax** to change the settings for the current workspace.
 

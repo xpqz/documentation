@@ -2,7 +2,7 @@
 
 This example illustrates the use of the optional left argument to `2015⌶` to specify the data type used to export the value of the bound variable.
 
-![data binding text xaml 1](site:img/data-binding-text-xaml-1.png)
+![data binding text xaml 1](../img/data-binding-text-xaml-1.png)
 
 ## The XAML
 
@@ -63,7 +63,7 @@ The key difference is in `FontSize[8]`. Here the left argument of `(2015⌶)` is
       FontSize 12
 ```
 ```apl
-![data binding fontsize xaml 1](site:img/data-binding-fontsize-xaml-1.png)
+![data binding fontsize xaml 1](../img/data-binding-fontsize-xaml-1.png)
 ```
 ```apl
       sizeSource
@@ -71,5 +71,5 @@ The key difference is in `FontSize[8]`. Here the left argument of `(2015⌶)` is
       sizeSource←30
 ```
 ```apl
-![data binding fontsize xaml 2](site:img/data-binding-fontsize-xaml-2.png)
+![data binding fontsize xaml 2](../img/data-binding-fontsize-xaml-2.png)
 ```

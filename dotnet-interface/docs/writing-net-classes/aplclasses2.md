@@ -33,9 +33,9 @@ This version of `Primitives` contains a *constructor* function called `CTOR` tha
 
 Using this version,  build a new .NET Assembly using *File/Export**…* as before. Remember that  the *Build runtime assembly* checkbox is unchecked.
 
-![aplclasses2_1](site:img/aplclasses2-1.png)
+![aplclasses2_1](../img/aplclasses2-1.png)
 
-![aplclasses2_2](site:img/aplclasses2-2.png)
+![aplclasses2_2](../img/aplclasses2-2.png)
 
 ### program.cs
 
@@ -63,8 +63,8 @@ Primitives apl = new Primitives(0);
 
 Using VS, open the solution file d:\aplclasses\aplclasses2\Framework\project.sln and view program.cs.
 
-![aplclasses2_3](site:img/aplclasses2-3.png)
+![aplclasses2_3](../img/aplclasses2-3.png)
 
 Then click **Debug/Start Without debugging**(or press Ctrl+F5) to run the program. The results are shown in a console window.
 
-![aplclasses2_4](site:img/aplclasses2-4.png)
+![aplclasses2_4](../img/aplclasses2-4.png)

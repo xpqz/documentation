@@ -73,18 +73,18 @@ As shown before, the left argument of `2015⌶)` is optional. Without it, the na
       DB_Text_FontSize_XAML'Hello World' 30
 ```
 ```apl
-![data binding text fontsize 1](site:img/data-binding-text-fontsize-1.png)
+![data binding text fontsize 1](../img/data-binding-text-fontsize-1.png)
 ```
 ```apl
       src.(txtSource sizeSource←(⌽txtSource) 18)
 ```
 ```apl
-![data binding text fontsize 2](site:img/data-binding-text-fontsize-2.png)
+![data binding text fontsize 2](../img/data-binding-text-fontsize-2.png)
 ```
 
 As in previous examples, when the user changes the text, the new text appears in `txtSource`.
 ```apl
-![data binding text fontsize 3](site:img/data-binding-text-fontsize-3.png)
+![data binding text fontsize 3](../img/data-binding-text-fontsize-3.png)
 ```
 ```apl
       src.txtSource

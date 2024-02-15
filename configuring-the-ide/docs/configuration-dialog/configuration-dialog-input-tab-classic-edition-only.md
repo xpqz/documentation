@@ -1,6 +1,6 @@
 # Input Tab (Classic Edition Only)
 
-![configuration dialog input tab](site:img/configuration-dialog-input-tab.png)
+![configuration dialog input tab](../img/configuration-dialog-input-tab.png)
 
 Configuration dialog: Keyboard
 

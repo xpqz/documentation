@@ -1,6 +1,6 @@
 # Session Tab
 
-![configuration dialog session tab](site:img/configuration-dialog-session-tab.png)
+![configuration dialog session tab](../img/configuration-dialog-session-tab.png)
 
 Configuration dialog: Session
 

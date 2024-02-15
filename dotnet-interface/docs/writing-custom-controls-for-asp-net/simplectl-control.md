@@ -50,4 +50,4 @@ Our SimpleCtl control may now be included in any .NET Web Page from which temp.d
 
 The first line of the script specifies that any controls referenced later in the script that are prefixed by Dyalog:, refer to custom controls in the .NET Namespace called DyalogSamples which is located in the Assembly temp.dll in the bin subdirectory.
 
-![simplectl3](site:img/simplectl3.png)
+![simplectl3](../img/simplectl3.png)

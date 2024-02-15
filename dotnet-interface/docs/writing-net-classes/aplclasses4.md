@@ -55,9 +55,9 @@ Next, a function called `GetIOML` is defined and exported as a Public Method. It
 
 Load aplclasses4.dws and export a new version of aplclasses.dll as before.
 
-![aplclasses4_1](site:img/aplclasses4-1.png)
+![aplclasses4_1](../img/aplclasses4-1.png)
 
-![aplclasses4_2](site:img/aplclasses4-2.png)
+![aplclasses4_2](../img/aplclasses4-2.png)
 
 ### program.cs
 
@@ -88,8 +88,8 @@ The C# compiler matches the first call with `CTOR1`, because `CTOR1` is defined 
 
 Using VS, open the solution file d:\aplclasses\aplclasses4\Framework\project.sln and view program.cs.
 
-![aplclasses4_3](site:img/aplclasses4-3.png)
+![aplclasses4_3](../img/aplclasses4-3.png)
 
 Click **Debug/Start Without debugging**(or press Ctrl+F5) to run the program. The results are shown in a console window.
 
-![aplclasses4_4](site:img/aplclasses4-4.png)
+![aplclasses4_4](../img/aplclasses4-4.png)

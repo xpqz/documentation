@@ -174,7 +174,7 @@ If `Y[4]` does specify that the data contains a header then `R` is a 2-element v
 #### Examples
 
 
-![csv_excel](site:img/csv-excel.png)
+![csv_excel](../img/csv-excel.png)
 ```apl
       ⊃⎕NGET CSVFile←'c:\Dyalog16.0\sales.csv'
 ┌→───────────────────────────────────────────────┐
@@ -425,7 +425,7 @@ FILE NAME ERROR: Unable to create file ("The file exists.")
 ```
 
 
-![csv_excel1](site:img/csv-excel1.png)
+![csv_excel1](../img/csv-excel1.png)
 
 #### Notes
 

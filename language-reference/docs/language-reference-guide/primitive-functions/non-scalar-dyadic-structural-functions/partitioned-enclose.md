@@ -42,7 +42,7 @@ The length of `R` is `+/X` (after possible extension).
 The above examples may be explained pictorially by the diagram below.
 
 
-![partitioned enclose](site:img/partitioned-enclose.png)
+![partitioned enclose](../img/partitioned-enclose.png)
 
 
 #### Further Examples

@@ -100,18 +100,18 @@ Note however that (as in Example 2) the left-argument to `(2015⌶)` specifies t
       TextFontSize 'Hello World' 30
 ```
 ```apl
-![data binding text fontsize 1](site:img/data-binding-text-fontsize-1.png)
+![data binding text fontsize 1](../img/data-binding-text-fontsize-1.png)
 ```
 ```apl
       txtSource sizeSource←(⌽txtSource) 18
 ```
 ```apl
-![data binding text fontsize 2](site:img/data-binding-text-fontsize-2.png)
+![data binding text fontsize 2](../img/data-binding-text-fontsize-2.png)
 ```
 
 As in previous examples, when the user changes the text, the new text appears in `txtSource`.
 ```apl
-![data binding text fontsize 3](site:img/data-binding-text-fontsize-3.png)
+![data binding text fontsize 3](../img/data-binding-text-fontsize-3.png)
 ```
 ```apl
       txtSource

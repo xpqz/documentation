@@ -27,7 +27,7 @@ For real numbers `X` and `Y`, `X` is considered equal to `Y` if `(|X-Y)` is not 
 For complex numbers `X=Y` is 1 if the magnitude of `X-Y` does not exceed `⎕CT` times the larger of the magnitudes of `X` and `Y`; geometrically, `X=Y` if the number smaller in magnitude lies on or within a circle centred on the one with larger magnitude, having radius `⎕CT` times the larger magnitude.
 
 
-![comparison](site:img/comparison.png)
+![comparison](../img/comparison.png)
 
 #### Examples
 ```apl

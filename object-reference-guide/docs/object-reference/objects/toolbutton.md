@@ -1,0 +1,90 @@
+
+
+
+
+
+<h1 class="heading"><span class="name">ToolButton</span></h1>
+| Parents | Children | Properties | Methods | Events |
+| --- | --- | --- | --- | ---  |
+
+| Purpose: | The ToolButton object represents a button in a ToolControl. |
+| --- | --- | ---  |
+| Parents | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
+| [Detach](../a-z/detach.md) |  |  |
+| Children | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
+| [Detach](../a-z/detach.md) |  |  |
+| Properties | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
+| [Detach](../a-z/detach.md) |  |  |
+| Methods | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
+| [Detach](../a-z/detach.md) |  |  |
+| Events | [Detach](../a-z/detach.md) | [Detach](../a-z/detach.md) |  |  |
+| [Detach](../a-z/detach.md) |  |  |
+
+
+Description
+
+
+The ToolButton object represents a selectable button in a [ToolControl](../a-z/toolcontrol.md) object.
+
+
+
+A ToolButton displays a text string, defined by its [Caption](../a-z/caption.md) property, and an image defined by its [ImageIndex](../a-z/imageindex.md) property. Apart from these characteristics, the appearance of a ToolButton is controlled by its parent [ToolControl](../a-z/toolcontrol.md) object.
+
+
+[ImageIndex](../a-z/imageindex.md) is an index into an [ImageList](../a-z/imagelist.md) which contains a set of icons or bitmaps. The [ImageList](../a-z/imagelist.md) itself is named by the [ImageListObj](../a-z/imagelistobj.md) property of the parent [ToolControl](../a-z/toolcontrol.md).
+
+
+Typically, you will create up to three [ImageLists](../a-z/imagelist.md) as children of the [ToolControl](../a-z/toolcontrol.md). These will be used to specify the pictures of the ToolButton objects in their normal, highlighted (sometimes termed *hot*) and inactive states respectively. The set of images in each [ImageList](../a-z/imagelist.md) is then defined by creating unnamed [Bitmap](../a-z/bitmap.md) or [Icon](../a-z/icon.md) objects as children. Finally, when you create each ToolButton you specify [ImageIndex](../a-z/imageindex.md), selecting the three pictures which represent the three possible states of the button.
+
+
+If you specify only a single [ImageList](../a-z/imagelist.md), the *picture* on the ToolButton will be the same in all three states.
+
+
+The behaviour and appearance of a ToolButton is further defined by its [Style](../a-z/style.md) property, which may be `'Push'`, `'Check'`, `'Radio'`, `'Separator'` or `'DropDown'`.
+
+
+Push buttons are used to generate actions and pop in and out when clicked. Radio and Check buttons are used to select options and have two states, normal (out) and selected (in). Their [State](../a-z/state.md) property is 0 when the button is in its normal (unselected state) or 1 when it is selected.
+
+
+A group of adjacent ToolButtons with [Style ](../a-z/style.md)`'Radio'` defines a set in which only one of the ToolButtons may be selected at any one time. The act of selecting one will automatically deselect any other. Note that a group of Radio buttons must be separated from Check buttons or other groups of Radio buttons by ToolButtons of another [Style](../a-z/style.md).
+
+
+A ToolButton with [Style ](../a-z/style.md)`'Separator '`has no [Caption](../a-z/caption.md) or picture, but appears as a vertical line and is used to separate groups of buttons.
+
+
+A ToolButton with [Style ](../a-z/style.md)`'DropDown'` has an associated popup [Menu](../a-z/menu.md) object which is named by its [Popup](../a-z/popup.md) property. There are two cases to consider.
+
+
+If the [ShowDropDown](../a-z/showdropdown.md) property of the parent [ToolControl](../a-z/toolcontrol.md) is 0, clicking the ToolButton causes the popup menu to appear. In this case, the ToolButton itself does not itself generate a [Select](../a-z/select.md) event; you must rely on the user selecting a [MenuItem](../a-z/menuitem.md) to specify a particular action.
+
+
+If the [ShowDropDown](../a-z/showdropdown.md) property of the parent [ToolControl](../a-z/toolcontrol.md) is 1, clicking the dropdown button causes the popup menu to appear; clicking the ToolButton itself generates a Select event, but does not display the popup menu.
+
+
+
+The following example illustrates the use of DropDown buttons:
+```apl
+'F'⎕WC'Form' 'ToolControl: Dropdown Buttons'('Size' 20 40)
+'F.TB'⎕WC'ToolControl'('ShowDropDown' 1)
+
+:With 'F.FMENU'⎕WC'Menu' ⍝ Popup File menu
+    'NEW'⎕WC'MenuItem' '&New'
+    'OPEN'⎕WC'MenuItem' '&Open'
+    'CLOSE'⎕WC'MenuItem' '&Close'
+:EndWith
+
+:With 'F.EMENU'⎕WC'Menu' ⍝ Popup File menu
+    'CUT'⎕WC'MenuItem' 'Cu&t'
+    'COPY'⎕WC'MenuItem' '&Copy'
+    'PASTE'⎕WC'MenuItem' '&Paste'
+:EndWith
+
+'F.TB.B1'⎕WC'ToolButton' 'File'('Style' 'DropDown')('Popup' 'F.FMENU')
+'F.TB.B2'⎕WC'ToolButton' 'Edit'('Style' 'DropDown')('Popup' 'F.EMENU')
+```
+
+
+![tool9](../img/tool9.gif)
+
+
+

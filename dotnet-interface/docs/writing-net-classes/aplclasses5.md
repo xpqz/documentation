@@ -41,9 +41,9 @@ Notice also that all function use the same descriptive name, <`IndexGen`>.
 
 Load aplclasses5.dws and export aplclasses5.dll as before.
 
-![aplclasses5_1](site:img/aplclasses5-1.png)
+![aplclasses5_1](../img/aplclasses5-1.png)
 
-![aplclasses5_2](site:img/aplclasses5-2.png)
+![aplclasses5_2](../img/aplclasses5-2.png)
 
 ### program.cs
 
@@ -96,11 +96,11 @@ samples\APLClasses\aplfns5.cscontains code to invoke the three different variant
 
 Using VS, open the solution file d:\aplclasses\aplclasses2\Framework\project.sln and view program.cs.
 
-![aplclasses5_3](site:img/aplclasses5-3.png)
+![aplclasses5_3](../img/aplclasses5-3.png)
 
 Click **Debug/Start Without debugging**(or press Ctrl+F5) to run the program. The results are shown in a console window.
 
-![aplclasses5_4](site:img/aplclasses5-4.png)
+![aplclasses5_4](../img/aplclasses5-4.png)
 
 It is possible for a function to have several `:Signature` statements. Given that our three functions perform exactly the same operation, it might have made more sense to use a single function:
 ```apl

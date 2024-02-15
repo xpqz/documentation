@@ -6,7 +6,7 @@ The aplservice workspace contains the class `SysLog` which can be used to log ev
 
 Every message logged in the Windows Event Log has a named source.  Frequently this source will be the name of the application which generates the message.  Windows has multiple event log files.  By default, messages will be logged in the Application log file found in the Windows Logs section of the Windows Event Viewer.  Alternatively, you can create a custom log located in the Applications and Services Logs section in the Windows Event Viewer as shown by the "mylog" entry in the screenshot below.  Multiple applications can use the same source and multiple sources can write to the same log file, but a given source may only write to a single log file.
 
-![windows event viewer](site:img/windows-event-viewer.png)
+![windows event viewer](../img/windows-event-viewer.png)
 
 ### Using SysLog in Your Application
 

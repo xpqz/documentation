@@ -1,0 +1,56 @@
+
+
+
+
+<h1 class="heading"><span class="name">ChooseFont</span></h1>
+
+Applies To
+
+| Applies To: | [ActiveXControl](../a-z/activexcontrol.md) [Button](../a-z/button.md) [ButtonEdit](../a-z/buttonedit.md) [Calendar](../a-z/calendar.md) [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [DateTimePicker](../a-z/datetimepicker.md) [Edit](../a-z/edit.md) [Font](../a-z/font.md) [Form](../a-z/form.md) [Grid](../a-z/grid.md) [Group](../a-z/group.md) [Label](../a-z/label.md) [List](../a-z/list.md) [ListView](../a-z/listview.md) [PropertyPage](../a-z/propertypage.md) [PropertySheet](../a-z/propertysheet.md) [RichEdit](../a-z/richedit.md) [Root](../a-z/root.md) [Spinner](../a-z/spinner.md) [Static](../a-z/static.md) [StatusBar](../a-z/statusbar.md) [SubForm](../a-z/subform.md) [TabBtn](../a-z/tabbtn.md) [Text](../a-z/text.md) [TipField](../a-z/tipfield.md) [TreeView](../a-z/treeview.md) | [ActiveXControl](../a-z/activexcontrol.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Calendar](../a-z/calendar.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [Font](../a-z/font.md) | [Form](../a-z/form.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) | [Label](../a-z/label.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [PropertyPage](../a-z/propertypage.md) | [PropertySheet](../a-z/propertysheet.md) | [RichEdit](../a-z/richedit.md) | [Root](../a-z/root.md) | [Spinner](../a-z/spinner.md) | [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [SubForm](../a-z/subform.md) | [TabBtn](../a-z/tabbtn.md) | [Text](../a-z/text.md) | [TipField](../a-z/tipfield.md) | [TreeView](../a-z/treeview.md) |
+| --- | --- | ---  |
+| [ActiveXControl](../a-z/activexcontrol.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) |
+| [Calendar](../a-z/calendar.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) |
+| [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [Font](../a-z/font.md) |
+| [Form](../a-z/form.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) |
+| [Label](../a-z/label.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) |
+| [PropertyPage](../a-z/propertypage.md) | [PropertySheet](../a-z/propertysheet.md) | [RichEdit](../a-z/richedit.md) |
+| [Root](../a-z/root.md) | [Spinner](../a-z/spinner.md) | [Static](../a-z/static.md) |
+| [StatusBar](../a-z/statusbar.md) | [SubForm](../a-z/subform.md) | [TabBtn](../a-z/tabbtn.md) |
+| [Text](../a-z/text.md) | [TipField](../a-z/tipfield.md) | [TreeView](../a-z/treeview.md) |
+
+
+Description
+
+
+This method is used to display the standard Windows font selection dialog box.
+
+
+The argument to ChooseFont is `⍬` or a 1 or 2-element array as follows:
+
+| `[1]` | Printer name | character scalar or vector. |
+| --- | --- | ---  |
+| `[2]` | Modify flag | 0 or 1. |
+
+
+If the argument is `⍬` or the first element of the argument is `''`, the user is offered a list of fonts suitable for use on the screen. If not, the user is offered a choice of fonts suitable for the specified [Printer](../a-z/printer.md) object. If you omit the 2nd element, the modify flag defaults to 0.
+
+
+The dialog box is initialised with the properties of the [Font](../a-z/font.md) object specified in the first element of the event message.
+
+
+When the user presses the "OK" button, the "Cancel" button or closes the dialog box, ChooseFont terminates. Its result is either 0 (user pressed "Cancel") or a 2-element vector. In the latter case, the first element is an 8-element array that describes the selected font as described below, and the second element is a 3-element RGB colour vector.
+
+| `[1]` | Face name of selected font (character vector) |
+| --- | ---  |
+| `[2]` | Character height in pixels (integer) |
+| `[3]` | Fixed width or not (Boolean) |
+| `[4]` | Italic or not (Boolean) |
+| `[5]` | Underline or not (Boolean) |
+| `[6]` | Weight (integer) |
+| `[7]` | Angle of rotation (integer) |
+| `[8]` | Character set (see [CharSet](../a-z/charset.md) ) |
+
+
+If the modify flag was 1, the [Font](../a-z/font.md) object is redefined to match the user's selections and all the objects that reference the [Font](../a-z/font.md) are redrawn.
+
+

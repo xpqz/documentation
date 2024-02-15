@@ -1,0 +1,64 @@
+
+
+
+
+
+<h1 class="heading"><span class="name">Attach</span></h1>
+
+Applies To
+
+| Applies To: | [Animation](../a-z/animation.md) [Button](../a-z/button.md) [ButtonEdit](../a-z/buttonedit.md) [Calendar](../a-z/calendar.md) [ColorButton](../a-z/colorbutton.md) [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [CoolBar](../a-z/coolbar.md) [DateTimePicker](../a-z/datetimepicker.md) [Edit](../a-z/edit.md) [Grid](../a-z/grid.md) [Group](../a-z/group.md) [HTMLRenderer](../a-z/htmlrenderer.md) [Label](../a-z/label.md) [List](../a-z/list.md) [ListView](../a-z/listview.md) [MDIClient](../a-z/mdiclient.md) [ProgressBar](../a-z/progressbar.md) [RichEdit](../a-z/richedit.md) [Scroll](../a-z/scroll.md) [SM](../a-z/sm.md) [Spinner](../a-z/spinner.md) [Static](../a-z/static.md) [StatusBar](../a-z/statusbar.md) [StatusField](../a-z/statusfield.md) [SubForm](../a-z/subform.md) [TabBar](../a-z/tabbar.md) [TabBtn](../a-z/tabbtn.md) [TabControl](../a-z/tabcontrol.md) [ToolBar](../a-z/toolbar.md) [ToolControl](../a-z/toolcontrol.md) [TrackBar](../a-z/trackbar.md) [TreeView](../a-z/treeview.md) [UpDown](../a-z/updown.md) | [Animation](../a-z/animation.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Calendar](../a-z/calendar.md) | [ColorButton](../a-z/colorbutton.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [CoolBar](../a-z/coolbar.md) | [DateTimePicker](../a-z/datetimepicker.md) | [Edit](../a-z/edit.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) | [HTMLRenderer](../a-z/htmlrenderer.md) | [Label](../a-z/label.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [MDIClient](../a-z/mdiclient.md) | [ProgressBar](../a-z/progressbar.md) | [RichEdit](../a-z/richedit.md) | [Scroll](../a-z/scroll.md) | [SM](../a-z/sm.md) | [Spinner](../a-z/spinner.md) | [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) | [StatusField](../a-z/statusfield.md) | [SubForm](../a-z/subform.md) | [TabBar](../a-z/tabbar.md) | [TabBtn](../a-z/tabbtn.md) | [TabControl](../a-z/tabcontrol.md) | [ToolBar](../a-z/toolbar.md) | [ToolControl](../a-z/toolcontrol.md) | [TrackBar](../a-z/trackbar.md) | [TreeView](../a-z/treeview.md) | [UpDown](../a-z/updown.md) |  |  |
+| --- | --- | ---  |
+| [Animation](../a-z/animation.md) | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) |
+| [Calendar](../a-z/calendar.md) | [ColorButton](../a-z/colorbutton.md) | [Combo](../a-z/combo.md) |
+| [ComboEx](../a-z/comboex.md) | [CoolBar](../a-z/coolbar.md) | [DateTimePicker](../a-z/datetimepicker.md) |
+| [Edit](../a-z/edit.md) | [Grid](../a-z/grid.md) | [Group](../a-z/group.md) |
+| [HTMLRenderer](../a-z/htmlrenderer.md) | [Label](../a-z/label.md) | [List](../a-z/list.md) |
+| [ListView](../a-z/listview.md) | [MDIClient](../a-z/mdiclient.md) | [ProgressBar](../a-z/progressbar.md) |
+| [RichEdit](../a-z/richedit.md) | [Scroll](../a-z/scroll.md) | [SM](../a-z/sm.md) |
+| [Spinner](../a-z/spinner.md) | [Static](../a-z/static.md) | [StatusBar](../a-z/statusbar.md) |
+| [StatusField](../a-z/statusfield.md) | [SubForm](../a-z/subform.md) | [TabBar](../a-z/tabbar.md) |
+| [TabBtn](../a-z/tabbtn.md) | [TabControl](../a-z/tabcontrol.md) | [ToolBar](../a-z/toolbar.md) |
+| [ToolControl](../a-z/toolcontrol.md) | [TrackBar](../a-z/trackbar.md) | [TreeView](../a-z/treeview.md) |
+| [UpDown](../a-z/updown.md) |  |  |
+
+
+Description
+
+
+This property specifies how an object responds to its parent being resized. It is a 4-element vector of character vectors which defines how each of the four edges of the object moves in response to a resize request made by the parent. Note that this property is only effective if the value of [AutoConf](../a-z/autoconf.md) on the parent is 2 or 3 and [AutoConf](../a-z/autoconf.md) for the object itself is 1 or 3.
+
+
+
+
+The 4 elements of Attach refer to the Top, Left, Bottom and Right edges of the object respectively. Their values may be defined as follows :
+
+| Element | Value | Meaning |
+| --- | --- | ---  |
+| `[1]` | `'Top'` | top edge of object attached to *top* edge of parent. |
+| `` | `'Bottom'` | top edge of object attached to *bottom* edge of parent. |
+| `` | `'None'` | top edge of object is not attached to its parent |
+| `[2]` | `'Left'` | left edge of object is attached to *left* edge of parent |
+| `` | `'Right'` | left edge of object is attached to *right* edge of parent |
+| `` | `'None'` | left edge of object is not attached to its parent |
+| `[3]` | `'Top'` | bottom edge of object is attached to *top* edge of parent. |
+| `` | `'Bottom'` | bottom edge of object is attached to *bottom* edge of parent. |
+|  | `'None'` | bottom edge of object is not attached to its parent |
+| `[4]` | `'Left'` | right edge of object is attached to *left* edge of parent |
+|  | `'Right'` | right edge of object is attached to *right* edge of its parent |
+|  | `'None'` | right edge of object is not attached to its parent |
+
+
+
+If an edge of the object is attached to an edge of its parent, its position in absolute (pixel) terms remains fixed relative to that edge when its parent is resized. Thus if [Coord](../a-z/coord.md) is `'Pixel'`, the corresponding [Posn](../a-z/posn.md) or [Size](../a-z/size.md) property of the object remains unaffected by the resize. If [Coord](../a-z/coord.md) has any other value, the value of [Posn](../a-z/posn.md) or [Size](../a-z/size.md) will change.
+
+
+If an edge of the object is *not* attached to its parent, its absolute position (in pixels) will change in proportion to the size change (in the corresponding direction) of its parent. Thus if [Coord](../a-z/coord.md) is `'Pixel'`, the corresponding [Posn](../a-z/posn.md) or [Size](../a-z/size.md) property of the object will change as a result of the resize. If [Coord](../a-z/coord.md) has any other value, the value of [Posn](../a-z/posn.md) or [Size](../a-z/size.md) will be unaffected.
+
+
+The default value of Attach is `('None' 'None' 'None' 'None')`. This causes the object to reposition and resize itself in proportion to its parent.
+
+
+Some objects have an [Align](../a-z/align.md) property which, among other things, provides a quick way to set their Attach property. Examining this mechanism may help to further explain how the Attach property works. Setting [Align](../a-z/align.md) to `'Top'` has the effect of setting Attach to `('Top' 'Left' 'Top' 'Right')`. Attaching the top edge of the object to the top edge of its parent causes the object to remain at a fixed distance from the top edge of its parent. The additional measure of attaching its bottom edge to the top edge of its parent causes the height of the object to remain fixed. Attaching the left and right edges of the object to the corresponding edges of its parent causes the object to shrink and expand as the parent is resized horizontally. If you position the object at (0 0) and set its width to be the same as the width of its parent, you have an object that always occupies the entire length of its parent, yet remains of fixed height. This is precisely the behaviour required for a [ToolBar](../a-z/toolbar.md) or a top [Scroll](../a-z/scroll.md) Bar. For further details, see [Align](../a-z/align.md) property.
+
+

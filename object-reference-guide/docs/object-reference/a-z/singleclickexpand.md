@@ -1,0 +1,24 @@
+
+
+
+
+
+<h1 class="heading"><span class="name">SingleClickExpand</span></h1>
+| Applies To: | [TreeView](./treeview.md) |
+| --- | ---  |
+
+| Applies To: | [TreeView](./treeview.md) | [TreeView](./treeview.md) |  |  |
+| --- | --- | ---  |
+| [TreeView](./treeview.md) |  |  |
+
+
+Description
+
+
+The SingleClickExpand property specifies whether or not an item in a [TreeView](./treeview.md) control is expanded when the user selects the item.
+
+
+SingleClickExpand is a single number with the value 0 (the user must select the *expand icon* to cause the item to expand) or 1 (the item is expanded when the *text* of the item is selected); the default is 0.
+
+
+

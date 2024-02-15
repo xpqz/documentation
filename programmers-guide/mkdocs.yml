@@ -28,47 +28,46 @@ markdown_extensions:
 nav:
   - index.md
   - Introduction:
-    - Programmers Guide Introduction:
-      - introduction/programmers-guide-introduction/workspaces.md
-      - introduction/programmers-guide-introduction/names.md
-      - Arrays:
-        - introduction/programmers-guide-introduction/arrays/arrays.md
-        - introduction/programmers-guide-introduction/arrays/numbers.md
-        - introduction/programmers-guide-introduction/arrays/characters.md
-        - introduction/programmers-guide-introduction/arrays/enclosed-elements.md
-        - introduction/programmers-guide-introduction/arrays/specification-of-variables.md
-        - introduction/programmers-guide-introduction/arrays/vector-notation.md
-        - introduction/programmers-guide-introduction/arrays/structuring-of-arrays.md
-        - introduction/programmers-guide-introduction/arrays/display-of-arrays.md
-        - introduction/programmers-guide-introduction/arrays/prototypes-and-fill-items.md
-        - introduction/programmers-guide-introduction/arrays/cells-and-subarrays.md
-      - introduction/programmers-guide-introduction/expressions.md
-      - introduction/programmers-guide-introduction/functions.md
-      - introduction/programmers-guide-introduction/operators.md
-      - introduction/programmers-guide-introduction/binding-strength.md
-      - introduction/programmers-guide-introduction/trains.md
-      - introduction/programmers-guide-introduction/search-functions-and-hash.md
-      - Idiom Recogition:
-        - introduction/programmers-guide-introduction/idiom-recogition/idiom-recognition.md
-        - introduction/programmers-guide-introduction/idiom-recogition/idiom-list.md
-      - introduction/programmers-guide-introduction/parallel-execution.md
-      - introduction/programmers-guide-introduction/complex-numbers.md
-      - introduction/programmers-guide-introduction/128-bit-decimal-floating-point.md
-      - Namespaces:
-        - introduction/programmers-guide-introduction/namespaces/namespaces.md
-        - introduction/programmers-guide-introduction/namespaces/namespace-syntax.md
-        - introduction/programmers-guide-introduction/namespaces/namespace-reference-evaluation.md
-        - introduction/programmers-guide-introduction/namespaces/namespaces-and-localisation.md
-        - introduction/programmers-guide-introduction/namespaces/namespace-references.md
-        - introduction/programmers-guide-introduction/namespaces/unnamed-namespaces.md
-        - introduction/programmers-guide-introduction/namespaces/arrays-of-namespace-references.md
-        - introduction/programmers-guide-introduction/namespaces/distributed-assignment.md
-        - introduction/programmers-guide-introduction/namespaces/distributed-functions.md
-        - introduction/programmers-guide-introduction/namespaces/namespaces-and-operators.md
-        - introduction/programmers-guide-introduction/namespaces/serialising-namespaces.md
-      - introduction/programmers-guide-introduction/external-variables.md
-      - introduction/programmers-guide-introduction/component-files.md
-      - introduction/programmers-guide-introduction/auxiliary-processors.md
+    - introduction/programmers-guide-introduction/workspaces.md
+    - introduction/programmers-guide-introduction/names.md
+    - Arrays:
+      - introduction/programmers-guide-introduction/arrays/arrays.md
+      - introduction/programmers-guide-introduction/arrays/numbers.md
+      - introduction/programmers-guide-introduction/arrays/characters.md
+      - introduction/programmers-guide-introduction/arrays/enclosed-elements.md
+      - introduction/programmers-guide-introduction/arrays/specification-of-variables.md
+      - introduction/programmers-guide-introduction/arrays/vector-notation.md
+      - introduction/programmers-guide-introduction/arrays/structuring-of-arrays.md
+      - introduction/programmers-guide-introduction/arrays/display-of-arrays.md
+      - introduction/programmers-guide-introduction/arrays/prototypes-and-fill-items.md
+      - introduction/programmers-guide-introduction/arrays/cells-and-subarrays.md
+    - introduction/programmers-guide-introduction/expressions.md
+    - introduction/programmers-guide-introduction/functions.md
+    - introduction/programmers-guide-introduction/operators.md
+    - introduction/programmers-guide-introduction/binding-strength.md
+    - introduction/programmers-guide-introduction/trains.md
+    - introduction/programmers-guide-introduction/search-functions-and-hash.md
+    - Idiom Recogition:
+      - introduction/programmers-guide-introduction/idiom-recogition/idiom-recognition.md
+      - introduction/programmers-guide-introduction/idiom-recogition/idiom-list.md
+    - introduction/programmers-guide-introduction/parallel-execution.md
+    - introduction/programmers-guide-introduction/complex-numbers.md
+    - introduction/programmers-guide-introduction/128-bit-decimal-floating-point.md
+    - Namespaces:
+      - introduction/programmers-guide-introduction/namespaces/namespaces.md
+      - introduction/programmers-guide-introduction/namespaces/namespace-syntax.md
+      - introduction/programmers-guide-introduction/namespaces/namespace-reference-evaluation.md
+      - introduction/programmers-guide-introduction/namespaces/namespaces-and-localisation.md
+      - introduction/programmers-guide-introduction/namespaces/namespace-references.md
+      - introduction/programmers-guide-introduction/namespaces/unnamed-namespaces.md
+      - introduction/programmers-guide-introduction/namespaces/arrays-of-namespace-references.md
+      - introduction/programmers-guide-introduction/namespaces/distributed-assignment.md
+      - introduction/programmers-guide-introduction/namespaces/distributed-functions.md
+      - introduction/programmers-guide-introduction/namespaces/namespaces-and-operators.md
+      - introduction/programmers-guide-introduction/namespaces/serialising-namespaces.md
+    - introduction/programmers-guide-introduction/external-variables.md
+    - introduction/programmers-guide-introduction/component-files.md
+    - introduction/programmers-guide-introduction/auxiliary-processors.md
   - Defined Functions and Operators:
     - defined-functions-and-operators/introduction.md
     - Traditional Functions and Operators:

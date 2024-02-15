@@ -28,9 +28,9 @@ aplclasses3.dws contains an improved version of the  `CTOR` constructor function
 
 Load aplclasses3.dws and export  aplclasses3.dll as before.
 
-![aplclasses3_1](site:img/aplclasses3-1.png)
+![aplclasses3_1](../img/aplclasses3-1.png)
 
-![aplclasses3_2](site:img/aplclasses3-2.png)
+![aplclasses3_2](../img/aplclasses3-2.png)
 
 ### program.cs
 
@@ -61,8 +61,8 @@ catch (Exception e)
 
 Using VS, open the solution file d:\aplclasses\aplclasses3\Framework\project.sln and view program.cs.
 
-![aplclasses3_3](site:img/aplclasses3-3.png)
+![aplclasses3_3](../img/aplclasses3-3.png)
 
 Click **Debug/Start Without debugging**(or press Ctrl+F5) to run the program. The results are shown in a console window.
 
-![aplclasses3_4](site:img/aplclasses3-4.png)
+![aplclasses3_4](../img/aplclasses3-4.png)

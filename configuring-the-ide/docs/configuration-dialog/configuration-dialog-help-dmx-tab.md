@@ -1,6 +1,6 @@
 # Help/DMX Tab
 
-![configuration dialog help dmx tab](site:img/configuration-dialog-help-dmx-tab.png)
+![configuration dialog help dmx tab](../img/configuration-dialog-help-dmx-tab.png)
 
 Configuration dialog: Help/DMX
 

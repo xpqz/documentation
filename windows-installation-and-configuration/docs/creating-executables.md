@@ -39,11 +39,11 @@ The following example illustrates how you can package the supplied workspace cal
 
 In this example, the supplied workspace calc.dws is first saved to a directory to which the user has write access and, just to make certain, the Dyalog program is run as Administrator.
 
-![creating executables 1](site:img/creating-executables-1.png)
+![creating executables 1](../img/creating-executables-1.png)
 
 Then, when you select **Export…** from the **File** menu, the following dialog box is displayed.
 
-![creating executables 2](site:img/creating-executables-2.png)
+![creating executables 2](../img/creating-executables-2.png)
 
 The **Save as Type** option has been set to **Standalone Executable (includes interpreter exe)** which means that a single .exe will be created containing the Dyalog APL executable and the CALC workspace.
 
@@ -59,8 +59,8 @@ The **Command Line** box allows you to enter parameters and values that are to b
 
 You may embed version information into your .exe by clicking the **Version** button and then completing the **Version Information** dialog box that is illustrated below.
 
-![creating executables 3](site:img/creating-executables-3.png)
+![creating executables 3](../img/creating-executables-3.png)
 
 On clicking **Save**, the following message box is displayed to confirm success.
 
-![creating executables 4](site:img/creating-executables-4.png)
+![creating executables 4](../img/creating-executables-4.png)

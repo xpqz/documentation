@@ -55,11 +55,11 @@ is that the DropDownList WebControl has an Items property that is a collection o
 
 Notice that the name of the object `list` is defined by the id="list" attribute of the DropDownList control that is defined in the page layout section of the page.
 
-![intro3_1](site:img/intro3-1.png)
+![intro3_1](../img/intro3-1.png)
 
 In this example, the page is processed by a POST back caused by pressing the `Submit` button. As it stands, changing the selection in the `list` object does not cause the text in the `out` object to be changed; you have to press the `Submit` button first.
 
-![intro3_2](site:img/intro3-2.png)
+![intro3_2](../img/intro3-2.png)
 
 However, you can make this happen automatically by adding the following attributes to the `list` object (see intro4.aspx):
 

@@ -57,7 +57,7 @@ The XAML for the Temperature Converter is shown below.
 
 ```
 
-![wpf_example1](site:img/wpf-example1.png)
+![wpf_example1](../img/wpf-example1.png)
 
 The window defined by this XAML is illustrated in the screen image shown above. Let us examine the XAML, component by component.
 
@@ -138,7 +138,7 @@ The attachment of a particular child control is specified by setting its DockPan
     </Menu>
 ```
 
-![wpf_example2](site:img/wpf-example2.png)
+![wpf_example2](../img/wpf-example2.png)
 
 The above extract from the XAML defines a `Menu`. Setting Dock to "Top" causes the `Menu` as a whole to be docked, so that it appears like a menubar, along the top of the `DockPanel`. The `Menu` contains a single `MenuItem` labelled **Scale** which itself contains two sub-items labelled **Fahrenheit** and **Centigrade** respectively. The IsCheckable property specifies whether or not the user can check the `MenuItem`, and the IsChecked property sets and reports its checked state. The underscore characters (e.g. as in "_Scale") identify the following character as a keyboard shortcut.
 

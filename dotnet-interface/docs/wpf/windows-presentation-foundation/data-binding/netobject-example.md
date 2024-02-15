@@ -77,5 +77,5 @@ Then, NetObjects[5] creates a binding source object from this array and assigns 
 
 ```
 ```apl
-![data binding netobjects1](site:img/data-binding-netobjects1.png)
+![data binding netobjects1](../img/data-binding-netobjects1.png)
 ```

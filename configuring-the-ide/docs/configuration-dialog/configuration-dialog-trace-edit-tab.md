@@ -1,6 +1,6 @@
 # Trace/Edit Tab
 
-![configuration dialog trace edit tab](site:img/configuration-dialog-trace-edit-tab.png)
+![configuration dialog trace edit tab](../img/configuration-dialog-trace-edit-tab.png)
 
 Configuration dialog: Trace/Edit
 

@@ -22,7 +22,7 @@ The first few lines of the function are listed below. If the argument is 1, line
 
 The following screen shot illustrates the user interface provided by `GOLF`. In this example, the user has typed the names of two golfers (one rather more famous than the other - at least in APL circles) and then presses the *Book it!* button.
 
-![golfservice_1](site:img/golfservice-1.png)
+![golfservice_1](../img/golfservice-1.png)
 
 This action fires the `BOOK` callback function which is shown below.
 ```apl
@@ -54,7 +54,7 @@ Line[6] calls the MakeBooking method of the `GS` object, passing it the data ent
 
 Notice how the various fields are extracted and notice how the ToLongDateString and ToShortTime String methods are employed.
 
-![golfservice_2](site:img/golfservice-2.png)
+![golfservice_2](../img/golfservice-2.png)
 
 Pressing the **Starting Sheet** button runs the `SS` callback listed below.
 ```apl
@@ -89,4 +89,4 @@ Pressing the **Starting Sheet** button runs the `SS` callback listed below.
 
 Line[3] calls the GetStartingSheet method of the `GS` object. The result, a StartingSheet object, is assigned to `SHEET`. Line[4] checks its OK field to see if the call succeeded. If so, lines[5-12] display the result in a Grid, which is illustrated below.
 
-![golfservice_3](site:img/golfservice-3.png)
+![golfservice_3](../img/golfservice-3.png)

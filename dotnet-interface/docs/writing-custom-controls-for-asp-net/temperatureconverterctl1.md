@@ -4,7 +4,7 @@ The TemperatureConverterCtl1 control is an example of a *compositional* control,
 
 In this example, The TemperatureConverterCtl1 control gathers together two textboxes and two push buttons into a single component as illustrated below. Type a number into the *Centigrade* box, click the *Centigrade To Fahrenheit* button, and the control converts accordingly. If you click the *Fahrenheit To Centigrade* button, the reverse conversion is performed.
 
-![temperatureconverterctl1](site:img/temperatureconverterctl1.png)
+![temperatureconverterctl1](../img/temperatureconverterctl1.png)
 
 The TemperatureConverterCtl1 control  *contains* other standard controls as *child controls*. A control that acts as a container must implement an interface called INamingContainer.
 

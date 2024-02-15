@@ -1,6 +1,6 @@
 # General Tab
 
-![configuration dialog general tab](site:img/configuration-dialog-general-tab.png)
+![configuration dialog general tab](../img/configuration-dialog-general-tab.png)
 
 Configuration dialog: General
 

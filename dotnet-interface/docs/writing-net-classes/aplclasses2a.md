@@ -9,13 +9,13 @@ To investigate this case, change the line of code in program.cs that creates an 
   
 ```
 
-![aplclasses2a_1](site:img/aplclasses2a-1.png)
+![aplclasses2a_1](../img/aplclasses2a-1.png)
 
 Then click **Debug/Start Without debugging**(or press Ctrl+F5) to run the program.
 
 … as we have built the Dyalog .NET class to use the *Development DLL*, the APL Session appears, and the Tracer can be used to debug the problem. You can see that the constructor `CTOR` has stopped with a `DOMAIN ERROR`. Meanwhile, the C# program is still waiting for the call (to create an instance of Primitives) to finish.
 
-![aplclasses2a_2](site:img/aplclasses2a-2.png)
+![aplclasses2a_2](../img/aplclasses2a-2.png)
 
 Notice that in Dyalog APL, the `)SI` System Command  provides information about the entire calling stack, including the .NET function calls that are involved. Notice too that the `CTOR` function, the constructor for this APL .NET class, is running here in APL thread 1, which is associated with the system thread 30732.
 
@@ -27,4 +27,4 @@ In this case, debugging is simple, and you can simply type:
 
 Now, the `CTOR` function completes, the program continues and the output is displayed.
 
-![aplclasses2a_3](site:img/aplclasses2a-3.png)
+![aplclasses2a_3](../img/aplclasses2a-3.png)

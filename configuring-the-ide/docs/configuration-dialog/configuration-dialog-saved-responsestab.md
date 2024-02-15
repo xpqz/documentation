@@ -1,6 +1,6 @@
 # Saved ResponsesTab
 
-![configuration dialog saved responses tab](site:img/configuration-dialog-saved-responses-tab.png)
+![configuration dialog saved responses tab](../img/configuration-dialog-saved-responses-tab.png)
 
 The **Saved Responses** tab of the **Configuration** dialog is used to remove preferences that the user has previously established.
 
@@ -8,6 +8,6 @@ In the example illustrated above, the user has at some point chosen to save a te
 
 If the user wishes to reverse these decisions, even temporarily, it is necessary to select the corresponding option /preference name(s) and click **Delete**. The names are intended to be self-explanatory and are not listed here.
 
-![saved responses1](site:img/saved-responses1.png)
+![saved responses1](../img/saved-responses1.png)
 
-![saved responses2](site:img/saved-responses2.png)
+![saved responses2](../img/saved-responses2.png)

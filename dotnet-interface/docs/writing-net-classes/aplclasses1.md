@@ -39,18 +39,18 @@ It should be noted that in the previous release of Dyalog APL the statements :`R
 
 Now you are ready to create the assembly. This is done by selecting *Export…* from the Session *File* menu. This displays the following dialog box.
 
-![aplclasses1_1](site:img/aplclasses1-1.png)
+![aplclasses1_1](../img/aplclasses1-1.png)
 
 This gives you the opportunity to change the name or path of the assembly.  The *Runtime application* checkbox allows you to choose to which if the two versions of the Dyalog APL dynamic link library the assembly will be bound. In this tutorial we will use the Development version. The **Isolation Mode** Combo box allows you to choose which Isolation Mode you require.
 
 - Browse to the Framework\bin sub-diectory.
 - Clear the **Runtime application** checkbox
 
-![aplclasses1_1a](site:img/aplclasses1-1a.png)
+![aplclasses1_1a](../img/aplclasses1-1a.png)
 
 Finally, click *Save*. APL now makes the assembly and, as it does so, displays information in the Status window as shown below. If any errors occur during this process, the Status window will inform you.
 
-![aplclasses1_2](site:img/aplclasses1-2.png)
+![aplclasses1_2](../img/aplclasses1-2.png)
 
 ### program.cs
 
@@ -76,8 +76,8 @@ The program creates an object named apl of type Primitives by calling the new op
 
 Using VS, open the solution file d:\aplclasses\aplclasses1\Framework\project.sln and view program.cs.
 
-![aplclasses1_3](site:img/aplclasses1-3.png)
+![aplclasses1_3](../img/aplclasses1-3.png)
 
 Now click **Debug/Start Without debugging**(or press Ctrl+F5) to run the program. The results are shown in a console window.
 
-![aplclasses1_4](site:img/aplclasses1-4.png)
+![aplclasses1_4](../img/aplclasses1-4.png)

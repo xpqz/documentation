@@ -94,7 +94,7 @@ The System Error Dialog illustrated below was produced by deliberately inducing 
 
 Note: Under a 32-bit interpreter the `⎕NA` call should refer to dyalog32.
 
-![syserror](site:img/syserror.png)
+![syserror](../img/syserror.png)
 
 ### Options
 

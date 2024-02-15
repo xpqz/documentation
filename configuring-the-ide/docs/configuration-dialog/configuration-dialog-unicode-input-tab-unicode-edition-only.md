@@ -2,7 +2,7 @@
 
 Unicode Edition can optionally select your APL keyboard each time you start APL. To choose this option, select one of your installed APL keyboards, enable the **Activate selected keyboard** checkbox, then click **OK**
 
-![configuration dialog unicode input tab](site:img/configuration-dialog-unicode-input-tab.png)
+![configuration dialog unicode input tab](../img/configuration-dialog-unicode-input-tab.png)
 
 Configuration dialog: Unicode Input
 
@@ -15,7 +15,7 @@ Configuration dialog: Unicode Input
 
 ## Input Method Editor Properties
 
-![ime properties](site:img/ime-properties.png)
+![ime properties](../img/ime-properties.png)
 
 Dyalog APL Input Method Editor Properties
 

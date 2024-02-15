@@ -1,6 +1,6 @@
 # Workspace Tab
 
-![configuration dialog workspace tab](site:img/configuration-dialog-workspace-tab.png)
+![configuration dialog workspace tab](../img/configuration-dialog-workspace-tab.png)
 
 Configuration dialog: Workspace
 

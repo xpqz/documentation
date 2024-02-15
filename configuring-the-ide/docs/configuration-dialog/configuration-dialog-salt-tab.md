@@ -2,7 +2,7 @@
 
 SALT is the Simple APL Library Toolkit, a simple source code management system for Classes and script-based Namespaces. SPICE uses SALT to manage development tools which "plug in" to the Dyalog session
 
-![configuration dialog salt tab](site:img/configuration-dialog-salt-tab.png)
+![configuration dialog salt tab](../img/configuration-dialog-salt-tab.png)
 
 Configuration dialog: SALT
 

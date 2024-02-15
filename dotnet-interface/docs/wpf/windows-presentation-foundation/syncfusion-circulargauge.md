@@ -1,6 +1,6 @@
 # Syncfusion Circular Gauge Example
 
-![syncfusion gauge 1](site:img/syncfusion-gauge-1.png)
+![syncfusion gauge 1](../img/syncfusion-gauge-1.png)
 
 ## The XAML
 
