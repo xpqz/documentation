@@ -59766,39 +59766,39 @@
 
 <h1 id="getting-started">Getting Started</h1>
 <p><strong>This tutorial, as provided, supports the 64-bit Unicode version of Dyalog only.</strong></p>
-<p>The tutorial  described in this Chapter was originally designed (for Dyalog Version 10) to be exercised in a console window, with the user invoking the C# compiler directly using a command-line interface. It was originally envisaged to be run<em>in-situ</em> in the samples\aplclasses sub-directory.</p>
-<p>Today, the samples\aplclasses sub-directory is read-only, and direct access to the C# compiler via a command-line interface is problematical. Another consideration is the change in requirement for dependent Dyalog DLLs, which must now reside in the same directory as the host program.</p>
-<p>The tutorial has therefore been re-factored to use Microsoft Visual Studio. The samples\aplclasses sub-directory has been expanded to support .NET Core (now renamed simply .NET) which is cross-platform as well as the original .NET Framework which is Windows only.</p>
-<p>All the examples are to be executed as simple console applications written in C# in the framework of <strong>Microsoft Visual Studio Community 2022</strong> (hereafter referred to as VS). To run the examples as described herein, you should install VS, taking care to include all the components needed to create a C# console application. suitable VS project files are included in the samples\aplclasses sub-directory.</p>
+<p>The tutorial  described in this Chapter was originally designed (for Dyalog Version 10) to be exercised in a console window, with the user invoking the C# compiler directly using a command-line interface. It was originally envisaged to be run<em>in-situ</em> in the <code>samples\aplclasses</code> sub-directory.</p>
+<p>Today, the <code>samples\aplclasses</code> sub-directory is read-only, and direct access to the C# compiler via a command-line interface is problematical. Another consideration is the change in requirement for dependent Dyalog DLLs, which must now reside in the same directory as the host program.</p>
+<p>The tutorial has therefore been re-factored to use Microsoft Visual Studio. The <code>samples\aplclasses</code> sub-directory has been expanded to support .NET Core (now renamed simply .NET) which is cross-platform as well as the original .NET Framework which is Windows only.</p>
+<p>All the examples are to be executed as simple console applications written in C# in the framework of <strong>Microsoft Visual Studio Community 2022</strong> (hereafter referred to as VS). To run the examples as described herein, you should install VS, taking care to include all the components needed to create a C# console application. suitable VS project files are included in the <code>samples\aplclasses</code> sub-directory.</p>
 <h2 id="initialisation">Initialisation</h2>
-<p>The first step is to copy the samples\aplclasses sub-directory into a directory to which you have write access. For example, into <code>d:\aplclasses</code>.</p>
+<p>The first step is to copy the <code>samples\aplclasses</code> sub-directory into a directory to which you have write access. For example, into <code>d:\aplclasses</code>.</p>
 <p>Each of the sub-directories contained in <code>aplclasses</code>, namely <code>aplclasses1</code> - <code>aplclasses7</code>, represents a separate example application. Within each one the file structure is as follows:</p>
 <table>
 <thead>
 <tr>
-<th>aplclasses[n].dws</th>
+<th><code>aplclasses[n].dws</code></th>
 <th>APL workspace</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Framework</td>
+<td><code>Framework</code></td>
 <td>Files for the .NET Framework</td>
 </tr>
 <tr>
-<td>Framework\program.cs</td>
+<td><code>Framework\program.cs</code></td>
 <td>C# program</td>
 </tr>
 <tr>
-<td>Framework\project.sln</td>
+<td><code>Framework\project.sln</code></td>
 <td>VS solution file</td>
 </tr>
 <tr>
-<td>Framework\project.csproj.</td>
+<td><code>Framework\project.csproj.</code></td>
 <td>C# project file</td>
 </tr>
 <tr>
-<td>Framework\bin</td>
+<td><code>Framework\bin</code></td>
 <td>Directory containing the C# program and DLLs</td>
 </tr>
 </tbody>
@@ -59813,7 +59813,7 @@
 </ul>
 <h2 id="running-the-tutorial">Running the Tutorial</h2>
 <p>Each example consists of two parts. First you will <code>)LOAD</code> a workspace, examine the code, and then export it as a DLL. The second (optional) part is to run the VS solution that hosts the DLL and view the results.</p>
-<p>Each workspace contains a .NET Namespace called APLClasses which itself contains a single .NET Class called Primitives that exports a single method called IndexGen.</p>
+<p>Each workspace contains a .NET Namespace called <code>APLClasses</code> which itself contains a single .NET Class called <code>Primitives</code> that exports a single method called <code>IndexGen</code>.</p>
 
 
 

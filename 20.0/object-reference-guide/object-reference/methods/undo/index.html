@@ -59683,7 +59683,7 @@
 </table>
 <p><strong>Description</strong></p>
 <p>This method is used to undo the previous change in a <a href="../../a-z/grid/">Grid</a> object.</p>
-<p>The <a href="../../a-z/grid/">Grid</a> object maintains a buffer of the most recent 8 changes made by the user since the <a href="../../a-z/values/">Values</a> property was last set by <a href="../../Language/System%20Functions/wc.htm"><code>⎕WC</code></a> or <a href="../../Language/System%20Functions/ws.htm"><code>⎕WS</code></a>.</p>
+<p>The <a href="../../a-z/grid/">Grid</a> object maintains a buffer of the most recent 8 changes made by the user since the <a href="../../a-z/values/">Values</a> property was last set by <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> or <a href="../../Language/System Functions/ws.htm"><code>⎕WS</code></a>.</p>
 <p>Your application can restore these changes one by one by calling the Undo method on the <a href="../../a-z/grid/">Grid</a>. The Undo method restores the most recent change made by the user and removes that change from the undo stack.</p>
 <p>It is therefore not possible to "undo an undo".</p>
 <p>The argument to Undo is <code>⍬</code>, or a single item as follows :</p>

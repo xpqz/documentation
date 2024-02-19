@@ -60062,7 +60062,7 @@
 <p><code>⎕FIX</code> establishes Namespaces, Classes, Interfaces and functions from the script specified by <code>Y</code> in the workspace.</p>
 <p>In this section, the term <em>namespace</em> covers scripted Namespaces, Classes and Interfaces.</p>
 <p><code>Y</code> may be a simple character vector, or  a vector of character vectors or character scalars. The value of <code>X</code> determines what <code>Y</code> may contain.</p>
-<p>If <code>Y</code> is a simple character vector, it must start with file://, followed by the name of a file which must exist. The contents of the file must follow the same rules that apply to <code>Y</code> when <code>Y</code> is a vector of character vectors or scalars. The file name can be relative or absolute; when considering cross-platform portability, using "/" as the directory delimiter is recommended, although "\" is also valid under Windows.</p>
+<p>If <code>Y</code> is a simple character vector, it must start with <code>file://</code>, followed by the name of a file which must exist. The contents of the file must follow the same rules that apply to <code>Y</code> when <code>Y</code> is a vector of character vectors or scalars. The file name can be relative or absolute; when considering cross-platform portability, using "/" as the directory delimiter is recommended, although "\" is also valid under Windows.</p>
 <p>If specified, <code>X</code> must be a numeric scalar. It may currently take the value <code>0</code>, <code>1</code> or <code>2</code>. If not specified, the value is assumed to be <code>1</code>.</p>
 <p>If <code>X</code> is <code>0</code>, <code>Y</code> must specify a single valid <em>namespace</em> which may or may not be named, or a file containing such a definition. If so, the shy result <code>R</code> contains a reference to the <em>namespace</em>. Even if the <em>namespace</em> is named, it is not established <em>per se</em>, although it will exist for as long as at least one reference to it exists.</p>
 <p>If <code>X</code> is <code>1</code>, <code>Y</code> must specify a single valid <em>namespace</em> which may or may not be named, or a file containing such a definition.  If so, the shy result <code>R</code> contains a reference to the <em>namespace</em>. If <code>Y</code> contains the definition of a named <em>namespace</em>, the <em>namespace</em> is established in the workspace.</p>
@@ -60200,7 +60200,7 @@ DOMAIN ERROR: There were errors processing the script
 </tr>
 </tbody>
 </table>
-<p>See <a href="../../RelNotes19.0/Lexical%20Scope%20in%20Scripts.htm#LexicalScope">Lexical Scope in Scripts on page 1</a>.</p>
+<p>See <a href="../../RelNotes19.0/Lexical Scope in Scripts.htm#LexicalScope">Lexical Scope in Scripts on page 1</a>.</p>
 <p>The following examples illustrate how different values of the InjectReferences option affect the scope of objects in scripts. The examples are based on the following family tree:</p>
 <p><img alt="family tree for fix" src="../img/family-tree-for-fix.png" /></p>
 <p>Two scripts are defined to map this tree onto a structure of Classes and Namespaces. In this scheme, female family members are represented by Classes and male family members by Namespaces.</p>

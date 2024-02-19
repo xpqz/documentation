@@ -59704,7 +59704,7 @@
 </tbody>
 </table>
 <p><strong>Description</strong></p>
-<p>The InterceptedURLs property is a 2-column matrix that specifies whether the <a href="../../a-z/htmlrenderer/">HTMLRenderer</a> will attempt to satisfy a request for a resource from the workspace or, via the CEF, from the internet. If directed to the workspace, the request will trigger an <a href="../../a-z/httprequest/">HTTPRequest</a> event if the protocol is http, or a <a href="../../a-z/websocketupgrade/">WebSocketUpgrade</a> event if the protocol is ws.</p>
+<p>The InterceptedURLs property is a 2-column matrix that specifies whether the <a href="../../a-z/htmlrenderer/">HTMLRenderer</a> will attempt to satisfy a request for a resource from the workspace or, via the CEF, from the internet. If directed to the workspace, the request will trigger an <a href="../../a-z/httprequest/">HTTPRequest</a> event if the protocol is <code>http</code>, or a <a href="../../a-z/websocketupgrade/">WebSocketUpgrade</a> event if the protocol is <code>ws</code>.</p>
 <p>The first column is a wild-carded character scalar or vector containing a pattern to match. The second column is numeric indicating whether or not the <a href="../../a-z/htmlrenderer/">HTMLRenderer</a> should trigger an event as shown in the table below. InterceptedURLs may contain any number of rows.</p>
 <table>
 <thead>
@@ -59728,15 +59728,15 @@
 </tr>
 </tbody>
 </table>
-<p>If the requested url is a relative rather than an absolute URL, it is prepended by the string http://dyalog_root/. So, for example, if the <a href="../../a-z/html/">HTML</a> property contains :</p>
-<pre><code class="language-apl">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-&lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
+<p>If the requested url is a relative rather than an absolute URL, it is prepended by the string <code>http://dyalog_root/</code>. So, for example, if the <a href="../../a-z/html/">HTML</a> property contains :</p>
+<pre><code class="language-apl">`&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;`
 </code></pre>
-<p>the HTMLRenderer will request http://dyalog_root/style.css and <code>http://dyalog_root/app.js</code> respectively.</p>
+<p>the HTMLRenderer will request <code>http://dyalog_root/style.css</code> and <code>http://dyalog_root/app.js</code> respectively.</p>
 <p>When the value of InterceptedURLs is its default ( <code>(0 2⍴'')</code> it is treated as if it were set to <code>((1 2⍴'*://dyalog_root/*' 1)</code>. So by default, requests for a relative URL will fire an event in the workspace while absolute URL will be directed by the CEF to the internet.</p>
-<p>Note that if code in the page creates a web socket intended for internal use, with anything other than dyalog_root as the URL, the URL must match a pattern in InterceptedURLs with 1 in the second column. The following example does not require a matching pattern in InterceptedURLs.</p>
-<pre><code class="language-apl"> // Create a new WebSocket.
-  window.socket = new WebSocket('ws://dyalog_root/');
+<p>Note that if code in the page creates a web socket intended for internal use, with anything other than <code>dyalog_root</code> as the URL, the URL must match a pattern in InterceptedURLs with 1 in the second column. The following example does not require a matching pattern in InterceptedURLs.</p>
+<pre><code class="language-apl">`// Create a new WebSocket.
+  window.socket = new WebSocket('ws://dyalog_root/');`
 </code></pre>
 <h4 id="examples">Examples:</h4>
 <p>The following will trigger an  event for all requested URLs.</p>

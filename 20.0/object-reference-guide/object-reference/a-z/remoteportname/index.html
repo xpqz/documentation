@@ -59706,8 +59706,8 @@
 <p><strong>Description</strong></p>
 <p>The RemotePortName property is a character vector that specifies the port name of the remote service to which you wish to make a connection.</p>
 <p>RemotePortName may only be specified by a client <a href="../tcpsocket/">TCPSocket</a> that is intended to make a connection with a server. Furthermore, it must be specified in the <code>⎕WC</code> statement that creates the <a href="../tcpsocket/">TCPSocket</a> object and it may not subsequently be changed using <code>⎕WS</code>.</p>
-<p>When the specified port name has been resolved to a port number, the <a href="../tcpsocket/">TCPSocket</a> will generate a <a href="../tcpgotport/">TCPGotPort</a> event and update the value of <a href="../remoteport/">RemotePort</a> accordingly.</p>
-<p>Note that you may use <em>either</em> <a href="../remoteport/">RemotePort </a><em>or</em> RemotePortName to identify the remote service. If you know the port number, it is normally quicker to specify <a href="../remoteport/">RemotePort</a>. However unless it is a <em>well known port number</em>, the use of a port name is generally more flexible. If you specify both properties, the value of RemotePortName will be ignored.</p>
+<p>When the specified port name has been resolved to a port number, the <a href="../tcpsocket/">TCPSocket</a> will generate a <a href="../tcpgotport/">TCPGotPort</a> event and update the value of <a href="RemotePort.htm">RemotePort</a> accordingly.</p>
+<p>Note that you may use <em>either</em> <a href="RemotePort.htm">RemotePort </a><em>or</em> RemotePortName to identify the remote service. If you know the port number, it is normally quicker to specify <a href="RemotePort.htm">RemotePort</a>. However unless it is a <em>well known port number</em>, the use of a port name is generally more flexible. If you specify both properties, the value of RemotePortName will be ignored.</p>
 <p>For a server <a href="../tcpsocket/">TCPSocket</a>, you may not specify RemotePortName and <code>⎕WG</code> returns an empty character vector.</p>
 
 

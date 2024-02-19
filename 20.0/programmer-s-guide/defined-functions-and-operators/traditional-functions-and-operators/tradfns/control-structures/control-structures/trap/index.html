@@ -59768,7 +59768,7 @@
 
 <h1 class="heading"><span class="name">Trap Statement</span><span class="command">:Trap ecode</span></h1>
 
-<p><a href="Trap%20Statement%20Definition.htm">Formal Definition</a></p>
+<p><a href="Trap Statement Definition.htm">Formal Definition</a></p>
 <p><code>:Trap</code> is an error trapping mechanism that can be used in conjunction with, or as an alternative to, the <code>⎕TRAP</code> system variable. It is equivalent to APL2's <code>⎕EA</code>, except that the code to be executed is not restricted to a single expression and is not contained within quotes (and so is slightly more efficient).</p>
 <p><code>ecode</code> is an integer scalar or vector containing the list of event codes which are to be <em>handled</em> during execution of the segment of code between the <code>:Trap</code> and <code>:End[Trap]</code> statements. Note that event codes 0 and 1000 are wild cards that means<em>any</em> event code in a given range. See <a href="../../../../../../error-messages/apl-errors/">APL Error Messages on page 1</a>.</p>
 <h5 id="operation">Operation</h5>

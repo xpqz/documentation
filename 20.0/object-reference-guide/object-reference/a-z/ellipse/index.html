@@ -59912,7 +59912,7 @@ rectangles. The position is defined to be the position of the corner that is <st
 <p>The <a href="../size/">Size</a> property specifies the height and
 width of each bounding rectangle, measuring away from the origin. To obtain a
 perfect circle, you must take the <strong>aspect ratio</strong> of the device into
-account. This is available from the <a href="../devcaps/">DevCaps</a> property of the <a href="../root/">Root</a> and <a href="../printer/">Printer</a> objects. Alternatively you can use the <a href="../circle/">Circle</a> object.</p>
+account. This is available from the <a href="../devcaps/">DevCaps</a> property of the <a href="Root.htm">Root</a> and <a href="Printer.htm">Printer</a> objects. Alternatively you can use the <a href="../circle/">Circle</a> object.</p>
 <p>The <a href="../start/">Start</a> and/or <a href="../end/">End</a> properties are used to draw partial ellipses and circles. They specify start and
 end angles respectively, measuring from the x-axis at the centre of the bounding
 rectangle in a counter-clockwise direction and are expressed in radians. The
@@ -59957,12 +59957,12 @@ top-left corner of the bounding rectangle.</p>
 whose elements specify the height and width of the bounding rectangle.</p>
 <p><a href="../lstyle/">LStyle</a> and <a href="../lwidth/">LWidth</a> are both simple scalar numbers.</p>
 <p><a href="../fstyle/">FStyle</a> is either a single number
-specifying a standard fill pattern, or the name of a <a href="../bitmap/">Bitmap</a> object which is to be used to fill the ellipse, circle or arc.</p>
+specifying a standard fill pattern, or the name of a <a href="Bitmap.htm">Bitmap</a> object which is to be used to fill the ellipse, circle or arc.</p>
 <p><a href="../fcol/">FCol</a>, <a href="../bcol/">BCol</a> and <a href="../fillcol/">FillCol</a> are each either single numbers
 representing standard colours, or 3-element vectors which specify colours
 explicitly in terms of their RGB values.</p>
 <h4 id="examples">Examples:</h4>
-<p>First make a <a href="../form/">Form</a> :</p>
+<p>First make a <a href="Form.htm">Form</a> :</p>
 <pre><code class="language-apl">      'F' ⎕WC 'Form'
 </code></pre>
 <p>Draw a complete ellipse within the bounding rectangle located at (y=10, x=5)
@@ -60006,7 +60006,7 @@ start angles default to <code>0,¯1↓+\End</code></p>
 (applying to all the ellipses, circles or arcs) or simple vectors whose elements
 refer to each of the corresponding ellipses, circles or arcs in turn.</p>
 <p><a href="../fstyle/">FStyle</a> may be a simple scalar numeric or
-a simple character vector (<a href="../bitmap/">Bitmap</a> name)
+a simple character vector (<a href="Bitmap.htm">Bitmap</a> name)
 applying to all rectangles, or a vector whose elements refer to each of the
 corresponding ellipses, circles or arcs in turn.</p>
 <p>Similarly, <a href="../fcol/">FCol</a>, <a href="../bcol/">BCol</a> and <a href="../fillcol/">FillCol</a> may each be single numbers or a
@@ -60018,7 +60018,7 @@ RGB triplets, or a combination of the two.</p>
 object as a whole, and may not be allocated different values for each individual
 ellipse, circle or arc that is drawn.</p>
 <h4 id="examples_1">Examples</h4>
-<p>First make a <a href="../form/">Form</a> :</p>
+<p>First make a <a href="Form.htm">Form</a> :</p>
 <pre><code class="language-apl">      'F' ⎕WC 'Form'
 </code></pre>
 <p>Draw two ellipses in bounding rectangles located at (y=5, x=10) and (y=5,
@@ -60033,7 +60033,7 @@ x=60), each of (height=40, width=10)</p>
 <pre><code class="language-apl">      'F.E1' ⎕WC 'Ellipse' (5(10 60)) ((40 20)(30 10))
 </code></pre>
 <p>Draw an elliptical Pie-Chart in a bounding rectangle located at (y=5, x=10)
-with a height and width equal to 40% of the height and width of the parent <a href="../form/">Form</a>.
+with a height and width equal to 40% of the height and width of the parent <a href="Form.htm">Form</a>.
 Each of the 4 pie-slices is bounded by a black line :</p>
 <pre><code class="language-apl">      Data ←12 27 21 40
       ANGLES←0,¯1↓((○2)÷+/Data)×+\Data

@@ -59726,28 +59726,28 @@
 <p><strong>Description</strong></p>
 <p>When an application places data in the Windows clipboard, it may store it in one or more formats. An application wishing to retrieve data from the clipboard can then choose which format to read it in. Dyalog APL supports standard clipboard formats, including CF_TEXT, CF_BITMAP and CF_METAFILE. If there is any data in the clipboard, the <a href="../formats/">Formats</a> property lists the formats in which it may be retrieved.</p>
 <p>In addition, the <a href="../array/">Array</a> property may be used to set or retrieve clipboard contents in Dyalog APL array format.</p>
-<p>Data is read from the clipboard using <a href="../../Language/System%20Functions/wg.htm"><code>⎕WG</code></a>, specifying the name of the appropriate property for the data that you want.</p>
-<p>If the data has been stored in CF_Text format, the value of <a href="../formats/">Formats</a> will include <code>'Text'</code> and you may retrieve the data by querying the value of the <a href="../text/">Text</a> property with <a href="../../Language/System%20Functions/wg.htm"><code>⎕WG</code></a>.</p>
-<p>If the data has been stored in <strong>device-independent</strong> bitmap format, the value of <a href="../formats/">Formats</a> will include <code>'CBits'</code>, <code>'Bits'</code> and <code>'CMap'</code>. To retrieve the bitmap pattern and colour map, you may query the values of the <a href="../cbits/">CBits</a>, or <a href="../bits/">Bits</a> and <a href="../cmap/">CMap</a> properties using <a href="../../Language/System%20Functions/wg.htm"><code>⎕WG</code></a>.</p>
+<p>Data is read from the clipboard using <a href="../../Language/System Functions/wg.htm"><code>⎕WG</code></a>, specifying the name of the appropriate property for the data that you want.</p>
+<p>If the data has been stored in CF_Text format, the value of <a href="../formats/">Formats</a> will include <code>'Text'</code> and you may retrieve the data by querying the value of the <a href="../text/">Text</a> property with <a href="../../Language/System Functions/wg.htm"><code>⎕WG</code></a>.</p>
+<p>If the data has been stored in <strong>device-independent</strong> bitmap format, the value of <a href="../formats/">Formats</a> will include <code>'CBits'</code>, <code>'Bits'</code> and <code>'CMap'</code>. To retrieve the bitmap pattern and colour map, you may query the values of the <a href="../cbits/">CBits</a>, or <a href="../bits/">Bits</a> and <a href="../cmap/">CMap</a> properties using <a href="../../Language/System Functions/wg.htm"><code>⎕WG</code></a>.</p>
 <p>If the data has been stored in <strong>device-dependent</strong> bitmap format, only the bitmap pattern is available and <a href="../formats/">Formats</a> will contain <code>'Bits'</code> but not <code>'CMap'</code>. In this case you can query the <a href="../bits/">Bits</a> property but not <a href="../cmap/">CMap</a> without which you cannot realise the bitmap. However, if data was posted in this format, it is highly probable that the current Windows colour map applies to it. For a standard 16-colour device this is given under the description of the <a href="../cmap/">CMap</a> property.</p>
 <p>The following example retrieves text from the clipboard :</p>
 <pre><code class="language-apl">      'CL' ⎕WC 'Clipboard'
       Data ← 'CL' ⎕WG 'Text'
 </code></pre>
-<p>The next example retrieves a bitmap from the clipboard and defines it as a <a href="../bitmap/">Bitmap</a> object named <code>'BM'</code> ready for use :</p>
+<p>The next example retrieves a bitmap from the clipboard and defines it as a <a href="Bitmap.htm">Bitmap</a> object named <code>'BM'</code> ready for use :</p>
 <pre><code class="language-apl">      'BM' ⎕WC 'Bitmap' '', 'CL' ⎕WG 'Bits' 'CMap'
 </code></pre>
-<p>Data may be placed in the clipboard using <a href="../../Language/System%20Functions/wc.htm"><code>⎕WC</code></a> or <a href="../../Language/System%20Functions/ws.htm"><code>⎕WS</code></a>. To store text, you simply set the <a href="../text/">Text</a> property. You may use a simple character vector or matrix, or a vector of character vectors. For example :</p>
+<p>Data may be placed in the clipboard using <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> or <a href="../../Language/System Functions/ws.htm"><code>⎕WS</code></a>. To store text, you simply set the <a href="../text/">Text</a> property. You may use a simple character vector or matrix, or a vector of character vectors. For example :</p>
 <pre><code class="language-apl">      'CL' ⎕WS 'Text' 'Hello World'
 </code></pre>
-<p>To store a bitmap you can set either the <a href="../picture/">Picture</a> property to the <strong>name</strong> of a <a href="../bitmap/">Bitmap</a> object, or you can set the <a href="../bits/">Bits</a> and <a href="../cmap/">CMap</a> properties explicitly. The former is more efficient, especially for large bitmaps, for example :</p>
+<p>To store a bitmap you can set either the <a href="../picture/">Picture</a> property to the <strong>name</strong> of a <a href="Bitmap.htm">Bitmap</a> object, or you can set the <a href="../bits/">Bits</a> and <a href="../cmap/">CMap</a> properties explicitly. The former is more efficient, especially for large bitmaps, for example :</p>
 <pre><code class="language-apl">      'CL' ⎕WS 'Bitmap' 'BM'
 </code></pre>
 <p>or</p>
 <pre><code class="language-apl">      Bits CMap ← 'BM' ⎕WG 'Bits' 'CMap'
       'CL' ⎕WS ('Bits' Bits)('CMap' CMap)
 </code></pre>
-<p>Note that if you use the latter method, you must set <strong>both</strong> properties in one <a href="../../Language/System%20Functions/ws.htm"><code>⎕WS</code></a> statement. This is also true if you wish to store data in both Text and Bitmap formats together.</p>
+<p>Note that if you use the latter method, you must set <strong>both</strong> properties in one <a href="../../Language/System Functions/ws.htm"><code>⎕WS</code></a> statement. This is also true if you wish to store data in both Text and Bitmap formats together.</p>
 <p>The <a href="../metafileobj/">Metafile</a> property allows graphical information to be restored in and retrieved from the clipboard in Windows Metafile format. See the description of the <a href="../metafileobj/">Metafile</a> property for details.</p>
 <p>A <a href="../clipchange/">ClipChange</a> (120) event is generated when another application places data in the clipboard.</p>
 

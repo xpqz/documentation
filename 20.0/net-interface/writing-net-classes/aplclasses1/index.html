@@ -59747,7 +59747,7 @@
 
 
 <h1 id="example-1">Example 1</h1>
-<p>Load the workspace aplclasses1.dws, then view the <code>Primitives</code> class:</p>
+<p>Load the workspace <code>aplclasses1.dws</code>, then view the <code>Primitives</code> class:</p>
 <pre><code class="language-apl">      )load D:\aplclasses\aplclasses1\aplclasses1.dws
 D:\aplclasses\aplclasses1\aplclasses1.dws ⍝ saved ...
 
@@ -59768,24 +59768,24 @@ D:\aplclasses\aplclasses1\aplclasses1.dws ⍝ saved ...
 <pre><code class="language-apl">:Signature [return type←] fnname [arg1type [arg1name]
                                  [,argNtype [argNname]]*]
 </code></pre>
-<p>that is: The type of the result returned by the function - followed by arrow - if any, the exported name (it can be different from the APL function name but it must be provided), and, if any arguments are to be supplied, their types and optional names, each type-name pair separated from the next by a comma. In the example above the function returns an array of 32-bit integers and takes a single integer as its argument. For further details, see <a href="../../Language/Control%20Structures/signature.htm#SignatureStatement">Signature Statement on page 1</a>.</p>
-<p>Note that, when the class is fixed, APL will try to find the .NET data types you have specified for the result and for the parameters. If one or more of the data types are not recognised as available .NET Types, you will be informed in the status window and APL will refuse to fix the class. If you see such a warning you have either entered an incorrect data type name, or you have not set <code>:Using</code> correctly, or some other syntax problem has been detected (for example the function is missing a terminating <code>∇</code>. In the previous example, the only data type used is System.Int32. Since we have set <code>:Using System,</code> the name <code>Int32</code> is found in the right place and all is well.</p>
+<p>that is: The type of the result returned by the function - followed by arrow - if any, the exported name (it can be different from the APL function name but it must be provided), and, if any arguments are to be supplied, their types and optional names, each type-name pair separated from the next by a comma. In the example above the function returns an array of 32-bit integers and takes a single integer as its argument. For further details, see <a href="../../Language/Control Structures/signature.htm#SignatureStatement">Signature Statement on page 1</a>.</p>
+<p>Note that, when the class is fixed, APL will try to find the .NET data types you have specified for the result and for the parameters. If one or more of the data types are not recognised as available .NET Types, you will be informed in the status window and APL will refuse to fix the class. If you see such a warning you have either entered an incorrect data type name, or you have not set <code>:Using</code> correctly, or some other syntax problem has been detected (for example the function is missing a terminating <code>∇</code>. In the previous example, the only data type used is <code>System.Int32</code>. Since we have set <code>:Using System,</code> the name <code>Int32</code> is found in the right place and all is well.</p>
 <p>It should be noted that in the previous release of Dyalog APL the statements :<code>Returns</code> and :<code>ParameterList</code> were used instead of :<code>Signature</code>. They are still accepted for backwards compatibility but are considered deprecated. Their syntax will not be documented here but a list can be found in Appendix A.</p>
 <p>Now you are ready to create the assembly. This is done by selecting <em>Export…</em> from the Session <em>File</em> menu. This displays the following dialog box.</p>
 <p><img alt="aplclasses1_1" src="../../img/aplclasses1-1.png" /></p>
 <p>This gives you the opportunity to change the name or path of the assembly.  The <em>Runtime application</em> checkbox allows you to choose to which if the two versions of the Dyalog APL dynamic link library the assembly will be bound. In this tutorial we will use the Development version. The <strong>Isolation Mode</strong> Combo box allows you to choose which Isolation Mode you require.</p>
 <ul>
-<li>Browse to the Framework\bin sub-diectory.</li>
+<li>Browse to the<code>Framework\bin</code> sub-diectory.</li>
 <li>Clear the <strong>Runtime application</strong> checkbox</li>
 </ul>
 <p><img alt="aplclasses1_1a" src="../../img/aplclasses1-1a.png" /></p>
 <p>Finally, click <em>Save</em>. APL now makes the assembly and, as it does so, displays information in the Status window as shown below. If any errors occur during this process, the Status window will inform you.</p>
 <p><img alt="aplclasses1_2" src="../../img/aplclasses1-2.png" /></p>
 <h3 id="programcs">program.cs</h3>
-<p>The following C# source, called aplclasses1Framework\program.cs, will be used to call our Dyalog.NET Class.</p>
-<p>The using statements specify the names of .NET namespaces to be searched for unqualified class names.</p>
-<p>The program creates an object named apl of type Primitives by calling the new operator on that class. Then it calls the IndexGen method with a parameter of 10.</p>
-<pre><code class="language-apl">      using System;
+<p>The following C# source, called <code>aplclasses1Framework\program.cs</code>, will be used to call our Dyalog.NET Class.</p>
+<p>The <code>using</code> statements specify the names of .NET namespaces to be searched for unqualified class names.</p>
+<p>The program creates an object named <code>apl</code> of type <code>Primitives</code> by calling the <code>new</code> operator on that class. Then it calls the <code>IndexGen</code> method with a parameter of 10.</p>
+<pre><code class="language-apl">`using System;
       using APLClasses;
       public class MainClass
           {
@@ -59796,9 +59796,9 @@ D:\aplclasses\aplclasses1\aplclasses1.dws ⍝ saved ...
                   for (int i=0;i&lt;rslt.Length;i++)
                   Console.WriteLine(rslt[i]);
               }
-          }
+          }`
 </code></pre>
-<p>Using VS, open the solution file d:\aplclasses\aplclasses1\Framework\project.sln and view program.cs.</p>
+<p>Using VS, open the solution file<code>d:\aplclasses\aplclasses1\Framework\project.sln</code> and view <code>program.cs</code>.</p>
 <p><img alt="aplclasses1_3" src="../../img/aplclasses1-3.png" /></p>
 <p>Now click <strong>Debug/Start Without debugging</strong>(or press Ctrl+F5) to run the program. The results are shown in a console window.</p>
 <p><img alt="aplclasses1_4" src="../../img/aplclasses1-4.png" /></p>

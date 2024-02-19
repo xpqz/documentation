@@ -59789,8 +59789,8 @@
 <h1 id="example-4">Example 4</h1>
 <p>This example uses XAML to specify the user-interface and the main components of the data binding.</p>
 <h2 id="the-xaml">The XAML</h2>
-<p>The XAML is much the same as in Example 1 and 2 except that it connects two properties Text and FontSize of the same <code>TextBox</code> to two Paths <strong>txtSource</strong> and <strong>sizeSource</strong>.</p>
-<pre><code class="language-apl">&lt;Window
+<p>The XAML is much the same as in Example 1 and 2 except that it connects two properties Text and FontSize of the same TextBox to two Paths <strong>txtSource</strong> and <strong>sizeSource</strong>.</p>
+<pre><code class="language-apl">`&lt;Window
  xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
  xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
  Name=&quot;Temp&quot;
@@ -59800,8 +59800,7 @@
       Text=&quot;{Binding txtSource,Mode=TwoWay,
              UpdateSourceTrigger=PropertyChanged}&quot;
       FontSize=&quot;{Binding sizeSource,Mode=OneWay}&quot;/&gt;
-&lt;/Window&gt;
-
+&lt;/Window&gt;`
 </code></pre>
 <h2 id="the-apl-code">The APL Code</h2>
 <p>The function <code>TextFontSize</code> is shown below.</p>
@@ -59830,12 +59829,12 @@
 <pre><code class="language-apl">
 [8]    options←2 2⍴'txtSource'String'sizeSource'Int32
 </code></pre>
-<p>Line [10] creates a Binding Source object from the namespace <code>src</code> and a left argument <code>options</code> and assigns it to the DataContext property of the <code>Window``win</code>.</p>
+<p>Line [10] creates a Binding Source object from the namespace <code>src</code> and a left argument <code>options</code> and assigns it to the DataContext property of the Window<code>win</code>.</p>
 <pre><code class="language-apl">
 [10]   win.DataContext←options(2015⌶)'src'
 </code></pre>
-<p>An alternative would be to assign it to the DataContext property of the <code>TextBox</code> object, but this would require one further line of code to identify it. The reason this works is that the DataContext property of a <code>TextBox</code> (and many other controls) is inherited from its parent Window. This feature allows a single Binding Source namespace to be used to specify data bindings between its component variables and any number of properties of any number of controls in the same Window.</p>
-<p>As shown before, the left argument of <code>2015⌶)</code> is optional. Without it, the namespace would export all its variables using default binding types. In this case, because the binding type of <code>sizeSource</code> must be specified as <code>Int32</code>, it is necessary to use a left argument, which means specifying all the variables involved.</p>
+<p>An alternative would be to assign it to the DataContext property of the TextBox object, but this would require one further line of code to identify it. The reason this works is that the DataContext property of a TextBox (and many other controls) is inherited from its parent Window. This feature allows a single Binding Source namespace to be used to specify data bindings between its component variables and any number of properties of any number of controls in the same Window.</p>
+<p>As shown before, the left argument of <code>2015⌶)</code> is optional. Without it, the namespace would export all its variables using default binding types. In this case, because the binding type of <code>sizeSource</code> must be specified as Int32, it is necessary to use a left argument, which means specifying all the variables involved.</p>
 <h2 id="testing-the-data-binding">Testing the Data Binding</h2>
 <pre><code class="language-apl">      )LOAD wpfintro
       )CS DataBinding.TextFontSizeXAML

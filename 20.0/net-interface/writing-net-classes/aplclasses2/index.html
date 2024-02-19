@@ -59747,10 +59747,10 @@
 
 
 <h1 id="example-2">Example 2</h1>
-<p>In Example 1, we said nothing about a constructor used to create an instance of the Primitives class. In Example 2, we will show how this is done.</p>
-<p>In fact, in Example 1, APL supplied a default constructor, which is inherited from the base class (System.Object) and is called without arguments.</p>
+<p>In Example 1, we said nothing about a constructor used to create an instance of the <code>Primitives</code> class. In Example 2, we will show how this is done.</p>
+<p>In fact, in Example 1, APL supplied a default constructor, which is inherited from the base class (<code>System.Object</code>) and is called without arguments.</p>
 <p>Example 2 will extend Example 1 by adding a constructor that specifies the value of <code>⎕IO</code>.</p>
-<p>Load the workspace aplclasses2.dws from aplclasses2, then display the <code>Primitives</code> class:</p>
+<p>Load the workspace <code>aplclasses2.dws</code> from <code>aplclasses2</code>, then display the <code>Primitives</code> class:</p>
 <pre><code class="language-apl">      ↑⎕SRC APLClasses.Primitives
 :Class Primitives                      
 :Using System                          
@@ -59776,8 +59776,8 @@
 <p><img alt="aplclasses2_1" src="../../img/aplclasses2-1.png" /></p>
 <p><img alt="aplclasses2_2" src="../../img/aplclasses2-2.png" /></p>
 <h3 id="programcs">program.cs</h3>
-<p>The following C# source, called aplclasses2\Framework\program.cs, will be used to call the new version of our Dyalog.NET class.</p>
-<pre><code class="language-apl">      using System;
+<p>The following C# source, called <code>aplclasses2\Framework\program.cs</code>, will be used to call the new version of our Dyalog.NET class.</p>
+<pre><code class="language-apl">`using System;
       using APLClasses;
       public class MainClass
             {
@@ -59789,12 +59789,12 @@
                   for (int i=0;i&lt;rslt.Length;i++)
                   Console.WriteLine(rslt[i]);
                   }
-            }
+            }`
 </code></pre>
-<p>The program is the same as in the previous example, except that the code that creates an instance of the Primitives class is simply changed to specify an argument; in this case 0.</p>
-<pre><code class="language-apl">Primitives apl = new Primitives(0);
+<p>The program is the same as in the previous example, except that the code that creates an instance of the <code>Primitives</code> class is simply changed to specify an argument; in this case 0.</p>
+<pre><code class="language-apl">`Primitives apl = new Primitives(0);`
 </code></pre>
-<p>Using VS, open the solution file d:\aplclasses\aplclasses2\Framework\project.sln and view program.cs.</p>
+<p>Using VS, open the solution file<code>d:\aplclasses\aplclasses2\Framework\project.sln</code> and view <code>program.cs</code>.</p>
 <p><img alt="aplclasses2_3" src="../../img/aplclasses2-3.png" /></p>
 <p>Then click <strong>Debug/Start Without debugging</strong>(or press Ctrl+F5) to run the program. The results are shown in a console window.</p>
 <p><img alt="aplclasses2_4" src="../../img/aplclasses2-4.png" /></p>

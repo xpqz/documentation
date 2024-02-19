@@ -59783,7 +59783,7 @@
 
 
 <h1 id="creating-programs-exe-with-aplscript">Creating Programs (.exe) with APLScript</h1>
-<p>The following examples, which illustrate how you can create an executable program (.exe) direct from an APLScript file, may be found in the directory samples\aplscript.</p>
+<p>The following examples, which illustrate how you can create an executable program (<code>.exe</code>) direct from an APLScript file, may be found in the directory <code>samples\aplscript</code>.</p>
 <h3 id="a-simple-gui-example">A simple GUI example</h3>
 <p>The following APLScript illustrates the simplest possible GUI application that displays a message box containing the string "Hello World".</p>
 <pre><code class="language-apl">:Namespace N
@@ -59794,13 +59794,13 @@
 ∇ 
 :EndNamespace
 </code></pre>
-<p>This example, which is saved in the file eg1.apl, is compiled to a Windows executable (.exe) using dyalogc.exe and run from the same command window as shown below. Notice that it is essential to surround the code with :Namespace / :EndNamespace statements and to define a <code>⎕LX</code> either in the APLScript itself, or as a parameter to the dyalogc command.</p>
+<p>This example, which is saved in the file <code>eg1.apl</code>, is compiled to a Windows executable (<code>.exe</code>) using <code>dyalogc.exe</code> and run from the same command window as shown below. Notice that it is essential to surround the code with <code>:Namespace / :EndNamespace</code> statements and to define a <code>⎕LX</code> either in the APLScript itself, or as a parameter to the <code>dyalogc</code> command.</p>
 <p><img alt="aplscript1" src="../../img/aplscript1.png" /></p>
 <p><img alt="aplscript2" src="../../img/aplscript2.png" /></p>
-<p>You can associate the .exe with a desktop icon, and it will run stand-alone, without a Command Prompt window. Furthermore, any default APL output that would normally be displayed in the session window will simply be ignored.</p>
+<p>You can associate the <code>.exe</code> with a desktop icon, and it will run stand-alone, without a Command Prompt window. Furthermore, any default APL output that would normally be displayed in the session window will simply be ignored.</p>
 <h3 id="a-simple-console-example">A simple console example</h3>
 <p>The following APLScript illustrates the simplest possible application that displays the text "Hello World".</p>
-<p>This example, which is saved in the file eg2.apl, is compiled to a Windows executable (.exe) and run from a command window as shown below. Notice that the /console flag is used to tell the APLScript compiler to create a <em>console</em> application that runs from a command prompt. In this case, default APL output that would normally be displayed in the session window turns up in the command window from which the program was run.</p>
+<p>This example, which is saved in the file <code>eg2.apl</code>, is compiled to a Windows executable (<code>.exe</code>) and run from a command window as shown below. Notice that the <code>/console</code> flag is used to tell the APLScript compiler to create a <em>console</em> application that runs from a command prompt. In this case, default APL output that would normally be displayed in the session window turns up in the command window from which the program was run.</p>
 <pre><code class="language-apl">:Namespace N
 ⎕LX←'N.RUN'
 ∇RUN
@@ -59808,7 +59808,7 @@
 ∇
 :EndNamespace
 </code></pre>
-<p>Once more, it is essential to surround the code with <code>:Namespace/:EndNamespace</code> statements and to define a <code>⎕LX</code> either in the APLScript itself, or as a parameter to the dyalogc command.</p>
+<p>Once more, it is essential to surround the code with <code>:Namespace/:EndNamespace</code> statements and to define a <code>⎕LX</code> either in the APLScript itself, or as a parameter to the <code>dyalogc</code> command.</p>
 <p><img alt="aplscript3" src="../../img/aplscript3.png" /></p>
 <h3 id="defining-namespaces">Defining Namespaces</h3>
 <p>Namespaces are specified in an APLScript using the <code>:Namespace</code> and :<code>EndNamespace</code> statements. Although you may use <code>⎕NS</code> and <code>⎕CS</code> within functions inside an APLScript, you should not use these system functions outside function bodies. Note that such use is not <em>prevented</em>, but that the results will be unpredictable.</p>
@@ -59820,7 +59820,7 @@
 <p>terminates the definition of the current namespace. Subsequent statements and function bodies are processed in the context of the original space.</p>
 <p>It is imperative that at least ONE namespace be specified.</p>
 <p>All functions specified between the <code>:Namespace</code> and <code>:EndNamespace</code> statements are fixed in that namespace. Similarly, all assignments define variables inside that namespace.</p>
-<p>The following example illustrates how APL namespace usage is handled in APLScript. The program, contained in the file eg3.apl, is as follows:</p>
+<p>The following example illustrates how APL namespace usage is handled in APLScript. The program, contained in the file <code>eg3.apl</code>, is as follows:</p>
 <pre><code class="language-apl">:Namespace N
 ⎕LX←'N.RUN'
 

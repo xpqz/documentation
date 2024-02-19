@@ -59936,15 +59936,15 @@
 <p>The name of the workspace or source code file may be specified by the Load parameter on the command line. If the application uses a workspace, the name of the workspace may instead be supplied as the last item on the command-line.</p>
 <p>The name of the configuration file may be specified on the application command-line, using  the ConfigFile parameter. Alternatively, the name of the configuration file is derived from the name of the workspace or source code file.</p>
 <p>The action to start the application when a workspace or source code file is loaded is specified by the LX parameter or, for a workspace, by its latent expression (<code>⎕LX</code>).</p>
-<p>In the command-line examples that follow, the name of the Run-Time EXE has been shortened to dyalogrt.exe for brevity.</p>
+<p>In the command-line examples that follow, the name of the Run-Time EXE has been shortened to <code>dyalogrt.exe</code> for brevity.</p>
 <h3 id="using-a-workspace">Using a workspace</h3>
-<pre><code class="language-apl">     dyalogrt.exe myapp.dws
+<pre><code class="language-apl">`dyalogrt.exe myapp.dws`
 </code></pre>
-<p>The application starts by running <code>⎕LX</code> in myapp.dws. If a configuration file named myapp.dcfg in the same directory, it is loaded and applied.</p>
+<p>The application starts by running <code>⎕LX</code> in <code>myapp.dws</code>. If a configuration file named <code>myapp.dcfg</code> in the same directory, it is loaded and applied.</p>
 <h3 id="using-a-source-code-file">Using a source code file</h3>
-<pre><code class="language-apl">     dyalogrt.exe Load=myfn.aplf
+<pre><code class="language-apl">`dyalogrt.exe Load=myfn.aplf`
 </code></pre>
-<p>The application loads the file named myfn.aplf which contains the source code for a function, and executes the expression <code>(myfn 0⍴⊂'')</code> (see  Load on page 1).  If a configuration file named myfn.dcfg in the same directory, it is loaded and applied.</p>
+<p>The application loads the file named <code>myfn.aplf</code> which contains the source code for a function, and executes the expression <code>(myfn 0⍴⊂'')</code> (see  Load on page 1).  If a configuration file named <code>myfn.dcfg</code> in the same directory, it is loaded and applied.</p>
 <h3 id="stand-alone-and-bound-run-times">Stand-alone and Bound run-times</h3>
 <p>A  stand-alone run-time is a single .EXE that contains a workspace and a copy of the Run-Time version of the Dyalog APL interpreter. It is the simplest type of run-time to install because it has the fewest number of dependencies.</p>
 <p>A  bound run-time is a workspace packaged as a .EXE that relies upon and requires the separate installation of the Run-Time DLL. Compared with the stand-alone executable option, bound run-times may save disk space and memory if your customer installs and runs several different Dyalog applications.</p>
@@ -59968,9 +59968,9 @@
 <p>The command-line for your COM Server must be specified in the field labelled <strong>Command Line</strong> in the <strong>Export</strong> dialog box. The field is initialised to invoke the Run-Time EXE with the name of your workspace in the same fashion as the workspace-based run-time discussed above. This command-line is recorded in the Windows Registry to be invoked when a client application requests it.</p>
 <p>You may change the contents of the <strong>Command Line</strong> field to use a configuration file, in the same way as for a workspace-based runtime. The following example uses the Loan COM Server. See The LOAN Workspace on page 1.</p>
 <h3 id="example">Example:</h3>
-<pre><code class="language-apl">      dyalog.exe C:\Dyalog18.0\myloan.dws
+<pre><code class="language-apl">`dyalog.exe C:\Dyalog18.0\myloan.dws`
 </code></pre>
-<p>The command-line above will, on invocation, cause Dyalog to load the myloan.dws workspace together with the configuration file myloan.dcfg if it exists in that directory.</p>
+<p>The command-line above will, on invocation, cause Dyalog to load the <code>myloan.dws</code> workspace together with the configuration file <code>myloan.dcfg</code> if it exists in that directory.</p>
 <p>To distribute an out-of-process COM Server, you need to supply and install the following files:</p>
 <ol>
 <li>your workspace</li>
@@ -59994,7 +59994,7 @@
 <li>a configuration file (optional) and the means to define ConfigFile and/or UserConfigFile</li>
 <li>whatever additional files that may be required by your COM Server.</li>
 </ol>
-<p>Note that you must register your COM Server on the target computer using the regsvr32.exe utility.</p>
+<p>Note that you must register your COM Server on the target computer using the <code>regsvr32.exe</code> utility.</p>
 <h3 id="activex-control">ActiveX Control</h3>
 <p>To make an ActiveX Control, you must:</p>
 <ol>
@@ -60009,7 +60009,7 @@
 <li>a configuration file (optional) and the means to define ConfigFile and/or UserConfigFile</li>
 <li>whatever additional files that may be required by your ActiveX Control.</li>
 </ol>
-<p>Note that you must register your ActiveX Control on the target computer using the regsvr32.exe utility.</p>
+<p>Note that you must register your ActiveX Control on the target computer using the <code>regsvr32.exe</code> utility.</p>
 <h3 id="microsoft-net-assembly">Microsoft .NET Assembly</h3>
 <p>A Microsoft .NET Assembly contains one or more .NET Classes. To make a Microsoft .NET Assembly, you must:</p>
 <ol>

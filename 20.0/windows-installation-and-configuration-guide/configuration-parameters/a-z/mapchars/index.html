@@ -59694,7 +59694,7 @@
 
 <h1 id="mapchars">mapchars</h1>
 <p>In previous versions of Dyalog APL, certain pairs of characters in<code>⎕AV</code> were mapped to a single font glyph through the output translate table. For example, the ASCII pipe ¦ and the APL style<code>|</code> were both mapped to the APL style<code>|</code> . From Version 7.0 onwards, it has been a requirement that the mapping between<code>⎕AV</code> and the font is strictly one-to-one (this is a consequence of the new native file system). Originally, the mapping of the ASCII pipe and the APL style, the APL and ASCII quotes, and the ASCII ^ and the APL ^ were hard-coded. The mapping is defined by the mapchars parameter.</p>
-<p>mapchars is a string containing pairs of hexadecimal values which refer to 0-origin indices in<code>⎕AV</code> . The first character in each pair is mapped to the second on output. The default value of mapchars is DB0DEBA7EEC00BE0 which defines the following mappings.</p>
+<p>mapchars is a string containing pairs of hexadecimal values which refer to 0-origin indices in<code>⎕AV</code> . The first character in each pair is mapped to the second on output. The default value of mapchars is <code>DB0DEBA7EEC00BE0</code> which defines the following mappings.</p>
 <table>
 <thead>
 <tr>
@@ -59749,7 +59749,7 @@
 </tr>
 </tbody>
 </table>
-<p>To clear all mappings, set MAPCHARS=0000 .</p>
+<p>To clear all mappings, set <code>MAPCHARS=0000</code> .</p>
 <p><strong>Classic Edition only.</strong></p>
 
 

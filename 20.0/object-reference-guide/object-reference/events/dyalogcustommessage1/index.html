@@ -59685,8 +59685,8 @@
 <p>This event allows external applications and dynamic link libraries to insert
 events into the Dyalog APL/W message queue.</p>
 <p>DyalogCustomMessage1 may be invoked from a C program as follows:</p>
-<pre><code class="language-apl">msg=RegisterWindowMessage(&quot;DyalogCustomMessage1&quot;);
-SendMessage(hWnd,msg,wParam,lParam);
+<pre><code class="language-apl">`msg=RegisterWindowMessage(&quot;DyalogCustomMessage1&quot;);
+SendMessage(hWnd,msg,wParam,lParam);`
 </code></pre>
 <p>where hWnd is the window handle of the object in the Dyalog APL
 Workspace. If the object is a <a href="../../a-z/form/">Form</a>, this may be

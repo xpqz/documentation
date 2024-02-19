@@ -59747,10 +59747,10 @@
 
 
 <h1 id="sample-web-service-loanservice">Sample Web Service: LoanService</h1>
-<p>The LoanService sample is supplied in Dyalog\Samples\asp.net\Loan\Loan.asmx, which is mapped via an IIS Virtual Directory to the URL:</p>
-<pre><code class="language-apl"> http://localhost/dyalog.net.15.0.unicode.32/Loan/Loan.asmx
+<p>The <code>LoanService</code> sample is supplied in <code>Dyalog\Samples\asp.net\Loan\Loan.asmx</code>, which is mapped via an IIS Virtual Directory to the URL:</p>
+<pre><code class="language-apl">`http://localhost/dyalog.net.15.0.unicode.32/Loan/Loan.asmx`
 </code></pre>
-<p>This APLScript sample defines a class named LoanService that is based upon<code>System.Web.Services.WebService</code>. The LoanService class defines a sub-class called LoanResult and a method called CalcPayments.</p>
+<p>This <code>APLScript</code> sample defines a class named <code>LoanService</code> that is based upon<code>System.Web.Services.WebService</code>. The <code>LoanService</code> class defines a sub-class called <code>LoanResult</code> and a method called <code>CalcPayments</code>.</p>
 <pre><code class="language-apl">&lt;%@ WebService Language=&quot;Dyalog&quot; Class=&quot;LoanService&quot; %&gt;
 :Class LoanService: System.Web.Services.WebService
 :Using System
@@ -59788,9 +59788,9 @@
      ∇
 :EndClass
 </code></pre>
-<p>CalcPayments takes five integer parameters (see comments for their descriptions) and returns an object of type LoanResult.</p>
-<p>Note that the block of APLScript that defines the sub-class LoanResult must reside between the <code>:Class</code> and <code>:EndClass</code> statements of the main class, LoanService. You may define any number of internal classes in this way.</p>
-<p>The LoanResult class is made up only of Fields and it does not export any methods or properties. Furthermore, there are no constructor methods defined and it relies solely on its default constructor that is inherited from its base class, System.Object. The default constructor is called without any parameters and in fact does nothing except to create an instance of the class. In particular, the fields it contains initialised to zero. In this case, that is sufficient, as all the fields will be filled in explicitly later.</p>
+<p><code>CalcPayments</code> takes five integer parameters (see comments for their descriptions) and returns an object of type <code>LoanResult</code>.</p>
+<p>Note that the block of <code>APLScript</code> that defines the sub-class <code>LoanResult</code> must reside between the <code>:Class</code> and <code>:EndClass</code> statements of the main class, <code>LoanService</code>. You may define any number of internal classes in this way.</p>
+<p>The <code>LoanResult</code> class is made up only of Fields and it does not export any methods or properties. Furthermore, there are no constructor methods defined and it relies solely on its default constructor that is inherited from its base class, <code>System.Object</code>. The default constructor is called without any parameters and in fact does nothing except to create an instance of the class. In particular, the fields it contains initialised to zero. In this case, that is sufficient, as all the fields will be filled in explicitly later.</p>
 <pre><code class="language-apl">    :Class LoanResult
     :Access public
         :Field Public  Int32[] Periods
@@ -59800,18 +59800,18 @@
 </code></pre>
 <p>The <code>:Class</code> statement starts the definition of a new class and specifies its name. The <code>:EndClass</code> statement terminates it definition.</p>
 <p>The three <code>:Field</code> declaration statements specify the names and data types of three public fields. The <code>Public</code> attributes are necessary to make the fields visible to methods within the <code>LoanService</code> class as a whole, as well as to external clients.</p>
-<p>The <code>Periods</code> field is defined to be an array of integers; the <code>InterestRates</code> field an array of Double. Both these arrays are 1-dimensional, i.e. vectors. These will contain the numbers of years, and the different interest rates, to which the repayments matrix applies.</p>
+<p>The <code>Periods</code> field is defined to be an array of integers; the <code>InterestRates</code> field an array of <code>Double</code>. Both these arrays are 1-dimensional, i.e. vectors. These will contain the numbers of years, and the different interest rates, to which the repayments matrix applies.</p>
 <p>Notice however that <code>Payments</code> is also defined to be 1-dimensional when in fact it is, more naturally, a 2-dimesional matrix. The reason for this is that, currently, Web Services do not support multi-dimensional arrays. This is a .NET restriction and not a Dyalog restriction.</p>
 <p><code>CalcPayments[13]</code> gets a new instance of the <code>LoanResult</code> class by doing <code>⎕New LoanResult</code>. It then assigns values to each of the three fields in lines <code>[14]</code>, <code>[15]</code>and <code>[18]</code>.</p>
 <h3 id="testing-loanservice-from-a-browser">Testing LoanService from a Browser</h3>
-<p>Like the methods exported by the APLEXample Web Services described above, the CalcPayments method exported by LoanService is callable from a browser and the page that is displayed when you point a browser at it is shown below.</p>
+<p>Like the methods exported by the <code>APLEXample</code> Web Services described above, the <code>CalcPayments</code> method exported by <code>LoanService</code> is callable from a browser and the page that is displayed when you point a browser at it is shown below.</p>
 <p><img alt="loanservice1" src="../../img/loanservice1.png" /></p>
-<p>To test the CalcPayments method, you can enter numbers into the form fields in this page, as shown in the screen shot above, and then press the <strong>Invoke</strong> button. The result of the method is then displayed in a separate window as illustrated below.</p>
+<p>To test the <code>CalcPayments</code> method, you can enter numbers into the form fields in this page, as shown in the screen shot above, and then press the <strong>Invoke</strong> button. The result of the method is then displayed in a separate window as illustrated below.</p>
 <p>Notice that the result is described using XML, which is in fact the very language used to invoke a Web Service and return its result.</p>
-<p>You can see that the result is of type LoanResult, and it contains 3 fields named Payments, InterestRates and Periods. This information was derived by our definition of the LoanResult class in the APLScript file.</p>
-<p>As you can see, the InterestRates field shows that it contains a vector of floating-point values (double) from the minimum rate to the maximum rate that we specified on the input form. This time, the increment is 0.5.</p>
-<p>Similarly, the Payments field contains the calculated repayment values.</p>
-<p>Finally the Periods field, contains a vector of integers from the minimum period to the maximum period that we specified on the input form, in increments of 1.</p>
+<p>You can see that the result is of type <code>LoanResult</code>, and it contains 3 fields named <code>Payments</code>, <code>InterestRates</code> and <code>Periods</code>. This information was derived by our definition of the <code>LoanResult</code> class in the <code>APLScript</code> file.</p>
+<p>As you can see, the <code>InterestRates</code> field shows that it contains a vector of floating-point values (<code>double</code>) from the minimum rate to the maximum rate that we specified on the input form. This time, the increment is 0.5.</p>
+<p>Similarly, the <code>Payments</code> field contains the calculated repayment values.</p>
+<p>Finally the <code>Periods</code> field, contains a vector of integers from the minimum period to the maximum period that we specified on the input form, in increments of 1.</p>
 <p><img alt="loanservice2" src="../../img/loanservice2.png" /></p>
 
 

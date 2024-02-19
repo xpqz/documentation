@@ -59692,11 +59692,10 @@
 
 <h1 id="code-behind">Code Behind</h1>
 <p>It is often desirable to separate the code content of a page completely from the HTML and other text, layout or graphical information by placing it in a separate file. In ASP.NET parlance, this technique is known as <em>code behind</em>.</p>
-<p>The intro5.aspx example illustrates this technique.</p>
-<pre><code class="language-apl">&lt;%@Page Language=&quot;Dyalog&quot;
+<p>The <code>intro5.aspx</code> example illustrates this technique.</p>
+<pre><code class="language-apl">`&lt;%@Page Language=&quot;Dyalog&quot;
     Inherits=&quot;FruitSelection&quot;
-    src=&quot;fruit.apl&quot; %&gt;*&lt;%@Register TagPrefix=&quot;tutorial&quot; Namespace=&quot;Tutorial&quot; Assembly=&quot;tutorial&quot; %&gt;*
-&lt;html&gt;
+    src=&quot;fruit.apl&quot; %&gt; &lt;%@Register TagPrefix=&quot;tutorial&quot; Namespace=&quot;Tutorial&quot; Assembly=&quot;tutorial&quot; %&gt; &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;Code behind: separating your code from the page layout&lt;/title&gt;
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;apl.css&quot;&gt;
@@ -59712,15 +59711,13 @@
 &lt;p&gt;
 &lt;asp:Label id=&quot;out&quot; runat=&quot;server&quot; /&gt;&lt;/p&gt;
 &lt;/form&gt;
-&lt;/body&gt;*&lt;tutorial:index runat=&quot;server&quot;/&gt;*
-&lt;/html&gt;
-
+&lt;/body&gt; &lt;tutorial:index runat=&quot;server&quot;/&gt; &lt;/html&gt;`
 </code></pre>
 <p>The statement</p>
-<pre><code class="language-apl">%@Page Language=&quot;Dyalog&quot; Inherits=&quot;FruitSelection&quot; src=&quot;fruit.apl&quot; %&gt;
+<pre><code class="language-apl">`%@Page Language=&quot;Dyalog&quot; Inherits=&quot;FruitSelection&quot; src=&quot;fruit.apl&quot; %&gt;`
 </code></pre>
-<p>says that this page, when compiled, should inherit from a class called FruitSelection. Furthermore, the FruitSelection class is written in the "Dyalog" language, and its source code resides in a file called fruit.apl. FruitSelection is effectively the <em>base class</em>for the .aspx page.</p>
-<p>In this case, fruit.apl is simply another text file containing the APLScript code and is shown below.</p>
+<p>says that this page, when compiled, should inherit from a class called <code>FruitSelection</code>. Furthermore, the <code>FruitSelection</code> class is written in the "Dyalog" language, and its source code resides in a file called <code>fruit.apl</code>. <code>FruitSelection</code> is effectively the <em>base class</em>for the <code>.aspx</code> page.</p>
+<p>In this case, <code>fruit.apl</code> is simply another text file containing the <code>APLScript</code> code and is shown below.</p>
 <pre><code class="language-apl">:Class FruitSelection: System.Web.UI.Page
 :Using System
 
@@ -59740,8 +59737,8 @@ out.Text←'You selected ',list.SelectedItem.Text
 ∇
 :EndClass
 </code></pre>
-<p>The first thing to notice is that the file requires <code>:Class</code> and <code>:EndClass</code>statements. These are required to tell the APLScript compiler the name of the class being defined, and the name of its base class. When the source code is in a .aspx file, this information is provided automatically by the APLScript compiler.</p>
-<p>The name of the class, in this case FruitSelection, must be the same name as is referenced in the .aspx web page file itself (intro5.aspx). The base class must be System.Web.UI.Page</p>
+<p>The first thing to notice is that the file requires <code>:Class</code> and <code>:EndClass</code>statements. These are required to tell the <code>APLScript</code> compiler the name of the class being defined, and the name of its base class. When the source code is in a <code>.aspx</code> file, this information is provided automatically by the <code>APLScript</code> compiler.</p>
+<p>The name of the class, in this case <code>FruitSelection</code>, must be the same name as is referenced in the <code>.aspx</code> web page file itself (<code>intro5.aspx</code>). The base class must be <code>System.Web.UI.Page</code></p>
 <p>The body of the script is just the same as the script section from the previous example. Only the names of the fruit have been changed so that it is clear which example is being executed.</p>
 <p><img alt="intro5_1" src="../../img/intro5-1.png" /></p>
 <p><img alt="intro5_2" src="../../img/intro5-2.png" /></p>

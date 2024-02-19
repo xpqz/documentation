@@ -59748,7 +59748,7 @@
 <p>If specified, <code>ws</code> is a full or relative path name to the file in which the workspace will be written. If <code>ws</code> is omitted, it defaults to <code>⎕WSID</code>. Unless the path specified by <code>ws</code> or <code>⎕WSID</code> is a full pathname, it is taken to be relative to the current working directory which may be obtained by the expression: <code>⊃1 ⎕NPARTS ''</code>.</p>
 <p>If  <code>ws</code> specifies a file name other than that implied by  <code>⎕WSID</code>, the specified file must not already exist unless the force parameter is specified.. If <code>ws</code> is omitted or resolves to the same file as  <code>⎕WSID</code>, an existing stored workspace with the same name will be replaced.</p>
 <p>See WorkspacesProgrammer's Guide: "Workspaces" for the rules for specifying a workspace name.</p>
-<p>If an extension is not specified, an extension is added according to the <a href="../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#WSEXT">WSEXT parameter</a>..</p>
+<p>If an extension is not specified, an extension is added according to the <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#WSEXT">WSEXT parameter</a>..</p>
 <p>A workspace may not be saved if any threads (other than the root thread 0) are running or if there are any Edit or Trace windows open. Otherwise, the workspace is saved with its state of execution intact, however certain operations may be performed before it is saved. For further information, see Set Workspace Save Options on page 1.</p>
 <p><code>)SAVE</code> may fail with one of the following error messages:</p>
 <table>

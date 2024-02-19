@@ -59703,11 +59703,11 @@
 </table>
 <p><strong>Description</strong></p>
 <p>This object is used to obtain graphical input from the user. Like a pop-up
-menu or a <a href="../../a-z/msgbox/">MsgBox</a>, the Locator is a <em>modal</em> object whose interaction with the user is initiated by a "local" <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a>.</p>
+menu or a <a href="../../a-z/msgbox/">MsgBox</a>, the Locator is a <em>modal</em> object whose interaction with the user is initiated by a "local" <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a>.</p>
 <p>This is terminated when the user releases a mouse button or presses any key
 other than a cursor movement key, Shift, Ctrl or Alt. It is usual to initiate
-the <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a> for the Locator from within a callback function attached to a <a href="../../a-z/mousedown/">MouseDown</a> (1) <a href="../../a-z/event/">Event</a>.</p>
-<p>When the "local" <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a> is terminated, a <a href="../../a-z/locator/">Locator</a> (80) <a href="../../a-z/event/">Event</a> is generated. The associated event message contains the new position and size of
+the <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> for the Locator from within a callback function attached to a <a href="../../a-z/mousedown/">MouseDown</a> (1) <a href="../../a-z/event/">Event</a>.</p>
+<p>When the "local" <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> is terminated, a <a href="../../a-z/locator/">Locator</a> (80) <a href="../../a-z/event/">Event</a> is generated. The associated event message contains the new position and size of
 the Locator, together with how the event was generated (keystroke or mouse
 button). To obtain the Locator's new position or size, you <strong>must</strong> enable
 the event by setting its "action" code to 1, or to the name of a
@@ -59718,7 +59718,7 @@ the type of locator displayed. It may be <code>'Point'</code>,
 or <code>'Ellipse'</code>. The default value is <code>'Rect'</code>.
 The value of the <a href="../../a-z/sizeable/">Sizeable</a> property is 0 or
 1 and determines whether or not "rubberbanding" is enabled. Its
-default value is 1 which turns "rubberbanding" on. The <a href="../../a-z/size/">Size</a> property determines the initial size of the Locator when displayed by <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a>.
+default value is 1 which turns "rubberbanding" on. The <a href="../../a-z/size/">Size</a> property determines the initial size of the Locator when displayed by <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a>.
 Its default value is (0,0).</p>
 <p>If <a href="../../a-z/style/">Style</a> is <code>'Rect'</code> the Locator displays a rectangle. One corner of the rectangle is positioned at <a href="../../a-z/posn/">Posn</a>.
 The diagonally opposite corner is positioned at (<a href="../../a-z/posn/">Posn</a>+<a href="../../a-z/size/">Size</a>).
@@ -59743,8 +59743,8 @@ the cursor as the mouse is moved. If <a href="../../a-z/sizeable/">Sizeable</a>�
 when the operation is terminated. The new position or size of the line is
 reported in the <a href="../../a-z/locator/">Locator</a> event message.</p>
 <p>If <code>'Style'</code> is <code>'Point'</code>,
-the values of <a href="../../a-z/sizeable/">Sizeable</a> and <a href="../../a-z/size/">Size</a> are ignored. During the <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a> no visible feedback (other than the cursor) is provided as the user moves the
-mouse. When the <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a> terminates, the new position of the Locator is reported in the <a href="../../a-z/locator/">Locator</a> event message.</p>
+the values of <a href="../../a-z/sizeable/">Sizeable</a> and <a href="../../a-z/size/">Size</a> are ignored. During the <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> no visible feedback (other than the cursor) is provided as the user moves the
+mouse. When the <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> terminates, the new position of the Locator is reported in the <a href="../../a-z/locator/">Locator</a> event message.</p>
 <p>The <a href="../../a-z/step/">Step</a> property is a 2-element integer vector (default value 1 1) that
 specifies the increments (in pixels) by which the size or position of the
 Locator changes in the Y and X directions respectively as the user moves the

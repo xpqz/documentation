@@ -59687,14 +59687,14 @@
 
 <p>Specifies how many threads are to be used for parallel execution.</p>
 <p>If <code>Y</code> has the value <code>⍬</code>, <code>R</code> is the number of virtual processors in the machine.</p>
-<p>Otherwise, <code>Y</code> is an integer that specifies the number of threads that are to be used henceforth for parallel execution. Prior to this call, the default number of threads is specified by the parameter  <code>APL_MAX_THREADS</code>. See <a href="../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#APLMaxThreads"> APL_MAX_THREADS on page 1</a>.</p>
+<p>Otherwise, <code>Y</code> is an integer that specifies the number of threads that are to be used henceforth for parallel execution. Prior to this call, the default number of threads is specified by the parameter  <code>APL_MAX_THREADS</code>. See <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#APLMaxThreads"> APL_MAX_THREADS on page 1</a>.</p>
 <p>Note that whatever the value of <code>Y</code>, Dyalog limits the number of threads to 64. So the effective number of threads is <code>Y⌊64</code>.</p>
 <p><code>R</code> is the previous value.</p>
 <p>To set the number of threads to be the same as the number of virtual processors, execute the stamement:</p>
 <pre><code class="language-apl">      {}1111⌶ 1111⌶⍬
 </code></pre>
-<p>See <a href="../Introduction/Parallel%20Execution.htm#Parallel_Execution">Parallel Execution
-         on page 1</a> and <a href="../parallel-execution-threshold/">Parallel Execution Threshold on page 1</a>.</p>
+<p>See <a href="../Introduction/Parallel Execution.htm#Parallel_Execution">Parallel Execution
+         on page 1</a> and <a href="Parallel Execution Threshold.htm#ParallelExecutionThreshold">Parallel Execution Threshold on page 1</a>.</p>
 
 
 

@@ -60078,13 +60078,13 @@
 <pre><code class="language-apl">      ⎕CMD 'DATE &lt;CON &gt;CON'
 </code></pre>
 <p>(Command Prompt window appears)</p>
-<p>Current date is Wed 19-07-1995</p>
-<p>Enter new date (dd-mm-yy): 20-07-95</p>
+<p><code>Current date is Wed 19-07-1995</code></p>
+<p><code>Enter new date (dd-mm-yy): 20-07-95</code></p>
 <p>(COMMAND PROMPT window disappears)</p>
 <h5 id="spaces-in-pathnames">Spaces in pathnames</h5>
 <p>If <code>Y</code> specifies a program (with or without parameters) and the pathname to the program  contains spaces, you must enclose the string in double-quotes.</p>
 <p>For example, to start a version of Excel to which the pathname is:</p>
-<pre><code class="language-apl">   C:\Program Files\Microsoft Office\OFFICE11\excel.exe
+<pre><code class="language-apl">`C:\Program Files\Microsoft Office\OFFICE11\excel.exe`
 </code></pre>
 <p>the argument to <code>⎕CMD</code> should be:</p>
 <pre><code class="language-apl">⎕CMD '**&quot;**c:\program files\microsoft office\office11\excel.exe**&quot;**'
@@ -60106,7 +60106,7 @@
 <h5 id="implementation-notes">Implementation Notes</h5>
 <p>The right argument of <code>⎕CMD</code> is simply passed to the appropriate command processor for execution and its output is received using an <em>unnamed pipe</em>.</p>
 <p>By default, <code>⎕CMD</code> will execute the string <code>('cmd.exe /c',Y)</code>; where <code>Y</code> is the argument given to <code>⎕CMD</code>.  However, the implementation permits the use of alternative command processors as follows:</p>
-<p>Before execution, the argument is prefixed and postfixed with strings defined by the APL parameters CMD_PREFIX and CMD_POSTFIX.  The former specifies the name of your command processor and any parameters that it requires.  The latter specifies a string which may be required.  If CMD_PREFIX is not defined, it defaults to the name defined by the environment variable COMSPEC followed by  "/c".  If COMSPEC is not defined, it defaults to cmd.exe.  If CMD_POSTFIX is not defined, it defaults to an empty vector.</p>
+<p>Before execution, the argument is prefixed and postfixed with strings defined by the APL parameters CMD_PREFIX and CMD_POSTFIX.  The former specifies the name of your command processor and any parameters that it requires.  The latter specifies a string which may be required.  If CMD_PREFIX is not defined, it defaults to the name defined by the environment variable COMSPEC followed by  "/c".  If COMSPEC is not defined, it defaults to <code>cmd.exe</code>.  If CMD_POSTFIX is not defined, it defaults to an empty vector.</p>
 <p><code>⎕CMD</code> treats certain characters as having special meaning as follows:</p>
 <table>
 <thead>

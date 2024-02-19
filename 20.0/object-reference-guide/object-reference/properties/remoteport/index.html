@@ -59682,10 +59682,10 @@
 </tbody>
 </table>
 <p><strong>Description</strong></p>
-<p>The RemotePort property is a scalar integer in the range 1-65536 that identifies the <a href="../Miscellaneous/Port%20Number.htm">port number</a> associated with a service on a remote computer.</p>
+<p>The RemotePort property is a scalar integer in the range 1-65536 that identifies the <a href="../Miscellaneous/Port Number.htm">port number</a> associated with a service on a remote computer.</p>
 <p>RemotePort may only be specified by a client <a href="../../a-z/tcpsocket/">TCPSocket</a> that is intended to make a connection with a server. Furthermore, it must be specified in the <code>⎕WC</code> statement that creates the <a href="../../a-z/tcpsocket/">TCPSocket</a> object and it may not subsequently be changed using <code>⎕WS</code>.</p>
 <p>Note that you may use <em>either</em> RemotePort <em>or</em> <a href="../../a-z/remoteportname/">RemotePortName</a> to identify the remote service. If you know the port number, it is normally quicker to specify RemotePort. However unless it is a <em>well known port number</em>, the use of a port name is generally more flexible. If you specify both properties, the value of <a href="../../a-z/remoteportname/">RemotePortName</a> will be ignored.</p>
-<p>For a server <a href="../../a-z/tcpsocket/">TCPSocket</a>, RemotePort is determined by the <a href="../Miscellaneous/Port%20Number.htm">port number</a> of the connecting process and is a read-only property.</p>
+<p>For a server <a href="../../a-z/tcpsocket/">TCPSocket</a>, RemotePort is determined by the <a href="../Miscellaneous/Port Number.htm">port number</a> of the connecting process and is a read-only property.</p>
 
 
 

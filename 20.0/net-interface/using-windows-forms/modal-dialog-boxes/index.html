@@ -59766,14 +59766,14 @@
 
 <h1 id="modal-dialog-boxes">Modal Dialog Boxes</h1>
 <p>Dialog Boxes are displayed modally to prevent the user from performing tasks outside of the dialog box.</p>
-<p>To create a modal dialog box, you create a Form, set its BorderStyle property to FixedDialog, set its ControlBox, MinimizeBox and MaximizeBox properties to false, and display it using ShowDialog.</p>
-<p>A modal dialog box has a DialogResult property that is set when the Form is closed, or when the user presses OK or Cancel. The value of this property is returned by the ShowDialog method, so the simplest way to handle user actions is to check the result of ShowDialog and proceed accordingly. Example 1 illustrates a simple modal dialog box.</p>
+<p>To create a modal dialog box, you create a <code>Form</code>, set its <code>BorderStyle</code> property to <code>FixedDialog</code>, set its <code>ControlBox</code>, <code>MinimizeBox</code> and <code>MaximizeBox</code> properties to false, and display it using <code>ShowDialog</code>.</p>
+<p>A modal dialog box has a <code>DialogResult</code> property that is set when the <code>Form</code> is closed, or when the user presses OK or Cancel. The value of this property is returned by the <code>ShowDialog</code> method, so the simplest way to handle user actions is to check the result of <code>ShowDialog</code> and proceed accordingly. Example 1 illustrates a simple modal dialog box.</p>
 <h3 id="example-1">Example 1</h3>
 <p>Function <code>EG1</code> illustrates how to create and use a simple modal dialog box. Much of the function is self-explanatory, but the following points are noteworthy.</p>
-<p><code>EG1[1-2]</code> set <code>⎕USING</code> to include the .NET Namespaces System.Windows.Forms and System.Drawing.</p>
-<p><code>EG1[6,8,9]</code> create a Form and two Button objects. As yet, they are unconnected. The constructor for both classes is defined to take no arguments, so the <code>⎕NEW</code> system function is only called with a class argument.</p>
-<p><code>EG1[14]</code> shows how the Location property is set by first creating a new Point object with a specific pair of (x and y) values.</p>
-<p><code>EG1[18]</code> computes the values for the Point object for <code>button2.Location</code>, from the values of the Left, Height and Top properties of <code>button1</code>; thus positioning <code>button2</code> relative to <code>button1</code>.</p>
+<p><code>EG1[1-2]</code> set <code>⎕USING</code> to include the .NET Namespaces <code>System.Windows.Forms</code> and <code>System.Drawing</code>.</p>
+<p><code>EG1[6,8,9]</code> create a <code>Form</code> and two <code>Button</code> objects. As yet, they are unconnected. The constructor for both classes is defined to take no arguments, so the <code>⎕NEW</code> system function is only called with a class argument.</p>
+<p><code>EG1[14]</code> shows how the <code>Location</code> property is set by first creating a new <code>Point</code> object with a specific pair of (x and y) values.</p>
+<p><code>EG1[18]</code> computes the values for the <code>Point</code> object for <code>button2.Location</code>, from the values of the <code>Left</code>, <code>Height</code> and <code>Top</code> properties of <code>button1</code>; thus positioning <code>button2</code> relative to <code>button1</code>.</p>
 <pre><code class="language-apl">     ∇ EG1;form1;button1;button2;true;false;⎕USING;Z
 [1]    ⎕USING←,⊂'System.Windows.Forms,
                  System.Windows.Forms.dll'
@@ -59797,10 +59797,10 @@
                    ⊂button1.Left button1.(Height+Top+10)
 [19]
 </code></pre>
-<p><code>EG1[21,23]</code> sets the DialogResult property of <code>button1</code> and <code>button2</code> to DialogResult.OK and DialogResult.Cancel respectively. Note that DialogResult is an enumeration with a predefined set of member values.</p>
-<p>Similarly, <code>EG1[32]</code> defines the BorderStyle property of the form using the FormBorderStyle enumeration.</p>
-<p><code>EG1[38 40]</code> defines the AcceptButton and CancelButton properties of the Form to <code>button1</code> and <code>button2</code> respectively. These have the same effect as the Dyalog GUI Default and Cancel properties.</p>
-<p><code>EG1[42]</code> sets the StartPosition of the Form to be centre screen. Once again this is specified using an enumeration; FormStartPosition.</p>
+<p><code>EG1[21,23]</code> sets the <code>DialogResult</code> property of <code>button1</code> and <code>button2</code> to <code>DialogResult.OK</code> and <code>DialogResult.Cancel</code> respectively. Note that <code>DialogResult</code> is an enumeration with a predefined set of member values.</p>
+<p>Similarly, <code>EG1[32]</code> defines the <code>BorderStyle</code> property of the form using the <code>FormBorderStyle</code> enumeration.</p>
+<p><code>EG1[38 40]</code> defines the <code>AcceptButton</code> and <code>CancelButton</code> properties of the Form to <code>button1</code> and <code>button2</code> respectively. These have the same effect as the Dyalog GUI Default and Cancel properties.</p>
+<p><code>EG1[42]</code> sets the <code>StartPosition</code> of the Form to be centre screen. Once again this is specified using an enumeration; <code>FormStartPosition</code>.</p>
 <pre><code class="language-apl">[20]  ⍝ Make button1's dialog result OK.
 [21]   button1.DialogResult←DialogResult.OK
 [22]  ⍝ Make button2's dialog result Cancel.
@@ -59831,9 +59831,9 @@
 [43]
 
 </code></pre>
-<p><code>EG1[45 46]</code> associate the buttons with the Form. The Controls property of the Form returns an object of type Form.ControlCollection. This class has an Add method that is used to add a control to the collection of controls that are owned by the Form.</p>
-<p><code>EG1[50]</code> calls the ShowDialog method (with no argument; hence the <code>⍬</code>). The result is an object of type Form.DialogResult, which is an enumeration.</p>
-<p><code>EG1[52]</code> compares the result returned by ShowDialog with the enumeration member DialogResult.OK (note that the primitive function = has been extended to compare objects).</p>
+<p><code>EG1[45 46]</code> associate the buttons with the Form. The <code>Controls</code> property of the <code>Form</code> returns an object of type <code>Form.ControlCollection</code>. This class has an <code>Add</code> method that is used to add a control to the collection of controls that are owned by the <code>Form</code>.</p>
+<p><code>EG1[50]</code> calls the <code>ShowDialog</code> method (with no argument; hence the <code>⍬</code>). The result is an object of type <code>Form.DialogResult</code>, which is an enumeration.</p>
+<p><code>EG1[52]</code> compares the result returned by <code>ShowDialog</code> with the enumeration member <code>DialogResult.OK</code> (note that the primitive function = has been extended to compare objects).</p>
 <pre><code class="language-apl">[44]   ⍝ Add button1 to the form.
 [45]   form1.Controls.Add button1
 [46]   ⍝ Add button2 to the form.
@@ -59894,7 +59894,7 @@
      ∇
 </code></pre>
 <p><code>EG2A[7]</code> takes advantage of the fact that .NET classes are namespaces, so the expression <code>Form TextBox Label</code>  is a vector of namespace refs, and the expression <code>⎕NEW¨Form TextBox Label</code> runs the <code>⎕NEW</code> system function on each of them.</p>
-<p>Similarly, <code>EG2A[10 11 12]</code> combine the use of extended namespace reference and the <em>Each</em> operator to set the Text, Location and Size properties in several objects together.</p>
+<p>Similarly, <code>EG2A[10 11 12]</code> combine the use of extended namespace reference and the <em>Each</em> operator to set the <code>Text</code>, <code>Location</code> and <code>Size</code> properties in several objects together.</p>
 <pre><code class="language-apl">
      ∇ EG2A;form1;label1;textBox1;true;false;⎕USING;Z
 [1]    ⍝ Compact version of EG2 taking advantage of ref

@@ -59691,15 +59691,13 @@
 
 
 <h1 id="example-2a">Example 2a</h1>
-<p>In Example 2, the argument to CTOR, the constructor for the Primitives class, was defined to be Int32. This means that the .NET Framework will allow a client to specify <em>any</em> integer when it creates an instance of the Primitives class. What happens if the client uses a parameter of 2? Clearly this is going to cause an APL <code>DOMAIN ERROR</code> when used to set <code>⎕IO</code>.</p>
-<p>To investigate this case, change the line of code in program.cs that creates an instance of the Primitives class, passing the argument 2, like this:</p>
-<pre><code class="language-apl">
-                  Primitives apl = new Primitives(2);
-
+<p>In Example 2, the argument to <code>CTOR</code>, the constructor for the <code>Primitives</code> class, was defined to be <code>Int32</code>. This means that the .NET Framework will allow a client to specify <em>any</em> integer when it creates an instance of the <code>Primitives</code> class. What happens if the client uses a parameter of 2? Clearly this is going to cause an APL <code>DOMAIN ERROR</code> when used to set <code>⎕IO</code>.</p>
+<p>To investigate this case, change the line of code in <code>program.cs</code> that creates an instance of the Primitives class, passing the argument 2, like this:</p>
+<pre><code class="language-apl">`Primitives apl = new Primitives(2);`
 </code></pre>
 <p><img alt="aplclasses2a_1" src="../../img/aplclasses2a-1.png" /></p>
 <p>Then click <strong>Debug/Start Without debugging</strong>(or press Ctrl+F5) to run the program.</p>
-<p>… as we have built the Dyalog .NET class to use the <em>Development DLL</em>, the APL Session appears, and the Tracer can be used to debug the problem. You can see that the constructor <code>CTOR</code> has stopped with a <code>DOMAIN ERROR</code>. Meanwhile, the C# program is still waiting for the call (to create an instance of Primitives) to finish.</p>
+<p>… as we have built the Dyalog .NET class to use the <em>Development DLL</em>, the APL Session appears, and the Tracer can be used to debug the problem. You can see that the constructor <code>CTOR</code> has stopped with a <code>DOMAIN ERROR</code>. Meanwhile, the C# program is still waiting for the call (to create an instance of <code>Primitives</code>) to finish.</p>
 <p><img alt="aplclasses2a_2" src="../../img/aplclasses2a-2.png" /></p>
 <p>Notice that in Dyalog APL, the <code>)SI</code> System Command  provides information about the entire calling stack, including the .NET function calls that are involved. Notice too that the <code>CTOR</code> function, the constructor for this APL .NET class, is running here in APL thread 1, which is associated with the system thread 30732.</p>
 <p>In this case, debugging is simple, and you can simply type:</p>

@@ -59691,13 +59691,13 @@
 
 
 <h1 id="the-makeproxy-function">The MakeProxy function</h1>
-<p>The <code>MakeProxy</code> function is provided in the supplied workspace samples\asp.net\webservices\webservices.dws.</p>
+<p>The <code>MakeProxy</code> function is provided in the supplied workspace <code>samples\asp.net\webservices\webservices.dws</code>.</p>
 <p><code>MakeProxy</code> is monadic and its argument specifies the URL of the Web Service to which you want to connect. For example, the following expressions uses <code>MakeProxy</code> to connect to the LoanService sample Web Service provided with Dyalog .NET:</p>
 <pre><code class="language-apl">   MakeProxy'http://localhost/dyalog.net/Loan/Loan.asmx'
 </code></pre>
-<p><code>MakeProxy</code> runs the Microsoft utility WSDL.EXE passing the name of your URL to it as an argument. The utility then creates a C# source code file in your current directory that contains the code necessary to create a proxy class. The name of the C# file is the name of the Web Service (as declared in its header line) followed by the extension .cs.</p>
+<p><code>MakeProxy</code> runs the Microsoft utility <code>WSDL.EXE</code> passing the name of your URL to it as an argument. The utility then creates a C# source code file in your current directory that contains the code necessary to create a proxy class. The name of the C# file is the name of the Web Service (as declared in its header line) followed by the extension .cs.</p>
 <p><code>MakeProxy</code> then calls the C# compiler to compile this file, creating an assembly with the same name, but with a .dll extension, in your current directory. This assembly contains a .NET class of the same name.</p>
-<p><code>MakeProxy</code> attempts to determine the correct path for WSDL.EXE and CSC.EXE, but future versions of Microsoft.NET or Visual Studio require changes, in which case you will have to modify this function to locate these tools.</p>
+<p><code>MakeProxy</code> attempts to determine the correct path for <code>WSDL.EXE</code> and <code>CSC.EXE</code>, but future versions of Microsoft.NET or Visual Studio require changes, in which case you will have to modify this function to locate these tools.</p>
 
 
 

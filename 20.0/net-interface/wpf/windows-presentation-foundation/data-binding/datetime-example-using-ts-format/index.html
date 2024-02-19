@@ -59805,10 +59805,10 @@
 
 
 <h1 id="example-6a-casting-to-datetime">Example 6a (Casting to DateTime)</h1>
-<p>This example is similar to Example 6 but illustrates how numeric data in <code>⎕TS</code> format can be converted to  <code>DateTime</code> type.</p>
+<p>This example is similar to Example 6 but illustrates how numeric data in <code>⎕TS</code> format can be converted to  DateTime type.</p>
 <h2 id="the-xaml">The XAML</h2>
-<p>The XAML shown below describes a Window containing a <code>StackPanel</code>, inside which is a <code>ListBox</code>.</p>
-<pre><code class="language-apl">&lt;Window
+<p>The XAML shown below describes a Window containing a StackPanel, inside which is a ListBox.</p>
+<pre><code class="language-apl">`&lt;Window
   xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
     xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
     Title=&quot;DateTimes using ⎕TS data&quot;
@@ -59819,7 +59819,7 @@
          &lt;ListBox Name=&quot;TideTimes&quot; Height=&quot;200&quot;
           Margin=&quot;5&quot; /&gt;
     &lt;/StackPanel&gt;
-&lt;/Window&gt;
+&lt;/Window&gt;`
 </code></pre>
 <h2 id="the-apl-code">The APL Code</h2>
 <p>The function <code>Tides</code> is shown below.</p>
@@ -59835,12 +59835,12 @@
      ∇
 
 </code></pre>
-<p><code>Tides[3]</code> uses FindName to obtain a ref to the <code>ListBox</code> (defined in the XAML) named <strong>TideTimes</strong>:</p>
+<p><code>Tides[3]</code> uses FindName to obtain a ref to the ListBox (defined in the XAML) named <strong>TideTimes</strong>:</p>
 <pre><code class="language-apl">
 [3]    win.times←win.FindName⊂'TideTimes'
 </code></pre>
-<p><code>Tides[4-5]</code> creates a vector of integer vectors each of which species the time and date of a high tide at Portsmouth. <code>Tides[6]</code> extends each to 7-elements, which is required to represent a <code>DateTime</code> object.</p>
-<p>Then, <code>Tides[7]</code> creates a binding source object from this array and assigns it to the <code>ItemsSource</code> property of the <code>ListBox</code>. Note that the left argument <code>DateTime</code> specifies that the data be cast to that type.</p>
+<p><code>Tides[4-5]</code> creates a vector of integer vectors each of which species the time and date of a high tide at Portsmouth. <code>Tides[6]</code> extends each to 7-elements, which is required to represent a DateTime object.</p>
+<p>Then, <code>Tides[7]</code> creates a binding source object from this array and assigns it to the ItemsSource property of the ListBox. Note that the left argument DateTime specifies that the data be cast to that type.</p>
 <pre><code class="language-apl">
 [7]    win.times.ItemsSource←DateTime(2015⌶)'dt'
 </code></pre>
@@ -59850,12 +59850,12 @@
 </code></pre>
 <pre><code class="language-apl">![tides](../img/tides.png)
 </code></pre>
-<p><code>Tides[3]</code> uses FindName to obtain a ref to the <code>ListBox</code> (defined in the XAML) named <strong>TideTimes</strong>:</p>
+<p><code>Tides[3]</code> uses FindName to obtain a ref to the ListBox (defined in the XAML) named <strong>TideTimes</strong>:</p>
 <pre><code class="language-apl">
 [3]    win.times←win.FindName⊂'TideTimes'
 </code></pre>
-<p><code>Tides[4-5]</code> creates a vector of integer vectors each of which species the time and date of a high tide at Portsmouth. <code>Tides[6]</code> extends each to 7-elements, which is required to represent a <code>DateTime</code> object.</p>
-<p>Then, <code>Tides[7]</code> creates a binding source object from this array and assigns it to the <code>ItemsSource</code> property of the <code>ListBox</code>. Note that the left argument <code>DateTime</code> specifies that the data be cast to that type.</p>
+<p><code>Tides[4-5]</code> creates a vector of integer vectors each of which species the time and date of a high tide at Portsmouth. <code>Tides[6]</code> extends each to 7-elements, which is required to represent a DateTime object.</p>
+<p>Then, <code>Tides[7]</code> creates a binding source object from this array and assigns it to the ItemsSource property of the ListBox. Note that the left argument DateTime specifies that the data be cast to that type.</p>
 <pre><code class="language-apl">
 [7]    win.times.ItemsSource←DateTime(2015⌶)'dt'
 </code></pre>

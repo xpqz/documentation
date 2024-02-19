@@ -59691,7 +59691,7 @@
 
 
 <h1 id="the-page_load-event">The Page_Load Event</h1>
-<p>Intro3.aspx illustrates how you can dynamically initialise the contents of a Web Page using the Page_Load event. This example also introduces another type of Web Control, the DropDownList object.</p>
+<p><code>Intro3.aspx</code> illustrates how you can dynamically initialise the contents of a Web Page using the Page_Load event. This example also introduces another type of Web Control, the <code>DropDownList</code> object.</p>
 <pre><code class="language-apl">*&lt;%@Register TagPrefix=&quot;tutorial&quot; Namespace=&quot;Tutorial&quot; Assembly=&quot;tutorial&quot; %&gt;*
 &lt;script language=&quot;Dyalog&quot; runat=&quot;server&quot;&gt;
 
@@ -59731,20 +59731,20 @@ out.Text←'You selected ',list.SelectedItem.Text
 &lt;/html&gt;
 
 </code></pre>
-<p>When an ASP.NET web page is loaded, it generates a Page_Load event. You can use this event to perform initialisation simply by defining a public function called <code>Page_Load</code> in your APLScript. This function will automatically be called every time the page is loaded. The <code>Page_Load</code> function should be niladic.</p>
-<p>Note that, if the page employs the technique illustrated in Intro1.aspx, whereby the page is continually POSTed back to itself by user interaction, your <code>Page_Load</code> function will be run every time the page is loaded and you may not wish to repeat the initialisation every time. Fortunately, you can distinguish between the initial load, and a subsequent load caused by the post back, using the IsPostBack property. This property is inherited from the System.Web.UI.Page class, which is the base class for any .aspx page.</p>
+<p>When an ASP.NET web page is loaded, it generates a <code>Page_Load</code> event. You can use this event to perform initialisation simply by defining a public function called <code>Page_Load</code> in your <code>APLScript</code>. This function will automatically be called every time the page is loaded. The <code>Page_Load</code> function should be niladic.</p>
+<p>Note that, if the page employs the technique illustrated in <code>Intro1.aspx</code>, whereby the page is continually POSTed back to itself by user interaction, your <code>Page_Load</code> function will be run every time the page is loaded and you may not wish to repeat the initialisation every time. Fortunately, you can distinguish between the initial load, and a subsequent load caused by the post back, using the <code>IsPostBack</code> property. This property is inherited from the <code>System.Web.UI.Page</code> class, which is the base class for any <code>.aspx</code> page.</p>
 <p>The <code>Page_Load</code> function in this example checks the value of <code>IsPostBack</code>. If 0 (the page is being loaded for the first time) it initialises the contents of the <code>list</code> object, adding 3 items "Apples", "Oranges" and "Bananas". The explanation for the statement:</p>
 <pre><code class="language-apl">      list.Items.Add ⊂'...'
 </code></pre>
-<p>is that the DropDownList WebControl has an Items property that is a collection of ListItem objects. The collection implements an Add function that takes a String Argument that can be used to add an item to the list.</p>
-<p>Notice that the name of the object <code>list</code> is defined by the id="list" attribute of the DropDownList control that is defined in the page layout section of the page.</p>
+<p>is that the <code>DropDownList</code> WebControl has an <code>Items</code> property that is a collection of <code>ListItem</code> objects. The collection implements an <code>Add</code> function that takes a <code>String</code> Argument that can be used to add an item to the list.</p>
+<p>Notice that the name of the object <code>list</code> is defined by the <code>id="list"</code> attribute of the <code>DropDownList</code> control that is defined in the page layout section of the page.</p>
 <p><img alt="intro3_1" src="../../img/intro3-1.png" /></p>
 <p>In this example, the page is processed by a POST back caused by pressing the <code>Submit</code> button. As it stands, changing the selection in the <code>list</code> object does not cause the text in the <code>out</code> object to be changed; you have to press the <code>Submit</code> button first.</p>
 <p><img alt="intro3_2" src="../../img/intro3-2.png" /></p>
-<p>However, you can make this happen automatically by adding the following attributes to the <code>list</code> object (see intro4.aspx):</p>
+<p>However, you can make this happen automatically by adding the following attributes to the <code>list</code> object (see <code>intro4.aspx</code>):</p>
 <p>AutoPostback="true"</p>
 <p>OnSelectedIndexChanged="Select"/&gt;</p>
-<p>AutoPostback causes the object to generate HTML that will provoke a post back whenever the selection is changed. When it does so, the OnSelectedIndexChanged event will be generated in the server-side script which in turn will call <code>Select</code>, which in turn will cause the text in the out object to change.</p>
+<p><code>AutoPostback</code> causes the object to generate HTML that will provoke a post back whenever the selection is changed. When it does so, the <code>OnSelectedIndexChanged</code> event will be generated in the server-side script which in turn will call <code>Select</code>, which in turn will cause the text in the out object to change.</p>
 <p>Note that this technique, which can be used with most of the ASP.NET controls including CheckBox, RadioButton and TextBox controls, relies on a round trip to the server every time the value of the control changes. It will not perform well except on a fast connection to a lightly loaded server.</p>
 
 

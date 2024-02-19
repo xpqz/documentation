@@ -59820,19 +59820,19 @@
 
 <h1 id="the-temperatureconverterctl2-control">The TemperatureConverterCtl2 Control</h1>
 <p>The previous example showed how to compose an ASP.NET custom control from other standard controls. This example shows how you can instead generate standard form elements on the browser by rendering the HTML for them directly.</p>
-<p>In the composite temperature control TemperatureConverterCtl1, discussed previously, all the data transfers between the browser and the server, relating to the standard child controls that it contains, are handled automatically by the controls themselves. Rendered controls require a bit more programming because it is up to the control developer to do the data transfer. The data transfer is managed through two interfaces, namely IPostBackDataHandler and IPostBackEventHandler. We will see how these interfaces are used later.</p>
-<p>The <code>:Class</code> statement for TemperatureConverterCtl2 specifies that it provides these interfaces.</p>
+<p>In the composite temperature control <code>TemperatureConverterCtl1</code>, discussed previously, all the data transfers between the browser and the server, relating to the standard child controls that it contains, are handled automatically by the controls themselves. Rendered controls require a bit more programming because it is up to the control developer to do the data transfer. The data transfer is managed through two interfaces, namely<code>IPostBackDataHandler</code> and <code>IPostBackEventHandler</code>. We will see how these interfaces are used later.</p>
+<p>The <code>:Class</code> statement for <code>TemperatureConverterCtl2</code> specifies that it provides these interfaces.</p>
 <pre><code class="language-apl">:Class TemperatureConverterCtl2: Control,
                   System.Web.UI.IPostBackDataHandler,
                   System.Web.UI.IPostBackEventHandler
 </code></pre>
 <h3 id="fahrenheit-and-centigrade-values">Fahrenheit and Centigrade Values</h3>
-<p>Like the previous TemperatureConverterCtl1 control, the TemperatureConverterCtl2 maintains two public properties named CentigradeValue and FahrenheitValue using property<em>get</em> and property<em>set</em> functions.</p>
+<p>Like the previous <code>TemperatureConverterCtl1</code> control, the <code>TemperatureConverterCtl2</code> maintains two public properties named <code>CentigradeValue</code> and <code>FahrenheitValue</code> using property<em>get</em> and property<em>set</em> functions.</p>
 <p>This time, the control manages the current temperature values in two internal variables named <code>_CentigradeValue</code> and <code>_FahrenheitValue</code>, which we must initialise.</p>
 <pre><code class="language-apl">      _CentigradeValue←0
       _FahrenheitValue←0
 </code></pre>
-<p>The <code>CentigradeValue</code>'s <code>get</code> function simply returns the current value of <code>_CentigradeValue</code>. Its .NET Properties are defined as shown so that it is exported as a <em>property get</em> function for the CentigradeValue property, and returns a Double.</p>
+<p>The <code>CentigradeValue</code>'s <code>get</code> function simply returns the current value of <code>_CentigradeValue</code>. Its .NET Properties are defined as shown so that it is exported as a <em>property get</em> function for the <code>CentigradeValue</code> property, and returns a <code>Double</code>.</p>
 <pre><code class="language-apl">       ∇ C←get
         :Access Public
         :Signature Double←get
@@ -59840,16 +59840,16 @@
        ∇
 
 </code></pre>
-<p>The <code>CentigradeValue</code>'s <code>set</code> function simply resets the value of <code>_CentigradeValue</code> to that of its argument. Its .NET Properties are defined as shown so that it is exported as a <em>property set</em> function for the CentigradeValue property, and takes a Double.</p>
+<p>The <code>CentigradeValue</code>'s <code>set</code> function simply resets the value of <code>_CentigradeValue</code> to that of its argument. Its .NET Properties are defined as shown so that it is exported as a <em>property set</em> function for the <code>CentigradeValue</code> property, and takes a <code>Double</code>.</p>
 <pre><code class="language-apl">       ∇ set C
         :Access Public
         :Signature set Double Value
         _CentigradeValue←C.NewValue
        ∇
 </code></pre>
-<p>The property<em>get</em> and property<em>set</em> functions for the FahrenheitValue property are similarly defined. The .signatures for these functions are similar to those for the CentigradeValue functions and are not shown.</p>
+<p>The property<em>get</em> and property<em>set</em> functions for the <code>FahrenheitValue</code> property are similarly defined. The .signatures for these functions are similar to those for the <code>CentigradeValue</code> functions and are not shown.</p>
 <h3 id="rendering-the-control">Rendering the Control</h3>
-<p>Like the SimpleCtl example described earlier in this Chapter, the TemperatureConverterCtl2 control has a <code>Render</code> function that generates the HTML to represent its appearance, and in this case its behaviour too.</p>
+<p>Like the <code>SimpleCtl</code> example described earlier in this Chapter, the <code>TemperatureConverterCtl2</code> control has a <code>Render</code> function that generates the HTML to represent its appearance, and in this case its behaviour too.</p>
 <pre><code class="language-apl">     ∇ Render output;C;F;BF;CF
 [1]    :Access Public override
 [2]    :Signature Render HtmlTextWriter output
@@ -59883,18 +59883,18 @@
 [30]   output.WriteLine∘⊂¨'' '&lt;br&gt;' '&lt;br&gt;'
      ∇
 </code></pre>
-<p>As we saw in the SimpleCtl example, the Render method will be called by ASP.NET with a parameter that represents an HtmlTextWriter object. This is represented by the APL local name <code>output</code>.</p>
-<p>Lines[4-9] and lines [11-16] generate HTML that defines two text boxes in which the user may enter the Fahrenheit and centigrade values respectively. Lines[9&amp;16] use the Write method of the HtmlTextWriter object to output the HTML.</p>
-<p>Lines[5&amp;12] obtain the fully qualified identifier for this particular instance of the TemperatureConverterCtl2 control from its UniqueID property. This is a property, which it inherits from Control and is therefore also a property of the current (APL) namespace.</p>
+<p>As we saw in the <code>SimpleCtl</code> example, the <code>Render</code> method will be called by ASP.NET with a parameter that represents an <code>HtmlTextWriter</code> object. This is represented by the APL local name <code>output</code>.</p>
+<p>Lines[4-9] and lines [11-16] generate HTML that defines two text boxes in which the user may enter the Fahrenheit and centigrade values respectively. Lines[9&amp;16] use the <code>Write</code> method of the <code>HtmlTextWriter</code> object to output the HTML.</p>
+<p>Lines[5&amp;12] obtain the fully qualified identifier for this particular instance of the <code>TemperatureConverterCtl2</code> control from its <code>UniqueID</code> property. This is a property, which it inherits from <code>Control</code> and is therefore also a property of the current (APL) namespace.</p>
 <p>Lines[18-22] and Lines[24-28] generate and output the HTML to represent the two buttons that convert from Fahrenheit to Centigrade and from Centigrade to Fahrenheit respectively.</p>
-<p>Lines[19-20] and [25-26]generate HTML that wires the buttons up to JavaScript handlers to be executed <em>by the browser</em>. The JavaScript simply causes the browser to execute a postback, i.e. send the page contents back to the server. GetPostBackEventReference is a (shared) method provided by the System.Web.UI.Page class that generates a reference to a client-side script function. In this case it is called with two parameters, an object that represents the current instance of the TemperatureConverterCtl2 control, and a string that will be passed to the server to indicate the cause of the postback (i.e. which button was pressed). The first parameter is a reference to the current object, which is returned by the system function <code>⎕THIS</code>.</p>
+<p>Lines[19-20] and [25-26]generate HTML that wires the buttons up to JavaScript handlers to be executed <em>by the browser</em>. The JavaScript simply causes the browser to execute a postback, i.e. send the page contents back to the server. <code>GetPostBackEventReference</code> is a (shared) method provided by the <code>System.Web.UI.Page</code> class that generates a reference to a client-side script function. In this case it is called with two parameters, an object that represents the current instance of the <code>TemperatureConverterCtl2</code> control, and a string that will be passed to the server to indicate the cause of the postback (i.e. which button was pressed). The first parameter is a reference to the current object, which is returned by the system function <code>⎕THIS</code>.</p>
 <p>The client-side script is itself generated, and inserted into the HTML stream automatically.</p>
 <p>To help to understand this process fully, it is instructive to examine the HTML that is generated by these functions. We will do this a bit later in the Chapter.</p>
 <h3 id="loading-the-posted-data">Loading the Posted Data</h3>
 <p>Once the server-side control has rendered the HTML for the browser, the user is free to type numbers into the text boxes and to press the buttons.</p>
 <p>When the user presses a button, the browser runs the client-side JavaScript code that in turn generates a postback to the server.</p>
-<p>The <code>:Class</code> statement for  TemperatureConverterCtl2 specifies that it supports the IPostBackDataHandler interface. This interface must be implemented by controls that want to receive postback data (i.e., the contents of Form fields that the user may have entered or changed) IpostBackDataHandler has two methods LoadPostData and RaisePostDataChangedEvent. LoadPostData is automatically invoked when a postback occurs, and the postback data is supplied as a parameter.</p>
-<p>So when the postback occurs, the server reloads the original page and, because this is a postback situation and our control has advertised the fact that it implements IPostBackDataHandler, ASP.NET invokes its LoadPostBack method. This method is called with two parameters. The first is a key and the second is a collection of name/value pairs. This contains the names of all the Form fields on the page (and there may be others not directly associated with our custom control) and the values they had when the user pressed the button. The key provides the means to extract the relevant part of this collection. The <code>LoadPostData</code> function is shown below.</p>
+<p>The <code>:Class</code> statement for  <code>TemperatureConverterCtl2</code> specifies that it supports the <code>IPostBackDataHandler</code> interface. This interface must be implemented by controls that want to receive postback data (i.e., the contents of Form fields that the user may have entered or changed) <code>IpostBackDataHandler</code> has two methods <code>LoadPostData</code> and <code>RaisePostDataChangedEvent</code>. <code>LoadPostData</code> is automatically invoked when a postback occurs, and the postback data is supplied as a parameter.</p>
+<p>So when the postback occurs, the server reloads the original page and, because this is a postback situation and our control has advertised the fact that it implements <code>IPostBackDataHandler</code>, ASP.NET invokes its <code>LoadPostBack</code> method. This method is called with two parameters. The first is a key and the second is a collection of name/value pairs. This contains the names of all the Form fields on the page (and there may be others not directly associated with our custom control) and the values they had when the user pressed the button. The key provides the means to extract the relevant part of this collection. The <code>LoadPostData</code> function is shown below.</p>
 <pre><code class="language-apl">     ∇ R←LoadPostData args;postDataKey;values;controlValues;new
 [1]    :Signature Boolean←IPostBackDataHandler.LoadPostData String postDataKey,NameValueCollection values
 [2]    postDataKey values←args
@@ -59907,11 +59907,11 @@
 </code></pre>
 <p>Line[2] obtains the two parameters from the argument and Line[3] uses the key to extract the appropriate data from the collection. <code>ControlValues</code> is a comma-delimited string containing name/value pairs. The function <code>ParseControlValues</code> simply extracts the values from this string, i.e. the contents of the Fahrenheit and Centigrade text boxes.</p>
 <h3 id="postback-events">Postback Events</h3>
-<p>The result of LoadPostData is Boolean and indicates whether or not any of the values in a control have changed. If the result is True (1), ASP.NET will next call the RaisePostDataChanged method. This method is called with no parameters and merely signals that something has changed. The control knows <em>what</em> has changed by comparing the old with the new, as in <code>LoadPostData[5]</code>.</p>
-<p>Finally, the page framework calls the RaisePostBackEvent method, passing it a string that identifies the page element that caused the post back.</p>
+<p>The result of <code>LoadPostData</code> is Boolean and indicates whether or not any of the values in a control have changed. If the result is <code>True</code> (1), ASP.NET will next call the <code>RaisePostDataChanged</code> method. This method is called with no parameters and merely signals that something has changed. The control knows <em>what</em> has changed by comparing the old with the new, as in <code>LoadPostData[5]</code>.</p>
+<p>Finally, the page framework calls the <code>RaisePostBackEvent</code> method, passing it a string that identifies the page element that caused the post back.</p>
 <p>The objective of these calls is to provide the control with the information it requires to synchronise its internal state with its appearance in the browser.</p>
-<p>In this case, we are not interested in which of the two text box values the user has altered; what matters is which of the two buttons <strong>FarenheitToCentigrade</strong> or <strong>CentigradeToFarenheit</strong> was pressed. Therefore, in this case, the control uses RaisePostBackEvent rather than RaisePostDataChanged (or indeed, LoadPostData itself, which is another option). The reason is that RaisePostBackEvent receives the name of the button as its argument.</p>
-<p>So in our case, the <code>RaisePostDataChanged</code> function does nothing. Nevertheless, it is essential that the function is provided and essential that it supports the correct public interface, namely that it takes no arguments are returns no result (Void).</p>
+<p>In this case, we are not interested in which of the two text box values the user has altered; what matters is which of the two buttons <strong>FarenheitToCentigrade</strong> or <strong>CentigradeToFarenheit</strong> was pressed. Therefore, in this case, the control uses <code>RaisePostBackEvent</code> rather than <code>RaisePostDataChanged</code> (or indeed, <code>LoadPostData</code> itself, which is another option). The reason is that <code>RaisePostBackEvent</code> receives the name of the button as its argument.</p>
+<p>So in our case, the <code>RaisePostDataChanged</code> function does nothing. Nevertheless, it is essential that the function is provided and essential that it supports the correct public interface, namely that it takes no arguments are returns no result (<code>Void</code>).</p>
 <pre><code class="language-apl">     ∇ RaisePostDataChangedEvent
 [1]  :Access public
 [2]  :Signature RaisePostDataChangedEvent
@@ -59932,8 +59932,8 @@
 </code></pre>
 <p>Finally, the page framework calls the <code>OnPreRender</code> and <code>Render</code> functions again, which generate new HTML for the browser.</p>
 <h3 id="using-the-control-on-a-page">Using the Control on a Page</h3>
-<p>So long as it has access to this DLL, our custom control may be accessed from any ASP.NET Web Page, and a simple example is shown below.</p>
-<pre><code class="language-apl">&lt;%@ Register TagPrefix=&quot;Dyalog&quot; Namespace=&quot;DyalogSamples&quot;
+<p>So long as it has access to this <code>DLL</code>, our custom control may be accessed from any ASP.NET Web Page, and a simple example is shown below.</p>
+<pre><code class="language-apl">`&lt;%@ Register TagPrefix=&quot;Dyalog&quot; Namespace=&quot;DyalogSamples&quot;
                                 Assembly=&quot;TEMP&quot; %&gt;
 
 &lt;html&gt;
@@ -59951,11 +59951,10 @@ runat=server/&gt;
 
 &lt;/center&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-
+&lt;/html&gt;`
 </code></pre>
-<p>The HTML that is generated by the control is illustrated below. Notice the presence of a JavaScript function named __doPostBack. This is generated by the RegisterPostBackScript method called from the <code>OnPreRender</code> function. The code that wires the buttons to this function was generated by the GetPostBackEventReference method called from the <code>Render</code> function.</p>
-<pre><code class="language-apl">&lt;html&gt;
+<p>The HTML that is generated by the control is illustrated below. Notice the presence of a JavaScript function named <code>__doPostBack</code>. This is generated by the <code>RegisterPostBackScript</code> method called from the <code>OnPreRender</code> function. The code that wires the buttons to this function was generated by the <code>GetPostBackEventReference</code> method called from the <code>Render</code> function.</p>
+<pre><code class="language-apl">`&lt;html&gt;
 &lt;body bgcolor=&quot;yellow&quot;&gt;
 &lt;center&gt;
 &lt;h3&gt;&lt;font face=&quot;Verdana&quot; color=&quot;black&quot;&gt;Temperature Control&lt;/font&gt;&lt;/h3&gt;
@@ -59986,7 +59985,7 @@ runat=server/&gt;
 
 &lt;/center&gt;
 &lt;/body&gt;
-&lt;/html&gt;
+&lt;/html&gt;`
 </code></pre>
 <p><img alt="temperatureconverterctl2" src="../../img/temperatureconverterctl2.png" /></p>
 

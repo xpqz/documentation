@@ -59829,12 +59829,12 @@
 <h3 id="workspace-management">Workspace Management</h3>
 <p>By default, the Dyalog APL DLL does not use a fixed maximum workspace size, but automatically increases the size of its active workspace as required. If you write a run-away COM object, or if there is insufficient computer memory available to load a new control, it is left to the host application or to Windows itself to deal with the situation.</p>
 <p>Nevertheless, it is possible to specify a value for maxws for the application in which the Dyalog APL DLL is embedded. This is achieved by defining a Registry key named:</p>
-<pre><code class="language-apl">HKLM\Software\Dyalog\Embedded\&lt;appname&gt;
+<pre><code class="language-apl">`HKLM\Software\Dyalog\Embedded\&lt;appname&gt;`
 </code></pre>
 <p>or on 64-bit Windows:</p>
-<pre><code class="language-apl">HKLM\Software\Wow6432Node\Dyalog\Embedded\&lt;appname&gt;
+<pre><code class="language-apl">`HKLM\Software\Wow6432Node\Dyalog\Embedded\&lt;appname&gt;`
 </code></pre>
-<p>where <appname> is the name of the application, containing a String Value named maxws set to the desired size. If you were running an APL in-process server from Microsoft Excel, the application name would be excel.exe.</p>
+<p>where <code>&lt;appname&gt;</code> is the name of the application, containing a String Value named <code>maxws</code> set to the desired size. If you were running an APL in-process server from Microsoft Excel, the application name would be <code>excel.exe</code>.</p>
 <p>When an application loads its first Dyalog APL COM object, it starts the Dyalog APL DLL which initialises a <code>CLEAR WS</code>. It then copies the namespace tree for the appropriate OLEServer or ActiveXControl object into its active workspace.</p>
 <p>This namespace tree comprises the OLEServer or ActiveXControl namespace itself, together with all its parent namespaces <em>with the exception of</em> the root workspace itself. Note that for an ActiveXControl, there is at least one parent namespace that represents a Form.</p>
 <p>For example, if an ActiveXControl namespace is called <code>#.F.Dual</code>, the Dyalog APL DLL will copy the contents of <code>#.F</code> into its active workspace when the first instance of the control is loaded by the host application.</p>

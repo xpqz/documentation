@@ -60064,7 +60064,7 @@
 <p>Note that assigning an invalid value to the seed will cause <code>DOMAIN ERROR</code>.</p>
 <p>The default random number generator in a <code>CLEAR WS</code> is 1 (Mersenne Twister). This algorithm <strong>RNG1</strong> produces 64-bit values with good distribution.</p>
 <p>The Lehmer linear congruential generator <strong>RNG0</strong> was the only random number generator provided in versions of Dyalog APL prior to Version 13.1. The implementation of this algorithm has several limitations including limited value range <code>(2*31)</code>, short period and non-uniform distribution (some values may appear more frequently than others). It is retained for backwards compatibility.</p>
-<p>Under Windows, the Operating System random number generator algorithm <strong>RNG2</strong> uses the rand_s() function. Under UNIX/Linux it uses /dev/urandom.</p>
+<p>Under Windows, the Operating System random number generator algorithm <strong>RNG2</strong> uses the <code>rand_s()</code> function. Under UNIX/Linux it uses <code>/dev/urandom</code>.</p>
 <h4 id="random-number-sequences">Random Number Sequences</h4>
 <p>Random number sequences may be predictable or not and  repeatable or not. A predictable and repeatable sequence is obtained by starting with the same specific value for the seed. A non-predictable sequence is obtained by starting with a seed which is itself chosen at random, but such a sequence is repeatable if the value of the seed (chosen at random) is visible. A non-predictable and non-repeatable sequence of random numbers is obtained where the initial seed is chosen completely at random and is unknown.</p>
 <p>Using <strong>RNG0</strong> or <strong>RNG1</strong>:</p>

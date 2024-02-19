@@ -59921,20 +59921,20 @@
 
 
 <h1 id="sample-web-service-golfservice">Sample Web Service: GolfService</h1>
-<p>GolfService is an example Web Service that resides in the directory samples\asp.net\Golf and is associated with the IIS Virtual Directory dyalog.net/Golf. This example makes extensive use of internal classes to define data structures that are appropriate for a client application, such as C# or VB.</p>
-<p>The directory contains a global.asax script, which is used to initialise the application.</p>
-<p>The Golf Web Service example manages the reservation of tee-times at golf courses. All the data is held in a component file called GolfData.dcf. This file may be initialised using the function <code>Golf.INITFILE</code> in the workspace samples\asp.net\webservices\webservices.dws. You may need to alter the file path first.</p>
-<p>Each golf course managed by the application has a unique code (integer) and a name (string). This is handled by defining a class (structure) called GolfCourse with two fields, Code and Name.</p>
-<p>GolfService provides 3 methods:</p>
-<pre><code class="language-apl">GetCourses()
+<p><code>GolfService</code> is an example Web Service that resides in the directory <code>samples\asp.net\Golf</code> and is associated with the IIS Virtual Directory <code>dyalog.net/Golf</code>. This example makes extensive use of internal classes to define data structures that are appropriate for a client application, such as C# or VB.</p>
+<p>The directory contains a <code>global.asax</code> script, which is used to initialise the application.</p>
+<p>The Golf Web Service example manages the reservation of tee-times at golf courses. All the data is held in a component file called <code>GolfData.dcf</code>. This file may be initialised using the function <code>Golf.INITFILE</code> in the workspace <code>samples\asp.net\webservices\webservices.dws</code>. You may need to alter the file path first.</p>
+<p>Each golf course managed by the application has a unique code (integer) and a name (string). This is handled by defining a class (structure) called <code>GolfCourse</code> with two fields, <code>Code</code> and <code>Name</code>.</p>
+<p><code>GolfService</code> provides 3 methods:</p>
+<pre><code class="language-apl">`GetCourses()`
 </code></pre>
-<p>Returns a list of Golf Courses (CourseCode and CourseName). The result of this method is an array of GolfCourse objects.</p>
-<pre><code class="language-apl">GetStartingSheet(CourseCode,Date)
+<p>Returns a list of Golf Courses (CourseCode and CourseName). The result of this method is an array of <code>GolfCourse</code> objects.</p>
+<pre><code class="language-apl">`GetStartingSheet(CourseCode,Date)`
 </code></pre>
-<p>Returns the starting sheet for a specified golf course on a given day. A starting sheet is a list of starting times with a list of the golfers booked to start their round at that time. The result of this method is a StartingSheet object.</p>
-<pre><code class="language-apl">MakeBooking(CourseCode,TeeTime,GimmeNearest, Name1,Name2,Name3,Name4))
+<p>Returns the starting sheet for a specified golf course on a given day. A starting sheet is a list of starting times with a list of the golfers booked to start their round at that time. The result of this method is a <code>StartingSheet</code> object.</p>
+<pre><code class="language-apl">`MakeBooking(CourseCode,TeeTime,GimmeNearest, Name1,Name2,Name3,Name4))`
 </code></pre>
-<p>Requests a tee reservation at the course specified by CourseCode. TeeTime is a DateTime object that specifies the requested date and time. GimmeNearest is Boolean. If 1, requests the nearest tee-time to that specified; if 0, requests only the specified tee-time. Name1-4 are strings specifying up to 4 players. Note that all parameters are required. The result of this method is a Booking object.</p>
+<p>Requests a tee reservation at the course specified by <code>CourseCode</code>. <code>TeeTime</code> is a <code>DateTime</code> object that specifies the requested date and time. <code>GimmeNearest</code> is <code>Boolean</code>. If 1, requests the nearest tee-time to that specified; if 0, requests only the specified tee-time. Name1-4 are strings specifying up to 4 players. Note that all parameters are required. The result of this method is a <code>Booking</code> object.</p>
 <h3 id="golfservice-globalasax">GolfService: Global.asax</h3>
 <pre><code class="language-apl">&lt;script language=&quot;Dyalog&quot; runat=server&gt;
 
@@ -59953,12 +59953,12 @@
 ∇
 &lt;/script&gt;
 </code></pre>
-<p>The <code>Application_Start</code> function is called when the GolfService Web Service is invoked for the first time. It ties the GolfData component file then stores the tie number in a new Item called GOLFID in the Application object. This item is then subsequently available to methods in the GolfService for the duration of the application.</p>
-<p>The <code>Application_End</code> function is invoked when the GolfService Web Service terminates. It unties the GolfData component file.</p>
-<p>This example may be considered slightly weak in that the location of the data file is hard-coded in the application's Global.asax file. An alternative is to store this information in the <appsettings> section of the appropriate web.config file or in the global machine.config file. This is preferable if the resource (in this case a file name) is to be accessed from more than one script. For further information on ASP.NET <strong>config</strong> files, see the documentation for the .NET Framework SDK.</p>
-<p>Note that the GolfData file may be initialised using the function <code>Golf.INITFILE</code> in the samples\asp.net\webservices\webservices.dws workspace. The function will prompt you for the path of the file, initialize it and update the Global.asax file accordingly.</p>
+<p>The <code>Application_Start</code> function is called when the <code>GolfService</code> Web Service is invoked for the first time. It ties the <code>GolfData</code> component file then stores the tie number in a new Item called <code>GOLFID</code> in the Application object. This item is then subsequently available to methods in the <code>GolfService</code> for the duration of the application.</p>
+<p>The <code>Application_End</code> function is invoked when the <code>GolfService</code> Web Service terminates. It unties the <code>GolfData</code> component file.</p>
+<p>This example may be considered slightly weak in that the location of the data file is hard-coded in the application's <code>Global.asax</code> file. An alternative is to store this information in the <code>&lt;appsettings&gt;</code> section of the appropriate <code>web.config</code> file or in the global <code>machine.config</code> file. This is preferable if the resource (in this case a file name) is to be accessed from more than one script. For further information on ASP.NET <strong>config</strong> files, see the documentation for the .NET Framework SDK.</p>
+<p>Note that the <code>GolfData</code> file may be initialised using the function <code>Golf.INITFILE</code> in the <code>samples\asp.net\webservices\webservices.dws</code> workspace. The function will prompt you for the path of the file, initialize it and update the <code>Global.asax</code> file accordingly.</p>
 <h3 id="golfservice-golfcourse-class">GolfService: GolfCourse class</h3>
-<p>The GolfCourse class is effectively a structure with two fields named Code and Name. Code is an integer code that provides a shorthand way to refer to a specific golf course; Name is a String containing its full name.</p>
+<p>The <code>GolfCourse</code> class is effectively a structure with two fields named <code>Code</code> and <code>Name</code>. <code>Code</code> is an integer code that provides a shorthand way to refer to a specific golf course; <code>Name</code> is a <code>String</code> containing its full name.</p>
 <pre><code class="language-apl">:Class GolfCourse
     :Access Public
     :Field Public Int32 Code
@@ -59977,9 +59977,9 @@
     ∇
 :EndClass
 </code></pre>
-<p>The GolfCourse class provides two constructors. The first, named <code>ctor_def</code>, takes no arguments and therefore overrides the default constructor that is inherited from System.Object. <code>ctor_def</code> calls <code>ctor</code> to initialise the instance with a Code of  <code>¯1</code> and an empty Name.</p>
-<p>The constructor named <code>ctor</code> accepts two parameters named CourseCode (an integer) and CourseName (a string), and simply assigns these values into the corresponding fields.</p>
-<p>Therefore, valid ways to create an instance of a GolfCourse are:</p>
+<p>The <code>GolfCourse</code> class provides two constructors. The first, named <code>ctor_def</code>, takes no arguments and therefore overrides the default constructor that is inherited from <code>System.Object</code>. <code>ctor_def</code> calls <code>ctor</code> to initialise the instance with a Code of  <code>¯1</code> and an empty Name.</p>
+<p>The constructor named <code>ctor</code> accepts two parameters named <code>CourseCode</code> (an integer) and <code>CourseName</code> (a string), and simply assigns these values into the corresponding fields.</p>
+<p>Therefore, valid ways to create an instance of a <code>GolfCourse</code> are:</p>
 <pre><code class="language-apl">      GC←⎕NEW GolfCourse
       GC.(Code Name)←1 'St Andrews'
 </code></pre>
@@ -59988,7 +59988,7 @@
 </code></pre>
 <p>Note that the names of the constructor functions are not visible outside the class. Constructors are identified by their signatures (basically, the <code>:Implements Constructor</code> statement) and not by their names.</p>
 <h3 id="golfservice-slot-class">GolfService: Slot class</h3>
-<p>The Slot class is effectively a structure with two fields named Time and Players. Time is a DateTime object that represents a time that can be reserved on the first tee. Players is an array of (up to 4) strings that contains the names of the golfers who have reserved to start their round of golf at that time.</p>
+<p>The <code>Slot</code> class is effectively a structure with two fields named <code>Time</code> and <code>Players</code>. <code>Time</code> is a <code>DateTime</code> object that represents a time that can be reserved on the first tee. <code>Players</code> is an array of (up to 4) strings that contains the names of the golfers who have reserved to start their round of golf at that time.</p>
 <pre><code class="language-apl">:Class Slot
     :Access Public
     :Field Public DateTime Time
@@ -60014,12 +60014,12 @@
 :EndClass
 </code></pre>
 <p>This class provides two constructor functions named <code>ctor1</code> and <code>ctor2</code>. However, for internal reasons, if a class defines any constructor functions, it is currently necessary to provide a dummy default constructor (the form of the constructor that takes no parameters); hence <code>ctor_def</code>.</p>
-<p>The constructor <code>ctor1</code> accepts a single DateTime parameter, which it assigns to the Time, field, and initialises the Players field to an empty array.</p>
-<p>The constructor <code>ctor2</code> accepts two arguments, a specified tee time, and an array of strings that contains golfers' names. It assigns these parameters to Time and Players respectively.</p>
+<p>The constructor <code>ctor1</code> accepts a single <code>DateTime</code> parameter, which it assigns to the Time, field, and initialises the <code>Players</code> field to an empty array.</p>
+<p>The constructor <code>ctor2</code> accepts two arguments, a specified tee time, and an array of strings that contains golfers' names. It assigns these parameters to <code>Time</code> and <code>Players</code> respectively.</p>
 <h3 id="golfservice-booking-class">GolfService: Booking class</h3>
-<p>The Booking class represents the result of the MakeBooking method. It contains 4 fields named OK, Course, TeeTime and Message.</p>
-<p>OK is Boolean and indicates whether or not the attempt to make a reservation was successful. If OK is false (0), the Message field (a string) indicates the reason for failure.</p>
-<p>If OK is true (1) the Course field contains an instance of a GolfCourse object, and the TeeTime field contains an instance of a Slot object. Together, these objects identify the reserved golf course and starting slot. The latter specifies both the starting time, and the names of all the golfers who have been allocated that starting time and who will therefore play together.</p>
+<p>The <code>Booking</code> class represents the result of the <code>MakeBooking</code> method. It contains 4 fields named <code>OK</code>, <code>Course</code>, <code>TeeTime</code> and <code>Message</code>.</p>
+<p><code>OK</code> is <code>Boolean</code> and indicates whether or not the attempt to make a reservation was successful. If <code>OK</code> is false (0), the <code>Message</code> field (a string) indicates the reason for failure.</p>
+<p>If <code>OK</code> is true (1) the <code>Course</code> field contains an instance of a <code>GolfCourse</code> object, and the <code>TeeTime</code> field contains an instance of a <code>Slot</code> object. Together, these objects identify the reserved golf course and starting slot. The latter specifies both the starting time, and the names of all the golfers who have been allocated that starting time and who will therefore play together.</p>
 <pre><code class="language-apl">:Class Booking
     :Access Public
     :Field Public Boolean OK
@@ -60041,9 +60041,9 @@
 </code></pre>
 <p>This class provides a single constructor method, which must be called with values for all four fields.</p>
 <h3 id="golfservice-startingsheet-class">GolfService: StartingSheet class</h3>
-<p>The StartingSheet class represents the result of the GetStartingSheet method. It contains 5 fields named OK, Course, Date, Slots and Message. OK is Boolean and indicates whether or not a starting sheet is available for the specified course and date.</p>
-<p>If OK is false (0), the Message field (a string) indicates the reason for failure.</p>
-<p>If OK is true (1) the Course field contains an instance of a GolfCourse object, the Date field contains the date in question, and the Slots field contains an array of Slot objects. Each Slot object specifies a starting time and the names of golfers who are booked to play at that time.</p>
+<p>The <code>StartingSheet</code> class represents the result of the <code>GetStartingSheet</code> method. It contains 5 fields named <code>OK</code>, <code>Course</code>, <code>Date</code>, <code>Slots</code> and <code>Message</code>. <code>OK</code> is <code>Boolean</code> and indicates whether or not a starting sheet is available for the specified course and date.</p>
+<p>If <code>OK</code> is false (0), the <code>Message</code> field (a string) indicates the reason for failure.</p>
+<p>If <code>OK</code> is true (1) the <code>Course</code> field contains an instance of a <code>GolfCourse</code> object, the <code>Date</code> field contains the date in question, and the <code>Slots</code> field contains an array of <code>Slot</code> objects. Each <code>Slot</code> object specifies a starting time and the names of golfers who are booked to play at that time.</p>
 <pre><code class="language-apl">:Class StartingSheet
     :Access Public
     :Field Public Boolean OK
@@ -60065,7 +60065,7 @@
     ∇
 :EndClass
 </code></pre>
-<p>Like the Booking class, the StartingSheet class provides a single constructor method. In this case, the constructor is called with values for just 3 of the fields; the values of the other fields are expected to be assigned later.</p>
+<p>Like the <code>Booking</code> class, the <code>StartingSheet</code> class provides a single constructor method. In this case, the constructor is called with values for just 3 of the fields; the values of the other fields are expected to be assigned later.</p>
 <h3 id="golfservice-getcourses-function">GolfService: GetCourses function</h3>
 <pre><code class="language-apl">     ∇ R←GetCourses;COURSECODES;COURSES;INDEX;GOLFID
 [1]   ⍝
@@ -60077,12 +60077,12 @@
 [7]    R←⎕NEW¨GolfCourse,¨⊂¨↓⍉↑COURSECODES COURSES
      ∇
 </code></pre>
-<p>The <code>GetCourses</code> function retrieves the tie number of the GolfData component file from the Application object and reads its first component.</p>
-<p>The function then creates a GolfCourse object for each of the courses recorded on the file, and returns the array of GolfCourse objects as its result.</p>
+<p>The <code>GetCourses</code> function retrieves the tie number of the <code>GolfData</code> component file from the <code>Application</code> object and reads its first component.</p>
+<p>The function then creates a <code>GolfCourse</code> object for each of the courses recorded on the file, and returns the array of <code>GolfCourse</code> objects as its result.</p>
 <h3 id="golfservice-getstartingsheet-function">GolfService: GetStartingSheet function</h3>
-<p>The <code>GetStartingSheet</code> function retrieves the tie number of the GolfData component file from the Application object and reads its first component. Line [10] creates an instance of a StartingSheet object and uses it to initialise the result <code>R</code>. The value of the OK field is set to zero to indicate failure.</p>
-<p>It then validates the requested CourseCode. If invalid, it simply sets the Message field in the result and returns it. Similarly, it checks to see if there is a starting sheet on file for the requested date. If not, it sets the Message field to indicate this, and returns.</p>
-<p>Note that line [15] extracts the Year, Month and Day properties from the requested tee time, a DateTime object, and converts them to an IDN. This is used to index the component containing the starting sheet for that day.</p>
+<p>The <code>GetStartingSheet</code> function retrieves the tie number of the <code>GolfData</code> component file from the <code>Application</code> object and reads its first component. Line [10] creates an instance of a <code>StartingSheet</code> object and uses it to initialise the result <code>R</code>. The value of the <code>OK</code> field is set to zero to indicate failure.</p>
+<p>It then validates the requested <code>CourseCode</code>. If invalid, it simply sets the <code>Message</code> field in the result and returns it. Similarly, it checks to see if there is a starting sheet on file for the requested date. If not, it sets the <code>Message</code> field to indicate this, and returns.</p>
+<p>Note that line [15] extracts the <code>Year</code>, <code>Month</code> and <code>Day</code> properties from the requested tee time, a <code>DateTime</code> object, and converts them to an IDN. This is used to index the component containing the starting sheet for that day.</p>
 <pre><code class="language-apl">     ∇ R←GetStartingSheet ARGS;CODE;COURSE;DATE;GOLFID;
        COURSECODES;COURSES;INDEX;COURSEI;IDN;DATES;COMPS;
        IDATE;TEETIMES;GOLFERS;I;T
@@ -60115,21 +60115,21 @@
 [25]   R.Slots←⎕NEW¨Slot,¨⊂¨T,∘⊂¨↓GOLFERS
      ∇
 </code></pre>
-<p>Line[23] sets the OK field of the result to 1 (success).</p>
-<p>Line[24] converts the stored tee times (in minutes) to DateTime objects.</p>
-<p>Line[25] combines the tee times and golfers into a vector of 2-element arrays, and creates a Slot object for each of them. The result is assigned to the Slots field of the result <code>R</code>.</p>
+<p>Line[23] sets the <code>OK</code> field of the result to 1 (success).</p>
+<p>Line[24] converts the stored tee times (in minutes) to <code>DateTime</code> objects.</p>
+<p>Line[25] combines the tee times and golfers into a vector of 2-element arrays, and creates a <code>Slot</code> object for each of them. The result is assigned to the <code>Slots</code> field of the result <code>R</code>.</p>
 <h3 id="golfservice-makebooking-function">GolfService: MakeBooking function</h3>
-<p>The <code>MakeBooking</code> function checks that the requested tee-time is available, for the specified number of players and updates the starting sheet accordingly. The result of the function is a Booking object.</p>
-<p><code>MakeBooking</code> first retrieves the tie number of the GolfData component file from the Application object and reads its first component.</p>
-<p>Lines[13 14] create instances of GolfCourse and Slot objects, which at this stage are not validated. Line[15] then initialises the result <code>R</code>, a Booking object, which includes these instances. At this stage, <code>R.OK</code> is 0 indicating failure.</p>
-<p>Line[16] validates the requested CourseCode, and, if invalid, simply sets <code>R.Message</code> and returns.</p>
-<p>Similarly, lines [20 23] check that the requested tee time is within the next 30 days from now. If not, the function assigns the appropriate error message to <code>R.Message</code> and returns. Note that these two statements employ the APL primitive function <code>&gt;</code> (rather that the op_GreaterThan method) to compare the requested tee time (a DateTime object) with a new DateTime object that represents <em>now</em> and <em>now+30 days</em> respectively.</p>
-<p>Notice that line[24] uses the AddDays method to create a new DateTime object that represents <em>now + 30 days</em>. An alternative expression, to get <em>now+30</em> days is:</p>
+<p>The <code>MakeBooking</code> function checks that the requested tee-time is available, for the specified number of players and updates the starting sheet accordingly. The result of the function is a <code>Booking</code> object.</p>
+<p><code>MakeBooking</code> first retrieves the tie number of the <code>GolfData</code> component file from the Application object and reads its first component.</p>
+<p>Lines[13 14] create instances of <code>GolfCourse</code> and <code>Slot</code> objects, which at this stage are not validated. Line[15] then initialises the result <code>R</code>, a <code>Booking</code> object, which includes these instances. At this stage, <code>R.OK</code> is 0 indicating failure.</p>
+<p>Line[16] validates the requested <code>CourseCode</code>, and, if invalid, simply sets <code>R.Message</code> and returns.</p>
+<p>Similarly, lines [20 23] check that the requested tee time is within the next 30 days from now. If not, the function assigns the appropriate error message to <code>R.Message</code> and returns. Note that these two statements employ the APL primitive function <code>&gt;</code> (rather that the <code>op_GreaterThan</code> method) to compare the requested tee time (a <code>DateTime</code> object) with a new <code>DateTime</code> object that represents <em>now</em> and <em>now+30 days</em> respectively.</p>
+<p>Notice that line[24] uses the <code>AddDays</code> method to create a new <code>DateTime</code> object that represents <em>now + 30 days</em>. An alternative expression, to get <em>now+30</em> days is:</p>
 <pre><code class="language-apl">      TEETIME.Now+⎕NEW TimeSpan (30 0 0 0)
 </code></pre>
 <p>Lines[28-47] are concerned with retrieving the appropriate component from the file, initialising it or re-using an old one, if it is not present. Each component represents the starting sheet for a particular course on a particular day.</p>
 <p>Lines[48-63] check whether or not the requested slot is available (for the specified number of golfers). If not it returns an error message as before or, if <code>GimmeNearest</code> is 1 (true), it attempts to allocate the slot closest to the requested time.</p>
-<p>If an appropriate slot is found, Lines[72 73] update the Slot object with the assigned time and names of the golfers. Line[74] then inserts the modified Slot object into the result, and sets the <code>OK</code> field to 1 (true) to indicate success.</p>
+<p>If an appropriate slot is found, Lines[72 73] update the <code>Slot</code> object with the assigned time and names of the golfers. Line[74] then inserts the modified <code>Slot</code> object into the result, and sets the <code>OK</code> field to 1 (true) to indicate success.</p>
 <pre><code class="language-apl">    ∇ R←MakeBooking ARGS;CODE;COURSE;SLOT;TEETIME;GOLFID;
                     COURSECODES;COURSES;INDEX;COURSEI;IDN;
                     DATES;COMPS;IDATE;TEETIMES;GOLFERS;
@@ -60229,32 +60229,32 @@
 </code></pre>
 <h3 id="testing-golfservice-from-a-browser">Testing GolfService from a Browser</h3>
 <p>If you point your browser at the URL:</p>
-<pre><code class="language-apl"> http://localhost/dyalog.net.15.0.unicode.32/Golf/Golf.asmx
+<pre><code class="language-apl">`http://localhost/dyalog.net.15.0.unicode.32/Golf/Golf.asmx`
 </code></pre>
-<p>GolfService will be compiled and ASP.NET will fabricate a page about it for the browser to display as shown below.</p>
-<p>The three methods exposed by GolfService are listed.</p>
+<p><code>GolfService</code> will be compiled and ASP.NET will fabricate a page about it for the browser to display as shown below.</p>
+<p>The three methods exposed by <code>GolfService</code> are listed.</p>
 <p><img alt="golfservice1" src="../../img/golfservice1.png" /></p>
-<p>Invoking the GetCourses method generates the following output.</p>
-<p>Notice that the data type of the result is ArrayOfGolfCourse, and the data type of each element of the result is GolfCourse. Furthermore, the public fields defined for the GolfCourse object are clearly named.</p>
-<p>All this information is derived from the declarations in the Golf.asmx script.</p>
-<p>As supplied, the GolfData component file contains only 3 golf courses as shown below.</p>
+<p>Invoking the <code>GetCourses</code> method generates the following output.</p>
+<p>Notice that the data type of the result is <code>ArrayOfGolfCourse</code>, and the data type of each element of the result is <code>GolfCourse</code>. Furthermore, the public fields defined for the <code>GolfCourse</code> object are clearly named.</p>
+<p>All this information is derived from the declarations in the <code>Golf.asmx</code> script.</p>
+<p>As supplied, the <code>GolfData</code> component file contains only 3 golf courses as shown below.</p>
 <p><img alt="golfservice2" src="../../img/golfservice2.png" /></p>
-<p>ASP.NET generates a Form containing fields that allow the user to invoke the MakeBookings method as shown below.</p>
-<p>Notice the way a DateTime value is specified. Note too that the GimmeNearest parameter is Boolean, so you must enter "True"" or "False". If you enter 0 or 1, it will cause an error and the application will refuse to try to call MakeBookings because you have specified the wrong type for a parameter.</p>
+<p>ASP.NET generates a Form containing fields that allow the user to invoke the <code>MakeBookings</code> method as shown below.</p>
+<p>Notice the way a <code>DateTime</code> value is specified. Note too that the <code>GimmeNearest</code> parameter is <code>Boolean</code>, so you must enter <code>"True"</code>" or <code>"False"</code>. If you enter 0 or 1, it will cause an error and the application will refuse to try to call <code>MakeBookings</code> because you have specified the wrong type for a parameter.</p>
 <p>When you try this yourself, remember to enter a date that is within the next 30 days, and a time between 07:00 and 15:00. Alternatively, you may wish to experiment with invalid data to check the error handling.</p>
 <p><img alt="golfservice3" src="../../img/golfservice3.png" /></p>
-<p>The result of invoking MakeBooking with this data is shown below.</p>
-<p>Notice how all the information about the Booking object structure, including the structure of the sub-objects, is provided.</p>
+<p>The result of invoking <code>MakeBooking</code> with this data is shown below.</p>
+<p>Notice how all the information about the <code>Booking</code> object structure, including the structure of the sub-objects, is provided.</p>
 <p><img alt="golfservice4" src="../../img/golfservice4.png" /></p>
-<p>The following picture shows data suitable for invoking the GetStartingSheet method.</p>
+<p>The following picture shows data suitable for invoking the <code>GetStartingSheet</code> method.</p>
 <p>If you try this for yourself, choose a course and date on which you have made at least one successful booking.</p>
 <p><img alt="golfservice5" src="../../img/golfservice5.png" /></p>
-<p>Finally, the result of the GetStartingSheet function is illustrated below.</p>
-<p>The output clearly shows that the result, a StartingSheet object, contains an array of Slot objects, each of which contains a Time field and a Players field.</p>
+<p>Finally, the result of the <code>GetStartingSheet</code> function is illustrated below.</p>
+<p>The output clearly shows that the result, a <code>StartingSheet</code> object, contains an array of <code>Slot</code> objects, each of which contains a <code>Time</code> field and a <code>Players</code> field.</p>
 <p><img alt="golfservice6" src="../../img/golfservice6.png" /></p>
 <h4 id="using-golfservice-from-c">Using GolfService from C</h4>
-<p>The csharp sub-directory in samples\asp.net\golf contains sample files for accessing the GolfService Web Service from C#. The C# source code in Golf.cs is shown below.</p>
-<pre><code class="language-apl">using System;
+<p>The <code>csharp</code> sub-directory in <code>samples\asp.net\golf</code> contains sample files for accessing the <code>GolfService</code> Web Service from C#. The C# source code in <code>Golf.cs</code> is shown below.</p>
+<pre><code class="language-apl">`using System;
 
 class MainClass  {
 
@@ -60279,19 +60279,17 @@ class MainClass  {
         foreach (String player in booking.TeeTime.Players)
             Console.WriteLine(player);
         }
-}
-
+}`
 </code></pre>
-<p>The following example shows how you may run the C# program golf.exe from a Command Prompt window. Please remember to specify a reasonable date and time rather than the one used in this example.</p>
-<pre><code class="language-apl">csharp&gt;golf 2006-08-07T08:00:00 T.Woods A.Palmer P.Donnelly
+<p>The following example shows how you may run the <code>C#</code> program <code>golf.exe</code> from a Command Prompt window. Please remember to specify a reasonable date and time rather than the one used in this example.</p>
+<pre><code class="language-apl">`csharp&gt;golf 2006-08-07T08:00:00 T.Woods A.Palmer P.Donnelly
 True
 25/08/2008 08:00:00
 T.Woods
 A.Palmer
 P.Donnelly
 
-csharp&gt;
-
+csharp&gt;`
 </code></pre>
 
 

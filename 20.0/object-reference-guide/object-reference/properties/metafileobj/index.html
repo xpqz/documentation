@@ -59683,13 +59683,13 @@
 </table>
 <p><strong>Description</strong></p>
 <p>This property is used to copy graphical data to and from the Windows clipboard using the Windows Metafile format.</p>
-<p>When you set the MetafileObj property of a <a href="../../a-z/clipboard/">Clipboard</a> object to the name of the <a href="../../a-z/metafile/">Metafile</a> object using <a href="../../Language/System%20Functions/ws.htm"><code>⎕WS</code></a> its contents are copied to the Windows clipboard in Windows Metafile format.</p>
-<p>To import a picture that has been stored in the Windows clipboard in Metafile format you use <a href="../../Language/System%20Functions/wg.htm"><code>⎕WG</code></a>. This returns a nested array whose elements correspond to the graphical components of the picture. Each of the elements of the array may be used as the arguments of <a href="../../Language/System%20Functions/wc.htm"><code>⎕WC</code></a> to draw the corresponding component of the picture. For example, if the picture stored in C:\MSOFFICE\CLIPART\BIRD.WMF is copied to the Windows clipboard, it may be imported into Dyalog APL/W as follows :</p>
+<p>When you set the MetafileObj property of a <a href="../../a-z/clipboard/">Clipboard</a> object to the name of the <a href="../../a-z/metafile/">Metafile</a> object using <a href="../../Language/System Functions/ws.htm"><code>⎕WS</code></a> its contents are copied to the Windows clipboard in Windows Metafile format.</p>
+<p>To import a picture that has been stored in the Windows clipboard in Metafile format you use <a href="../../Language/System Functions/wg.htm"><code>⎕WG</code></a>. This returns a nested array whose elements correspond to the graphical components of the picture. Each of the elements of the array may be used as the arguments of <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> to draw the corresponding component of the picture. For example, if the picture stored in C:\MSOFFICE\CLIPART\BIRD.WMF is copied to the Windows clipboard, it may be imported into Dyalog APL/W as follows :</p>
 <pre><code class="language-apl">      BIRD ← 'CL' ⎕WG 'MetafileObj'
       ⍴BIRD
 4
 </code></pre>
-<p>Each of the items in <code>BIRD</code> is a 2-element vector. The first element is a "dummy" object name which you may use or ignore as you wish. The second element is an array that defines a graphical object and is suitable as the right argument of <a href="../../Language/System%20Functions/wc.htm"><code>⎕WC</code></a>. For example :</p>
+<p>Each of the items in <code>BIRD</code> is a 2-element vector. The first element is a "dummy" object name which you may use or ignore as you wish. The second element is an array that defines a graphical object and is suitable as the right argument of <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a>. For example :</p>
 <pre><code class="language-apl">      2⊃4⊃BIRD
 POLY  191 397   FSTYLE  0   FILLCOL  0 0 0    ...
 

@@ -59804,11 +59804,11 @@
 
 <h1 class="heading"><span class="name">Disposable Statement</span><span class="command">:Disposable</span></h1>
 
-<p><a href="Disposable%20Statement%20Definition.htm">Formal Definition</a></p>
+<p><a href="Disposable Statement Definition.htm">Formal Definition</a></p>
 <p>The Dyalog interface to .NET involves the creation and removal of .NET objects. Many such objects are <strong>managed</strong> in that the .NET Common Language RunTime (CLR)  automatically releases the memory allocated to the object when that object is no longer used. However, it is not possible to predict when the CLR garbage collection will occur. Furthermore, the garbage collector has no knowledge of <strong>unmanaged</strong> resources such as window handles, or open files and streams.</p>
-<p>Typically, .NET classes implement a special interface called <code>IDisposable</code> which provides a standard way for applications to release memory and other resources when an instance is removed. Furthermore, the C# language has the <code>using</code> keyword, which "Provides a convenient syntax that ensures the correct use of <code>IDisposable</code> objects."</p>
-<p>The <code>:Disposable array</code> statement in Dyalog APL provides a similar facility to C#'s <code>using</code>. <code>array</code> may be a scalar or vector of namespace references.</p>
-<p>When the block is exited, any .NET objects in <code>array</code> that implement <code>IDisposable</code> will have <code>IDisposable.Dispose</code> called on them.</p>
+<p>Typically, .NET classes implement a special interface called IDisposable which provides a standard way for applications to release memory and other resources when an instance is removed. Furthermore, the C# language has the using keyword, which "Provides a convenient syntax that ensures the correct use of IDisposable objects."</p>
+<p>The <code>:Disposable array</code> statement in Dyalog APL provides a similar facility to C#'s using. <code>array</code> may be a scalar or vector of namespace references.</p>
+<p>When the block is exited, any .NET objects in <code>array</code> that implement IDisposable will have IDisposable.Dispose called on them.</p>
 <p>Note that exit includes normal exit as the code drops through <code>:EndDisposable</code>, or if an error occurs and is trapped, or if branch (<code>→</code>) is used to exit the block, or anything else.</p>
 <p>See also: 
 .NET Interface Guide: </p>
@@ -59819,14 +59819,14 @@
 .
 :EndDisposable
 </code></pre>
-<p>In the above example, when the <code>:EndDisposable</code> statement is reached, the system disposes of the <code>Font</code> object <code>f</code> (and all the resources associated with it) by calling <code>(IDisposable)f.Dispose()</code>. A subsequent reference to <code>f</code> would generate <code>VALUE ERROR</code>.</p>
+<p>In the above example, when the <code>:EndDisposable</code> statement is reached, the system disposes of the Font object <code>f</code> (and all the resources associated with it) by calling <code>(IDisposable)f.Dispose()</code>. A subsequent reference to <code>f</code> would generate <code>VALUE ERROR</code>.</p>
 <h4 id="example-normal-exit_1">Example (Normal Exit)</h4>
 <pre><code class="language-apl">:Disposable fonts←⎕NEW ¨Font Font
 .
 .
 :EndDisposable
 </code></pre>
-<p>In the above example,<code>Dispose()</code> is called on <strong>each</strong> of the <code>Font</code> objects in <code>fonts</code> during the processing of <code>:EndDisposable</code>.</p>
+<p>In the above example, Dispose() is called on <strong>each</strong> of the Font objects in <code>fonts</code> during the processing of <code>:EndDisposable</code>.</p>
 <h4 id="example-branch-exit">Example (Branch Exit)</h4>
 <pre><code class="language-apl">:Disposable fonts←⎕NEW ¨Font Font
 .
@@ -59834,7 +59834,7 @@
 .
 :EndDisposable
 </code></pre>
-<p>In this example,<code>Dispose()</code> is called on  the <code>Font</code> objects in <code>fonts</code> during the processing of the branch statement <code>→0</code>.</p>
+<p>In this example, Dispose() is called on  the Font objects in <code>fonts</code> during the processing of the branch statement <code>→0</code>.</p>
 <h4 id="example-trapexit">Example (TrapExit)</h4>
 <pre><code class="language-apl">:trap 0
 

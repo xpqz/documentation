@@ -59685,7 +59685,7 @@
 <p>This event is generated in an APL service whenever the Windows Service Control Manager (SCM) requests a change of state. See 
 Installation &amp; Configuration Guide: </p>
 <p>APL Application as a ServiceAPL Application as a Service on page 1.</p>
-<p>The event message reported as the result of <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a>, or supplied as the right argument to your callback function, is a 4-element vector as follows :</p>
+<p>The event message reported as the result of <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a>, or supplied as the right argument to your callback function, is a 4-element vector as follows :</p>
 <table>
 <thead>
 <tr>
@@ -59712,7 +59712,7 @@ Installation &amp; Configuration Guide: </p>
 </tr>
 </tbody>
 </table>
-<p>For further details, see the on-line documentation for SERVICE_STATE and the function <code>HashDefine</code> in the sample workspace aplservice.</p>
+<p>For further details, see the on-line documentation for <code>SERVICE_STATE</code> and the function <code>HashDefine</code> in the sample workspace <code>aplservice</code>.</p>
 <p>The state of a Windows service is determined by the user and the Windows Service Control Manager (SCM).</p>
 <p>When the SCM requests a change of state, the APL interpreter responds by setting its state to the corresponding <strong>pending</strong> level (SERVICE_STOPPED_PENDING, SERVICE_RUNNING_PENDING or SERVICE_PAUSED_PENDING) and then generates a <a href="../../a-z/servicenotification/">ServiceNotification</a> event.</p>
 <p>It is the responsibility of the APL service to process this event, perform the appropriate application tasks, and then respond (to the SCM) by calling the <a href="../../a-z/setservicestate/">SetServiceState</a> method to confirm that the service has reached the desired state.</p>

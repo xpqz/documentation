@@ -59758,7 +59758,7 @@
 </table>
 <h4 id="event-info">Event info</h4>
 <p><em>Event info</em>, specifies an optional help string which describes what the event does, the data type of the result (if any) and the names and data types of its arguments.</p>
-<p>If the event is fully described, each element of Event Info is a 2-element vector of character vectors. The first element contains the help string and the <a href="../Miscellaneous/COM%20data%20types.htm">COM data type</a> of the result that the callback function in the host application is expected to supply. Subsequent elements contain the name and <a href="../Miscellaneous/COM%20data%20types.htm">COM data type</a> of each of the parameters supplied by the event.</p>
+<p>If the event is fully described, each element of Event Info is a 2-element vector of character vectors. The first element contains the help string and the <a href="../Miscellaneous/COM data types.htm">COM data type</a> of the result that the callback function in the host application is expected to supply. Subsequent elements contain the name and <a href="../Miscellaneous/COM data types.htm">COM data type</a> of each of the parameters supplied by the event.</p>
 <p>However, both the help string and the names of the parameters are optional and may be omitted. If so, one or more elements of <em>Event Info</em> may be a simple character vector.</p>
 <h4 id="help-id">Help ID</h4>
 <p>This is an integer value that identifies the help context id for the event within the help file associated with the HelpFile property of the <a href="../../a-z/activexcontrol/">ActiveXControl</a> object. The value <code>¯1</code> means that no help is provided. APL stores this information in the registry from where it may be retrieved by the host application.</p>
@@ -59779,9 +59779,9 @@
       F.Dual.SetEventInfo 'ChangeValue1' INFO
 </code></pre>
 <p>If the host application was Visual Basic, a suitable callback function might be:</p>
-<pre><code class="language-apl">Private Sub Dual1_ChangeValue1(Value1 As Long)
+<pre><code class="language-apl">`Private Sub Dual1_ChangeValue1(Value1 As Long)
 Value1=2*(Value1\2)
-End Sub
+End Sub`
 </code></pre>
 <p>This callback function receives the proposed new value of the control as the parameter Value1, and modifies it, forcing it to be an even number.</p>
 

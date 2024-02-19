@@ -59784,27 +59784,27 @@
 
 <h1 id="more-examples">More Examples</h1>
 <h3 id="directory-and-file-manipulation">Directory and File Manipulation</h3>
-<p>The .NET Namespace System.IO (also in the Assembly mscorlib.dll) provides some useful facilities for manipulating files. For example, you can create a DirectoryInfo object associated with a particular directory on your computer, call its GetFiles method to obtain a list of files, and then get their Name and CreationTime properties.</p>
+<p>The .NET Namespace <code>System.IO</code> (also in the Assembly <code>mscorlib.dll</code>) provides some useful facilities for manipulating files. For example, you can create a <code>DirectoryInfo</code> object associated with a particular directory on your computer, call its <code>GetFiles</code> method to obtain a list of files, and then get their <code>Name</code> and <code>CreationTime</code> properties.</p>
 <pre><code class="language-apl">      ⎕USING←,⊂'System.IO'
       d←⎕NEW DirectoryInfo (⊂'C:\Dyalog')
 </code></pre>
-<p><code>d</code> is an instance of the Directory Class, corresponding to the directory c:\Dyalog In this document, we will refer to the location where Dyalog APL is installed as C:\Dyalog. Your installation of Dyalog APL may be in a different folder or even on a different drive but the examples should work just the same it you replace C:\Dyalog by your folder name.</p>
+<p><code>d</code> is an instance of the <code>Directory</code> Class, corresponding to the directory <code>c:\Dyalog</code> In this document, we will refer to the location where Dyalog APL is installed as C:\Dyalog. Your installation of Dyalog APL may be in a different folder or even on a different drive but the examples should work just the same it you replace C:\Dyalog by your folder name.</p>
 <pre><code class="language-apl">      d
 C:\Dyalog
 </code></pre>
-<p>The GetFiles method returns a list of files; actually, FileInfo objects, that represent each of the files in the directory: Its optional argument specifies a filter; for example:</p>
+<p>The <code>GetFiles</code> method returns a list of files; actually, <code>FileInfo</code> objects, that represent each of the files in the directory: Its optional argument specifies a filter; for example:</p>
 <pre><code class="language-apl">      d.GetFiles ⊂'*.exe'
  evalstub.exe  exestub.exe  dyalog.exe  dyalogrt.exe
 </code></pre>
-<p>The Name property returns the name of the file associated with the File object:</p>
+<p>The <code>Name</code> property returns the name of the file associated with the <code>File</code> object:</p>
 <pre><code class="language-apl">      (d.GetFiles ⊂'*.exe').Name
  evalstub.exe  exestub.exe  dyalog.exe  dyalogrt.exe
 </code></pre>
-<p>And the CreationTime property returns its creation time, which is a DateTime object:</p>
+<p>And the <code>CreationTime</code> property returns its creation time, which is a <code>DateTime</code> object:</p>
 <pre><code class="language-apl">      (d.GetFiles ⊂'*.exe').CreationTime
 </code></pre>
 <p>01/04/2004 09:37:01  01/04/2004 09:37:01  08/06/2004 ...</p>
-<p>If you call GetFiles without an argument (in APL, with an argument of <code>⍬</code>), it returns a complete list of files:</p>
+<p>If you call <code>GetFiles</code> without an argument (in APL, with an argument of <code>⍬</code>), it returns a complete list of files:</p>
 <pre><code class="language-apl">      files←d.GetFiles ⍬
 </code></pre>
 <p>Taking advantage of namespace reference array expansion, an expression to display file names and their creation times is as follows.</p>
@@ -59817,8 +59817,8 @@ C:\Dyalog
  ...
 </code></pre>
 <h3 id="sending-an-email">Sending an email</h3>
-<p>The .NET Namespace System.Web.Mail provides objects for handing email.</p>
-<p>You can create a new email message as an instance of the MailMessage class, set its various properties, and then send it using the SmtpMail class.</p>
+<p>The .NET Namespace <code>System.Web.Mail</code> provides objects for handing email.</p>
+<p>You can create a new email message as an instance of the <code>MailMessage</code> class, set its various properties, and then send it using the <code>SmtpMail</code> class.</p>
 <p>Please note that these examples will only work if your computer is configured to allow you to send email in this way.</p>
 <pre><code class="language-apl">      ⎕USING←'System.Web.Mail,System.Web.dll'
       m←⎕NEW MailMessage
@@ -59829,7 +59829,7 @@ C:\Dyalog
 
       SmtpMail.Send m
 </code></pre>
-<p>However, note that the Send method of the SmtpMail object is overloaded and may be called with a single parameter of type System.Web.Mail.MailMessage as above, or four parameters of type System.String:</p>
+<p>However, note that the <code>Send</code> method of the <code>SmtpMail</code> object is overloaded and may be called with a single parameter of type <code>System.Web.Mail.MailMessage</code> as above, or four parameters of type <code>System.String</code>:</p>
 <p>So instead, you can just say:</p>
 <pre><code class="language-apl">      SmtpMail.Send 'tony.blair@uk.gov'
                     'sales@dyalog.com'
@@ -59842,37 +59842,37 @@ C:\Dyalog
 <p>First we need to define <code>⎕USING</code> so that it specifies all of the .NET Namespaces and Assemblies that we require.</p>
 <pre><code class="language-apl">      ⎕USING←'System,System.dll' 'System.Net' 'System.IO'
 </code></pre>
-<p>The WebRequest class in the .NET Namespace System.Net implements the .NET Framework's request/response model for accessing data from the Internet. In this example we create a WebRequest object associated with the URI http://www.cdnow.com. Note that WebRequest is an example of a static class. You don't make instances of it; you just use its methods.</p>
+<p>The <code>WebRequest</code> class in the .NET Namespace <code>System.Net</code> implements the .NET Framework's request/response model for accessing data from the Internet. In this example we create a <code>WebRequest</code> object associated with the URI <code>http://www.cdnow.com</code>. Note that <code>WebRequest</code> is an example of a static class. You don't make instances of it; you just use its methods.</p>
 <pre><code class="language-apl">      wrq←WebRequest.Create ⊂'http://www.cdnow.com'
 </code></pre>
-<p>In fact (and somewhat confusingly) if the URI specifies a scheme of "http://" or "https://", you get back an object of type HttpWebRequest rather than a plain and simple WebRequest. So, at this stage, <code>wrq</code> is an HttpWebRequest object.</p>
+<p>In fact (and somewhat confusingly) if the URI specifies a scheme of "http://" or "https://", you get back an object of type <code>HttpWebRequest</code> rather than a plain and simple <code>WebRequest</code>. So, at this stage, <code>wrq</code> is an <code>HttpWebRequest</code> object.</p>
 <pre><code class="language-apl">      wrq
 System.Net.HttpWebRequest
 </code></pre>
-<p>This class has a Proxy property through which you specify the proxy information for a request made through a firewall. The value assigned to the Proxy property has to be an object of type System.Net.WebProxy. So first we must create a new WebProxy object specifying the hostname and port number for the firewall. You will need to change this statement to suit your own internet configuration (it may even not be necessary to do this).</p>
+<p>This class has a <code>Proxy</code> property through which you specify the proxy information for a request made through a firewall. The value assigned to the <code>Proxy</code> property has to be an object of type <code>System.Net.WebProxy</code>. So first we must create a new <code>WebProxy</code> object specifying the hostname and port number for the firewall. You will need to change this statement to suit your own internet configuration (it may even not be necessary to do this).</p>
 <pre><code class="language-apl">      PX←⎕NEW WebProxy(⊂'http://dyagate.dyadic.com:8080')
       PX
 System.Net.WebProxy
 </code></pre>
-<p>Having set up the WebProxy object as required, we then assign it to the Proxy property of the HttpRequest object <code>wrq</code>.</p>
+<p>Having set up the <code>WebProxy</code> object as required, we then assign it to the <code>Proxy</code> property of the <code>HttpRequest</code> object <code>wrq</code>.</p>
 <pre><code class="language-apl">      wrq.Proxy←PX
 </code></pre>
-<p>The HttpRequest class has a GetResponse method that returns a response from an internet resource. No it's not HTML (yet), the result is an object of type System.Net.HttpWebResponse.</p>
+<p>The <code>HttpRequest</code> class has a <code>GetResponse</code> method that returns a response from an internet resource. No it's not HTML (yet), the result is an object of type <code>System.Net.HttpWebResponse</code>.</p>
 <pre><code class="language-apl">      wr←wrq.GetResponse
       wr
 System.Net.HttpWebResponse
 </code></pre>
-<p>The HttpWebResponse class has a GetResponseStream method whose result is of type System.Net.ConnectStream. This object, whose base class is System.IO.Stream, provides methods to read and write data both synchronously and asynchronously from a data source, which in this case is physically connected to a TCP/IP socket.</p>
+<p>The <code>HttpWebResponse</code> class has a <code>GetResponseStream</code> method whose result is of type <code>System.Net.ConnectStream</code>. This object, whose base class is <code>System.IO.Stream</code>, provides methods to read and write data both synchronously and asynchronously from a data source, which in this case is physically connected to a TCP/IP socket.</p>
 <pre><code class="language-apl">      str←wr.GetResponseStream
       str
 System.Net.ConnectStream
 </code></pre>
-<p>However, there is yet another step to consider. The Stream class is designed for byte input and output; what we need is a class that reads characters in a byte stream using a particular encoding. This is a job for the System.IO.StreamReader class. Given a Stream object, you can create a new instance of a StreamReader by passing it the Stream as a parameter.</p>
+<p>However, there is yet another step to consider. The <code>Stream</code> class is designed for byte input and output; what we need is a class that reads characters in a byte stream using a particular encoding. This is a job for the <code>System.IO.StreamReader</code> class. Given a <code>Stream</code> object, you can create a new instance of a <code>StreamReader</code> by passing it the <code>Stream</code> as a parameter.</p>
 <pre><code class="language-apl">      rdr←⎕NEW StreamReader str
       rdr
 System.IO.StreamReader
 </code></pre>
-<p>Finally, we can use the ReadToEnd method of the StreamReader to get the contents of the page.</p>
+<p>Finally, we can use the <code>ReadToEnd</code> method of the <code>StreamReader</code> to get the contents of the page.</p>
 <pre><code class="language-apl">      s←rdr.ReadToEnd
       ⍴s
 45242

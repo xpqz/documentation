@@ -59789,19 +59789,19 @@
 <p>To use the Syncfusion libraries you must be using Microsoft .NET Version 4.5.</p>
 <p>In addition, to use the controls contained in these assemblies it is necessary to perform one or both of the following steps.</p>
 <h3 id="using-xaml">Using XAML</h3>
-<p>If using XAML, the XAML must include the appropriate xmlns statements that specify where the Syncfusion controls are to be found. For example:</p>
-<pre><code class="language-apl">xmlns:syncfusion=&quot;clr-namespace:Syncfusion.Windows.Gauge;
-                  assembly=Syncfusion.Gauge.WPF&quot;
+<p>If using XAML, the XAML must include the appropriate <code>xmlns</code> statements that specify where the Syncfusion controls are to be found. For example:</p>
+<pre><code class="language-apl">`xmlns:syncfusion=&quot;clr-namespace:Syncfusion.Windows.Gauge;
+                  assembly=Syncfusion.Gauge.WPF&quot;`
 </code></pre>
-<p>The above statement defines the prefix syncfusion to mean the specified Syncfusion namespace and assembly that contains the various Gauge controls. When the prefix syncfusion is subsequently used in front of a control in the XAML, the system knows where to find it. For example:</p>
-<pre><code class="language-apl">&lt;syncfusion:CircularGauge Name=&quot;fahrenheit&quot; Margin=&quot;10&quot;&gt;
+<p>The above statement defines the prefix <code>syncfusion</code> to mean the specified Syncfusion namespace and assembly that contains the various Gauge controls. When the prefix <code>syncfusion</code> is subsequently used in front of a control in the XAML, the system knows where to find it. For example:</p>
+<pre><code class="language-apl">`&lt;syncfusion:CircularGauge Name=&quot;fahrenheit&quot; Margin=&quot;10&quot;&gt;`
 </code></pre>
 <h3 id="using">⎕USING</h3>
 <p>In common with all .NET types, when a Syncfusion control is loaded using XAML or using <code>⎕NEW</code> it is essential that the current value of <code>⎕USING</code> identifies the .NET namespace and assembly in which the control will be found. For example:</p>
 <pre><code class="language-apl">
        ⎕USING,←⊂'Syncfusion.Windows.Gauge,Syncfusion/4.6/Syncfusion.Gauge.WPF.dll'
 </code></pre>
-<p>This statement tells APL to search the .NET namespace named <strong>Syncfusion.Windows.Gauge</strong>, which is located in the assembly file whose path (relative to the Dyalog installation directory) is  Syncfusion/4.6/Syncfusion.Gauge.WPF.dll.</p>
+<p>This statement tells APL to search the .NET namespace named <strong>Syncfusion.Windows.Gauge</strong>, which is located in the assembly file whose path (relative to the Dyalog installation directory) is  <code>Syncfusion/4.6/Syncfusion.Gauge.WPF.dll</code>.</p>
 <p>Under a licensing agreement with Syncfusion, Dyalog includes the Syncfusion library of WPF controls. These may be used by Dyalog APL users to develop applications, and may be distributed with Dyalog APL run-time applications.</p>
 <p>The Syncfusion libraries comprise a set of .NET assemblies which are supplied in the <strong>Syncfusion/4.6</strong> sub-directory of the main Dyalog APL installation directory (for example: <strong>c:\Program Files\Dyalog\Dyalog APL-64 19.0 Unicode\Syncfusion\4.6</strong>.</p>
 

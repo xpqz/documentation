@@ -59692,7 +59692,7 @@
 <p><strong>Applies To</strong></p>
 <p><strong>Description</strong></p>
 <p>This event is reported when the user touches one or two fingers on an object and drags them .</p>
-<p>The event message reported as the result of <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a>, or supplied as the right argument to your callback function, is a 5-element vector as follows :</p>
+<p>The event message reported as the result of <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a>, or supplied as the right argument to your callback function, is a 5-element vector as follows :</p>
 <table>
 <thead>
 <tr>
@@ -59735,30 +59735,30 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>``</td>
 <td>0</td>
 <td>A gesture is in progress</td>
 </tr>
 <tr>
-<td>GF_BEGIN</td>
+<td><code>GF_BEGIN</code></td>
 <td>1</td>
 <td>A gesture is starting.</td>
 </tr>
 <tr>
-<td>GF_INERTIA</td>
+<td><code>GF_INERTIA</code></td>
 <td>2</td>
 <td>A gesture has triggered inertia.</td>
 </tr>
 <tr>
-<td>GF_END</td>
+<td><code>GF_END</code></td>
 <td>4</td>
 <td>A gesture has finished.</td>
 </tr>
 </tbody>
 </table>
 <p>The term <strong>inertia</strong> refers to built-in Windows processing which provides a standardised user-interface including smooth acceleration and de-acceleration of an object.</p>
-<p>When the user first touches  an object and begins to drag his finger(s), the object generates a GesturePan event with a <code>Flags</code> parameter of 1 (GF_BEGIN). Subsequently, if the user drags the object steadily it generates a series of GesturePan events with a <code>Flags</code> parameter of 0.  When the user lifts his finger(s) away, the object generates a final GesturePan event, with a <code>Flags</code> parameter of 4 (GF_END).</p>
-<p>If  the user <em>flicks</em> an object, the system typically continues to generate GesturePan events after the user has ceased to touch the object. These events are generated in response to the acceleration and deceleration imparted by the <em>flick</em>, and the <code>Flags</code> parameter for these generated events will be 2 (GF_INERTIA) followed (for the last GesturePan event) by 6 (GF_END+GF_INERTIA).</p>
+<p>When the user first touches  an object and begins to drag his finger(s), the object generates a GesturePan event with a <code>Flags</code> parameter of 1 (<code>GF_BEGIN</code>). Subsequently, if the user drags the object steadily it generates a series of GesturePan events with a <code>Flags</code> parameter of 0.  When the user lifts his finger(s) away, the object generates a final GesturePan event, with a <code>Flags</code> parameter of 4 (<code>GF_END</code>).</p>
+<p>If  the user <em>flicks</em> an object, the system typically continues to generate GesturePan events after the user has ceased to touch the object. These events are generated in response to the acceleration and deceleration imparted by the <em>flick</em>, and the <code>Flags</code> parameter for these generated events will be 2 (<code>GF_INERTIA</code>) followed (for the last GesturePan event) by 6 (<code>GF_END</code>+<code>GF_INERTIA</code>).</p>
 <p>No other event will be reported between the start and end of a series of GesturePan events.</p>
 <p>Returning zero from the callback disables any default handling by the operating system.</p>
 <p>The associated callback is run <strong>immediately</strong> while the windows notification is still on the stack. See 

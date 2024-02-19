@@ -59711,10 +59711,10 @@
 </table>
 <p><strong>Description</strong></p>
 <p>This property defines the pattern in a <a href="../bitmap/">Bitmap</a>, <a href="../cursor/">Cursor</a>, or <a href="../icon/">Icon</a> object, or the pattern of a bitmap stored in the Windows clipboard.</p>
-<p>For a <a href="../bitmap/">Bitmap</a>, <a href="../clipboard/">Clipboard</a> or <a href="../icon/">Icon</a>, Bits is an integer matrix each of whose elements represents the colour of the corresponding pixel in the bitmap. The colours are specified as 0-origin indices into the <a href="../cmap/">CMap</a> property, which itself defines the complete set of different colours (the colour map) used by the object.</p>
-<p>Please note that Bits and <a href="../cmap/">CMap</a> may <strong>only</strong> be used to represent an image with a colour palette of <strong>256 colours or less</strong>. If the colour palette is larger, the values of Bits and <a href="../cmap/">CMap</a> reported by <code>⎕WG</code> will be (0 0). For a high-colour image, use <a href="../cbits/">CBits</a> instead.</p>
-<p>For a <a href="../cursor/">Cursor</a>, Bits is a Boolean matrix which specifies the shape of the cursor. For a <a href="../cursor/">Cursor</a> and <a href="../icon/">Icon</a>, Bits is used in conjunction with the <a href="../mask/">Mask</a> property.</p>
-<p>See <a href="../cmap/">CMap</a> for further details.</p>
+<p>For a <a href="../bitmap/">Bitmap</a>, <a href="../clipboard/">Clipboard</a> or <a href="../icon/">Icon</a>, Bits is an integer matrix each of whose elements represents the colour of the corresponding pixel in the bitmap. The colours are specified as 0-origin indices into the <a href="CMap.htm">CMap</a> property, which itself defines the complete set of different colours (the colour map) used by the object.</p>
+<p>Please note that Bits and <a href="CMap.htm">CMap</a> may <strong>only</strong> be used to represent an image with a colour palette of <strong>256 colours or less</strong>. If the colour palette is larger, the values of Bits and <a href="CMap.htm">CMap</a> reported by <code>⎕WG</code> will be (0 0). For a high-colour image, use <a href="CBits.htm">CBits</a> instead.</p>
+<p>For a <a href="../cursor/">Cursor</a>, Bits is a Boolean matrix which specifies the shape of the cursor. For a <a href="../cursor/">Cursor</a> and <a href="../icon/">Icon</a>, Bits is used in conjunction with the <a href="Mask.htm">Mask</a> property.</p>
+<p>See <a href="CMap.htm">CMap</a> for further details.</p>
 
 
 

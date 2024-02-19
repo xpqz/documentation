@@ -59705,10 +59705,10 @@
 </table>
 <p><strong>Description</strong></p>
 <p>This property specifies the appearance of the vertical grid lines in a <a href="../grid/">Grid</a> object.</p>
-<p>ColLineTypes is an integer vector, whose length is normally equal to the number of columns in the <a href="../grid/">Grid</a>. Each element in ColLineTypes specifies an index into the <a href="../gridlinefcol/">GridLineFCol</a> and <a href="../gridlinewidth/">GridLineWidth</a> properties, thus selecting the colour and width of the vertical grid lines.</p>
-<p>For example, if ColLineTypes[1] is 3, the first vertical grid line in the <a href="../grid/">Grid</a> is displayed using the colour specified by the 3rd element of <a href="../gridlinefcol/">GridLineFCol</a>, and the width specified by the 3rd element of <a href="../gridlinewidth/">GridLineWidth</a>.</p>
-<p>Note that ColLineTypes is not <code>⎕IO</code> dependent, and the value 0 is treated the same as the value 1; both selecting the <em>first</em> colour and line width specified by <a href="../gridlinefcol/">GridLineFCol</a> and <a href="../gridlinewidth/">GridLineWidth</a> respectively.</p>
-<p>The default value of ColLineTypes is an empty numeric vector (<code>⍬</code>). If so, all vertical grid lines are drawn using the first element of <a href="../gridlinefcol/">GridLineFCol</a> and <a href="../gridlinewidth/">GridLineWidth</a>.</p>
+<p>ColLineTypes is an integer vector, whose length is normally equal to the number of columns in the <a href="../grid/">Grid</a>. Each element in ColLineTypes specifies an index into the <a href="../gridlinefcol/">GridLineFCol</a> and <a href="GridLineWidth.htm">GridLineWidth</a> properties, thus selecting the colour and width of the vertical grid lines.</p>
+<p>For example, if ColLineTypes[1] is 3, the first vertical grid line in the <a href="../grid/">Grid</a> is displayed using the colour specified by the 3rd element of <a href="../gridlinefcol/">GridLineFCol</a>, and the width specified by the 3rd element of <a href="GridLineWidth.htm">GridLineWidth</a>.</p>
+<p>Note that ColLineTypes is not <code>⎕IO</code> dependent, and the value 0 is treated the same as the value 1; both selecting the <em>first</em> colour and line width specified by <a href="../gridlinefcol/">GridLineFCol</a> and <a href="GridLineWidth.htm">GridLineWidth</a> respectively.</p>
+<p>The default value of ColLineTypes is an empty numeric vector (<code>⍬</code>). If so, all vertical grid lines are drawn using the first element of <a href="../gridlinefcol/">GridLineFCol</a> and <a href="GridLineWidth.htm">GridLineWidth</a>.</p>
 <p>A vertical grid line is drawn down the right edge of its associated column. One pixel is drawn <em>inside</em> the column of cells; additional pixels (if any) are drawn <em>between</em> that column of cells and the next one to its right.</p>
 
 

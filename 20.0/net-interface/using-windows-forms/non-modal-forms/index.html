@@ -59801,24 +59801,24 @@
 
 
 <h1 id="non-modal-forms">Non-Modal Forms</h1>
-<p>Non-modal Forms are displayed using the Run method of the System.Windows.Forms.Application object. This method is designed to be called once, and only once, during the life of an application and this poses problems during APL development. Fortunately, it turns out that, in practice, the restriction is that Application.Run may only be run once on a single system thread. However, it may be run successively on different system threads. During development, you may therefore test a function that calls Application.Run, by running it on a new APL thread using Spawn (<code>&amp;</code>). See Chapter 13 for further details.</p>
+<p>Non-modal Forms are displayed using the <code>Run</code> method of the <code>System.Windows.Forms.Application</code> object. This method is designed to be called once, and only once, during the life of an application and this poses problems during APL development. Fortunately, it turns out that, in practice, the restriction is that <code>Application.Run</code> may only be run once on a single system thread. However, it may be run successively on different system threads. During development, you may therefore test a function that calls <code>Application.Run</code>, by running it on a new APL thread using Spawn (<code>&amp;</code>). See Chapter 13 for further details.</p>
 <h3 id="datagrid-examples">DataGrid Examples</h3>
-<p>Three functions in the samples\winforms\winforms.dws workspace provide examples of non-modal Forms. These examples also illustrate the use of the <code>WinForms.DataGrid</code> class.</p>
+<p>Three functions in the <code>samples\winforms\winforms.dws</code> workspace provide examples of non-modal Forms. These examples also illustrate the use of the WinForms.DataGrid class.</p>
 <p>Function <code>Grid1</code> is an APL translation of the example given in the help file for the DataGrid class in the .NET SDK Beta1. The original code has been slightly modified to work with the current version of the SDK.</p>
 <p>Function <code>Grid2</code> is an APL translation of the example given in the help file for the DataGrid class in the .NET SDK Beta2.</p>
 <p>Function <code>Grid</code> is an APL translation of the example given in the file:</p>
-<pre><code class="language-apl">C:\Program Files\Microsoft.NET\SDK\v1.1\...
-QuickStart\winforms\samples\Data\Grid\vb\Grid.vb
+<pre><code class="language-apl">`C:\Program Files\Microsoft.NET\SDK\v1.1\...
+QuickStart\winforms\samples\Data\Grid\vb\Grid.vb`
 </code></pre>
 <p>This example uses Microsoft SQL Server 2000 to extract sample data from the sample NorthWind database. To run this example, you must have SQL Server running and you must modify function <code>Grid_Load</code> to specify the name of your server.</p>
 <h3 id="gdiplus-workspace">GDIPLUS Workspace</h3>
-<p>The samples\winforms\gdiplus.dws workspace contains a sample that demonstrates the use of non-rectangular Forms. It is a direct translation into APL from a C# sample (WinForms-Graphics-GDIPlusShape) that was distributed on the Visual Studio .NET Beta 2 Resource CD.</p>
+<p>The <code>samples\winforms\gdiplus.dws</code> workspace contains a sample that demonstrates the use of non-rectangular Forms. It is a direct translation into APL from a C# sample (WinForms-Graphics-GDIPlusShape) that was distributed on the Visual Studio .NET Beta 2 Resource CD.</p>
 <h3 id="tetris-workspace">TETRIS Workspace</h3>
-<p>The samples\winforms\tetris.dws workspace contains a sample that demonstrates the use of graphics. It is a direct translation into APL from a C# sample (WinForms-Graphics-Tetris) that was distributed on the Visual Studio .NET Beta 2 Resource CD.</p>
+<p>The <code>samples\winforms\tetris.dws</code> workspace contains a sample that demonstrates the use of graphics. It is a direct translation into APL from a C# sample (WinForms-Graphics-Tetris) that was distributed on the Visual Studio .NET Beta 2 Resource CD.</p>
 <h3 id="webservices-workspace">WEBSERVICES Workspace</h3>
-<p>An example of a non-modal Form is provided by the <code>WFGOLF</code> function in the samples\asp.net\webservices\webservices.dws workspace. This function performs exactly the same task as the <code>GOLF</code> function in the same workspace, but it uses Windows.Forms instead of the built-in Dyalog GUI.</p>
+<p>An example of a non-modal Form is provided by the <code>WFGOLF</code> function in the <code>samples\asp.net\webservices\webservices.dws</code> workspace. This function performs exactly the same task as the <code>GOLF</code> function in the same workspace, but it uses Windows.Forms instead of the built-in Dyalog GUI.</p>
 <p><code>WFGOLF</code>, and its callback functions <code>WFBOOK</code> and <code>WFSS</code> perform exactly the same task, with almost identical dialog box appearance, of <code>GOLF</code> and its callbacks <code>BOOK</code> and <code>SS</code> that are described in Chapter 7.</p>
-<p>Note that when you run <code>WFGOLF</code> or <code>GOLF</code> for the first time, you must supply an argument of 1 to force the creation of the proxy class for the GolfService web service.</p>
+<p>Note that when you run <code>WFGOLF</code> or <code>GOLF</code> for the first time, you must supply an argument of 1 to force the creation of the proxy class for the <code>GolfService</code> web service.</p>
 
 
 

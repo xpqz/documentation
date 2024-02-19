@@ -59967,7 +59967,7 @@
 
 
 <h1 id="aplservice-logging-events">APLService Logging Events</h1>
-<p>The aplservice workspace contains the class <code>SysLog</code> which can be used to log events to the Windows Event Log.  These events can be accessed programmatically or viewed using the Windows Event Viewer found in the Windows Administrative Tools.</p>
+<p>The <code>aplservice</code> workspace contains the class <code>SysLog</code> which can be used to log events to the Windows Event Log.  These events can be accessed programmatically or viewed using the Windows Event Viewer found in the Windows Administrative Tools.</p>
 <h3 id="windows-event-log-concepts">Windows Event Log Concepts</h3>
 <p>Every message logged in the Windows Event Log has a named source.  Frequently this source will be the name of the application which generates the message.  Windows has multiple event log files.  By default, messages will be logged in the Application log file found in the Windows Logs section of the Windows Event Viewer.  Alternatively, you can create a custom log located in the Applications and Services Logs section in the Windows Event Viewer as shown by the "mylog" entry in the screenshot below.  Multiple applications can use the same source and multiple sources can write to the same log file, but a given source may only write to a single log file.</p>
 <p><img alt="windows event viewer" src="../img/windows-event-viewer.png" /></p>
@@ -59981,7 +59981,7 @@
 <li>You may create an instance of the <code>SysLog</code> class and use the <code>Write</code> method.  This has the advantage of not incurring the overhead of verifying the existence of the log source each time a log message is written</li>
 </ol>
 <h3 id="syslog-usage">SysLog Usage</h3>
-<p><code>SysLog</code> implements an interface to a subset of the functionality of Microsoft's <code>System.Diagnostics.EventLog</code> class.  Some of <code>SysLog</code>'s methods, namely  <code>CreateEventSource</code>, <code>DeleteEventSource</code> and <code>DeleteLog</code>, require you to run Dyalog <strong>as an administrator</strong> to be fully functional.</p>
+<p><code>SysLog</code> implements an interface to a subset of the functionality of Microsoft's System.Diagnostics.EventLog class.  Some of <code>SysLog</code>'s methods, namely  <code>CreateEventSource</code>, <code>DeleteEventSource</code> and <code>DeleteLog</code>, require you to run Dyalog <strong>as an administrator</strong> to be fully functional.</p>
 <p>All of the methods in <code>SysLog</code> with the exception of <code>Write</code> are shared methods meaning you do not have to create an instance of <code>SysLog</code> in order to execute them.</p>
 <table>
 <thead>

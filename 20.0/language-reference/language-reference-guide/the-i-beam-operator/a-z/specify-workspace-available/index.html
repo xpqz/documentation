@@ -59690,7 +59690,7 @@
 <p>The argument <code>Y</code> is an integer which specifies the size, in bytes, of this <em>extra amount</em>.</p>
 <p>The purpose of the <em>extra amount</em> is to reduce the likelihood that APL will immediately have to ask the operating system to re-commit memory that it has just de-committed, something that would have a deleterious effect on performance. At the same time, if the <em>extra amount</em> were to be excessively large, APL could  starve other applications of memory which itself could reduce the effective performance of the system. Whereas <code>⎕WA</code> calculates the size of the <em>extra amount</em> using a simple internal algorithm,  <code>2002⌶</code> uses a value specified by the programmer.</p>
 <p><code>R</code> is an integer which reports the size in bytes of the memory committed  for the workspace, and is the sum of the minimum amount required  by the workspace itself and the argument <code>Y</code>.</p>
-<p>If the size of the committed workspace would be smaller than the minimum value (specified by <code>2000⌶</code>) or larger than the maximum value (which defaults to MAXWS), a <code>DOMAIN ERROR</code> is signalled.</p>
+<p>If the size of the committed workspace would be smaller than the minimum value (specified by <code>2000⌶</code>) or larger than the maximum value (which defaults to <code>MAXWS</code>), a <code>DOMAIN ERROR</code> is signalled.</p>
 <p>See also Memory Manager Statistics: on page 1.</p>
 <p>Note that this function does not change the size of the <em>extra amount</em> that will be applied subsequently by <code>⎕WA</code> or by an automatic compaction.</p>
 

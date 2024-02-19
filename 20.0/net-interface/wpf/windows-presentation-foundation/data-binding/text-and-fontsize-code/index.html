@@ -59809,7 +59809,7 @@
 
 </code></pre>
 <p>Apart from the code that creates the controls, the only material difference between this and the previous examples is the way that the bindings are handled.</p>
-<p>In code (as opposed to using XAML) this is done using explicit <code>Binding</code> objectsBinding objects are implicit in all binding operations, but are created declaratively when using XAML. The code for binding the Text property to the <code>txtSource</code> variable is as follows:</p>
+<p>In code (as opposed to using XAML) this is done using explicit Binding objectsBinding objects are implicit in all binding operations, but are created declaratively when using XAML. The code for binding the Text property to the <code>txtSource</code> variable is as follows:</p>
 <pre><code class="language-apl">
 [19]   win.txtbinding←⎕NEW Data.Binding(⊂'txtSource')
 [20]   win.txtbinding.Source←2015⌶'txtSource'
@@ -59817,23 +59817,23 @@
 [22]   win.txtbinding.UpdateSourceTrigger←Data.UpdateSourceTrigger.PropertyChanged
 [23]   sink←win.txtBox.SetBinding TextBox.TextProperty win.txtbinding
 </code></pre>
-<p>Line [19] creates a <code>Binding</code> object, passing the constructor  the name of the APL variable <code>txtSource</code> as the Path to the binding value.</p>
+<p>Line [19] creates a Binding object, passing the constructor  the name of the APL variable <code>txtSource</code> as the Path to the binding value.</p>
 <pre><code class="language-apl">
 [19]   win.txtbinding←⎕NEW Data.Binding(⊂'txtSource')
 </code></pre>
-<p>Line [20] creates a Binding Source object using <code>2015⌶</code> as before, but this time assigns it to the Source property of the <code>Binding</code> object.</p>
+<p>Line [20] creates a Binding Source object using <code>2015⌶</code> as before, but this time assigns it to the Source property of the Binding object.</p>
 <pre><code class="language-apl">
 [20]   win.txtbinding.Source←2015⌶'txtSource'
 </code></pre>
-<p>Line [21] sets the Mode property of the <code>Binding</code> object to TwoWay (a field of the <code>BindingMode</code> Type). As in Example 1, this specifies two-way binding.</p>
+<p>Line [21] sets the Mode property of the Binding object to TwoWay (a field of the BindingMode Type). As in Example 1, this specifies two-way binding.</p>
 <pre><code class="language-apl">
 [21]   win.txtbinding.Mode←Data.BindingMode.TwoWay
 </code></pre>
-<p>Line [22] sets the UpdateSourceTrigger property of the <code>Binding</code> object to PropertyChanged (a field of the <code>UpdateSourceTrigger</code> Type). This causes the value in the Binding Source (in this case <code>txtSource</code>) to be changed whenever the property (in this case the Text property) of the <code>TextBox</code> changes. This will occur on every keystroke.</p>
+<p>Line [22] sets the UpdateSourceTrigger property of the Binding object to PropertyChanged (a field of the UpdateSourceTrigger Type). This causes the value in the Binding Source (in this case <code>txtSource</code>) to be changed whenever the property (in this case the Text property) of the TextBox changes. This will occur on every keystroke.</p>
 <pre><code class="language-apl">
 [22]   win.txtbinding.UpdateSourceTrigger←Data.UpdateSourceTrigger.PropertyChanged
 </code></pre>
-<p>(Note that the three types <code>Binding</code>, <code>BindingMode</code> and<code>UpdateSourceTrigger</code> are located in <code>System.Windows.Data</code>)</p>
+<p>(Note that the three types Binding, BindingMode and UpdateSourceTrigger are located in System.Windows.Data)</p>
 <p>The code that establishes the binding between the <code>sizeSource</code> variable and the FontSize property is very similar.</p>
 <pre><code class="language-apl">[29]   win.fntbinding←⎕NEW Data.Binding(⊂'sizeSource')
 [30]   win.fntbinding.Source←Int32(2015⌶)'sizeSource'
@@ -59841,7 +59841,7 @@
 [32]   sink←win.txtBox.SetBinding
                 TextBox.FontSizeProperty win.fntbinding
 </code></pre>
-<p>Note however that (as in Example 2) the left-argument to <code>(2015⌶)</code> specifies that the exported data type of the <code>sizeSource</code> variable is to be <code>Int32</code>.</p>
+<p>Note however that (as in Example 2) the left-argument to <code>(2015⌶)</code> specifies that the exported data type of the <code>sizeSource</code> variable is to be Int32.</p>
 <h2 id="testing-the-data-binding">Testing the Data Binding</h2>
 <pre><code class="language-apl">      )LOAD wpfintro
       )CS DataBinding.TextFontSizeCode

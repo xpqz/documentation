@@ -59791,7 +59791,7 @@
 <p><img alt="data binding text xaml 1" src="../img/data-binding-text-xaml-1.png" /></p>
 <h2 id="the-xaml">The XAML</h2>
 <p>The XAML shown below, describes a Window containing a TextBox.</p>
-<pre><code class="language-apl">&lt;Window
+<pre><code class="language-apl">`&lt;Window
  xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
  xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
  Name=&quot;Temp&quot;
@@ -59800,16 +59800,16 @@
      &lt;TextBox Name=&quot;txt&quot; Width=&quot;300&quot; Margin=&quot;5&quot;
       Text=&quot;{Binding txtSource,Mode=TwoWay,
              UpdateSourceTrigger=PropertyChanged}&quot;/&gt;
-&lt;/Window&gt;
+&lt;/Window&gt;`
 </code></pre>
 <p>It contains a data binding expression, namely:</p>
-<pre><code class="language-apl">      Text=&quot;{Binding txtSource,Mode=TwoWay,
-             UpdateSourceTrigger=PropertyChanged}&quot;
+<pre><code class="language-apl">`Text=&quot;{Binding txtSource,Mode=TwoWay,
+             UpdateSourceTrigger=PropertyChanged}&quot;`
 </code></pre>
-<p>This specifies that the Text property of the <code>TextBox</code> is bound to a value in the Binding Source (which has yet to be defined) whose path is txtSource. The binding mode is set to TwoWay which means that any change in the <code>TextBox</code> will be reflected in a new value in the Binding Source, and vice-versa. The value in the Binding Source will be updated when the property (in this case the Text Property) changes.</p>
+<p>This specifies that the Text property of the TextBox is bound to a value in the Binding Source (which has yet to be defined) whose path is <code>txtSource</code>. The binding mode is set to <code>TwoWay</code> which means that any change in the TextBox will be reflected in a new value in the Binding Source, and vice-versa. The value in the Binding Source will be updated when the property (in this case the Text Property) changes.</p>
 <h2 id="the-apl-code">The APL Code</h2>
 <p>The function <code>Text</code> which generates this example is shown below.</p>
-<p>The argument <code>txt</code> is the text to be displayed initially in the <code>TextBox</code>. Note that the variable <code>XAML_Text</code> contains the XAML that describes the user-interface listed above.</p>
+<p>The argument <code>txt</code> is the text to be displayed initially in the TextBox. Note that the variable <code>XAML_Text</code> contains the XAML that describes the user-interface listed above.</p>
 <pre><code class="language-apl">     ∇ Text txt;⎕USING;str;xml;win
 [1]    ⎕USING←,⊂'System.Windows.Controls,WPF/PresentationFramework.dll'
 [2]    win←LoadXAML XAML
@@ -59850,7 +59850,7 @@
 [5]   ⎕EX'txtSource'
 [6]   txtSource←txt
 </code></pre>
-<p><code>Text[7]</code>creates a Binding Source object using <code>2015⌶</code> and assigns it to the DataContext property of the <code>TextBox</code> object. Because it is a character vector, the exported Type for the bound variable<code>txtSource</code> is <code>System.String</code> which is appropriate for the Text property of a <code>TextBox</code>.</p>
+<p><code>Text[7]</code>creates a Binding Source object using <code>2015⌶</code> and assigns it to the DataContext property of the TextBox object. Because it is a character vector, the exported Type for the bound variable<code>txtSource</code> is System.String which is appropriate for the Text property of a TextBox.</p>
 <pre><code class="language-apl">
 [7]    win.txtBox.DataContext←2015⌶'txtSource'
 </code></pre>

@@ -59748,10 +59748,10 @@
 
 <h1 id="example-3">Example 3</h1>
 <p>The correct .NET behaviour when an APL function fails with an error is to <em>throw an exception</em>, and this example shows how to do it.</p>
-<p>In the .NET Framework, exceptions are implemented as .NET Classes. The base exception is implemented by the System.Exception class, but there are a number of super classes, such as System.ArgumentException and System.ArithmeticException that inherit from it.</p>
-<p><code>⎕SIGNAL</code> may be used to <em>throw an exception</em>. To do so, its right argument should be 90 and its left argument should be an object of type System.Exception or an object that inherits from System.Exception.</p>
-<p>When you create the instance of the Exception class, you may specify a string (which will turn up in its Message property) containing information about the error.</p>
-<p>aplclasses3.dws contains an improved version of the  <code>CTOR</code> constructor function.</p>
+<p>In the .NET Framework, exceptions are implemented as .NET Classes. The base exception is implemented by the <code>System.Exception</code> class, but there are a number of super classes, such as <code>System.ArgumentException</code> and <code>System.ArithmeticException</code> that inherit from it.</p>
+<p><code>⎕SIGNAL</code> may be used to <em>throw an exception</em>. To do so, its right argument should be 90 and its left argument should be an object of type <code>System.Exception</code> or an object that inherits from <code>System.Exception</code>.</p>
+<p>When you create the instance of the <code>Exception</code> class, you may specify a string (which will turn up in its <code>Message</code> property) containing information about the error.</p>
+<p><code>aplclasses3.dws</code> contains an improved version of the  <code>CTOR</code> constructor function.</p>
 <pre><code class="language-apl">
      ∇ CTOR IO;EX
 [1]   :Access public
@@ -59767,12 +59767,12 @@
      ∇
 
 </code></pre>
-<p>Load aplclasses3.dws and export  aplclasses3.dll as before.</p>
+<p>Load <code>aplclasses3.dws</code> and export  <code>aplclasses3.dll</code> as before.</p>
 <p><img alt="aplclasses3_1" src="../../img/aplclasses3-1.png" /></p>
 <p><img alt="aplclasses3_2" src="../../img/aplclasses3-2.png" /></p>
 <h3 id="programcs">program.cs</h3>
-<p>The following C# source, called aplclasses2\Framework\program.cs,  contains code to catch the exception and to display the exception message.</p>
-<pre><code class="language-apl">using System;
+<p>The following C# source, called <code>aplclasses2\Framework\program.cs</code>,  contains code to catch the exception and to display the exception message.</p>
+<pre><code class="language-apl">`using System;
 using APLClasses;
 public class MainClass
     {
@@ -59792,9 +59792,9 @@ catch (Exception e)
     }
         }
 
-    }   
+    }`
 </code></pre>
-<p>Using VS, open the solution file d:\aplclasses\aplclasses3\Framework\project.sln and view program.cs.</p>
+<p>Using VS, open the solution file<code>d:\aplclasses\aplclasses3\Framework\project.sln</code> and view <code>program.cs</code>.</p>
 <p><img alt="aplclasses3_3" src="../../img/aplclasses3-3.png" /></p>
 <p>Click <strong>Debug/Start Without debugging</strong>(or press Ctrl+F5) to run the program. The results are shown in a console window.</p>
 <p><img alt="aplclasses3_4" src="../../img/aplclasses3-4.png" /></p>

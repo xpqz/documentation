@@ -59764,9 +59764,9 @@
 
 <p>This command allows WINDOWS or UNIX shell commands to be given from APL.  <code>)SH</code> is a synonym of <code>)CMD</code>. Either command may be given in either environment (Windows or UNIX) with exactly the same effect.  <code>)SH</code> is probably more natural for the UNIX user. This section describes the behaviour of <code>)SH</code> and <code>)CMD</code> under UNIX. See "Windows Command Processor: " on page 1 for a discussion of their behaviour under Windows.</p>
 <p><code>)SH</code> allows UNIX shell commands to be given from APL. The argument must be entered in the appropriate case (usually lower-case).  The result of the command, if any, is displayed.</p>
-<p><code>)SH</code> causes Dyalog APL to invoke the system() library call. The shell which is used to run the command is therefore the shell which system() is defined to call. For example, under AIX this would be /usr/bin/sh.</p>
+<p><code>)SH</code> causes Dyalog APL to invoke the <code>system()</code> library call. The shell which is used to run the command is therefore the shell which <code>system()</code> is defined to call. For example, under AIX this would be <code>/usr/bin/sh</code>.</p>
 <p>When the shell is closed, control returns to APL. See <em>Dyalog for UNIX UI Guide</em> for further information.</p>
-<p>The parameters CMD_PREFIX and CMD_POSTFIX may be used to execute a different shell under the shell associated with system().</p>
+<p>The parameters CMD_PREFIX and CMD_POSTFIX may be used to execute a different shell under the shell associated with <code>system()</code>.</p>
 <h4 id="example">Example</h4>
 <pre><code class="language-apl">
       )sh ps -u andys | grep -v ps

@@ -59864,7 +59864,7 @@
 <table>
 <thead>
 <tr>
-<th>A parameter name followed by an equals sign ( = ) and a value. The parameter name may be one of the standard APL parameters (see Configuration Parameters on page 1 ) or a name and value of your own choosing (see GetEnvironment Method GetEnvironment on page 1 ) . If the parameter is in a registry sub-folder (see Registry Sub-Folders on page 1 ), its name must be preceded by the name of the sub-folder, followed by a backslash ( \ ) or underscore ( _ ).</th>
+<th>A parameter name followed by an equals sign ( <code>=</code> ) and a value. The parameter name may be one of the standard APL parameters (see Configuration Parameters on page 1 ) or a name and value of your own choosing (see GetEnvironment Method GetEnvironment on page 1 ) . If the parameter is in a registry sub-folder (see Registry Sub-Folders on page 1 ), its name must be preceded by the name of the sub-folder, followed by a backslash ( <code>\</code> ) or underscore ( <code>_</code> ).</th>
 </tr>
 </thead>
 <tbody>
@@ -59875,20 +59875,20 @@
 </table>
 <p>Note that instead of  a loading a workspace specified by the <strong>ws</strong> option, APL can be instructed to load a program from a script file. For further information, see Load on page 1.</p>
 <h3 id="examples">Examples:</h3>
-<p>Start APL using the configuration file myconfig.dcfg:</p>
-<pre><code class="language-apl">   &quot;c:\program files\…\dyalog.exe&quot; ConfigFile=&quot;myconfig.dcfg&quot;
+<p>Start APL using the configuration file <code>myconfig.dcfg</code>:</p>
+<pre><code class="language-apl">`&quot;c:\program files\…\dyalog.exe&quot; ConfigFile=&quot;myconfig.dcfg&quot;`
 </code></pre>
-<p>Load the workspace myapp, setting MaxWS parameter:</p>
-<pre><code class="language-apl">   &quot;c:\program files\…\dyalog.exe&quot; myapp maxws=2G
+<p>Load the workspace <code>myapp</code>, setting MaxWS parameter:</p>
+<pre><code class="language-apl">`&quot;c:\program files\…\dyalog.exe&quot; myapp maxws=2G`
 </code></pre>
-<p>Load the workspace myapp, set an application specific parameter, but do not execute the latent expression:</p>
-<pre><code class="language-apl">   &quot;c:\program files\…\dyalog.exe&quot; -x myapp myparam=8080
+<p>Load the workspace <code>myapp</code>, set an application specific parameter, but do not execute the latent expression:</p>
+<pre><code class="language-apl">`&quot;c:\program files\…\dyalog.exe&quot; -x myapp myparam=8080`
 </code></pre>
-<p>Run the function defined in myfn.aplf:</p>
-<pre><code class="language-apl">   &quot;c:\program files\…\dyalog.exe&quot; load=myfn.aplf
+<p>Run the function defined in <code>myfn.aplf</code>:</p>
+<pre><code class="language-apl">`&quot;c:\program files\…\dyalog.exe&quot; load=myfn.aplf`
 </code></pre>
 <p>Start APL and output "Hello World":</p>
-<pre><code class="language-apl">   &quot;c:\program files\…\dyalog.exe&quot; lx=&quot;`⎕←'Hello World'`&quot;
+<pre><code class="language-apl">`&quot;c:\program files\…\dyalog.exe&quot; lx=&quot; ⎕←'Hello World' &quot;`
 </code></pre>
 
 

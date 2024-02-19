@@ -60021,9 +60021,9 @@
 <h4 id="dyares-dll">DyaRes DLL</h4>
 <p>If your run-time application uses any of the bitmaps or other GUI resources that are built into the Dyalog Session, you must include the DyaRes DLL with your application.</p>
 <h4 id="auxiliary-processors">AUXILIARY PROCESSORS</h4>
-<p>If you use any of the Auxiliary Processors (APs) included in the sub-directory xutils, you must include these with your application. Note that, like workspaces, Dyalog APL searches for APs using the WSPATH parameter. If your application uses APs, you must ensure that you specify WSPATH or that the default WSPATH is adequate for your application..</p>
+<p>If you use any of the Auxiliary Processors (APs) included in the sub-directory <code>xutils</code>, you must include these with your application. Note that, like workspaces, Dyalog APL searches for APs using the WSPATH parameter. If your application uses APs, you must ensure that you specify WSPATH or that the default WSPATH is adequate for your application..</p>
 <h4 id="dyalog32-andor-dyalog64">DYALOG32 and/or DYALOG64</h4>
-<p>This DLL is used by some of the functions provided in the QUADNA.DWS workspace. If you include any of these in your application this DLL must be installed in the user's Windows directory or be on the user's path.</p>
+<p>This DLL is used by some of the functions provided in the <code>QUADNA.DWS</code> workspace. If you include any of these in your application this DLL must be installed in the user's Windows directory or be on the user's path.</p>
 <h3 id="universal-c-runtime-dlls">Universal C Runtime DLLs</h3>
 <p>Under Windows, many of the Dyalog APL run-time components (.EXE and .DLL) are linked dynamically with the Microsoft Universal C Runtime library (the UCRT) which is supplied and installed as part of the normal Dyalog development installation.</p>
 <p>At execution time it is important that the Dyalog runtime components bind with a version of the UCRT that is compatible with (i.e. the same as or newer than) the one with which they were built.</p>
@@ -60033,18 +60033,18 @@
 <p>The UCRT is not supplied with versions of Windows prior to Windows 10. On these platforms, it is therefore necessary to install the UCRT as part of the installation of the Dyalog run-time application. There are two ways to achieve this which are referred to herein as the VCRedist installation and App-local installation. Dyalog recommends the former.</p>
 <h4 id="vcredist-installation-recommended">VCRedist Installation (Recommended)</h4>
 <p>The VCRedist package, which includes the UCRT, is supplied with the Dyalog development package.</p>
-<p>Simply copy the vc_redistx86.exe (32-bit version) or vc_redistx64.exe (64-bit version) program from the Dyalog development package into your own installation package and  execute it as part of the installation of your Dyalog run-time application. This installs the UCRT into a shared Windows location; in effect the UCRT becomes part of the Windows system. The installation therefore requires Administrator privileges.</p>
+<p>Simply copy the <code>vc_redistx86.exe</code> (32-bit version) or <code>vc_redistx64.exe</code> (64-bit version) program from the Dyalog development package into your own installation package and  execute it as part of the installation of your Dyalog run-time application. This installs the UCRT into a shared Windows location; in effect the UCRT becomes part of the Windows system. The installation therefore requires Administrator privileges.</p>
 <h4 id="app-local-installation">App-local Installation</h4>
 <p>An alternative is to install the UCRT components into the same directory as your Dyalog run-time application. There are two ways to obtain these files.</p>
 <h3 id="either">Either:</h3>
 <p>Install the Dyalog development package (ideally onto a separate system just for this purpose) without administrator rights. This will perform an App-local installation of Dyalog itself. Then copy the UCRT files into your installation package. These files are:</p>
 <ul>
-<li>those beginning with api-ms*</li>
+<li>those beginning with <code>api-ms*</code></li>
 <li>
-<p>ucrtbase.dll</p>
+<p><code>ucrtbase.dll</code></p>
 </li>
 <li>
-<p>vcruntime140.dll</p>
+<p><code>vcruntime140.dll</code></p>
 </li>
 </ul>
 <h3 id="or">Or:</h3>

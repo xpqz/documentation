@@ -59840,31 +59840,28 @@
 <p>Prior to Dyalog version 18.0, configuration parameters could be specified as environment variables and set in the <strong>$HOME/.dyalog/dyalog.config</strong> script. This is no longer referenced, and any settings that should be retained must be re-entered in the appropriate <strong>$HOME/.dyalog/dyalog.<version-specific>.dcfg</strong> configuration file.</p>
 <h2 id="configuration-file-structure">Configuration File Structure</h2>
 <p>Configuration files define configuration parameters using JSON5. A JSON object contains data in the form of key/value pairs and other JSON objects. The keys are strings and the values are the JSON types. A key and its value are seperated by a colon (<code>:</code>) character. Entries (key/value pairs) are separated by comma (<code>,</code>) characters.</p>
-<p>The top-level object defines an optional key called Extend and an optional object called Settings:</p>
+<p>The top-level object defines an optional key called <code>Extend</code> and an optional object called <code>Settings</code>:</p>
 <ul>
-<li>Extend is a string value containing the name of a configuration file to import. The extended (imported) file can extend another configuration file. Configuration values from the imported file(s) can be overridden by redefining them. The file name is implicitly relative to the name of the file that imports it (any file name extension must be explicitly specified).</li>
-<li>Settings is an object containing the names of configuration parameters and their values. The values can be a string, a number or an array of strings.</li>
+<li><code>Extend</code> is a string value containing the name of a configuration file to import. The extended (imported) file can extend another configuration file. Configuration values from the imported file(s) can be overridden by redefining them. The file name is implicitly relative to the name of the file that imports it (any file name extension must be explicitly specified).</li>
+<li><code>Settings</code> is an object containing the names of configuration parameters and their values. The values can be a string, a number or an array of strings.</li>
 </ul>
 <p>The names and values correspond to configuration parameters, and names are not case sensitive. Any named values can be defined; an APL application could query the values using <code>+2⎕NQ'.' 'GetEnvironment' &lt;name&gt;</code> or using the <code>]Config</code> user command.</p>
 <p>If the same name is defined multiple times within a configuration file then the first definition will be used and a warning will be generated.</p>
 <h2 id="arrays">Arrays</h2>
-<p>An array can be used to define file paths, for example, WSPATH: ["/dir1", "/dir2"]. The only parameters which can be defined as arrays are WSPATH, WSEXT and CFEXT.</p>
+<p>An array can be used to define file paths, for example, <code>WSPATH: ["/dir1", "/dir2"]</code>. The only parameters which can be defined as arrays are WSPATH, WSEXT and CFEXT.</p>
 <h2 id="references-to-other-configuration-parameters">References to other Configuration Parameters</h2>
-<p>Configuration parameters that are string values can include references to other configuration parameters (irrespective of where they are defined) using square bracket delimiters. For example, MySetting: "[DYALOG]/MyFile" will replace [DYALOG] with the value of the DYALOG configuration parameter.</p>
+<p>Configuration parameters that are string values can include references to other configuration parameters (irrespective of where they are defined) using square bracket delimiters. For example, <code>MySetting: "[DYALOG]/MyFile"</code> will replace <code>[DYALOG]</code> with the value of the DYALOG configuration parameter.</p>
 <p>If the referenced configuration parameter is not defined then no substitution will take place; the reference, including the square bracket delimiters, will remain in place.</p>
-<p>To include literal square brackets in a string, prefix them with a \ character.</p>
+<p>To include literal square brackets in a string, prefix them with a <code>\</code> character.</p>
 <h2 id="nested-structures">Nested Structures</h2>
 <p>Configuration files support nested parameter structures by defining an object that corresponds to the structure. For example:</p>
-<pre><code class="language-apl">Captions: {
-    Session: &quot;My Dyalog Session&quot;
-    Status: &quot;My Status window&quot;
-}
+<pre><code class="language-apl">`Captions: { Session: &quot;My Dyalog Session&quot; Status: &quot;My Status window&quot; }`
 </code></pre>
 <pre><code class="language-apl">      +2 ⎕NQ '.' 'GetEnvironment' 'Captions\Session'
 My Dyalog Session
 </code></pre>
 <h2 id="example-configuration-file-content">Example Configuration File Content</h2>
-<pre><code class="language-apl">{
+<pre><code class="language-apl">`{
    Extend: &quot;my_default_configuration.dcfg&quot;,
    Settings: {
    // maximum workspace
@@ -59875,7 +59872,7 @@ My Dyalog Session
    // references to other configuration parameters
    FNAME: &quot;[rootdir]/filename&quot;,
    }
-}
+}`
 </code></pre>
 
 

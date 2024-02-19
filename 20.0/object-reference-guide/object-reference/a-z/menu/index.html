@@ -59724,31 +59724,31 @@
 </tbody>
 </table>
 <p><strong>Description</strong></p>
-<p>For a Menu that is owned by a <a href="../menubar/">MenuBar</a> or
+<p>For a Menu that is owned by a <a href="MenuBar.htm">MenuBar</a> or
 another Menu, the <a href="../caption/">Caption</a> property
 determines the text string that is displayed as the "choice". The Menu
 is then popped up by the user clicking on this text. It is automatically popped
 down when the user chooses an option (by selecting a <a href="../menuitem/">MenuItem</a>)
 or cancels the operation (by clicking elsewhere).</p>
 <p>If a Menu belongs to a <a href="../form/">Form</a>, <a href="../subform/">SubForm</a> or is a top-level object, it must be popped up by the application. This is
-commonly done in response to a <a href="../mousedown/">MouseDown</a> event. A Menu is popped-up by calling <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a> with only the name of the Menu as its argument. The user may therefore not
+commonly done in response to a <a href="../mousedown/">MouseDown</a> event. A Menu is popped-up by calling <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> with only the name of the Menu as its argument. The user may therefore not
 interact with any other object until a selection is made or until the operation
 is cancelled. When either occurs, the Menu is automatically popped down and
-de-activated, and its <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a> terminates.</p>
+de-activated, and its <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> terminates.</p>
 <p>The Menu object does not have a <a href="../size/">Size</a> property. Instead, its size is determined automatically by its contents.</p>
-<p>If a Menu is owned by a <a href="../menubar/">MenuBar</a> or by
+<p>If a Menu is owned by a <a href="MenuBar.htm">MenuBar</a> or by
 another Menu, its position within its parent is also calculated automatically,
 dependent on the order in which other related objects are established. The <a href="../posn/">Posn</a> property may however be used to <strong>insert</strong> a new Menu into an existing
-structure. For example, having defined three Menu objects as children of a <a href="../menubar/">MenuBar</a>,
+structure. For example, having defined three Menu objects as children of a <a href="MenuBar.htm">MenuBar</a>,
 you can insert a fourth one between the first and the second by specifying its <a href="../posn/">Posn</a> to be 2. Note that the value of <a href="../posn/">Posn</a> for the
 Menus that were previously second and third will then be reset to 3 and 4
 respectively.</p>
-<p>If a Menu is a child of a <a href="../menubar/">MenuBar</a> which is
+<p>If a Menu is a child of a <a href="MenuBar.htm">MenuBar</a> which is
 itself a child of a <a href="../form/">Form</a> or <a href="../subform/">SubForm</a>,
 the Align property can be set to <code>'Right'</code>.
 This is used to position a single Menu (or <a href="../menuitem/">MenuItem</a>)
-at the rightmost end of a <a href="../menubar/">MenuBar</a>. This does
-not apply if the <a href="../menubar/">MenuBar</a> is owned by a <a href="../toolcontrol/">ToolControl</a>.</p>
+at the rightmost end of a <a href="MenuBar.htm">MenuBar</a>. This does
+not apply if the <a href="MenuBar.htm">MenuBar</a> is owned by a <a href="../toolcontrol/">ToolControl</a>.</p>
 <p>The <a href="../btnpix/">BtnPix</a> property is used to display a
 picture in a Menu. <a href="../btnpix/">BtnPix</a> specifies the
 names of, or refs to, three <a href="../bitmap/">Bitmap</a> objects.
@@ -59764,9 +59764,9 @@ appearance, you must set <a href="../edgestyle/">EdgeStyle</a> to
 something other than <code>'None'</code> for all the
 objects above the Menu in the tree.</p>
 <p><a href="../edgestyle/">EdgeStyle</a>, <a href="../btnpix/">BtnPix</a>,
-<a href="../font/">Font</a>, <a href="../fcol/">FCol</a> and
+<a href="Font.htm">Font</a>, <a href="../fcol/">FCol</a> and
 <a href="../bcol/">BCol</a> do not affect the appearance of a Menu if
-it is the direct child of a <a href="../menubar/">MenuBar</a>. However,
+it is the direct child of a <a href="MenuBar.htm">MenuBar</a>. However,
 the <a href="../edgestyle/">EdgeStyle</a> property <strong>must</strong> be set
 to something other than <code>'None'</code> if you want
 its children Menu and <a href="../menuitem/">MenuItem</a> objects to

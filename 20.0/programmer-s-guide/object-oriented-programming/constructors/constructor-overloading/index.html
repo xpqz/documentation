@@ -59693,10 +59693,10 @@
 
 
 <h1 id="constructor-overloading">Constructor Overloading</h1>
-<p>NameList header syntax is used to define different versions of a Constructor each with a different number of parameters, referred to as its <em>signature</em>. See  "Namelists" on page 1 for details. The <a href="Constructor%20Overload%20Example%20Class.htm">Clover Class</a> illustrates this principle.</p>
+<p>NameList header syntax is used to define different versions of a Constructor each with a different number of parameters, referred to as its <em>signature</em>. See  "Namelists" on page 1 for details. The <a href="Constructor Overload Example Class.htm">Clover Class</a> illustrates this principle.</p>
 <p>In deciding which Constructor to call, APL matches the shape of the Constructor argument with the signature of each of the Constructors that are defined. If a constructor with the same number of arguments exists (remembering that 0 arguments will match a niladic Constructor), it is called. If there is no exact match, and there is a Constructor with a general signature (an un-parenthesised right argument), it is called. If no suitable constructor is found, a <code>LENGTH ERROR</code> is reported.</p>
 <p>There may be one and only one constructor with a particular signature.</p>
-<p>In the <a href="Constructor%20Overload%20Example%20Class.htm">Clover Class</a> example Class, the following Constructors are defined:</p>
+<p>In the <a href="Constructor Overload Example Class.htm">Clover Class</a> example Class, the following Constructors are defined:</p>
 <table>
 <thead>
 <tr>
@@ -59727,7 +59727,7 @@
 </tr>
 </tbody>
 </table>
-<p>In the following examples, the <code>Make</code> function (see <a href="Constructor%20Overload%20Example%20Class.htm">Clover Class</a>  for details) displays:</p>
+<p>In the following examples, the <code>Make</code> function (see <a href="Constructor Overload Example Class.htm">Clover Class</a>  for details) displays:</p>
 <pre><code class="language-apl">&lt;shape of argument&gt; &lt;name of Constructor called&gt;&lt;argument&gt;
 (see function make)
 </code></pre>

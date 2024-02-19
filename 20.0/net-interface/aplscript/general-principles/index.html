@@ -59691,7 +59691,7 @@
 
 
 <h1 id="general-principles-of-aplscript">General principles of APLScript</h1>
-<p>The layout of an APLScript file differs according to whether the script defines a Web Page, a Web Service, a .NET class, or an APL application that may have nothing to do with the .NET Framework. However, within the APLScript, the code layout rules are basically the same.</p>
+<p>The layout of an <code>APLScript</code> file differs according to whether the script defines a Web Page, a Web Service, a .NET class, or an APL application that may have nothing to do with the .NET Framework. However, within the <code>APLScript</code>, the code layout rules are basically the same.</p>
 <p>An APLScript file contains a sequence of function bodies and executable statements that assign values to variables. In addition, the file typically contains statements that are directives to the APLScript compiler. If the script is a Web Page or Web Service, it may also contain directives to ASP.NET. The former all start with a colon symbol (:) in the manner of control structures. For example, the <code>:Namespace</code> statement tells the APLScript compiler to create, and change into, a new namespace. The <code>:EndNamespace</code> statement terminates the definition of the contents of a namespace and changes back from whence it came.</p>
 <p>Assignment statements are used to set up system variables, such as <code>⎕ML</code>, <code>⎕IO</code>, <code>⎕USING</code> and arbitrary APL variables. For example:</p>
 <pre><code class="language-apl">      ⎕ML←2
@@ -59703,10 +59703,10 @@
 
       ⎕CY'MYWS'
 </code></pre>
-<p>These statements are extracted from the APLScript and executed by the compiler in the order that they appear. It is important to recognise that they are executed at compile time, and not at run-time, and may therefore only be used for initialisation.</p>
+<p>These statements are extracted from the <code>APLScript</code> and executed by the compiler in the order that they appear. It is important to recognise that they are executed at compile time, and not at run-time, and may therefore only be used for initialisation.</p>
 <p>Notice that it <strong>is</strong> acceptable to execute <code>⎕CY</code> to bring in functions and variables from a workspace that are to be incorporated into the code. This is especially useful to import a set of utilities. Note also that it is possible to export these functions as methods of .NET classes if the functions contain the appropriate colon statements.</p>
-<p>The APLScript compiler will in fact execute any valid APL expression that you include. However, the results may not be useful and may indeed simply terminate the compiler. For example, it is not sensible to execute statements such as <code>⎕LOAD</code>, or <code>⎕OFF</code>.</p>
-<p>Function bodies are defined between opening and closing del (<code>∇</code>) symbols. These are fixed by the APLScript compiler using <code>⎕FX</code>. Line numbers and white space formatting are ignored.</p>
+<p>The <code>APLScript</code> compiler will in fact execute any valid APL expression that you include. However, the results may not be useful and may indeed simply terminate the compiler. For example, it is not sensible to execute statements such as <code>⎕LOAD</code>, or <code>⎕OFF</code>.</p>
+<p>Function bodies are defined between opening and closing del (<code>∇</code>) symbols. These are fixed by the <code>APLScript</code> compiler using <code>⎕FX</code>. Line numbers and white space formatting are ignored.</p>
 
 
 

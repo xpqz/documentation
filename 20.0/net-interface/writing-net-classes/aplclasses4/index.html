@@ -59748,9 +59748,9 @@
 
 <h1 id="example-4">Example 4</h1>
 <p>This example builds on Example 3 and illustrates how you can implement <em>constructor overloading</em>, by establishing several different constructor functions.</p>
-<p>By way of an example, when a client application creates an instance of the Primitives class, we want to allow it to specify the value of <code>⎕IO</code> or the values of both <code>⎕IO</code> and <code>⎕ML</code>.</p>
+<p>By way of an example, when a client application creates an instance of the <code>Primitives</code> class, we want to allow it to specify the value of <code>⎕IO</code> or the values of both <code>⎕IO</code> and <code>⎕ML</code>.</p>
 <p>The simplest way to implement this is to have two public constructor functions <code>CTOR1</code> and <code>CTOR2</code>, which call a private constructor function <code>CTOR</code>.</p>
-<p>aplclasses4.dws contains a new version of the <code>Primitives</code> class with these additions:</p>
+<p><code>aplclasses4.dws</code> contains a new version of the <code>Primitives</code> class with these additions:</p>
 <pre><code class="language-apl">
 
       ∇ CTOR1 IO
@@ -59782,7 +59782,7 @@
 [10]   ⎕IO ⎕ML←IO ML
      ∇ 
 </code></pre>
-<p>The <code>:Signature</code>statements for these three functions show that <code>CTOR1</code> is defined as a constructor that takes a single Int32 parameter, <code>CTOR2</code> is defined as a constructor that takes two Int32 parameters, and <code>CTOR</code> has no .NET Properties defined at all. Note that in .NET terms, <code>CTOR</code> is not a <em>Private Constructor</em>; it is simply an internal function that is invisible to the outside world.</p>
+<p>The <code>:Signature</code>statements for these three functions show that <code>CTOR1</code> is defined as a constructor that takes a single <code>Int32</code> parameter, <code>CTOR2</code> is defined as a constructor that takes two <code>Int32</code> parameters, and <code>CTOR</code> has no .NET Properties defined at all. Note that in .NET terms, <code>CTOR</code> is not a <em>Private Constructor</em>; it is simply an internal function that is invisible to the outside world.</p>
 <p>Next, a function called <code>GetIOML</code> is defined and exported as a Public Method. It simply returns the current values of <code>⎕IO</code> and <code>⎕ML</code>.</p>
 <pre><code class="language-apl">     ∇ R←GetIOML
 [1]   :Access public
@@ -59790,12 +59790,12 @@
 [3]    R←⎕IO ⎕ML
      ∇   
 </code></pre>
-<p>Load aplclasses4.dws and export a new version of aplclasses.dll as before.</p>
+<p>Load <code>aplclasses4.dws</code> and export a new version of <code>aplclasses.dll</code> as before.</p>
 <p><img alt="aplclasses4_1" src="../../img/aplclasses4-1.png" /></p>
 <p><img alt="aplclasses4_2" src="../../img/aplclasses4-2.png" /></p>
 <h3 id="programcs">program.cs</h3>
-<p>aplclasses4\Framework\program.cs contains code to invoke the two different constructor functions <code>CTOR1</code> and <code>CTOR2</code> :</p>
-<pre><code class="language-apl">using System;
+<p><code>aplclasses4\Framework\program.cs</code> contains code to invoke the two different constructor functions <code>CTOR1</code> and <code>CTOR2</code> :</p>
+<pre><code class="language-apl">`using System;
 using APLClasses;
 public class MainClass
     {
@@ -59811,11 +59811,11 @@ public class MainClass
         for (int i=0;i&lt;rslt03.Length;i++)
             Console.WriteLine(rslt03[i]);
         }
-    }
+    }`
 </code></pre>
-<p>Here the code creates two instances of the Primitives class named apl10 and apl03. The first is created with a constructor parameter of (1); the second with a constructor parameter of (0,3).</p>
-<p>The C# compiler matches the first call with <code>CTOR1</code>, because <code>CTOR1</code> is defined to accept a single Int32 parameter. The second call is matched to <code>CTOR2</code> because <code>CTOR2</code> is defined to accept two Int32 parameters.</p>
-<p>Using VS, open the solution file d:\aplclasses\aplclasses4\Framework\project.sln and view program.cs.</p>
+<p>Here the code creates two instances of the Primitives class named <code>apl10</code> and <code>apl03</code>. The first is created with a constructor parameter of <code>(1)</code>; the second with a constructor parameter of <code>(0,3)</code>.</p>
+<p>The C# compiler matches the first call with <code>CTOR1</code>, because <code>CTOR1</code> is defined to accept a single <code>Int32</code> parameter. The second call is matched to <code>CTOR2</code> because <code>CTOR2</code> is defined to accept two <code>Int32</code> parameters.</p>
+<p>Using VS, open the solution file<code>d:\aplclasses\aplclasses4\Framework\project.sln</code> and view <code>program.cs</code>.</p>
 <p><img alt="aplclasses4_3" src="../../img/aplclasses4-3.png" /></p>
 <p>Click <strong>Debug/Start Without debugging</strong>(or press Ctrl+F5) to run the program. The results are shown in a console window.</p>
 <p><img alt="aplclasses4_4" src="../../img/aplclasses4-4.png" /></p>

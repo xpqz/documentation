@@ -59704,7 +59704,7 @@
           sum÷num     ⍝ Mean
        }
 </code></pre>
-<p>An assignment to <code>⍵</code> is not allowed and will result in an error. For assignment to <code>⍺</code>, see <a href="../default-left-argument/">Default Left Argument on page 1</a>.</p>
+<p>An assignment to <code>⍵</code> is not allowed and will result in an error. For assignment to <code>⍺</code>, see <a href="Default Left Argument.htm#DefaultLeftArgument">Default Left Argument on page 1</a>.</p>
 <p>Note that dfns may be commented in the usual way using <code>⍝</code>.</p>
 <p>When the interpreter encounters a local definition, a new local name is created. The name is shadowed dynamically exactly as if the assignment had been preceded by: <code>⎕shadow</code><em>name</em><code>⋄</code>.</p>
 <p>It is <strong>important</strong>to note the distinction between the two types of statement above. There can be <strong>many</strong> assignment statements, each introducing a new local definition, but only a <strong>single</strong> expression where the result is not assigned. As soon as the interpreter encounters such an expression, it is evaluated and the result returned immediately as the result of the function.</p>

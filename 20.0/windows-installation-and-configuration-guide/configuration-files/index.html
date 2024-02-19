@@ -59957,7 +59957,7 @@
 <p>When Dyalog starts, it derives the name of the application configuration file as follows:</p>
 <ul>
 <li>The name in the configuration parameter ConfigFile if it is set, otherwise</li>
-<li>The name of the workspace or script loaded at start-up using the Load parameter, with the extension replaced by .dcfg, if that file exists, otherwise</li>
+<li>The name of the workspace or script loaded at start-up using the Load parameter, with the extension replaced by <code>.dcfg</code>, if that file exists, otherwise</li>
 <li>Nothing.</li>
 </ul>
 <h3 id="user-configuration-file">User Configuration File</h3>
@@ -60001,11 +60001,11 @@
 <p>A warning will be given if names  are redefined in the same configuration file; the second and subsequent definitions will be discarded.</p>
 <h3 id="file-names">File Names</h3>
 <p>Pathnames specified in configuration files should be specified using portable forward slashes "/" rather than back-slashes "\" as the latter are used as escape characters by JSON.</p>
-<p>WSPATH: ["c:/Dyalog18.0"] or  WSPATH: ["c:\Dyalog18.0"] specifies the file c:\Dyalog18.0.</p>
+<p><code>WSPATH: ["c:/Dyalog18.0"]</code> or  <code>WSPATH: ["c:\\Dyalog18.0"]</code> specifies the file <code>c:\Dyalog18.0</code>.</p>
 <p>whereas,</p>
-<p>WSPATH: ["c:\Dyalog18.0"] means  c:Dyalog18.0.</p>
+<p><code>WSPATH: ["c:\Dyalog18.0"]</code> means  <code>c:Dyalog18.0</code>.</p>
 <h3 id="example_1">Example</h3>
-<pre><code class="language-apl">{
+<pre><code class="language-apl">`{
   Extend: &quot;my_default_configuration.dcfg&quot;,
 
   Settings: {
@@ -60017,22 +60017,22 @@
       // references to other configuration parameters
       FNAME: &quot;[rootdir]/filename&quot;,
   }
-}
+}`
 </code></pre>
 <h3 id="arrays">Arrays</h3>
 <p>An array may be used to define file paths etc. For example,</p>
-<pre><code class="language-apl">WSPATH: [&quot;/dir1&quot;, &quot;/dir2&quot;]
+<pre><code class="language-apl">`WSPATH: [&quot;/dir1&quot;, &quot;/dir2&quot;]`
 </code></pre>
 <p>The only parameters which may be defined as arrays are WSPATH, WSEXT and CFEXT.</p>
 <h3 id="references-to-other-configuration-parameters">References to other Configuration Parameters</h3>
 <p>Configuration parameters which are string values may include references to other configuration parameters (regardless of where they are defined) using square bracket delimiters. For example:</p>
-<pre><code class="language-apl">MySetting: &quot;[DYALOG]/MyFile&quot;
+<pre><code class="language-apl">`MySetting: &quot;[DYALOG]/MyFile&quot;`
 </code></pre>
-<p>will replace [DYALOG] with the value of the DYALOG configuration value.</p>
-<p>If the string inside the [] delimiters is ".", the "." is replaced is replaced with the path of the directory containing the configuration file itself. Therefore,</p>
-<pre><code class="language-apl">FILENAME: &quot;[.]/x.txt&quot;
+<p>will replace <code>[DYALOG</code>] with the value of the DYALOG configuration value.</p>
+<p>If the string inside the <code>[]</code> delimiters is "<code>.</code>", the "<code>.</code>" is replaced is replaced with the path of the directory containing the configuration file itself. Therefore,</p>
+<pre><code class="language-apl">`FILENAME: &quot;[.]/x.txt&quot;`
 </code></pre>
-<p>will set the parameter FILENAME to a value which is a reference to a file called x.txt in the same directory as the configuration file defining it.</p>
+<p>will set the parameter FILENAME to a value which is a reference to a file called <code>x.txt</code> in the same directory as the configuration file defining it.</p>
 <p>Note that:</p>
 <ul>
 <li>If the referenced configuration parameter is not defined then no substitution will take place; the reference, including square bracket delimiters, will remain in place.</li>
@@ -60041,10 +60041,7 @@
 <h3 id="nested-structures">Nested Structures</h3>
 <p>Some parameters are stored in sub-folders in the Windows Registry. Currently, all such parameters used by Dyalog APL itself relate to the Windows IDE, but you can create your own application-specific structures..</p>
 <p>The Configuration file supports this structure by defining an object that corresponds to a Registry sub-folder. For example:</p>
-<pre><code class="language-apl">Captions: {
-    Session: &quot;My Dyalog Session&quot;,
-    Status: &quot;My Status window&quot;,
-}
+<pre><code class="language-apl">`Captions: { Session: &quot;My Dyalog Session&quot;, Status: &quot;My Status window&quot;, }`
 </code></pre>
 <pre><code class="language-apl">      +2 ⎕NQ '.' 'GetEnvironment' 'Captions\Session'
 My Dyalog Session

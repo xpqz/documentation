@@ -59706,8 +59706,8 @@
 <p><strong>Description</strong></p>
 <p>The RemoteAddrName property is a character vector that specifies the host name of the remote computer to which you wish to make a connection.</p>
 <p>RemoteAddrName may only be specified by a client <a href="../tcpsocket/">TCPSocket</a> that is intended to make a connection with a server. Furthermore, it must be specified in the <code>⎕WC</code> statement that creates the <a href="../tcpsocket/">TCPSocket</a> object and it may not subsequently be changed using <code>⎕WS</code>.</p>
-<p>When the specified host name has been resolved to an IP address, the <a href="../tcpsocket/">TCPSocket</a> will generate a <a href="../tcpgotaddr/">TCPGotAddr</a> event and update the value of <a href="../remoteaddr/">RemoteAddr</a> accordingly.</p>
-<p>Note that you may use <em>either</em> <a href="../remoteaddr/">RemoteAddr </a><em>or</em> RemoteAddrName to identify the remote computer. If you know its IP address, it is normally quicker to specify <a href="../remoteaddr/">RemoteAddr</a>. If you specify both properties, the value of RemoteAddrName will be ignored.</p>
+<p>When the specified host name has been resolved to an IP address, the <a href="../tcpsocket/">TCPSocket</a> will generate a <a href="../tcpgotaddr/">TCPGotAddr</a> event and update the value of <a href="RemoteAddr.htm">RemoteAddr</a> accordingly.</p>
+<p>Note that you may use <em>either</em> <a href="RemoteAddr.htm">RemoteAddr </a><em>or</em> RemoteAddrName to identify the remote computer. If you know its IP address, it is normally quicker to specify <a href="RemoteAddr.htm">RemoteAddr</a>. If you specify both properties, the value of RemoteAddrName will be ignored.</p>
 <p>For a server <a href="../tcpsocket/">TCPSocket</a>, you may not specify RemoteAddrName and <code>⎕WG</code> returns an empty character vector.</p>
 
 

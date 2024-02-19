@@ -59704,7 +59704,7 @@
 </tbody>
 </table>
 <p><strong>Description</strong></p>
-<p>This is a "read-only" property that identifies the formats in which data is currently available in the clipboard. It is a vector of character vectors containing the names of the corresponding <a href="../clipboard/">Clipboard</a> properties for which data may be obtained using <a href="../../Language/System%20Functions/wg.htm"><code>⎕WG</code></a>. In the following example data was copied to the Windows clipboard from Microsoft Excel. This product stores data in CF_Text and the older device-dependent CF_Bitmap formats. The latter excludes colour map information, so <a href="../cmap/">CMap</a> is not available.</p>
+<p>This is a "read-only" property that identifies the formats in which data is currently available in the clipboard. It is a vector of character vectors containing the names of the corresponding <a href="../clipboard/">Clipboard</a> properties for which data may be obtained using <a href="../../Language/System Functions/wg.htm"><code>⎕WG</code></a>. In the following example data was copied to the Windows clipboard from Microsoft Excel. This product stores data in CF_Text and the older device-dependent CF_Bitmap formats. The latter excludes colour map information, so <a href="CMap.htm">CMap</a> is not available.</p>
 <pre><code class="language-apl">      'CL' ⎕WC 'Clipboard'
       'CL' ⎕WG 'Formats'
  Bits  CMap  Text

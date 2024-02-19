@@ -59703,7 +59703,7 @@
 <ul>
 <li>The Instance is re-assigned (see below)</li>
 <li>The result of <code>⎕NEW</code> is not assigned (the instance gets created then immediately destroyed).</li>
-<li>APL creates (and then destroys) a new Instance as a result of a reference to a member of an <a href="../empty-arrays-of-instances-how/">empty Instance</a>. The destructor is called after APL has obtained the appropriate value from the instance and no longer needs it.</li>
+<li>APL creates (and then destroys) a new Instance as a result of a reference to a member of an <a href="Empty Arrays of Instances How.htm">empty Instance</a>. The destructor is called after APL has obtained the appropriate value from the instance and no longer needs it.</li>
 <li>The constructor function fails. Note that the Instance is actually created before the constructor is run (inside it), and if the constructor fails, the fledgling Instance is discarded. Note too that this means a destructor <em>may</em> need to deal with a partially constructed instance, so the code may need to check that resources were actually acquired, before releasing them.</li>
 <li>On the execution of <code>)CLEAR</code>, <code>)LOAD</code>, <code>⎕LOAD</code>, <code>)OFF</code> or <code>⎕OFF</code>.</li>
 </ul>

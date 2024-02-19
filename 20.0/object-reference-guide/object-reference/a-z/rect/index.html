@@ -59913,10 +59913,10 @@
 <p><a href="../size/">Size</a> is a simple 2-element vector whose elements specify the height and width of the rectangle respectively.</p>
 <p><a href="../radius/">Radius</a> is a 2-element vector which specifies the major (y-axis) and minor (x-axis) radii of an ellipse used to draw the corners of the rectangle. Its default value is (0 0) which yields right-angled corners.</p>
 <p><a href="../lstyle/">LStyle</a> and <a href="../lwidth/">LWidth</a> are both simple scalar numbers.</p>
-<p><a href="../fstyle/">FStyle</a> is either a single number specifying a standard fill pattern, or the name of a <a href="../bitmap/">Bitmap</a> object which is to be used as a "brush" to fill the rectangle.</p>
+<p><a href="../fstyle/">FStyle</a> is either a single number specifying a standard fill pattern, or the name of a <a href="Bitmap.htm">Bitmap</a> object which is to be used as a "brush" to fill the rectangle.</p>
 <p><a href="../fcol/">FCol</a>, <a href="../bcol/">BCol</a> and <a href="../fillcol/">FillCol</a> are each either single numbers representing standard colours, or 3-element vectors which specify colours explicitly in terms of their RGB values.</p>
 <h4 id="examples">Examples:</h4>
-<p>First make a <a href="../form/">Form</a> :</p>
+<p>First make a <a href="Form.htm">Form</a> :</p>
 <pre><code class="language-apl">      'F' ⎕WC 'Form'
 </code></pre>
 <p>Draw a single rectangle at (y=10, x=5) with height=30, width=50 :</p>
@@ -59936,10 +59936,10 @@
 <p>Likewise, <a href="../size/">Size</a> may be a simple 2-element vector (applying to all the rectangles), <strong>or</strong> a 2-column matrix whose first column specifies their heights and whose second column specifies their widths, <strong>or</strong> a 2-element nested vector whose first element specifies their height(s) and whose second element specifies their width(s).</p>
 <p><a href="../radius/">Radius</a> may be a simple 2-element vector (applying to all the rectangles), <strong>or</strong> a 2-column matrix whose first column specifies major radii and whose second column specifies minor radii, <strong>or</strong> a 2-element nested vector whose first element specifies major radii and whose second element specifies minor radii.</p>
 <p><a href="../lstyle/">LStyle</a> and <a href="../lwidth/">LWidth</a> may each be simple scalar values (applying to all the rectangles) or simple vectors whose elements refer to each of the corresponding rectangles in turn.</p>
-<p><a href="../fstyle/">FStyle</a> may be a simple scalar numeric or a simple character vector (<a href="../bitmap/">Bitmap</a> name) applying to all rectangles, or a vector whose elements refer to each of the corresponding rectangles in turn.</p>
+<p><a href="../fstyle/">FStyle</a> may be a simple scalar numeric or a simple character vector (<a href="Bitmap.htm">Bitmap</a> name) applying to all rectangles, or a vector whose elements refer to each of the corresponding rectangles in turn.</p>
 <p>Similarly, <a href="../fcol/">FCol</a>, <a href="../bcol/">BCol</a> and <a href="../fillcol/">FillCol</a> may each be single numbers or a single (enclosed) 3-element vector applying to all the rectangles. Alternatively, these properties may contain vectors whose elements refer to each of the rectangles in turn. If so, their elements may be single numbers or nested RGB triplets, or a combination of the two.</p>
 <h4 id="examples_1">Examples:</h4>
-<p>First make a <a href="../form/">Form</a> :</p>
+<p>First make a <a href="Form.htm">Form</a> :</p>
 <pre><code class="language-apl">      'F' ⎕WC 'Form'
 </code></pre>
 <p>Draw two rectangles at (y=5, x=10) and (y=5, x=60) each of (height=40, width=10)</p>

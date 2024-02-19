@@ -59756,7 +59756,7 @@
                 ('Double' 'Centigrade'))
 
 </code></pre>
-<p>In this case, the name of the event is <em>Export</em> and it will report two parameters named <em>Fahrenheit</em> and <em>Centigrade</em> which are both of data type Double.</p>
+<p>In this case, the name of the event is <em>Export</em> and it will report two parameters named <em>Fahrenheit</em> and <em>Centigrade</em> which are both of data type <code>Double</code>.</p>
 <p>This version of the control presents a slightly different appearance to the previous one. The control itself is wrapped up in an HTML <em>Table,</em> with the conversion buttons arranged in a column. These buttons generate internal events that are caught and handled by the control itself. The third row of the table contains an additional button labelled <em>Export</em> which will generate the <em>Export</em> event when pressed. The <code>Render</code> function is shown below.</p>
 <pre><code class="language-apl">     ∇ Render output;TableRow;HTML;SET
 [1]    :Access public override

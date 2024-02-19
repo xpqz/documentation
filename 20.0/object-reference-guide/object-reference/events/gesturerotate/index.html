@@ -59670,7 +59670,7 @@
 <p><strong>Applies To</strong></p>
 <p><strong>Description</strong></p>
 <p>This event is reported when the user touches  two fingers on an object and twists them clockwise or anticlockwise.</p>
-<p>The event message reported as the result of <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a>, or supplied as the right argument to your callback function, is a 5-element vector as follows :</p>
+<p>The event message reported as the result of <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a>, or supplied as the right argument to your callback function, is a 5-element vector as follows :</p>
 <table>
 <thead>
 <tr>
@@ -59713,23 +59713,23 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>``</td>
 <td>0</td>
 <td>A gesture is in progress</td>
 </tr>
 <tr>
-<td>GF_BEGIN</td>
+<td><code>GF_BEGIN</code></td>
 <td>1</td>
 <td>A gesture is starting.</td>
 </tr>
 <tr>
-<td>GF_END</td>
+<td><code>GF_END</code></td>
 <td>4</td>
 <td>A gesture has finished.</td>
 </tr>
 </tbody>
 </table>
-<p>When the user first touches two fingers on an object and begins to twist, the object generates a GestureRotate event with a <code>Flags</code> parameter of 1 (GF_BEGIN). As the user continues to twist his fingers, the object generates a series of GestureRotate events with a <code>Flags</code> parameter of 0. When the user lifts one or both fingers away, the object generates a final GestureRotate event, with a <code>Flags</code> parameter of 4 (GF_END).</p>
+<p>When the user first touches two fingers on an object and begins to twist, the object generates a GestureRotate event with a <code>Flags</code> parameter of 1 (<code>GF_BEGIN</code>). As the user continues to twist his fingers, the object generates a series of GestureRotate events with a <code>Flags</code> parameter of 0. When the user lifts one or both fingers away, the object generates a final GestureRotate event, with a <code>Flags</code> parameter of 4 (<code>GF_END</code>).</p>
 <p>No other event will be reported between the start and end of a series of GestureRotate events.</p>
 <p>Returning zero from the callback disables any default handling by the operating system.</p>
 <p>The associated callback is run <strong>immediately</strong> while the windows notification is still on the stack. See 

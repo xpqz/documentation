@@ -59787,14 +59787,14 @@
 
 
 <h1 id="example-5">Example 5</h1>
-<p>WPF data binding provides the means to bind controls that display lists of items, such as the <code>ListBox</code>, <code>ListView</code>, and <code>TreeView</code> controls, to collections of data. These controls are all based upon the <code>ItemsControl</code> class. To bind an <code>ItemsControl</code> to a collection object, you use its ItemsSource property.</p>
-<p>If the right argument of <code>2015⌶</code> names a variable, or a namespace containing a variable, that is a vector other than a simple character vector, it returns a Binding Source object that provides the necessary interfaces to bind the variable as a collection to the ItemSource property of an <code>ItemsControl</code>.</p>
-<p>The APL variable will normally contain a vector of character vectors, because most <code>ItemsControl</code> objects deal with collections of strings. However, any APL vector other than a simple character vector will be treated in this way.</p>
-<p>This example illustrates binding between a variable containing a vector of character vectors, to the items of a <code>ListBox</code>.</p>
-<p>Incidentally, the ItemsSource property overrides the Items collection as a means to specify the content of the <code>ItemsControl</code>. When the ItemsSource property is set, the Items collection becomes read-only and of fixed-size. Note that the ItemsSource property supports OneWay binding by default.</p>
+<p>WPF data binding provides the means to bind controls that display lists of items, such as the ListBox, ListView, and TreeView controls, to collections of data. These controls are all based upon the ItemsControl class. To bind an ItemsControl to a collection object, you use its ItemsSource property.</p>
+<p>If the right argument of <code>2015⌶</code> names a variable, or a namespace containing a variable, that is a vector other than a simple character vector, it returns a Binding Source object that provides the necessary interfaces to bind the variable as a collection to the ItemSource property of an ItemsControl.</p>
+<p>The APL variable will normally contain a vector of character vectors, because most ItemsControl objects deal with collections of strings. However, any APL vector other than a simple character vector will be treated in this way.</p>
+<p>This example illustrates binding between a variable containing a vector of character vectors, to the items of a ListBox.</p>
+<p>Incidentally, the ItemsSource property overrides the Items collection as a means to specify the content of the ItemsControl. When the ItemsSource property is set, the Items collection becomes read-only and of fixed-size. Note that the ItemsSource property supports OneWay binding by default.</p>
 <h2 id="the-xaml">The XAML</h2>
-<p>The variable <code>XAML_FilteredList</code>, shown below, contains XAML to specify a Window containing a <code>StackPanel</code>. The <code>StackPanel</code> control is a WPF layout control that organises child controls in a single line, by default vertically. In this example, the <code>StackPanel</code> contains a <code>TextBox</code> and, below it, a <code>WrapPanel</code>, and below that a <code>TextBlock</code>. The <code>WrapPanel</code> is also a layout control that organises its child controls sequentially from left to right. The <code>WrapPanel</code> contains two <code>ListBox</code> controls.</p>
-<pre><code class="language-apl">&lt;Window 
+<p>The variable <code>XAML_FilteredList</code>, shown below, contains XAML to specify a Window containing a StackPanel. The StackPanel control is a WPF layout control that organises child controls in a single line, by default vertically. In this example, the StackPanel contains a TextBox and, below it, a WrapPanel, and below that a TextBlock. The WrapPanel is also a layout control that organises its child controls sequentially from left to right. The WrapPanel contains two ListBox controls.</p>
+<pre><code class="language-apl">`&lt;Window 
     xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
     xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
     Title=&quot;Filtered List Example&quot;
@@ -59812,8 +59812,7 @@
         &lt;/WrapPanel&gt;   
         &lt;TextBlock Text=&quot;Dyalog WPF Demo&quot; Margin=&quot;5&quot;/&gt;
     &lt;/StackPanel&gt;
- &lt;/Window&gt;
-
+ &lt;/Window&gt;`
 </code></pre>
 <h2 id="the-code">The Code</h2>
 <pre><code class="language-apl">     ∇ FilteredList;MySource;win;sink
@@ -59832,41 +59831,38 @@
 
 </code></pre>
 <p>Like the previous example, this example uses a namespace <code>MySource</code> containing the bound variables <code>Filter</code>, <code>FilteredList</code> and <code>DyalogNames</code>.</p>
-<p><code>FilteredList[8]</code> creates a Binding Source object and assigns it to the DataContext property of the <code>Window</code> <code>win</code>.</p>
+<p><code>FilteredList[8]</code> creates a Binding Source object and assigns it to the DataContext property of the Window <code>win</code>.</p>
 <pre><code class="language-apl">
 [8]    win.DataContext←2015⌶'MySource'
 </code></pre>
 <p>The DataContext property is inherited by all child controls, so they all share the same Binding Source. Their different Paths to different values in the Binding Source are specified in the XAML as follows.</p>
-<p>The Text property of the <code>TextBox</code> named <strong>filter</strong> is bound to the variable <code>Filter</code> by the expression Text="{Binding Filter,...</p>
-<pre><code class="language-apl">
-        &lt;TextBox Name=&quot;filter&quot; Margin=&quot;5&quot;
-         Text=&quot;{Binding Filter,Mode=TwoWay,
+<p>The Text property of the TextBox named <strong>filter</strong> is bound to the variable <code>Filter</code> by the expression <code>Text="{Binding Filter,...</code></p>
+<pre><code class="language-apl">`&lt;TextBox Name=&quot;filter&quot; Margin=&quot;5&quot;
+         Text=&quot;{Binding Filter,Mode=TwoWay,`
 </code></pre>
-<p>The ItemsSource property of the <code>ListBox</code> named <strong>all</strong> is bound to the variable <code>DyalogNames</code> by the expression ItemsSource="{Binding DyalogNames}"</p>
-<pre><code class="language-apl">
-            &lt;ListBox Name=&quot;all&quot; Width=&quot;135&quot; Height=&quot;440&quot;
-             Margin=&quot;5&quot; ItemsSource=&quot;{Binding DyalogNames}&quot;/&gt;
+<p>The ItemsSource property of the ListBox named <strong>all</strong> is bound to the variable <code>DyalogNames</code> by the expression <code>ItemsSource="{Binding DyalogNames}"</code></p>
+<pre><code class="language-apl">`&lt;ListBox Name=&quot;all&quot; Width=&quot;135&quot; Height=&quot;440&quot;
+             Margin=&quot;5&quot; ItemsSource=&quot;{Binding DyalogNames}&quot;/&gt;`
 </code></pre>
-<p>Thirdly, the ItemsSource property of the <code>ListBox</code> named <strong>filtered</strong> is bound to the variable <code>FilteredList</code> by the expression ItemsSource="{Binding FilteredList}"</p>
-<pre><code class="language-apl">
-            &lt;ListBox Name=&quot;filtered&quot; Width=&quot;135&quot; Height=&quot;440&quot;
-             Margin=&quot;5&quot; ItemsSource=&quot;{Binding FilteredList}&quot;/&gt;
+<p>Thirdly, the ItemsSource property of the ListBox named <strong>filtered</strong> is bound to the variable <code>FilteredList</code> by the expression <code>ItemsSource="{Binding FilteredList}"</code></p>
+<pre><code class="language-apl">`&lt;ListBox Name=&quot;filtered&quot; Width=&quot;135&quot; Height=&quot;440&quot;
+             Margin=&quot;5&quot; ItemsSource=&quot;{Binding FilteredList}&quot;/&gt;`
 </code></pre>
 <h2 id="testing-the-data-binding">Testing the Data Binding</h2>
 <pre><code class="language-apl">      FilteredList
 </code></pre>
 <pre><code class="language-apl">![data binding filteredlist 1](../img/data-binding-filteredlist-1.png)
 </code></pre>
-<p>If the user types a single character, in this case "e", into the <code>TextBox</code>, this fires a TextChanged event which in turn fires the callback function shown below:</p>
+<p>If the user types a single character, in this case "e", into the TextBox, this fires a TextChanged event which in turn fires the callback function shown below:</p>
 <pre><code class="language-apl">     ∇ FilteredList_TextChanged a;hits
 [1]    hits←(⊂MySource.Filter){∨/⍺⍷⍵}¨DyalogNames
 [2]    MySource.FilteredList←hits/DyalogNames
      ∇
 
 </code></pre>
-<p>When the callback runs, the variable <code>MySource.Filter</code>, which is bound to the Text property of the <code>TextBox</code>, will contain "e". The function calculates a mask <code>hits</code> which identifies which members of the variable <code>DyalogNames</code>  contain this string. It then assigns that subset to the variable <code>MySource.FilteredList</code>. This is bound to the ItemsSource property of the right-hand <code>ListBox</code>, so the result is as follows:</p>
+<p>When the callback runs, the variable <code>MySource.Filter</code>, which is bound to the Text property of the TextBox, will contain "e". The function calculates a mask <code>hits</code> which identifies which members of the variable <code>DyalogNames</code>  contain this string. It then assigns that subset to the variable <code>MySource.FilteredList</code>. This is bound to the ItemsSource property of the right-hand ListBox, so the result is as follows:</p>
 <p><img alt="data binding filteredlist 2" src="../img/data-binding-filteredlist-2.png" /></p>
-<p>Similarly, typing "er" into the <code>TextBox</code> reduces the number of hits as shown below:</p>
+<p>Similarly, typing "er" into the TextBox reduces the number of hits as shown below:</p>
 <p><img alt="data binding filteredlist 3" src="../img/data-binding-filteredlist-3.png" /></p>
 
 

@@ -59715,10 +59715,10 @@
 <p>If enabled, this event is reported when the user alters the text in a <a href="../combo/">Combo</a> or <a href="../edit/">Edit</a> object (by typing). The event is not applicable for a <a href="../combo/">Combo</a> with <a href="../style/">Style</a><code>'Drop'</code> because this <a href="../style/">Style</a> does not allow the user to alter data. The Change event is not reported repeatedly as the user edits the data. Instead, it is reported when the user indicates that he has finished with the field by :</p>
 <ol>
 <li>clicking on another object, <strong>or</strong></li>
-<li>causing an event on another object (without altering the input focus) which will fire a callback function or cause <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a> to terminate. This can occur if the user chooses a <a href="../menuitem/">MenuItem</a>, or fires a <a href="../button/">Button</a> with the <a href="../default/">Default</a> or <a href="../cancel/">Cancel</a> property by pressing Enter or Esc, or selects an object using an accelerator key.</li>
+<li>causing an event on another object (without altering the input focus) which will fire a callback function or cause <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> to terminate. This can occur if the user chooses a <a href="../menuitem/">MenuItem</a>, or fires a <a href="../button/">Button</a> with the <a href="../default/">Default</a> or <a href="../cancel/">Cancel</a> property by pressing Enter or Esc, or selects an object using an accelerator key.</li>
 </ol>
 <p>The purpose of the Change event is to allow the application to validate data which has been newly entered to the field, before proceeding with another action. It is for this reason that the event is fired not just when the input focus changes, but also when the user takes some action that could cause the application to do something else.</p>
-<p>The event message reported as the result of <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a>, or supplied as the right argument to your callback function, is a 3-element vector as follows :</p>
+<p>The event message reported as the result of <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a>, or supplied as the right argument to your callback function, is a 3-element vector as follows :</p>
 <table>
 <thead>
 <tr>

@@ -60343,17 +60343,17 @@
 <h5 id="entity-references-and-character-references">Entity References and Character References</h5>
 <p>Entity references are named representations of single characters which cannot normally be used in character data because they are used to delimit markup, such as &gt; for '&gt;'. Character references are numeric representations of any character, such as &#20; for space. Note that character references always take values in the Unicode code space, regardless of the encoding of the XML text itself.</p>
 <p><code>⎕XML</code> converts entity references and all character references which the APL character set is able to represent into their character equivalent when generating APL array data; when generating XML it converts any or all characters to entity references as needed.</p>
-<p>There is a predefined set of entity references, and the XML specification allows others to be defined within the XML using the &lt;!ENTITY &gt; markup. <code>⎕XML</code> does not process these additional declarations and therefore will only convert the predefined types.</p>
+<p>There is a predefined set of entity references, and the XML specification allows others to be defined within the XML using the <code>&lt;!ENTITY &gt;</code> markup. <code>⎕XML</code> does not process these additional declarations and therefore will only convert the predefined types.</p>
 <h5 id="whitespace">Whitespace</h5>
 <p>Whitespace sequences consist of one or more spaces, tabs or line-endings. Within character data, sequences of one or more whitespace characters are replaced with a single space when this is enabled by the whitespace option. Line endings are represented differently on different systems (0x0D 0x0A, 0x0A and 0x0D are all used) but are normalized by converting them all to 0x0A before the XML is parsed, regardless of the setting of the whitespace option.</p>
 <h5 id="elements">Elements</h5>
 <p>An element consists of a balanced pair of tags or a single empty element tag. Tags are given names, and start and end tag names must match.</p>
 <p>An example pair of tags, named TagName is</p>
-<p><TagName></TagName></p>
+<p><code>&lt;TagName&gt;&lt;/TagName&gt;</code></p>
 <p>This pair is shown with no content between the tags; this may be abbreviated as an empty element tag as</p>
-<p><TagName/></p>
+<p><code>&lt;TagName/&gt;</code></p>
 <p>Tags may be given zero or more attributes, which are specified as name/value pairs; for example</p>
-<p><TagName AttName="AttValue"></p>
+<p><code>&lt;TagName AttName="AttValue"&gt;</code></p>
 <p>Attribute values may be delimited by either double quotes as shown or single quotes (apostrophes); they may not contain certain characters (the delimiting quote, '&amp;' or '&lt;') and these must be represented by entity or character references.</p>
 <p>The content of elements may be zero or more mixed occurrences of character data and nested elements. Tags and attribute names <em>describe</em> data, attribute values and the content within tags contain the data itself. Nesting of elements allows structure to be defined.</p>
 <p>Because certain markup which describes the format of allowable data (such as element type declarations and attribute-list declarations) is not processed, no error will be reported if element contents and attributes do not conform to their restricted declarations, nor are attributes automatically added to tags if not explicitly given.</p>

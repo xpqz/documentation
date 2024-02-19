@@ -59751,26 +59751,9 @@
 <p><code>R[;1]</code> is the process ID (PID) of the terminated child</p>
 <p><code>R[;2]</code> is <code>¯1</code> if the child process terminated normally, otherwise it is the signal number which caused the child process to terminate.</p>
 <p><code>R[;3]</code> is <code>¯1</code> if the child process terminated as the result of a signal, otherwise it is the exit code of the child process</p>
-<p>The remaining 15 columns are the contents of the <code>rusage</code> structure returned by the underlying <code>wait3()</code> system call. Note that the two <code>timeval``structs</code> are each returned as a floating point number.</p>
+<p>The remaining 15 columns are the contents of the <code>rusage</code> structure returned by the underlying <code>wait3()</code> system call. Note that the two timevalstructs are each returned as a floating point number.</p>
 <p>The current <code>rusage</code> structure contains:</p>
-<pre><code class="language-apl">struct rusage {
-    struct timeval ru_utime; /* user time used */
-    struct timeval ru_stime; /* system time used */
-    long   ru_maxrss;        /* maximum resident set size */
-    long   ru_ixrss;         /* integral shared memory size */
-    long   ru_idrss;         /* integral unshared data size */
-    long   ru_isrss;         /* integral unshared stack size */
-    long   ru_minflt;        /* page reclaims */
-    long   ru_majflt;        /* page faults */
-    long   ru_nswap;         /* swaps */
-    long   ru_inblock;       /* block input operations */
-    long   ru_oublock;       /* block output operations */
-    long   ru_msgsnd;        /* messages sent */
-    long   ru_msgrcv;        /* messages received */
-    long   ru_nsignals;      /* signals received */
-    long   ru_nvcsw;         /* voluntary context switches */
-    long   ru_nivcsw;        /* involuntary context switches */
-};
+<pre><code class="language-apl">`struct rusage { struct timeval ru_utime; /* user time used */ struct timeval ru_stime; /* system time used */ long   ru_maxrss;        /* maximum resident set size */ long   ru_ixrss;         /* integral shared memory size */ long   ru_idrss;         /* integral unshared data size */ long   ru_isrss;         /* integral unshared stack size */ long   ru_minflt;        /* page reclaims */ long   ru_majflt;        /* page faults */ long   ru_nswap;         /* swaps */ long   ru_inblock;       /* block input operations */ long   ru_oublock;       /* block output operations */ long   ru_msgsnd;        /* messages sent */ long   ru_msgrcv;        /* messages received */ long   ru_nsignals;      /* signals received */ long   ru_nvcsw;         /* voluntary context switches */ long   ru_nivcsw;        /* involuntary context switches */ };`
 </code></pre>
 <p><code>4002⌶</code> may return the PID of an abnormally terminated Auxiliary Processor; APL code should check that the list of processes that have been reaped is a superset of the list of processes that have been started.</p>
 <h4 id="example">Example</h4>

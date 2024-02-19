@@ -59791,7 +59791,7 @@
 <p><img alt="data binding text xaml 1" src="../img/data-binding-text-xaml-1.png" /></p>
 <h2 id="the-xaml">The XAML</h2>
 <p>The XAML shown below,  describes the same Window containing a TextBox as before.</p>
-<pre><code class="language-apl">&lt;Window
+<pre><code class="language-apl">`&lt;Window
  xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
  xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
  Name=&quot;Temp&quot;
@@ -59800,14 +59800,12 @@
      &lt;TextBox Name=&quot;txt&quot; Text=&quot;Hello World&quot; Width=&quot;300&quot;
       Margin=&quot;5&quot;
       FontSize=&quot;{Binding sizeSource,Mode=OneWay}&quot;/&gt;
-&lt;/Window&gt;
-
+&lt;/Window&gt;`
 </code></pre>
 <p>This time, the data binding expression is:</p>
-<pre><code class="language-apl">
-      FontSize=&quot;{Binding sizeSource,Mode=OneWay}&quot;/&gt;
+<pre><code class="language-apl">`FontSize=&quot;{Binding sizeSource,Mode=OneWay}&quot;/&gt;`
 </code></pre>
-<p>This specifies that the FontSize property of the <code>TextBox</code> is bound to a value in the Binding Source (which has yet to be defined) whose path is sizeSource. The binding mode is set to OneWay which means that the FontSize property depends on the data value but not vice versa. Were the FontSize to change for any external reason (which is admittedly unlikely in the case of FontSize), it would not alter the value in sizeSource to which it is bound.</p>
+<p>This specifies that the FontSize property of the TextBox is bound to a value in the Binding Source (which has yet to be defined) whose path is <code>sizeSource</code>. The binding mode is set to <code>OneWay</code> which means that the FontSize property depends on the data value but not vice versa. Were the FontSize to change for any external reason (which is admittedly unlikely in the case of FontSize), it would not alter the value in <code>sizeSource</code> to which it is bound.</p>
 <h2 id="the-apl-code">The APL Code</h2>
 <p>The function <code>FontSize</code> is almost identical to the function <code>Text</code> which is described in Example 1.</p>
 <pre><code class="language-apl">     ∇ FontSize size;⎕USING;win
@@ -59824,7 +59822,7 @@
      ∇
 
 </code></pre>
-<p>The key difference is in <code>FontSize[8]</code>. Here the left argument of <code>(2015⌶)</code> is <code>Int32</code>. This means that the exported Type of the variable <code>sizeSource</code> will be <code>Int32</code>. This Type (a 32-bit integer) is required by the FontSize property of a <code>TextBox</code>; no other Type will do. If this were omitted, APL would export the value of the variable using a Type dependent on its internal format (most likely <code>Int16</code>) and the binding would fail.</p>
+<p>The key difference is in <code>FontSize[8]</code>. Here the left argument of <code>(2015⌶)</code> is <code>Int32</code>. This means that the exported Type of the variable <code>sizeSource</code> will be Int32. This Type (a 32-bit integer) is required by the FontSize property of a TextBox; no other Type will do. If this were omitted, APL would export the value of the variable using a Type dependent on its internal format (most likely Int16) and the binding would fail.</p>
 <pre><code class="language-apl">
 [8]    win.txtBox.DataContext←Int32(2015⌶)'sizeSource'
 </code></pre>

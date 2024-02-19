@@ -59725,7 +59725,7 @@
 </table>
 <p><strong>Description</strong></p>
 <p>The ToolControl object provides an interface to the native Windows ToolBar control and supersedes the Dyalog APL <a href="../toolbar/">ToolBar</a> object.</p>
-<p>The tools on a ToolControl are normally represented by <a href="../toolbutton/">ToolButton</a> objects, but the ToolControl may also act as a parent for other objects, including a <a href="../menubar/">MenuBar</a> (see below).</p>
+<p>The tools on a ToolControl are normally represented by <a href="../toolbutton/">ToolButton</a> objects, but the ToolControl may also act as a parent for other objects, including a <a href="MenuBar.htm">MenuBar</a> (see below).</p>
 <p>Unlike the <a href="../toolbar/">ToolBar</a>, the ToolControl fully determines the positioning of its children automatically and this is governed by their order of creation. The Posn property of any child of a ToolControl is therefore read-only. Furthermore, the height of objects in a ToolControl may be no greater than that of a <a href="../toolbutton/">ToolButton</a> in the same ToolControl. This in turn is governed by the sizes of the <a href="../fontobj/">FontObj</a> and <a href="../imagelist/">ImageList</a> in use in that ToolControl. ToolControl objects should be used in preference to <a href="../toolbar/">ToolBar</a> objects.</p>
 <p>If a ToolControl is the child of a <a href="../form/">Form</a>, its position and orientation is defined by its <a href="../align/">Align</a> property. This property is ignored if the ToolControl is the child of a <a href="../coolband/">CoolBand</a>.</p>
 <p>The overall appearance of the <a href="../toolbutton/">ToolButton</a> objects displayed by the ToolControl is defined by the <a href="../style/">Style</a> property of the ToolControl itself, rather than by individual <a href="../toolbutton/">ToolButtons</a>. This may be <code>'Buttons'</code>, <code>'FlatButtons'</code>, <code>'List'</code> or <code>'FlatList'</code>.</p>
@@ -59788,8 +59788,8 @@
 <p>The <a href="../showcaptions/">ShowCaptions</a> property specifies whether or not the captions of <a href="../toolbutton/">ToolButton</a> objects are drawn. Its default value is 1 (draw captions). <a href="../toolbutton/">ToolButtons</a> drawn without captions occupy much less space and <a href="../showcaptions/">ShowCaptions</a> provides a quick way to turn captions on/off for user customisation.</p>
 <p>The <a href="../showdropdown/">ShowDropDown</a> property specifies whether or not a drop-down menu symbol is drawn alongside <a href="../toolbutton/">ToolButtons</a> which have <a href="../style/">Style </a><code>'DropDown'</code>. <a href="../showdropdown/">ShowDropDown</a> also affects the behaviour of such <a href="../toolbutton/">ToolButton</a> objects when clicked.</p>
 <p>The <a href="../buttonsacceptfocus/">ButtonsAcceptFocus</a> property determines how the ToolControl responds to the Tab and cursor movement keys.</p>
-<p>As a special case, the ToolControl may contain a <a href="../menubar/">MenuBar</a> as its <strong>only</strong> child. In this case, Dyalog APL causes the menu items to be drawn as buttons as shown below.</p>
-<p>Although nothing is done to prevent it, the use of other objects in a ToolControl containing a <a href="../menubar/">MenuBar</a>, is not supported.</p>
+<p>As a special case, the ToolControl may contain a <a href="MenuBar.htm">MenuBar</a> as its <strong>only</strong> child. In this case, Dyalog APL causes the menu items to be drawn as buttons as shown below.</p>
+<p>Although nothing is done to prevent it, the use of other objects in a ToolControl containing a <a href="MenuBar.htm">MenuBar</a>, is not supported.</p>
 <pre><code class="language-apl">'F'⎕WC'Form' 'ToolControl with MenuBar'('Size' 20 40)
 'F.TB'⎕WC'ToolControl'
 

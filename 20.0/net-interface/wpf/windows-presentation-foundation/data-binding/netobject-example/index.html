@@ -59787,10 +59787,10 @@
 
 
 <h1 id="example-6">Example 6</h1>
-<p>This example illustrates data binding using a vector of .NET objects, in this case <code>DateTime</code> objects.</p>
+<p>This example illustrates data binding using a vector of .NET objects, in this case DateTime objects.</p>
 <h2 id="the-xaml">The XAML</h2>
-<p>The XAML shown below,  describes a Window containing a <code>StackPanel</code>, inside which is a <code>ListBox</code>.</p>
-<pre><code class="language-apl">&lt;Window 
+<p>The XAML shown below,  describes a Window containing a StackPanel, inside which is a ListBox.</p>
+<pre><code class="language-apl">`&lt;Window 
 
     xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
     xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
@@ -59802,7 +59802,7 @@
          &lt;ListBox Name=&quot;EasterDates&quot; Height=&quot;100&quot;
           Margin=&quot;5&quot; /&gt;
     &lt;/StackPanel&gt;
-&lt;/Window&gt;
+&lt;/Window&gt;`
 </code></pre>
 <h2 id="the-apl-code">The APL Code</h2>
 <p>The function <code>NetObjects</code> is shown below.</p>
@@ -59816,7 +59816,7 @@
      ∇
 
 </code></pre>
-<p><code>NetObjects[3]</code> uses FindName to obtain a ref to the <code>ListBox</code> (defined in the XAML) named <strong>EasterDates:</strong></p>
+<p><code>NetObjects[3]</code> uses FindName to obtain a ref to the ListBox (defined in the XAML) named <strong>EasterDates:</strong></p>
 <pre><code class="language-apl">
 [3]    win.dates←win.FindName⊂'EasterDates'
 </code></pre>
@@ -59834,7 +59834,7 @@
 2024 5  5
 
 </code></pre>
-<p><code>NetObjects[4]</code> creates a vector of <code>DateTime</code> objects from the global variable <code>Easter</code>.</p>
+<p><code>NetObjects[4]</code> creates a vector of DateTime objects from the global variable <code>Easter</code>.</p>
 <pre><code class="language-apl">
 [4]    dt←{⎕NEW DateTime ⍵}¨Easter
 </code></pre>

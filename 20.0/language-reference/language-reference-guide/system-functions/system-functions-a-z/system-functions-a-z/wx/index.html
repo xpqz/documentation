@@ -59802,11 +59802,11 @@
 <p>Note that it is the value of <code>⎕WX</code> in the object itself, rather than the value of <code>⎕WX</code> in the calling environment, that determines its behaviour.</p>
 <p>When you create an object, its <code>⎕WX</code> (like any other system variable) is initially inherited from its parent.</p>
 <p>If the value of <code>⎕WX</code> of a GUI object is initially 0, it will not expose its members. If you subsequently change it from 0 to 1, it will expose them. If you change its <code>⎕WX</code> back to 0, it will not expose any yet-unexposed members, although already-exposed members will continue to be exposed.</p>
-<p>The value of <code>⎕WX</code> in a clear workspace is defined by the default_wx parameter (see <a href="../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#default_wx"> default_wx on page 1</a>) which itself defaults to 3.</p>
+<p>The value of <code>⎕WX</code> in a clear workspace is defined by the default_wx parameter (see <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#default_wx"> default_wx on page 1</a>) which itself defaults to 3.</p>
 <p><code>⎕WX</code> has namespace scope and may be localised in a function header. This allows you to create a utility namespace or utility function in which the exposure of objects is known and determined, regardless of its global value in the workspace.</p>
 <h4 id="notes">Notes:</h4>
 <ul>
-<li>The visibility of the properties and methods of the Root object are not controlled by <code>⎕WX</code> but by the PropertyExposeRoot parameter. For further information, see <a href="../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#PropertyExposeRoot"> PropertyExposeRoot on page 1</a>.</li>
+<li>The visibility of the properties and methods of the Root object are not controlled by <code>⎕WX</code> but by the PropertyExposeRoot parameter. For further information, see <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#PropertyExposeRoot"> PropertyExposeRoot on page 1</a>.</li>
 <li><code>⎕WX</code> is retained for backwards compatibility and should be considered as deprecated. Dyalog recommends  <code>⎕WX</code> be set to 3 and never changed.</li>
 </ul>
 

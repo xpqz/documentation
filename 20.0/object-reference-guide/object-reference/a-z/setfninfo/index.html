@@ -59899,7 +59899,7 @@
 </table>
 <h4 id="function-info">Function info</h4>
 <p>This specifies an optional help string which describes what the function does, the data type of the result (if any) and the names and data types of its arguments.</p>
-<p>If the function syntax is fully described, each element of <em>Function Info</em> is a 2-element vector of character vectors. The first element contains the help string and the <a href="../Miscellaneous/COM%20data%20types.htm">COM data type</a> of the function's result. Subsequent elements contain the name and <a href="../Miscellaneous/COM%20data%20types.htm">COM data type</a> of each parameter.</p>
+<p>If the function syntax is fully described, each element of <em>Function Info</em> is a 2-element vector of character vectors. The first element contains the help string and the <a href="../Miscellaneous/COM data types.htm">COM data type</a> of the function's result. Subsequent elements contain the name and <a href="../Miscellaneous/COM data types.htm">COM data type</a> of each parameter.</p>
 <p>However, both the help string and the names of the parameters are optional and may be omitted. If so, one or more elements of <em>Function Info</em> may be a simple character vector.</p>
 <p>Consider a very basic function <code>ADD</code> in an <a href="../activexcontrol/">ActiveXControl</a> called <code>F.dbase</code>, that is designed to add a record to a personnel database. The database consists only of a list of names, ages and addresses.</p>
 <p>Function <code>ADD</code> expects to be called with a name (character string), age (number) and address (character string), and returns a result 0 or 1 (Boolean) according to whether the record was successfully added. This function could be declared as follows:</p>

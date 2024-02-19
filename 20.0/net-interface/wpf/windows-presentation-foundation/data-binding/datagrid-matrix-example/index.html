@@ -59806,11 +59806,11 @@
 
 <h1 id="example-8">Example 8</h1>
 <p>This example illustrates data binding using a matrix and is practically identical to Example 7 except that it uses a matrix instead of a vector of namespaces.</p>
-<p>Each row in the WPF <code>DataGrid</code> control is represented by an object, and each column as a property of that object. Each row in the <code>DataGrid</code> is bound to an object in the data source, and each column in the data grid is bound to a property of the data object.</p>
+<p>Each row in the WPF DataGrid control is represented by an object, and each column as a property of that object. Each row in the DataGrid is bound to an object in the data source, and each column in the data grid is bound to a property of the data object.</p>
 <p><img alt="data binding datagrid1" src="../img/data-binding-datagrid1.png" /></p>
 <h2 id="the-xaml">The XAML</h2>
-<p>The XAML shown below,  describes a Window containing a <code>DockPanel</code>, inside which is a <code>DataGrid</code>. The XAML is identical to the XAML in Example 7, except for the window caption.</p>
-<pre><code class="language-apl"> &lt;Window
+<p>The XAML shown below,  describes a Window containing a DockPanel, inside which is a DataGrid. The XAML is identical to the XAML in Example 7, except for the window caption.</p>
+<pre><code class="language-apl">`&lt;Window
     xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
     xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
     Title=&quot;DataGrid Matrix Example&quot; Height=&quot;500&quot;
@@ -59827,12 +59827,11 @@
             &lt;/DataGrid.Columns&gt;
         &lt;/DataGrid&gt;
     &lt;/DockPanel&gt;
- &lt;/Window&gt;
-
+ &lt;/Window&gt;`
 </code></pre>
-<p>The phrase ItemsSource="{Binding}" states that the content of the <code>DataGrid</code> is bound to a data source, which in this case will be inherited from the DataContext property of the parent <code>Window</code>.</p>
-<p>Binding="{Binding Name}" specifies that the contents of the first column are bound to a Path named <strong>Name</strong> in the data source.</p>
-<p>Similarly, Binding="{Binding Price, StringFormat=C}" specifies that the Path for the second column is <strong>Price</strong> (the phrase StringFormat=C merely specifies the default currency format).</p>
+<p>The phrase <code>ItemsSource="{Binding}"</code> states that the content of the DataGrid is bound to a data source, which in this case will be inherited from the DataContext property of the parent Window.</p>
+<p><code>Binding="{Binding Name}"</code> specifies that the contents of the first column are bound to a Path named <strong>Name</strong> in the data source.</p>
+<p>Similarly, <code>Binding="{Binding Price, StringFormat=C}"</code> specifies that the Path for the second column is <strong>Price</strong> (the phrase <code>StringFormat=C</code> merely specifies the default currency format).</p>
 <h2 id="the-apl-code">The APL Code</h2>
 <p>The function <code>Grid</code> is shown below.</p>
 <pre><code class="language-apl">     ∇ Grid;⎕USING;MySource;win;info
@@ -59848,11 +59847,11 @@
 </code></pre>
 <p>As in Example 7, the global variable <code>Wines</code> contains a vector of character vectors, each of which is the name of a wine.</p>
 <p><code>Grid[2-4</code>] creates a  matrix <code>winelist</code>, whose first column contains the names of the wines, and whose second column their (randomly generated) prices. As this is a global variable, the variable is expunged before being used in order to remove any previous data binding information that was associated with it.</p>
-<p><code>Grid[5]</code>creates the left argument for <code>(2015⌶)</code> which defines the names and data types of the properties which the columns of the matrix <code>winelist</code> will be exposed as. In this case, the names of the paths are <code>Name</code> and <code>Price</code>, and their data types are both System.Object. So the first column will be exposed as Name and the second as Price, matching the path names specified in the XAML:</p>
-<pre><code class="language-apl">            &lt;DataGridTextColumn Header=&quot;Wine&quot;
+<p><code>Grid[5]</code>creates the left argument for <code>(2015⌶)</code> which defines the names and data types of the properties which the columns of the matrix <code>winelist</code> will be exposed as. In this case, the names of the paths are <code>Name</code> and <code>Price</code>, and their data types are both <code>System.Object</code>. So the first column will be exposed as <code>Name</code> and the second as <code>Price</code>, matching the path names specified in the XAML:</p>
+<pre><code class="language-apl">`&lt;DataGridTextColumn Header=&quot;Wine&quot;
             Binding=&quot;{Binding Name}&quot;/&gt;
             &lt;DataGridTextColumn Header=&quot;Price&quot;
-            Binding=&quot;{Binding Price, StringFormat=C}&quot; /&gt;
+            Binding=&quot;{Binding Price, StringFormat=C}&quot; /&gt;`
 </code></pre>
 <h2 id="testing-the-data-binding">Testing the Data Binding</h2>
 <pre><code class="language-apl">

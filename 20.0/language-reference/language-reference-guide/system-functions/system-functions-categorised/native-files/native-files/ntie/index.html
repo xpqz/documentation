@@ -59755,7 +59755,7 @@
 </tr>
 </tbody>
 </table>
-<p>On UNIX systems, the second column has no meaning and only the first code (<code>16|mode</code>) is passed to the open(2) call as the access parameter. See include file fcntl.h for details. See also <a href="../../../../system-functions-a-z/system-functions-a-z/nlock/">Native File Lock on page 1</a> which is not platform dependent.</p>
+<p>On UNIX systems, the second column has no meaning and only the first code (<code>16|mode</code>) is passed to the <code>open(2)</code> call as the access parameter. See include file <code>fcntl.h</code> for details. See also <a href="../../../../system-functions-a-z/system-functions-a-z/nlock/">Native File Lock on page 1</a> which is not platform dependent.</p>
 <p><code>R</code> is the tie number by which the file may subsequently be referred. If <code>Y[1]</code> is a negative integer, then <code>R</code> is a shy result; if <code>Y[1]</code> is 0, <code>R</code> is an explicit result.</p>
 <h4 id="automatic-tie-number-allocation">Automatic Tie Number Allocation</h4>
 <p>A tie number of 0 as argument to a create or tie operation, allocates, and returns as an explicit result, the first (closest to zero) available tie number. This allows you to simplify code. For example:</p>

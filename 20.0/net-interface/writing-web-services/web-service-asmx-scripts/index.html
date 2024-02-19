@@ -59691,14 +59691,14 @@
 
 
 <h1 id="web-service-asmx-scripts">Web Service (.asmx) Scripts</h1>
-<p>Web Services may be written in a variety of languages, including APLScript, the scripting version of Dyalog APL. See <a href="../APLScript/Chapter%20Heading.htm#Chapter_Heading">APLScript on page 1</a>.</p>
-<p>The first statement in the script file declares the language and the name of the service. For example, the following statement declares a Dyalog APL Web Service named GolfService.</p>
-<pre><code class="language-apl">&lt;%@ WebService Language=&quot;Dyalog&quot; Class=&quot;GolfService&quot; %&gt;
+<p>Web Services may be written in a variety of languages, including <code>APLScript</code>, the scripting version of Dyalog APL. See <a href="../APLScript/Chapter Heading.htm#Chapter_Heading">APLScript on page 1</a>.</p>
+<p>The first statement in the script file declares the language and the name of the service. For example, the following statement declares a Dyalog APL Web Service named <code>GolfService</code>.</p>
+<pre><code class="language-apl">`&lt;%@ WebService Language=&quot;Dyalog&quot; Class=&quot;GolfService&quot; %&gt;`
 </code></pre>
-<p>Note that Language="Dyalog" is specifically connected to the Dyalog APL script compiler through the application's web.config file or through the global ASP.NET system file Machine.config. Note that versions of Dyalog prior to 11.0 used Language="APL".</p>
+<p>Note that <code>Language="Dyalog"</code> is specifically connected to the Dyalog APL script compiler through the application's web.config file or through the global ASP.NET system file <code>Machine.config</code>. Note that versions of Dyalog prior to 11.0 used <code>Language="APL"</code>.</p>
 <p>The syntax of this first line is common to all Web Services, regardless of the language in which they are written.</p>
 <p>A Dyalog APL Web Service script starts with a <code>:Class</code> statement and ends with an <code>:EndClass</code> statement. These statements are directives used by the Dyalog APL script compiler and are specific to Dyalog APL.</p>
-<p>The <code>:Class</code> statement declares the name of the Class (which must be the same as the name declared in the WebService statement) and the <em>Base Class</em>from which it inherits, which is normally System.Web.Services.WebService.</p>
+<p>The <code>:Class</code> statement declares the name of the Class (which must be the same as the name declared in the <code>WebService</code> statement) and the <em>Base Class</em>from which it inherits, which is normally <code>System.Web.Services.WebService</code>.</p>
 <pre><code class="language-apl">   :Class GolfService: System.Web.Services.WebService
 </code></pre>
 <p>Following the <code>:Class</code> statement, there may appear any number of APL expressions and function bodies. Following these there must be a <code>:EndClass</code> statement. Internal sub-classes (nested classes) may also be defined within the main <code>:Class ... :EndClass</code> block.</p>

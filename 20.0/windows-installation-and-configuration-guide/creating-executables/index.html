@@ -59753,12 +59753,12 @@
 <li>You may bind your EXE as a console-mode application. A console application does not have a graphical user interface, but runs as a background task using files or TCP/IP to perform input and output.</li>
 <li>You may specify whether or not your .EXE will honour <em>Native Look and Feel</em>.</li>
 </ul>
-<p>You can package the workspace as a stand-alone executable or as a .EXE file that must be accompanied by the Dyalog APL Dynamic Link Library (dyalog150.dll or dyalog150rt.dll), in which case the DLL should be installed in the same directory (as the EXE) or in the Windows System directory.</p>
+<p>You can package the workspace as a stand-alone executable or as a .EXE file that must be accompanied by the Dyalog APL Dynamic Link Library (<code>dyalog150.dll</code> or <code>dyalog150rt.dll</code>), in which case the DLL should be installed in the same directory (as the EXE) or in the Windows System directory.</p>
 <p>Various Dyalog-supplied files are required  (such as the runtime DLL for creating a bound runtime executable); all such files are assumed to reside in the Dyalog directory, as specified by default in the registry.  The location of this directory is most easily reported by calling</p>
 <pre><code class="language-apl">      +2⎕nq '.' 'GetEnvironment' 'Dyalog'
 </code></pre>
 <p>The creation of both in-process and out-of-process COM servers produces a .TLB (Type Library) file. This file is created in the same directory as the workspace - so write access must be allowed to this directory. In the case of an in-process server, the content of this file is then embedded into the DLL, and the file is deleted. For an out-of-process server the file persists and may be needed at runtime. This requirement means that even if you do not <code>)Save</code> the workspace, you should set the workspace name  so that <code>)SAVE</code> would work - that is the directory where the workspace would be saved has write access.</p>
-<p>In addition, a temporary copy of your workspace is created, the location of which is determined by the Windows function GetTempPath().</p>
+<p>In addition, a temporary copy of your workspace is created, the location of which is determined by the Windows function <code>GetTempPath()</code>.</p>
 <p>All registration information is written to HKEY_LOCAL_MACHINE in the registry which will require enhanced permissions (aka "run as administrator") for the Dyalog interpreter. Later versions of the interpreter may provide an option to write to HKEY_CURRENT_USER.</p>
 <p>The <strong>Create bound file</strong> dialog box contains the following fields. These will only be present if applicable to the type of bound file you are making.</p>
 <table>
@@ -59799,13 +59799,13 @@
 </tr>
 </tbody>
 </table>
-<p>The following example illustrates how you can package the supplied workspace calc.dws as an executable. Before making the executable, it is essential to set up the latent expression to run the program using <code>⎕LX</code> as shown. Notice that in this case it is not necessary to execute <code>⎕OFF</code>; the calc.exe program will terminate normally when the user closes the calculator window and the system returns to Session input.</p>
-<p>In this example, the supplied workspace calc.dws is first saved to a directory to which the user has write access and, just to make certain, the Dyalog program is run as Administrator.</p>
+<p>The following example illustrates how you can package the supplied workspace <code>calc.dws</code> as an executable. Before making the executable, it is essential to set up the latent expression to run the program using <code>⎕LX</code> as shown. Notice that in this case it is not necessary to execute <code>⎕OFF</code>; the <code>calc.exe</code> program will terminate normally when the user closes the calculator window and the system returns to Session input.</p>
+<p>In this example, the supplied workspace <code>calc.dws</code> is first saved to a directory to which the user has write access and, just to make certain, the Dyalog program is run as Administrator.</p>
 <p><img alt="creating executables 1" src="../img/creating-executables-1.png" /></p>
 <p>Then, when you select <strong>Export…</strong> from the <strong>File</strong> menu, the following dialog box is displayed.</p>
 <p><img alt="creating executables 2" src="../img/creating-executables-2.png" /></p>
 <p>The <strong>Save as Type</strong> option has been set to <strong>Standalone Executable (includes interpreter exe)</strong> which means that a single .exe will be created containing the Dyalog APL executable and the CALC workspace.</p>
-<p>The <strong>Runtime application</strong> checkbox is checked, indicating that calc.exe is to incorporate the runtime version of Dyalog APL.</p>
+<p>The <strong>Runtime application</strong> checkbox is checked, indicating that <code>calc.exe</code> is to incorporate the runtime version of Dyalog APL.</p>
 <p>As this is a GUI application, the <strong>Console application</strong> checkbox is left unset.</p>
 <p>Note that if you enter the name of a file containing an icon (use the <strong>Browse</strong> button to browse for it) that icon will be bound with your executable and be used instead of the standard Dyalog APL icon.</p>
 <p>The <strong>Command Line</strong> box allows you to enter parameters and values that are to be passed to your executable when it is invoked.</p>

@@ -61239,7 +61239,7 @@
 <h1 class="heading"><span class="name">Replace</span><span class="command">R←{X}(A ⎕R B) Y</span></h1>
 
 <p><code>⎕R</code> (Replace) and <code>⎕S</code> (Search) are system operators which take search pattern(s) as their left arguments and transformation rule(s) as their right arguments; the derived function operates on text data to perform either a <strong>search</strong>, or a search and <strong>replace</strong> operation.</p>
-<p>The search patterns may include <em>Regular Expressions</em> so that complex searches may be performed. <code>⎕R</code> and <code>⎕S</code> utilise the open-source regular-expression search engine PCRE, which is built into Dyalog APL and distributed according to the <a href="../Appendices/PCRE%20License.htm#PCRE_Licence">PCRE licence</a> which is published separately.</p>
+<p>The search patterns may include <em>Regular Expressions</em> so that complex searches may be performed. <code>⎕R</code> and <code>⎕S</code> utilise the open-source regular-expression search engine PCRE, which is built into Dyalog APL and distributed according to the <a href="../Appendices/PCRE License.htm#PCRE_Licence">PCRE licence</a> which is published separately.</p>
 <p>The transformation rules are applied to the text which matches the search patterns; they may be given as a simple character vector, numeric codes, or  a function.</p>
 <p>The two system operators, <code>⎕R</code> for replace and <code>⎕S</code> for search, are syntactically identical. With <code>⎕R</code>, the input document is examined; text which matches the search pattern is amended and the remainder is left unchanged. With <code>⎕S</code>, each match in the input document results in an item in the result whose type is dependent on the transformation specified. The operators use the Variant operator to set options.</p>
 <p><code>A</code> specifies one or more search patterns, being given as a single character, a character vector, a vector of character vectors or a vector of both characters and character vectors. See search pattern following.</p>
@@ -62005,7 +62005,7 @@ blue hat red coat
 <table>
 <thead>
 <tr>
-<th>01/03/1980,Widgets,DEM 10.20 02/04/1980,Bolts,DEM 61.75 17/06/1980,Nuts; special rate DEM 17.00,DEM 17.00 18/07/1980,Hammer,DEM 1.25</th>
+<th><code>01/03/1980,Widgets,DEM 10.20</code> <code>02/04/1980,Bolts,DEM 61.75</code> <code>17/06/1980,Nuts; special rate DEM 17.00,DEM 17.00</code> <code>18/07/1980,Hammer,DEM 1.25</code></th>
 </tr>
 </thead>
 <tbody>
@@ -62018,7 +62018,7 @@ blue hat red coat
 <table>
 <thead>
 <tr>
-<th>1980-03-01,Widgets,€ 5.21 1980-04-02,Bolts,€ 31.57 1980-06-17,Nuts; special rate DEM 17.00,€ 8.69 1980-07-18,Hammer,€ 0.63</th>
+<th><code>1980-03-01,Widgets,€ 5.21</code> <code>1980-04-02,Bolts,€ 31.57</code> <code>1980-06-17,Nuts; special rate DEM 17.00,€ 8.69</code> <code>1980-07-18,Hammer,€ 0.63</code></th>
 </tr>
 </thead>
 <tbody>

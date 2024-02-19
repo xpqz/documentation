@@ -59780,7 +59780,7 @@
   R←+/args
 ∇
 </code></pre>
-<p>The <code>Add1</code> function defined above is exported as a method named <code>Add</code>, that takes exactly (and only) two parameters of type Int32 and returns a result of type Int32. Armed with this definition, which is recorded in the metadata associated with the class, the .NET Framework guarantees that the method will only be called in this way.</p>
+<p>The <code>Add1</code> function defined above is exported as a method named <code>Add</code>, that takes exactly (and only) two parameters of type <code>Int32</code> and returns a result of type <code>Int32</code>. Armed with this definition, which is recorded in the metadata associated with the class, the .NET Framework guarantees that the method will only be called in this way.</p>
 <h3 id="add2">Add2</h3>
 <pre><code class="language-apl">∇ R←Add2 arg
  :Access WebMethod
@@ -59788,7 +59788,7 @@
   R←+/arg
 ∇
 </code></pre>
-<p>The <code>Add2</code> function defined above is exported as a method that takes an array of Double and returns a result of type Double. Depending on the type of the arguments provided when the method is invoked, .NET and Dyalog APL will call <code>Add1</code> or<code>Add2</code> - or generate an exception if the argument does not match any of the signatures.</p>
+<p>The <code>Add2</code> function defined above is exported as a method that takes an array of <code>Double</code> and returns a result of type <code>Double</code>. Depending on the type of the arguments provided when the method is invoked, .NET and Dyalog APL will call <code>Add1</code> or<code>Add2</code> - or generate an exception if the argument does not match any of the signatures.</p>
 
 
 

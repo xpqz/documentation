@@ -59937,8 +59937,8 @@
 </tr>
 </tbody>
 </table>
-<p>or by character vectors containing the names of <a href="../bitmap/">Bitmap</a> or <a href="../icon/">Icon</a> objects.</p>
-<p>The height of each symbol is specified by the value of the <a href="../size/">Size</a> property. However this applies only to <a href="../style/">Style</a>s 1-6 and is ignored if <a href="../style/">Style</a> is 0 or the name of a <a href="../bitmap/">Bitmap</a>. The colour of each symbol is specified by the <a href="../fcol/">FCol</a> property. The default is black.</p>
+<p>or by character vectors containing the names of <a href="Bitmap.htm">Bitmap</a> or <a href="../icon/">Icon</a> objects.</p>
+<p>The height of each symbol is specified by the value of the <a href="../size/">Size</a> property. However this applies only to <a href="../style/">Style</a>s 1-6 and is ignored if <a href="../style/">Style</a> is 0 or the name of a <a href="Bitmap.htm">Bitmap</a>. The colour of each symbol is specified by the <a href="../fcol/">FCol</a> property. The default is black.</p>
 <p>The value of <a href="../dragable/">Dragable</a> determines whether or not the object can be dragged. The value of <a href="../autoconf/">AutoConf</a> determines whether or not the Marker object is resized when its parent is resized.</p>
 <p>The structure of the property values is best considered separately for single and multiple sets of polymarkers.</p>
 <h4 id="single-set-of-polymarkers">Single Set of Polymarkers</h4>
@@ -59946,7 +59946,7 @@
 <p><a href="../style/">Style</a> and <a href="../size/">Size</a> are both simple scalar numbers.</p>
 <p><a href="../fcol/">FCol</a> is either a single number representing a standard colour, or a 3-element vector which specifies the marker colour explicitly in terms of RGB values.</p>
 <h4 id="examples">Examples:</h4>
-<p>First make a <a href="../form/">Form</a>:</p>
+<p>First make a <a href="Form.htm">Form</a>:</p>
 <pre><code class="language-apl">      'F' ⎕WC 'Form'
 </code></pre>
 <p>Draw a point at (y=20, x=10):</p>
@@ -59971,7 +59971,7 @@
 <p><a href="../style/">Style</a> and <a href="../size/">Size</a> may be simple scalars specifying a single type and/or size of symbol to be used for all the sets of polymarkers, or vectors specifying different symbols and/or sizes for each set.</p>
 <p><a href="../fcol/">FCol</a> may be a single number or a single (enclosed) 3-element vector applying to all the sets of polymarkers. Alternatively, <a href="../fcol/">FCol</a> may be a vector whose elements refer to each of the sets of polymarkers in turn. If so, the elements may be single numbers or nested RGB triplets, or a combination of the two.</p>
 <h4 id="examples_1">Examples:</h4>
-<p>First make a <a href="../form/">Form</a>:</p>
+<p>First make a <a href="Form.htm">Form</a>:</p>
 <pre><code class="language-apl">      'F' ⎕WC 'Form'
 </code></pre>
 <p>Draw a "<code>⎕</code>" at (10,20) and a "<code>⋄</code>" at (20,20):</p>

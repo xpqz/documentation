@@ -59748,7 +59748,7 @@
 <p>The axis specification is optional. If present, <code>K</code> must identify an axis of <code>Y</code>. If absent, the last axis of <code>Y</code> is implied. The form <code>R←Xf⌿Y</code> implies the first axis of <code>Y</code>.</p>
 <p><code>R</code> is an array formed by applying function <code>f</code> between items of sub-vectors of length <code>X</code> taken from vectors along the <code>K</code>th (or implied) axis of <code>Y</code>.</p>
 <p><code>X</code> can be thought of as the width of a "window" which moves along vectors drawn from the <code>K</code>th axis of <code>Y</code>.</p>
-<p>If <code>X</code> is zero, the result is a <code>(⍴Y)+(-⍴⍴Y)↑1</code> array of identity elements for the function <code>f</code>. See <a href="../reduce/">"Identity Elements" on page 1</a>.</p>
+<p>If <code>X</code> is zero, the result is a <code>(⍴Y)+(-⍴⍴Y)↑1</code> array of identity elements for the function <code>f</code>. See <a href="Reduce.htm#IdentityElements">"Identity Elements" on page 1</a>.</p>
 <p>If <code>X</code> is negative, each sub-vector is reversed before being reduced.</p>
 <h4 id="examples">Examples</h4>
 <pre><code class="language-apl">      ⍳4

@@ -59744,7 +59744,7 @@
 
 <h1 class="heading"><span class="name">Identify .NET Type</span><span class="command">R←2017⌶Y</span></h1>
 
-<p>Returns the .NET Type of a named .NET class that is loaded in the current AppDomain. Note that <code>System.Type.GetType</code> requires the fully qualified name, i.e. prefixed by the assembly name, whereas (<code>2017⌶</code>) does not.</p>
+<p>Returns the .NET Type of a named .NET class that is loaded in the current AppDomain. Note that System.Type.GetType requires the fully qualified name, i.e. prefixed by the assembly name, whereas (<code>2017⌶</code>) does not.</p>
 <p><code>Y</code> is a character string containing the name of a .NET object. Unless the fully qualified name is given, the namespaces in the current AppDomain are searched in the order they are specified by  <code>⎕USING</code> or <code>:Using</code>.</p>
 <p>If the object is identified in the current AppDomain, the result <code>R</code> is its Type. If not, the function generates <code>DOMAIN ERROR</code>.</p>
 <h4 id="example">Example</h4>

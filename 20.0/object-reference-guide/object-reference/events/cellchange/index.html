@@ -59685,7 +59685,7 @@
 <p>If enabled, this event is reported when the user changes the contents of a cell in a <a href="../../a-z/grid/">Grid</a> object and then attempts to move to another cell or to another control outside the <a href="../../a-z/grid/">Grid</a>.</p>
 <p>The purpose of this event is to give the application the opportunity to perform additional validation before the update occurs (and to prevent it if necessary) or to update other cells in the <a href="../../a-z/grid/">Grid</a> as a result of the change.</p>
 <p>The default action for the CellChange event is to update the appropriate element of the <a href="../../a-z/values/">Values</a> property with the new data. This action can be disabled by returning 0 from the attached callback function. Notice however, that the user is not prevented from moving away from the cell. If you are using this event to perform additional validation and you require the user to correct the data before moving away, you may force the user back to the cell in question using the  <a href="../../a-z/cellmove/">CellMove</a> method.</p>
-<p>The event message reported as the result of <a href="../../Language/System%20Functions/dq.htm"><code>⎕DQ</code></a>, or supplied as the right argument to your callback function, is an 8-element vector as follows:</p>
+<p>The event message reported as the result of <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a>, or supplied as the right argument to your callback function, is an 8-element vector as follows:</p>
 <table>
 <thead>
 <tr>

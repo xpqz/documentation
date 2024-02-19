@@ -59887,11 +59887,11 @@
 <p>Dyalog APL provides a mechanism for users to register and manage an application workspace as a Windows service. The application workspace must implement an interface to handle messages from the Windows Service Control Manager (SCM) in addition to the code required to drive the application.</p>
 <p>Windows Services run as background tasks controlled by the SCM. When the computer is started, Windows Services are run before a user logs on to the system and do not normally interact with the desktop. A Dyalog service is run under the auspices of <strong>Local System</strong>.</p>
 <h2 id="installing-and-uninstalling-a-dyalog-service">Installing and Uninstalling a Dyalog Service</h2>
-<p>To install a Dyalog service it is necessary to run dyalog.exe from the command line with administrator privileges, specifying the application workspace and the following parameters, where <strong>service_name</strong> is a name of your choice.</p>
+<p>To install a Dyalog service it is necessary to run <code>dyalog.exe</code> from the command line with administrator privileges, specifying the application workspace and the following parameters, where <strong>service_name</strong> is a name of your choice.</p>
 <ul>
 <li>APL_ServiceInstall=service_name</li>
 </ul>
-<p>The command must specify the full pathname to dyalog.exe and to the application workspace. A slightly modified version of this  command line will be stored by the SCM and re-executed whenever the service is started.</p>
+<p>The command must specify the full pathname to <code>dyalog.exe</code> and to the application workspace. A slightly modified version of this  command line will be stored by the SCM and re-executed whenever the service is started.</p>
 <p>Dyalog installs the service with a <strong>Startup Type</strong> of <strong>Automatic</strong>. This means that it will be started automatically whenever the computer is restarted. However, it is necessary to start it manually (using the SCM) the first time after it is installed.</p>
 <p>The same command must be used to uninstall the service, but with:</p>
 <ul>
@@ -59920,7 +59920,7 @@
 <p>The application workspace must be designed to handle and respond (in a timely manner) to notification messages from the SCM as well as to provide the application logic. SCM notifications  include instructions to start, stop, pause and resume.</p>
 <p>SCM notification messages generate a ServiceNotification event on the Root object. To handle these messages, it is necessary to attach a callback function to this event, and to invoke the Wait method or <code>⎕DQ'.'</code> to process them. This must be executed in thread 0.</p>
 <p>If the application is designed to be driven from events such as Timer or TCPSocket or user-defined events, it too may be implemented via callbacks in thread 0 under the control of the same Wait method or <code>⎕DQ'.'</code>. If the application uses Conga it is recommended that it runs in a separate thread.</p>
-<p>The workspace ws\aplservice.dws is included in the APL release. Its start-up function is as follows:</p>
+<p>The workspace <code>ws\aplservice.dws</code> is included in the APL release. Its start-up function is as follows:</p>
 <pre><code class="language-apl">     ⎕lX←'Start'
 
      ∇ Start;ServiceState;ServiceControl
@@ -59951,7 +59951,7 @@
 </code></pre>
 <h3 id="handling-servicenotification-events">Handling ServiceNotification Events</h3>
 <p>To give the workspace (which may be busy) time to respond to SCM notifications, Dyalog responds immediately to confirm that the service has entered the appropriate pending state. For example, if the notification is SERVICE_CONTROL_STOP, Dyalog informs the SCM that the service state is SERVICE_STOP_PENDING. It is then up to the callback function to confirm that the state has reached SERVICE_STOPPED.</p>
-<p>The following sample function is provided in aplservice.dws.</p>
+<p>The following sample function is provided in <code>aplservice.dws</code>.</p>
 <h3 id="servicehandler-callback-function">ServiceHandler Callback Function</h3>
 <pre><code class="language-apl">     ∇ r←ServiceHandler(obj event action state);sink
 [1]   ⍝ Callback to handle notifications from the SCM

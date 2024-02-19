@@ -59769,19 +59769,19 @@
 <h1 id="syncfusion-circular-gauge-example">Syncfusion Circular Gauge Example</h1>
 <p><img alt="syncfusion gauge 1" src="../img/syncfusion-gauge-1.png" /></p>
 <h2 id="the-xaml">The XAML</h2>
-<p>Like most Syncfusion controls, the <code>CircularGauge</code> is made up of  a complex structure of objects, and the XAML (see variable <code>XAML_SF</code>) is too extensive to describe in detail herein. It was created from the sample XAML from the Syncfusion documentation for this control entitled <strong>Essential Gauge for WPF</strong>, which may be downloaded from <a href="http://help.syncfusion.com/wpf/gauge">http://help.syncfusion.com/wpf/gauge</a>.</p>
+<p>Like most Syncfusion controls, the CircularGauge is made up of  a complex structure of objects, and the XAML (see variable <code>XAML_SF</code>) is too extensive to describe in detail herein. It was created from the sample XAML from the Syncfusion documentation for this control entitled <strong>Essential Gauge for WPF</strong>, which may be downloaded from <a href="http://help.syncfusion.com/wpf/gauge">http://help.syncfusion.com/wpf/gauge</a>.</p>
 <p>The key statements in the XAML are as follows:</p>
-<pre><code class="language-apl">xmlns:syncfusion=&quot;clr-namespace:Syncfusion.Windows.Gauge;assembly=Syncfusion.Gauge.WPF&quot;
+<pre><code class="language-apl">`xmlns:syncfusion=&quot;clr-namespace:Syncfusion.Windows.Gauge;assembly=Syncfusion.Gauge.WPF&quot;`
 </code></pre>
-<p>The above statement defines the prefix syncfusion to mean the specified Syncfusion namespace and assembly. When the prefix syncfusion is subsequently used in front of a control in the XAML, the system knows where to find it.</p>
-<p>The next two statements define <code>CircularPointer</code> controls (the needles on the gauges); one for the Fahrenheit gauge (named <strong>f_pointer</strong>) and one for the Centigrade gauge (named <strong>c_pointer</strong>).</p>
-<pre><code class="language-apl"> &lt;syncfusion:CircularPointer Name=&quot;f_pointer&quot; BorderWidth=&quot;0.3&quot;
+<p>The above statement defines the prefix <code>syncfusion</code> to mean the specified Syncfusion namespace and assembly. When the prefix <code>syncfusion</code> is subsequently used in front of a control in the XAML, the system knows where to find it.</p>
+<p>The next two statements define CircularPointer controls (the needles on the gauges); one for the Fahrenheit gauge (named <strong>f_pointer</strong>) and one for the Centigrade gauge (named <strong>c_pointer</strong>).</p>
+<pre><code class="language-apl">`&lt;syncfusion:CircularPointer Name=&quot;f_pointer&quot; BorderWidth=&quot;0.3&quot;
   PointerLength=&quot;100&quot; PointerPlacement=&quot;Inside&quot; PointerWidth=&quot;20&quot;
-  Value=&quot;32&quot;/&gt;
+  Value=&quot;32&quot;/&gt;`
 </code></pre>
-<pre><code class="language-apl"> &lt;syncfusion:CircularPointer Name=&quot;c_pointer&quot; BorderWidth=&quot;0.3&quot;
+<pre><code class="language-apl">`&lt;syncfusion:CircularPointer Name=&quot;c_pointer&quot; BorderWidth=&quot;0.3&quot;
   PointerLength=&quot;100&quot; PointerPlacement=&quot;Inside&quot; PointerWidth=&quot;20&quot;
-  Value=&quot;0&quot;/
+  Value=&quot;0&quot;/`
 </code></pre>
 <h2 id="the-apl-code">The APL Code</h2>
 <p>The following functions were used to produce the example illustrated above. The main function is <code>SF_TC_XAML</code>.</p>
@@ -59799,16 +59799,16 @@
      ∇
 
 </code></pre>
-<p>After creating the Window from the text in <code>XAML_SF</code>, the function <code>SF_TC_XAML</code> obtains refs to the two <code>CircularPointer</code> controls named <strong>f_pointer</strong> (in the Fahrenheit gauge) and <strong>c_pointer</strong> (in the Centigrade gauge). It then attaches the <code>MouseEnter</code> callback to each of these objects.</p>
+<p>After creating the Window from the text in <code>XAML_SF</code>, the function <code>SF_TC_XAML</code> obtains refs to the two CircularPointer controls named <strong>f_pointer</strong> (in the Fahrenheit gauge) and <strong>c_pointer</strong> (in the Centigrade gauge). It then attaches the <code>MouseEnter</code> callback to each of these objects.</p>
 <pre><code class="language-apl">     ∇ MouseEnter(this ev);ptrs
 [1]    ptrs←f_pointer c_pointer
 [2]    ptrs.onValueChanged←(ptrs⍳this)⌽0 'TempChanged'
      ∇
 
 </code></pre>
-<p>In this example, the user grabs one of the gauge needles and moves it around the face of the gauge. When the user moves the mouse into one of these needles, the <code>MouseEnter</code> callback fires. The function <code>MouseEnter</code> receives the <code>CircularPointer</code> object that generated the event <code>this</code>  as the first item in its argument.</p>
-<p>The code simply attaches the callback function <code>TempChanged</code> to <code>this</code>, and disables any callback on the other <code>CircularPointer</code> object.</p>
-<p>Note that if both <code>CircularPointer</code> objects had callbacks on <code>TempChanged</code> at the same time, the system would enter a callback loop.</p>
+<p>In this example, the user grabs one of the gauge needles and moves it around the face of the gauge. When the user moves the mouse into one of these needles, the <code>MouseEnter</code> callback fires. The function <code>MouseEnter</code> receives the CircularPointer object that generated the event <code>this</code>  as the first item in its argument.</p>
+<p>The code simply attaches the callback function <code>TempChanged</code> to <code>this</code>, and disables any callback on the other CircularPointer object.</p>
+<p>Note that if both CircularPointer objects had callbacks on <code>TempChanged</code> at the same time, the system would enter a callback loop.</p>
 <pre><code class="language-apl">     ∇ TempChanged(obj ev)
 [1]    :Select obj
 [2]    :Case f_pointer
@@ -59837,7 +59837,7 @@
 [5]    ⎕USING,←⊂'Syncfusion.Windows.Gauge,
                  Syncfusion/4.5/Syncfusion.Gauge.WPF.dll'
 </code></pre>
-<p>This statement tells APL to search the .NET namespace named <strong>Syncfusion.Windows.Gauge</strong>, which is located in the assembly file whose path (relative to the Dyalog installation directory) is  Syncfusion/4.5/Syncfusion.Gauge.WPF.dll.</p>
+<p>This statement tells APL to search the .NET namespace named <strong>Syncfusion.Windows.Gauge</strong>, which is located in the assembly file whose path (relative to the Dyalog installation directory) is  <code>Syncfusion/4.5/Syncfusion.Gauge.WPF.dll</code>.</p>
 
 
 

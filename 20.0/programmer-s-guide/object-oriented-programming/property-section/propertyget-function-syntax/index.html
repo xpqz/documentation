@@ -59747,7 +59747,7 @@
 <p>The name of the PropertyGet function must be <code>Get</code>, but is case-independent. For example, <code>get</code>, <code>Get</code>, <code>gEt</code> and <code>GET</code> are all valid names for the PropertyGet function.</p>
 <p>The PropertyGet function must be result returning. For a Simple Property, it may be monadic or niladic. For a Numbered or Keyed Property it must be monadic.</p>
 <p>The result <code>R</code> may be any array. However, for a Keyed Property, <code>R</code> must conform to the rank and shape specified by <code>ipa.Indexers</code> or be scalar.</p>
-<p>If monadic, <code>ipa</code> is an instance of the internal class <a href="../propertyarguments-class/">PropertyArguments</a>.</p>
+<p>If monadic, <code>ipa</code> is an instance of the internal class <a href="PropertyArguments Class.htm">PropertyArguments</a>.</p>
 <p>In all cases, <code>ipa.Name</code> contains the name of the Property being referenced and <code>NewValue</code> is undefined (<code>VALUE ERROR</code>).</p>
 <p>If the Property is <em>Simple</em>, <code>ipa.Indexers</code> is undefined (<code>VALUE ERROR</code>).</p>
 <p>If the Property is <em>Numbered</em>, <code>ipa.Indexers</code> is an integer vector of the same length as the rank of the property (as implied by the result of the <code>Shape</code> function) that identifies a single element of the Property whose value is to be obtained. In this case, <code>R</code> must be scalar.</p>

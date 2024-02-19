@@ -59714,10 +59714,10 @@
 </tr>
 </tbody>
 </table>
-<p>If the Microsoft .NET Framework is installed, the System namespace inmscorlib.dll is automatically loaded when Dyalog APL starts. To access this namespace, it is not necessary to specify the name of the Assembly.</p>
+<p>If the Microsoft .NET Framework is installed, the System namespace in<code>mscorlib.dll</code> is automatically loaded when Dyalog APL starts. To access this namespace, it is not necessary to specify the name of the Assembly.</p>
 <p>When the class is fixed, <code>⎕USING</code> is inherited from the surrounding space. Each <code>:Using</code> statement appends an element to <code>⎕USING</code>, with the exception of <code>:Using</code> with no argument:</p>
 <p>If you omit <code>&lt;Namespace&gt;</code>, this is equivalent to clearing <code>⎕USING</code>, which means that no .NET namespaces will be searched (unless you follow this statement with additional <code>:Using</code> statements, each of which will append to <code>⎕USING</code>).</p>
-<p>To set <code>⎕USING</code>, to a single empty character vector, which only allows references to fully qualified names of classes in mscorlib.dll, you must write:</p>
+<p>To set <code>⎕USING</code>, to a single empty character vector, which only allows references to fully qualified names of classes in <code>mscorlib.dll</code>, you must write:</p>
 <p><code>:Using ,</code> (note the presence of the comma)</p>
 <p>or</p>
 <p><code>:Using ,mscorlib.dll</code></p>

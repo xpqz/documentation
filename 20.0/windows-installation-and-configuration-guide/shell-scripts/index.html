@@ -59911,14 +59911,14 @@
 <p>A script is executed by typing its name. User input is entered from the same terminal or shell and output is displayed on the terminal or shell.</p>
 <h3 id="unix">UNIX</h3>
 <p>On UNIX (and related) systems a Dyalog APL <strong>shell script</strong> is a text file with the following as the first line:</p>
-<pre><code class="language-apl">#!/usr/local/bin/dyalogscript
+<pre><code class="language-apl">`#!/usr/local/bin/dyalogscript`
 </code></pre>
 <p>The script file must be executable. There are three execute bits relating to the user, the group and everyone else.</p>
 <h3 id="windows">Windows</h3>
-<p>On Windows systems a Dyalog APL shell script is a text file with a .apls file extension. An initial line beginning with #! is only required to include configuration parameters (see below), but if included it must include a file name even though that will be ignored. For portability it is recommended that you include the #! line.</p>
+<p>On Windows systems a Dyalog APL shell script is a text file with a <code>.apls</code> file extension. An initial line beginning with <code>#!</code> is only required to include configuration parameters (see below), but if included it must include a file name even though that will be ignored. For portability it is recommended that you include the <code>#!</code> line.</p>
 <h3 id="note">Note</h3>
 <p>Shell scripts are Unicode only and are not supported by the Classic Edition.</p>
-<p>Any content that follows  the #! line (if present) is used as input into a Dyalog session (as if the <strong>Extended Multiline Input</strong> feature has been enabled).</p>
+<p>Any content that follows  the <code>#!</code> line (if present) is used as input into a Dyalog session (as if the <strong>Extended Multiline Input</strong> feature has been enabled).</p>
 <h3 id="input-and-output">Input and Output</h3>
 <p><code>⎕</code> and <code>⍞</code> input are taken from characters typed by the user into the terminal or shell (Standard input or <strong>stdin</strong> for short).  Anything assigned to <code>⎕</code> and <code>⍞</code> will be displayed in the terminal window using streams Standard output (<strong>stdout</strong>) and Standard error (<strong>stderr</strong>) respectively. Note that default output, that is, output to the session without assignment to <code>⎕</code> or <code>⍞</code> is NOT displayed. Redirections of <strong>stdin</strong>, <strong>stdout</strong>, and <strong>stderr</strong> are supported.</p>
 <h3 id="examples">Examples</h3>
@@ -59955,23 +59955,23 @@ plus←{
 ⎕←'this will ALSO be seen'
 </code></pre>
 <h3 id="configuration-parameters">Configuration Parameters:</h3>
-<p>Configuration parameters may be specified in a Configuration file located in the same directory as the script, or may be specified on the first line of the script.  The name of the configuration file is derived from the name of the script file by replacing its file extension (if any) by the extension .dcfg. Configuration parameters specified in the Windows Registry or by environment variables are not honoured in Dyalog Shell Scripts.</p>
+<p>Configuration parameters may be specified in a Configuration file located in the same directory as the script, or may be specified on the first line of the script.  The name of the configuration file is derived from the name of the script file by replacing its file extension (if any) by the extension <code>.dcfg</code>. Configuration parameters specified in the Windows Registry or by environment variables are not honoured in Dyalog Shell Scripts.</p>
 <h3 id="example-first-line-of-script">Example (first line of script)</h3>
 <pre><code class="language-apl">#!/usr/local/bin/dyalogscript MAXWS=3GB
 ⎕←⎕WA
 ⎕←2 ⎕nq '#' 'GetEnvironment' ('MAXWS' 'WSPATH')
 </code></pre>
 <h3 id="example-configuration-file">Example (configuration file)</h3>
-<pre><code class="language-apl">{ settings: {
+<pre><code class="language-apl">`{ settings: {
         /* Maximum workspace size */
         MAXWS: &quot;256M&quot;,
         /* wspath */
         WSPATH: [&quot;c:/tmp&quot;,&quot;f:/devt/tmp&quot;]
-}}
+}}`
 </code></pre>
 <p>Note that the interpreter reads both of these locations, the command line in the script file overrides any setting in the .dcfg file.</p>
 <h3 id="debugging">Debugging:</h3>
-<p>It is not currently possible to use RIDE to debug APL shell scripts. However there is an I-beam function, which can be used to provide some simple debugging/diagnostic information. See <a href="../../Language/I%20Beam%20Functions/Set%20Shell%20Script%20Debug%20Options.htm#Set_Shell_Script_Debug_Options">Set Shell Script Debug Options on page 1</a>.</p>
+<p>It is not currently possible to use RIDE to debug APL shell scripts. However there is an I-beam function, which can be used to provide some simple debugging/diagnostic information.</p>
 
 
 

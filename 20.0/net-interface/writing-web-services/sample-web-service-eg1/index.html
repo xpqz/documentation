@@ -59747,8 +59747,8 @@
 
 
 <h1 id="sample-web-service-eg1">Sample Web Service: EG1</h1>
-<p>The first APLExample sample is supplied in samples\asp.net\webservices\eg1.asmx which is mapped via an IIS Virtual Directory to the URL:</p>
-<pre><code class="language-apl"> http://localhost/dyalog.net.15.0.unicode.32/webservices/eg1.asmx
+<p>The first APLExample sample is supplied in <code>samples\asp.net\webservices\eg1.asmx</code> which is mapped via an IIS Virtual Directory to the URL:</p>
+<pre><code class="language-apl">`http://localhost/dyalog.net.15.0.unicode.32/webservices/eg1.asmx`
 </code></pre>
 <pre><code class="language-apl">
 &lt;%@ WebService Language=&quot;Dyalog&quot; Class=&quot;APLExample&quot; %&gt;
@@ -59764,21 +59764,21 @@
 
 :EndClass
 </code></pre>
-<p>The <code>Add</code> function defined above is exported as a method that takes exactly (and only) two parameters of type Int32 and returns a result of type Int32.</p>
+<p>The <code>Add</code> function defined above is exported as a method that takes exactly (and only) two parameters of type <code>Int32</code> and returns a result of type <code>Int32</code>.</p>
 <p>Line [3] could in fact be coded as:</p>
 <pre><code class="language-apl">   R←args[1]+args[2]
 </code></pre>
 <p>because .NET guarantees that a client can only call the method by providing two 32-bit integers as parameters.</p>
 <h3 id="testing-aplexample-from-a-browser">Testing APLExample from a Browser</h3>
 <p>If you connect to a URL that represents a Web Service, the browser displays a page that provides information about the service and the methods that it contains. In certain cases, but by no means all, the page also contains form fields that let you invoke a method from the browser.</p>
-<p>The screen shot below shows the page displayed by Google Chrome when it is pointed at eg1.asmx. It shows that the Web Service is called APLExample, and that it exports a single method called Add. Furthermore, the Add method takes two parameters of type int, named <em>arg1</em> and <em>arg2</em>.</p>
+<p>The screen shot below shows the page displayed by Google Chrome when it is pointed at <code>eg1.asmx</code>. It shows that the Web Service is called <code>APLExample</code>, and that it exports a single method called <code>Add</code>. Furthermore, the <code>Add</code> method takes two parameters of type <code>int</code>, named <em>arg1</em> and <em>arg2</em>.</p>
 <p><img alt="eg1_1" src="../../img/eg1-1.png" /></p>
 <p>The following screen shot shows the result of entering the values 23 and 19 into the form fields and then pressing the Invoke button.</p>
-<p>In this case, the method returns an int value 42.</p>
+<p>In this case, the method returns an <code>int</code> value 42.</p>
 <p><img alt="eg1_2" src="../../img/eg1-2.png" /></p>
 <p>It is important to understand what is happening here.</p>
 <p>Accessed in this way from a browser, a Web Service appears to be behaving like a Web Server; this is not the case.</p>
-<p>It is simply that the browser detects that the target URL is a Web Service, and invokes an ASP+ page named DefaultSdlHelpGenerator.aspx that inspects the compiled class and returns an HTML view of the Web service.</p>
+<p>It is simply that the browser detects that the target URL is a Web Service, and invokes an ASP+ page named <code>DefaultSdlHelpGenerator.aspx</code> that inspects the compiled class and returns an HTML view of the Web service.</p>
 
 
 

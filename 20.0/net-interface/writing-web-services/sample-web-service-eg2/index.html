@@ -59747,13 +59747,13 @@
 
 
 <h1 id="sample-web-service-eg2">Sample Web Service: EG2</h1>
-<p>In all the previous examples, we have relied upon ASP.NET to compile the APLScript into a .NET class prior to running it. This sample illustrates how you can make a .NET class yourself.</p>
-<p>For this example, the Web Service script, which is supplied in the file samples\asp.net\webservices\eg2.asmx (mapped via an IIS Virtual Directory to the URL http://localhost/dyalog.net/webservices/eg2.asmx)is reduced to a single statement that merely invokes the pre-defined class called APLServices.Example.</p>
-<p>The entire file, viewed in Notepad, is shown below.</p>
+<p>In all the previous examples, we have relied upon ASP.NET to compile the <code>APLScript</code> into a .NET class prior to running it. This sample illustrates how you can make a .NET class yourself.</p>
+<p>For this example, the Web Service script, which is supplied in the file s<code>amples\asp.net\webservices\eg2.asmx</code> (mapped via an IIS Virtual Directory to the URL <code>http://localhost/dyalog.net/webservices/eg2.asmx)</code>is reduced to a single statement that merely invokes the pre-defined class called <code>APLServices.Example</code>.</p>
+<p>The entire file, viewed in <code>Notepad</code>, is shown below.</p>
 <p><img alt="eg2_1" src="../../img/eg2-1.png" /></p>
-<p>Given this instruction, ASP.NET will locate the APLServices.Example Web Service by searching the bin sub-directory for assemblies. Therefore, to make this work, we have only to create a .NET assembly in samples\asp.net\aplservices\bin. The assembly should contain a .NET Namespace named APLServices, which in turn defines a class named Example.</p>
-<p>The procedure for creating .NET classes and assemblies in Dyalog APL was discussed in <a href="../Writing%20.Net%20Classes/Chapter%20Heading.htm#Chapter_Heading">Writing .NET Classes in Dyalog APL on page 1</a>. Making a WebService class is done in exactly the same way.</p>
-<p>Note that the sub-directory samples\asp.net\aplservices\bin already contains copies of the dependent Dyalog DLLs that are required to execute the code.</p>
+<p>Given this instruction, ASP.NET will locate the <code>APLServices.Example</code> Web Service by searching the <code>bin</code> sub-directory for assemblies. Therefore, to make this work, we have only to create a .NET assembly in <code>samples\asp.net\aplservices\bin</code>. The assembly should contain a .NET Namespace named <code>APLServices</code>, which in turn defines a class named <code>Example</code>.</p>
+<p>The procedure for creating .NET classes and assemblies in Dyalog APL was discussed in <a href="../Writing .Net Classes/Chapter Heading.htm#Chapter_Heading">Writing .NET Classes in Dyalog APL on page 1</a>. Making a WebService class is done in exactly the same way.</p>
+<p>Note that the sub-directory <code>samples\asp.net\aplservices\bin</code> already contains copies of the dependent Dyalog DLLs that are required to execute the code.</p>
 <p><strong>Start Dyalog as Administrator.</strong> This is essential both to allow you to create an assembly.</p>
 <p>Starting with a <code>CLEAR WS</code>,  create a namespace called <code>APLServices</code>. This will act as the container corresponding to a .NET Namespace in the assembly.</p>
 <pre><code class="language-apl">      )NS APLServices
@@ -59775,20 +59775,20 @@
 :EndClass                             
 </code></pre>
 <p>Within <code>APLServices.Example</code>, we have a function called <code>Add</code> that will represent the single method to be exported by this Web Service.</p>
-<p>Fix the class, then click<strong>File/Save As ...</strong>in the Session menubar and save the workspace in samples\asp.net\aplwebservices\bin.</p>
+<p>Fix the class, then click<strong>File/Save As ...</strong>in the Session menubar and save the workspace in <code>samples\asp.net\aplwebservices\bin</code>.</p>
 <pre><code class="language-apl">C:\Program Files\Dyalog\Dyalog APL 15.0 Unicode\Samples\asp.net\webservices\bin\eg2.dws saved Mon Sep 26 15:31:56 2016
 
 </code></pre>
-<p>Select the <strong>Export…</strong> item from the Session <strong>File</strong> menu, and save the assembly as eg2.dll in the same directory, i.e. samples\asp.net\webservices\bin.</p>
+<p>Select the <strong>Export…</strong> item from the Session <strong>File</strong> menu, and save the assembly as <code>eg2.dll</code> in the same directory, i.e. <code>samples\asp.net\webservices\bin</code>.</p>
 <p><img alt="eg2_2" src="../../img/eg2-2.png" /></p>
 <p>When you click <strong>Save</strong>, the Status Window displays the following information to confirm that the assembly has been created correctly.</p>
 <p><img alt="eg2_3" src="../../img/eg2-3.png" /></p>
 <h3 id="testing-eg2-from-a-browser">Testing EG2 from a Browser</h3>
 <p>If you point your browser at the URL:</p>
-<pre><code class="language-apl"> `http://localhost/dyalog.net.15.0.unicode.32/webservices/eg2.asmx`
+<pre><code class="language-apl">``http://localhost/dyalog.net.15.0.unicode.32/webservices/eg2.asmx``
 </code></pre>
 <p>ASP.NET will fabricate a page about it for the browser to display as shown below.</p>
-<p>The Add method exposed by APLServices.Example is shown, together with a Form from which you can invoke it.</p>
+<p>The <code>Add</code> method exposed by <code>APLServices.Example</code> is shown, together with a Form from which you can invoke it.</p>
 <p><img alt="eg2_4" src="../../img/eg2-4.png" /></p>
 <p>If you enter the numbers 123 and 456 in the fields provided, then press <strong>Invoke</strong>, the method will be called and the result displayed as shown below.</p>
 <p><img alt="eg2_5" src="../../img/eg2-5.png" /></p>

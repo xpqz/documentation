@@ -59747,27 +59747,27 @@
 
 
 <h1 id="workspace-behind">Workspace Behind</h1>
-<p>The previous section discussed how APL logic can be separated from page layout, by placing it in a separate APLScript file which is referred to from the .aspx web page. It is also possible to have the code reside in a separate <em>workspace</em>. This allows you to develop web pages using a traditional workspace approach, and it is probably the quickest way to give an HTML front-end to an existing Dyalog APL application.</p>
-<p>In the previous example, you saw that the fruit.apl file defined a new class called FruitSelection that inherits from System.Web.UI.Page. This class contains a <code>Page_Load</code> function that (by virtue of its name) overrides the Page_Load method of the underlying base class and will be called every time the web page is loaded or posted back. The <code>Page_Load</code> function takes whatever action is required; for example, initialisation. The class also contained a callback function to perform some action when the user pressed a button.</p>
-<p>A similar technique is employed when the code behind the web page is implemented in a separate workspace. The workspace should contain a class that inherits from System.Web.UI.Page. This class may contain a <code>Page_Load</code> function that will be invoked every time the corresponding web page is loaded, and as many callback functions as are required to provide the application logic. The workspace is hooked up to one or more web pages by the Inherits="<classname>" and  src="<workspace>" declarations in the Page directive statement that appears at the beginning of the web page script.</p>
-<p>The ACTFNS sub-directory in samples\asp.net contains some examples of Dyalog APL systems that have been converted to run as Web applications using this technique.</p>
+<p>The previous section discussed how APL logic can be separated from page layout, by placing it in a separate APLScript file which is referred to from the <code>.aspx</code> web page. It is also possible to have the code reside in a separate <em>workspace</em>. This allows you to develop web pages using a traditional workspace approach, and it is probably the quickest way to give an HTML front-end to an existing Dyalog APL application.</p>
+<p>In the previous example, you saw that the <code>fruit.apl</code> file defined a new class called <code>FruitSelection</code> that inherits from <code>System.Web.UI.Page</code>. This class contains a <code>Page_Load</code> function that (by virtue of its name) overrides the <code>Page_Load</code> method of the underlying base class and will be called every time the web page is loaded or posted back. The <code>Page_Load</code> function takes whatever action is required; for example, initialisation. The class also contained a callback function to perform some action when the user pressed a button.</p>
+<p>A similar technique is employed when the code behind the web page is implemented in a separate workspace. The workspace should contain a class that inherits from <code>System.Web.UI.Page</code>. This class may contain a <code>Page_Load</code> function that will be invoked every time the corresponding web page is loaded, and as many callback functions as are required to provide the application logic. The workspace is hooked up to one or more web pages by the <code>Inherits="&lt;classname&gt;"</code> and  <code>src="&lt;workspace&gt;"</code> declarations in the Page directive statement that appears at the beginning of the web page script.</p>
+<p>The <code>ACTFNS</code> sub-directory in <code>samples\asp.ne</code>t contains some examples of Dyalog APL systems that have been converted to run as Web applications using this technique.</p>
 <p>Dyalog is grateful to David Hughes who provided the original workspaces and advised on their conversion.</p>
-<p>The two workspaces are named ACTFNS.DWS and PROJ.DWS. The original code used the Dyalog APL GUI to display an input Form, collect and validate the user's input, and calculate and display the results. The original logic supported field level validation and results were immediately recalculated whenever any field was changed. With some exceptions, this has been changed so that the user must press a button to tell the system to recalculate the results. This approach is more appropriate in an Internet application, especially when connection speed is low. Apart from this change, the applications run more-or-less as originally designed.</p>
+<p>The two workspaces are named <code>ACTFNS.DWS</code> and <code>PROJ.DWS</code>. The original code used the Dyalog APL GUI to display an input Form, collect and validate the user's input, and calculate and display the results. The original logic supported field level validation and results were immediately recalculated whenever any field was changed. With some exceptions, this has been changed so that the user must press a button to tell the system to recalculate the results. This approach is more appropriate in an Internet application, especially when connection speed is low. Apart from this change, the applications run more-or-less as originally designed.</p>
 <p><img alt="actuarial diagram" src="../../img/actuarial-diagram.png" /></p>
-<p>The diagram above illustrates the structure of the web application and the various files involved. The starting page, actfns.htm, simply provides a menu of choices which link to various .aspx web pages. These pages in turn are linked to one of the two workspaces via the src="" declaration</p>
+<p>The diagram above illustrates the structure of the web application and the various files involved. The starting page, <code>actfns.htm</code>, simply provides a menu of choices which link to various <code>.aspx</code> web pages. These pages in turn are linked to one of the two workspaces via the <code>src=""</code> declaration</p>
 <p><img alt="actfns_1" src="../../img/actfns-1.png" /></p>
-<p>The actfns.htm start page offers 3 application choices</p>
+<p>The <code>actfns.htm</code> start page offers 3 application choices</p>
 <p><img alt="actfns_2" src="../../img/actfns-2.png" /></p>
 <p>The result of choosing <strong>Tabulate single life insurance and annuity values</strong></p>
-<p>When you choose the first option, the system loads sla_tab.aspx. This defines the screen layout in terms of ASP.NET controls, including the DataGrid control for tabulating the results. The sla_tab.aspx script contains the declarations Inherits="actuarial" src="actfns.dws", so ASP.NET loads the actuarial class from this workspace (via a call to Dyalog APL). When the page is loaded, it generates a Page_Load event, which in turn calls its Page_Load method. This populates the ASP controls with data, and the resulting web page is displayed. The mechanism is described below.</p>
-<p>For further details, see the sla_tab.aspx script and ACTFNS.DWS workspace.</p>
+<p>When you choose the first option, the system loads <code>sla_tab.aspx</code>. This defines the screen layout in terms of ASP.NET controls, including the <code>DataGrid</code> control for tabulating the results. The <code>sla_tab.aspx</code> script contains the declarations <code>Inherits="actuarial" src="actfns.dws"</code>, so ASP.NET loads the <code>actuarial</code> class from this workspace (via a call to Dyalog APL). When the page is loaded, it generates a <code>Page_Load</code> event, which in turn calls its <code>Page_Load</code> method. This populates the ASP controls with data, and the resulting web page is displayed. The mechanism is described below.</p>
+<p>For further details, see the <code>sla_tab.aspx</code> script and <code>ACTFNS.DWS</code> workspace.</p>
 <h2 id="converting-an-existing-workspace">Converting an Existing Workspace</h2>
 <p>The steps involved in converting the workspaces were as follows:</p>
 <ol>
-<li>Replace the Dyalog APL GUI with the equivalent HTML Forms, which are defined in one or more separate .aspx web pages. To retain consistency, it is helpful to give the ASP controls the same names as the original GUI controls, which they are replacing.</li>
+<li>Replace the Dyalog APL GUI with the equivalent HTML Forms, which are defined in one or more separate <code>.aspx</code> web pages. To retain consistency, it is helpful to give the ASP controls the same names as the original GUI controls, which they are replacing.</li>
 <li>Attach the names of APL callback functions to the appropriate ASP controls; essentially, any controls that will be involved in a postback operation, such as the Submit button. </li>
 <li>
-<p>Starting with a <code>CLEAR WS</code>, create a <code>Class</code> that represents a .NET class based upon System.Web.UI.Page. For example, in converting the ACTFNS workspace, we started by creating the class:      )edit ○actuarial</p>
+<p>Starting with a <code>CLEAR WS</code>, create a <code>Class</code> that represents a .NET class based upon <code>System.Web.UI.Page</code>. For example, in converting the ACTFNS workspace, we started by creating the class:      )edit ○actuarial</p>
 </li>
 <li>
 <p>then defining <code>⎕USING</code> as follows::Using System                    <br />
@@ -59775,10 +59775,10 @@
 :Using System.Web.UI.WebControls    <br />
 :Using System.Web.UI.HtmlControls   <br />
 :Using System.Data,system.data.dll 
-The name you choose for this class will replace classname in the Inherits="classname" declaration in the .aspx web page(s) that call it.</p>
+The name you choose for this class will replace <code>classname</code> in the <code>Inherits="classname"</code> declaration in the <code>.aspx</code> web page(s) that call it.</p>
 </li>
 <li>
-<p>Create a namespace, change into it, and copy the workspace to be converted; in this case, the starting point was a workspace named DH_ACTFNS:
+<p>Create a namespace, change into it, and copy the workspace to be converted; in this case, the starting point was a workspace named <code>DH_ACTFNS</code>:
       )NS actuarial_utils
       )CS actuarial_utils</p>
 </li>
@@ -59790,8 +59790,8 @@ The name you choose for this class will replace classname in the Inherits="class
 6. Modify the code as appropriate, inserting a <code>Page_Load</code> function and whatever callback functions that are required.
 7. Make sure the class 'actuarial' has an <em>:Include actuarial_utils</em>statement</p>
 <h3 id="the-page_load-function">The Page_Load function</h3>
-<p>The <code>Page_Load</code> function must be declared as :<em>Access</em><em>Public</em>. Page_Load must be spelled correctly as it is this name that causes the function to supersede the base class Page_Load method of the same name.</p>
-<p>For example, the Page_Load function of the actuarial class in ACTFNS.DWS is shown below:</p>
+<p>The <code>Page_Load</code> function must be declared as :<em>Access</em><em>Public</em>. <code>Page_Load</code> must be spelled correctly as it is this name that causes the function to supersede the base class <code>Page_Load</code> method of the same name.</p>
+<p>For example, the Page_Load function of the <code>actuarial</code> class in ACTFNS.DWS is shown below:</p>
 <pre><code class="language-apl">    ∇ Page_Load;INT;AGE;DUR;TERM;TAB_DURS;MPC1;INT1;INT2;
                 INTY;RUN_OPTION;OPT
       :Access public
@@ -59827,55 +59827,52 @@ The name you choose for this class will replace classname in the Inherits="class
     ∇
 </code></pre>
 <p>If exported correctly, <code>Page_Load</code> will be called every time the calling web page is loaded. This occurs when the page is loaded for the first time, and whenever the page is submitted back to the web server by the browser (postback). A postback will occur whenever a callback function is involved, and potentially at other times.</p>
-<p>The <code>Page_Load</code> function may determine whether it is being invoked by a first time load, or by a postback, from the value of the IsPostBack property. This is a property that it inherits from its base class System.Web.UI.Page.</p>
+<p>The <code>Page_Load</code> function may determine whether it is being invoked by a first time load, or by a postback, from the value of the <code>IsPostBack</code> property. This is a property that it inherits from its base class <code>System.Web.UI.Page</code>.</p>
 <p>The <code>Page_Load</code> example shown above uses this property to control the initialisation of the controls in the calling web page. The names <code>EINT</code>, <code>EAGE</code>, <code>EDUR</code> and so forth refer to names of controls in the calling web page. When <code>Page_Load</code> is executed, the <code>actuarial</code> object is associated with the web page itself, and so the names of all its controls are visible as sub-objects within it.</p>
-<p>Note that the actuarial class is used by two different web pages, and the function <code>GET_RUN_OPTION</code> function determines which of these are involved. (It does so by detecting the presence or otherwise of a particular control on the page).</p>
+<p>Note that the <code>actuarial</code> class is used by two different web pages, and the function <code>GET_RUN_OPTION</code> function determines which of these are involved. (It does so by detecting the presence or otherwise of a particular control on the page).</p>
 <h3 id="callback-functions">Callback functions</h3>
-<p>The actuarial class in ACTFNS.DWS provides four callback functions named <code>CALC_FSLTAB_RESULTS</code>, <code>CALC_FSL_RESULTS,``CHANGE_TABLES</code> and <code>CHANGE_TABLE_FORMAT</code>. The first two of these functions are attached as callbacks to the <strong>Calculate</strong> button in each of two separate web pages sla_tab.aspx and sla_disp.aspx. For example, the statement that defines the button in sla_tab.aspx is:</p>
-<pre><code class="language-apl">&lt;asp:Button id=Button1 runat=&quot;server&quot; Text=&quot;Calculate&quot; onClick=&quot;CALC_FSLTAB_RESULTS&quot;&gt;&lt;/asp:Button&gt;
+<p>The actuarial class in ACTFNS.DWS provides four callback functions named <code>CALC_FSLTAB_RESULTS</code>, <code>CALC_FSL_RESULTS,``CHANGE_TABLES</code> and <code>CHANGE_TABLE_FORMAT</code>. The first two of these functions are attached as callbacks to the <strong>Calculate</strong> button in each of two separate web pages <code>sla_tab.aspx</code> and <code>sla_disp.aspx</code>. For example, the statement that defines the button in <code>sla_tab.aspx</code> is:</p>
+<pre><code class="language-apl">`&lt;asp:Button id=Button1 runat=&quot;server&quot; Text=&quot;Calculate&quot; onClick=&quot;CALC_FSLTAB_RESULTS&quot;&gt;&lt;/asp:Button&gt;`
 </code></pre>
-<p>The third callback, <code>CHANGE_TABLES</code>, is called by sla_tab.aspx when the user selects a different set of Mortality Tables from the three provided. <code>CHANGE_TABLE_FORMAT</code> is called when the user clicks either of the two radio buttons that select how the output is to be displayed.</p>
+<p>The third callback, <code>CHANGE_TABLES</code>, is called by <code>sla_tab.aspx</code> when the user selects a different set of Mortality Tables from the three provided. <code>CHANGE_TABLE_FORMAT</code> is called when the user clicks either of the two radio buttons that select how the output is to be displayed.</p>
 <p>Like the <code>Page_Load</code> function, callback functions must be declared as being <em>Public</em>methods. This is done using the :<em>Access</em> statement.</p>
 <p>In addition, and this is <strong>essential</strong>, APL callback functions must be declared to have the correct signature expected of .NET callback functions. This means that they must be monadic, and their argument must be declared to be a 2-element nested array containing two .NET objects; the object that generated the event, and an object that represents the arguments to the event.</p>
-<p>Specifically, these parameters must be of type System.Object and System.EventArgs respectively. However, as our <code>⎕USING</code> contains System, it is not necessary to include the System prefix.</p>
+<p>Specifically, these parameters must be of type <code>System.Object</code> and <code>System.EventArgs</code>respectively. However, as our <code>⎕USING</code> contains System, it is not necessary to include the <code>System</code> prefix.</p>
 <p>For example, the statements for the function <code>CALC_FSLTAB_RESULTS</code> is shown below:</p>
 <pre><code class="language-apl">:Access Public
 :Signature CALC_FSLTAB_RESULTS Object obj, EventArgs ev
 </code></pre>
 <h3 id="validation-functions">Validation functions</h3>
 <p>In a Dyalog APL web page application, there are basically two approaches to validation. You can handle it entirely yourself or you can exploit the various validation controls that come with ASP.NET. The sample application uses the latter approach by way of illustration. For example:</p>
-<pre><code class="language-apl">&lt;asp:TextBox id=EINT runat=&quot;server&quot;&gt;&lt;/asp:TextBox&gt;
+<pre><code class="language-apl">`&lt;asp:TextBox id=EINT runat=&quot;server&quot;&gt;&lt;/asp:TextBox&gt;
 &lt;asp:RequiredFieldValidator id=&quot;RFVINT&quot;
      ControlToValidate=&quot;EINT&quot;
      ErrorMessage=&quot;Interest Rate must be a number
                    between 0 and 20&quot;
      Text=&quot;*&quot;
-     runat=&quot;server&quot;/&gt;&lt;/td&gt;
-
+     runat=&quot;server&quot;/&gt;&lt;/td&gt;`
 </code></pre>
-<p>These ASP.NET statements associate a RequiredFieldValidator named <em>RFVINT</em> with the <em>EINT</em> field, the field used to enter <strong>Interest Rate</strong>. If the user leaves this field blank, the system will automatically generate the specified error message. The page defines a separate ValidationSummary control as follows:</p>
-<pre><code class="language-apl">&lt;asp:ValidationSummary id=&quot;Summary1&quot; 
+<p>These ASP.NET statements associate a <code>RequiredFieldValidator</code>named <em>RFVINT</em> with the <em>EINT</em> field, the field used to enter <strong>Interest Rate</strong>. If the user leaves this field blank, the system will automatically generate the specified error message. The page defines a separate <code>ValidationSummary</code> control as follows:</p>
+<pre><code class="language-apl">`&lt;asp:ValidationSummary id=&quot;Summary1&quot; 
 HeaderText=&quot;Please enter a value in the following 
       fields&quot;
      Font-Size=&quot;smaller&quot;
      ShowSummary=&quot;false&quot;
      ShowMessageBox=&quot;true&quot;
      EnableClientScript=&quot;true&quot;
-     runat=&quot;server&quot;/&gt;
-
+     runat=&quot;server&quot;/&gt;`
 </code></pre>
-<p>The ValidationSummary control collects error messages from all the other validation controls on the page, and displays them together. In this case, a pop-up message box is used. One advantage of this approach is that this type of validation can be carried out client-side by local JavaScript that is generated automatically on the server and incorporated in the HTML that is sent to the browser.</p>
-<p>Logical field validation for this page is carried out on the server by APL functions that are attached to CustomValidator controls. For example:</p>
-<pre><code class="language-apl">&lt;asp:CustomValidator id=&quot;CustomValidator_INT&quot; 
+<p>The <code>ValidationSummary</code> control collects error messages from all the other validation controls on the page, and displays them together. In this case, a pop-up message box is used. One advantage of this approach is that this type of validation can be carried out client-side by local JavaScript that is generated automatically on the server and incorporated in the HTML that is sent to the browser.</p>
+<p>Logical field validation for this page is carried out on the server by APL functions that are attached to <code>CustomValidator</code> controls. For example:</p>
+<pre><code class="language-apl">`&lt;asp:CustomValidator id=&quot;CustomValidator_INT&quot; 
      OnServerValidate=&quot;VALIDATE_INT&quot;
      ControlToValidate=&quot;EINT&quot;
      Display=&quot;Dynamic&quot;                 
      ErrorMessage=&quot;Interest Rate must be a number between
                    0 and 20&quot;
-     runat=&quot;server&quot;/&gt;
-
+     runat=&quot;server&quot;/&gt;`
 </code></pre>
-<p>These ASP.NET statements associate a CustomValidator control named <strong>CustomValidator_INT</strong> with the <strong>Interest Rate</strong> field <strong>EINT</strong>. The statement OnServerValidate="VALIDATE_INT" specifies that <code>VALIDATE_INT</code> is the validation function for the<strong>CustomValidator_INT</strong> object.</p>
+<p>These ASP.NET statements associate a <code>CustomValidator</code> control named <strong>CustomValidator_INT</strong> with the <strong>Interest Rate</strong> field <strong>EINT</strong>. The statement <code>OnServerValidate="VALIDATE_INT"</code> specifies that <code>VALIDATE_INT</code> is the validation function for the<strong>CustomValidator_INT</strong> object.</p>
 <p>The <code>VALIDATE_INT</code> function and its .NET Properties page are shown below.</p>
 <pre><code class="language-apl">     ∇ VALIDATE_INT MSG;source;args
 [1]   ⍝ Validates Interest Rate
@@ -59892,12 +59889,12 @@ HeaderText=&quot;Please enter a value in the following
 [11]   args.IsValid←(0≤INT)^20≥INT
      ∇
 </code></pre>
-<p>To make the <code>VALIDATE_INT</code> function available to the calling web page, it is exported as a method. Its <em>calling signature</em>, namely that it takes two parameters of type System.Object and System.Web.UI.WebControls.ServerValidateEventArgs respectively, identifies it as a validation function. All these factors are essential in making it recognizable and callable.</p>
-<p><code>VALIDATE_INT[4]</code> assigns its (2-element) argument to <code>source</code> and <code>args</code> respectively. Both are namespace references to .NET objects. <code>source</code> is the object that fired the event (<em>CustomValidator_INT</em>). <code>args</code> is an object that represents the event. Its Value property returns the text in the control being validated, in this case the control named <em>EINT1</em>.</p>
-<p><code>VALIDATE_INT[6]</code> converts the text in the EINT control to a number, using the ToDouble method of the System.Convert class. You could of course use <code>⎕VFI</code>, but the Convert methods automatically cater for National Language numerical formats. This statement is executed within a <code>:Trap</code> control structure because the method will generate a .NET exception if the data in the field is not a valid number.</p>
-<p><code>VALIDATE_INT[8 11]</code> set the IsValid property of the ServerValidateEventArgs object <code>args</code> to 0 or 1 accordingly. This also sets the IsValid property of the validation control represented by <code>source</code>. The system will automatically display the error message associated with any validation control whose <code>IsValid</code> property is 0. Furthermore, the page itself has an IsValid property, which is the logical-and of all the IsValid properties of all the validation controls on the page. This is used later by the calculation function <code>CALC_FSLTAB_VALUES</code>.</p>
+<p>To make the <code>VALIDATE_INT</code> function available to the calling web page, it is exported as a method. Its <em>calling signature</em>, namely that it takes two parameters of type <code>System.Object</code> and <code>System.Web.UI.WebControls.ServerValidateEventArgs</code> respectively, identifies it as a validation function. All these factors are essential in making it recognizable and callable.</p>
+<p><code>VALIDATE_INT[4]</code> assigns its (2-element) argument to <code>source</code> and <code>args</code> respectively. Both are namespace references to .NET objects. <code>source</code> is the object that fired the event (<em>CustomValidator_INT</em>). <code>args</code> is an object that represents the event. Its <code>Value</code> property returns the text in the control being validated, in this case the control named <em>EINT1</em>.</p>
+<p><code>VALIDATE_INT[6]</code> converts the text in the EINT control to a number, using the <code>ToDouble</code> method of the <code>System.Convert</code> class. You could of course use <code>⎕VFI</code>, but the <code>Convert</code> methods automatically cater for National Language numerical formats. This statement is executed within a <code>:Trap</code> control structure because the method will generate a .NET exception if the data in the field is not a valid number.</p>
+<p><code>VALIDATE_INT[8 11]</code> set the <code>IsValid</code> property of the <code>ServerValidateEventArgs</code> object <code>args</code> to 0 or 1 accordingly. This also sets the <code>IsValid</code> property of the validation control represented by <code>source</code>. The system will automatically display the error message associated with any validation control whose <code>IsValid</code> property is 0. Furthermore, the page itself has an <code>IsValid</code> property, which is the logical-and of all the <code>IsValid</code> properties of all the validation controls on the page. This is used later by the calculation function <code>CALC_FSLTAB_VALUES</code>.</p>
 <p>In this case, the validation function stores the numeric value of the control in a variable <code>INT</code>, which will subsequently be used by the calculation functions.</p>
-<p>When the page is posted back to the server, ASP.NET executes its own built-in validation controls and then calls the functions associated with the CustomValidator controls, in the order they are defined on the page. In addition to the <code>VALIDATE_INT</code> function, there are eight other custom validation functions. Three of these, which validate the <em>Initial Age</em>, <em>Endowment Term</em> and <em>Initial Duration</em> fields, are listed below. Note that all of the <code>VALIDATE_xxx</code> functions have the same .NET signature as <code>VALIDATE_INT</code>.</p>
+<p>When the page is posted back to the server, ASP.NET executes its own built-in validation controls and then calls the functions associated with the <code>CustomValidator</code> controls, in the order they are defined on the page. In addition to the <code>VALIDATE_INT</code> function, there are eight other custom validation functions. Three of these, which validate the <em>Initial Age</em>, <em>Endowment Term</em> and <em>Initial Duration</em> fields, are listed below. Note that all of the <code>VALIDATE_xxx</code> functions have the same .NET signature as <code>VALIDATE_INT</code>.</p>
 <pre><code class="language-apl">     ∇ VALIDATE_AGE MSG;source;args
 [1]    ⍝ Validates Age
 [2]    :Access Public
@@ -59913,8 +59910,8 @@ HeaderText=&quot;Please enter a value in the following
 [11]   args.IsValid←(10≤AGE)^80≥AGE
      ∇
 </code></pre>
-<p><code>VALIDATE_AGE</code> is similar to <code>VALIDATE_INT</code>, except that, because it expects an integer value, it uses the ToInt32 method instead of the ToDouble method.</p>
-<p><code>VALIDATE_TERM</code>, which validates the <em>Endowment Term</em> field<code>,</code> is slightly more interesting because there are two levels of checking involved. The first check that the user has entered an integer number, is performed by lines <code>[</code>10-15] in the same way as in the previous examples, using the ToInt32 method of the System.Convert class within a <code>:Trap</code> control structure. However, validation of the <em>Endowment Term</em> field depends upon the value of another field, namely <em>Initial Age</em>.</p>
+<p><code>VALIDATE_AGE</code> is similar to <code>VALIDATE_INT</code>, except that, because it expects an integer value, it uses the <code>ToInt32</code> method instead of the <code>ToDouble</code> method.</p>
+<p><code>VALIDATE_TERM</code>, which validates the <em>Endowment Term</em> field<code>,</code> is slightly more interesting because there are two levels of checking involved. The first check that the user has entered an integer number, is performed by lines <code>[</code>10-15] in the same way as in the previous examples, using the <code>ToInt32</code> method of the <code>System.Convert</code> class within a <code>:Trap</code> control structure. However, validation of the <em>Endowment Term</em> field depends upon the value of another field, namely <em>Initial Age</em>.</p>
 <p>Not only must the user enter an integer, but also its value must be between 10 and (90-<code>AGE</code>) where <code>AGE</code> is the value in the <strong>Initial Age</strong> field. However, if the user has entered an incorrect value in the <strong>Initial Age</strong> field, this, the second level of validation cannot be performed.</p>
 <pre><code class="language-apl">
      ∇ VALIDATE_TERM MSG;source;args
@@ -59946,19 +59943,19 @@ HeaderText=&quot;Please enter a value in the following
 <ol>
 <li>The page, including all the contents of its fields, is sent back to the ASP.NET server using an http POST command.</li>
 <li>The postback causes the creation of a new instance of the page; which is represented by a new clone of the <code>actuarial</code> namespace.</li>
-<li>The creation of a new page instance raises the Page_Load event which in turn invokes the Page_Load method associated with the Page class, or an override method is one is specified. In this case, it calls our <code>Page_Load</code> function in the newly cloned instance of the <code>actuarial</code> namespace. The <code>Page_Load</code> function typically deals with initialisation, such as opening a component file or establishing a connection to a data source. In this case, it does nothing on a postback.</li>
-<li>Because the <em>Calculate</em> button was pressed (see <em>Forcing Validation</em>), each of the CustomValidator controls on the page raises an OnServerValidate event, which in turn calls the associated function in the current instance of the page. These events occur in the order the controls are defined within the page. Note that built-in validation controls, including any RequiredFieldValidator controls, are invoked first, potentially in the browser prior to the postback.</li>
-<li>Because the <em>Calculate</em> button was pressed  (see <em>Forcing Validation</em>), each of the CustomValidator controls on the page raises an OnServerValidate event, which in turn calls the associated function in the current instance of the page. These events occur in the order the controls are defined within the page. Note that built-in validation controls, including any RequiredFieldValidator controls, are invoked first, potentially in the browser prior to the postback.</li>
+<li>The creation of a new page instance raises the <code>Page_Load</code> event which in turn invokes the <code>Page_Load</code> method associated with the Page class, or an override method is one is specified. In this case, it calls our <code>Page_Load</code> function in the newly cloned instance of the <code>actuarial</code> namespace. The <code>Page_Load</code> function typically deals with initialisation, such as opening a component file or establishing a connection to a data source. In this case, it does nothing on a postback.</li>
+<li>Because the <em>Calculate</em> button was pressed (see <em>Forcing Validation</em>), each of the <code>CustomValidator</code> controls on the page raises an <code>OnServerValidate</code> event, which in turn calls the associated function in the current instance of the page. These events occur in the order the controls are defined within the page. Note that built-in validation controls, including any <code>RequiredFieldValidator</code> controls, are invoked first, potentially in the browser prior to the postback.</li>
+<li>Because the <em>Calculate</em> button was pressed  (see <em>Forcing Validation</em>), each of the <code>CustomValidator</code> controls on the page raises an <code>OnServerValidate</code> event, which in turn calls the associated function in the current instance of the page. These events occur in the order the controls are defined within the page. Note that built-in validation controls, including any <code>RequiredFieldValidator</code> controls, are invoked first, potentially in the browser prior to the postback.</li>
 <li>The control that caused the postback raises an appropriate event, which in turn fires the associated callback function.</li>
-<li>After all the control events have been raised and processed the Page_UnLoad event is raised and the associated function (if any) is invoked. This function is a good place to implement termination code, such as closing a component file or data source.</li>
+<li>After all the control events have been raised and processed the <code>Page_UnLoad</code> event is raised and the associated function (if any) is invoked. This function is a good place to implement termination code, such as closing a component file or data source.</li>
 <li>The instance of the page is destroyed. Any global variables in the namespace that were defined by the Page_Load function, the validation functions and the callback function are lost because the clone of the <code>actuarial</code> namespace disappears.</li>
 </ol>
 <p>This means that within the life of the cloned instance of the actuarial namespace, the system runs our <code>Page_Load</code> function followed by <code>VALIDATE_INT</code>, followed by <code>VALIDATE_AGE</code>, <code>VALIDATE_TERM</code>, <code>VALIDATE_DUR</code> etc. and finally by <code>CALC_FSLTAB_RESULTS</code>. These functions take their input from the values passed in their arguments (as in the case of the <code>VALIDATE_xxx</code> functions) or from the properties of any of the controls on the Page. They perform output by modifying these properties, or by invoking standard methods on the Page.</p>
 <p>Notice that, if successful, the <code>VALIDATE_INT</code> function set up a global variable (strictly speaking, only global within the current instance of the actuarial namespace) called <code>INT</code> that contains the value in the <em>Interest Rate</em> field. Similarly, <code>VALIDATE_AGE</code> defines a variable called <code>AGE</code>. These variables are subsequently available for use by the calculation function.</p>
 <p>This technique, of having each validation function define a variable for its associated field, saves repeating the conversion work in the calculation routine <code>CALC_FSLTAB_RESULTS</code> that will be called when the validation is complete. It also saves repeating the conversion work in a validation routine that needs to know the value of a previously validated field.</p>
-<p>Returning to the explanation of <code>VALIDATE_TERM</code>, line [16] checks to see that both the RequiredFieldValidator and CustomValidator controls for the <em>Initial Age</em> field register that the value in the field is valid, before attempting to perform the second stage of the validation which depends upon <code>AGE</code>. Note that <code>AGE</code> must exist (and be a reasonable value) if CustomValidator_AGE.IsValid is true. Notice too that it is insufficient just to check the CustomValidator control, because its validation function will not be invoked (and the control will register that the field is valid) if the field is empty.</p>
-<p>Line [5] uses similar logic to set up an appropriate error message, which is assigned to the ErrorMessage property of the corresponding CustomValidator control, represented by <code>source</code>.</p>
-<p><code>VALIDATE_DUR</code>, which validates the <em>Initial Duration</em> field, uses similar logic to check that the value in the <em>Endowment Term</em> field is correct and that <code>TERM</code>, on which it depends, is therefore defined. In addition, in line [8] it refers to the Checked property of the RadioButton controls named <code>TA</code> and <code>TB</code> respectively.</p>
+<p>Returning to the explanation of <code>VALIDATE_TERM</code>, line [16] checks to see that both the <code>RequiredFieldValidator</code> and <code>CustomValidator</code> controls for the <em>Initial Age</em> field register that the value in the field is valid, before attempting to perform the second stage of the validation which depends upon <code>AGE</code>. Note that <code>AGE</code> must exist (and be a reasonable value) if <code>CustomValidator_AGE.IsValid</code> is true. Notice too that it is insufficient just to check the <code>CustomValidator</code> control, because its validation function will not be invoked (and the control will register that the field is valid) if the field is empty.</p>
+<p>Line [5] uses similar logic to set up an appropriate error message, which is assigned to the <code>ErrorMessage</code> property of the corresponding <code>CustomValidator</code> control, represented by <code>source</code>.</p>
+<p><code>VALIDATE_DUR</code>, which validates the <em>Initial Duration</em> field, uses similar logic to check that the value in the <em>Endowment Term</em> field is correct and that <code>TERM</code>, on which it depends, is therefore defined. In addition, in line [8] it refers to the <code>Checked</code> property of the <code>RadioButton</code> controls named <code>TA</code> and <code>TB</code> respectively.</p>
 <pre><code class="language-apl">    ∇ VALIDATE_DUR MSG;source;args;DT
 [1]    ⍝ Validates Initial Duration
 [2]    :Access Public
@@ -59991,8 +59988,8 @@ HeaderText=&quot;Please enter a value in the following
      ∇
 </code></pre>
 <h3 id="forcing-validation">Forcing Validation</h3>
-<p>Validation controls are automatically invoked when the user activates a Button control, but not when other postbacks occur. For example, when the user selects a different Mortality Table (represented by a RadioButtonList control), the page calls the <code>CHANGE_TABLES</code> function.</p>
-<pre><code class="language-apl">&lt;asp:RadioButtonList id=MT runat=&quot;server&quot;
+<p>Validation controls are automatically invoked when the user activates a Button control, but not when other postbacks occur. For example, when the user selects a different Mortality Table (represented by a <code>RadioButtonList</code> control), the page calls the <code>CHANGE_TABLES</code> function.</p>
+<pre><code class="language-apl">`&lt;asp:RadioButtonList id=MT runat=&quot;server&quot;
      RepeatDirection=&quot;Vertical&quot; RepeatRows=&quot;3&quot;  tabIndex=1
      onSelectedIndexChanged=&quot;CHANGE_TABLES&quot; 
      AutoPostBack=&quot;true&quot;&gt;
@@ -60002,10 +59999,9 @@ HeaderText=&quot;Please enter a value in the following
      UK Immediate Annuitant&lt;/asp:ListItem&gt;
 &lt;asp:ListItem Value=&quot;UK Pension Annuitant&quot;&gt;
      UK Pension Annuitant&lt;/asp:ListItem&gt;
-&lt;/asp:RadioButtonList&gt;
-
+&lt;/asp:RadioButtonList&gt;`
 </code></pre>
-<p>A RadioButtonList control does not cause validation to occur, so this must be done explicitly. This is easily achieved by calling the Validate method of the Page itself as shown in <code>CHANGE_TABLES[11]</code> below.</p>
+<p>A <code>RadioButtonList</code> control does not cause validation to occur, so this must be done explicitly. This is easily achieved by calling the <code>Validate</code> method of the Page itself as shown in <code>CHANGE_TABLES[11]</code> below.</p>
 <pre><code class="language-apl">     ∇ CHANGE_TABLES ARGS;TableNames;TableName;OPTSMORT;
                 MORT_OPTION;RUN_OPTION
 [1]   :Access public
@@ -60032,7 +60028,7 @@ HeaderText=&quot;Please enter a value in the following
      ∇
 </code></pre>
 <h3 id="calculating-and-displaying-results">Calculating and Displaying Results</h3>
-<p>The function <code>CALC_FSLTAB_RESULTS</code>, which for brevity is only partially shown below, is used by the sla_tab.aspx page to calculate and display results.</p>
+<p>The function <code>CALC_FSLTAB_RESULTS</code>, which for brevity is only partially shown below, is used by the <code>sla_tab.aspx</code> page to calculate and display results.</p>
 <pre><code class="language-apl">    ∇ CALC_FSLTAB_RESULTS ARGS;X;ULT;MORTOPT;QTAB;TABLE;
          TAB_DURS;RUN_OPTION;MORT_OPTION;UNIX;DOS;
          CURRENTDATE;CURRENTTIME;OPTSMORT;TABLES;MSG;data
@@ -60069,8 +60065,8 @@ HeaderText=&quot;Please enter a value in the following
 [56]   :EndIf
      ∇
 </code></pre>
-<p>The results of the calculation are displayed in a DataGrid object named fsl. This is defined within the sla_tab.aspx page as follows:</p>
-<pre><code class="language-apl">&lt;asp:DataGrid id=&quot;fsl&quot; runat=&quot;server&quot; Width=&quot;700&quot;
+<p>The results of the calculation are displayed in a DataGrid object named <code>fsl</code>. This is defined within the <code>sla_tab.aspx</code> page as follows:</p>
+<pre><code class="language-apl">`&lt;asp:DataGrid id=&quot;fsl&quot; runat=&quot;server&quot; Width=&quot;700&quot;
      AllowPaging=&quot;false&quot; BorderColor=&quot;black&quot; CellPadding=&quot;3&quot;
      CellSpacing=&quot;0&quot; Font-Size=&quot;9pt&quot; PageSize=&quot;10&quot;&gt;
      &lt;ItemStyle HorizontalAlign=&quot;right&quot; Width=&quot;100&quot;&gt;
@@ -60078,12 +60074,11 @@ HeaderText=&quot;Please enter a value in the following
      &lt;HeaderStyle HorizontalAlign=&quot;center&quot;
      Font-Size=&quot;12pt&quot; Font-Bold=&quot;true&quot; BackColor=&quot;#17748A&quot;
      ForeColor=&quot;#FFFFFF&quot;&gt;&lt;/HeaderStyle&gt;
-     &lt;/asp:DataGrid&gt;
-
+     &lt;/asp:DataGrid&gt;`
 </code></pre>
-<p><code>CALC_FSLTAB_RESULTS[1]</code> checks to see if the user input is valid. If not, <code>[55]</code> hides the DataGrid object <code>fsl</code> so that no results are displayed in the page. The display of error messages is handled separately, and automatically, by the ValidationSummary control on the page.</p>
-<p><code>CALC_FSLTAB[11 15]</code> obtain the values of the <em>CMTAB</em> (DropDownList) and <em>TA</em> (RadioButton) controls on the page.</p>
-<p><code>CALC_FSLTAB[43-53]</code> store the calculated data table <code>FSLT</code> in the DataGrid <code>fsl</code>.</p>
+<p><code>CALC_FSLTAB_RESULTS[1]</code> checks to see if the user input is valid. If not, <code>[55]</code> hides the <code>DataGrid</code>object <code>fsl</code> so that no results are displayed in the page. The display of error messages is handled separately, and automatically, by the <code>ValidationSummary</code> control on the page.</p>
+<p><code>CALC_FSLTAB[11 15]</code> obtain the values of the <em>CMTAB</em> (<code>DropDownList</code>) and <em>TA</em> (<code>RadioButton</code>) controls on the page.</p>
+<p><code>CALC_FSLTAB[43-53]</code> store the calculated data table <code>FSLT</code> in the <code>DataGrid``fsl</code>.</p>
 
 
 

@@ -59732,20 +59732,20 @@ that the application displays when the user selects the corresponding tab.</p>
 example, the Windows taskbar is such a tab control.</p>
 <p>The overall appearance of the TabControl is determined by the <a href="../style/">Style</a> property which may be <code>'Tabs'</code> (the
 default), <code>'Buttons'</code> or <code>'FlatButtons'</code>.</p>
-<p>Individual tabs or buttons are represented by <a href="../tabbutton/">TabButton</a> objects which should be created as children of the TabControl object. Optional
+<p>Individual tabs or buttons are represented by <a href="TabButton.htm">TabButton</a> objects which should be created as children of the TabControl object. Optional
 captions and pictures are specified by the <a href="../caption/">Caption</a> and <a href="../imageindex/">ImageIndex</a> properties of the
-individual <a href="../tabbutton/">TabButton</a> objects themselves.
+individual <a href="TabButton.htm">TabButton</a> objects themselves.
 Otherwise, the appearance of the tabs or buttons is determined by properties of
 the TabControl itself.</p>
-<p>To implement a multiple page tabbed dialog <a href="../Examples/TabControl%20Example%201.htm">(see Example 1)</a>, you should create a <a href="../form/">Form</a>, then a
+<p>To implement a multiple page tabbed dialog <a href="../Examples/TabControl Example 1.htm">(see Example 1)</a>, you should create a <a href="Form.htm">Form</a>, then a
 TabControl with Style <code>'Tabs'</code> as a child of
-the <a href="../form/">Form</a>. Next, create one or more pairs of <a href="../tabbutton/">TabButton</a> and <a href="../subform/">SubForm</a> objects as children of the
+the <a href="Form.htm">Form</a>. Next, create one or more pairs of <a href="TabButton.htm">TabButton</a> and <a href="../subform/">SubForm</a> objects as children of the
 TabControl. You associate each <a href="../subform/">SubForm</a> with a
-particular tab by setting its <a href="../tabobj/">TabObj</a> property to the name of, or ref to, the associated <a href="../tabbutton/">TabButton</a> object. Making the <a href="../subform/">SubForms</a> children of the
+particular tab by setting its <a href="../tabobj/">TabObj</a> property to the name of, or ref to, the associated <a href="TabButton.htm">TabButton</a> object. Making the <a href="../subform/">SubForms</a> children of the
 TabControl ensures that, by default, they will automatically be resized
-correctly. You may alternatively create your <a href="../subform/">SubForms</a> as children of the main <a href="../form/">Form</a> and establish
+correctly. You may alternatively create your <a href="../subform/">SubForms</a> as children of the main <a href="Form.htm">Form</a> and establish
 appropriate resize behaviour using their <a href="../attach/">Attach</a> property.</p>
-<p>A TabControl object with <a href="../style/">Style</a> <code>'Buttons'</code> <a href="../Examples/TabControl%20Example%202.htm">(Example 2)</a> or <code>'FlatButtons'</code><a href="../Examples/TabControl%20Example%203.htm"> (Example 3)</a> may be used in a similar
+<p>A TabControl object with <a href="../style/">Style</a> <code>'Buttons'</code> <a href="../Examples/TabControl Example 2.htm">(Example 2)</a> or <code>'FlatButtons'</code><a href="../Examples/TabControl Example 3.htm"> (Example 3)</a> may be used in a similar
 way (i.e. to display a set of alternative pages), although buttons in this type
 of TabControl are more normally used to execute commands. For this reason, these
 styles of TabControl are without borders.</p>
@@ -59754,17 +59754,17 @@ the <a href="../flatseparators/">FlatSeparators</a> property
 specifies whether or not separators are drawn between the buttons. The default
 value of <a href="../flatseparators/">FlatSeparators</a> is 0 (no
 separators).</p>
-<p><a href="../Examples/TabControl%20Example%203a.htm">Example 3a</a> shows the
+<p><a href="../Examples/TabControl Example 3a.htm">Example 3a</a> shows the
 effect of setting <a href="../flatseparators/">FlatSeparators</a> to
 1.</p>
 <p>The <a href="../align/">Align</a> property specifies along which
 of the 4 edges of the TabControl the tabs or buttons are arranged. <a href="../align/">Align</a> also controls the relative positioning of the picture and Caption within each
 TabButton. <a href="../align/">Align</a> may be Top (the default),
 Bottom, Left or Right.</p>
-<p>If <a href="../align/">Align</a> is <code>'Top'</code> or <code>'Bottom'</code><a href="../Examples/TabControl%20Example%204.htm"> (Example
+<p>If <a href="../align/">Align</a> is <code>'Top'</code> or <code>'Bottom'</code><a href="../Examples/TabControl Example 4.htm"> (Example
 4)</a>, the tabs or buttons are arranged along the top or bottom edge of the
 TabControl and picture is drawn to the left of the Caption.</p>
-<p>If <a href="../align/">Align</a> is <code>'Left'</code> <a href="../Examples/TabControl%20Example%205.htm">(Example 5)</a>, the tabs or buttons are
+<p>If <a href="../align/">Align</a> is <code>'Left'</code> <a href="../Examples/TabControl Example 5.htm">(Example 5)</a>, the tabs or buttons are
 arranged top-to-bottom along the left edge of the TabControl, and the pictures
 are drawn below the Captions.</p>
 <p><a href="../align/">In recent versions of Windows, </a><code>'Align' 'Right'</code> fails to show the tabs or buttons on the right hand edge of the TabControl; this appears to be a limitation of Windows.</p>
@@ -59779,14 +59779,14 @@ multiple rows/columns.</p>
 <p>The default value of <a href="../multiline/">MultiLine</a> is 0,
 in which case, if you have more tabs or buttons than will fit in the space
 provided, the TabControl displays an UpDown control to permit the user to scroll
-them. <a href="../Examples/TabControl%20Example%207.htm">See Example 7.</a></p>
+them. <a href="../Examples/TabControl Example 7.htm">See Example 7.</a></p>
 <p>If <a href="../multiline/">MultiLine</a> is set to 1, the tabs are
-displayed in multiple flights <a href="../Examples/TabControl%20Example%208.htm">(Example 8)</a> or the buttons are displayed in multiple rows <a href="../Examples/TabControl%20Example%209.htm">(Example
+displayed in multiple flights <a href="../Examples/TabControl Example 8.htm">(Example 8)</a> or the buttons are displayed in multiple rows <a href="../Examples/TabControl Example 9.htm">(Example
 9)</a>.</p>
 <p>The <a href="../scrollopposite/">ScrollOpposite</a> property
 specifies that unneeded tabs scroll to the opposite side of a TabControl, when a
 tab is selected. Setting <a href="../scrollopposite/">ScrollOpposite</a> to 1 forces <a href="../multiline/">MultiLine</a> to 1 also.</p>
-<p><a href="../Examples/TabControl%20Example%2010.htm">Example 10</a> illustrates a
+<p><a href="../Examples/TabControl Example 10.htm">Example 10</a> illustrates a
 TabControl with <a href="../scrollopposite/">ScrollOpposite</a> set
 to 1, after the user has clicked <em>Third Tab</em>. Notice that, in this example,
 the SubForms have been created as children of the TabControl. This is necessary
@@ -59798,25 +59798,25 @@ defined by the Justify property which may be <code>'Right'</code> (the default) 
 necessary, so that each row of tabs fills the entire width of the tab control.
 Otherwise, if <a href="../justify/">Justify</a> is empty or <code>'None'</code>,
 the rows are ragged.</p>
-<p>See <a href="../Examples/TabControl%20Example%2011.htm">Example 11</a> (for tabs) and <a href="../Examples/TabControl%20Example%2012.htm">Example 12</a> (for
+<p>See <a href="../Examples/TabControl Example 11.htm">Example 11</a> (for tabs) and <a href="../Examples/TabControl Example 12.htm">Example 12</a> (for
 buttons).</p>
 <p>By default, the size of the tabs may vary from one to another. Fixed size
 tabs may be obtained by setting the <a href="../tabsize/">TabSize</a> property.</p>
 <p>To obtain fixed sized tabs with <a href="../multiline/">MultiLine</a> set to 1, you must however also set Justify to <code>'None'</code>.</p>
 <p>If fixed size tabs are in effect, the positions at which the picture and
-Caption are drawn within each <a href="../tabbutton/">TabButton</a> is
+Caption are drawn within each <a href="TabButton.htm">TabButton</a> is
 controlled by the <a href="../tabjustify/">TabJustify</a> property
 which may be <code>'Centre'</code>, <code>'Edge'</code>,
 or <code>'IconEdge'</code>.</p>
-<p><a href="../Examples/TabControl%20Example%2013.htm">Example
+<p><a href="../Examples/TabControl Example 13.htm">Example
 13</a> illustrates these different settings.</p>
-<p>The font used to draw the captions in the <a href="../tabbutton/">TabButton</a> objects is determined by the <a href="../fontobj/">FontObj</a> property of the TabControl.</p>
+<p>The font used to draw the captions in the <a href="TabButton.htm">TabButton</a> objects is determined by the <a href="../fontobj/">FontObj</a> property of the TabControl.</p>
 <p>You cannot specify the foreground or background colours of the tabs/buttons,
 nor can you use different fonts in different tabs/buttons. The orientation of
 the Caption text is always determined by the value of the Align property of the
 TabControl.</p>
 <p>The <a href="../tabobj/">TabObj</a> property is read-only and
-reports the name of, or ref to, the <a href="../tabbutton/">TabButton</a> that is currently selected.</p>
+reports the name of, or ref to, the <a href="TabButton.htm">TabButton</a> that is currently selected.</p>
 <p>The <a href="../multiselect/">MultiSelect</a> property specifies
 whether or not the user can select more than one button in a TabControl at the
 same time, by holding down the Ctrl key when clicking. The default is 0 (only

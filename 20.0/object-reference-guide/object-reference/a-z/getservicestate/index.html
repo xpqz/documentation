@@ -59708,8 +59708,8 @@
 Installation &amp; Configuration Guide: </p>
 <p>APL Application as a ServiceAPL Application as a Service on page 1.</p>
 <p>The GetServiceState method is niladic.</p>
-<p>The result of the method is a 7-element numeric vector corresponding to the SERVICE_STATUS structure which is described in C++ as follows:</p>
-<pre><code class="language-apl">typedef struct _SERVICE_STATUS {
+<p>The result of the method is a 7-element numeric vector corresponding to the <code>SERVICE_STATUS</code> structure which is described in C++ as follows:</p>
+<pre><code class="language-apl">`typedef struct _SERVICE_STATUS {
   DWORD dwServiceType;
   DWORD dwCurrentState;
   DWORD dwControlsAccepted;
@@ -59717,9 +59717,9 @@ Installation &amp; Configuration Guide: </p>
   DWORD dwServiceSpecificExitCode;
   DWORD dwCheckPoint;
   DWORD dwWaitHint;
-} SERVICE_STATUS, *LPSERVICE_STATUS;.
+} SERVICE_STATUS, *LPSERVICE_STATUS;.`
 </code></pre>
-<p>For further details, see the on-line documentation for SERVICE_STATE and the function <code>HashDefine</code> in the sample workspace aplservice.</p>
+<p>For further details, see the on-line documentation for <code>SERVICE_STATE</code> and the function <code>HashDefine</code> in the sample workspace <code>aplservice</code>.</p>
 
 
 

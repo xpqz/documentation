@@ -59693,36 +59693,36 @@
 
 
 <h1 id="golfservice-example">GolfService Example</h1>
-<p>The <a href="GolfService%20Example%20Class.htm">GolfService Example Class</a> illustrates the use of nested classes. <a href="GolfService%20Example%20Class.htm">GolfService</a> was originally developed as a Web Service for Dyalog.NET and is one of the samples distributed in samples\asp.net\webservices. This version has been reconstructed as a stand-alone APL Class.</p>
-<p><a href="GolfService%20Example%20Class.htm">GolfService</a> contains the following nested classes, all of which are <code>Private</code>.</p>
+<p>The <a href="GolfService Example Class.htm">GolfService Example Class</a> illustrates the use of nested classes. <a href="GolfService Example Class.htm">GolfService</a> was originally developed as a Web Service for Dyalog.NET and is one of the samples distributed in samples\asp.net\webservices. This version has been reconstructed as a stand-alone APL Class.</p>
+<p><a href="GolfService Example Class.htm">GolfService</a> contains the following nested classes, all of which are <code>Private</code>.</p>
 <table>
 <thead>
 <tr>
-<th><a href="GolfCourse%20Class.htm">GolfCourse</a></th>
+<th><a href="GolfCourse Class.htm">GolfCourse</a></th>
 <th>A Class that represents a Golf Course, having Fields <code>Code</code> and <code>Name</code> .</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="Slot%20Class.htm">Slot</a></td>
+<td><a href="Slot Class.htm">Slot</a></td>
 <td>A Class that represents a tee-time or match, having Fields <code>Time</code> and <code>Players</code> . Up to 4 players may play together in a match.</td>
 </tr>
 <tr>
-<td><a href="Booking%20Class.htm">Booking</a></td>
+<td><a href="Booking Class.htm">Booking</a></td>
 <td>A Class that represents a reservation for a particular tee-time at a particular golf course. This has Fields <code>OK</code> , <code>Course</code> , <code>TeeTime</code> and <code>Message</code> . The value of <code>TeeTime</code> is an Instance of a Slot Class.</td>
 </tr>
 <tr>
-<td><a href="StartingSheet%20Class.htm">StartingSheet</a></td>
+<td><a href="StartingSheet Class.htm">StartingSheet</a></td>
 <td>A Class that represents a day's starting-sheet at a particular golf course. It has Fields <code>OK</code> , <code>Course</code> , <code>Date</code> , <code>Slots</code> , <code>Message</code> . <code>Slots</code> is an array of Instances of Slot Class.</td>
 </tr>
 </tbody>
 </table>
-<p>The <a href="GolfService%20Example%20Class.htm">GolfService</a> constructor takes the name of a file in which all the data is stored. This file is initialised by method <code>InitFile</code> if it doesn't already exist.</p>
+<p>The <a href="GolfService Example Class.htm">GolfService</a> constructor takes the name of a file in which all the data is stored. This file is initialised by method <code>InitFile</code> if it doesn't already exist.</p>
 <pre><code class="language-apl">      G←⎕NEW GolfService 'F:\HELP11.0\GOLFDATA'
       G
 #.[Instance of GolfService]
 </code></pre>
-<p>The <a href="GetCourses%20Method.htm">GetCourses</a> method returns an array of Instances of the internal (nested) Class <a href="GolfCourse%20Class.htm">GolfCourse</a>. Notice how the display form of each Instance is established by the <a href="GolfCourse%20Class.htm">GolfCourse</a> constructor, to obtain the output display shown below.</p>
+<p>The <a href="GetCourses Method.htm">GetCourses</a> method returns an array of Instances of the internal (nested) Class <a href="GolfCourse Class.htm">GolfCourse</a>. Notice how the display form of each Instance is established by the <a href="GolfCourse Class.htm">GolfCourse</a> constructor, to obtain the output display shown below.</p>
 <pre><code class="language-apl">      G.GetCourses
  St Andrews(1)  Hindhead(2)  Basingstoke(3) 
 </code></pre>
@@ -59732,7 +59732,7 @@
       ⎕←TomorrowAt7←Tomorrow.AddHours 7
 31/03/2006 07:00:00
 </code></pre>
-<p>The <a href="MakeBooking%20Method.htm">MakeBooking</a> method takes between 4 and 7 parameters viz.</p>
+<p>The <a href="MakeBooking Method.htm">MakeBooking</a> method takes between 4 and 7 parameters viz.</p>
 <ul>
 <li>the code for the golf course at which the reservation is required</li>
 <li>the date and time of the reservation</li>
@@ -59743,7 +59743,7 @@
 <li>a flag to indicate whether or not the nearest available time will do</li>
 <li>a list of up to 4 players who wish to book that time.</li>
 </ul>
-<p>The result is an Instance of the internal Class <a href="Booking%20Class.htm">Booking</a>. Once again, <code>⎕DF</code> is used to make the default display of these Instances meaningful. In this case, the reservation is successful.</p>
+<p>The result is an Instance of the internal Class <a href="Booking Class.htm">Booking</a>. Once again, <code>⎕DF</code> is used to make the default display of these Instances meaningful. In this case, the reservation is successful.</p>
 <pre><code class="language-apl">      G.MakeBooking 2 TomorrowAt7 1 'Pete' 'Tiger'
   Hindhead(2)   31/03/2006 07:00:00   Pete  Tiger    OK 
 </code></pre>
@@ -59760,7 +59760,7 @@
  Hindhead(2)  31/03/2006 07:00:00  Not available 
 </code></pre>
 <p>... so his reservation fails (4-player restriction).</p>
-<p>Finally the <a href="GetStartingheet%20Method.htm">GetStartingSheet</a> method is used to obtain an Instance of the internal Class <a href="StartingSheet%20Class.htm">StartingSheet</a> for the given course and day.</p>
+<p>Finally the <a href="GetStartingheet Method.htm">GetStartingSheet</a> method is used to obtain an Instance of the internal Class <a href="StartingSheet Class.htm">StartingSheet</a> for the given course and day.</p>
 <pre><code class="language-apl">      G.GetStartingSheet 2 Tomorrow
   Hindhead(2)  31/03/2006 00:00:00              
   31/03/2006 07:00:00   Pete  Tiger  Dave  Al   

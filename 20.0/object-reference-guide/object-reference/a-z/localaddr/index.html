@@ -59705,7 +59705,7 @@
 </table>
 <p><strong>Description</strong></p>
 <p>The LocalAddr property is a character vector that specifies the IP address of your computer. Its default value is <code>'0.0.0.0'</code>.</p>
-<p>Unless your computer has more than one network adapter each identified by a different IP address, you do not need to specify LocalAddr. However, in this case you may use <em>either</em> LocalAddr <em>or</em><a href="../localaddrname/"> LocalAddrName</a> to identify the adapter. If you specify both properties, the value of <a href="../localaddrname/">LocalAddrName</a> will be ignored.</p>
+<p>Unless your computer has more than one network adapter each identified by a different IP address, you do not need to specify LocalAddr. However, in this case you may use <em>either</em> LocalAddr <em>or</em><a href="LocalAddrName.htm"> LocalAddrName</a> to identify the adapter. If you specify both properties, the value of <a href="LocalAddrName.htm">LocalAddrName</a> will be ignored.</p>
 <p>Note that you may also set the value of LocalAddr to an empty character vector. In this case, the value returned by <code>⎕WG</code> will be <code>'0.0.0.0'</code>.</p>
 <p>LocalAddr may only be specified in the <code>⎕WC</code> statement that creates the <a href="../tcpsocket/">TCPSocket</a> and may not subsequently be changed using <code>⎕WS</code>.</p>
 

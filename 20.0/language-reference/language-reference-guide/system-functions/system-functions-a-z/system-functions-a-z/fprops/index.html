@@ -59978,7 +59978,7 @@
 <li>Z = 0</li>
 <li>E depends upon the computer architecture.</li>
 </ul>
-<p>Note that the defaults for C and J can be overridden by calling <code>⎕FCREATE</code> via the Variant operator <code>⍠</code>. For further information, see <a href="../fcreate/">File Properties on page 1</a>.</p>
+<p>Note that the defaults for C and J can be overridden by calling <code>⎕FCREATE</code> via the Variant operator <code>⍠</code>. For further information, see <a href="fcreate.htm#File_Properties">File Properties on page 1</a>.</p>
 <h4 id="journaling-levels">Journaling Levels</h4>
 <p><strong>Level 1</strong> journaling (APL crash-proof) automatically protects a component file from damage in the event of abnormal termination of the APL process. The file state will be implicitly committed between updates and an incomplete update will automatically be rolled forward or back when the file is re-tied. In the event of an operating system crash the file may be more seriously damaged. If checksum was also enabled it may be repaired using <code>⎕ FCHK</code> but some components may be restored to a previous state or not restored at all.</p>
 <p><strong>Level 2</strong> journaling (system crash-proof – repair needed on recovery) extends level 1 by ensuring that a component file is fully repairable using <code>⎕FCHK</code> with no component loss in the event of an operating system failure. If an update was in progress when the system crashed the affected component will be rolled back to the previous state. Tying and modifying such a file without first running <code>⎕FCHK</code> may however render it un-repairable.</p>
