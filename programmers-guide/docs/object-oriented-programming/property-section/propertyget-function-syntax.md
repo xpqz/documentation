@@ -13,7 +13,7 @@ The PropertyGet function must be result returning. For a Simple Property, it may
 The result `R` may be any array. However, for a Keyed Property, `R` must conform to the rank and shape specified by `ipa.Indexers` or be scalar.
 
 
-If monadic, `ipa` is an instance of the internal class [PropertyArguments](propertyarguments-class.md).
+If monadic, `ipa` is an instance of the internal class [PropertyArguments](PropertyArguments Class.htm).
 
 
 In all cases, `ipa.Name` contains the name of the Property being referenced and `NewValue` is undefined (`VALUE ERROR`).

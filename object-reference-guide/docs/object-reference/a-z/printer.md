@@ -16,7 +16,7 @@
 **Description**
 
 
-The [PName](./pname.md) property is a character vector which specifies the name of an installed printer and the device to which it is attached. The name and device are separated by a comma (,). All valid values of [PName](./pname.md) can be obtained from the [PrintList](./printlist.md) property of the [Root](root.md) object.
+The [PName](./pname.md) property is a character vector which specifies the name of an installed printer and the device to which it is attached. The name and device are separated by a comma (,). All valid values of [PName](./pname.md) can be obtained from the [PrintList](./printlist.md) property of the [Root](Root.htm) object.
 
 
 
@@ -26,13 +26,13 @@ If not specified, the default value of [PName](./pname.md) is `(⊃'.' ⎕WG 'Pr
 The [DevCaps](./devcaps.md) property reports the size of the printable area of the page in pixels (dots) and in millimetres. It also reports the number of colours available. This is 2 on a monochrome printer (black and white), although grey scales may be available.
 
 
-The [FontList](./fontlist.md) property provides a list of fonts that are applicable and includes TrueType and printer fonts. This list is typically different from that obtained from the [FontList](./fontlist.md) property on the [Root](root.md) object which lists those fonts that apply to the screen.
+The [FontList](./fontlist.md) property provides a list of fonts that are applicable and includes TrueType and printer fonts. This list is typically different from that obtained from the [FontList](./fontlist.md) property on the [Root](Root.htm) object which lists those fonts that apply to the screen.
 
 
 The Orientation property specifies the orientation of the page and may be either `'Portrait'` or `'Landscape'`.
 
 
-The graphics objects listed above may be printed in much the same way as they may be displayed on a [Form](form.md) or [Static](static.md). The differences are :
+The graphics objects listed above may be printed in much the same way as they may be displayed on a [Form](Form.htm) or [Static](static.md). The differences are :
 
 
 Once an object has been created, it will be printed, even if its name is subsequently expunged.

@@ -16,7 +16,7 @@
 **Description**
 
 
-The Splitter divides the client area of a [Form](form.md) or [SubForm](subform.md) into resizable panes. Each pane created this way may be empty or be occupied by a single object. If the object in a pane is itself a container object, such as a [SubForm](subform.md), it may have a number of other controls within it.
+The Splitter divides the client area of a [Form](Form.htm) or [SubForm](subform.md) into resizable panes. Each pane created this way may be empty or be occupied by a single object. If the object in a pane is itself a container object, such as a [SubForm](subform.md), it may have a number of other controls within it.
 
 
 

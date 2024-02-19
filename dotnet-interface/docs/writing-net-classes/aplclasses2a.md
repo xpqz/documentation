@@ -1,19 +1,17 @@
 # Example 2a
 
-In Example 2, the argument to CTOR, the constructor for the Primitives class, was defined to be Int32. This means that the .NET Framework will allow a client to specify *any* integer when it creates an instance of the Primitives class. What happens if the client uses a parameter of 2? Clearly this is going to cause an APL `DOMAIN ERROR` when used to set `⎕IO`.
+In Example 2, the argument to `CTOR`, the constructor for the `Primitives` class, was defined to be `Int32`. This means that the .NET Framework will allow a client to specify *any* integer when it creates an instance of the `Primitives` class. What happens if the client uses a parameter of 2? Clearly this is going to cause an APL `DOMAIN ERROR` when used to set `⎕IO`.
 
-To investigate this case, change the line of code in program.cs that creates an instance of the Primitives class, passing the argument 2, like this:
+To investigate this case, change the line of code in `program.cs` that creates an instance of the Primitives class, passing the argument 2, like this:
 ```apl
-  
-                  Primitives apl = new Primitives(2);
-  
+`Primitives apl = new Primitives(2);`
 ```
 
 ![aplclasses2a_1](../img/aplclasses2a-1.png)
 
 Then click **Debug/Start Without debugging**(or press Ctrl+F5) to run the program.
 
-… as we have built the Dyalog .NET class to use the *Development DLL*, the APL Session appears, and the Tracer can be used to debug the problem. You can see that the constructor `CTOR` has stopped with a `DOMAIN ERROR`. Meanwhile, the C# program is still waiting for the call (to create an instance of Primitives) to finish.
+… as we have built the Dyalog .NET class to use the *Development DLL*, the APL Session appears, and the Tracer can be used to debug the problem. You can see that the constructor `CTOR` has stopped with a `DOMAIN ERROR`. Meanwhile, the C# program is still waiting for the call (to create an instance of `Primitives`) to finish.
 
 ![aplclasses2a_2](../img/aplclasses2a-2.png)
 

@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Native File Create</span><span class="command">{R}←X ⎕NCREATE Y</span></h1>
 
-This function creates a new file. Under Windows the file is opened with mode 66 (see [Native File Tie on page 1](ntie.md)). Under non-Windows operating systems the current umask will specify the file permissions. The name of the new file is specified by the left argument `X` which must be a simple character vector or scalar containing a valid pathname for the file.
+This function creates a new file. Under Windows the file is opened with mode 66 (see [Native File Tie on page 1](ntie.htm#NativeFileTie)). Under non-Windows operating systems the current umask will specify the file permissions. The name of the new file is specified by the left argument `X` which must be a simple character vector or scalar containing a valid pathname for the file.
 
 
 `Y` is 0 or a negative integer value that specifies an (unused) tie number by which the file may subsequently be referred. If `Y` is 0, the system allocates the first (closest to zero) available tie number which is returned as the result.
@@ -24,7 +24,7 @@ The shy result of `⎕NCREATE` is the tie number of the new file.
 
 | 0 | the file named by `X` will be created |
 | --- | ---  |
-| `1` | a uniquely named file will be created by extending the base name (see [File Name Parts on page 1](nparts.md) ) with random characters. If a unique name cannot be created then an error will be signalled. The actual name of the file can be determined from `⎕NNAMES` or `⎕NINFO` . |
+| `1` | a uniquely named file will be created by extending the base name (see [File Name Parts on page 1](nparts.htm#NParts) ) with random characters. If a unique name cannot be created then an error will be signalled. The actual name of the file can be determined from `⎕NNAMES` or `⎕NINFO` . |
 
 #### IfExists Option (character vector)
 

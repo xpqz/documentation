@@ -20,7 +20,7 @@ The ProgressBar object is a window that an application can use to indicate the p
 
 
 
-If ProgressStyle is `Normal` or`Smooth`, the  size of the bar, intended to indicate the amount of progress, is determined using the [Thumb](./thumb.md) property in relation to its [Limits](./limits.md) property, and/or using the [ProgressStep](./progressstep.md) method. This can be updated as appropriate in the application logic or by using a [Timer](timer.md).
+If ProgressStyle is `Normal` or`Smooth`, the  size of the bar, intended to indicate the amount of progress, is determined using the [Thumb](./thumb.md) property in relation to its [Limits](./limits.md) property, and/or using the [ProgressStep](./progressstep.md) method. This can be updated as appropriate in the application logic or by using a [Timer](Timer.htm).
 
 
 The range of a ProgressBar is specified by the [Limits](./limits.md) property. This is a 2-element integer vector defining its minimum and maximum values. The position of the filled rectangle is specified by the Thumb property. You can update the ProgressBar by using `⎕WS` to set the value of the [Thumb](./thumb.md) directly, or by using the [ProgressStep](./progressstep.md) method. The latter causes the [Thumb](./thumb.md) to be updated by the value of the [Step](./step.md) property.

@@ -18,7 +18,7 @@ You may disable the paste facility entirely by setting the action code of the ev
 
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 6-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 6-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |

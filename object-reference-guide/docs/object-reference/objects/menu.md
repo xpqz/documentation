@@ -26,10 +26,10 @@ or cancels the operation (by clicking elsewhere).
 
 
 If a Menu belongs to a [Form](../a-z/form.md), [SubForm](../a-z/subform.md) or is a top-level object, it must be popped up by the application. This is
-commonly done in response to a [MouseDown](../a-z/mousedown.md) event. A Menu is popped-up by calling [`⎕DQ`](../../Language/System%20Functions/dq.htm) with only the name of the Menu as its argument. The user may therefore not
+commonly done in response to a [MouseDown](../a-z/mousedown.md) event. A Menu is popped-up by calling [`⎕DQ`](../../Language/System Functions/dq.htm) with only the name of the Menu as its argument. The user may therefore not
 interact with any other object until a selection is made or until the operation
 is cancelled. When either occurs, the Menu is automatically popped down and
-de-activated, and its [`⎕DQ`](../../Language/System%20Functions/dq.htm) terminates.
+de-activated, and its [`⎕DQ`](../../Language/System Functions/dq.htm) terminates.
 
 
 The Menu object does not have a [Size](../a-z/size.md) property. Instead, its size is determined automatically by its contents.

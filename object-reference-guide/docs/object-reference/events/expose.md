@@ -16,7 +16,7 @@ If enabled, this event is reported when part or all of the object's window is ex
 
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 6-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 6-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |

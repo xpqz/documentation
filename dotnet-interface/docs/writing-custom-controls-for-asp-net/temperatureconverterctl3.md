@@ -14,7 +14,7 @@ The first change is that it describes an event that the control is going to gene
 
 ```
 
-In this case, the name of the event is *Export* and it will report two parameters named *Fahrenheit* and *Centigrade* which are both of data type Double.
+In this case, the name of the event is *Export* and it will report two parameters named *Fahrenheit* and *Centigrade* which are both of data type `Double`.
 
 This version of the control presents a slightly different appearance to the previous one. The control itself is wrapped up in an HTML *Table,* with the conversion buttons arranged in a column. These buttons generate internal events that are caught and handled by the control itself. The third row of the table contains an additional button labelled *Export* which will generate the *Export* event when pressed. The `Render` function is shown below.
 ```apl

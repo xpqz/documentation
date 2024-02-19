@@ -7,17 +7,17 @@ Dyalog APL will generate a system error and (normally) terminate in one of two c
 - As a result of the failure of a workspace integrity check
 - As a result of a System Exception
 
-On Windows, if the [DYALOG_NOPOPUPS](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#DYALOG_NOPOPUPS) parameter is 0 (the default), it will display the System Error dialog box (see [System Error Dialog Box on page 1](#System_Error_Dialog)). This is suppressed if [DYALOG_NOPOPUPS](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#DYALOG_NOPOPUPS) is 1.
+On Windows, if the [DYALOG_NOPOPUPS](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS) parameter is 0 (the default), it will display the System Error dialog box (see [System Error Dialog Box on page 1](#System_Error_Dialog)). This is suppressed if [DYALOG_NOPOPUPS](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS) is 1.
 
 ### aplcore file
 
-When a system error occurs, APL normally saves an **aplcore** file which may be sent to Dyalog for diagnosis. The name and location of the **aplcore** file may be specified by the [AplCoreName](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#APLCoreName) parameter. If this parameter is not specified, the **aplcore** file is named aplcore and is saved in the current working directory.
+When a system error occurs, APL normally saves an **aplcore** file which may be sent to Dyalog for diagnosis. The name and location of the **aplcore** file may be specified by the [AplCoreName](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#APLCoreName) parameter. If this parameter is not specified, the **aplcore** file is named `aplcore` and is saved in the current working directory.
 
-Normally a new **aplcore** will replace a file of the same name. However, if [AplCoreName](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#APLCoreName) contains an asterisk (*), the system will create a new file,  replacing the asterisk with a number incremented from the largest numbered file present.
+Normally a new **aplcore** will replace a file of the same name. However, if [AplCoreName](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#APLCoreName) contains an asterisk (*), the system will create a new file,  replacing the asterisk with a number incremented from the largest numbered file present.
 
-The number of **aplcore** files retained by the system is specified by the [MaxAplCores](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#maxaplcores) parameter. If [MaxAplCores](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#maxaplcores) is 0, the system will not save an **aplcore**. However, under Windows, if [DYALOG_NOPOPUPS](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#DYALOG_NOPOPUPS) is 0, and the user checks the **Create an aplcore file** checkbox when the **System Error**dialog box is displayed, an **aplcore** will be saved regardless of the value of [MaxAplCores](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#maxaplcores). See [System Error Dialog Box on page 1](#System_Error_Dialog).
+The number of **aplcore** files retained by the system is specified by the [MaxAplCores](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores) parameter. If [MaxAplCores](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores) is 0, the system will not save an **aplcore**. However, under Windows, if [DYALOG_NOPOPUPS](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS) is 0, and the user checks the **Create an aplcore file** checkbox when the **System Error**dialog box is displayed, an **aplcore** will be saved regardless of the value of [MaxAplCores](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores). See [System Error Dialog Box on page 1](#System_Error_Dialog).
 
-Be aware that if your application contains any secure data, this data may be present in an **aplcore** file, and it may be appropriate to set both [MaxAplCores](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#maxaplcores) and DYALOG_NOPOPUPS to 0 to prevent such data being saved on disk.
+Be aware that if your application contains any secure data, this data may be present in an **aplcore** file, and it may be appropriate to set both [MaxAplCores](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores) and DYALOG_NOPOPUPS to 0 to prevent such data being saved on disk.
 
 Information that may prove useful in debugging the problem, including (where possible) the SI stack at the point where the **aplcore** was generated, is by default written to the end of **aplcore** files; the section begins with the string
 
@@ -25,9 +25,9 @@ Information that may prove useful in debugging the problem, including (where pos
 
 Under UNIX, this interesting information section can be extracted from the **aplcore** as follows:
 
-sed -n '/======== Interesting Information/,$p' aplcore
+`sed -n '/======== Interesting Information/,$p' aplcore`
 
-To prevent this information from being written to the **aplcore** file, the [APL_TextInAplCore](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters/APL_TextInAplCore.htm) parameter should be set to 0.
+To prevent this information from being written to the **aplcore** file, the [APL_TextInAplCore](../../UserGuide/Installation and Configuration/Configuration Parameters/APL_TextInAplCore.htm) parameter should be set to 0.
 
 ### Workspace Integrity
 
@@ -58,7 +58,7 @@ Objects may often (but not always) be recovered from **aplcore** using `)COPY` o
 
 Be aware that in many cases an attempt to `)COPY` from or `)LOAD` an **aplcore** is likely to result in a further syserror; this may result in the original **aplcore** being overwritten, thus losing the contents of that file. It is therefore worth while taking a copy of the **aplcore** before attempting to `)COPY` from it. Attempting to copy specific items is more likely to be successful than copying the entire workspace from the aplcore.
 
-Note that in previous versions under Windows because (by default) the **aplcore** file has no extension, it was necessary to explicitly add a dot, or APL would attempt to find the non-existent file aplcore.dws. This is no longer true in version 14.1 onwards.
+Note that in previous versions under Windows because (by default) the **aplcore** file has no extension, it was necessary to explicitly add a dot, or APL would attempt to find the non-existent file `aplcore.dws`. This is no longer true in version 14.1 onwards.
 
 ### Reporting Errors to Dyalog
 
@@ -72,7 +72,7 @@ If the problem is reproducible, i.e. can be easily repeated, please also send th
 
 ### System Error Dialog Box
 
-The System Error Dialog illustrated below was produced by deliberately inducing a system exception in the DLL function memcpy(). The functions used were:
+The System Error Dialog illustrated below was produced by deliberately inducing a system exception in the DLL function `memcpy()`. The functions used were:
 ```apl
      ∇ foo
 [1]    goo
@@ -101,12 +101,12 @@ Note: Under a 32-bit interpreter the `⎕NA` call should refer to dyalog32.
 | Create a process dump file | Dumps a complete core image, see below. |
 | Create Trappable Error | If you check this box (only enabled on System Error codes 995 and 996), APL will not terminate but will instead generate an error 91 ( `EXTERNAL DLL EXCEPTION` ) when you press **Dismiss** . |
 | Create an aplcore file | If this box is checked, an **aplcore** file will be created. |
-| Pass exception on to operating system | If this box is checked, the exception will be passed on to your current debugging tool (e.g. **Visual Studio** ). See [PassExceptionsToOpSys](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#PassExceptionsToOpSys) . |
+| Pass exception on to operating system | If this box is checked, the exception will be passed on to your current debugging tool (e.g. **Visual Studio** ). See [PassExceptionsToOpSys](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#PassExceptionsToOpSys) . |
 | Copy to clipboard | Copies the contents of the APL stack trace window to the Clipboard. |
 
 ### Create a process dump file
 
-Under Windows the **Create a process dump file** option creates a user-mode process dump file , also known as a minidump file, called dyalog.dmp in the current directory. This file allows post-mortem debugging of a crash in the interpreter or a loaded DLL. It contains much more debug information than a normal **aplcore** (and is much larger than an **aplcore**) and can be sent to Dyalog Limited (zip it first please). Alternatively the file can be loaded into **Visual Studio .NET** to do your own debugging.
+Under Windows the **Create a process dump file** option creates a user-mode process dump file , also known as a minidump file, called `dyalog.dmp` in the current directory. This file allows post-mortem debugging of a crash in the interpreter or a loaded DLL. It contains much more debug information than a normal **aplcore** (and is much larger than an **aplcore**) and can be sent to Dyalog Limited (zip it first please). Alternatively the file can be loaded into **Visual Studio .NET** to do your own debugging.
 
 ### Debugging your own DLLs
 
@@ -120,7 +120,7 @@ After debugging, the System Exception dialog box appears again. Click on **Don't
 
 ### ErrorOnExternalException Parameter
 
-This parameter allows you to prevent APL from taking the actions described above when an exception caused by an external DLL occurs. The following example illustrates what happens when the functions above are run, but with the [ErrorOnExternalException](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#ErrorOnExternalException) parameter set to 1.
+This parameter allows you to prevent APL from taking the actions described above when an exception caused by an external DLL occurs. The following example illustrates what happens when the functions above are run, but with the [ErrorOnExternalException](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#ErrorOnExternalException) parameter set to 1.
 ```apl
    ⎕←2 ⎕NQ'.' 'GetEnvironment' 'ErrorOnExternalException'
 1
@@ -137,7 +137,7 @@ goo[1]
 foo[1]
 ```
 
-Note: Dyalog recommends that enabling [ErrorOnExternalException](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#ErrorOnExternalException) should only be done while developing or debugging an application; ignoring such errors may result in corruption in the workspace which could result to unexpected errors later in the application.
+Note: Dyalog recommends that enabling [ErrorOnExternalException](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#ErrorOnExternalException) should only be done while developing or debugging an application; ignoring such errors may result in corruption in the workspace which could result to unexpected errors later in the application.
 
 ### What should I do if Dyalog hangs?
 
@@ -147,5 +147,5 @@ To do this:
 
 1. Start **Task Manager** (as a user who has administrative privileges)
 2. Go to the **Processes** tab
-3. Right click on the dyalog.exe process and choose **Create Dump File**. Windows will create a process dump file in C:\Users\<your name here>\AppData\Local\Temp\dyalog.DMP
+3. Right click on the `dyalog.exe` process and choose **Create Dump File**. Windows will create a process dump file in `C:\Users\<your name here>\AppData\Local\Temp\dyalog.DMP`
 4. Compress this file and send it to Dyalog. If it is less than 10 Mb in size, send it to Dyalog Support as an email attachment. If it is more than 10 Mb, upload it via the **MyDyalog/My Account** page or contact Dyalog support to request an account on our FTP server.

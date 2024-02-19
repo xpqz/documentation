@@ -8,14 +8,14 @@
 `Y` is an integer that specifies the array size threshold at which parallel execution takes place. If a parallel-enabled function is invoked on an array whose number of elements is equal to or greater than this threshold, execution takes place in parallel. If not, it doesn't.
 
 
-Prior to this call, the default value of the threshold is specified by an environment variable named APL_MIN_PARALLEL. If this variable is not set, the default is 32768.
+Prior to this call, the default value of the threshold is specified by an environment variable named `APL_MIN_PARALLEL`. If this variable is not set, the default is 32768.
 
 
 `R` is the previous value.
 
 
 See [Parallel Execution
-         on page 1](../Introduction/Parallel%20Execution.htm#Parallel_Execution) and [Number of Threads on page 1](number-of-threads.md).
+         on page 1](../Introduction/Parallel Execution.htm#Parallel_Execution) and [Number of Threads on page 1](number-of-threads.md).
 
 
 

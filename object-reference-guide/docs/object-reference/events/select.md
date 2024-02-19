@@ -28,7 +28,7 @@ For all other objects, this event is generated when the user presses the keys as
 
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 2-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 2-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |

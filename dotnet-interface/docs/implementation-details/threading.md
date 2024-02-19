@@ -4,7 +4,7 @@ The .NET Framework is inherently a multi-threaded environment. For example, ASP.
 
 It is important to remember that whether running as DYALOG.EXE, or as the Dyalog DLL, the Dyalog APL interpreter executes in a *single system thread*. However, APL does provide the ability to run several APL threads at the same time. If you are unfamiliar with APL threads, see *Language Reference, Chapter 1* for an introduction to this topic.
 
-To resolve this situation, Dyalog APL automatically allocates APL threads to .NET system threads and maintains a thread synchronisation table so that calls on the same system thread are routed to the same APL thread, and vice versa. This is important because a GUI object (cf. System.Winforms) is owned by the system thread that created it and can only be accessed by that thread.
+To resolve this situation, Dyalog APL automatically allocates APL threads to .NET system threads and maintains a thread synchronisation table so that calls on the same system thread are routed to the same APL thread, and vice versa. This is important because a GUI object (cf. `System.Winforms`) is owned by the system thread that created it and can only be accessed by that thread.
 
 The way that system threads are allocated to APL threads differs between the case where APL is running as the primary executable (DYALOG.EXE) or as a DLL hosted by another program. The latter is actually the simpler of the two and will be considered first.
 

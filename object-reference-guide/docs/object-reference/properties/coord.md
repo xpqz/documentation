@@ -21,7 +21,7 @@ string with one of the following values;`'Inherit'`,
 If Coord is `'Inherit'`, the co-ordinate
 system for the object is **inherited** from its parent. Note that the default
 value of Coord for the system object `'.'` is `'Prop'`, so by default all objects
-created by [`⎕WC`](../../Language/System%20Functions/wc.htm) inherit `'Prop'`.
+created by [`⎕WC`](../../Language/System Functions/wc.htm) inherit `'Prop'`.
 
 
 If Coord is `'Prop'`, the origin of the

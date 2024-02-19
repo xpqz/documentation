@@ -24,7 +24,7 @@ An empty character vector is treated the same as a vector of blanks, and represe
 A zero-length vector of vectors or an empty matrix represents 0 items. The default value for Items is an empty matrix.
 
 
-`⎕WG 'Items'` returns an array of the same structure as was assigned by [`⎕WC`](../../Language/System%20Functions/wc.htm) or [`⎕WS`](../../Language/System%20Functions/ws.htm).
+`⎕WG 'Items'` returns an array of the same structure as was assigned by [`⎕WC`](../../Language/System Functions/wc.htm) or [`⎕WS`](../../Language/System Functions/ws.htm).
 
 
 

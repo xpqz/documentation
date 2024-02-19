@@ -16,7 +16,7 @@
 **Description**
 
 
-This object provides a vertical or horizontal line to separate items in a [Menu](menu.md). It may also be used to split a [MenuBar](menubar.md) over more than one line.
+This object provides a vertical or horizontal line to separate items in a [Menu](Menu.htm). It may also be used to split a [MenuBar](MenuBar.htm) over more than one line.
 
 
 
@@ -26,12 +26,12 @@ The orientation of the Separator is determined by its [Style](./style.md) proper
 If you want to provide a menu with a 3-Dimensional (pushbutton) appearance, you should also set the [EdgeStyle](./edgestyle.md) property on any Separator objects in it. Alternatively, you can achieve the same effect by setting the background colour ([BCol](./bcol.md)) for the Separators to grey (192 192 192).
 
 
-The [Posn](./posn.md) property is a single integer number which specifies the positional index of the Separator relative to the other objects in the [Menu](menu.md). A Separator does not generate any events.
+The [Posn](./posn.md) property is a single integer number which specifies the positional index of the Separator relative to the other objects in the [Menu](Menu.htm). A Separator does not generate any events.
 
 
-Like other components of a menu, the position of a Separator is normally determined by the order in which it is created in relation to other objects with the same parent. However, you can use the [Posn](./posn.md) property to **insert** a Separator into an existing structure. For example, having defined three [MenuItem](menuitem.md) objects as children of a [Menu](menu.md), you can insert a Separator between the first and the second by specifying its [Posn](./posn.md) to be 2. Note that the value of [Posn](./posn.md) for the [MenuItem](menuitem.md)s that were previously second and third will then be reset to third and fourth respectively.
+Like other components of a menu, the position of a Separator is normally determined by the order in which it is created in relation to other objects with the same parent. However, you can use the [Posn](./posn.md) property to **insert** a Separator into an existing structure. For example, having defined three [MenuItem](MenuItem.htm) objects as children of a [Menu](Menu.htm), you can insert a Separator between the first and the second by specifying its [Posn](./posn.md) to be 2. Note that the value of [Posn](./posn.md) for the [MenuItem](MenuItem.htm)s that were previously second and third will then be reset to third and fourth respectively.
 
 
-If you put a Separator (either [Style](./style.md)) into a [MenuBar](menubar.md), it has the effect of adding another line to it. Any items added after the Separator will appear in the new line.
+If you put a Separator (either [Style](./style.md)) into a [MenuBar](MenuBar.htm), it has the effect of adding another line to it. Any items added after the Separator will appear in the new line.
 
 

@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">For Statement</span><span class="command">:For var :In[Each] aexp</span></h1>
 
-[Formal Definition](For%20Statement%20Definition.htm)
+[Formal Definition](For Statement Definition.htm)
 
 #### Single Control Variable
 

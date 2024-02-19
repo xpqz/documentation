@@ -4,7 +4,7 @@ To create a .NET class in Dyalog APL, you simply create a standard APL Class and
 
 .NET Classes are organised in .NET Namespaces. If you wrap your Class (or Classes) within an APL namespace, the name of that namespace will be used to identify the name of the corresponding .NET Namespace in your Assembly.
 
-If a Class is to be based upon a specific .NET Class, the name of that .NET Class must be specified as the Base Class in the `:Class` statement, and the `:Using` statements must correctly locate the base class. If not, the Class is assumed to be based upon `System.Object`. If you use any .NET Types within your Class, you must ensure that these too are located by :Using.
+If a Class is to be based upon a specific .NET Class, the name of that .NET Class must be specified as the Base Class in the `:Class` statement, and the `:Using` statements must correctly locate the base class. If not, the Class is assumed to be based upon System.Object. If you use any .NET Types within your Class, you must ensure that these too are located by :Using.
 
 Once you have defined the functionality of your .NET classes, you are ready to save them in an assembly. This is simply achieved by selecting *Export* from the Session *File* menu.
 

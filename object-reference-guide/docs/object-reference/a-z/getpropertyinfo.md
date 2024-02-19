@@ -52,6 +52,6 @@ The result is a nested vector with one element per property name. Each element o
 ```
 
 
-If the data type of a property is VT_USERDEFINED, it means that the property may assume one of a set of values defined by a type list. In this case, the name of the type list is returned in place of the string "VT_USERDEFINED". Further information can be obtained using [GetTypeInfo](gettypeinfo.md) with this name as a parameter.
+If the data type of a property is VT_USERDEFINED, it means that the property may assume one of a set of values defined by a type list. In this case, the name of the type list is returned in place of the string "VT_USERDEFINED". Further information can be obtained using [GetTypeInfo](GetTypeInfo.htm) with this name as a parameter.
 
 

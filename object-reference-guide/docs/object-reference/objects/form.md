@@ -79,7 +79,7 @@ thumb in the vertical and horizontal scrollbars respectively. When the user
 attempts to move the thumb in one of the scrollbars, the Form generates a [VScroll](../a-z/vscroll.md) or [HScroll](../a-z/hscroll.md) event.
 
 
-[VScroll](../a-z/vscroll.md) and [HScroll](../a-z/hscroll.md) cannot be changed using [`⎕WS`](../../Language/System%20Functions/ws.htm).
+[VScroll](../a-z/vscroll.md) and [HScroll](../a-z/hscroll.md) cannot be changed using [`⎕WS`](../../Language/System Functions/ws.htm).
 However, you can make a scrollbar disappear by setting the corresponding element
 of [Range](../a-z/range.md) to 1, thus allowing you to
 dynamically switch the scrollbar off and on. Note however that doing so will

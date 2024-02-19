@@ -19,7 +19,7 @@ For the [Root](./root.md) object, Caption specifies the text displayed when Alt+
 Its default value is an empty vector.
 
 
-For a [Button](./button.md) or [Label](./label.md), if the Caption property  contains one or more linefeed characters (`⎕UCS 10`) the text is top-left justified or, for a [Button](./button.md) with [Style](style.md)`'Push'`, centre-justifed ;  and automatically wraps on white-space characters (such as space and tab) to fit in the width provided.
+For a [Button](./button.md) or [Label](./label.md), if the Caption property  contains one or more linefeed characters (`⎕UCS 10`) the text is top-left justified or, for a [Button](./button.md) with [Style](Style.htm)`'Push'`, centre-justifed ;  and automatically wraps on white-space characters (such as space and tab) to fit in the width provided.
 
 
 For controls that support this feature, a single ampersand (&) is used to designate that the following character (if present) is an access key or an accelerator key and that character is underlined. The ampersand is not itself displayed. To negate this feature and cause an ampersand to be displayed, it is necessary to specify "&&".

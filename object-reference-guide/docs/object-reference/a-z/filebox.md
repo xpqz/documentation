@@ -16,11 +16,11 @@
 **Description**
 
 
-The FileBox object implements the standard Windows FileSelection Dialog Box. This is a "modal" object. When you create a FileBox with [`⎕WC`](../../Language/System%20Functions/wc.htm), it is initially invisible and the user cannot interact with it. To use it, you must execute [`⎕DQ`](../../Language/System%20Functions/dq.htm) with the name of the FileBox as its right argument. This causes the FileBox to be displayed. During the "local" [`⎕DQ`](../../Language/System%20Functions/dq.htm) the user may interact **only** with the FileBox, or with other applications. When the user terminates the operation (by pressing the "Save", "Open", or "Cancel" Buttons, or by closing the window) the "local" [`⎕DQ`](../../Language/System%20Functions/dq.htm) terminates, and the FileBox disappears.
+The FileBox object implements the standard Windows FileSelection Dialog Box. This is a "modal" object. When you create a FileBox with [`⎕WC`](../../Language/System Functions/wc.htm), it is initially invisible and the user cannot interact with it. To use it, you must execute [`⎕DQ`](../../Language/System Functions/dq.htm) with the name of the FileBox as its right argument. This causes the FileBox to be displayed. During the "local" [`⎕DQ`](../../Language/System Functions/dq.htm) the user may interact **only** with the FileBox, or with other applications. When the user terminates the operation (by pressing the "Save", "Open", or "Cancel" Buttons, or by closing the window) the "local" [`⎕DQ`](../../Language/System Functions/dq.htm) terminates, and the FileBox disappears.
 
 
 
-When the "local" [`⎕DQ`](../../Language/System%20Functions/dq.htm) is terminated, the FileBox generates either an [FileBoxOK](./fileboxok.md)(71) or [FileBoxCancel](./fileboxcancel.md)(72) event. The former is generated when the user presses the "Save" or "Open" button; the latter when the user presses the "Cancel" button or closes the FileBox.
+When the "local" [`⎕DQ`](../../Language/System Functions/dq.htm) is terminated, the FileBox generates either an [FileBoxOK](./fileboxok.md)(71) or [FileBoxCancel](./fileboxcancel.md)(72) event. The former is generated when the user presses the "Save" or "Open" button; the latter when the user presses the "Cancel" button or closes the FileBox.
 
 
 The [FileMode](./filemode.md) property is a character vector which indicates the mode in which the selected file is going to be opened. [FileMode](./filemode.md) may be `'Read'` (the default) or `'Write'`. If [FileMode](./filemode.md) is `'Write'`, files listed in the File Selection Box are "greyed", although they may still be selected.
@@ -45,7 +45,7 @@ The [Filters](./filters.md) property is a nested scalar or vector containing a l
 The [Index](./index.md) property determines which of the filters is initially selected. Its default value is `⎕IO`.
 
 
-Note that when [`⎕DQ`](../../Language/System%20Functions/dq.htm) terminates with [FileBoxOK](./fileboxok.md), the [File](./file.md), [Directory](./directory.md), and [Index](./index.md) properties are updated to reflect the contents of the fields within the FileBox.
+Note that when [`⎕DQ`](../../Language/System Functions/dq.htm) terminates with [FileBoxOK](./fileboxok.md), the [File](./file.md), [Directory](./directory.md), and [Index](./index.md) properties are updated to reflect the contents of the fields within the FileBox.
 
 
 The operating system imposes limits on both the length of the name of the file, and on the total path length. In version attempting to set the `File` or `Directory` Properties to too long a name will generate a DOMAIN ERROR, while attempting to use too long a File name within the FileBox will result in the appearence of an error MessageBox.

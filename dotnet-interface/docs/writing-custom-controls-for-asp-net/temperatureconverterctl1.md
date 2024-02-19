@@ -1,12 +1,12 @@
 # The TemperatureConverterCtl1 Control
 
-The TemperatureConverterCtl1 control is an example of a *compositional* control, i.e. a server-side custom control that is composed of other standard controls.
+The `TemperatureConverterCtl1` control is an example of a *compositional* control, i.e. a server-side custom control that is composed of other standard controls.
 
-In this example, The TemperatureConverterCtl1 control gathers together two textboxes and two push buttons into a single component as illustrated below. Type a number into the *Centigrade* box, click the *Centigrade To Fahrenheit* button, and the control converts accordingly. If you click the *Fahrenheit To Centigrade* button, the reverse conversion is performed.
+In this example, The `TemperatureConverterCtl1` control gathers together two textboxes and two push buttons into a single component as illustrated below. Type a number into the *Centigrade* box, click the *Centigrade To Fahrenheit* button, and the control converts accordingly. If you click the *Fahrenheit To Centigrade* button, the reverse conversion is performed.
 
 ![temperatureconverterctl1](../img/temperatureconverterctl1.png)
 
-The TemperatureConverterCtl1 control  *contains* other standard controls as *child controls*. A control that acts as a container must implement an interface called INamingContainer.
+The `TemperatureConverterCtl1` control  *contains* other standard controls as *child controls*. A control that acts as a container must implement an interface called `INamingContainer`.
 
 This interface does not in fact require any methods; it merely acts as a marker. So the `:Class` statement specifies that it provides this interface:
 ```apl
@@ -16,7 +16,7 @@ This interface does not in fact require any methods; it merely acts as a marker.
 
 ### Child Controls
 
-Whenever ASP.NET initialises a Control, it calls its CreateChildControls method. The default CreateChildControls method does nothing). So we simply define a function called `CreateChildControls` with the appropriate public interface (no arguments and  no result) as shown below.
+Whenever ASP.NET initialises a `Control`, it calls its `CreateChildControls` method. The default `CreateChildControls` method does nothing). So we simply define a function called `CreateChildControls` with the appropriate public interface (no arguments and  no result) as shown below.
 ```apl
      ∇ CreateChildControls
 [1]    :Access Public override
@@ -47,15 +47,15 @@ Whenever ASP.NET initialises a Control, it calls its CreateChildControls method.
 
 ```
 
-Line[4] creates an instance of a LiteralControl (a label) containing the text "Fahrenheit" with an HTML tag "<h3>". Controls is a property of the Control class (from which TemperatureConverterCtl1 inherits) that returns a ControlCollection object This has an Add method whose job is to add the specified control to the list of child controls managed by the object.
+Line[4] creates an instance of a `LiteralControl` (a label) containing the text "Fahrenheit" with an HTML tag "<h3>". `Controls` is a property of the `Control` class (from which `TemperatureConverterCtl1` inherits) that returns a `ControlCollection` object This has an `Add` method whose job is to add the specified control to the list of child controls managed by the object.
 
-Lines[5-6] create a TextBox child control containing the text "0", and Line[7] adds it to the child control list.
+Lines[5-6] create a `TextBox` child control containing the text "0", and Line[7] adds it to the child control list.
 
-Line[8] adds a second LiteralControl to terminate the "<H3>" tag.
+Line[8] adds a second `LiteralControl` to terminate the "<H3>" tag.
 
 Lines [10-14] do the same for Centigrade.
 
-Lines[16-17] create a Button control labelled "Fahrenheit To Centigrade". Line[18] associates the callback function `F2CConvertBtn_Click` with the button's onClick event. Note that it is necessary to assign the `⎕OR` of the function rather than its name. Line[19] adds the button to the list of child controls.
+Lines[16-17] create a `Button` control labelled "Fahrenheit To Centigrade". Line[18] associates the callback function `F2CConvertBtn_Click` with the button's `onClick` event. Note that it is necessary to assign the `⎕OR` of the function rather than its name. Line[19] adds the button to the list of child controls.
 
 Lines[21-24] create a Centigrade button in the same way.
 
@@ -63,7 +63,7 @@ This function is run every time the page is loaded; however in a postback situat
 
 ### Fahrenheit and Centigrade Values
 
-The TemperatureConverterCtl1 maintains two public properties named CentigradeValue and FahrenheitValue, which may be accessed by a client application. These properties are not exposed directly as variables, but are obtained and set via *property get* (or *accessor*) and *property set* (or *mutator*) functions. (This is recommended practice for C#, so the example shows how it is done in APL). In this case, the values are simply stored in or obtained directly from the corresponding textboxes set up by `CreateChildControls`.
+The `TemperatureConverterCtl1` maintains two public properties named `CentigradeValue` and `FahrenheitValue`, which may be accessed by a client application. These properties are not exposed directly as variables, but are obtained and set via *property get* (or *accessor*) and *property set* (or *mutator*) functions. (This is recommended practice for C#, so the example shows how it is done in APL). In this case, the values are simply stored in or obtained directly from the corresponding textboxes set up by `CreateChildControls`.
 ```apl
       :Property CentigradeValue
         ∇ C←get
@@ -82,11 +82,11 @@ The TemperatureConverterCtl1 maintains two public properties named CentigradeVal
 
 Notice that the `Get` function uses `⍎` to convert the text in the textbox to a numeric value. Clearly something more robust would be called for in a real application
 
-Similar functions to handle the Fahrenheit property are provided but are not shown here.
+Similar functions to handle the `Fahrenheit` property are provided but are not shown here.
 
 ### Responding to Button presses
 
-We have seen how APL callback functions have been attached to the onClick events in the two buttons. The `C2FconvertBtn_Click` callback function simply obtains the CentigradeValue property, converts it to Fahrenheit using `C2F`, and then sets the FahrenheitValue property.
+We have seen how APL callback functions have been attached to the `onClick` events in the two buttons. The `C2FconvertBtn_Click` callback function simply obtains the `CentigradeValue` property, converts it to Fahrenheit using `C2F`, and then sets the `FahrenheitValue` property.
 ```apl
      ∇ C2FConvertBtn_Click args
       :Access Public
@@ -113,9 +113,9 @@ The `F2CconvertBtn_Click` callback function converts from Fahrenheit to Centigra
 
 ### Using the Control on the Page
 
-The text of the script file samples\temp\temp1.aspx is shown below. There is really no difference between this example and the simple.aspx described earlier.
+The text of the script file `samples\temp\temp1.aspx` is shown below. There is really no difference between this example and the `simple.aspx` described earlier.
 ```apl
-<%@ Register TagPrefix="Dyalog" Namespace="DyalogSamples" 
+`<%@ Register TagPrefix="Dyalog" Namespace="DyalogSamples" 
                                 Assembly="TEMP"%>
 <html>
 <body bgcolor="yellow">
@@ -128,13 +128,12 @@ The text of the script file samples\temp\temp1.aspx is shown below. There is rea
 </form>
 </center>
 </body>
-</html>
-
+</html>`
 ```
 
-The HTML generated by the control at run-time is shown below. Notice that in place of the server-side control declaration in temp1.aspx, there are two edit controls with numerical values in them, and two push buttons to submit data entered on the form to the server.
+The HTML generated by the control at run-time is shown below. Notice that in place of the server-side control declaration in `temp1.aspx`, there are two edit controls with numerical values in them, and two push buttons to submit data entered on the form to the server.
 ```apl
-<html>
+`<html>
 <body bgcolor="yellow">
 <br><br>
 <center>
@@ -148,6 +147,5 @@ The HTML generated by the control at run-time is shown below. Notice that in pla
 
 </center>
 </body>
-</html>
-
+</html>`
 ```

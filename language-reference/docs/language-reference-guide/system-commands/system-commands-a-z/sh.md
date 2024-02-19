@@ -12,13 +12,13 @@ This command allows WINDOWS or UNIX shell commands to be given from APL.  `)SH`
 `)SH` allows UNIX shell commands to be given from APL. The argument must be entered in the appropriate case (usually lower-case).  The result of the command, if any, is displayed.
 
 
-`)SH` causes Dyalog APL to invoke the system() library call. The shell which is used to run the command is therefore the shell which system() is defined to call. For example, under AIX this would be /usr/bin/sh.
+`)SH` causes Dyalog APL to invoke the `system()` library call. The shell which is used to run the command is therefore the shell which `system()` is defined to call. For example, under AIX this would be `/usr/bin/sh`.
 
 
 When the shell is closed, control returns to APL. See *Dyalog for UNIX UI Guide* for further information.
 
 
-The parameters CMD_PREFIX and CMD_POSTFIX may be used to execute a different shell under the shell associated with system().
+The parameters CMD_PREFIX and CMD_POSTFIX may be used to execute a different shell under the shell associated with `system()`.
 
 #### Example
 ```apl

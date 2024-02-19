@@ -20,7 +20,7 @@ If the first element of AutoExpand is 1, a row is added when the current cell is
 Similarly, if the second element is 1, a column is added when the current cell is within the last column of the [Grid](./grid.md) and the user presses Cursor Right.
 
 
-Note that when a row or column is added, the appropriate properties (including [Values](values.md) and [CellTypes](celltypes.md)) are expanded accordingly.
+Note that when a row or column is added, the appropriate properties (including [Values](values.md) and [CellTypes](CellTypes.htm)) are expanded accordingly.
 
 
 The default value for AutoExpand is (0 0).

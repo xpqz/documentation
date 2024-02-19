@@ -11,7 +11,7 @@
 **Description**
 
 
-If enabled, this event is reported when the user moves the mouse pointer into (over) an object. The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 3-element vector as follows :
+If enabled, this event is reported when the user moves the mouse pointer into (over) an object. The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 3-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |

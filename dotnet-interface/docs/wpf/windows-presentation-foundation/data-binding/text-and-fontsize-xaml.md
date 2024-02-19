@@ -4,9 +4,9 @@ This example uses XAML to specify the user-interface and the main components of
 
 ## The XAML
 
-The XAML is much the same as in Example 1 and 2 except that it connects two properties Text and FontSize of the same `TextBox` to two Paths **txtSource** and **sizeSource**.
+The XAML is much the same as in Example 1 and 2 except that it connects two properties Text and FontSize of the same TextBox to two Paths **txtSource** and **sizeSource**.
 ```apl
-<Window
+`<Window
  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
  Name="Temp"
@@ -16,8 +16,7 @@ The XAML is much the same as in Example 1 and 2 except that it connects two prop
       Text="{Binding txtSource,Mode=TwoWay,
              UpdateSourceTrigger=PropertyChanged}"
       FontSize="{Binding sizeSource,Mode=OneWay}"/>
-</Window>
-
+</Window>`
 ```
 
 ## The APL Code
@@ -54,15 +53,15 @@ Line [8] creates a local variable named options which will be used as the left a
 [8]    options←2 2⍴'txtSource'String'sizeSource'Int32
 ```
 
-Line [10] creates a Binding Source object from the namespace `src` and a left argument `options` and assigns it to the DataContext property of the `Window``win`.
+Line [10] creates a Binding Source object from the namespace `src` and a left argument `options` and assigns it to the DataContext property of the Window`win`.
 ```apl
 
 [10]   win.DataContext←options(2015⌶)'src'
 ```
 
-An alternative would be to assign it to the DataContext property of the `TextBox` object, but this would require one further line of code to identify it. The reason this works is that the DataContext property of a `TextBox` (and many other controls) is inherited from its parent Window. This feature allows a single Binding Source namespace to be used to specify data bindings between its component variables and any number of properties of any number of controls in the same Window.
+An alternative would be to assign it to the DataContext property of the TextBox object, but this would require one further line of code to identify it. The reason this works is that the DataContext property of a TextBox (and many other controls) is inherited from its parent Window. This feature allows a single Binding Source namespace to be used to specify data bindings between its component variables and any number of properties of any number of controls in the same Window.
 
-As shown before, the left argument of `2015⌶)` is optional. Without it, the namespace would export all its variables using default binding types. In this case, because the binding type of `sizeSource` must be specified as `Int32`, it is necessary to use a left argument, which means specifying all the variables involved.
+As shown before, the left argument of `2015⌶)` is optional. Without it, the namespace would export all its variables using default binding types. In this case, because the binding type of `sizeSource` must be specified as Int32, it is necessary to use a left argument, which means specifying all the variables involved.
 
 ## Testing the Data Binding
 ```apl

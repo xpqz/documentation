@@ -18,7 +18,7 @@ This method is used to obtain the range of dates that is currently visible in a 
 The GetVisibleRange method is niladic.
 
 
-The result is a 2-element integer vector containing the first and last dates currently displayed by the object, reported as [IDNs](../Miscellaneous/International%20Day%20Number.htm).
+The result is a 2-element integer vector containing the first and last dates currently displayed by the object, reported as [IDNs](../Miscellaneous/International Day Number.htm).
 
 
 

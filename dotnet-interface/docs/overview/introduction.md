@@ -20,7 +20,7 @@ The ability to create and use classes in Dyalog APL also provides you with the p
 
 ### GUI Programming with System.Windows.Forms
 
-One of the most important .NET class libraries is called System.Windows.Forms, which is designed to support traditional Windows GUI programming. Visual Studio .NET, which is used to develop GUI applications in Visual Basic and C#, produces code that uses System.Windows.Forms. Dyalog APL allows you to use System.Windows.Forms, instead of (and in some cases, in conjunction with) the built-in Dyalog APL GUI objects such as the Dyalog APL Grid, to program the Graphical User Interface.
+One of the most important .NET class libraries is called `System.Windows.Forms`, which is designed to support traditional Windows GUI programming. Visual Studio .NET, which is used to develop GUI applications in Visual Basic and C#, produces code that uses `System.Windows.Forms`. Dyalog APL allows you to use `System.Windows.Forms`, instead of (and in some cases, in conjunction with) the built-in Dyalog APL GUI objects such as the Dyalog APL Grid, to program the Graphical User Interface.
 
 ### Web Services
 
@@ -28,7 +28,7 @@ Web Services are programmable components that can be called by different applica
 
 ### ASP.NET and WebForms
 
-ASP.NET is a new version of Microsoft Active Server Page technology that makes it easier to develop and deploy dynamic Web applications. To supplement ASP.NET, there are some important new .NET class libraries, including WebForms which allow you to build browser-based user interfaces using the same object-oriented mechanism as you use Windows.Forms for the Windows GUI. The use of these component libraries replaces basic HTML programming.
+ASP.NET is a new version of Microsoft Active Server Page technology that makes it easier to develop and deploy dynamic Web applications. To supplement ASP.NET, there are some important new .NET class libraries, including WebForms which allow you to build browser-based user interfaces using the same object-oriented mechanism as you use `Windows.Forms` for the Windows GUI. The use of these component libraries replaces basic HTML programming.
 
 ASP.NET pages are server-side scripts, that are usually written in C# or Visual Basic. However, you can also employ Dyalog APL directly as a scripting language (*APLScript*) to write ASP.NET web pages. In addition, you can call Dyalog APL workspaces directly from ASP.NET pages, and write custom server-side controls that can be incorporated into ASP.NET pages.
 

@@ -16,13 +16,13 @@ This property defines the table of colours (the colour map) used by a [Bitmap](.
 
 
 
-Please note that [Bits](bits.md) and CMap may **only** be used to represent an image with a colour palette of **256 colours or less**. If the colour palette is larger, the values of [Bits](bits.md) and CMap reported by `⎕WG` will be (0 0). For a high-colour image, use [CBits](cbits.md) instead.
+Please note that [Bits](bits.md) and CMap may **only** be used to represent an image with a colour palette of **256 colours or less**. If the colour palette is larger, the values of [Bits](bits.md) and CMap reported by `⎕WG` will be (0 0). For a high-colour image, use [CBits](CBits.htm) instead.
 
 
 When you create a [Bitmap](./bitmap.md) or [Icon](./icon.md) by specifying [Bits](bits.md) and CMap, the actual colours you obtain are not necessarily those that you specified. This is partly due to hardware restrictions and partly due to the way in which Windows manages colours. Firstly, your display adapter and driver limit the number of pure colours that can be displayed at any one time and therefore define a maximum size for the colour map. For example, on a **standard** VGA you are limited to 16 different pure colours (additional ones are provided by **dithering**).
 
 
-Secondly, Windows reserves a certain number of colours in the colour map for its own use. When an application requests a new colour (i.e. one that is not already installed in the colour map), MS-Windows either assigns it to a spare entry, or allocates the **closest match** if the colour map is full. The value of [Bits](bits.md) and CMap after [`⎕WC`](../../Language/System%20Functions/wc.htm) reflect the actual colours allocated and may bear little resemblance to the values you assigned to these properties initially.
+Secondly, Windows reserves a certain number of colours in the colour map for its own use. When an application requests a new colour (i.e. one that is not already installed in the colour map), MS-Windows either assigns it to a spare entry, or allocates the **closest match** if the colour map is full. The value of [Bits](bits.md) and CMap after [`⎕WC`](../../Language/System Functions/wc.htm) reflect the actual colours allocated and may bear little resemblance to the values you assigned to these properties initially.
 
 
 Note that if you are running 16 colours, MS-Windows reserves all 16 entries in the colour map for its own use. This means that on a 16-colour system, you **cannot** use any colours other than the default ones reserved by MS-Windows. In practice, the "standard" 16-colour CMap is shown in the following table.

@@ -2,11 +2,11 @@
 
 This example takes things a stage further and illustrates how you can implement *method overloading*.
 
-In this example, the requirement is to export three different versions of the IndexGen method; one that takes a single number as an argument, one that takes two numbers, and a third that takes any number of numbers. These are represented by three functions named `IndexGen1`, `IndexGen2` and `IndexGen3` respectively. Because monadic `⍳` performs all of these operations, the three APL functions are in fact identical. However, their public interfaces, as defined in their`:Signature`statement, are all different.
+In this example, the requirement is to export three different versions of the `IndexGen` method; one that takes a single number as an argument, one that takes two numbers, and a third that takes any number of numbers. These are represented by three functions named `IndexGen1`, `IndexGen2` and `IndexGen3` respectively. Because monadic `⍳` performs all of these operations, the three APL functions are in fact identical. However, their public interfaces, as defined in their`:Signature`statement, are all different.
 
-The overloading is achieved by entering the same name for the exported method (IndexGen) in the box provided, for each of the three APL functions.
+The overloading is achieved by entering the same name for the exported method (`IndexGen`) in the box provided, for each of the three APL functions.
 
-aplclasses5.dws contains a new version of the `Primitives` class with three different versions of `IndexGen` as shown below:
+`aplclasses5.dws` contains a new version of the `Primitives` class with three different versions of `IndexGen` as shown below:
 ```apl
 
  
@@ -17,7 +17,7 @@ aplclasses5.dws contains a new version of the `Primitives` class with three diff
      ∇
 ```
 
-This is the version we have seen before. The method is defined to take a single argument of type Int32, and to return a 1-dimensional array (vector) of type Int32.
+This is the version we have seen before. The method is defined to take a single argument of type `Int32`, and to return a 1-dimensional array (vector) of type `Int32`.
 ```apl
      ∇ R←IndexGen2 N
 [1]   :Access public
@@ -26,7 +26,7 @@ This is the version we have seen before. The method is defined to take a single 
      ∇
 ```
 
-This version is defined to take two arguments of type Int32, and to return a 2-dimensional array, each of whose elements is a 1-dimensional array (vector) of type Int32.
+This version is defined to take two arguments of type `Int32`, and to return a 2-dimensional array, each of whose elements is a 1-dimensional array (vector) of type `Int32`.
 ```apl
      ∇ R←IndexGen3 N
 [1]   :Access public
@@ -35,11 +35,11 @@ This version is defined to take two arguments of type Int32, and to return a 2-d
      ∇
 ```
 
-In principle, we could define 7 more different versions of the method, taking 3, 4, 5 etc. numeric parameters. Instead, this method is defined more generally, to take a single parameter that is a 1-dimemsional array (vector) of numbers, and to return a result of type Array. In practice we might use this version alone, but for a C# programmer, this is harder to use than the two other specific cases.
+In principle, we could define 7 more different versions of the method, taking 3, 4, 5 etc. numeric parameters. Instead, this method is defined more generally, to take a single parameter that is a 1-dimemsional array (vector) of numbers, and to return a result of type `Array`. In practice we might use this version alone, but for a C# programmer, this is harder to use than the two other specific cases.
 
 Notice also that all function use the same descriptive name, <`IndexGen`>.
 
-Load aplclasses5.dws and export aplclasses5.dll as before.
+Load `aplclasses5.dws` and export `aplclasses5.dll` as before.
 
 ![aplclasses5_1](../img/aplclasses5-1.png)
 
@@ -47,9 +47,9 @@ Load aplclasses5.dws and export aplclasses5.dll as before.
 
 ### program.cs
 
-samples\APLClasses\aplfns5.cscontains code to invoke the three different variants of IndexGen, in the new aplclasses.dll. Notice that it uses a local sub-routine PrintArray().
+`samples\APLClasses\aplfns5.cs`contains code to invoke the three different variants of `IndexGen`, in the new `aplclasses.dll`. Notice that it uses a local sub-routine `PrintArray()`.
 ```apl
-      using System;
+`using System;
       using APLClasses;
       public class MainClass
             {
@@ -90,11 +90,10 @@ samples\APLClasses\aplfns5.cscontains code to invoke the three different variant
                   Array rslt3 = apl.IndexGen(args);
                   Console.WriteLine(rslt3);
 
-            }
-
+            }`
 ```
 
-Using VS, open the solution file d:\aplclasses\aplclasses2\Framework\project.sln and view program.cs.
+Using VS, open the solution file`d:\aplclasses\aplclasses2\Framework\project.sln` and view `program.cs`.
 
 ![aplclasses5_3](../img/aplclasses5-3.png)
 

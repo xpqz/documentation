@@ -4,4 +4,4 @@ This parameter specifies the directory and name of the file in which**aplcore** 
 
 Note that APL terminates with an exit code of 3 when an aplcore file is generated.
 
-See also [Set aplcore Parameters on page 1](../../../Language/I%20Beam%20Functions/Set%20aplcore%20Parameters.htm#set_aplcore_parameters).
+See also [Set aplcore Parameters on page 1](../../../Language/I Beam Functions/Set aplcore Parameters.htm#set_aplcore_parameters).

@@ -1,8 +1,8 @@
 # The web.config file
 
-ASP.NET configuration parameters are defined in a file named web.config located in or above the root directory of an ASP.NET application. Parameters defined in these files supplement or override ASP.NET parameters which are defined system-wide.
+ASP.NET configuration parameters are defined in a file named `web.config` located in or above the root directory of an ASP.NET application. Parameters defined in these files supplement or override ASP.NET parameters which are defined system-wide.
 
-The web.config file provided with Dyalog is located in the Dyalog sub-directory samples\asp.net and applies to all the examples residing in child directories of this directory. If you create a Dyalog ASP.NET application elsewhere on your system, you will need to copy this web.config into the application root directory. The parameters defined in the Dyalog web.config file are described below. Further details are provided in comments in the file.
+The `web.config` file provided with Dyalog is located in the Dyalog sub-directory `samples\asp.net` and applies to all the examples residing in child directories of this directory. If you create a Dyalog ASP.NET application elsewhere on your system, you will need to copy this `web.config` into the application root directory. The parameters defined in the Dyalog `web.config` file are described below. Further details are provided in comments in the file.
 
 ### DyalogBinDirectory
 
@@ -10,7 +10,7 @@ This specifies the full path to the Dyalog binaries (DLLs and script compiler).
 
 ### dyalog (compiler)
 
-This section defines an ASP.NET language named dyalog so that the expression  Language = "dyalog" in a script file associates that script with the Dyalog APLScript compiler dyalogc.exe. Subsidiary parameters and keys for the dyalog compiler are:
+This section defines an ASP.NET language named `dyalog` so that the expression  `Language = "dyalog"` in a script file associates that script with the Dyalog APLScript compiler dyalogc.exe. Subsidiary parameters and keys for the dyalog compiler are:
 
 | debug | "true" (default) or "false" to bind the script to the Development DLL or the Run-time DLL |
 | --- | ---  |
@@ -20,6 +20,6 @@ This section defines an ASP.NET language named dyalog so that the expression  La
 
 ### DyalogIsolationMode
 
-This parameter specifies the isolation method. See [Isolation Mode on page 1](isolation-mode.md) for further details.
+This parameter specifies the isolation method. See [Isolation Mode on page 1](Isolation Mode.htm#Isolation_Mode) for further details.
 
 DyalogCacheDirectory may be used to define the directory used to save the cached files.

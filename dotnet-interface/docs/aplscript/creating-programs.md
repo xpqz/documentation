@@ -1,6 +1,6 @@
 # Creating Programs (.exe) with APLScript
 
-The following examples, which illustrate how you can create an executable program (.exe) direct from an APLScript file, may be found in the directory samples\aplscript.
+The following examples, which illustrate how you can create an executable program (`.exe`) direct from an APLScript file, may be found in the directory `samples\aplscript`.
 
 ### A simple GUI example
 
@@ -15,19 +15,19 @@ The following APLScript illustrates the simplest possible GUI application that d
 :EndNamespace
 ```
 
-This example, which is saved in the file eg1.apl, is compiled to a Windows executable (.exe) using dyalogc.exe and run from the same command window as shown below. Notice that it is essential to surround the code with :Namespace / :EndNamespace statements and to define a `⎕LX` either in the APLScript itself, or as a parameter to the dyalogc command.
+This example, which is saved in the file `eg1.apl`, is compiled to a Windows executable (`.exe`) using `dyalogc.exe` and run from the same command window as shown below. Notice that it is essential to surround the code with `:Namespace / :EndNamespace` statements and to define a `⎕LX` either in the APLScript itself, or as a parameter to the `dyalogc` command.
 
 ![aplscript1](../img/aplscript1.png)
 
 ![aplscript2](../img/aplscript2.png)
 
-You can associate the .exe with a desktop icon, and it will run stand-alone, without a Command Prompt window. Furthermore, any default APL output that would normally be displayed in the session window will simply be ignored.
+You can associate the `.exe` with a desktop icon, and it will run stand-alone, without a Command Prompt window. Furthermore, any default APL output that would normally be displayed in the session window will simply be ignored.
 
 ### A simple console example
 
 The following APLScript illustrates the simplest possible application that displays the text "Hello World".
 
-This example, which is saved in the file eg2.apl, is compiled to a Windows executable (.exe) and run from a command window as shown below. Notice that the /console flag is used to tell the APLScript compiler to create a *console* application that runs from a command prompt. In this case, default APL output that would normally be displayed in the session window turns up in the command window from which the program was run.
+This example, which is saved in the file `eg2.apl`, is compiled to a Windows executable (`.exe`) and run from a command window as shown below. Notice that the `/console` flag is used to tell the APLScript compiler to create a *console* application that runs from a command prompt. In this case, default APL output that would normally be displayed in the session window turns up in the command window from which the program was run.
 ```apl
 :Namespace N
 ⎕LX←'N.RUN'
@@ -37,7 +37,7 @@ This example, which is saved in the file eg2.apl, is compiled to a Windows execu
 :EndNamespace
 ```
 
-Once more, it is essential to surround the code with `:Namespace/:EndNamespace` statements and to define a `⎕LX` either in the APLScript itself, or as a parameter to the dyalogc command.
+Once more, it is essential to surround the code with `:Namespace/:EndNamespace` statements and to define a `⎕LX` either in the APLScript itself, or as a parameter to the `dyalogc` command.
 
 ![aplscript3](../img/aplscript3.png)
 
@@ -59,7 +59,7 @@ It is imperative that at least ONE namespace be specified.
 
 All functions specified between the `:Namespace` and `:EndNamespace` statements are fixed in that namespace. Similarly, all assignments define variables inside that namespace.
 
-The following example illustrates how APL namespace usage is handled in APLScript. The program, contained in the file eg3.apl, is as follows:
+The following example illustrates how APL namespace usage is handled in APLScript. The program, contained in the file `eg3.apl`, is as follows:
 ```apl
 :Namespace N
 ⎕LX←'N.RUN'

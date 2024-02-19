@@ -154,7 +154,7 @@ perform these corresponding operations.
 
 The Grid object maintains a buffer of the most recent 8 changes made by the
 user since the [Values](../a-z/values.md) property was last set
-by [`⎕WC`](../../Language/System%20Functions/wc.htm) or [`⎕WS`](../../Language/System%20Functions/ws.htm).
+by [`⎕WC`](../../Language/System Functions/wc.htm) or [`⎕WS`](../../Language/System Functions/ws.htm).
 Your application can restore these changes one by one by calling the [Undo](../a-z/undo.md) method. The [Undo](../a-z/undo.md) method restores the most recent
 change made by the user and removes that change from the undo stack. It is
 therefore not possible to "undo an undo".

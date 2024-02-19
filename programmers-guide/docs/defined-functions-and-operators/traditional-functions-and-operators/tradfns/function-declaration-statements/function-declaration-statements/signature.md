@@ -28,26 +28,26 @@ Argument and result data types are identified by the names of .NET Types which a
 In the following examples, it is assumed that the .NET Search Path (defined by `:Using` or `⎕USING` includes `'System'`.
 
 
-The following statement specifies that the function is exported as a method named Format which takes a single parameter of type System.Object named Array. The data type of the result of the method is an array (vector) of type System.String.
+The following statement specifies that the function is exported as a method named `Format` which takes a single parameter of type `System.Object` named `Array`. The data type of the result of the method is an array (vector) of type `System.String`.
 ```apl
       :Signature String[]←Format Object Array
 ```
 
 
-The next statement specifies that the function is exported as a method named Catenate whose result is of type System.Object and which takes 3 parameters. The first parameter is of type System.Double and is named Dimension. The second is of type System.Object and is named Arg1. The third is of type System.Object and is named Arg2.
+The next statement specifies that the function is exported as a method named `Catenate` whose result is of type `System.Object` and which takes 3 parameters. The first parameter is of type `System.Double` and is named `Dimension`. The second is of type `System.Object` and is named `Arg1`. The third is of type `System.Object` and is named `Arg2`.
 ```apl
       :Signature Object←Catenate Double Dimension,...
                               ...Object Arg1, Object Arg2
 ```
 
 
-The next statement specifies that the function is exported as a method named IndexGen whose result is an array of type System.Int32 and which takes 2 parameters. The first parameter is of type System.Int32 and is named N. The second is of type System.Int32 and is named Origin.
+The next statement specifies that the function is exported as a method named `IndexGen` whose result is an array of type `System.Int32` and which takes 2 parameters. The first parameter is of type `System.Int32` and is named `N`. The second is of type `System.Int32` and is named `Origin`.
 ```apl
       :Signature Int32[]←IndexGen Int32 N, Int32 Origin
 ```
 
 
-The next block of statements specifies that the function is exported as a method named Mix. The method has 4 different signatures; i.e. it may be called with 4 different parameter/result combinations.
+The next block of statements specifies that the function is exported as a method named `Mix`. The method has 4 different signatures; i.e. it may be called with 4 different parameter/result combinations.
 ```apl
       :Signature Int32[,]←Mix Double Dimension, ...
             ...Int32[] Vec1, Int32[] Vec2

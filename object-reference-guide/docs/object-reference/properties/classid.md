@@ -12,7 +12,7 @@
 **Description**
 
 
-The ClassID property specifies the class identifier (usually abbreviated to CLSID) of an APL object that is used to represent a COM object. The CLSID is a globally unique identifier ([GUID](../Miscellaneous/Globally%20Unique%20Identifier%20GUID.htm)) that uniquely identifies the object.
+The ClassID property specifies the class identifier (usually abbreviated to CLSID) of an APL object that is used to represent a COM object. The CLSID is a globally unique identifier ([GUID](../Miscellaneous/Globally Unique Identifier GUID.htm)) that uniquely identifies the object.
 
 
 When you create or recreate an ActiveXControl or [OLEServer](../a-z/oleserver.md) using `⎕WC`, you may specify ClassID. This allows you to re-use a value that was previously allocated to that control by the system. However, you should not specify any other value because that value could be allocated now or in the future to another object *on any other computer in the world*. Otherwise, a new ClassID is automatically allocated by the system.

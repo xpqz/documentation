@@ -4,25 +4,25 @@
 
 ## The XAML
 
-Like most Syncfusion controls, the `CircularGauge` is made up of  a complex structure of objects, and the XAML (see variable `XAML_SF`) is too extensive to describe in detail herein. It was created from the sample XAML from the Syncfusion documentation for this control entitled **Essential Gauge for WPF**, which may be downloaded from [http://help.syncfusion.com/wpf/gauge](http://help.syncfusion.com/wpf/gauge).
+Like most Syncfusion controls, the CircularGauge is made up of  a complex structure of objects, and the XAML (see variable `XAML_SF`) is too extensive to describe in detail herein. It was created from the sample XAML from the Syncfusion documentation for this control entitled **Essential Gauge for WPF**, which may be downloaded from [http://help.syncfusion.com/wpf/gauge](http://help.syncfusion.com/wpf/gauge).
 
 The key statements in the XAML are as follows:
 ```apl
-xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Gauge;assembly=Syncfusion.Gauge.WPF"
+`xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Gauge;assembly=Syncfusion.Gauge.WPF"`
 ```
 
-The above statement defines the prefix syncfusion to mean the specified Syncfusion namespace and assembly. When the prefix syncfusion is subsequently used in front of a control in the XAML, the system knows where to find it.
+The above statement defines the prefix `syncfusion` to mean the specified Syncfusion namespace and assembly. When the prefix `syncfusion` is subsequently used in front of a control in the XAML, the system knows where to find it.
 
-The next two statements define `CircularPointer` controls (the needles on the gauges); one for the Fahrenheit gauge (named **f_pointer**) and one for the Centigrade gauge (named **c_pointer**).
+The next two statements define CircularPointer controls (the needles on the gauges); one for the Fahrenheit gauge (named **f_pointer**) and one for the Centigrade gauge (named **c_pointer**).
 ```apl
- <syncfusion:CircularPointer Name="f_pointer" BorderWidth="0.3"
+`<syncfusion:CircularPointer Name="f_pointer" BorderWidth="0.3"
   PointerLength="100" PointerPlacement="Inside" PointerWidth="20"
-  Value="32"/>
+  Value="32"/>`
 ```
 ```apl
- <syncfusion:CircularPointer Name="c_pointer" BorderWidth="0.3"
+`<syncfusion:CircularPointer Name="c_pointer" BorderWidth="0.3"
   PointerLength="100" PointerPlacement="Inside" PointerWidth="20"
-  Value="0"/
+  Value="0"/`
 ```
 
 ## The APL Code
@@ -44,7 +44,7 @@ The following functions were used to produce the example illustrated above. The 
 
 ```
 
-After creating the Window from the text in `XAML_SF`, the function `SF_TC_XAML` obtains refs to the two `CircularPointer` controls named **f_pointer** (in the Fahrenheit gauge) and **c_pointer** (in the Centigrade gauge). It then attaches the `MouseEnter` callback to each of these objects.
+After creating the Window from the text in `XAML_SF`, the function `SF_TC_XAML` obtains refs to the two CircularPointer controls named **f_pointer** (in the Fahrenheit gauge) and **c_pointer** (in the Centigrade gauge). It then attaches the `MouseEnter` callback to each of these objects.
 ```apl
      ∇ MouseEnter(this ev);ptrs
 [1]    ptrs←f_pointer c_pointer
@@ -53,11 +53,11 @@ After creating the Window from the text in `XAML_SF`, the function `SF_TC_XAML` 
 
 ```
 
-In this example, the user grabs one of the gauge needles and moves it around the face of the gauge. When the user moves the mouse into one of these needles, the `MouseEnter` callback fires. The function `MouseEnter` receives the `CircularPointer` object that generated the event `this`  as the first item in its argument.
+In this example, the user grabs one of the gauge needles and moves it around the face of the gauge. When the user moves the mouse into one of these needles, the `MouseEnter` callback fires. The function `MouseEnter` receives the CircularPointer object that generated the event `this`  as the first item in its argument.
 
-The code simply attaches the callback function `TempChanged` to `this`, and disables any callback on the other `CircularPointer` object.
+The code simply attaches the callback function `TempChanged` to `this`, and disables any callback on the other CircularPointer object.
 
-Note that if both `CircularPointer` objects had callbacks on `TempChanged` at the same time, the system would enter a callback loop.
+Note that if both CircularPointer objects had callbacks on `TempChanged` at the same time, the system would enter a callback loop.
 ```apl
      ∇ TempChanged(obj ev)
 [1]    :Select obj
@@ -92,4 +92,4 @@ In particular, it contains the all-important statement:
                  Syncfusion/4.5/Syncfusion.Gauge.WPF.dll'
 ```
 
-This statement tells APL to search the .NET namespace named **Syncfusion.Windows.Gauge**, which is located in the assembly file whose path (relative to the Dyalog installation directory) is  Syncfusion/4.5/Syncfusion.Gauge.WPF.dll.
+This statement tells APL to search the .NET namespace named **Syncfusion.Windows.Gauge**, which is located in the assembly file whose path (relative to the Dyalog installation directory) is  `Syncfusion/4.5/Syncfusion.Gauge.WPF.dll`.

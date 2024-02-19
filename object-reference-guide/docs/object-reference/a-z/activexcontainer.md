@@ -16,14 +16,14 @@
 **Description**
 
 
-An ActiveXContainer is used to represent the host application that is hosting an [ActiveXControl](activexcontrol.md) object, and provides access to its ambient properties such as font, and colour.
+An ActiveXContainer is used to represent the host application that is hosting an [ActiveXControl](ActiveXControl.htm) object, and provides access to its ambient properties such as font, and colour.
 
 
 
-An ActiveXContainer object is created using the [Container](./container.md) property of the [ActiveXControl](activexcontrol.md) object.
+An ActiveXContainer object is created using the [Container](./container.md) property of the [ActiveXControl](ActiveXControl.htm) object.
 
 
-For example, the following expression, executed within an [ActiveXControl](activexcontrol.md) instance creates an ActiveXContainer named `'CONT'`
+For example, the following expression, executed within an [ActiveXControl](ActiveXControl.htm) instance creates an ActiveXContainer named `'CONT'`
 ```apl
       'CONT' ⎕NS ⎕WG'Container'
 ```

@@ -60,7 +60,7 @@ The following picture illustrates two ButtonEdit objects
 #### Note
 
 
-For full functionality (in particular, for the [Cue](../a-z/cue.md) property to apply), the ButtonEdit object requires that  [Native Look and Feel ](../../Miscellaneous/Windows%20XP%20Look%20and%20Feel.htm)
+For full functionality (in particular, for the [Cue](../a-z/cue.md) property to apply), the ButtonEdit object requires that  [Native Look and Feel ](../../Miscellaneous/Windows XP Look and Feel.htm)
 (see page 1)
  is enabled.
 

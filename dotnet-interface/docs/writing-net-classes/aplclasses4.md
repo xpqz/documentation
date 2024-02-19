@@ -2,11 +2,11 @@
 
 This example builds on Example 3 and illustrates how you can implement *constructor overloading*, by establishing several different constructor functions.
 
-By way of an example, when a client application creates an instance of the Primitives class, we want to allow it to specify the value of `⎕IO` or the values of both `⎕IO` and `⎕ML`.
+By way of an example, when a client application creates an instance of the `Primitives` class, we want to allow it to specify the value of `⎕IO` or the values of both `⎕IO` and `⎕ML`.
 
 The simplest way to implement this is to have two public constructor functions `CTOR1` and `CTOR2`, which call a private constructor function `CTOR`.
 
-aplclasses4.dws contains a new version of the `Primitives` class with these additions:
+`aplclasses4.dws` contains a new version of the `Primitives` class with these additions:
 ```apl
 
  
@@ -42,7 +42,7 @@ aplclasses4.dws contains a new version of the `Primitives` class with these addi
      ∇ 
 ```
 
-The `:Signature`statements for these three functions show that `CTOR1` is defined as a constructor that takes a single Int32 parameter, `CTOR2` is defined as a constructor that takes two Int32 parameters, and `CTOR` has no .NET Properties defined at all. Note that in .NET terms, `CTOR` is not a *Private Constructor*; it is simply an internal function that is invisible to the outside world.
+The `:Signature`statements for these three functions show that `CTOR1` is defined as a constructor that takes a single `Int32` parameter, `CTOR2` is defined as a constructor that takes two `Int32` parameters, and `CTOR` has no .NET Properties defined at all. Note that in .NET terms, `CTOR` is not a *Private Constructor*; it is simply an internal function that is invisible to the outside world.
 
 Next, a function called `GetIOML` is defined and exported as a Public Method. It simply returns the current values of `⎕IO` and `⎕ML`.
 ```apl
@@ -53,7 +53,7 @@ Next, a function called `GetIOML` is defined and exported as a Public Method. It
      ∇   
 ```
 
-Load aplclasses4.dws and export a new version of aplclasses.dll as before.
+Load `aplclasses4.dws` and export a new version of `aplclasses.dll` as before.
 
 ![aplclasses4_1](../img/aplclasses4-1.png)
 
@@ -61,9 +61,9 @@ Load aplclasses4.dws and export a new version of aplclasses.dll as before.
 
 ### program.cs
 
-aplclasses4\Framework\program.cs contains code to invoke the two different constructor functions `CTOR1` and `CTOR2` :
+`aplclasses4\Framework\program.cs` contains code to invoke the two different constructor functions `CTOR1` and `CTOR2` :
 ```apl
-using System;
+`using System;
 using APLClasses;
 public class MainClass
 	{
@@ -79,14 +79,14 @@ public class MainClass
 		for (int i=0;i<rslt03.Length;i++)
 			Console.WriteLine(rslt03[i]);
 		}
-	}
+	}`
 ```
 
-Here the code creates two instances of the Primitives class named apl10 and apl03. The first is created with a constructor parameter of (1); the second with a constructor parameter of (0,3).
+Here the code creates two instances of the Primitives class named `apl10` and `apl03`. The first is created with a constructor parameter of `(1)`; the second with a constructor parameter of `(0,3)`.
 
-The C# compiler matches the first call with `CTOR1`, because `CTOR1` is defined to accept a single Int32 parameter. The second call is matched to `CTOR2` because `CTOR2` is defined to accept two Int32 parameters.
+The C# compiler matches the first call with `CTOR1`, because `CTOR1` is defined to accept a single `Int32` parameter. The second call is matched to `CTOR2` because `CTOR2` is defined to accept two `Int32` parameters.
 
-Using VS, open the solution file d:\aplclasses\aplclasses4\Framework\project.sln and view program.cs.
+Using VS, open the solution file`d:\aplclasses\aplclasses4\Framework\project.sln` and view `program.cs`.
 
 ![aplclasses4_3](../img/aplclasses4-3.png)
 

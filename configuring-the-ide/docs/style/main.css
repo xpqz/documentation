@@ -31,6 +31,18 @@ code {
     --md-default-bg-color: #F8F8F8;
 }
 
+/* Reduce vertical table spacing, and put in a faint cell border */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #eee;
+    padding: 4px !important;
+    text-align: left;
+}
+
 /* Style the heading container for the Language Reference */
 .heading {
     display: flex;

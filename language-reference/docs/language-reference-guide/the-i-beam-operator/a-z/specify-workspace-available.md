@@ -21,7 +21,7 @@ The purpose of the *extra amount* is to reduce the likelihood that APL will imme
 `R` is an integer which reports the size in bytes of the memory committed  for the workspace, and is the sum of the minimum amount required  by the workspace itself and the argument `Y`.
 
 
-If the size of the committed workspace would be smaller than the minimum value (specified by `2000⌶`) or larger than the maximum value (which defaults to MAXWS), a `DOMAIN ERROR` is signalled.
+If the size of the committed workspace would be smaller than the minimum value (specified by `2000⌶`) or larger than the maximum value (which defaults to `MAXWS`), a `DOMAIN ERROR` is signalled.
 
 
 See also Memory Manager Statistics: on page 1.

@@ -31,24 +31,24 @@ The overall appearance of the TabControl is determined by the [Style](./style.md
 default), `'Buttons'` or `'FlatButtons'`.
 
 
-Individual tabs or buttons are represented by [TabButton](tabbutton.md) objects which should be created as children of the TabControl object. Optional
+Individual tabs or buttons are represented by [TabButton](TabButton.htm) objects which should be created as children of the TabControl object. Optional
 captions and pictures are specified by the [Caption](./caption.md) and [ImageIndex](./imageindex.md) properties of the
-individual [TabButton](tabbutton.md) objects themselves.
+individual [TabButton](TabButton.htm) objects themselves.
 Otherwise, the appearance of the tabs or buttons is determined by properties of
 the TabControl itself.
 
 
-To implement a multiple page tabbed dialog [(see Example 1)](../Examples/TabControl%20Example%201.htm), you should create a [Form](form.md), then a
+To implement a multiple page tabbed dialog [(see Example 1)](../Examples/TabControl Example 1.htm), you should create a [Form](Form.htm), then a
 TabControl with Style `'Tabs'` as a child of
-the [Form](form.md). Next, create one or more pairs of [TabButton](tabbutton.md) and [SubForm](subform.md) objects as children of the
+the [Form](Form.htm). Next, create one or more pairs of [TabButton](TabButton.htm) and [SubForm](subform.md) objects as children of the
 TabControl. You associate each [SubForm](subform.md) with a
-particular tab by setting its [TabObj](./tabobj.md) property to the name of, or ref to, the associated [TabButton](tabbutton.md) object. Making the [SubForms](subform.md) children of the
+particular tab by setting its [TabObj](./tabobj.md) property to the name of, or ref to, the associated [TabButton](TabButton.htm) object. Making the [SubForms](subform.md) children of the
 TabControl ensures that, by default, they will automatically be resized
-correctly. You may alternatively create your [SubForms](subform.md) as children of the main [Form](form.md) and establish
+correctly. You may alternatively create your [SubForms](subform.md) as children of the main [Form](Form.htm) and establish
 appropriate resize behaviour using their [Attach](./attach.md) property.
 
 
-A TabControl object with [Style](./style.md) `'Buttons'` [(Example 2)](../Examples/TabControl%20Example%202.htm) or `'FlatButtons'`[ (Example 3)](../Examples/TabControl%20Example%203.htm) may be used in a similar
+A TabControl object with [Style](./style.md) `'Buttons'` [(Example 2)](../Examples/TabControl Example 2.htm) or `'FlatButtons'`[ (Example 3)](../Examples/TabControl Example 3.htm) may be used in a similar
 way (i.e. to display a set of alternative pages), although buttons in this type
 of TabControl are more normally used to execute commands. For this reason, these
 styles of TabControl are without borders.
@@ -61,7 +61,7 @@ value of [FlatSeparators](./flatseparators.md) is 0 (no
 separators).
 
 
-[Example 3a](../Examples/TabControl%20Example%203a.htm) shows the
+[Example 3a](../Examples/TabControl Example 3a.htm) shows the
 effect of setting [FlatSeparators](./flatseparators.md) to
 1.
 
@@ -73,11 +73,11 @@ Bottom, Left or Right.
 
 
 If [Align](./align.md) is `'Top'` or `'Bottom'`[ (Example
-4)](../Examples/TabControl%20Example%204.htm), the tabs or buttons are arranged along the top or bottom edge of the
+4)](../Examples/TabControl Example 4.htm), the tabs or buttons are arranged along the top or bottom edge of the
 TabControl and picture is drawn to the left of the Caption.
 
 
-If [Align](./align.md) is `'Left'` [(Example 5)](../Examples/TabControl%20Example%205.htm), the tabs or buttons are
+If [Align](./align.md) is `'Left'` [(Example 5)](../Examples/TabControl Example 5.htm), the tabs or buttons are
 arranged top-to-bottom along the left edge of the TabControl, and the pictures
 are drawn below the Captions.
 
@@ -100,12 +100,12 @@ multiple rows/columns.
 The default value of [MultiLine](./multiline.md) is 0,
 in which case, if you have more tabs or buttons than will fit in the space
 provided, the TabControl displays an UpDown control to permit the user to scroll
-them. [See Example 7.](../Examples/TabControl%20Example%207.htm)
+them. [See Example 7.](../Examples/TabControl Example 7.htm)
 
 
 If [MultiLine](./multiline.md) is set to 1, the tabs are
-displayed in multiple flights [(Example 8)](../Examples/TabControl%20Example%208.htm) or the buttons are displayed in multiple rows [(Example
-9)](../Examples/TabControl%20Example%209.htm).
+displayed in multiple flights [(Example 8)](../Examples/TabControl Example 8.htm) or the buttons are displayed in multiple rows [(Example
+9)](../Examples/TabControl Example 9.htm).
 
 
 The [ScrollOpposite](./scrollopposite.md) property
@@ -113,7 +113,7 @@ specifies that unneeded tabs scroll to the opposite side of a TabControl, when a
 tab is selected. Setting [ScrollOpposite](./scrollopposite.md) to 1 forces [MultiLine](./multiline.md) to 1 also.
 
 
-[Example 10](../Examples/TabControl%20Example%2010.htm) illustrates a
+[Example 10](../Examples/TabControl Example 10.htm) illustrates a
 TabControl with [ScrollOpposite](./scrollopposite.md) set
 to 1, after the user has clicked *Third Tab*. Notice that, in this example,
 the SubForms have been created as children of the TabControl. This is necessary
@@ -131,7 +131,7 @@ Otherwise, if [Justify](./justify.md) is empty or `'None'`,
 the rows are ragged.
 
 
-See [Example 11](../Examples/TabControl%20Example%2011.htm) (for tabs) and [Example 12](../Examples/TabControl%20Example%2012.htm) (for
+See [Example 11](../Examples/TabControl Example 11.htm) (for tabs) and [Example 12](../Examples/TabControl Example 12.htm) (for
 buttons).
 
 
@@ -143,17 +143,17 @@ To obtain fixed sized tabs with [MultiLine](./multiline.md) set to 1, you must 
 
 
 If fixed size tabs are in effect, the positions at which the picture and
-Caption are drawn within each [TabButton](tabbutton.md) is
+Caption are drawn within each [TabButton](TabButton.htm) is
 controlled by the [TabJustify](./tabjustify.md) property
 which may be `'Centre'`, `'Edge'`,
 or `'IconEdge'`.
 
 
 [Example
-13](../Examples/TabControl%20Example%2013.htm) illustrates these different settings.
+13](../Examples/TabControl Example 13.htm) illustrates these different settings.
 
 
-The font used to draw the captions in the [TabButton](tabbutton.md) objects is determined by the [FontObj](./fontobj.md) property of the TabControl.
+The font used to draw the captions in the [TabButton](TabButton.htm) objects is determined by the [FontObj](./fontobj.md) property of the TabControl.
 
 
 You cannot specify the foreground or background colours of the tabs/buttons,
@@ -163,7 +163,7 @@ TabControl.
 
 
 The [TabObj](./tabobj.md) property is read-only and
-reports the name of, or ref to, the [TabButton](tabbutton.md) that is currently selected.
+reports the name of, or ref to, the [TabButton](TabButton.htm) that is currently selected.
 
 
 The [MultiSelect](./multiselect.md) property specifies

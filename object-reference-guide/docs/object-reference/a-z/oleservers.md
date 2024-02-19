@@ -18,7 +18,7 @@ The OLEServers property is a read-only property that reports the names and CLSID
 Its value is a nested vector with one element per OLE Server.
 
 
-Each element is a vector of 2-element character vectors. The first is the name of the OLE Server; the second is its class identifier or CLSID which is a type of [GUID](../Miscellaneous/Globally%20Unique%20Identifier%20GUID.htm).
+Each element is a vector of 2-element character vectors. The first is the name of the OLE Server; the second is its class identifier or CLSID which is a type of [GUID](../Miscellaneous/Globally Unique Identifier GUID.htm).
 
 
 

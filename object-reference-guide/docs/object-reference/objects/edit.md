@@ -54,13 +54,13 @@ The [HScroll](../a-z/hscroll.md) property determines whether or not the data may
 If the [Style](../a-z/style.md) is `'Multi'`, [Text](../a-z/text.md) may set using a simple character vector, a simple matrix, or a vector of vectors. If  [Text](../a-z/text.md) is specified by a matrix or by a vector of vectors, "new-line" characters are automatically added at the end of each line in the Edit control.
 
 
-The user may insert a "new-line" character in the text by pressing Ctrl-Enter. If [Text](../a-z/text.md) was set by a matrix, it is returned as a matrix. Otherwise it is returned as a vector of vectors. "New-line" characters are not returned. If [Text](../a-z/text.md) was not specified  by [`⎕WC`](../../Language/System%20Functions/wc.htm) or  [`⎕WS`](../../Language/System%20Functions/ws.htm) it is returned  an empty matrix (`1 0⍴''`). However,  if [Text](../a-z/text.md) was not specified, but the user types and then empties the field, it is returned as an empty nested array  (`,⊂''`)
+The user may insert a "new-line" character in the text by pressing Ctrl-Enter. If [Text](../a-z/text.md) was set by a matrix, it is returned as a matrix. Otherwise it is returned as a vector of vectors. "New-line" characters are not returned. If [Text](../a-z/text.md) was not specified  by [`⎕WC`](../../Language/System Functions/wc.htm) or  [`⎕WS`](../../Language/System Functions/ws.htm) it is returned  an empty matrix (`1 0⍴''`). However,  if [Text](../a-z/text.md) was not specified, but the user types and then empties the field, it is returned as an empty nested array  (`,⊂''`)
 
 
 The [Justify](../a-z/justify.md) property determines whether the text in a multi-line Edit object is `'Left'`, `'Right'`, or `'Centre'` justified. Setting [Justify](../a-z/justify.md) to `'Centre'` or `'Right'` also forces word-wrapping and disables horizontal scrolling, whatever the value of [HScroll](../a-z/hscroll.md). Note that the keyword `'Centre'` may also be spelled `'Center'`. [Justify](../a-z/justify.md) may only be specified when the object is created using `⎕WC`.
 
 
-If [Justify](../a-z/justify.md) is `'Left'`, the [HScroll](../a-z/hscroll.md) property determines whether or not text may be scrolled horizontally. If [HScroll](../a-z/hscroll.md) is set to `¯2`, each individual line may be any length, but the object does not have a horizontal scrollbar. Sideways scrolling is achieved using the cursor keys, or by typing. If [HScroll](../a-z/hscroll.md) is `¯1`, each individual line may be of any length and the object will have a horizontal scrollbar. If [HScroll](../a-z/hscroll.md) is `0`, lines are automatically "word-wrapped" at the right edge of the object. This means that the number of lines displayed may be greater than the number of lines implied by the rows of the matrix or the number of vectors supplied. In particular, if you specify a single long vector, it will be broken up into lines for you on the display, but still returned as a single vector by [`⎕WG`](../../Language/System%20Functions/wg.htm).
+If [Justify](../a-z/justify.md) is `'Left'`, the [HScroll](../a-z/hscroll.md) property determines whether or not text may be scrolled horizontally. If [HScroll](../a-z/hscroll.md) is set to `¯2`, each individual line may be any length, but the object does not have a horizontal scrollbar. Sideways scrolling is achieved using the cursor keys, or by typing. If [HScroll](../a-z/hscroll.md) is `¯1`, each individual line may be of any length and the object will have a horizontal scrollbar. If [HScroll](../a-z/hscroll.md) is `0`, lines are automatically "word-wrapped" at the right edge of the object. This means that the number of lines displayed may be greater than the number of lines implied by the rows of the matrix or the number of vectors supplied. In particular, if you specify a single long vector, it will be broken up into lines for you on the display, but still returned as a single vector by [`⎕WG`](../../Language/System Functions/wg.htm).
 
 
 The [VScroll](../a-z/vscroll.md) property determines whether or not data may be scrolled vertically and whether or not the object has a vertical scrollbar. A value of `0` inhibits scrolling; `¯2` means scrollable, without a scrollbar; `¯1` means scrollable with a scrollbar. [VScroll](../a-z/vscroll.md) may only be set when the object is created and may not subsequently be changed.
@@ -77,7 +77,7 @@ If the user changes any data in the field **and** attempts to change focus to an
 #### Note
 
 
-For full functionality (in particular, for the [Cue](../a-z/cue.md) property to apply), the Edit object requires that  [Native Look and Feel ](../../Miscellaneous/Windows%20XP%20Look%20and%20Feel.htm)
+For full functionality (in particular, for the [Cue](../a-z/cue.md) property to apply), the Edit object requires that  [Native Look and Feel ](../../Miscellaneous/Windows XP Look and Feel.htm)
 (see page 1)
  is enabled.
 

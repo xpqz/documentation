@@ -19,4 +19,4 @@
 | `⎕CS` | `⎕EX` | `⎕FPROPS` | `⎕KL` | `⎕NEXISTS` | `⎕NSI` | `⎕RSI` | `⎕SVC` | `⎕TRAP` | `⎕XT` |
 | `⎕CSV` | `⎕EXCEPTION` | `⎕FR` | `⎕LC` | `⎕NGET` | `⎕NSIZE` | `⎕RTL` | `⎕SVO` | `⎕TREQ` | `⎕Á` |
 
-[Row-wise](System%20Functions%20and%20Variables%20RowWise.htm)
+[Row-wise](System Functions and Variables RowWise.htm)

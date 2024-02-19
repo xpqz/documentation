@@ -20,7 +20,7 @@ Dyalog processes up to two kinds of configuration file (each of which may cascad
 When Dyalog starts, it derives the name of the application configuration file as follows:
 
 - The name in the configuration parameter ConfigFile if it is set, otherwise
-- The name of the workspace or script loaded at start-up using the Load parameter, with the extension replaced by .dcfg, if that file exists, otherwise
+- The name of the workspace or script loaded at start-up using the Load parameter, with the extension replaced by `.dcfg`, if that file exists, otherwise
 - Nothing.
 
 ### User Configuration File
@@ -79,15 +79,15 @@ A warning will be given if names  are redefined in the same configuration file; 
 
 Pathnames specified in configuration files should be specified using portable forward slashes "/" rather than back-slashes "\" as the latter are used as escape characters by JSON.
 
-WSPATH: ["c:/Dyalog18.0"] or  WSPATH: ["c:\\Dyalog18.0"] specifies the file c:\Dyalog18.0.
+`WSPATH: ["c:/Dyalog18.0"]` or  `WSPATH: ["c:\\Dyalog18.0"]` specifies the file `c:\Dyalog18.0`.
 
 whereas,
 
-WSPATH: ["c:\Dyalog18.0"] means  c:Dyalog18.0.
+`WSPATH: ["c:\Dyalog18.0"]` means  `c:Dyalog18.0`.
 
 ### Example
 ```apl
-{
+`{
   Extend: "my_default_configuration.dcfg",
   
   Settings: {
@@ -99,14 +99,14 @@ WSPATH: ["c:\Dyalog18.0"] means  c:Dyalog18.0.
       // references to other configuration parameters
       FNAME: "[rootdir]/filename",
   }
-}
+}`
 ```
 
 ### Arrays
 
 An array may be used to define file paths etc. For example,
 ```apl
-WSPATH: ["/dir1", "/dir2"]
+`WSPATH: ["/dir1", "/dir2"]`
 ```
 
 The only parameters which may be defined as arrays are WSPATH, WSEXT and CFEXT.
@@ -115,17 +115,17 @@ The only parameters which may be defined as arrays are WSPATH, WSEXT and CFEXT.
 
 Configuration parameters which are string values may include references to other configuration parameters (regardless of where they are defined) using square bracket delimiters. For example:
 ```apl
-MySetting: "[DYALOG]/MyFile"
+`MySetting: "[DYALOG]/MyFile"`
 ```
 
-will replace [DYALOG] with the value of the DYALOG configuration value.
+will replace `[DYALOG`] with the value of the DYALOG configuration value.
 
-If the string inside the [] delimiters is ".", the "." is replaced is replaced with the path of the directory containing the configuration file itself. Therefore,
+If the string inside the `[]` delimiters is "`.`", the "`.`" is replaced is replaced with the path of the directory containing the configuration file itself. Therefore,
 ```apl
-FILENAME: "[.]/x.txt"
+`FILENAME: "[.]/x.txt"`
 ```
 
-will set the parameter FILENAME to a value which is a reference to a file called x.txt in the same directory as the configuration file defining it.
+will set the parameter FILENAME to a value which is a reference to a file called `x.txt` in the same directory as the configuration file defining it.
 
 Note that:
 
@@ -138,10 +138,7 @@ Some parameters are stored in sub-folders in the Windows Registry. Currently, al
 
 The Configuration file supports this structure by defining an object that corresponds to a Registry sub-folder. For example:
 ```apl
-Captions: {
-    Session: "My Dyalog Session",
-    Status: "My Status window",
-}
+`Captions: { Session: "My Dyalog Session", Status: "My Status window", }`
 ```
 
 ```apl

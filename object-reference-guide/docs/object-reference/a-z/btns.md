@@ -36,7 +36,7 @@ Under Windows, the Btns property may specify one of **six** sets of buttons as f
 
 
 
-If any other combination is specified, [`⎕WC`](../../Language/System%20Functions/wc.htm) and [`⎕WS`](../../Language/System%20Functions/ws.htm) will report a `DOMAIN ERROR`. The names of the buttons are however case-insensitive, so the system will accept `'ok'`, `'Ok'`, `'oK'` or `'OK'`.
+If any other combination is specified, [`⎕WC`](../../Language/System Functions/wc.htm) and [`⎕WS`](../../Language/System Functions/ws.htm) will report a `DOMAIN ERROR`. The names of the buttons are however case-insensitive, so the system will accept `'ok'`, `'Ok'`, `'oK'` or `'OK'`.
 
 
 

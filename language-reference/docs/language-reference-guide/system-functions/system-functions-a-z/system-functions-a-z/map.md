@@ -8,7 +8,7 @@
 `⎕MAP` function associates a mapped file with an APL array in the workspace.
 
 
-Two types of mapped files are supported; *APL* and *raw*. An *APL* mapped file contains the binary representation of a Dyalog APL array, including its header. A file of this type must be created using the  utility function `∆MPUT` (supplied in the util workspace). When you map an APL file, the rank, shape and data type of the array is obtained from the information on the file.
+Two types of mapped files are supported; *APL* and *raw*. An *APL* mapped file contains the binary representation of a Dyalog APL array, including its header. A file of this type must be created using the  utility function `∆MPUT` (supplied in the `util` workspace). When you map an APL file, the rank, shape and data type of the array is obtained from the information on the file.
 
 
 A *raw* mapped file is an arbitrary collection of bytes. When you map a raw file, you must specify the characteristics of the APL array to be associated with this data. In particular, the data type and its shape.

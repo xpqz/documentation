@@ -8,20 +8,20 @@ A script is executed by typing its name. User input is entered from the same ter
 
 On UNIX (and related) systems a Dyalog APL **shell script** is a text file with the following as the first line:
 ```apl
-#!/usr/local/bin/dyalogscript
+`#!/usr/local/bin/dyalogscript`
 ```
 
 The script file must be executable. There are three execute bits relating to the user, the group and everyone else.
 
 ### Windows
 
-On Windows systems a Dyalog APL shell script is a text file with a .apls file extension. An initial line beginning with #! is only required to include configuration parameters (see below), but if included it must include a file name even though that will be ignored. For portability it is recommended that you include the #! line.
+On Windows systems a Dyalog APL shell script is a text file with a `.apls` file extension. An initial line beginning with `#!` is only required to include configuration parameters (see below), but if included it must include a file name even though that will be ignored. For portability it is recommended that you include the `#!` line.
 
 ### Note
 
 Shell scripts are Unicode only and are not supported by the Classic Edition.
 
-Any content that follows  the #! line (if present) is used as input into a Dyalog session (as if the **Extended Multiline Input** feature has been enabled).
+Any content that follows  the `#!` line (if present) is used as input into a Dyalog session (as if the **Extended Multiline Input** feature has been enabled).
 
 ### Input and Output
 
@@ -72,7 +72,7 @@ However, the multiline input mechanism allows for `:Trap` statements, so the fol
 
 ### Configuration Parameters:
 
-Configuration parameters may be specified in a Configuration file located in the same directory as the script, or may be specified on the first line of the script.  The name of the configuration file is derived from the name of the script file by replacing its file extension (if any) by the extension .dcfg. Configuration parameters specified in the Windows Registry or by environment variables are not honoured in Dyalog Shell Scripts.
+Configuration parameters may be specified in a Configuration file located in the same directory as the script, or may be specified on the first line of the script.  The name of the configuration file is derived from the name of the script file by replacing its file extension (if any) by the extension `.dcfg`. Configuration parameters specified in the Windows Registry or by environment variables are not honoured in Dyalog Shell Scripts.
 
 ### Example (first line of script)
 ```apl
@@ -83,16 +83,16 @@ Configuration parameters may be specified in a Configuration file located in the
 
 ### Example (configuration file)
 ```apl
-{ settings: {
+`{ settings: {
         /* Maximum workspace size */
         MAXWS: "256M",
         /* wspath */
         WSPATH: ["c:/tmp","f:/devt/tmp"]
-}}
+}}`
 ```
 
 Note that the interpreter reads both of these locations, the command line in the script file overrides any setting in the .dcfg file.
 
 ### Debugging:
 
-It is not currently possible to use RIDE to debug APL shell scripts. However there is an I-beam function, which can be used to provide some simple debugging/diagnostic information. See [Set Shell Script Debug Options on page 1](../../Language/I%20Beam%20Functions/Set%20Shell%20Script%20Debug%20Options.htm#Set_Shell_Script_Debug_Options).
+It is not currently possible to use RIDE to debug APL shell scripts. However there is an I-beam function, which can be used to provide some simple debugging/diagnostic information.

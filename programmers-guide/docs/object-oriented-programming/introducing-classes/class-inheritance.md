@@ -20,7 +20,7 @@ If you edit, re-fix or copy an existing base class, APL will take care to patch 
 
 ## Copying Classes
 
-See [Dependent Objects on page 1](../../System%20Commands/copy.htm#Dependent_Objects) and [Referenced Objects on page 1](../../System%20Commands/copy.htm#Referenced_Objects).
+See [Dependent Objects on page 1](../../System Commands/copy.htm#Dependent_Objects) and [Referenced Objects on page 1](../../System Commands/copy.htm#Referenced_Objects).
 
 ## Classes that derive from .NET Types
 
@@ -46,4 +46,4 @@ For example, to define a Class named `Duck` that derives from a `Poly` object, t
 
 The Base Constructor for such a Class is the `⎕WC` system function.
 
-For further details see ["Dyalog GUI Classes" on page 1](../OO%20and%20the%20Dyalog%20GUI/GUIClasses.htm#GUIClasses).
+For further details see ["Dyalog GUI Classes" on page 1](../OO and the Dyalog GUI/GUIClasses.htm#GUIClasses).

@@ -1,6 +1,6 @@
 # Creating .NET Classes with APLScript
 
-It is possible to define and use new .NET classes within an APLScript.
+It is possible to define and use new .NET classes within an `APLScript`.
 
 A class is defined by `:Class` and `:EndClass`statements. The methods provided by the class are defined as function bodies enclosed within these statements. Please see the Language Reference for a complete discussion of writing classes in Dyalog APL. This chapter will only provide a brief introduction to the subject, aimed specifically at APLScript.
 
@@ -18,15 +18,15 @@ Terminates a class definition block
 
 A class specified in this way will automatically support the methods, properties and events that it inherits from its Base Class, together with any new public methods that you care to specify.
 
-However, the new class only inherits a default constructor (which is called with no parameters) and does not inherit all of the other private constructors from its Base Class. You can define a method to be a constructor using the :Implements Constructor declarative comment. Constructor overloading is supported and you may define any number of different constructor functions in this way, but they must have unique parameter sets for the system to distinguish between them.
+However, the new class only inherits a default constructor (which is called with no parameters) and does not inherit all of the other private constructors from its Base Class. You can define a method to be a constructor using the :`Implements Constructor` declarative comment. Constructor overloading is supported and you may define any number of different constructor functions in this way, but they must have unique parameter sets for the system to distinguish between them.
 
-You can create and use instances of a class by using the `⎕NEW` system function in statements elsewhere in the APLScript.
+You can create and use instances of a class by using the `⎕NEW` system function in statements elsewhere in the `APLScript`.
 
 ### Exporting Functions as Web Methods
 
-Within a :Class definition block, you may define private functions and public functions. A public function is one that is exposed as a method and may be called by a client that creates an instance of your class. Public functions must have a section of *declaration*statements. Other functions are purely internal to the class and are not directly accessible by a client application.
+Within a `:Class` definition block, you may define private functions and public functions. A public function is one that is exposed as a method and may be called by a client that creates an instance of your class. Public functions must have a section of *declaration*statements. Other functions are purely internal to the class and are not directly accessible by a client application.
 
-The declaration statements for public functions perform the same task for an APLScript that is performed using the .NET Properties dialog box, or by executing SetMethodInfo in the Dyalog APL Session, prior to creating a .NET assembly. The following declaration statements may be used.
+The declaration statements for public functions perform the same task for an `APLScript` that is performed using the .NET Properties dialog box, or by executing SetMethodInfo in the Dyalog APL Session, prior to creating a .NET assembly. The following declaration statements may be used.
 ```apl
       :Access Public
 ```
@@ -53,7 +53,7 @@ Declares the result of the method to have a given data type, if any. It also dec
 
 ### A .NET Class example
 
-The following APLScript illustrates how you may create a .NET Class using APLScript. The example class is the same as *Example 1* in Chapter 5. The APLScript code, saved in the file samples\aplclasses\aplclasses6.apl, is as follows:
+The following APLScript illustrates how you may create a .NET Class using APLScript. The example class is the same as *Example 1* in Chapter 5. The APLScript code, saved in the file `samples\aplclasses\aplclasses6.apl`, is as follows:
 ```apl
 :Namespace APLClasses
      
@@ -71,17 +71,17 @@ The following APLScript illustrates how you may create a .NET Class using APLScr
 :EndNamespace
 ```
 
-This APLScript code defines a namespace called `APLClasses`. This simply acts as a container and is there to establish a .NET namespace of the same name within the resulting .NET assembly. Within `APLClasses` is defined a .NET class called `Primitives` whose base class is System.Object. This class has a single public method named `IndexGen`, which takes a parameter called `number` whose data type is Int32, and returns an array of Int32 as its result.
+This APLScript code defines a namespace called `APLClasses`. This simply acts as a container and is there to establish a .NET namespace of the same name within the resulting .NET assembly. Within `APLClasses` is defined a .NET class called `Primitives` whose base class is `System.Object`. This class has a single public method named `IndexGen`, which takes a parameter called `number` whose data type is `Int32`, and returns an array of `Int32` as its result.
 
-aplclasses6.apl is compiled to a .NET Assembly using the APLScript compiler with the /t:library  flag. For details, see the file aplclasses6\framework\build.bat.
+`aplclasses6.apl` is compiled to a .NET Assembly using the APLScript compiler with the `/t:library`  flag. For details, see the file `aplclasses6\framework\build.bat`.
 
-Using VS, open the solution file d:\aplclasses\aplclasses6\Framework\project.sln and view aplclasses6.dll.
+Using VS, open the solution file`d:\aplclasses\aplclasses6\Framework\project.sln` and view `aplclasses6.dll`.
 
 ![aplclasses6_1](../img/aplclasses6-1.png)
 
-This shows that aplclasses6.dll contains a .NET namespace called APLClasses, which in turn contains the Primitives class. Primitives has a single method named IndexGen() which takes a number (an int).
+This shows that `aplclasses6.dll` contains a .NET namespace called APLClasses, which in turn contains the Primitives class. Primitives has a single method named IndexGen() which takes a number (an int).
 
-Next, Display the c# program program.cs. This is the same program as in Example1.
+Next, Display the c# program `program.cs`. This is the same program as in Example1.
 
 ![aplclasses6_2](../img/aplclasses6-2.png)
 
@@ -126,7 +126,7 @@ The accessor used to reference the value of the property is represented by a fun
 
 The `get` function is used to retrieve the value of the property and must be a niladic result returning function. The data type of its result determines the `Type` of the property. The `set` function is used to change the value of the property and must be a monadic function with no result. The argument to the function will have a data type `Type` specified by the `:Signature` statement. A property that contains a `get` function but no `set` function is effectively a read-only property.
 
-The following APLScript, saved in the file samples\aplclasses\aplclasses7.apl, shows how a property called `IndexOrigin` can be added to the previous example. Within the `:Property` block there are two functions defined called `get` and `set` which are used to reference and assign a new value respectively. These functions have the fixed names and syntax specified for *property get* and *property set* functions as described above.
+The following APLScript, saved in the file `samples\aplclasses\aplclasses7.apl`, shows how a property called `IndexOrigin` can be added to the previous example. Within the `:Property` block there are two functions defined called `get` and `set` which are used to reference and assign a new value respectively. These functions have the fixed names and syntax specified for *property get* and *property set* functions as described above.
 ```apl
 :Namespace APLClasses
 
@@ -159,13 +159,13 @@ The following APLScript, saved in the file samples\aplclasses\aplclasses7.apl, s
 :EndNamespace
 ```
 
-Using VS, open the solution file d:\aplclasses\aplclasses7\Framework\project.sln and view aplclasses7.dll.
+Using VS, open the solution file`d:\aplclasses\aplclasses7\Framework\project.sln` and view `aplclasses7.dll`.
 
 ![aplclasses7_1](../img/aplclasses7-1.png)
 
-This shows that aplclasses7.dll contains a .NET namespace called APLClasses, which in turn contains the Primitives class. Primitives has a single method named IndexGen() which takes a number (an int) and a property named IndexOrigin.
+This shows that `aplclasses7.dll` contains a .NET namespace called APLClasses, which in turn contains the Primitives class. Primitives has a single method named IndexGen() which takes a number (an int) and a property named IndexOrigin.
 
-Next, Display the c# program program.cs. Notice that the main program calls a subroutine iota twice to calculate `⍸5` in origin 0 and 1.
+Next, Display the c# program `program.cs`. Notice that the main program calls a subroutine iota twice to calculate `⍸5` in origin 0 and 1.
 
 ![aplclasses7_2](../img/aplclasses7-2.png)
 
@@ -196,4 +196,4 @@ An *indexer* is a property of a class that enables an instance of that class (an
 
 Indexers are defined in the same way as properties, between `:Property Default`and `:EndProperty` statements. There may be only one indexer defined for a class.
 
-Note: the `:Property Default` statement in Dyalog APL is closely modelled on the indexer feature in C# and employs similar syntax. If you use ILDASM to browse a .NET class containing an indexer, you will see the indexer as the *default property* of that class, which is how it is actually implemented.
+Note: the `:Property Default` statement in Dyalog APL is closely modelled on the indexer feature in C# and employs similar syntax. If you use `ILDASM`to browse a .NET class containing an indexer, you will see the indexer as the *default property* of that class, which is how it is actually implemented.

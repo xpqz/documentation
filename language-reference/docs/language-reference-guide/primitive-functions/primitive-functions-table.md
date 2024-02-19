@@ -2,52 +2,52 @@
 
 | Glyph | Glyph Name | Monadic Function | Dyadic Function |
 | --- | --- | --- | ---  |
-| `+` | Plus Sign | [Conjugate](primitive-functions-a-z/primitive-functions-a-z/conjugate.md) | [Plus](primitive-functions-a-z/primitive-functions-a-z/plus.md) |
-| `^` |  |  | [And Lowest Common Multiple](scalar-dyadic-logical-functions/and-lowest-common-multiple.md) |
-| `!` | Exclamation Mark | [Factorial](scalar-monadic-functions/factorial.md) | [Binomial](scalar-dyadic-arithmetic-functions/binomial.md) |
-| `⌈` | Upstile | [Ceiling](scalar-monadic-functions/ceiling.md) | [Maximum](scalar-dyadic-arithmetic-functions/maximum.md) |
-| `○` | Circle | [Pi Times](scalar-monadic-functions/pi-times.md) | [Circular](circular.md) |
-| `?` | Question Mark | [Roll](scalar-monadic-functions/roll.md) | [Deal](non-scalar-selector-functions/deal.md) |
-| `⊥` | Up Tack Symbol |  | [Decode](non-scalar-computational-functions/decode.md) |
-| `L` |  |  | [Mix](non-scalar-monadic-structural-functions/mix.md) |
-| `×` | Times Sign | [Direction Signum](scalar-monadic-functions/direction.md) | [Times](primitive-functions-a-z/primitive-functions-a-z/times.md) |
-| `÷` | Divide Sign | [Reciprocal](scalar-monadic-functions/reciprocal.md) | [Divide](scalar-dyadic-arithmetic-functions/divide.md) |
+| `+` | Plus Sign | [Conjugate](Conjugate.htm) | [Plus](Plus.htm) |
+| `^` |  |  | [And Lowest Common Multiple](And Lowest Common Multiple.htm) |
+| `!` | Exclamation Mark | [Factorial](Factorial.htm) | [Binomial](Binomial.htm) |
+| `⌈` | Upstile | [Ceiling](Ceiling.htm) | [Maximum](Maximum.htm) |
+| `○` | Circle | [Pi Times](Pi Times.htm) | [Circular](Circular.htm) |
+| `?` | Question Mark | [Roll](Roll.htm) | [Deal](Deal.htm) |
+| `⊥` | Up Tack Symbol |  | [Decode](Decode.htm) |
+| `L` |  |  | [Mix](Mix.htm) |
+| `×` | Times Sign | [Direction Signum](Direction.htm) | [Times](Times.htm) |
+| `÷` | Divide Sign | [Reciprocal](Reciprocal.htm) | [Divide](Divide.htm) |
 | `↓` | Down Arrow |  | [Drop](../system-commands/system-commands-a-z/drop.md) |
-| `⊂` | Left Shoe | [Enclose](non-scalar-monadic-structural-functions/enclose.md) |  |
-| `⊤` | Down Tack Symbol |  | [Encode](non-scalar-computational-functions/encode.md) |
-| `=` | Equal Sign |  | [Equal](scalar-dyadic-logical-functions/equal.md) |
-| `~` | Tilde | [Not](scalar-monadic-functions/not.md) | [Without](primitive-functions-a-z/primitive-functions-a-z/without.md) |
-| `⍀` | Slope Bar |  | [Expand First](primitive-functions-a-z/primitive-functions-a-z/expand-first.md) |
-| `*` | Star | [Exponential](scalar-monadic-functions/exponential.md) | [Power](scalar-dyadic-arithmetic-functions/power.md) |
-| `⍷` | Epsilon Underbar |  | [Find](non-scalar-selector-functions/find.md) |
-| `⌊` | Downstile | [Floor](scalar-monadic-functions/floor.md) | [Minimum](scalar-dyadic-arithmetic-functions/minimum.md) |
+| `⊂` | Left Shoe | [Enclose](Enclose.htm) |  |
+| `⊤` | Down Tack Symbol |  | [Encode](Encode.htm) |
+| `=` | Equal Sign |  | [Equal](Equal.htm) |
+| `~` | Tilde | [Not](Not.htm) | [Without](Without.htm) |
+| `⍀` | Slope Bar |  | [Expand First](Expand First.htm) |
+| `*` | Star | [Exponential](Exponential.htm) | [Power](Power.htm) |
+| `⍷` | Epsilon Underbar |  | [Find](Find.htm) |
+| `⌊` | Downstile | [Floor](Floor.htm) | [Minimum](Minimum.htm) |
 | `⍕` | Thorn Symbol | [Format Monadic](../system-functions/system-functions-a-z/system-functions-a-z/format-monadic.md) | [Format Dyadic](../system-functions/system-functions-a-z/system-functions-a-z/format-dyadic.md) |
-| `⍒` | Grade Down | [Grade Down Monadic](non-scalar-selector-functions/grade-down-monadic.md) | [Grade Down Dyadic](non-scalar-selector-functions/grade-down-dyadic.md) |
-| `⍋` | Grade Up | [Grade Up Monadic](non-scalar-selector-functions/grade-up-monadic.md) | [Grade Up Dyadic](non-scalar-selector-functions/grade-up-dyadic.md) |
-| `≥` | Greater Than Or Equal To Sign |  | [Greater Or Equal](scalar-dyadic-logical-functions/greater-or-equal.md) |
-| `⊢` | Right Tack | [Identity](Identity.htm) | [Right](non-scalar-selection-functions/right.md) |
-| `⍳` | Iota | [Index Generator](non-scalar-selector-functions/index-generator.md) | [Index Of](non-scalar-selector-functions/index-of.md) |
+| `⍒` | Grade Down | [Grade Down Monadic](Grade Down Monadic.htm) | [Grade Down Dyadic](Grade Down Dyadic.htm) |
+| `⍋` | Grade Up | [Grade Up Monadic](Grade Up Monadic.htm) | [Grade Up Dyadic](Grade Up Dyadic.htm) |
+| `≥` | Greater Than Or Equal To Sign |  | [Greater Or Equal](Greater Or Equal.htm) |
+| `⊢` | Right Tack | [Identity](Identity.htm) | [Right](Right.htm) |
+| `⍳` | Iota | [Index Generator](Index Generator.htm) | [Index Of](Index Of.htm) |
 | `⌷` | Squad Symbol | [Materialise](Materialise.htm) | [Index](../../index.md) |
-| `∩` | Up Shoe |  | [Intersection](non-scalar-selection-functions/intersection.md) |
-| `⍸` | Iota Underbar | [Where](non-scalar-selector-functions/where.md) | [Interval Index](non-scalar-selector-functions/interval-index.md) |
-| `⊣` | Left Tack | [Same](non-scalar-selection-functions/same.md) | [Left](non-scalar-selection-functions/left.md) |
-| `≤` | Less Than Or Equal To Sign |  | [Less Or Equal](scalar-dyadic-logical-functions/less-or-equal.md) |
-| `⍟` | Log | [Natural Logarithm](scalar-monadic-functions/natural-logarithm.md) | [Logarithm](scalar-dyadic-arithmetic-functions/logarithm.md) |
-| `|` | Stile | [Magnitude](scalar-monadic-functions/magnitude.md) | [Residue](scalar-dyadic-arithmetic-functions/residue.md) |
-| `≡` | Equal Underbar Sign |  | [Match](non-scalar-selector-functions/match.md) |
-| `⌹` | Domino | [Matrix Inverse](non-scalar-computational-functions/matrix-inverse.md) | [Matrix Divide](non-scalar-computational-functions/matrix-divide.md) |
-| `∊` | Epsilon |  | [Membership](non-scalar-selector-functions/membership.md) |
-| `-` | Minus Sign | [Negative](scalar-monadic-functions/negative.md) | [Subtract](scalar-dyadic-arithmetic-functions/subtract.md) |
-| `⍲` | Logical NAND Symbol |  | [Nand](scalar-dyadic-logical-functions/nand.md) |
-| `⊆` | Left Shoe Underbar | [Nest](non-scalar-monadic-structural-functions/nest.md) |  |
-| `⍱` | Logical NOR Symbol |  | [Nor](scalar-dyadic-logical-functions/nor.md) |
-| `≠` | Not Equal To | [Unique Mask](non-scalar-selection-functions/unique-mask.md) | [Not Equal](scalar-dyadic-logical-functions/not-equal.md) |
-| `≢` | Equal Underbar Slash | [Tally](non-scalar-monadic-structural-functions/tally.md) | [Not Match](non-scalar-selector-functions/not-match.md) |
-| `∨` | Logical Or |  | [Or Greatest Common Divisor](scalar-dyadic-logical-functions/or-greatest-common-divisor.md) |
-| `⊃` | Right Shoe |  | [Pick](non-scalar-selection-functions/pick.md) |
-| `,` | Comma | [Ravel](non-scalar-monadic-structural-functions/ravel.md) |  |
-| `⍴` | Rho | [Shape](non-scalar-monadic-structural-functions/shape.md) | [Reshape](non-scalar-dyadic-structural-functions/reshape.md) |
-| `⍪` | Comma Bar | [Table](non-scalar-monadic-structural-functions/table.md) |  |
-| `↑` | Up Arrow |  | [Take](non-scalar-selection-functions/take.md) |
-| `⍉` | Circle Backslash | [Transpose Monadic](non-scalar-monadic-structural-functions/transpose-monadic.md) | [Transpose Dyadic](non-scalar-dyadic-structural-functions/transpose-dyadic.md) |
-| `∪` | Set Union | [Unique](non-scalar-selection-functions/unique.md) | [Union](non-scalar-selection-functions/union.md) |
+| `∩` | Up Shoe |  | [Intersection](Intersection.htm) |
+| `⍸` | Iota Underbar | [Where](Where.htm) | [Interval Index](Interval Index.htm) |
+| `⊣` | Left Tack | [Same](Same.htm) | [Left](Left.htm) |
+| `≤` | Less Than Or Equal To Sign |  | [Less Or Equal](Less Or Equal.htm) |
+| `⍟` | Log | [Natural Logarithm](Natural Logarithm.htm) | [Logarithm](Logarithm.htm) |
+| `|` | Stile | [Magnitude](Magnitude.htm) | [Residue](Residue.htm) |
+| `≡` | Equal Underbar Sign |  | [Match](Match.htm) |
+| `⌹` | Domino | [Matrix Inverse](Matrix Inverse.htm) | [Matrix Divide](Matrix Divide.htm) |
+| `∊` | Epsilon |  | [Membership](Membership.htm) |
+| `-` | Minus Sign | [Negative](Negative.htm) | [Subtract](Subtract.htm) |
+| `⍲` | Logical NAND Symbol |  | [Nand](Nand.htm) |
+| `⊆` | Left Shoe Underbar | [Nest](Nest.htm) |  |
+| `⍱` | Logical NOR Symbol |  | [Nor](Nor.htm) |
+| `≠` | Not Equal To | [Unique Mask](Unique Mask.htm) | [Not Equal](Not Equal.htm) |
+| `≢` | Equal Underbar Slash | [Tally](Tally.htm) | [Not Match](Not Match.htm) |
+| `∨` | Logical Or |  | [Or Greatest Common Divisor](Or Greatest Common Divisor.htm) |
+| `⊃` | Right Shoe |  | [Pick](Pick.htm) |
+| `,` | Comma | [Ravel](Ravel.htm) |  |
+| `⍴` | Rho | [Shape](Shape.htm) | [Reshape](Reshape.htm) |
+| `⍪` | Comma Bar | [Table](Table.htm) |  |
+| `↑` | Up Arrow |  | [Take](Take.htm) |
+| `⍉` | Circle Backslash | [Transpose Monadic](Transpose Monadic.htm) | [Transpose Dyadic](Transpose Dyadic.htm) |
+| `∪` | Set Union | [Unique](Unique.htm) | [Union](Union.htm) |

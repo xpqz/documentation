@@ -6,16 +6,16 @@ To do this, open **Control Panel**, then open **Administrative Tools**, right-cl
 
 ### The dyalog.net Application
 
-Following a successful installation of Dyalog APL, the dyalog.net Application should appear in Internet Services Manager as shown below.
+Following a successful installation of Dyalog APL, the `dyalog.net` Application should appear in Internet Services Manager as shown below.
 
 ![iis1](../img/iis1.png)
 
-Note that the golf, temp and webservices sub-directories in the dyalog.net application represent separate IIS applications.
+Note that the `golf`, `temp` and `webservices` sub-directories in the `dyalog.net` application represent separate IIS applications.
 
 The dyalog Application Pool will appear in the list of Applications Pools as shown below.
 
 ![iis application pools](../img/iis-application-pools.png)
 
-The Advanced Settings of the dyalog.net Application are shown below.
+The Advanced Settings of the `dyalog.net` Application are shown below.
 
 ![iis advanced settings](../img/iis-advanced-settings.png)

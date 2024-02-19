@@ -99,7 +99,7 @@ Entity references are named representations of single characters which cannot no
 `⎕XML` converts entity references and all character references which the APL character set is able to represent into their character equivalent when generating APL array data; when generating XML it converts any or all characters to entity references as needed.
 
 
-There is a predefined set of entity references, and the XML specification allows others to be defined within the XML using the <!ENTITY > markup. `⎕XML` does not process these additional declarations and therefore will only convert the predefined types.
+There is a predefined set of entity references, and the XML specification allows others to be defined within the XML using the `<!ENTITY >` markup. `⎕XML` does not process these additional declarations and therefore will only convert the predefined types.
 
 ##### Whitespace
 
@@ -115,19 +115,19 @@ An element consists of a balanced pair of tags or a single empty element tag. Ta
 An example pair of tags, named TagName is
 
 
-<TagName></TagName>
+`<TagName></TagName>`
 
 
 This pair is shown with no content between the tags; this may be abbreviated as an empty element tag as
 
 
-<TagName/>
+`<TagName/>`
 
 
 Tags may be given zero or more attributes, which are specified as name/value pairs; for example
 
 
-<TagName AttName="AttValue">
+`<TagName AttName="AttValue">`
 
 
 Attribute values may be delimited by either double quotes as shown or single quotes (apostrophes); they may not contain certain characters (the delimiting quote, '&' or '<') and these must be represented by entity or character references.

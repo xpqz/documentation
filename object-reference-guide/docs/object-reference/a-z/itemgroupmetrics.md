@@ -12,7 +12,7 @@
 **Description**
 
 
-This property is used to specify colours and spacing elements for a [ListView](./listview.md) that is displaying its Items in groupings (see [ItemGroups](itemgroups.md)).
+This property is used to specify colours and spacing elements for a [ListView](./listview.md) that is displaying its Items in groupings (see [ItemGroups](ItemGroups.htm)).
 
 
 ItemGroupMetrics is a 3-item nested vector as follows:

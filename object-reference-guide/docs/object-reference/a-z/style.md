@@ -40,7 +40,7 @@ selected a cross appears in the box. This style of button is known as a
 "check-box".
 
 
-`'CommandLink'` means that the button has an icon displayed to the left of its [Caption](caption.md), the appearance of which is controlled by the  [Elevated](elevated.md) property. 
+`'CommandLink'` means that the button has an icon displayed to the left of its [Caption](caption.md), the appearance of which is controlled by the  [Elevated](Elevated.htm) property. 
 **Note that this feature only applies if is enabled.**
 
 
@@ -69,7 +69,7 @@ either `'Combo'` (the default) or `'UpDown'`.
 
 For an [Edit](./edit.md) object, Style may be `'Single'` or `'Multi'`. If Style is `'Single'` the object displays only a single line of text and the user may not enter any
 more lines. If the Style is `'Multi'` the
-number of lines displayed is governed by the [Rows](rows.md) or [Size](size.md) property and the user may insert, add
+number of lines displayed is governed by the [Rows](Rows.htm) or [Size](size.md) property and the user may insert, add
 or delete lines as desired.
 
 

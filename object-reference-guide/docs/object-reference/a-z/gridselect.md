@@ -15,7 +15,7 @@
 If enabled, this event is reported when the user performs or cancels the selection of a block of cells in a [Grid](./grid.md) object. This event is reported after the selection has changed. Setting its action code to `¯1` has no effect and the result of a callback function cannot be used to alter the selection that has been made. You may however control the user's ability to make selections using the [CellSelect](./cellselect.md) property.
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 4-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |

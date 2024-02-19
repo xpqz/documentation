@@ -40,7 +40,7 @@ For example, the following statements produce a [Form](./form.md) filled with th
 An easy way to provide a customised pushbutton is to create a [Button](./button.md) whose Picture property specifies the name of, or ref to, a [Bitmap](./bitmap.md) or [Icon](./icon.md), using drawmode 3 (the default). This causes the corresponding bitmap or icon to be drawn in the centre of the [Button](./button.md). So long as the [Button](./button.md) is larger than the bitmap or icon, its borders (which give it its 3-dimensional appearance and "pushbutton" behaviour) will be unaffected.
 
 
-Note that if Picture is set on a [Button](./button.md) whose [Style](style.md) is `'Radio'` or `'Check'`, the Button assumes pushbutton appearance, although its radio/check behaviour is preserved.
+Note that if Picture is set on a [Button](./button.md) whose [Style](Style.htm) is `'Radio'` or `'Check'`, the Button assumes pushbutton appearance, although its radio/check behaviour is preserved.
 
 
 For an [Image](./image.md) object, the Picture property specifies the name of, or ref to, a [Bitmap](./bitmap.md), [Icon](./icon.md) or [Metafile](./metafile.md) object to be drawn, or a vector of names or refs. The [Image](./image.md) is a graphical object and is drawn *on top of* the background. It does not support the drawmode options provided by the objects in which Picture specifies the background.

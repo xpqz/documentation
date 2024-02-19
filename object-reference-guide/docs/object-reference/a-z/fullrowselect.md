@@ -18,7 +18,7 @@ The FullRowSelect property specifies whether or not the entire row is highlighte
 FullRowSelect is a single number with the value 0 (only the item name is highlighted) or 1 (the whole row is highlighted); the default is 0.
 
 
-For a [ListView](./listview.md), FullRowSelect only applies if its [View](view.md) property is set to `'Report'`.
+For a [ListView](./listview.md), FullRowSelect only applies if its [View](View.htm) property is set to `'Report'`.
 
 
 The picture below illustrates the effect on the appearance of a [ListView](./listview.md) object, of setting FullRowSelect to 1.

@@ -6,10 +6,10 @@ The WPF GUI is in many ways more sophisticated and powerful than either Dyalog A
 
 Like any other set of .NET classes, WFP can be integrated into Dyalog APL applications via the .NET interface. Dyalog APL users may therefore develop GUI applications that are based upon WPF as an alternative to the built-in Dyalog GUI or  Windows Forms.
 
-Quite apart from its advanced GUI capabilities, WPF supports **data binding**. This is a complex subject, but putting it very simply, data binding allows  a property of a user-interface object (such as the Text property of a `TextBox` object) to be bound to some data. When the data changes, the bound property of the object changes and vice versa.
+Quite apart from its advanced GUI capabilities, WPF supports **data binding**. This is a complex subject, but putting it very simply, data binding allows  a property of a user-interface object (such as the Text property of a TextBox object) to be bound to some data. When the data changes, the bound property of the object changes and vice versa.
 
 Dyalog APL includes a data binding function (`2015⌶`This function may remain as an I-beam or be replaced by one or more system functions in a future Version of Dyalog APL.) which supports data binding to APL arrays and namespaces.
 
 A WPF GUI can be built dynamically by creating a set of component objects (using `⎕NEW`) in a similar way to the Dyalog APL GUI and Windows Forms. However, the same user-interface can instead be specified statically using XAML, a text markup system  that describes the GUI using XML. Along with data binding, this feature allows the application logic and the user-interface to be developed and maintained separately.
 
-The examples described in this section are provided in the workspace WPFIntro.dws
+The examples described in this section are provided in the workspace `WPFIntro.dws`

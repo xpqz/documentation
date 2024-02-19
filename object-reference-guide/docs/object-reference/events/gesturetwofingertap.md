@@ -13,7 +13,7 @@
 This event is reported when the user taps two fingers at the same time on an object
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 5-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 5-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |
@@ -29,8 +29,8 @@ The Flags parameter [3] which reports the state of the Gesture, is always an int
 
 | Name | Value | Description |
 | --- | --- | ---  |
-| GF_BEGIN | 1 | A gesture is starting. |
-| GF_END | 4 | A gesture has finished. |
+| `GF_BEGIN` | 1 | A gesture is starting. |
+| `GF_END` | 4 | A gesture has finished. |
 
 
 Returning zero from the callback disables any default handling by the operating system.

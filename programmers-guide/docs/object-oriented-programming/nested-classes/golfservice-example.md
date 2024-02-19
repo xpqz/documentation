@@ -1,23 +1,23 @@
 # GolfService Example
 
-The [GolfService Example Class](GolfService%20Example%20Class.htm) illustrates the use of nested classes. [GolfService](GolfService%20Example%20Class.htm) was originally developed as a Web Service for Dyalog.NET and is one of the samples distributed in samples\asp.net\webservices. This version has been reconstructed as a stand-alone APL Class.
+The [GolfService Example Class](GolfService Example Class.htm) illustrates the use of nested classes. [GolfService](GolfService Example Class.htm) was originally developed as a Web Service for Dyalog.NET and is one of the samples distributed in samples\asp.net\webservices. This version has been reconstructed as a stand-alone APL Class.
 
-[GolfService](GolfService%20Example%20Class.htm) contains the following nested classes, all of which are `Private`.
+[GolfService](GolfService Example Class.htm) contains the following nested classes, all of which are `Private`.
 
-| [GolfCourse](GolfCourse%20Class.htm) | A Class that represents a Golf Course, having Fields `Code` and `Name` . |
+| [GolfCourse](GolfCourse Class.htm) | A Class that represents a Golf Course, having Fields `Code` and `Name` . |
 | --- | ---  |
-| [Slot](Slot%20Class.htm) | A Class that represents a tee-time or match, having Fields `Time` and `Players` . Up to 4 players may play together in a match. |
-| [Booking](Booking%20Class.htm) | A Class that represents a reservation for a particular tee-time at a particular golf course. This has Fields `OK` , `Course` , `TeeTime` and `Message` . The value of `TeeTime` is an Instance of a Slot Class. |
-| [StartingSheet](StartingSheet%20Class.htm) | A Class that represents a day's starting-sheet at a particular golf course. It has Fields `OK` , `Course` , `Date` , `Slots` , `Message` . `Slots` is an array of Instances of Slot Class. |
+| [Slot](Slot Class.htm) | A Class that represents a tee-time or match, having Fields `Time` and `Players` . Up to 4 players may play together in a match. |
+| [Booking](Booking Class.htm) | A Class that represents a reservation for a particular tee-time at a particular golf course. This has Fields `OK` , `Course` , `TeeTime` and `Message` . The value of `TeeTime` is an Instance of a Slot Class. |
+| [StartingSheet](StartingSheet Class.htm) | A Class that represents a day's starting-sheet at a particular golf course. It has Fields `OK` , `Course` , `Date` , `Slots` , `Message` . `Slots` is an array of Instances of Slot Class. |
 
-The [GolfService](GolfService%20Example%20Class.htm) constructor takes the name of a file in which all the data is stored. This file is initialised by method `InitFile` if it doesn't already exist.
+The [GolfService](GolfService Example Class.htm) constructor takes the name of a file in which all the data is stored. This file is initialised by method `InitFile` if it doesn't already exist.
 ```apl
       G←⎕NEW GolfService 'F:\HELP11.0\GOLFDATA'
       G
 #.[Instance of GolfService]
 ```
 
-The [GetCourses](GetCourses%20Method.htm) method returns an array of Instances of the internal (nested) Class [GolfCourse](GolfCourse%20Class.htm). Notice how the display form of each Instance is established by the [GolfCourse](GolfCourse%20Class.htm) constructor, to obtain the output display shown below.
+The [GetCourses](GetCourses Method.htm) method returns an array of Instances of the internal (nested) Class [GolfCourse](GolfCourse Class.htm). Notice how the display form of each Instance is established by the [GolfCourse](GolfCourse Class.htm) constructor, to obtain the output display shown below.
 ```apl
       G.GetCourses
  St Andrews(1)  Hindhead(2)  Basingstoke(3) 
@@ -31,7 +31,7 @@ All of the dates and times employ instances of the .NET type System.DateTime, an
 31/03/2006 07:00:00
 ```
 
-The [MakeBooking](MakeBooking%20Method.htm) method takes between 4 and 7 parameters viz.
+The [MakeBooking](MakeBooking Method.htm) method takes between 4 and 7 parameters viz.
 
 - the code for the golf course at which the reservation is required
 - the date and time of the reservation
@@ -42,7 +42,7 @@ The [MakeBooking](MakeBooking%20Method.htm) method takes between 4 and 7 paramet
 - a flag to indicate whether or not the nearest available time will do
 - a list of up to 4 players who wish to book that time.
 
-The result is an Instance of the internal Class [Booking](Booking%20Class.htm). Once again, `⎕DF` is used to make the default display of these Instances meaningful. In this case, the reservation is successful.
+The result is an Instance of the internal Class [Booking](Booking Class.htm). Once again, `⎕DF` is used to make the default display of these Instances meaningful. In this case, the reservation is successful.
 ```apl
       G.MakeBooking 2 TomorrowAt7 1 'Pete' 'Tiger'
   Hindhead(2)   31/03/2006 07:00:00   Pete  Tiger    OK 
@@ -68,7 +68,7 @@ Up to now, all bookings have been made with the tee-time flexibility flag set to
 
 ... so his reservation fails (4-player restriction).
 
-Finally the [GetStartingSheet](GetStartingheet%20Method.htm) method is used to obtain an Instance of the internal Class [StartingSheet](StartingSheet%20Class.htm) for the given course and day.
+Finally the [GetStartingSheet](GetStartingheet Method.htm) method is used to obtain an Instance of the internal Class [StartingSheet](StartingSheet Class.htm) for the given course and day.
 ```apl
       G.GetStartingSheet 2 Tomorrow
   Hindhead(2)  31/03/2006 00:00:00              

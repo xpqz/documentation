@@ -46,7 +46,7 @@ The argument to SetEventInfo is a 1, 2, 3 or 4-element array as follows:
 *Event info*, specifies an optional help string which describes what the event does, the data type of the result (if any) and the names and data types of its arguments.
 
 
-If the event is fully described, each element of Event Info is a 2-element vector of character vectors. The first element contains the help string and the [COM data type](../Miscellaneous/COM%20data%20types.htm) of the result that the callback function in the host application is expected to supply. Subsequent elements contain the name and [COM data type](../Miscellaneous/COM%20data%20types.htm) of each of the parameters supplied by the event.
+If the event is fully described, each element of Event Info is a 2-element vector of character vectors. The first element contains the help string and the [COM data type](../Miscellaneous/COM data types.htm) of the result that the callback function in the host application is expected to supply. Subsequent elements contain the name and [COM data type](../Miscellaneous/COM data types.htm) of each of the parameters supplied by the event.
 
 
 However, both the help string and the names of the parameters are optional and may be omitted. If so, one or more elements of *Event Info* may be a simple character vector.
@@ -89,9 +89,9 @@ The following statements were used to declare the*ChangeValue1*event The event p
 
 If the host application was Visual Basic, a suitable callback function might be:
 ```apl
-Private Sub Dual1_ChangeValue1(Value1 As Long)
+`Private Sub Dual1_ChangeValue1(Value1 As Long)
 Value1=2*(Value1\2)
-End Sub
+End Sub`
 ```
 
 

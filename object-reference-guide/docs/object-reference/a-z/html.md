@@ -15,7 +15,7 @@
 The HTML property is a character vector that specifies the content to be rendered by the [HTMLRenderer](./htmlrenderer.md) object. Dyalog does not perform any pre-processing of the text nor does it verify that it is properly formed HTML using single-byte  character data, including any necessary escaping and encoding.
 
 
-See also: [URL on page 1](url.md).
+See also: [URL on page 1](URL.htm#URL_Property).
 
 #### Note:
 

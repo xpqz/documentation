@@ -22,11 +22,11 @@ displayed) or 1 (check boxes are displayed); the default is 0.
 
 
 For a [TreeView](./treeview.md), CheckBoxes will only be
-honoured if the items have pictures associated with them (via the [ImageListObj](imagelistobj.md) and [ImageIndex](imageindex.md) properties).
+honoured if the items have pictures associated with them (via the [ImageListObj](ImageListObj.htm) and [ImageIndex](ImageIndex.htm) properties).
 
 
 For a [ListView](./listview.md), CheckBoxes applies to all
-settings of the [View](view.md) property.
+settings of the [View](View.htm) property.
 
 
 The GetItemState method can be used to determine if a specific item in a [ListView](./listview.md) or [TreeView](./treeview.md) is checked. The result of the

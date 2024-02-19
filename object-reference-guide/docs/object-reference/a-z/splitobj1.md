@@ -21,7 +21,7 @@ If the [Style](style.md) property of the [Splitter](./splitter.md) is `'Vert'`, 
 If the [Style](style.md) property of the [Splitter](./splitter.md) is `'Horz'`, the object specified by SplitObj1 is positioned at (0 0) and sized to occupy the space in its parent above the [Splitter](./splitter.md), with the [Splitter](./splitter.md) itself attached to its bottom edge.
 
 
-If SplitObj1 is empty, the [Splitter](./splitter.md) manages the single object specified by [SplitObj2](splitobj2.md) and the space to the left or above the [Splitter](./splitter.md) is empty or controlled by another [Splitter](./splitter.md).
+If SplitObj1 is empty, the [Splitter](./splitter.md) manages the single object specified by [SplitObj2](SplitObj2.htm) and the space to the left or above the [Splitter](./splitter.md) is empty or controlled by another [Splitter](./splitter.md).
 
 
 

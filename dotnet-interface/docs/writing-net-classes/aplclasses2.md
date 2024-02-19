@@ -1,12 +1,12 @@
 # Example 2
 
-In Example 1, we said nothing about a constructor used to create an instance of the Primitives class. In Example 2, we will show how this is done.
+In Example 1, we said nothing about a constructor used to create an instance of the `Primitives` class. In Example 2, we will show how this is done.
 
-In fact, in Example 1, APL supplied a default constructor, which is inherited from the base class (System.Object) and is called without arguments.
+In fact, in Example 1, APL supplied a default constructor, which is inherited from the base class (`System.Object`) and is called without arguments.
 
 Example 2 will extend Example 1 by adding a constructor that specifies the value of `⎕IO`.
 
-Load the workspace aplclasses2.dws from aplclasses2, then display the `Primitives` class:
+Load the workspace `aplclasses2.dws` from `aplclasses2`, then display the `Primitives` class:
 ```apl
       ↑⎕SRC APLClasses.Primitives
 :Class Primitives                      
@@ -39,9 +39,9 @@ Using this version,  build a new .NET Assembly using *File/Export**…* as befor
 
 ### program.cs
 
-The following C# source, called aplclasses2\Framework\program.cs, will be used to call the new version of our Dyalog.NET class.
+The following C# source, called `aplclasses2\Framework\program.cs`, will be used to call the new version of our Dyalog.NET class.
 ```apl
-      using System;
+`using System;
       using APLClasses;
       public class MainClass
             {
@@ -53,15 +53,15 @@ The following C# source, called aplclasses2\Framework\program.cs, will be used t
                   for (int i=0;i<rslt.Length;i++)
                   Console.WriteLine(rslt[i]);
                   }
-            }
+            }`
 ```
 
-The program is the same as in the previous example, except that the code that creates an instance of the Primitives class is simply changed to specify an argument; in this case 0.
+The program is the same as in the previous example, except that the code that creates an instance of the `Primitives` class is simply changed to specify an argument; in this case 0.
 ```apl
-Primitives apl = new Primitives(0);
+`Primitives apl = new Primitives(0);`
 ```
 
-Using VS, open the solution file d:\aplclasses\aplclasses2\Framework\project.sln and view program.cs.
+Using VS, open the solution file`d:\aplclasses\aplclasses2\Framework\project.sln` and view `program.cs`.
 
 ![aplclasses2_3](../img/aplclasses2-3.png)
 

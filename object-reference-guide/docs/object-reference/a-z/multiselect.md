@@ -21,7 +21,7 @@ MultiSelect is a single number with the value 0 (only 1 button may be selected) 
 MultiSelect apples only if the [Style](style.md) of the [TabControl](./tabcontrol.md) is `'Buttons'` or `'FlatButtons'`, and is ignored if [Style](style.md) is `'Tabs'`.
 
 
-Note that the [State](state.md) property of the associated [TabButton](./tabbutton.md) object reports whether or not the button is selected.
+Note that the [State](State.htm) property of the associated [TabButton](./tabbutton.md) object reports whether or not the button is selected.
 
 
 

@@ -6,30 +6,30 @@ Scalar Primitive Functions
 
 | Symbol | Monadic | Dyadic |
 | --- | --- | ---  |
-| `+` | [Conjugate](primitive-functions-a-z/primitive-functions-a-z/conjugate.md) | [Plus (Add)](scalar-dyadic-arithmetic-functions/add.md) |
-| `-` | [Negative](scalar-monadic-functions/negative.md) | [Minus (Subtract)](scalar-dyadic-arithmetic-functions/subtract.md) |
-| `×` | [Direction (Signum)](scalar-monadic-functions/direction.md) | [Times (Multiply)](scalar-dyadic-arithmetic-functions/multiply.md) |
-| `÷` | [Reciproca](scalar-monadic-functions/reciprocal.md) l | [Divide](scalar-dyadic-arithmetic-functions/divide.md) |
-| `|` | [Magnitude](scalar-monadic-functions/magnitude.md) | [Residue](scalar-dyadic-arithmetic-functions/residue.md) |
-| `⌊` | [Floor](scalar-monadic-functions/floor.md) | [Minimum](scalar-dyadic-arithmetic-functions/minimum.md) |
-| `⌈` | [Ceiling](scalar-monadic-functions/ceiling.md) | [Maximum](scalar-dyadic-arithmetic-functions/maximum.md) |
-| `*` | [Exponential](scalar-monadic-functions/exponential.md) | [Power](scalar-dyadic-arithmetic-functions/power.md) |
-| `⍟` | [Natural Logarithm](scalar-monadic-functions/natural-logarithm.md) | [Logarithm](scalar-dyadic-arithmetic-functions/logarithm.md) |
-| `○` | [Pi Times](scalar-monadic-functions/pi-times.md) | [Circular](circular.md) |
-| `!` | [Factorial](scalar-monadic-functions/factorial.md) | [Binomial](scalar-dyadic-arithmetic-functions/binomial.md) |
-| `~` | [Not](scalar-monadic-functions/not.md) | $ |
-| `?` | [Roll](scalar-monadic-functions/roll.md) | $ |
-| `∊` | [Type](scalar-monadic-functions/type.md) (See [Enlist](non-scalar-monadic-structural-functions/enlist.md) ) | $ |
-| `^` |  | [And](scalar-dyadic-logical-functions/and-lowest-common-multiple.md) |
-| `∨` |  | [Or](scalar-dyadic-logical-functions/or-greatest-common-divisor.md) |
-| `⍲` |  | [Nand](scalar-dyadic-logical-functions/nand.md) |
-| `⍱` |  | [Nor](scalar-dyadic-logical-functions/nor.md) |
-| `<` |  | [Less](scalar-dyadic-logical-functions/less.md) |
-| `≤` |  | [Less Or Equal](scalar-dyadic-logical-functions/less-or-equal.md) |
-| `=` |  | [Equal](scalar-dyadic-logical-functions/equal.md) |
-| `≥` |  | [Greater Or Equal](scalar-dyadic-logical-functions/greater-or-equal.md) |
-| `>` |  | [Greater](scalar-dyadic-logical-functions/greater.md) |
-| `≠` |  | [Not Equal](scalar-dyadic-logical-functions/not-equal.md) |
+| `+` | [Conjugate](Conjugate.htm) | [Plus (Add)](Add.htm) |
+| `-` | [Negative](Negative.htm) | [Minus (Subtract)](Subtract.htm) |
+| `×` | [Direction (Signum)](Direction.htm) | [Times (Multiply)](Multiply.htm) |
+| `÷` | [Reciproca](Reciprocal.htm) l | [Divide](Divide.htm) |
+| `|` | [Magnitude](Magnitude.htm) | [Residue](Residue.htm) |
+| `⌊` | [Floor](Floor.htm) | [Minimum](Minimum.htm) |
+| `⌈` | [Ceiling](Ceiling.htm) | [Maximum](Maximum.htm) |
+| `*` | [Exponential](Exponential.htm) | [Power](Power.htm) |
+| `⍟` | [Natural Logarithm](Natural Logarithm.htm) | [Logarithm](Logarithm.htm) |
+| `○` | [Pi Times](Pi Times.htm) | [Circular](Circular.htm) |
+| `!` | [Factorial](Factorial.htm) | [Binomial](Binomial.htm) |
+| `~` | [Not](Not.htm) | $ |
+| `?` | [Roll](Roll.htm) | $ |
+| `∊` | [Type](Type.htm) (See [Enlist](Enlist.htm) ) | $ |
+| `^` |  | [And](And Lowest Common Multiple.htm) |
+| `∨` |  | [Or](Or Greatest Common Divisor.htm) |
+| `⍲` |  | [Nand](Nand.htm) |
+| `⍱` |  | [Nor](Nor.htm) |
+| `<` |  | [Less](Less.htm) |
+| `≤` |  | [Less Or Equal](Less Or Equal.htm) |
+| `=` |  | [Equal](Equal.htm) |
+| `≥` |  | [Greater Or Equal](Greater Or Equal.htm) |
+| `>` |  | [Greater](Greater.htm) |
+| `≠` |  | [Not Equal](Not Equal.htm) |
 | $ Dyadic form is not scalar | $ Dyadic form is not scalar | $ Dyadic form is not scalar |
 
 ### Monadic Scalar Functions

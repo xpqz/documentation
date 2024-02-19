@@ -40,21 +40,21 @@ The name of the configuration file may be specified on the application command-l
 
 The action to start the application when a workspace or source code file is loaded is specified by the LX parameter or, for a workspace, by its latent expression (`⎕LX`).
 
-In the command-line examples that follow, the name of the Run-Time EXE has been shortened to dyalogrt.exe for brevity.
+In the command-line examples that follow, the name of the Run-Time EXE has been shortened to `dyalogrt.exe` for brevity.
 
 ### Using a workspace
 ```apl
-     dyalogrt.exe myapp.dws
+`dyalogrt.exe myapp.dws`
 ```
 
-The application starts by running `⎕LX` in myapp.dws. If a configuration file named myapp.dcfg in the same directory, it is loaded and applied.
+The application starts by running `⎕LX` in `myapp.dws`. If a configuration file named `myapp.dcfg` in the same directory, it is loaded and applied.
 
 ### Using a source code file
 ```apl
-     dyalogrt.exe Load=myfn.aplf
+`dyalogrt.exe Load=myfn.aplf`
 ```
 
-The application loads the file named myfn.aplf which contains the source code for a function, and executes the expression `(myfn 0⍴⊂'')` (see  Load on page 1).  If a configuration file named myfn.dcfg in the same directory, it is loaded and applied.
+The application loads the file named `myfn.aplf` which contains the source code for a function, and executes the expression `(myfn 0⍴⊂'')` (see  Load on page 1).  If a configuration file named `myfn.dcfg` in the same directory, it is loaded and applied.
 
 ### Stand-alone and Bound run-times
 
@@ -89,10 +89,10 @@ You may change the contents of the **Command Line** field to use a configuration
 
 ### Example:
 ```apl
-      dyalog.exe C:\Dyalog18.0\myloan.dws
+`dyalog.exe C:\Dyalog18.0\myloan.dws`
 ```
 
-The command-line above will, on invocation, cause Dyalog to load the myloan.dws workspace together with the configuration file myloan.dcfg if it exists in that directory.
+The command-line above will, on invocation, cause Dyalog to load the `myloan.dws` workspace together with the configuration file `myloan.dcfg` if it exists in that directory.
 
 To distribute an out-of-process COM Server, you need to supply and install the following files:
 
@@ -120,7 +120,7 @@ To distribute your component, you need to supply and install
 3. a configuration file (optional) and the means to define ConfigFile and/or UserConfigFile
 4. whatever additional files that may be required by your COM Server.
 
-Note that you must register your COM Server on the target computer using the regsvr32.exe utility.
+Note that you must register your COM Server on the target computer using the `regsvr32.exe` utility.
 
 ### ActiveX Control
 
@@ -138,7 +138,7 @@ To distribute your component, you need to supply and install
 3. a configuration file (optional) and the means to define ConfigFile and/or UserConfigFile
 4. whatever additional files that may be required by your ActiveX Control.
 
-Note that you must register your ActiveX Control on the target computer using the regsvr32.exe utility.
+Note that you must register your ActiveX Control on the target computer using the `regsvr32.exe` utility.
 
 ### Microsoft .NET Assembly
 

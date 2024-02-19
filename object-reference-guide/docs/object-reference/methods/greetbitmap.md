@@ -31,7 +31,7 @@ removed.
 
 The image may also be displayed initially by setting parameter: **greet_bitmap** on the command line, e.g.:
 ```apl
-c:\myapp\dyalogrt greet_bitmap=mylogo myws
+`c:\myapp\dyalogrt greet_bitmap=mylogo myws`
 ```
 
 

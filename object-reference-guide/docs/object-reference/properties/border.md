@@ -19,7 +19,7 @@ For a [Form](../a-z/form.md) or [SubForm](../a-z/subform.md), the value of the B
 #### Note
 
 
-The value of the Border property may only be assigned by [`⎕WC`](../../Language/System%20Functions/wc.htm) and may **not** be changed using [`⎕WS`](../../Language/System%20Functions/ws.htm).
+The value of the Border property may only be assigned by [`⎕WC`](../../Language/System Functions/wc.htm) and may **not** be changed using [`⎕WS`](../../Language/System Functions/ws.htm).
 
 
 

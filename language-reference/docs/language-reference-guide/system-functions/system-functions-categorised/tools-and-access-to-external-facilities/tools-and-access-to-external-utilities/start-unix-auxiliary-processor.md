@@ -15,7 +15,7 @@ Although it is still possible for users to create their own APs, Dyalog strongly
 `X` must be a simple character vector. `Y` may be a simple character scalar or vector, or a nested character vector.
 
 
-`⎕SH` loads the Auxiliary Processor from the file named by `X` using a search-path defined by the environment variable WSPATH.
+`⎕SH` loads the Auxiliary Processor from the file named by `X` using a search-path defined by the environment variable `WSPATH`.
 
 
 The shy result `R` is the process id of the Auxiliary Processor task.

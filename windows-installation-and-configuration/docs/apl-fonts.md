@@ -14,4 +14,4 @@ The *Std* layout, which was the standard layout for Versions of Dyalog APL up to
 
 The *Alt* layout, which replaced the *Std* layout as the standard layout for Version 12.0 Classic Edition onwards, does not have the underscored alphabet, but contains additional National Language characters in their place. Note that the extra National Language symbols share the same `⎕AV` positions with the underscored alphabet. If, for example, you switch from the *Std* font layout to the alternative one, you will see the symbol `Á` (A-acute) instead of the symbol `Ⓐ` (A-underscore).
 
-You may use either a bitmap font or a TrueType font in your APL session (see [" Session Operations" on page 1](../The%20APL%20Environment/Session%20ToolBars.htm#Session_Operations) for details). You MUST use a TrueType font for printing APL functions.
+You may use either a bitmap font or a TrueType font in your APL session (see [" Session Operations" on page 1](../The APL Environment/Session ToolBars.htm#Session_Operations) for details). You MUST use a TrueType font for printing APL functions.

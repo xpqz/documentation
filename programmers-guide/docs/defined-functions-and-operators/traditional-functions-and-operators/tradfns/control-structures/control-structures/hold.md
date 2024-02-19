@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Hold Statement</span><span class="command">:Hold tkns</span></h1>
 
-[Formal Definition](Hold%20Statement%20Definition.htm)
+[Formal Definition](Hold Statement Definition.htm)
 
 
 Whenever more than one thread tries to access the same piece of data or shared resource at the same time, you need some type of synchronisation to control access to that data. This is provided by `:Hold`.

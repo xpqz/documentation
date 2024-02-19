@@ -14,12 +14,12 @@
 If enabled, this event is reported when the user alters the text in a [Combo](../a-z/combo.md) or [Edit](../a-z/edit.md) object (by typing). The event is not applicable for a [Combo](../a-z/combo.md) with [Style](../a-z/style.md)`'Drop'` because this [Style](../a-z/style.md) does not allow the user to alter data. The Change event is not reported repeatedly as the user edits the data. Instead, it is reported when the user indicates that he has finished with the field by :
 
 1. clicking on another object, **or**
-2. causing an event on another object (without altering the input focus) which will fire a callback function or cause [`⎕DQ`](../../Language/System%20Functions/dq.htm) to terminate. This can occur if the user chooses a [MenuItem](../a-z/menuitem.md), or fires a [Button](../a-z/button.md) with the [Default](../a-z/default.md) or [Cancel](../a-z/cancel.md) property by pressing Enter or Esc, or selects an object using an accelerator key.
+2. causing an event on another object (without altering the input focus) which will fire a callback function or cause [`⎕DQ`](../../Language/System Functions/dq.htm) to terminate. This can occur if the user chooses a [MenuItem](../a-z/menuitem.md), or fires a [Button](../a-z/button.md) with the [Default](../a-z/default.md) or [Cancel](../a-z/cancel.md) property by pressing Enter or Esc, or selects an object using an accelerator key.
 
 The purpose of the Change event is to allow the application to validate data which has been newly entered to the field, before proceeding with another action. It is for this reason that the event is fired not just when the input focus changes, but also when the user takes some action that could cause the application to do something else.
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 3-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 3-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |

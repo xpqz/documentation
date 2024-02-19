@@ -23,7 +23,7 @@ that is displayed in the top left border. The default value is an empty vector.
 
 
 
-A Group will be resized if its parent [Form](form.md) or
+A Group will be resized if its parent [Form](Form.htm) or
 Group is resized. It can also be resized directly by the user if its [Sizeable](./sizeable.md) property is set to 1. By default, when a Group is resized, it automatically
 adjusts the size and position of its children to maintain the same proportions
 within it as before. The resizing of a Group and its children can be controlled

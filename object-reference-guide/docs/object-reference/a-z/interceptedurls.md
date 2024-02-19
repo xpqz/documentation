@@ -12,7 +12,7 @@
 **Description**
 
 
-The InterceptedURLs property is a 2-column matrix that specifies whether the [HTMLRenderer](./htmlrenderer.md) will attempt to satisfy a request for a resource from the workspace or, via the CEF, from the internet. If directed to the workspace, the request will trigger an [HTTPRequest](./httprequest.md) event if the protocol is http, or a [WebSocketUpgrade](./websocketupgrade.md) event if the protocol is ws.
+The InterceptedURLs property is a 2-column matrix that specifies whether the [HTMLRenderer](./htmlrenderer.md) will attempt to satisfy a request for a resource from the workspace or, via the CEF, from the internet. If directed to the workspace, the request will trigger an [HTTPRequest](./httprequest.md) event if the protocol is `http`, or a [WebSocketUpgrade](./websocketupgrade.md) event if the protocol is `ws`.
 
 
 
@@ -27,14 +27,14 @@ The first column is a wild-carded character scalar or vector containing a patter
 
 
 
-If the requested url is a relative rather than an absolute URL, it is prepended by the string http://dyalog_root/. So, for example, if the [HTML](html.md) property contains :
+If the requested url is a relative rather than an absolute URL, it is prepended by the string `http://dyalog_root/`. So, for example, if the [HTML](HTML.htm) property contains :
 ```apl
-<link rel="stylesheet" href="style.css">
-<script src="app.js"></script>
+`<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>`
 ```
 
 
-the HTMLRenderer will request http://dyalog_root/style.css and `http://dyalog_root/app.js` respectively.
+the HTMLRenderer will request `http://dyalog_root/style.css` and `http://dyalog_root/app.js` respectively.
 
 
 
@@ -42,10 +42,10 @@ When the value of InterceptedURLs is its default ( `(0 2⍴'')` it is treated as
 
 
 
-Note that if code in the page creates a web socket intended for internal use, with anything other than dyalog_root as the URL, the URL must match a pattern in InterceptedURLs with 1 in the second column. The following example does not require a matching pattern in InterceptedURLs.
+Note that if code in the page creates a web socket intended for internal use, with anything other than `dyalog_root` as the URL, the URL must match a pattern in InterceptedURLs with 1 in the second column. The following example does not require a matching pattern in InterceptedURLs.
 ```apl
- // Create a new WebSocket.
-  window.socket = new WebSocket('ws://dyalog_root/');
+`// Create a new WebSocket.
+  window.socket = new WebSocket('ws://dyalog_root/');`
 ```
 
 

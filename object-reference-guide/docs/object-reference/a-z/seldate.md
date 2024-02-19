@@ -15,7 +15,7 @@
 The SelDate property identifies the range of dates that is currently selected in a [Calendar](./calendar.md) object.
 
 
-SelDate is a 2-element integer vector of [IDN](../Miscellaneous/International%20Day%20Number.htm) values that identifies the first and last dates that are currently selected.
+SelDate is a 2-element integer vector of [IDN](../Miscellaneous/International Day Number.htm) values that identifies the first and last dates that are currently selected.
 
 
 

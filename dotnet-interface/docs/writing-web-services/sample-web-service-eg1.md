@@ -1,8 +1,8 @@
 # Sample Web Service: EG1
 
-The first APLExample sample is supplied in samples\asp.net\webservices\eg1.asmx which is mapped via an IIS Virtual Directory to the URL:
+The first APLExample sample is supplied in `samples\asp.net\webservices\eg1.asmx` which is mapped via an IIS Virtual Directory to the URL:
 ```apl
- http://localhost/dyalog.net.15.0.unicode.32/webservices/eg1.asmx
+`http://localhost/dyalog.net.15.0.unicode.32/webservices/eg1.asmx`
 ```
 ```apl
  
@@ -20,7 +20,7 @@ The first APLExample sample is supplied in samples\asp.net\webservices\eg1.asmx 
 :EndClass
 ```
 
-The `Add` function defined above is exported as a method that takes exactly (and only) two parameters of type Int32 and returns a result of type Int32.
+The `Add` function defined above is exported as a method that takes exactly (and only) two parameters of type `Int32` and returns a result of type `Int32`.
 
 Line [3] could in fact be coded as:
 ```apl
@@ -33,13 +33,13 @@ because .NET guarantees that a client can only call the method by providing two 
 
 If you connect to a URL that represents a Web Service, the browser displays a page that provides information about the service and the methods that it contains. In certain cases, but by no means all, the page also contains form fields that let you invoke a method from the browser.
 
-The screen shot below shows the page displayed by Google Chrome when it is pointed at eg1.asmx. It shows that the Web Service is called APLExample, and that it exports a single method called Add. Furthermore, the Add method takes two parameters of type int, named *arg1* and *arg2*.
+The screen shot below shows the page displayed by Google Chrome when it is pointed at `eg1.asmx`. It shows that the Web Service is called `APLExample`, and that it exports a single method called `Add`. Furthermore, the `Add` method takes two parameters of type `int`, named *arg1* and *arg2*.
 
 ![eg1_1](../img/eg1-1.png)
 
 The following screen shot shows the result of entering the values 23 and 19 into the form fields and then pressing the Invoke button.
 
-In this case, the method returns an int value 42.
+In this case, the method returns an `int` value 42.
 
 ![eg1_2](../img/eg1-2.png)
 
@@ -47,4 +47,4 @@ It is important to understand what is happening here.
 
 Accessed in this way from a browser, a Web Service appears to be behaving like a Web Server; this is not the case.
 
-It is simply that the browser detects that the target URL is a Web Service, and invokes an ASP+ page named DefaultSdlHelpGenerator.aspx that inspects the compiled class and returns an HTML view of the Web service.
+It is simply that the browser detects that the target URL is a Web Service, and invokes an ASP+ page named `DefaultSdlHelpGenerator.aspx` that inspects the compiled class and returns an HTML view of the Web service.

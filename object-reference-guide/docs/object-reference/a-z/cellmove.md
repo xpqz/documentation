@@ -20,7 +20,7 @@ The default action is to position the user on the new cell. This action can be p
 
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is an 8 element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is an 8 element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |

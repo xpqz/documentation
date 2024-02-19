@@ -15,7 +15,7 @@
 The PageActive property specifies the name of the current [PropertyPage](./propertypage.md) in a [PropertySheet](./propertysheet.md). You may select a particular page by setting this property or by generating a [PageActivate](./pageactivate.md) event.
 
 
-See also or [PageActiveObject](pageactiveobject.md).
+See also or [PageActiveObject](PageActiveObject.htm).
 
 
 

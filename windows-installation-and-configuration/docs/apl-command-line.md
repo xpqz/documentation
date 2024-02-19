@@ -43,34 +43,34 @@ where:
 
 **[param]**
 
-| A parameter name followed by an equals sign ( = ) and a value. The parameter name may be one of the standard APL parameters (see Configuration Parameters on page 1 ) or a name and value of your own choosing (see GetEnvironment Method GetEnvironment on page 1 ) . If the parameter is in a registry sub-folder (see Registry Sub-Folders on page 1 ), its name must be preceded by the name of the sub-folder, followed by a backslash ( \ ) or underscore ( _ ). |
+| A parameter name followed by an equals sign ( `=` ) and a value. The parameter name may be one of the standard APL parameters (see Configuration Parameters on page 1 ) or a name and value of your own choosing (see GetEnvironment Method GetEnvironment on page 1 ) . If the parameter is in a registry sub-folder (see Registry Sub-Folders on page 1 ), its name must be preceded by the name of the sub-folder, followed by a backslash ( `\` ) or underscore ( `_` ). |
 | ---  |
 
 Note that instead of  a loading a workspace specified by the **ws** option, APL can be instructed to load a program from a script file. For further information, see Load on page 1.
 
 ### Examples:
 
-Start APL using the configuration file myconfig.dcfg:
+Start APL using the configuration file `myconfig.dcfg`:
 ```apl
-   "c:\program files\…\dyalog.exe" ConfigFile="myconfig.dcfg"
+`"c:\program files\…\dyalog.exe" ConfigFile="myconfig.dcfg"`
 ```
 
-Load the workspace myapp, setting MaxWS parameter:
+Load the workspace `myapp`, setting MaxWS parameter:
 ```apl
-   "c:\program files\…\dyalog.exe" myapp maxws=2G
+`"c:\program files\…\dyalog.exe" myapp maxws=2G`
 ```
 
-Load the workspace myapp, set an application specific parameter, but do not execute the latent expression:
+Load the workspace `myapp`, set an application specific parameter, but do not execute the latent expression:
 ```apl
-   "c:\program files\…\dyalog.exe" -x myapp myparam=8080
+`"c:\program files\…\dyalog.exe" -x myapp myparam=8080`
 ```
 
-Run the function defined in myfn.aplf:
+Run the function defined in `myfn.aplf`:
 ```apl
-   "c:\program files\…\dyalog.exe" load=myfn.aplf
+`"c:\program files\…\dyalog.exe" load=myfn.aplf`
 ```
 
 Start APL and output "Hello World":
 ```apl
-   "c:\program files\…\dyalog.exe" lx="`⎕←'Hello World'`"
+`"c:\program files\…\dyalog.exe" lx=" ⎕←'Hello World' "`
 ```

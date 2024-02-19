@@ -15,7 +15,7 @@
 The HasTicks property specifies whether or not tick marks are drawn in a [TrackBar](./trackbar.md) object. It is Boolean value with a default value of 0.
 
 
-The position of the tick marks in the [TrackBar](./trackbar.md) is determined by the [TickAlign](tickalign.md) property.
+The position of the tick marks in the [TrackBar](./trackbar.md) is determined by the [TickAlign](TickAlign.htm) property.
 
 
 

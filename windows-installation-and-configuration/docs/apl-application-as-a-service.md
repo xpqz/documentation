@@ -8,11 +8,11 @@ Windows Services run as background tasks controlled by the SCM. When the compute
 
 ## Installing and Uninstalling a Dyalog Service
 
-To install a Dyalog service it is necessary to run dyalog.exe from the command line with administrator privileges, specifying the application workspace and the following parameters, where **service_name** is a name of your choice.
+To install a Dyalog service it is necessary to run `dyalog.exe` from the command line with administrator privileges, specifying the application workspace and the following parameters, where **service_name** is a name of your choice.
 
 - APL_ServiceInstall=service_name
 
-The command must specify the full pathname to dyalog.exe and to the application workspace. A slightly modified version of this  command line will be stored by the SCM and re-executed whenever the service is started.
+The command must specify the full pathname to `dyalog.exe` and to the application workspace. A slightly modified version of this  command line will be stored by the SCM and re-executed whenever the service is started.
 
 Dyalog installs the service with a **Startup Type** of **Automatic**. This means that it will be started automatically whenever the computer is restarted. However, it is necessary to start it manually (using the SCM) the first time after it is installed.
 
@@ -35,7 +35,7 @@ SCM notification messages generate a ServiceNotification event on the Root objec
 
 If the application is designed to be driven from events such as Timer or TCPSocket or user-defined events, it too may be implemented via callbacks in thread 0 under the control of the same Wait method or `⎕DQ'.'`. If the application uses Conga it is recommended that it runs in a separate thread.
 
-The workspace ws\aplservice.dws is included in the APL release. Its start-up function is as follows:
+The workspace `ws\aplservice.dws` is included in the APL release. Its start-up function is as follows:
 ```apl
      ⎕lX←'Start'
 
@@ -70,7 +70,7 @@ The workspace ws\aplservice.dws is included in the APL release. Its start-up fun
 
 To give the workspace (which may be busy) time to respond to SCM notifications, Dyalog responds immediately to confirm that the service has entered the appropriate pending state. For example, if the notification is SERVICE_CONTROL_STOP, Dyalog informs the SCM that the service state is SERVICE_STOP_PENDING. It is then up to the callback function to confirm that the state has reached SERVICE_STOPPED.
 
-The following sample function is provided in aplservice.dws.
+The following sample function is provided in `aplservice.dws`.
 
 ### ServiceHandler Callback Function
 ```apl

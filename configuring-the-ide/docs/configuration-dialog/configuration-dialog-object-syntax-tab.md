@@ -8,6 +8,6 @@ Configuration dialog: Object Syntax
 
 | Label | Parameter | Description |
 | --- | --- | ---  |
-| Expose properties of GUI Namespaces | [Default_WX (page 1)](../Installation%20and%20Configuration/Configuration%20Parameters/Default_WX.htm#Default_WX) | Specifies the value of `⎕WX` in a clear workspace. |
-| Expose properties of Root | [PropertyExposeRoot (page 1)](../Installation%20and%20Configuration/Configuration%20Parameters/PropertyExposeRoot.htm#PropertyExposeRoot) | Specifies whether or not the names of properties, methods and events of the Root object are exposed. |
-| Expose properties of Session Namespace | [PropertyExposeSE (page 1)](../Installation%20and%20Configuration/Configuration%20Parameters/PropertyExposeSE.htm#PropertyExposeSE) | Specifies whether or not the names of properties, methods and events of the Session object are exposed. |
+| Expose properties of GUI Namespaces | [Default_WX (page 1)](../Installation and Configuration/Configuration Parameters/Default_WX.htm#Default_WX) | Specifies the value of `⎕WX` in a clear workspace. |
+| Expose properties of Root | [PropertyExposeRoot (page 1)](../Installation and Configuration/Configuration Parameters/PropertyExposeRoot.htm#PropertyExposeRoot) | Specifies whether or not the names of properties, methods and events of the Root object are exposed. |
+| Expose properties of Session Namespace | [PropertyExposeSE (page 1)](../Installation and Configuration/Configuration Parameters/PropertyExposeSE.htm#PropertyExposeSE) | Specifies whether or not the names of properties, methods and events of the Session object are exposed. |

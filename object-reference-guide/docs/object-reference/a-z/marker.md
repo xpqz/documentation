@@ -33,10 +33,10 @@ The [Style](./style.md) property determines the symbol that is drawn at each of 
 | 6 | `∘` |
 
 
-or by character vectors containing the names of [Bitmap](bitmap.md) or [Icon](icon.md) objects.
+or by character vectors containing the names of [Bitmap](Bitmap.htm) or [Icon](icon.md) objects.
 
 
-The height of each symbol is specified by the value of the [Size](./size.md) property. However this applies only to [Style](./style.md)s 1-6 and is ignored if [Style](./style.md) is 0 or the name of a [Bitmap](bitmap.md). The colour of each symbol is specified by the [FCol](./fcol.md) property. The default is black.
+The height of each symbol is specified by the value of the [Size](./size.md) property. However this applies only to [Style](./style.md)s 1-6 and is ignored if [Style](./style.md) is 0 or the name of a [Bitmap](Bitmap.htm). The colour of each symbol is specified by the [FCol](./fcol.md) property. The default is black.
 
 
 The value of [Dragable](./dragable.md) determines whether or not the object can be dragged. The value of [AutoConf](./autoconf.md) determines whether or not the Marker object is resized when its parent is resized.
@@ -58,7 +58,7 @@ For a single set of polymarkers, [Points](./points.md) is either a 2-column matr
 #### Examples:
 
 
-First make a [Form](form.md):
+First make a [Form](Form.htm):
 ```apl
       'F' ⎕WC 'Form'
 ```
@@ -112,7 +112,7 @@ To draw multiple sets of polymarkers with a single name, [Points](./points.md) i
 
 
 
-First make a [Form](form.md):
+First make a [Form](Form.htm):
 ```apl
       'F' ⎕WC 'Form'
 ```

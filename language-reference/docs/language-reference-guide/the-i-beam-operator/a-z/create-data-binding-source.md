@@ -8,7 +8,7 @@
 Creates an object that may be used as a data source for WPF data binding. It is beyond the scope of this document to fully explain the concepts of WPF data binding. See Microsoft Developer Network, Data Binding Overview.
 
 
-This function connects a **Binding Target** to a **Binding Source**. In WPF a Binding Target is a particular property of a user interface object; for example, the Text property of a `TextBox` object. A Binding Source is  a **Path** to a value in a data object (which may contain other values). The value of the Binding Source determines the value of the Binding Target. If two-way binding is in place, a change in a user-interface component causes the bound data value to change accordingly. In the example of the `TextBox`, the value in the Binding Source changes as the user types into the `TextBox`.
+This function connects a **Binding Target** to a **Binding Source**. In WPF a Binding Target is a particular property of a user interface object; for example, the Text property of a TextBox object. A Binding Source is  a **Path** to a value in a data object (which may contain other values). The value of the Binding Source determines the value of the Binding Target. If two-way binding is in place, a change in a user-interface component causes the bound data value to change accordingly. In the example of the TextBox, the value in the Binding Source changes as the user types into the TextBox.
 
 
 
@@ -47,16 +47,16 @@ If not specified by `X`, the  binding type of a bind variable is derived from it
 The default binding type is derived as follow:
 
 
-If the bind variable is a simple scalar number the default binding type is `System.Object`. At the point when the value of the variable is passed to the .NET interface this will be cast to a numeric type such as  `System.Int16`, `System.Int32`, `System.Int64`, or `System.Double`, depending upon the internal representation of the data. The .NET property to which it is bound will typically only accept a single Type (for example `System.Int32`), so to avoid unpredictable behaviour,  it is recommended that the left argument `X` be used to specify the binding type for numeric data.
+If the bind variable is a simple scalar number the default binding type is System.Object. At the point when the value of the variable is passed to the .NET interface this will be cast to a numeric type such as  System.Int16, System.Int32, System.Int64, or System.Double, depending upon the internal representation of the data. The .NET property to which it is bound will typically only accept a single Type (for example System.Int32), so to avoid unpredictable behaviour,  it is recommended that the left argument `X` be used to specify the binding type for numeric data.
 
 
-If the bind variable is a character scalar or vector, the default binding type is also `System.Object`, but at the point  when the value of the variable is passed to the .NET interface it will always be passed as `System.String`, which is suitable for binding to any property that accepts a `System.String`, such as the Text property of a `TextBox`.
+If the bind variable is a character scalar or vector, the default binding type is also System.Object, but at the point  when the value of the variable is passed to the .NET interface it will always be passed as System.String, which is suitable for binding to any property that accepts a System.String, such as the Text property of a TextBox.
 
 
-If the bind variable is a vector other than a simple character vector, such as a vector of character vectors,  a simple numeric vector, or a vector of .NET objects, the bind type will be a collection. This is suitable for binding to any property that  represents a collection (list) of items, for example the ItemsSource property of a `ListBox`.
+If the bind variable is a vector other than a simple character vector, such as a vector of character vectors,  a simple numeric vector, or a vector of .NET objects, the bind type will be a collection. This is suitable for binding to any property that  represents a collection (list) of items, for example the ItemsSource property of a ListBox.
 
 
-If the bind variable is a matrix, the default binding type is `System.Object`.
+If the bind variable is a matrix, the default binding type is System.Object.
 
 
 All the examples that follow assume `⎕USING←'System'`.
@@ -92,7 +92,7 @@ This example illustrates how to bind a variable which contains a character vecto
 ```
 
 
-In this example, the binding type of the variable `txtSource` will be `System.String`, suitable for binding to any property that accepts a String, such as the Text property of a `TextBox`.
+In this example, the binding type of the variable `txtSource` will be System.String, suitable for binding to any property that accepts a String, such as the Text property of a `TextBox`.
 
 #### Binding a Numeric Scalar
 
@@ -105,11 +105,11 @@ This example illustrates how to bind a variable which contains a numeric scalar 
 ```
 
 
-In this example, the left argument `Int32` specifies that the binding type for the variable sizeSource is to be `System.Int32`. This means that whenever APL passes the value of `sizeSource` to the control, it will first be cast to an `Int32`. This makes it suitable, for example, for binding to the FontSize property of a `TextBox`.
+In this example, the left argument `Int32` specifies that the binding type for the variable sizeSource is to be System.Int32. This means that whenever APL passes the value of `sizeSource` to the control, it will first be cast to an Int32. This makes it suitable, for example, for binding to the FontSize property of a TextBox.
 
 
 
-A number of controls have a Value property which must be expressed as a `System.Double`. The next example shows how to create a Binding Source for such a variable.
+A number of controls have a Value property which must be expressed as a System.Double. The next example shows how to create a Binding Source for such a variable.
 ```apl
       ⎕EX'valSource'
       valSource←42
@@ -125,7 +125,7 @@ This is currently not supported.
 #### Binding a Vector of Character Vectors
 
 
-WPF data binding provides the means to bind controls that display lists of items, such as the `ListBox`, `ListView`, and `TreeView` controls, to collections of data. These controls are all based upon the `ItemsControl` class. To bind an `ItemsControl` to a collection object, you use its ItemsSource property.
+WPF data binding provides the means to bind controls that display lists of items, such as the ListBox, ListView, and TreeView controls, to collections of data. These controls are all based upon the ItemsControl class. To bind an ItemsControl to a collection object, you use its ItemsSource property.
 
 
 This example illustrates how to bind a variable which contains a vector of character vectors.
@@ -136,12 +136,12 @@ This example illustrates how to bind a variable which contains a vector of chara
 ```
 
 
-In this example, the binding type of the variable `itemsSource` will be `System.Collection`, suitable for binding to the ItemSource property of an `ItemsControl`.
+In this example, the binding type of the variable `itemsSource` will be System.Collection, suitable for binding to the ItemSource property of an ItemsControl.
 
 #### Binding a Numeric Vector
 
 
-By default, a numeric vector is bound in the same way as a vector of character vectors, i.e. as a `System.Collection`, suitable for binding to the ItemSource property of an `ItemsControl`.
+By default, a numeric vector is bound in the same way as a vector of character vectors, i.e. as a System.Collection, suitable for binding to the ItemSource property of an ItemsControl.
 ```apl
       ⎕EX'yearsSource'
       yearsSource←2000+⍳20
@@ -150,7 +150,7 @@ By default, a numeric vector is bound in the same way as a vector of character v
 
 
 
-In principle, a numeric vector may alternatively be bound to a WPF property that requires a 1-dimensional numeric array, by specifying the appropriate data type (e.g. `Int32`, `Double`) for the array as the left argument. For example:
+In principle, a numeric vector may alternatively be bound to a WPF property that requires a 1-dimensional numeric array, by specifying the appropriate data type (e.g. Int32, Double) for the array as the left argument. For example:
 ```apl
       ⎕EX'arraySource'
       arraySource←42 24
@@ -162,7 +162,7 @@ In principle, a numeric vector may alternatively be bound to a WPF property that
 #### Binding a Vector of .NET Objects
 
 
-A vector of .NET objects is bound in the same way as a vector of character vectors, i.e. as a `System.Collection`, suitable for binding to the ItemSource property of an `ItemsControl`.
+A vector of .NET objects is bound in the same way as a vector of character vectors, i.e. as a System.Collection, suitable for binding to the ItemSource property of an ItemsControl.
 ```apl
       ↑Easter
 2015 4 12
@@ -182,7 +182,7 @@ A vector of .NET objects is bound in the same way as a vector of character vecto
 
 
 
-Note that, as a specific optimisation for binding `DateTime` data, it is not necessary to create `DateTime` objects in the workspace. Instead, the data may be represented by 7-element integer vectors (`⎕TS` format) or character strings that can be parsed by the DateTime.Parse(String) method.  However, in both cases it is necessary to explicitly specify the binding type to force the data to be converted to `DateTime`, as illustrated by the following examples:
+Note that, as a specific optimisation for binding DateTime data, it is not necessary to create `DateTime` objects in the workspace. Instead, the data may be represented by 7-element integer vectors (`⎕TS` format) or character strings that can be parsed by the DateTime.Parse(String) method.  However, in both cases it is necessary to explicitly specify the binding type to force the data to be converted to `DateTime`, as illustrated by the following examples:
 ```apl
       TSEaster←7↑¨Easter
       bindSource←DateTime (2015⌶) 'TSEaster'
@@ -215,7 +215,7 @@ DOMAIN ERROR: You cannot redefine the binding types
 ```
 
 
-In this example, perhaps the programmer realised after binding `num` (with a default binding type of `System.Object`) that the binding type should really be `System.Int32`, and simply was trying to correct the error. To avoid this problem, it is recommended that you expunge the name before using it.
+In this example, perhaps the programmer realised after binding `num` (with a default binding type of System.Object) that the binding type should really be System.Int32, and simply was trying to correct the error. To avoid this problem, it is recommended that you expunge the name before using it.
 ```apl
       ⎕EX 'num'
       num←42
@@ -237,7 +237,7 @@ If it is required to specify the binding type of any of the variables, or if cer
 #### Example
 
 
-The following code snippet binds a namespace containing two variables named `txtSource` and `sizeSource`. In this case, the name of each variable may be specified as the Path for a WPF property that requires a `String` or an `Int32`. For example, if `bindSource` were assigned to the DataContext property of a `TextBox`, its Text property could be bound to `txtSource` and its FontSize property to `sizeSource`.
+The following code snippet binds a namespace containing two variables named `txtSource` and `sizeSource`. In this case, the name of each variable may be specified as the Path for a WPF property that requires a String or an Int32. For example, if bindSource were assigned to the DataContext property of a TextBox, its Text property could be bound to `txtSource` and its FontSize property to `sizeSource`.
 ```apl
       src←⎕NS''
       src.txtSource←'Hello World'
@@ -249,7 +249,7 @@ The following code snippet binds a namespace containing two variables named `txt
 #### Binding a Vector of Namespaces
 
 
-In this case, `Y` specifies the name of a variable that contains a vector of refs to namespaces. In this case, the result `R` is of type `Dyalog.Data.DataBoundCollectionHandler` which is suitable for binding to a WPF property that requires  an `IEnumerable` implementation, such as the  ItemsSource property of the `DataGrid`.
+In this case, `Y` specifies the name of a variable that contains a vector of refs to namespaces. In this case, the result `R` is of type Dyalog.Data.DataBoundCollectionHandler which is suitable for binding to a WPF property that requires  an IEnumerable implementation, such as the  ItemsSource property of the DataGrid.
 
 
 Each namespace in `Y` represents one of a collection of  instances of an object, which exports a particular set of properties for binding purposes. For example, `Y` could specify a wine database where each namespace represents a different wine, and each namespace contains the same set of variables that contain the name, price (and so forth) of each wine.
@@ -272,7 +272,7 @@ Binding a matrix is like binding a vector of namespaces. Each row of `Y` represe
 Every row in the datasource will be of the same type (which might not be the case with an array of namespaces), and so the collection is a collection of specific things. The *specific thing* is a .NET type that is created dynamically and has a unique name.
 
 
-Unlike variables in namespaces, the columns of an APL matrix do not have names which can be exported as properties, so this information must be provided in the left argument to `(2015⌶)` which also specifies their data types. If the left argument is omitted, the default names are `Column1`, `Column2`, ... and so forth and the default data type is System.Object.
+Unlike variables in namespaces, the columns of an APL matrix do not have names which can be exported as properties, so this information must be provided in the left argument to `(2015⌶)` which also specifies their data types. If the left argument is omitted, the default names are `Column1`, `Column2`, ... and so forth and the default data type is `System.Object`.
 
 
 So if the right argument  of `(2015⌶)``Y` is the name of a matrix, the left argument `X` is a matrix with as many rows as there are columns in `Y`. `X[;1]` contains the names by which each of the columns of `Y` will be exported as a property, and `X[;2]` their data types.
@@ -281,13 +281,13 @@ So if the right argument  of `(2015⌶)``Y` is the name of a matrix, the left ar
 Values in the matrix may be scalar numbers, character scalars or vectors, or nested vectors, but each column in the matrix must be uniform.
 
 
-The result `R` is a specific type that is created dynamically and assigned a unique name of the form `Dyalog.Data.DyalogCollectionNotifyHandler`1[Dyalog.Data.DataBoundRow_nnnnnnnn]`. This is suitable for binding to a WPF property that requires  an `IEnumerable` implementation, such as the  ItemsSource property of the `DataGrid`.
+The result `R` is a specific type that is created dynamically and assigned a unique name of the form Dyalog.Data.DyalogCollectionNotifyHandler`1[Dyalog.Data.DataBoundRow_nnnnnnnn]. This is suitable for binding to a WPF property that requires  an IEnumerable implementation, such as the  ItemsSource property of the DataGrid.
 
 
 #### Example
 
 
-`mat` is a matrix of numbers and is bound with default property/column names `Column1`, `Column2`, ... `Column10` and the default data type of System.Object.
+`mat` is a matrix of numbers and is bound with default property/column names `Column1`, `Column2`, ... `Column10` and the default data type of `System.Object`.
 
 ```apl
       mat←?20 10⍴100
@@ -300,7 +300,7 @@ The result `R` is a specific type that is created dynamically and assigned a uni
 
 
 
-`winelist` is a matrix whose first column contains a list of wines, and whose second column their prices. The left argument is a matrix. Its first column specifies the property names by which the columns will be exported (`'Name'` and `'Price'`) and its second column, their data types (System.Object)
+`winelist` is a matrix whose first column contains a list of wines, and whose second column their prices. The left argument is a matrix. Its first column specifies the property names by which the columns will be exported (`'Name'` and `'Price'`) and its second column, their data types (`System.Object`)
 ```apl
  winelist←Wines,[1.5]0.01×10000+?(⍴Wines)⍴10000
  info←(⍪'Name' 'Price'),⊂Object

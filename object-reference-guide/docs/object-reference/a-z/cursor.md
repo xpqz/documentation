@@ -20,7 +20,7 @@ The [File](./file.md) property defines the name of a cursor file associated with
 
 
 
-If the value of the [File](./file.md) property is set by [`⎕WS`](../../Language/System%20Functions/ws.htm), no immediate action is taken, but the corresponding file may subsequently be read or written using the [FileRead](./fileread.md) or [FileWrite](./filewrite.md) methods.
+If the value of the [File](./file.md) property is set by [`⎕WS`](../../Language/System Functions/ws.htm), no immediate action is taken, but the corresponding file may subsequently be read or written using the [FileRead](./fileread.md) or [FileWrite](./filewrite.md) methods.
 
 
 The [Bits](./bits.md) and [Mask](./mask.md) properties define the appearance of the cursor. Both are Boolean matrices with a shape of 32  32. The colour of each pixel in the cursor is defined by the following table. Note that a 0 in [Bits](./bits.md) combined with a 1 in [Mask](./mask.md) causes the corresponding pixel to be the colour of the background. This is used to give the cursor a non-rectangular shape.

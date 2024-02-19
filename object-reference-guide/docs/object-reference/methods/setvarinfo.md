@@ -19,7 +19,7 @@ The argument to SetVarInfo is a 2 or 3-element array as follows:
 
 
 *Variable info* is either a simple character vector that specifies the
-[COM data type](../Miscellaneous/COM%20data%20types.htm) of the variable, or a 2-element vector of character vectors whose first element specifies a help string and whose second element specifies the [COM data type](../Miscellaneous/COM%20data%20types.htm).
+[COM data type](../Miscellaneous/COM data types.htm) of the variable, or a 2-element vector of character vectors whose first element specifies a help string and whose second element specifies the [COM data type](../Miscellaneous/COM data types.htm).
 
 
 *Help ID* is an optional integer value that identifies the help context id within the help file associated with the HelpFile property of the ActiveXControl object. The value `¯1` means that no help is provided. APL stores this information in the registry from where it may be retrieved by the host application.

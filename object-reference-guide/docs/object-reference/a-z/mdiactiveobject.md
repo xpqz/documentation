@@ -15,7 +15,7 @@
 This property contains a ref to the [SubForm](./subform.md) owned by the [MDIClient](./mdiclient.md) that is currently active.
 
 
-See also [MDIActive](mdiactive.md) property.
+See also [MDIActive](MDIActive.htm) property.
 
 
 

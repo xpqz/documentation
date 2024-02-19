@@ -15,7 +15,7 @@ In this section, the term *namespace* covers scripted Namespaces, Classes and In
 
 
 
-If `Y` is a simple character vector, it must start with file://, followed by the name of a file which must exist. The contents of the file must follow the same rules that apply to `Y` when `Y` is a vector of character vectors or scalars. The file name can be relative or absolute; when considering cross-platform portability, using "/" as the directory delimiter is recommended, although "\" is also valid under Windows.
+If `Y` is a simple character vector, it must start with `file://`, followed by the name of a file which must exist. The contents of the file must follow the same rules that apply to `Y` when `Y` is a vector of character vectors or scalars. The file name can be relative or absolute; when considering cross-platform portability, using "/" as the directory delimiter is recommended, although "\" is also valid under Windows.
 
 
 If specified, `X` must be a numeric scalar. It may currently take the value `0`, `1` or `2`. If not specified, the value is assumed to be `1`.
@@ -164,7 +164,7 @@ DOMAIN ERROR: There were errors processing the script
 | `'None'` | No internal references are inserted and lexical scope does not apply. |
 
 
-See [Lexical Scope in Scripts on page 1](../../RelNotes19.0/Lexical%20Scope%20in%20Scripts.htm#LexicalScope).
+See [Lexical Scope in Scripts on page 1](../../RelNotes19.0/Lexical Scope in Scripts.htm#LexicalScope).
 
 
 The following examples illustrate how different values of the InjectReferences option affect the scope of objects in scripts. The examples are based on the following family tree:

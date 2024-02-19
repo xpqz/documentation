@@ -6,7 +6,7 @@
 
 <h1 class="heading"><span class="name">If Statement</span><span class="command">:If bexp</span></h1>
 
-[Formal Definition](If%20Statement%20Definition.htm)
+[Formal Definition](If Statement Definition.htm)
 
 
 The simplest `:If`control structure is a single condition of the form:

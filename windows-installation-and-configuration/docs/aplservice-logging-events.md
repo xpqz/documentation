@@ -1,6 +1,6 @@
 # APLService Logging Events
 
-The aplservice workspace contains the class `SysLog` which can be used to log events to the Windows Event Log.  These events can be accessed programmatically or viewed using the Windows Event Viewer found in the Windows Administrative Tools.
+The `aplservice` workspace contains the class `SysLog` which can be used to log events to the Windows Event Log.  These events can be accessed programmatically or viewed using the Windows Event Viewer found in the Windows Administrative Tools.
 
 ### Windows Event Log Concepts
 
@@ -20,7 +20,7 @@ Before deploying your Dyalog APL application as a service, you should:
 
 ### SysLog Usage
 
-`SysLog` implements an interface to a subset of the functionality of Microsoft's `System.Diagnostics.EventLog` class.  Some of `SysLog`'s methods, namely  `CreateEventSource`, `DeleteEventSource` and `DeleteLog`, require you to run Dyalog **as an administrator** to be fully functional.
+`SysLog` implements an interface to a subset of the functionality of Microsoft's System.Diagnostics.EventLog class.  Some of `SysLog`'s methods, namely  `CreateEventSource`, `DeleteEventSource` and `DeleteLog`, require you to run Dyalog **as an administrator** to be fully functional.
 
 All of the methods in `SysLog` with the exception of `Write` are shared methods meaning you do not have to create an instance of `SysLog` in order to execute them.
 

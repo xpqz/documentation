@@ -9,7 +9,7 @@
 
 
 
-`Y` is a 2-element array. The first element is a .NET type that inherits from the abstract .NET Class `System.Delegate`. The second item is either the name of or the `⎕OR` of an APL function which is to be invoked via a .NET method or property.
+`Y` is a 2-element array. The first element is a .NET type that inherits from the abstract .NET Class System.Delegate. The second item is either the name of or the `⎕OR` of an APL function which is to be invoked via a .NET method or property.
 
 
 The result `R` is a ref to an instance of a .NET type specified by the first element of `Y`, which internally is associated with the function identified by the second element of `Y`.
@@ -29,7 +29,7 @@ System.EventHandler
 ```
 
 
-Then, when calling a .NET method that requires a `Delegate` of type `System.Eventhandler`, but whose signature is imprecise in this respect, the object `del` should be used instead.
+Then, when calling a .NET method that requires a Delegate of type System.Eventhandler, but whose signature is imprecise in this respect, the object `del` should be used instead.
 
 
 

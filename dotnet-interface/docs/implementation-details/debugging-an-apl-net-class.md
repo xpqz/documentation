@@ -1,6 +1,6 @@
 # Debugging an APL.NET Class
 
-All DYALOG.NET objects are executed by the Dyalog DLL. The full development version of the Dyalog DLL contains all of the development and debug facilities of the APL Session, including the Editors and Tracer. The run-time version contains no debugging facilities at all. The choice of which version of the Dyalog DLL is used is made when the assembly is exported from APL using the **File|Export** menu, or compiled using dyalogc.exe.
+All DYALOG.NET objects are executed by the Dyalog DLL. The full development version of the Dyalog DLL contains all of the development and debug facilities of the APL Session, including the Editors and Tracer. The run-time version contains no debugging facilities at all. The choice of which version of the Dyalog DLL is used is made when the assembly is exported from APL using the **File|Export** menu, or compiled using `dyalogc.exe`.
 
 If an APL .NET object that is bound to the full development version generates an untrapped APL error (such as a `VALUE ERROR`) **and** the client application is configured so that it is allowed to interact with the desktop, the APL code will suspend and the APL Session window will be displayed. Otherwise, it will throw an exception.
 
@@ -12,11 +12,11 @@ There are a number of different ways that you choose to which of the two version
 
 If you build a .NET class from a workspace using the **File/Export**menu item, you use the **Runtime application** checkbox. If **Runtime application** is unchecked, the .NET Class will be bound to the full development version. If **Runtime application** is checked, the .NET Class will be bound to the run-time version.
 
-If you build a .NET class using the APLScript compiler, it will by default be bound to the full development version. If you specify the /runtime flag, it will be bound to the run-time version.
+If you build a .NET class using the APLScript compiler, it will by default be bound to the full development version. If you specify the `/runtime` flag, it will be bound to the run-time version.
 
-If your APL .NET class is a Web Page or a Web Service, you specify to which of the two DLLs it will be bound using the **Debug** attribute. This is specified in the opening declaration statement in the .aspx, .asax or .asmx file. If the statement specifies "Debug=true", the Web Page or Web Service will be bound to the full development version. If it specifies "Debug=false", the Web Page or Web Service will be bound to the run-time version.
+If your APL .NET class is a Web Page or a Web Service, you specify to which of the two DLLs it will be bound using the **Debug** attribute. This is specified in the opening declaration statement in the `.aspx`, `.asax` or `.asmx` file. If the statement specifies `"Debug=true"`, the Web Page or Web Service will be bound to the full development version. If it specifies `"Debug=false"`, the Web Page or Web Service will be bound to the run-time version.
 
-If you omit the Debug= attribute in your Web page, the value will be determined from the various .NET config files on your computer.
+If you omit the `Debug=` attribute in your Web page, the value will be determined from the various .NET `config` files on your computer.
 
 ### Forcing a suspension
 
@@ -24,7 +24,7 @@ If an APL error occurs in an APL .NET object, a suspension will occur and the Se
 
 If your APL class is built directly from a workspace, you can force a suspension by setting stops in your code before using **Export** to build the DLL. If your class is a Web Page or Web Service where the code is contained in a workspace using the *workspace behind* technique (See Chapter 8), you can set stops in this workspace before you `)SAVE` it.
 
-If your APL class is defined entirely in a Web Page, Web Service, or an APLScript file, the only way to set a break point is to insert a line that sets a stop explicitly using `⎕STOP`. It is essential that this line appears after the definition of the function in the script. For example, to set a stop in the Intro\intro1.aspx example discussed in Chapter 8, the script section could be as follows:
+If your APL class is defined entirely in a Web Page, Web Service, or an APLScript file, the only way to set a break point is to insert a line that sets a stop explicitly using `⎕STOP`. It is essential that this line appears after the definition of the function in the script. For example, to set a stop in the `Intro\intro1.aspx` example discussed in Chapter 8, the script section could be as follows:
 ```apl
 <script language="dyalog" runat="server">
  
@@ -62,4 +62,4 @@ If you fix a problem in a suspended function and then press **Resume** or **Cont
 
 If, at this point, you close the APL Session window, a dialog box will give you the option of terminating the (client) application, or simply hiding the APL Session Window. If you execute `)OFF` or `⎕OFF` the client application will terminate.
 
-Note that in the discussion above, a reference to terminating the client application means that APL executes Application.Exit(). This may cause the application to terminate cleanly (as with ASP.NET) or it may cause it to crash.
+Note that in the discussion above, a reference to terminating the client application means that APL executes `Application.Exit()`. This may cause the application to terminate cleanly (as with ASP.NET) or it may cause it to crash.

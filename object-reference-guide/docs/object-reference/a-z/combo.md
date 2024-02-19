@@ -29,13 +29,13 @@ The [SelItems](./selitems.md) property is a Boolean vector which specifies which
 If the [Style](./style.md) is `'Simple'` or `'DropEdit'`, the user may type text into the edit field. In these cases, the contents of the edit field may also be specified or queried using the [Text](./text.md) property.
 
 
-Note that if the user first selects an item from the list box, then changes it in the edit field, the entry in the list box is automatically deselected. There is therefore no conflict between the value of [Text](text.md) and the value of [SelItems](./selitems.md).
+Note that if the user first selects an item from the list box, then changes it in the edit field, the entry in the list box is automatically deselected. There is therefore no conflict between the value of [Text](Text.htm) and the value of [SelItems](./selitems.md).
 
 
 **Warning: Windows truncates the contents of the edit field (reflected in the value of the Text property) to 510 characters.**
 
 
-For a Combo with [Style ](./style.md)`'Simple'`, the [Index](./index.md) property specifies or reports the position of [Items](./items.md) in the list box as a positive integer value. If [Index](./index.md) has the value "n", it means that the "nth" item in [Items](./items.md) is displayed on the top line in the list box. Note that [Index](./index.md) can only be set using [`⎕WS`](../../Language/System%20Functions/ws.htm) and **not** by [`⎕WC`](../../Language/System%20Functions/wc.htm) and is ignored if all the [Items](./items.md) fit in the list box. The default value for [Index](./index.md) is `⎕IO`.
+For a Combo with [Style ](./style.md)`'Simple'`, the [Index](./index.md) property specifies or reports the position of [Items](./items.md) in the list box as a positive integer value. If [Index](./index.md) has the value "n", it means that the "nth" item in [Items](./items.md) is displayed on the top line in the list box. Note that [Index](./index.md) can only be set using [`⎕WS`](../../Language/System Functions/ws.htm) and **not** by [`⎕WC`](../../Language/System Functions/wc.htm) and is ignored if all the [Items](./items.md) fit in the list box. The default value for [Index](./index.md) is `⎕IO`.
 
 
 The [SelText](./seltext.md) property identifies the portion of the edit field that is highlighted. It is not applicable to a Combo with [Style ](./style.md)`'Drop'` as the user cannot enter or change data in its edit field.
@@ -53,7 +53,7 @@ If the [Style](./style.md) is `'Simple'` or `'DropEdit'`, the [HScroll](./hscrol
 [VScroll](./vscroll.md) and [HScroll](./hscroll.md) may only be set when the object is created and may not subsequently be changed.
 
 
-Note that when you change the [Items](./items.md) property using [`⎕WS`](../../Language/System%20Functions/ws.htm), the [Text](text.md), [SelItems](./selitems.md) and [SelText](./seltext.md) properties are all reset to their default values.
+Note that when you change the [Items](./items.md) property using [`⎕WS`](../../Language/System Functions/ws.htm), the [Text](Text.htm), [SelItems](./selitems.md) and [SelText](./seltext.md) properties are all reset to their default values.
 
 
 The Combo object will report a [Select](./select.md) event (if enabled) when the user chooses an item from the list box. It will generate a [Change](./change.md) event (if enabled) when the user manually alters the contents of the edit field and then changes the focus to another object.

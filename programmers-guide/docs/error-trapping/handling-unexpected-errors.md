@@ -34,7 +34,7 @@ where DYALOG is the directory where Dyalog APL is installed.
 
 If `DYALOG_EVENTLOGNAME` is set, it should contain the name of the log to which events will be logged. For example
 
-DYALOG_EVENTLOGNAME="MyApp Event Log"
+`DYALOG_EVENTLOGNAME="MyApp Event Log"`
 
 When set, no registry entries are added by Dyalog, but if the above registry entries have been manually created, the events will be logged to an event log which has the name "MyApp Event Log". If the registry entries described above have not been created, the events will instead be logged into the Application Log, and the Event Viewer will display text similar to the following when events are viewed:
 

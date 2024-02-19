@@ -16,7 +16,7 @@ The View property specifies how the items in a [ListView](./listview.md) object 
 
 
 
-When View is `'Icon'` or `'SmallIcon'`, the items are arranged *row-wise* with large or small icons as appropriate. When View is set to `'List'`, the items are arranged *column-wise* using small icons. When View is set to `'Report'`, the items are displayed in a single column using small icons but with the matrix specified by [ReportInfo](reportinfo.md) displayed alongside. In this format, the ListView also provides column headings which are specified by the ColTitles property. The alignment of these titles (and of the data in the columns beneath them) is defined by the [ColTitleAlign](coltitlealign.md) property. Examples of different views are illustrated below.
+When View is `'Icon'` or `'SmallIcon'`, the items are arranged *row-wise* with large or small icons as appropriate. When View is set to `'List'`, the items are arranged *column-wise* using small icons. When View is set to `'Report'`, the items are displayed in a single column using small icons but with the matrix specified by [ReportInfo](reportinfo.md) displayed alongside. In this format, the ListView also provides column headings which are specified by the ColTitles property. The alignment of these titles (and of the data in the columns beneath them) is defined by the [ColTitleAlign](ColTitleAlign.htm) property. Examples of different views are illustrated below.
 
 
 ![listview_icon](../img/listview-icon.png)

@@ -32,6 +32,6 @@ The result is a character vector.
 #### Note
 
 
-GetCommandLine only works on Windows, and its use is deprecated in favour of [GetCommandLineArgs](getcommandlineargs.md), which works on all platforms.
+GetCommandLine only works on Windows, and its use is deprecated in favour of [GetCommandLineArgs](GetCommandLineArgs.htm), which works on all platforms.
 
 

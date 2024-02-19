@@ -2,15 +2,15 @@
 
 This example illustrates data binding using a matrix and is practically identical to Example 7 except that it uses a matrix instead of a vector of namespaces.
 
-Each row in the WPF `DataGrid` control is represented by an object, and each column as a property of that object. Each row in the `DataGrid` is bound to an object in the data source, and each column in the data grid is bound to a property of the data object.
+Each row in the WPF DataGrid control is represented by an object, and each column as a property of that object. Each row in the DataGrid is bound to an object in the data source, and each column in the data grid is bound to a property of the data object.
 
 ![data binding datagrid1](../img/data-binding-datagrid1.png)
 
 ## The XAML
 
-The XAML shown below,  describes a Window containing a `DockPanel`, inside which is a `DataGrid`. The XAML is identical to the XAML in Example 7, except for the window caption.
+The XAML shown below,  describes a Window containing a DockPanel, inside which is a DataGrid. The XAML is identical to the XAML in Example 7, except for the window caption.
 ```apl
- <Window
+`<Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="DataGrid Matrix Example" Height="500"
@@ -27,15 +27,14 @@ The XAML shown below,  describes a Window containing a `DockPanel`, inside which
             </DataGrid.Columns>
         </DataGrid>
     </DockPanel>
- </Window>
-
+ </Window>`
 ```
 
-The phrase ItemsSource="{Binding}" states that the content of the `DataGrid` is bound to a data source, which in this case will be inherited from the DataContext property of the parent `Window`.
+The phrase `ItemsSource="{Binding}"` states that the content of the DataGrid is bound to a data source, which in this case will be inherited from the DataContext property of the parent Window.
 
-Binding="{Binding Name}" specifies that the contents of the first column are bound to a Path named **Name** in the data source.
+`Binding="{Binding Name}"` specifies that the contents of the first column are bound to a Path named **Name** in the data source.
 
-Similarly, Binding="{Binding Price, StringFormat=C}" specifies that the Path for the second column is **Price** (the phrase StringFormat=C merely specifies the default currency format).
+Similarly, `Binding="{Binding Price, StringFormat=C}"` specifies that the Path for the second column is **Price** (the phrase `StringFormat=C` merely specifies the default currency format).
 
 ## The APL Code
 
@@ -57,12 +56,12 @@ As in Example 7, the global variable `Wines` contains a vector of character vect
 
 `Grid[2-4`] creates a  matrix `winelist`, whose first column contains the names of the wines, and whose second column their (randomly generated) prices. As this is a global variable, the variable is expunged before being used in order to remove any previous data binding information that was associated with it.
 
-`Grid[5]`creates the left argument for `(2015⌶)` which defines the names and data types of the properties which the columns of the matrix `winelist` will be exposed as. In this case, the names of the paths are `Name` and `Price`, and their data types are both System.Object. So the first column will be exposed as Name and the second as Price, matching the path names specified in the XAML:
+`Grid[5]`creates the left argument for `(2015⌶)` which defines the names and data types of the properties which the columns of the matrix `winelist` will be exposed as. In this case, the names of the paths are `Name` and `Price`, and their data types are both `System.Object`. So the first column will be exposed as `Name` and the second as `Price`, matching the path names specified in the XAML:
 ```apl
-            <DataGridTextColumn Header="Wine"
+`<DataGridTextColumn Header="Wine"
             Binding="{Binding Name}"/>
             <DataGridTextColumn Header="Price"
-            Binding="{Binding Price, StringFormat=C}" />
+            Binding="{Binding Price, StringFormat=C}" />`
 ```
 
 ## Testing the Data Binding

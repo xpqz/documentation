@@ -17,7 +17,7 @@ If enabled, this event is reported when the user drag/drops a selected block of 
 You may disable the drag/drop facility entirely by setting the action code of the event to `¯1`. You may also disable an individual drag/drop operation by returning 0 from a callback function.
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 6-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 6-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |

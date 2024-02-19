@@ -8,7 +8,7 @@
 This is a simple integer vector, whose four elements are:
 
 
-| `⎕AI[1]` | user identification. Under Windows, this is the aplnid (network ID from configuration dialog box). Under UNIX and Linux this is the **effective** UID of the account whereas `⎕AN` returns the real name. |
+| `⎕AI[1]` | user identification. Under Windows, this is the `aplnid` (network ID from configuration dialog box). Under UNIX and Linux this is the **effective** UID of the account whereas `⎕AN` returns the real name. |
 | --- | ---  |
 | `⎕AI[2]` | compute time for the APL session in milliseconds. |
 | `⎕AI[3]` | connect time for the APL session in milliseconds. |

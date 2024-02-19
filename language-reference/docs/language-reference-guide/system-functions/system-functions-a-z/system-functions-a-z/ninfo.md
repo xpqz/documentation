@@ -170,7 +170,7 @@ The next set of examples, illustrate the use of the Recurse variant option to li
 
 
 
-The following expression will return all Word document (`.docx` and .doc) in the current directory, searching recursively through any sub-directories:
+The following expression will return all Word document (`.docx` and `.doc`) in the current directory, searching recursively through any sub-directories:
 ```apl
      (⎕NINFO⍠('Recurse' 1)('Wildcard' 1))'*.docx' '*.doc'
 ```

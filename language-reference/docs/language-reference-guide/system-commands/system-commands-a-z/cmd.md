@@ -40,8 +40,7 @@ If **cmd** issues prompts and expects user input, it is **ESSENTIAL** to explici
 
 (Command Prompt window appears)
 ```apl
-Current date is Wed 19-07-1995
-Enter new date (dd-mm-yy): 20-07-95
+`Current date is Wed 19-07-1995 Enter new date (dd-mm-yy): 20-07-95`
 ```
 
 

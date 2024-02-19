@@ -21,7 +21,7 @@ If the [Style](style.md) property is `'Push'`, a State of 0 means that the pushb
 If the [Style](style.md) property is `'Radio'` or `'Check'`, 0 means "not selected" and 1 means "selected". Note that only one of a group of buttons with [Style ](style.md)`'Radio'` that share the same parent may have State 1. Setting State to 1 automatically deselects all the others in the group.
 
 
-For a [Form](./form.md) or [SubForm](./subform.md), a value of State of 0 means that the [Form](./form.md) is currently displayed in its "normal" state. 1 means that the [Form](./form.md) is currently minimised (displayed as an icon). The value 2 indicates that the [Form](./form.md) is maximised and displayed full-screen. The State of a [Form](./form.md) can be changed using [`⎕WS`](../../Language/System%20Functions/ws.htm).
+For a [Form](./form.md) or [SubForm](./subform.md), a value of State of 0 means that the [Form](./form.md) is currently displayed in its "normal" state. 1 means that the [Form](./form.md) is currently minimised (displayed as an icon). The value 2 indicates that the [Form](./form.md) is maximised and displayed full-screen. The State of a [Form](./form.md) can be changed using [`⎕WS`](../../Language/System Functions/ws.htm).
 
 
 

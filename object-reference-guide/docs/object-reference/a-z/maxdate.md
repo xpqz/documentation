@@ -15,7 +15,7 @@
 The MaxDate property specifies the largest date that the user may select in a Calendar object or in the calendar drop-down of a [DateTimePicker](./datetimepicker.md).
 
 
-MaxDate is an [IDN](../Miscellaneous/International%20Day%20Number.htm) value. Its default value is 11249470 which is the maximum date that the Calendar can display.
+MaxDate is an [IDN](../Miscellaneous/International Day Number.htm) value. Its default value is 11249470 which is the maximum date that the Calendar can display.
 
 
 

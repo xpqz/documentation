@@ -20,7 +20,7 @@ The type of button displayed is determined by the [Style](../a-z/style.md) prope
 
 
 
-`'Split'` and `'CommandLink'` apply only to Windows Vista and later and require  [Native Look and Feel ](../../Miscellaneous/Windows%20XP%20Look%20and%20Feel.htm)
+`'Split'` and `'CommandLink'` apply only to Windows Vista and later and require  [Native Look and Feel ](../../Miscellaneous/Windows XP Look and Feel.htm)
 (see page 1)
 . Otherwise the use of these Styles will produce a Button with Style `'Push'`.
 
@@ -34,7 +34,7 @@ Radio buttons and Check boxes are used to select options. They each have two sta
 Only one of a group of Radio buttons which share the same parent can be set ([State](../a-z/state.md) is 1) at any one time. Radio buttons are therefore used for a set of choices that are **mutually exclusive**. Check boxes however, may be set together to signify a combination of options. These are used for making choices which are not mutually exclusive.
 
 
-Radio and Check buttons **also** generate [Select](../a-z/select.md) events when their [State](../a-z/state.md) changes, and you can attach callback functions to these events to keep track of their settings. However, as Radio and Check buttons are not normally used to generate actions, it is perhaps easier to wait until the user signifies completion of the dialog box in some way, and then query the [State](../a-z/state.md) of the buttons using [`⎕WG`](../../Language/System%20Functions/wg.htm). For example, if you have a set of Radio or Check buttons in a [Group](../a-z/group.md) called `f1.options`, the following statements retrieve their settings.
+Radio and Check buttons **also** generate [Select](../a-z/select.md) events when their [State](../a-z/state.md) changes, and you can attach callback functions to these events to keep track of their settings. However, as Radio and Check buttons are not normally used to generate actions, it is perhaps easier to wait until the user signifies completion of the dialog box in some way, and then query the [State](../a-z/state.md) of the buttons using [`⎕WG`](../../Language/System Functions/wg.htm). For example, if you have a set of Radio or Check buttons in a [Group](../a-z/group.md) called `f1.options`, the following statements retrieve their settings.
 ```apl
       OPTIONS ← (⎕WN 'f1.options') ⎕WG¨⊂'State'
 ```

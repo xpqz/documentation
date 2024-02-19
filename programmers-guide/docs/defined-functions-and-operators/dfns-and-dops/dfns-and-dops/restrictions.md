@@ -9,6 +9,6 @@
 - `⎕MONITOR` does not apply to dfns and dops.
 ## Supplied Workspaces
 
-You can find many samples of dfns and dops in utility workspace dfns.dws in the ws sub-directory.
+You can find many samples of dfns and dops in utility workspace `dfns.dws` in the `ws` sub-directory.
 
-Additional examples are in workspaces: min.dws, max.dws, tube.dws and eval.dws.
+Additional examples are in workspaces: `min.dws`, `max.dws`, `tube.dws` and `eval.dws`.

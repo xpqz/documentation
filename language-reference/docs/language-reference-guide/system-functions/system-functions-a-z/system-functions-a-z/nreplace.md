@@ -48,7 +48,7 @@ As a consequence of these two rules, you must specify the data type (either 160 
 #### Example
 ```apl
 
-      n←'test'⎕NTIE 0 ⍝ See ["Example" on page 1](nappend.md)
+      n←'test'⎕NTIE 0 ⍝ See ["Example" on page 1](nappend.htm#Example)
 
       ⎕NREAD n 80 3 0
 abc

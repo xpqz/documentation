@@ -18,7 +18,7 @@ If you attach a callback function to this event and have it return a value of 0,
 a new row will not be appended to the [Grid](./grid.md).
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm),
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm),
 or supplied as the right argument to your callback function, is a 3 element
 vector as follows :
 

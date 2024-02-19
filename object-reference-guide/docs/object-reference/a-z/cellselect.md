@@ -48,7 +48,7 @@ Setting CellSelect to (`'Rows' 'Columns' 'Whole' 'Partial'`) is equivalent to se
 When the user performs a selection, the [Grid](./grid.md) generates a [GridSelect](./gridselect.md) event.
 
 
-The range of cells currently selected is given by the [SelItems](selitems.md) property. You can obtain the current selection by querying this property with [`⎕WG`](../../Language/System%20Functions/wg.htm) and you can set it with [`⎕WS`](../../Language/System%20Functions/ws.htm).
+The range of cells currently selected is given by the [SelItems](selitems.md) property. You can obtain the current selection by querying this property with [`⎕WG`](../../Language/System Functions/wg.htm) and you can set it with [`⎕WS`](../../Language/System Functions/ws.htm).
 
 
 Note that the user may delete the contents of the selected range, or cut and copy them to the clipboard by pressing Delete, Shift+Delete or Ctrl+Insert respectively. The user may also replace the current selection with the contents of the clipboard by pressing Shift+Insert.  These operations generate [GridDelete](./griddelete.md), [GridCut](./gridcut.md), [GridCopy](./gridcopy.md) and [GridPaste](./gridpaste.md) events which you may disable (by setting the event action code to `¯1` or to which you may attach a callback function.

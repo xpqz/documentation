@@ -12,7 +12,7 @@
 **Description**
 
 
-This method is used to convert a date from `⎕TS` format into an [IDN](../Miscellaneous/International%20Day%20Number.htm) suitable for use in a [Calendar](./calendar.md) object.
+This method is used to convert a date from `⎕TS` format into an [IDN](../Miscellaneous/International Day Number.htm) suitable for use in a [Calendar](./calendar.md) object.
 
 
 The argument to DateToIDN is a 3-element array as follows:

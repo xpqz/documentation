@@ -32,7 +32,7 @@ rectangles. The position is defined to be the position of the corner that is **n
 The [Size](./size.md) property specifies the height and
 width of each bounding rectangle, measuring away from the origin. To obtain a
 perfect circle, you must take the **aspect ratio** of the device into
-account. This is available from the [DevCaps](./devcaps.md) property of the [Root](root.md) and [Printer](printer.md) objects. Alternatively you can use the [Circle](circle.md) object.
+account. This is available from the [DevCaps](./devcaps.md) property of the [Root](Root.htm) and [Printer](Printer.htm) objects. Alternatively you can use the [Circle](circle.md) object.
 
 
 The [Start](./start.md) and/or [End](./end.md) properties are used to draw partial ellipses and circles. They specify start and
@@ -81,7 +81,7 @@ whose elements specify the height and width of the bounding rectangle.
 
 
 [FStyle](./fstyle.md) is either a single number
-specifying a standard fill pattern, or the name of a [Bitmap](bitmap.md) object which is to be used to fill the ellipse, circle or arc.
+specifying a standard fill pattern, or the name of a [Bitmap](Bitmap.htm) object which is to be used to fill the ellipse, circle or arc.
 
 
 [FCol](./fcol.md), [BCol](./bcol.md) and [FillCol](./fillcol.md) are each either single numbers
@@ -91,7 +91,7 @@ explicitly in terms of their RGB values.
 #### Examples:
 
 
-First make a [Form](form.md) :
+First make a [Form](Form.htm) :
 ```apl
       'F' ⎕WC 'Form'
 ```
@@ -166,7 +166,7 @@ refer to each of the corresponding ellipses, circles or arcs in turn.
 
 
 [FStyle](./fstyle.md) may be a simple scalar numeric or
-a simple character vector ([Bitmap](bitmap.md) name)
+a simple character vector ([Bitmap](Bitmap.htm) name)
 applying to all rectangles, or a vector whose elements refer to each of the
 corresponding ellipses, circles or arcs in turn.
 
@@ -185,7 +185,7 @@ ellipse, circle or arc that is drawn.
 #### Examples
 
 
-First make a [Form](form.md) :
+First make a [Form](Form.htm) :
 ```apl
       'F' ⎕WC 'Form'
 ```
@@ -212,7 +212,7 @@ Ditto, but draw the first with (height=40, width=30) and the second with
 
 
 Draw an elliptical Pie-Chart in a bounding rectangle located at (y=5, x=10)
-with a height and width equal to 40% of the height and width of the parent [Form](form.md).
+with a height and width equal to 40% of the height and width of the parent [Form](Form.htm).
 Each of the 4 pie-slices is bounded by a black line :
 ```apl
       Data ←12 27 21 40

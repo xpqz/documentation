@@ -12,7 +12,7 @@ For example in the following, the expressions `sum←` and `num←` create **loc
        }
 ```
 
-An assignment to `⍵` is not allowed and will result in an error. For assignment to `⍺`, see [Default Left Argument on page 1](default-left-argument.md).
+An assignment to `⍵` is not allowed and will result in an error. For assignment to `⍺`, see [Default Left Argument on page 1](Default Left Argument.htm#DefaultLeftArgument).
 
 Note that dfns may be commented in the usual way using `⍝`.
 

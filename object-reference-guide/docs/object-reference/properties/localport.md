@@ -13,7 +13,7 @@
 
 
 The LocalPort property is a scalar integer in the range 1-65536 that
-identifies the [port number](../Miscellaneous/Port%20Number.htm) associated with a [TCPSocket](../a-z/tcpsocket.md)
+identifies the [port number](../Miscellaneous/Port Number.htm) associated with a [TCPSocket](../a-z/tcpsocket.md)
  object.
 
 

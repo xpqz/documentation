@@ -17,16 +17,16 @@
 
 
 This object is used to obtain graphical input from the user. Like a pop-up
-menu or a [MsgBox](../a-z/msgbox.md), the Locator is a *modal* object whose interaction with the user is initiated by a "local" [`⎕DQ`](../../Language/System%20Functions/dq.htm).
+menu or a [MsgBox](../a-z/msgbox.md), the Locator is a *modal* object whose interaction with the user is initiated by a "local" [`⎕DQ`](../../Language/System Functions/dq.htm).
 
 
 
 This is terminated when the user releases a mouse button or presses any key
 other than a cursor movement key, Shift, Ctrl or Alt. It is usual to initiate
-the [`⎕DQ`](../../Language/System%20Functions/dq.htm) for the Locator from within a callback function attached to a [MouseDown](../a-z/mousedown.md) (1) [Event](../a-z/event.md).
+the [`⎕DQ`](../../Language/System Functions/dq.htm) for the Locator from within a callback function attached to a [MouseDown](../a-z/mousedown.md) (1) [Event](../a-z/event.md).
 
 
-When the "local" [`⎕DQ`](../../Language/System%20Functions/dq.htm) is terminated, a [Locator](../a-z/locator.md) (80) [Event](../a-z/event.md) is generated. The associated event message contains the new position and size of
+When the "local" [`⎕DQ`](../../Language/System Functions/dq.htm) is terminated, a [Locator](../a-z/locator.md) (80) [Event](../a-z/event.md) is generated. The associated event message contains the new position and size of
 the Locator, together with how the event was generated (keystroke or mouse
 button). To obtain the Locator's new position or size, you **must** enable
 the event by setting its "action" code to 1, or to the name of a
@@ -39,7 +39,7 @@ the type of locator displayed. It may be `'Point'`,
 or `'Ellipse'`. The default value is `'Rect'`.
 The value of the [Sizeable](../a-z/sizeable.md) property is 0 or
 1 and determines whether or not "rubberbanding" is enabled. Its
-default value is 1 which turns "rubberbanding" on. The [Size](../a-z/size.md) property determines the initial size of the Locator when displayed by [`⎕DQ`](../../Language/System%20Functions/dq.htm).
+default value is 1 which turns "rubberbanding" on. The [Size](../a-z/size.md) property determines the initial size of the Locator when displayed by [`⎕DQ`](../../Language/System Functions/dq.htm).
 Its default value is (0,0).
 
 
@@ -74,8 +74,8 @@ reported in the [Locator](../a-z/locator.md) event message.
 
 
 If `'Style'` is `'Point'`,
-the values of [Sizeable](../a-z/sizeable.md) and [Size](../a-z/size.md) are ignored. During the [`⎕DQ`](../../Language/System%20Functions/dq.htm) no visible feedback (other than the cursor) is provided as the user moves the
-mouse. When the [`⎕DQ`](../../Language/System%20Functions/dq.htm) terminates, the new position of the Locator is reported in the [Locator](../a-z/locator.md) event message.
+the values of [Sizeable](../a-z/sizeable.md) and [Size](../a-z/size.md) are ignored. During the [`⎕DQ`](../../Language/System Functions/dq.htm) no visible feedback (other than the cursor) is provided as the user moves the
+mouse. When the [`⎕DQ`](../../Language/System Functions/dq.htm) terminates, the new position of the Locator is reported in the [Locator](../a-z/locator.md) event message.
 
 
 The [Step](../a-z/step.md) property is a 2-element integer vector (default value 1 1) that

@@ -4,9 +4,9 @@ This parameter defines the workspace path. This is a list of directories that ar
 
 Note that  to load workspaces from the current directory, "." must be included in the list defined by WSPath..
 
-The following Windows example causes `)COPY` , `)LOAD` and `)LIB` to look first in the current directory, then in D:\MYWS .
+The following Windows example causes `)COPY` , `)LOAD` and `)LIB` to look first in the current directory, then in `D:\MYWS` .
 ```apl
 WSPath=.;D:\MYWS
 ```
 
-See also [Workspace search path on page 1](../../The%20APL%20Environment/Configuration%20Dialog%20Workspace%20Tab.htm#WSPath).
+See also [Workspace search path on page 1](../../The APL Environment/Configuration Dialog Workspace Tab.htm#WSPath).

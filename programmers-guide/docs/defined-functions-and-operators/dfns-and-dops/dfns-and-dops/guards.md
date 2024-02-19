@@ -26,4 +26,4 @@ Local definitions and guards can be interleaved in any order.
 
 Note again that any code following the first unguarded expression (which terminates the function) could never be executed and would therefore be redundant.
 
-See also [Error-Guards on page 1](error-guards.md).
+See also [Error-Guards on page 1](Error Guards.htm#ErrorGuards).

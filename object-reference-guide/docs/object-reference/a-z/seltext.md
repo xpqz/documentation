@@ -15,7 +15,7 @@
 This property determines or identifies the portion of text in an object that is currently selected and highlighted. It can be used to pre-select all or part of the text to be replaced or deleted when the user starts typing. It can also be used to query the area of text that the user has highlighted. This can be useful if you want to implement your own cut/paste/replace features.
 
 
-SelText is always a 2-element integer vector. If the field contents (defined by the [Text](text.md) property) is a vector, SelText is simple. Its first element is the index of the first selected character and its second element is 1 + the index of the last selected character. The length of the selected string is therefore obtained by subtracting the first element from the second.
+SelText is always a 2-element integer vector. If the field contents (defined by the [Text](Text.htm) property) is a vector, SelText is simple. Its first element is the index of the first selected character and its second element is 1 + the index of the last selected character. The length of the selected string is therefore obtained by subtracting the first element from the second.
 
 
 If there are no characters selected, the two elements are equal and specify the current position of the input cursor.

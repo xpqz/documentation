@@ -17,8 +17,8 @@ events into the Dyalog APL/W message queue.
 
 DyalogCustomMessage1 may be invoked from a C program as follows:
 ```apl
-msg=RegisterWindowMessage("DyalogCustomMessage1");
-SendMessage(hWnd,msg,wParam,lParam);
+`msg=RegisterWindowMessage("DyalogCustomMessage1");
+SendMessage(hWnd,msg,wParam,lParam);`
 ```
 
 

@@ -13,7 +13,7 @@
 This event is reported when the user touches  two fingers on an object and moves them apart or towards each other.
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 5-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 5-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |
@@ -29,12 +29,12 @@ The Flags parameter [3] which reports the state of the Gesture, is an integer wi
 
 | Name | Value | Description |
 | --- | --- | ---  |
-|  | 0 | A gesture is in progress |
-| GF_BEGIN | 1 | A gesture is starting. |
-| GF_END | 4 | A gesture has finished. |
+| `` | 0 | A gesture is in progress |
+| `GF_BEGIN` | 1 | A gesture is starting. |
+| `GF_END` | 4 | A gesture has finished. |
 
 
-When the user first touches two fingers on an object and begins to move them apart or towards each other, the object generates a GestureZoom event with a `Flags` parameter of 1 (GF_BEGIN). As the user continues to moves the fingers apart or towards each other, the object generates a series of GestureZoom events with a `Flags` parameter of 0.  When the user lifts one or both fingers away, the object generates it generates a final GestureZoom event, with a `Flags` parameter of 4 (GF_END).
+When the user first touches two fingers on an object and begins to move them apart or towards each other, the object generates a GestureZoom event with a `Flags` parameter of 1 (`GF_BEGIN`). As the user continues to moves the fingers apart or towards each other, the object generates a series of GestureZoom events with a `Flags` parameter of 0.  When the user lifts one or both fingers away, the object generates it generates a final GestureZoom event, with a `Flags` parameter of 4 (`GF_END`).
 
 
 No other event will be reported between the start and end of a series of GestureZoom events.

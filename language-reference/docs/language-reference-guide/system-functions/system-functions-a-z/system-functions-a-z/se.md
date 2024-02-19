@@ -11,7 +11,7 @@
 `⎕SE` is maintained separately from the active workspace and is not affected by `)LOAD` or `)CLEAR`.  It is therefore useful for containing utility functions.  The contents of `⎕SE` may be saved in and loaded from a .DSE file.
 
 
-See [The Session Object on page 1](../../UserGuide/The%20APL%20Environment/Session%20Object.htm#Session%20Object) for further details.
+See [The Session Object on page 1](../../UserGuide/The APL Environment/Session Object.htm#Session Object) for further details.
 
 
 

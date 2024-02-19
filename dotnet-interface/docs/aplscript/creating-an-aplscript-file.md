@@ -1,6 +1,6 @@
 # Creating an APLScript File
 
-Conceptually, the simplest way to create an APLScript file is with Notepad, although you may use many other tools including Microsoft Visual Studio as described in the next Chapter.
+Conceptually, the simplest way to create an `APLScript` file is with Notepad, although you may use many other tools including Microsoft Visual Studio as described in the next Chapter.
 
 1. Start Notepad
 2. **Choose Format/Font** from the Menu Bar and select an appropriate Unicode font that contains APL symbols, such as **APL 385 Unicode**.

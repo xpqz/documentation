@@ -16,7 +16,7 @@
 **Description**
 
 
-An UpDown object is a pair of arrow buttons that the user can click to increment or decrement a value, such as a scroll position or a number displayed in a companion control. The [Spinner](spinner.md) object is actually a composite object consisting of an UpDown and a companion Edit.
+An UpDown object is a pair of arrow buttons that the user can click to increment or decrement a value, such as a scroll position or a number displayed in a companion control. The [Spinner](Spinner.htm) object is actually a composite object consisting of an UpDown and a companion Edit.
 
 
 

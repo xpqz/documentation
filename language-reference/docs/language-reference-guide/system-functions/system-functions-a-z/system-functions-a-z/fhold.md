@@ -10,7 +10,7 @@
 This function holds component file(s) and/or external variable(s). It is used  to synchronise access to resources shared between multiple cooperating Dyalog processes. It is not intended to synchronise access between Dyalog threads; for this purpose you should use  `:Hold`.
 
 
-For a  multi-threaded and multi-process application, a single `⎕FHOLD` is used to synchronise inter-process access, while `:Hold` is used in multiple threads to synchronise access between  threads in the same process. See also [Hold Statement on page 1](../Control%20Structures/hold.htm#HoldStatement).
+For a  multi-threaded and multi-process application, a single `⎕FHOLD` is used to synchronise inter-process access, while `:Hold` is used in multiple threads to synchronise access between  threads in the same process. See also [Hold Statement on page 1](../Control Structures/hold.htm#HoldStatement).
 
 
 

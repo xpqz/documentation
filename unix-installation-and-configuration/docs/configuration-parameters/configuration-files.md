@@ -27,10 +27,10 @@ Prior to Dyalog version 18.0, configuration parameters could be specified as env
 
 Configuration files define configuration parameters using JSON5. A JSON object contains data in the form of key/value pairs and other JSON objects. The keys are strings and the values are the JSON types. A key and its value are seperated by a colon (`:`) character. Entries (key/value pairs) are separated by comma (`,`) characters.
 
-The top-level object defines an optional key called Extend and an optional object called Settings:
+The top-level object defines an optional key called `Extend` and an optional object called `Settings`:
 
-- Extend is a string value containing the name of a configuration file to import. The extended (imported) file can extend another configuration file. Configuration values from the imported file(s) can be overridden by redefining them. The file name is implicitly relative to the name of the file that imports it (any file name extension must be explicitly specified).
-- Settings is an object containing the names of configuration parameters and their values. The values can be a string, a number or an array of strings.
+- `Extend` is a string value containing the name of a configuration file to import. The extended (imported) file can extend another configuration file. Configuration values from the imported file(s) can be overridden by redefining them. The file name is implicitly relative to the name of the file that imports it (any file name extension must be explicitly specified).
+- `Settings` is an object containing the names of configuration parameters and their values. The values can be a string, a number or an array of strings.
 
 The names and values correspond to configuration parameters, and names are not case sensitive. Any named values can be defined; an APL application could query the values using `+2⎕NQ'.' 'GetEnvironment' <name>` or using the `]Config` user command.
 
@@ -38,24 +38,21 @@ If the same name is defined multiple times within a configuration file then the 
 
 ## Arrays
 
-An array can be used to define file paths, for example, WSPATH: ["/dir1", "/dir2"]. The only parameters which can be defined as arrays are WSPATH, WSEXT and CFEXT.
+An array can be used to define file paths, for example, `WSPATH: ["/dir1", "/dir2"]`. The only parameters which can be defined as arrays are WSPATH, WSEXT and CFEXT.
 
 ## References to other Configuration Parameters
 
-Configuration parameters that are string values can include references to other configuration parameters (irrespective of where they are defined) using square bracket delimiters. For example, MySetting: "[DYALOG]/MyFile" will replace [DYALOG] with the value of the DYALOG configuration parameter.
+Configuration parameters that are string values can include references to other configuration parameters (irrespective of where they are defined) using square bracket delimiters. For example, `MySetting: "[DYALOG]/MyFile"` will replace `[DYALOG]` with the value of the DYALOG configuration parameter.
 
 If the referenced configuration parameter is not defined then no substitution will take place; the reference, including the square bracket delimiters, will remain in place.
 
-To include literal square brackets in a string, prefix them with a \ character.
+To include literal square brackets in a string, prefix them with a `\` character.
 
 ## Nested Structures
 
 Configuration files support nested parameter structures by defining an object that corresponds to the structure. For example:
 ```apl
-Captions: {
-    Session: "My Dyalog Session"
-    Status: "My Status window"
-}
+`Captions: { Session: "My Dyalog Session" Status: "My Status window" }`
 ```
 ```apl
       +2 ⎕NQ '.' 'GetEnvironment' 'Captions\Session'
@@ -64,7 +61,7 @@ My Dyalog Session
 
 ## Example Configuration File Content
 ```apl
-{
+`{
    Extend: "my_default_configuration.dcfg",
    Settings: {
    // maximum workspace
@@ -75,5 +72,5 @@ My Dyalog Session
    // references to other configuration parameters
    FNAME: "[rootdir]/filename",
    }
-}
+}`
 ```

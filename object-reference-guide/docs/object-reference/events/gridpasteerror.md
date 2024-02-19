@@ -21,7 +21,7 @@ the data in starting at the current cell (CurCell) would overflow the [Grid](../
 Setting the action code of this event to `¯1`, or returning a 0 from a callback function attached to it, has no effect.
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm),
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm),
 or supplied as the right argument to your callback function, is a 6-element
 vector as follows:
 

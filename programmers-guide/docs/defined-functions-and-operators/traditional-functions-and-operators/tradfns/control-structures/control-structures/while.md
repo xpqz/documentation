@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">While Statement</span><span class="command">:While bexp</span></h1>
 
-[Formal Definition](While%20Statement%20Definition.htm)
+[Formal Definition](While Statement Definition.htm)
 
 
 The simplest `:While` loop is :

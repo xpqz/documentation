@@ -12,7 +12,7 @@
 **Description**
 
 
-This event is triggered when the [HTMLRenderer](../a-z/htmlrenderer.md) client attempts to open a new window. This could be fired by an HTML <a> tag with the target attribute set to open a URL in a new window or by a JavaScript window.open() call. Note that this does not apply to JavaScript Popup Boxes.
+This event is triggered when the [HTMLRenderer](../a-z/htmlrenderer.md) client attempts to open a new window. This could be fired by an HTML <a> tag with the target attribute set to open a URL in a new window or by a JavaScript `window.open()` call. Note that this does not apply to JavaScript Popup Boxes.
 
 
 
@@ -20,7 +20,7 @@ By default the HTMLRenderer ignores a request for a new window, but if  the DoPo
 
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 4-element vector as follows:
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 4-element vector as follows:
 
 
 | `[1]` | Object | ref or character vector |

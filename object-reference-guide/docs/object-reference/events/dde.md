@@ -24,10 +24,10 @@ This event **only** applies to the [Root](../a-z/root.md) object ".", so to enab
 ```
 
 
-The first statement would cause [`⎕DQ`](../../Language/System%20Functions/dq.htm) to terminate on receipt of a DDE event. The second would cause it to call "`fn`" each time. The third would do likewise but the value in "`larg`" would be supplied as its left argument.
+The first statement would cause [`⎕DQ`](../../Language/System Functions/dq.htm) to terminate on receipt of a DDE event. The second would cause it to call "`fn`" each time. The third would do likewise but the value in "`larg`" would be supplied as its left argument.
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function is a 2-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function is a 2-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |

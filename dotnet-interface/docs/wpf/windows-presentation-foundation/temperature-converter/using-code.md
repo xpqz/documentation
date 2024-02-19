@@ -1,6 +1,6 @@
 # Using Code
 
-The functions for this example are provided in the workspace WPFIntro.dws in the namespace `WPF.UsingCode`. To run the example:
+The functions for this example are provided in the workspace `WPFIntro.dws` in the namespace `WPF.UsingCode`. To run the example:
 ```apl
       )LOAD wpfintro
       WPF.UsingCode.TempConverter
@@ -138,7 +138,7 @@ Although this approach appears at first sight to be considerably more verbose th
 
 As before, let us examine the code line-by-line.
 
-`TempConverter[2-5]` define `⎕USING` so that the appropriate .NET assemblies are on the search-path. Note that the `ScrollBar` control is in System.Windows.Controls.Primitives and not System.Windows.Controls like the others.
+`TempConverter[2-5]` define `⎕USING` so that the appropriate .NET assemblies are on the search-path. Note that the ScrollBar control is in `System.Windows.Controls.Primitives` and not `System.Windows.Controls` like the others.
 ```apl
 
 [2]    ⎕USING←,⊂'System.Windows.Controls,WPF/PresentationFramework.dll'
@@ -147,34 +147,34 @@ As before, let us examine the code line-by-line.
 [5]    ⎕USING,←⊂'System.Windows,WPF/PresentationCore.dll'
 ```
 
-`TempConverter[8-9]` creates a `Window` and sets its SizeToContent and Title properties as in the XAML example. Notice however that whereas using XAML the string  SizeToContent="WidthandHeight" is sufficient, when using code it is necessary to get the *Type* right. In this case, the SizeToContent property must be set to a specific member (in this case WidthAndHeight) of the `System.Windows.SizeToContent` enumeration. Other members of this Type are Width, Height and Manual (the default).
+`TempConverter[8-9]` creates a Window and sets its SizeToContent and Title properties as in the XAML example. Notice however that whereas using XAML the string  `SizeToContent="WidthandHeight"` is sufficient, when using code it is necessary to get the *Type* right. In this case, the SizeToContent property must be set to a specific member (in this case WidthAndHeight) of the System.Windows.SizeToContent enumeration. Other members of this Type are Width, Height and Manual (the default).
 ```apl
 [7]    win←⎕NEW Window
 [8]    win.SizeToContent←SizeToContent.WidthAndHeight
 [9]    win.Title←'WPF Temperature Converter'
 ```
 
-`TempConverter[11-12]` create a `DockPanel` control and set its LastChildFill property to 0. In this case the APL value 0 is used instead of the string "False" in XAML.
+`TempConverter[11-12]` create a DockPanel control and set its LastChildFill property to 0. In this case the APL value 0 is used instead of the string "False" in XAML.
 ```apl
 
 [11]   dp←⎕NEW DockPanel
 [12]   dp.LastChildFill←0
 ```
 
-`TempConverter[14]` creates a `Menu` control.
+`TempConverter[14]` creates a Menu control.
 ```apl
 
 [14]   mnu←⎕NEW Menu
 ```
 
-`TempConverter[16-18]` create a `MenuItem` control with the caption **Scale**, and then add the control to the Items collection of the main `Menu` using its Add method. This illustrates one significant difference between using XAML and code. In XAML, the parent/child relationships between controls are defined by the structure and order of the XML. Using code, child controls must be explicitly added to the appropriate list of child controls managed by the parent.
+`TempConverter[16-18]` create a MenuItem control with the caption **Scale**, and then add the control to the Items collection of the main Menu using its Add method. This illustrates one significant difference between using XAML and code. In XAML, the parent/child relationships between controls are defined by the structure and order of the XML. Using code, child controls must be explicitly added to the appropriate list of child controls managed by the parent.
 ```apl
 [16]   mnuScale←⎕NEW MenuItem
 [17]   mnuScale.Header←'_Scale'
 [18]   sink←mnu.Items.Add mnuScale
 ```
 
-`TempConverter[20-25]` create a `MenuItem` control labelled **Fahrenheit**. The IsCheckable and IsChecked properties are set to 1, which is equivalent to "True" in XAML. The callback function `SET_F` is assigned to the Click event exactly as in the XAML version of this example. The last line in this section makes the **Fahrenheit** `MenuItem` a child of the **Scale** `MenuItem`.
+`TempConverter[20-25]` create a MenuItem control labelled **Fahrenheit**. The IsCheckable and IsChecked properties are set to 1, which is equivalent to "True" in XAML. The callback function `SET_F` is assigned to the Click event exactly as in the XAML version of this example. The last line in this section makes the **Fahrenheit** MenuItem a child of the **Scale** MenuItem.
 ```apl
 
 [20]   mnuFahrenheit←⎕NEW MenuItem
@@ -185,16 +185,16 @@ As before, let us examine the code line-by-line.
 [25]   sink←mnuScale.Items.Add mnuFahrenheit
 ```
 
-The code used to create the **Centigrade** `MenuItem` is more or less the same.
+The code used to create the **Centigrade** MenuItem is more or less the same.
 
-`TempConverter[34-35]` adds the top-level `Menu`  to the `DockPanel`. Note that in the case of a `DockPanel`, the list of its child controls is represented by its Children property. Furthermore, to define how it is docked this is done,  using code, by the SetDock method of the `DockPanel`. This contrasts with the way this is achieved using XAML (DockPanel.Dock="Top"). Note too that the argument to SetDock is not just a simple string as in XAML, but a member of the `System.Windows.Controls.Dock` enumeration.
+`TempConverter[34-35]` adds the top-level Menu  to the DockPanel. Note that in the case of a DockPanel, the list of its child controls is represented by its Children property. Furthermore, to define how it is docked this is done,  using code, by the SetDock method of the DockPanel. This contrasts with the way this is achieved using XAML (`DockPanel.Dock="Top"`). Note too that the argument to SetDock is not just a simple string as in XAML, but a member of the System.Windows.Controls.Dock enumeration.
 ```apl
 
 [34]   sink←dp.Children.Add mnu
 [35]   dp.SetDock mnu Dock.Top
 ```
 
-`TempConverter[37-39]` create the `Grid` control. Its Width property will accept a simple numeric value, but its Margin property must be given an instance of a `System.Windows.Thickness` structure. In this case, the `ThickNess` constructor is given a 4-element numeric vector that specifies its Left, Top, Right and Bottom members respectively.
+`TempConverter[37-39]` create the Grid control. Its Width property will accept a simple numeric value, but its Margin property must be given an instance of a System.Windows.Thickness structure. In this case, the ThickNess constructor is given a 4-element numeric vector that specifies its Left, Top, Right and Bottom members respectively.
 ```apl
 
 [37]   gr←⎕NEW Grid
@@ -202,7 +202,7 @@ The code used to create the **Centigrade** `MenuItem` is more or less the same.
 [39]   gr.Margin←⎕NEW Thickness(40 10 10 10)
 ```
 
-`TempConverter[41-47]` create instances of 3 `RowDefinition` classes and add them to the RowDefinitions collection of the `Grid`. Note that whereas in XAML the Height can be specified as a string, using code it is necessary once again to use the correct Type. In this case, Height must be specified by a member of the `System.Windows.GridLength` structure.
+`TempConverter[41-47]` create instances of 3 RowDefinition classes and add them to the RowDefinitions collection of the Grid. Note that whereas in XAML the Height can be specified as a string, using code it is necessary once again to use the correct Type. In this case, Height must be specified by a member of the System.Windows.GridLength structure.
 ```apl
 [41]   rd1←⎕NEW RowDefinition
 [42]   rd1.Height←GridLength.Auto
@@ -213,7 +213,7 @@ The code used to create the **Centigrade** `MenuItem` is more or less the same.
 [47]   gr.RowDefinitions.Add¨rd1 rd2 rd3
 ```
 
-Similarly, `TempConverter[49-55]` create instances of 3 `ColumnDefinition` classes and add them to the ColumnDefinitions collection of the `Grid`. Note that The Width property will not accept a simple numeric value, it must be a member of the `GridLength` structure. To set the Width to 80, it is  necessary first to create an instance of a `GridLength` structure giving this value as the argument to its constructor.
+Similarly, `TempConverter[49-55]` create instances of 3 ColumnDefinition classes and add them to the ColumnDefinitions collection of the Grid. Note that The Width property will not accept a simple numeric value, it must be a member of the GridLength structure. To set the Width to 80, it is  necessary first to create an instance of a GridLength structure giving this value as the argument to its constructor.
 ```apl
 [49]   rc1←⎕NEW ColumnDefinition
 [50]   rc1.Width←GridLength.Auto
@@ -224,7 +224,7 @@ Similarly, `TempConverter[49-55]` create instances of 3 `ColumnDefinition` class
 [55]   gr.ColumnDefinitions.Add¨rc1 rc2 rc3
 ```
 
-`TempConverter[57-61]` create a `Label` control with the caption **Fahrenheit**. To display the `Label` in a `Grid` it is necessary to first add it to the Children collection of the `Grid`, and then set its position in the `Grid` using its SetRow and SetColumn methods. Similar code is used to create and position the second `Label`.
+`TempConverter[57-61]` create a Label control with the caption **Fahrenheit**. To display the Label in a Grid it is necessary to first add it to the Children collection of the Grid, and then set its position in the Grid using its SetRow and SetColumn methods. Similar code is used to create and position the second Label.
 ```apl
 [57]   l1←⎕NEW Label
 [58]   l1.Content←'Fahrenheit'
@@ -233,7 +233,7 @@ Similarly, `TempConverter[49-55]` create instances of 3 `ColumnDefinition` class
 [61]   gr.SetColumn l1 0
 ```
 
-`TempConverter[69-73]` create and position a `TextBox` control, in the same way as the `Label` controls. Notice that in this case, the constructor for the Thickness structure is given a single value that specifies all four of its Left, Top, Right and Bottom members.
+`TempConverter[69-73]` create and position a TextBox control, in the same way as the Label controls. Notice that in this case, the constructor for the Thickness structure is given a single value that specifies all four of its Left, Top, Right and Bottom members.
 ```apl
 
 [69]   txtFahrenheit←⎕NEW TextBox
@@ -243,7 +243,7 @@ Similarly, `TempConverter[49-55]` create instances of 3 `ColumnDefinition` class
 [73]   gr.SetColumn txtFahrenheit 1
 ```
 
-`TempConverter[81-87]` create and position a `Button` control. The callback function `f2c` is attached to the Click event in the same way as in the XAML version of this example.
+`TempConverter[81-87]` create and position a Button control. The callback function `f2c` is attached to the Click event in the same way as in the XAML version of this example.
 ```apl
 
 [81]   btnF2C←⎕NEW Button
@@ -255,12 +255,12 @@ Similarly, `TempConverter[49-55]` create instances of 3 `ColumnDefinition` class
 [87]   gr.SetColumn btnF2C 2
 ```
 
-`TempConverter[105]` adds the `Grid` to the list of Children to be managed by the `DockControl`.
+`TempConverter[105]` adds the Grid to the list of Children to be managed by the DockControl.
 ```apl
 [105]  sink←dp.Children.Add gr
 ```
 
-`TempConverter[107-112]` create a `ScrollBar` control. Its Width, Minimum and Maximum properties all accept simple numeric values. However, its Orientation property must be set to a member of the `System.Windows.Controls.Orientation` enumeration.
+`TempConverter[107-112]` create a ScrollBar control. Its Width, Minimum and Maximum properties all accept simple numeric values. However, its Orientation property must be set to a member of the System.Windows.Controls.Orientation enumeration.
 ```apl
 
 [107]  scrTemp←⎕NEW ScrollBar
@@ -271,13 +271,13 @@ Similarly, `TempConverter[49-55]` create instances of 3 `ColumnDefinition` class
 [112]  scrTemp.onScroll←'F2C'
 ```
 
-`TempConverter[114-115]` add the `ScrollBar` to the list of Children managed by the `DockPanel`, and use its SetDock method to cause it to be right-aligned.
+`TempConverter[114-115]` add the ScrollBar to the list of Children managed by the DockPanel, and use its SetDock method to cause it to be right-aligned.
 ```apl
 [114]  sink←dp.Children.Add scrTemp
 [115]  dp.SetDock scrTemp Dock.Right
 ```
 
-Finally, the `DockPanel` is assigned to the Content property of the `Window`, and the `Window` displayed as in the XAML version of this example. Note that a `Window` may contain just one control.
+Finally, the DockPanel is assigned to the Content property of the Window, and the Window displayed as in the XAML version of this example. Note that a Window may contain just one control.
 ```apl
 
 [117]  win.Content←dp

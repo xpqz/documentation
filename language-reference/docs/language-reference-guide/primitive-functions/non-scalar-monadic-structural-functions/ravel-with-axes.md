@@ -129,6 +129,6 @@ If `K` is an empty vector a new last axis of length 1 is created.
 ```
 
 
-See also: [Ravel on page 1](ravel.md).
+See also: [Ravel on page 1](Ravel.htm#Ravel).
 
 

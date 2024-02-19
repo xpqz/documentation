@@ -23,7 +23,7 @@ The declaration of each parameter of the method is separated from the next by a 
 ∇
 ```
 
-The `Add1` function defined above is exported as a method named `Add`, that takes exactly (and only) two parameters of type Int32 and returns a result of type Int32. Armed with this definition, which is recorded in the metadata associated with the class, the .NET Framework guarantees that the method will only be called in this way.
+The `Add1` function defined above is exported as a method named `Add`, that takes exactly (and only) two parameters of type `Int32` and returns a result of type `Int32`. Armed with this definition, which is recorded in the metadata associated with the class, the .NET Framework guarantees that the method will only be called in this way.
 
 ### Add2
 ```apl
@@ -34,4 +34,4 @@ The `Add1` function defined above is exported as a method named `Add`, that take
 ∇
 ```
 
-The `Add2` function defined above is exported as a method that takes an array of Double and returns a result of type Double. Depending on the type of the arguments provided when the method is invoked, .NET and Dyalog APL will call `Add1` or`Add2` - or generate an exception if the argument does not match any of the signatures.
+The `Add2` function defined above is exported as a method that takes an array of `Double` and returns a result of type `Double`. Depending on the type of the arguments provided when the method is invoked, .NET and Dyalog APL will call `Add1` or`Add2` - or generate an exception if the argument does not match any of the signatures.

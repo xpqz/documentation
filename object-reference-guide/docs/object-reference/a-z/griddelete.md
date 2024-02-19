@@ -15,7 +15,7 @@
 If enabled, this event is reported when the user presses Delete and there are selected cells in the [Grid](./grid.md). The default action of the event is to empty the selected cells. You may disable this effect entirely by setting the action code of the event to `¯1`. You may also disable the delete operation by returning 0 from a callback function.
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 4-element vector as follows:
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 4-element vector as follows:
 
 
 | `[1]` | Object | ref or character vector |

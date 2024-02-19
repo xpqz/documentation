@@ -17,7 +17,7 @@ This property is used to specify how the bitmap for a [Cursor](./cursor.md) or [
 
 When a [Cursor](./cursor.md) or [Icon](./icon.md) is displayed, the colour of each pixel occupied by the object on the screen is determined by :
 
-- The colour specified by [Bits](bits.md) via [CMap](cmap.md)
+- The colour specified by [Bits](bits.md) via [CMap](CMap.htm)
 - The value of Mask
 - The existing colour of the screen pixel
 

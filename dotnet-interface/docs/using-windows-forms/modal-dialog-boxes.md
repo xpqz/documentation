@@ -2,21 +2,21 @@
 
 Dialog Boxes are displayed modally to prevent the user from performing tasks outside of the dialog box.
 
-To create a modal dialog box, you create a Form, set its BorderStyle property to FixedDialog, set its ControlBox, MinimizeBox and MaximizeBox properties to false, and display it using ShowDialog.
+To create a modal dialog box, you create a `Form`, set its `BorderStyle` property to `FixedDialog`, set its `ControlBox`, `MinimizeBox` and `MaximizeBox` properties to false, and display it using `ShowDialog`.
 
-A modal dialog box has a DialogResult property that is set when the Form is closed, or when the user presses OK or Cancel. The value of this property is returned by the ShowDialog method, so the simplest way to handle user actions is to check the result of ShowDialog and proceed accordingly. Example 1 illustrates a simple modal dialog box.
+A modal dialog box has a `DialogResult` property that is set when the `Form` is closed, or when the user presses OK or Cancel. The value of this property is returned by the `ShowDialog` method, so the simplest way to handle user actions is to check the result of `ShowDialog` and proceed accordingly. Example 1 illustrates a simple modal dialog box.
 
 ### Example 1
 
 Function `EG1` illustrates how to create and use a simple modal dialog box. Much of the function is self-explanatory, but the following points are noteworthy.
 
-`EG1[1-2]` set `⎕USING` to include the .NET Namespaces System.Windows.Forms and System.Drawing.
+`EG1[1-2]` set `⎕USING` to include the .NET Namespaces `System.Windows.Forms` and `System.Drawing`.
 
-`EG1[6,8,9]` create a Form and two Button objects. As yet, they are unconnected. The constructor for both classes is defined to take no arguments, so the `⎕NEW` system function is only called with a class argument.
+`EG1[6,8,9]` create a `Form` and two `Button` objects. As yet, they are unconnected. The constructor for both classes is defined to take no arguments, so the `⎕NEW` system function is only called with a class argument.
 
-`EG1[14]` shows how the Location property is set by first creating a new Point object with a specific pair of (x and y) values.
+`EG1[14]` shows how the `Location` property is set by first creating a new `Point` object with a specific pair of (x and y) values.
 
-`EG1[18]` computes the values for the Point object for `button2.Location`, from the values of the Left, Height and Top properties of `button1`; thus positioning `button2` relative to `button1`.
+`EG1[18]` computes the values for the `Point` object for `button2.Location`, from the values of the `Left`, `Height` and `Top` properties of `button1`; thus positioning `button2` relative to `button1`.
 ```apl
      ∇ EG1;form1;button1;button2;true;false;⎕USING;Z
 [1]    ⎕USING←,⊂'System.Windows.Forms,
@@ -42,13 +42,13 @@ Function `EG1` illustrates how to create and use a simple modal dialog box. Much
 [19]
 ```
 
-`EG1[21,23]` sets the DialogResult property of `button1` and `button2` to DialogResult.OK and DialogResult.Cancel respectively. Note that DialogResult is an enumeration with a predefined set of member values.
+`EG1[21,23]` sets the `DialogResult` property of `button1` and `button2` to `DialogResult.OK` and `DialogResult.Cancel` respectively. Note that `DialogResult` is an enumeration with a predefined set of member values.
 
-Similarly, `EG1[32]` defines the BorderStyle property of the form using the FormBorderStyle enumeration.
+Similarly, `EG1[32]` defines the `BorderStyle` property of the form using the `FormBorderStyle` enumeration.
 
-`EG1[38 40]` defines the AcceptButton and CancelButton properties of the Form to `button1` and `button2` respectively. These have the same effect as the Dyalog GUI Default and Cancel properties.
+`EG1[38 40]` defines the `AcceptButton` and `CancelButton` properties of the Form to `button1` and `button2` respectively. These have the same effect as the Dyalog GUI Default and Cancel properties.
 
-`EG1[42]` sets the StartPosition of the Form to be centre screen. Once again this is specified using an enumeration; FormStartPosition.
+`EG1[42]` sets the `StartPosition` of the Form to be centre screen. Once again this is specified using an enumeration; `FormStartPosition`.
 ```apl
 [20]  ⍝ Make button1's dialog result OK.
 [21]   button1.DialogResult←DialogResult.OK
@@ -81,11 +81,11 @@ Similarly, `EG1[32]` defines the BorderStyle property of the form using the Form
  
 ```
 
-`EG1[45 46]` associate the buttons with the Form. The Controls property of the Form returns an object of type Form.ControlCollection. This class has an Add method that is used to add a control to the collection of controls that are owned by the Form.
+`EG1[45 46]` associate the buttons with the Form. The `Controls` property of the `Form` returns an object of type `Form.ControlCollection`. This class has an `Add` method that is used to add a control to the collection of controls that are owned by the `Form`.
 
-`EG1[50]` calls the ShowDialog method (with no argument; hence the `⍬`). The result is an object of type Form.DialogResult, which is an enumeration.
+`EG1[50]` calls the `ShowDialog` method (with no argument; hence the `⍬`). The result is an object of type `Form.DialogResult`, which is an enumeration.
 
-`EG1[52]` compares the result returned by ShowDialog with the enumeration member DialogResult.OK (note that the primitive function = has been extended to compare objects).
+`EG1[52]` compares the result returned by `ShowDialog` with the enumeration member `DialogResult.OK` (note that the primitive function = has been extended to compare objects).
 ```apl
 [44]   ⍝ Add button1 to the form.
 [45]   form1.Controls.Add button1
@@ -154,7 +154,7 @@ Functions `EG2` and `EG2A` illustrate how the Each operator (`¨`) and the exten
 
 `EG2A[7]` takes advantage of the fact that .NET classes are namespaces, so the expression `Form TextBox Label`  is a vector of namespace refs, and the expression `⎕NEW¨Form TextBox Label` runs the `⎕NEW` system function on each of them.
 
-Similarly, `EG2A[10 11 12]` combine the use of extended namespace reference and the *Each* operator to set the Text, Location and Size properties in several objects together.
+Similarly, `EG2A[10 11 12]` combine the use of extended namespace reference and the *Each* operator to set the `Text`, `Location` and `Size` properties in several objects together.
 
 ```apl
      

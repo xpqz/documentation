@@ -1,12 +1,12 @@
 # Example 6a (Casting to DateTime)
 
-This example is similar to Example 6 but illustrates how numeric data in `⎕TS` format can be converted to  `DateTime` type.
+This example is similar to Example 6 but illustrates how numeric data in `⎕TS` format can be converted to  DateTime type.
 
 ## The XAML
 
-The XAML shown below describes a Window containing a `StackPanel`, inside which is a `ListBox`.
+The XAML shown below describes a Window containing a StackPanel, inside which is a ListBox.
 ```apl
-<Window
+`<Window
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="DateTimes using ⎕TS data"
@@ -17,7 +17,7 @@ The XAML shown below describes a Window containing a `StackPanel`, inside which 
          <ListBox Name="TideTimes" Height="200"
           Margin="5" />
     </StackPanel>
-</Window>
+</Window>`
 ```
 
 ## The APL Code
@@ -37,15 +37,15 @@ The function `Tides` is shown below.
 
 ```
 
-`Tides[3]` uses FindName to obtain a ref to the `ListBox` (defined in the XAML) named **TideTimes**:
+`Tides[3]` uses FindName to obtain a ref to the ListBox (defined in the XAML) named **TideTimes**:
 ```apl
 
 [3]    win.times←win.FindName⊂'TideTimes'
 ```
 
-`Tides[4-5]` creates a vector of integer vectors each of which species the time and date of a high tide at Portsmouth. `Tides[6]` extends each to 7-elements, which is required to represent a `DateTime` object.
+`Tides[4-5]` creates a vector of integer vectors each of which species the time and date of a high tide at Portsmouth. `Tides[6]` extends each to 7-elements, which is required to represent a DateTime object.
 
-Then, `Tides[7]` creates a binding source object from this array and assigns it to the `ItemsSource` property of the `ListBox`. Note that the left argument `DateTime` specifies that the data be cast to that type.
+Then, `Tides[7]` creates a binding source object from this array and assigns it to the ItemsSource property of the ListBox. Note that the left argument DateTime specifies that the data be cast to that type.
 ```apl
 
 [7]    win.times.ItemsSource←DateTime(2015⌶)'dt'
@@ -60,15 +60,15 @@ Then, `Tides[7]` creates a binding source object from this array and assigns it 
 ![tides](../img/tides.png)
 ```
 
-`Tides[3]` uses FindName to obtain a ref to the `ListBox` (defined in the XAML) named **TideTimes**:
+`Tides[3]` uses FindName to obtain a ref to the ListBox (defined in the XAML) named **TideTimes**:
 ```apl
 
 [3]    win.times←win.FindName⊂'TideTimes'
 ```
 
-`Tides[4-5]` creates a vector of integer vectors each of which species the time and date of a high tide at Portsmouth. `Tides[6]` extends each to 7-elements, which is required to represent a `DateTime` object.
+`Tides[4-5]` creates a vector of integer vectors each of which species the time and date of a high tide at Portsmouth. `Tides[6]` extends each to 7-elements, which is required to represent a DateTime object.
 
-Then, `Tides[7]` creates a binding source object from this array and assigns it to the `ItemsSource` property of the `ListBox`. Note that the left argument `DateTime` specifies that the data be cast to that type.
+Then, `Tides[7]` creates a binding source object from this array and assigns it to the ItemsSource property of the ListBox. Note that the left argument DateTime specifies that the data be cast to that type.
 ```apl
 
 [7]    win.times.ItemsSource←DateTime(2015⌶)'dt'

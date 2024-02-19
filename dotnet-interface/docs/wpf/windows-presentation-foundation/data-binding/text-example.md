@@ -8,7 +8,7 @@ This example illustrates data binding using XAML to specify the user-interface c
 
 The XAML shown below, describes a Window containing a TextBox.
 ```apl
-<Window
+`<Window
  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
  Name="Temp"
@@ -17,22 +17,22 @@ The XAML shown below, describes a Window containing a TextBox.
      <TextBox Name="txt" Width="300" Margin="5"
       Text="{Binding txtSource,Mode=TwoWay,
              UpdateSourceTrigger=PropertyChanged}"/>
-</Window>
+</Window>`
 ```
 
 It contains a data binding expression, namely:
 ```apl
-      Text="{Binding txtSource,Mode=TwoWay,
-             UpdateSourceTrigger=PropertyChanged}"
+`Text="{Binding txtSource,Mode=TwoWay,
+             UpdateSourceTrigger=PropertyChanged}"`
 ```
 
-This specifies that the Text property of the `TextBox` is bound to a value in the Binding Source (which has yet to be defined) whose path is txtSource. The binding mode is set to TwoWay which means that any change in the `TextBox` will be reflected in a new value in the Binding Source, and vice-versa. The value in the Binding Source will be updated when the property (in this case the Text Property) changes.
+This specifies that the Text property of the TextBox is bound to a value in the Binding Source (which has yet to be defined) whose path is `txtSource`. The binding mode is set to `TwoWay` which means that any change in the TextBox will be reflected in a new value in the Binding Source, and vice-versa. The value in the Binding Source will be updated when the property (in this case the Text Property) changes.
 
 ## The APL Code
 
 The function `Text` which generates this example is shown below.
 
-The argument `txt` is the text to be displayed initially in the `TextBox`. Note that the variable `XAML_Text` contains the XAML that describes the user-interface listed above.
+The argument `txt` is the text to be displayed initially in the TextBox. Note that the variable `XAML_Text` contains the XAML that describes the user-interface listed above.
 
 ```apl
      ∇ Text txt;⎕USING;str;xml;win
@@ -84,7 +84,7 @@ The utility function `LoadXAML` incorporates the 3 lines of code, used to creat
 [6]   txtSource←txt
 ```
 
-`Text[7]`creates a Binding Source object using `2015⌶` and assigns it to the DataContext property of the `TextBox` object. Because it is a character vector, the exported Type for the bound variable`txtSource` is `System.String` which is appropriate for the Text property of a `TextBox`.
+`Text[7]`creates a Binding Source object using `2015⌶` and assigns it to the DataContext property of the TextBox object. Because it is a character vector, the exported Type for the bound variable`txtSource` is System.String which is appropriate for the Text property of a TextBox.
 ```apl
 
 [7]    win.txtBox.DataContext←2015⌶'txtSource'

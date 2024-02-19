@@ -15,7 +15,7 @@
 The Target property is a read-only character string that specifies the chosen folder or other resource selected by the user in a [BrowseBox](./browsebox.md) object.
 
 
-If the [BrowseFor](browsefor.md) is `'Directory'`, Target will contain a directory name followed by the character "\". Otherwise, Target just contains the name.
+If the [BrowseFor](BrowseFor.htm) is `'Directory'`, Target will contain a directory name followed by the character "\". Otherwise, Target just contains the name.
 
 
 

@@ -26,7 +26,7 @@ If an element of `Y` is complex, the corresponding element of `R` depends on the
 ```
 
 
-For further explanation, see ["Floor" on page 1](floor.md).
+For further explanation, see ["Floor" on page 1](Floor.htm#Floor).
 
 
 `⎕CT` is an implied argument of Ceiling.

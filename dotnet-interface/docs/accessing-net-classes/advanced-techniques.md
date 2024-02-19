@@ -4,7 +4,7 @@
 
 Certain .NET Classes provide methods, fields and properties, that can be called directly without the need to create an instance of the Class first. These *members* are known as shared, because they have the same definition for the class and for any instance of the class.
 
-The methods Now and IsLeapYear exported by System.DateTime fall into this category. For example:
+The methods `Now` and `IsLeapYear` exported by System.DateTime fall into this category. For example:
 ```apl
       ⎕USING←,⊂'System'
  
@@ -19,7 +19,7 @@ The methods Now and IsLeapYear exported by System.DateTime fall into this catego
 
 The .NET Framework provides a set of standard operators (methods) that are supported by certain classes. These operators include methods to compare two .NET objects and methods to add and subtract objects.
 
-In the case of the DateTime Class, there are operators to compare two DateTime objects. For example:
+In the case of the `DateTime` Class, there are operators to compare two `DateTime` objects. For example:
 ```apl
       DT1←⎕NEW DateTime (2008 4 30)
       DT2←⎕NEW DateTime (2008 1 1)
@@ -29,7 +29,7 @@ In the case of the DateTime Class, there are operators to compare two DateTime o
 0
 ```
 
-The op_Addition and op_Subtraction operators add and subtract TimeSpan objects to DateTime objects. For example:
+The `op_Addition` and `op_Subtraction` operators add and subtract `TimeSpan` objects to `DateTime` objects. For example:
 ```apl
       DT3←DateTime.Now
       DT3
@@ -95,11 +95,11 @@ In addition, the monadic form of Grade Up (`⍋`) and Grade Down (`⍒`), and th
 
 ### Exceptions
 
-When a .NET object generates an error, it does so by *throwing an exception*. An exception is in fact a .NET class whose ultimate base class is System.Exception.
+When a .NET object generates an error, it does so by *throwing an exception*. An exception is in fact a .NET class whose ultimate base class is `System.Exception`.
 
 The system constant `⎕EXCEPTION` returns a reference to the most recently generated exception object.
 
-For example, if you attempt to create an instance of a DateTime object with a year that is outside its range, the constructor throws an exception. This causes APL to report a (trappable) `EXCEPTION` error (error number 90) and access to the exception object is provided by `⎕EXCEPTION`.
+For example, if you attempt to create an instance of a `DateTime` object with a year that is outside its range, the constructor throws an exception. This causes APL to report a (trappable) `EXCEPTION` error (error number 90) and access to the exception object is provided by `⎕EXCEPTION`.
 ```apl
       ⎕USING←'System'
       DT←⎕NEW DateTime (100000 0 0)
@@ -126,11 +126,11 @@ mscorlib
 
 ### Specifying Overloads and Casts
 
-If a .NET function is overloaded in terms of the types of arguments it accepts, Dyalog APL chooses which overload to call depending upon the data types of the arguments passed to it. For example, if a .NET function foo() is declared to take a single argument either of type int or of type double APL would call the first version if you called it with an integer value and the second version if you called it with a non-integer value.
+If a .NET function is overloaded in terms of the types of arguments it accepts, Dyalog APL chooses which overload to call depending upon the data types of the arguments passed to it. For example, if a .NET function `foo()` is declared to take a single argument either of type `int` or of type `double` APL would call the first version if you called it with an integer value and the second version if you called it with a non-integer value.
 
 In some circumstances it may be desirable to override this mechanism and explicitly specify which overload to use.
 
-A second requirement is to be able to specify to what .NET types APL should coerce arrays before calling a .NET function. For example, if a parameter to a .NET function is declared as type System.Object, it might be necessary to force the APL argument to be cast to a particular  *type* of Object before the function is called.
+A second requirement is to be able to specify to what .NET types APL should coerce arrays before calling a .NET function. For example, if a parameter to a .NET function is declared as type `System.Object`, it might be necessary to force the APL argument to be cast to a particular  *type* of `Object` before the function is called.
 
 Both these requirements are met by calling the function via the Variant operator `⍠`. There are two options, OverloadTypes (the Principle Option) and CastToTypes. Each option takes an array of refs to .NET types, the same length as the number of parameters to the function.
 
@@ -146,7 +146,7 @@ or more simply:
       (foo ⍠Double)val
 ```
 
-Note that `Double` is a ref to the .NET type System.Double.
+Note that `Double` is a ref to the .NET type `System.Double`.
 ```apl
       ⎕USING←'System'
       Double
@@ -154,14 +154,9 @@ Note that `Double` is a ref to the .NET type System.Double.
 
 ```
 
-Taking this a stage further, suppose that foo() is defined with 5 overloads as follows:
+Taking this a stage further, suppose that `foo()` is defined with 5 overloads as follows:
 ```apl
-foo()
-foo(int i)
-foo(double d)
-foo(double d, int i)
-foo(double[] d)
-
+`foo() foo(int i) foo(double d) foo(double d, int i) foo(double[] d)`
 ```
 
 The following statements will call the niladic, double, (double, int) and double[] overloads respectively.
@@ -178,7 +173,7 @@ Note that in the niladic case, an enclosed empty vector is used to represent a n
 
 ### CastToTypes Example
 
-The .NET function Array.SetValue() sets the value of a specified element (or elements) of an array. The first argument, the new value, is declared as System.Object, but the value supplied must correspond to the type of the Array in question. APL has no means to know what this is and will therefore pass the value *as is*, i.e. in whatever internal format it happens to be at the time. For example:
+The .NET function `Array.SetValue()` sets the value of a specified element (or elements) of an array. The first argument, the new value, is declared as `System.Object`, but the value supplied must correspond to the type of the `Array` in question. APL has no means to know what this is and will therefore pass the value *as is*, i.e. in whatever internal format it happens to be at the time. For example:
 ```apl
       ⎕USING←'System'
 
@@ -212,7 +207,7 @@ To rectify the situation, APL must be told to cast the argument to a Boolean as 
 
 If a class provides constructor overloads, a similar mechanism is used to specify which of the constructors is to be used when an instance of the class is created using `⎕NEW`.
 
-For example, if MyClass is a .NET class with an overloaded constructor, and one of its constructors is defined to take two parameters; a double and an int, the following statement would create an instance of the class by calling that specific constructor overload:
+For example, if `MyClass` is a .NET class with an overloaded constructor, and one of its constructors is defined to take two parameters; a `double` and an `int`, the following statement would create an instance of the class by calling that specific constructor overload:
 ```apl
       (⎕NEW ⍠ (⊂Double Int32)) MyClass (1 1)
 ```

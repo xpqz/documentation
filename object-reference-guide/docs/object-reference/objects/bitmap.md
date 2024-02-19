@@ -16,7 +16,7 @@
 **Description**
 
 
-A Bitmap may be created either from a file (.BMP, .GIF or .PNG) or from APL arrays. To create a Bitmap object using [`⎕WC`](../../Language/System%20Functions/wc.htm), you can either specify the [File](../a-z/file.md) property **or** the [CBits](../a-z/cbits.md) property, **or** the [Bits](../a-z/bits.md) and [CMap](../a-z/cmap.md) properties.
+A Bitmap may be created either from a file (.BMP, .GIF or .PNG) or from APL arrays. To create a Bitmap object using [`⎕WC`](../../Language/System Functions/wc.htm), you can either specify the [File](../a-z/file.md) property **or** the [CBits](../a-z/cbits.md) property, **or** the [Bits](../a-z/bits.md) and [CMap](../a-z/cmap.md) properties.
 
 
 
@@ -32,13 +32,13 @@ For a palette of up to 256 colours, you may specify the image using the [Bits](.
 If [MaskCol](../a-z/maskcol.md) is non-zero, it specifies the transparent colour for the Bitmap. Any pixels specified with the same colour will instead be displayed in whatever colour is underneath the Bitmap. This achieves similar behaviour to that of an Icon.
 
 
-The [KeepBits](../a-z/keepbits.md) property has the value 0 or 1, and controls how a Bitmap is saved in the workspace. A value of 0 (the default) means that the values of [CBits](../a-z/cbits.md), [Bits](../a-z/bits.md) and [CMap](../a-z/cmap.md) are **not** kept in the workspace. If you request the values of [CBits](../a-z/cbits.md), [Bits](../a-z/bits.md) or [CMap](../a-z/cmap.md) with [`⎕WG`](../../Language/System%20Functions/wg.htm), they are obtained directly from the corresponding Windows bitmap resource. When the workspace is `)LOAD`ed, the Bitmap is recreated from the associated file defined by the value of the [File](../a-z/file.md) property. Note that if this file doesn't exist when the workspace is `)LOAD`ed, the Bitmap is not created, but no error is generated. However, when you reference the object you will get a `VALUE ERROR`.
+The [KeepBits](../a-z/keepbits.md) property has the value 0 or 1, and controls how a Bitmap is saved in the workspace. A value of 0 (the default) means that the values of [CBits](../a-z/cbits.md), [Bits](../a-z/bits.md) and [CMap](../a-z/cmap.md) are **not** kept in the workspace. If you request the values of [CBits](../a-z/cbits.md), [Bits](../a-z/bits.md) or [CMap](../a-z/cmap.md) with [`⎕WG`](../../Language/System Functions/wg.htm), they are obtained directly from the corresponding Windows bitmap resource. When the workspace is `)LOAD`ed, the Bitmap is recreated from the associated file defined by the value of the [File](../a-z/file.md) property. Note that if this file doesn't exist when the workspace is `)LOAD`ed, the Bitmap is not created, but no error is generated. However, when you reference the object you will get a `VALUE ERROR`.
 
 
 If [KeepBits](../a-z/keepbits.md) is 1, the values of [CBits](../a-z/cbits.md), [Bits](../a-z/bits.md) and [CMap](../a-z/cmap.md) **are** stored permanently in the workspace, and are used to rebuild the Bitmap when the workspace is `)LOAD`ed. In this case, the file name (if any) is ignored. Setting [KeepBits](../a-z/keepbits.md) to 1 uses more workspace, but may be more convenient if you want to distribute applications.
 
 
-The [Size](../a-z/size.md) property allows you to query the size of a Bitmap without having to retrieve the [CBits](../a-z/cbits.md) or [Bits](../a-z/bits.md) property and then take its "shape". This will be noticeably faster for a large Bitmap. If you set the [Size](../a-z/size.md) property using [`⎕WS`](../../Language/System%20Functions/ws.htm) the Bitmap is scaled to the new size.
+The [Size](../a-z/size.md) property allows you to query the size of a Bitmap without having to retrieve the [CBits](../a-z/cbits.md) or [Bits](../a-z/bits.md) property and then take its "shape". This will be noticeably faster for a large Bitmap. If you set the [Size](../a-z/size.md) property using [`⎕WS`](../../Language/System Functions/ws.htm) the Bitmap is scaled to the new size.
 
 
 A useful feature of a Bitmap is that it can be the parent of any of the graphical objects. This allows you to create or edit a bitmap by drawing lines, circles, etc. in it.
@@ -62,7 +62,7 @@ causes the Bitmap called `bmname` to be redefined from the bitmap file specified
 The [MakeGIF](../a-z/makegif.md) and [MakePNG](../a-z/makepng.md) methods may be used to convert the image represented by a Bitmap object into a GIF or PNG data stream, suitable for display in a web browser. The [TCPSendPicture](../a-z/tcpsendpicture.md) method may be used to transfer a Bitmap on a TCP/IP socket.
 
 
-Using a bitmap is always a 2-stage process. First you create a Bitmap object with [`⎕WC`](../../Language/System%20Functions/wc.htm). Then you use it by specifying its name as a property of another object.
+Using a bitmap is always a 2-stage process. First you create a Bitmap object with [`⎕WC`](../../Language/System Functions/wc.htm). Then you use it by specifying its name as a property of another object.
 
 
 The [Picture](../a-z/picture.md) property specifies the name of a Bitmap to be displayed in an [ActiveXControl](../a-z/activexcontrol.md), [Button](../a-z/button.md), [Form](../a-z/form.md), [Group](../a-z/group.md), [Image](../a-z/image.md), [MDIClient](../a-z/mdiclient.md), [Sm](../a-z/sm.md), [Static](../a-z/static.md), [StatusBar](../a-z/statusbar.md), [StatusField](../a-z/statusfield.md), [SubForm](../a-z/subform.md), [TabBar](../a-z/tabbar.md), or [ToolBar](../a-z/toolbar.md).

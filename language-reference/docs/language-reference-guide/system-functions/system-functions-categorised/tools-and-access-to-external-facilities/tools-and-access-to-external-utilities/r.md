@@ -8,7 +8,7 @@
 `⎕R` (Replace) and `⎕S` (Search) are system operators which take search pattern(s) as their left arguments and transformation rule(s) as their right arguments; the derived function operates on text data to perform either a **search**, or a search and **replace** operation.
 
 
-The search patterns may include *Regular Expressions* so that complex searches may be performed. `⎕R` and `⎕S` utilise the open-source regular-expression search engine PCRE, which is built into Dyalog APL and distributed according to the [PCRE licence](../Appendices/PCRE%20License.htm#PCRE_Licence) which is published separately.
+The search patterns may include *Regular Expressions* so that complex searches may be performed. `⎕R` and `⎕S` utilise the open-source regular-expression search engine PCRE, which is built into Dyalog APL and distributed according to the [PCRE licence](../Appendices/PCRE License.htm#PCRE_Licence) which is published separately.
 
 
 The transformation rules are applied to the text which matches the search patterns; they may be given as a simple character vector, numeric codes, or  a function.
@@ -808,14 +808,14 @@ The currency conversion requires the use of a function. Note the nested use of `
 Input file:
 
 
-| 01/03/1980,Widgets,DEM 10.20 02/04/1980,Bolts,DEM 61.75 17/06/1980,Nuts; special rate DEM 17.00,DEM 17.00 18/07/1980,Hammer,DEM 1.25 |
+| `01/03/1980,Widgets,DEM 10.20` `02/04/1980,Bolts,DEM 61.75` `17/06/1980,Nuts; special rate DEM 17.00,DEM 17.00` `18/07/1980,Hammer,DEM 1.25` |
 | ---  |
 
 
 Output file:
 
 
-| 1980-03-01,Widgets,€ 5.21 1980-04-02,Bolts,€ 31.57 1980-06-17,Nuts; special rate DEM 17.00,€ 8.69 1980-07-18,Hammer,€ 0.63 |
+| `1980-03-01,Widgets,€ 5.21` `1980-04-02,Bolts,€ 31.57` `1980-06-17,Nuts; special rate DEM 17.00,€ 8.69` `1980-07-18,Hammer,€ 0.63` |
 | ---  |
 ```apl
      ∇ ret←f a;d;m;y;v

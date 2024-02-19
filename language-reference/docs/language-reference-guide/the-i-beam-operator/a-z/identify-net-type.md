@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Identify .NET Type</span><span class="command">R←2017⌶Y</span></h1>
 
-Returns the .NET Type of a named .NET class that is loaded in the current AppDomain. Note that `System.Type.GetType` requires the fully qualified name, i.e. prefixed by the assembly name, whereas (`2017⌶`) does not.
+Returns the .NET Type of a named .NET class that is loaded in the current AppDomain. Note that System.Type.GetType requires the fully qualified name, i.e. prefixed by the assembly name, whereas (`2017⌶`) does not.
 
 
 `Y` is a character string containing the name of a .NET object. Unless the fully qualified name is given, the namespaces in the current AppDomain are searched in the order they are specified by  `⎕USING` or `:Using`.

@@ -2,16 +2,16 @@
 
 Certain .NET methods take parameters that are pointers.
 
-An example is the DivRem method that is provided by the System.Math class. This method performs an integer division, returning the quotient as its result, and the remainder in an address specified as a pointer by the calling program.
+An example is the `DivRem` method that is provided by the `System.Math` class. This method performs an integer division, returning the quotient as its result, and the remainder in an address specified as a pointer by the calling program.
 
-APL does not have a mechanism for dealing with pointers, so Dyalog provides a .NET class for this purpose. This is the Dyalog.ByRef class, which is a provided by an Assembly that is loaded automatically by the Dyalog APL program.
+APL does not have a mechanism for dealing with pointers, so Dyalog provides a .NET class for this purpose. This is the `Dyalog.ByRef` class, which is a provided by an Assembly that is loaded automatically by the Dyalog APL program.
 
-Firstly, to gain access to the Dyalog .NET Namespace, it must be specified by `⎕USING`. Note that you need not specify the Assembly (DLL) from which it is obtained (the  Bridge DLL), because (like mscorlib.dll) it is automatically loaded by when APL starts.
+Firstly, to gain access to the Dyalog .NET Namespace, it must be specified by `⎕USING`. Note that you need not specify the Assembly (DLL) from which it is obtained (the  Bridge DLL), because (like `mscorlib.dll`) it is automatically loaded by when APL starts.
 ```apl
       ⎕USING←'System' 'Dyalog'
 ```
 
-The Dyalog.ByRef class represents a pointer to an object of type System.Object. It has a number of constructors, some of which are used internally by APL itself. You only need to be concerned about two of them; the one that takes no parameters, and the one that takes a single parameter of type System.Object. The former is used to create an empty pointer; the latter to create a pointer to an object or some data.
+The `Dyalog.ByRef` class represents a pointer to an object of type `System.Object`. It has a number of constructors, some of which are used internally by APL itself. You only need to be concerned about two of them; the one that takes no parameters, and the one that takes a single parameter of type `System.Object`. The former is used to create an empty pointer; the latter to create a pointer to an object or some data.
 
 For example, to create an empty pointer:
 ```apl
@@ -27,7 +27,7 @@ Or, to create pointers to specific values,
 
 Notice that a single parameter is required, so you must enclose it if it is an array with several elements. Alternatively, the parameter may be a .NET object.
 
-The ByRef class has a single property called Value.
+The ByRef class has a single property called `Value`.
 ```apl
       ptr2.Value
 0
@@ -45,7 +45,7 @@ VALUE ERROR
      ^
 ```
 
-Returning to the example, we recall that the DivRem method takes 3 parameters:
+Returning to the example, we recall that the `DivRem` method takes 3 parameters:
 
 1. the numerator
 2. the denominator
@@ -61,7 +61,7 @@ VALUE ERROR
 14
 ```
 
-In some cases a .NET method may take a parameter that is an Array and the method expects to fill in the array with appropriate values. In APL there is no syntax to allow a parameter to a function to be modified in this way. However, we can use the Dyalog.ByRef class to call this method. For example, the System.IO.FileStream class contains a Read method that populates its first argument with the bytes in the file.
+In some cases a .NET method may take a parameter that is an Array and the method expects to fill in the array with appropriate values. In APL there is no syntax to allow a parameter to a function to be modified in this way. However, we can use the `Dyalog.ByRef` class to call this method. For example, the `System.IO.FileStream` class contains a `Read` method that populates its first argument with the bytes in the file.
 ```apl
       ⎕using←'System.IO' 'Dyalog' 'System'
       fs←⎕NEW FileStream ('c:\tmp\jd.txt' FileMode.Open) 

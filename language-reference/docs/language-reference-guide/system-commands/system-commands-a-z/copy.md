@@ -102,7 +102,7 @@ The current workspace has a class named `pete` whose Base class is called `base`
 ```
 
 
-A second workspace named copy.dws contains a different version of the `base` class:
+A second workspace named `copy.dws` contains a different version of the `base` class:
 ```apl
 :Class base
     ∇ r←foo n

@@ -79,7 +79,7 @@ thumb in the vertical and horizontal scrollbars respectively. When the user
 attempts to move the thumb in one of the scrollbars, the Form generates a [VScroll](./vscroll.md) or [HScroll](./hscroll.md) event.
 
 
-[VScroll](./vscroll.md) and [HScroll](./hscroll.md) cannot be changed using [`⎕WS`](../../Language/System%20Functions/ws.htm).
+[VScroll](./vscroll.md) and [HScroll](./hscroll.md) cannot be changed using [`⎕WS`](../../Language/System Functions/ws.htm).
 However, you can make a scrollbar disappear by setting the corresponding element
 of [Range](./range.md) to 1, thus allowing you to
 dynamically switch the scrollbar off and on. Note however that doing so will
@@ -94,7 +94,7 @@ The background of the Form may be coloured using [BCol](./bcol.md).
 The default value for [BCol](./bcol.md) is the Windows
 Button Face colour unless [EdgeStyle](./edgestyle.md) is
 set to `'None'` or `'Default'` in which case it is the Windows background colour. Alternatively, the background
-of a Form can be defined using a [Bitmap](bitmap.md) or [Metafile](metafile.md) object whose name is defined by the [Picture](./picture.md) property. A [Metafile](metafile.md) is automatically scaled
+of a Form can be defined using a [Bitmap](bitmap.md) or [Metafile](Metafile.htm) object whose name is defined by the [Picture](./picture.md) property. A [Metafile](Metafile.htm) is automatically scaled
 to fit the Form. A [Bitmap](bitmap.md) can be tiled *or* scaled. See [Picture](./picture.md) property for details.
 
 

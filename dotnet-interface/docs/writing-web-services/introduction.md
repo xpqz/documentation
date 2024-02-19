@@ -8,6 +8,6 @@ A Web Service is a class that may be called by any program running on the comput
 
 Web Services are hosted (i.e. executed) by ASP.NET running under Microsoft IIS. Any one Web Service sits on a single server computer and runs there under ASP.NET/IIS. The messages that invoke the Web Service, pass its arguments, and return its results, utilise standard HTTP/SOAP/XML protocols.
 
-A Web Service consists of a single text script file, with the extension .asmx, in an IIS Virtual Directory on the server computer.
+A Web Service consists of a single text script file, with the extension `.asmx`, in an IIS Virtual Directory on the server computer.
 
 A Web Service may expose a number of Methods and Properties. Methods may be called *synchronously* (the calling process waits for the result) or *asynchronously* (the calling process invokes the method, continues for a bit, and then subsequently checks for the result of the previous call).

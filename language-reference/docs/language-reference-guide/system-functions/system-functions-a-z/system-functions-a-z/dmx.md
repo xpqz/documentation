@@ -30,9 +30,9 @@
 OSError is a 3-element vector whose items are as follows:
 
 
-| `1` | integer | This indicates how an error from the operating system or a child process was retrieved. 0 = by the C-library errno() function 1 = by the Windows GetLastError() function 2 = as the exit status of a child process |
+| `1` | integer | This indicates how an error from the operating system or a child process was retrieved. 0 = by the C-library `errno()` function 1 = by the Windows `GetLastError()` function 2 = as the exit status of a child process |
 | --- | --- | ---  |
-| `2` | integer | Error code. The error number returned by the operating system using errno() or GetLastError() as above |
+| `2` | integer | Error code. The error number returned by the operating system using `errno()` or `GetLastError()` as above |
 | `3` | character vector | The description of the error returned by the operating system |
 
 

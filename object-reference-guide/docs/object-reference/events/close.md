@@ -30,7 +30,7 @@ Note that although all the object's child GUI objects will also be destroyed, n
 
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function is a 2-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function is a 2-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |

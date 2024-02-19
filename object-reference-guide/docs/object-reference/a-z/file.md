@@ -27,6 +27,6 @@ If it is nested, the first element specifies the name of a DLL or ([Icon](./icon
 For a [Metafile](./metafile.md) object, File must be simple and specifies the name of a metafile (.WMF) file. For a [RichEdit](./richedit.md) object, File must be simple and specifies the name of a Rich text Format (.RTF) file.
 
 
-When applied to a [FileBox](./filebox.md) object, File contains the name (or names) of the selected file (or files) depending upon the value of its [Style](style.md) (`'Single'` or `'Multi').`
+When applied to a [FileBox](./filebox.md) object, File contains the name (or names) of the selected file (or files) depending upon the value of its [Style](Style.htm) (`'Single'` or `'Multi').`
 
 

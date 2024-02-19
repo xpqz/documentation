@@ -29,7 +29,7 @@ Note that the colours implied by the [Style](./style.md) are not "hard-coded" bu
 | White | Window Background Colour |
 
 
-If the background colour of the [Form](form.md) is also set to the Window Background Colour, it follows that the [Style](./style.md)s `'WhiteFrame'` and `'WhiteBox'` make the Static itself invisible (against the background), although the **contents** of the Static will show. This makes the Static appear like an invisible clipping window.
+If the background colour of the [Form](Form.htm) is also set to the Window Background Colour, it follows that the [Style](./style.md)s `'WhiteFrame'` and `'WhiteBox'` make the Static itself invisible (against the background), although the **contents** of the Static will show. This makes the Static appear like an invisible clipping window.
 
 
 | `'BlackFrame'` | `'BlackBox'` |

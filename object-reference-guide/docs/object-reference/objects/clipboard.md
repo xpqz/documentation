@@ -23,13 +23,13 @@ When an application places data in the Windows clipboard, it may store it in one
 In addition, the [Array](../a-z/array.md) property may be used to set or retrieve clipboard contents in Dyalog APL array format.
 
 
-Data is read from the clipboard using [`⎕WG`](../../Language/System%20Functions/wg.htm), specifying the name of the appropriate property for the data that you want.
+Data is read from the clipboard using [`⎕WG`](../../Language/System Functions/wg.htm), specifying the name of the appropriate property for the data that you want.
 
 
-If the data has been stored in CF_Text format, the value of [Formats](../a-z/formats.md) will include `'Text'` and you may retrieve the data by querying the value of the [Text](../a-z/text.md) property with [`⎕WG`](../../Language/System%20Functions/wg.htm).
+If the data has been stored in CF_Text format, the value of [Formats](../a-z/formats.md) will include `'Text'` and you may retrieve the data by querying the value of the [Text](../a-z/text.md) property with [`⎕WG`](../../Language/System Functions/wg.htm).
 
 
-If the data has been stored in **device-independent** bitmap format, the value of [Formats](../a-z/formats.md) will include `'CBits'`, `'Bits'` and `'CMap'`. To retrieve the bitmap pattern and colour map, you may query the values of the [CBits](../a-z/cbits.md), or [Bits](../a-z/bits.md) and [CMap](../a-z/cmap.md) properties using [`⎕WG`](../../Language/System%20Functions/wg.htm).
+If the data has been stored in **device-independent** bitmap format, the value of [Formats](../a-z/formats.md) will include `'CBits'`, `'Bits'` and `'CMap'`. To retrieve the bitmap pattern and colour map, you may query the values of the [CBits](../a-z/cbits.md), or [Bits](../a-z/bits.md) and [CMap](../a-z/cmap.md) properties using [`⎕WG`](../../Language/System Functions/wg.htm).
 
 
 If the data has been stored in **device-dependent** bitmap format, only the bitmap pattern is available and [Formats](../a-z/formats.md) will contain `'Bits'` but not `'CMap'`. In this case you can query the [Bits](../a-z/bits.md) property but not [CMap](../a-z/cmap.md) without which you cannot realise the bitmap. However, if data was posted in this format, it is highly probable that the current Windows colour map applies to it. For a standard 16-colour device this is given under the description of the [CMap](../a-z/cmap.md) property.
@@ -53,7 +53,7 @@ The next example retrieves a bitmap from the clipboard and defines it as a [Bitm
 
 
 
-Data may be placed in the clipboard using [`⎕WC`](../../Language/System%20Functions/wc.htm) or [`⎕WS`](../../Language/System%20Functions/ws.htm). To store text, you simply set the [Text](../a-z/text.md) property. You may use a simple character vector or matrix, or a vector of character vectors. For example :
+Data may be placed in the clipboard using [`⎕WC`](../../Language/System Functions/wc.htm) or [`⎕WS`](../../Language/System Functions/ws.htm). To store text, you simply set the [Text](../a-z/text.md) property. You may use a simple character vector or matrix, or a vector of character vectors. For example :
 ```apl
       'CL' ⎕WS 'Text' 'Hello World'
 ```
@@ -75,7 +75,7 @@ or
 
 
 
-Note that if you use the latter method, you must set **both** properties in one [`⎕WS`](../../Language/System%20Functions/ws.htm) statement. This is also true if you wish to store data in both Text and Bitmap formats together.
+Note that if you use the latter method, you must set **both** properties in one [`⎕WS`](../../Language/System Functions/ws.htm) statement. This is also true if you wish to store data in both Text and Bitmap formats together.
 
 
 The [Metafile](../a-z/metafileobj.md) property allows graphical information to be restored in and retrieved from the clipboard in Windows Metafile format. See the description of the [Metafile](../a-z/metafileobj.md) property for details.

@@ -24,7 +24,7 @@ top and given the focus.
 
 TabBar and [TabBtn](tabbtn.md) objects were implemented
 before Windows provided direct support for tabbed dialogs, and have been
-superceded by [TabControl](tabcontrol.md) and [TabButton](tabbutton.md) objects. Please use these instead.
+superceded by [TabControl](tabcontrol.md) and [TabButton](TabButton.htm) objects. Please use these instead.
 
 
 By default, a TabBar is a flat bar stretched across the bottom of its parent

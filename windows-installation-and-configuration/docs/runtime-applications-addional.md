@@ -29,11 +29,11 @@ If your run-time application uses any of the bitmaps or other GUI resources that
 
 #### AUXILIARY PROCESSORS
 
-If you use any of the Auxiliary Processors (APs) included in the sub-directory xutils, you must include these with your application. Note that, like workspaces, Dyalog APL searches for APs using the WSPATH parameter. If your application uses APs, you must ensure that you specify WSPATH or that the default WSPATH is adequate for your application..
+If you use any of the Auxiliary Processors (APs) included in the sub-directory `xutils`, you must include these with your application. Note that, like workspaces, Dyalog APL searches for APs using the WSPATH parameter. If your application uses APs, you must ensure that you specify WSPATH or that the default WSPATH is adequate for your application..
 
 #### DYALOG32 and/or DYALOG64
 
-This DLL is used by some of the functions provided in the QUADNA.DWS workspace. If you include any of these in your application this DLL must be installed in the user's Windows directory or be on the user's path.
+This DLL is used by some of the functions provided in the `QUADNA.DWS` workspace. If you include any of these in your application this DLL must be installed in the user's Windows directory or be on the user's path.
 
 ### Universal C Runtime DLLs
 
@@ -53,7 +53,7 @@ The UCRT is not supplied with versions of Windows prior to Windows 10. On these 
 
 The VCRedist package, which includes the UCRT, is supplied with the Dyalog development package.
 
-Simply copy the vc_redistx86.exe (32-bit version) or vc_redistx64.exe (64-bit version) program from the Dyalog development package into your own installation package and  execute it as part of the installation of your Dyalog run-time application. This installs the UCRT into a shared Windows location; in effect the UCRT becomes part of the Windows system. The installation therefore requires Administrator privileges.
+Simply copy the `vc_redistx86.exe` (32-bit version) or `vc_redistx64.exe` (64-bit version) program from the Dyalog development package into your own installation package and  execute it as part of the installation of your Dyalog run-time application. This installs the UCRT into a shared Windows location; in effect the UCRT becomes part of the Windows system. The installation therefore requires Administrator privileges.
 
 #### App-local Installation
 
@@ -63,10 +63,10 @@ An alternative is to install the UCRT components into the same directory as your
 
 Install the Dyalog development package (ideally onto a separate system just for this purpose) without administrator rights. This will perform an App-local installation of Dyalog itself. Then copy the UCRT files into your installation package. These files are:
 
-- those beginning with api-ms*
-- ucrtbase.dll
+- those beginning with `api-ms*`
+- `ucrtbase.dll`
 
-- vcruntime140.dll
+- `vcruntime140.dll`
 
 ### Or:
 

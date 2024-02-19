@@ -8,15 +8,15 @@ In addition, to use the controls contained in these assemblies it is necessary t
 
 ### Using XAML
 
-If using XAML, the XAML must include the appropriate xmlns statements that specify where the Syncfusion controls are to be found. For example:
+If using XAML, the XAML must include the appropriate `xmlns` statements that specify where the Syncfusion controls are to be found. For example:
 ```apl
-xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Gauge;
-                  assembly=Syncfusion.Gauge.WPF"
+`xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Gauge;
+                  assembly=Syncfusion.Gauge.WPF"`
 ```
 
-The above statement defines the prefix syncfusion to mean the specified Syncfusion namespace and assembly that contains the various Gauge controls. When the prefix syncfusion is subsequently used in front of a control in the XAML, the system knows where to find it. For example:
+The above statement defines the prefix `syncfusion` to mean the specified Syncfusion namespace and assembly that contains the various Gauge controls. When the prefix `syncfusion` is subsequently used in front of a control in the XAML, the system knows where to find it. For example:
 ```apl
-<syncfusion:CircularGauge Name="fahrenheit" Margin="10">
+`<syncfusion:CircularGauge Name="fahrenheit" Margin="10">`
 ```
 
 ### ⎕USING
@@ -27,7 +27,7 @@ In common with all .NET types, when a Syncfusion control is loaded using XAML or
        ⎕USING,←⊂'Syncfusion.Windows.Gauge,Syncfusion/4.6/Syncfusion.Gauge.WPF.dll'
 ```
 
-This statement tells APL to search the .NET namespace named **Syncfusion.Windows.Gauge**, which is located in the assembly file whose path (relative to the Dyalog installation directory) is  Syncfusion/4.6/Syncfusion.Gauge.WPF.dll.
+This statement tells APL to search the .NET namespace named **Syncfusion.Windows.Gauge**, which is located in the assembly file whose path (relative to the Dyalog installation directory) is  `Syncfusion/4.6/Syncfusion.Gauge.WPF.dll`.
 
 Under a licensing agreement with Syncfusion, Dyalog includes the Syncfusion library of WPF controls. These may be used by Dyalog APL users to develop applications, and may be distributed with Dyalog APL run-time applications.
 

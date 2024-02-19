@@ -55,6 +55,6 @@ For a [Scroll](../a-z/scroll.md) object, Align also determines the direction of 
 #### Note
 
 
-The value of the Align property may **only** be assigned by [`⎕WC`](../../Language/System%20Functions/wc.htm) and may **not** be changed using [`⎕WS`](../../Language/System%20Functions/ws.htm).
+The value of the Align property may **only** be assigned by [`⎕WC`](../../Language/System Functions/wc.htm) and may **not** be changed using [`⎕WS`](../../Language/System Functions/ws.htm).
 
 

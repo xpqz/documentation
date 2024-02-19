@@ -11,7 +11,7 @@ The name of the PropertySet function must be `Set`, but is case-independent. For
 The PropertySet function must be monadic and may not return a result.
 
 
-`ipa` is an instance of the internal class [PropertyArguments](propertyarguments-class.md).
+`ipa` is an instance of the internal class [PropertyArguments](PropertyArguments Class.htm).
 
 
 In all cases, `ipa.Name` contains the name of the Property being referenced and `NewValue` contains the new value(s) for the element(s) of the Property being assigned.

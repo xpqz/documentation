@@ -11,4 +11,4 @@ The user may enter a temperature value in either Fahrenheit or Centigrade and ha
 
 No attempt has been made to update the WPF example, in terms of its user-interface, from the original version which was developed for Windows 3. This allows a direct comparison to be made between using the WPF and using the built-in Dyalog GUI.
 
-There are two versions provided. The first uses XAML to describe the user-interface with code to drive it. The second version is written entirely in APL code. The two versions of this example may be found in WPFIntro.dws in the namespaces `UsingXAML` and `UsingCode` respectively.
+There are two versions provided. The first uses XAML to describe the user-interface with code to drive it. The second version is written entirely in APL code. The two versions of this example may be found in `WPFIntro.dws` in the namespaces `UsingXAML` and `UsingCode` respectively.

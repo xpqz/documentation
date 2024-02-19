@@ -1,6 +1,6 @@
 # Documentation
 
-The documentation set for Dyalog is installed in the help sub-directory of the main Dyalog installation directory.
+The documentation set for Dyalog is installed in the `help` sub-directory of the main Dyalog installation directory.
 
 The latter is given by the expression:
 ```apl

@@ -1,8 +1,8 @@
 # Namespace Script Example
 
-The [DiaryStuff](DiaryStuff%20Example%20Namespace.htm) example illustrates the manner in which classes may be defined and used in a Namespace script.
+The [DiaryStuff](DiaryStuff Example Namespace.htm) example illustrates the manner in which classes may be defined and used in a Namespace script.
 
-[DiaryStuff](DiaryStuff%20Example%20Namespace.htm) defines two Classes named `Diary` and `DiaryEntry`.
+[DiaryStuff](DiaryStuff Example Namespace.htm) defines two Classes named `Diary` and `DiaryEntry`.
 
 `Diary` contains a (private) Field named `entries`, which is simply a vector of instances of `DiaryEntry`. These are 2-element vectors containing a .NET DateTime object and a description.
 

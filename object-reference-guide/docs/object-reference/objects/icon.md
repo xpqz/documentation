@@ -23,7 +23,7 @@ The [File](../a-z/file.md) property specifies the name of an icon  file (.ICO. .
 The Style property identifies the size of the icon and must be `'Large'` or `'Small'`. The former specifies a 32x32 icon and is the default; the latter specifies a 16x16 icon. The size of the icon is not embedded within the icon data, so it is **essential** to specify Style correctly. Note that a single file may contain both sizes of an icon. Style is only relevant when loading an Icon from file.
 
 
-If the value of the [File](../a-z/file.md) property is set by [`⎕WS`](../../Language/System%20Functions/ws.htm), no immediate action is taken, but the corresponding file may subsequently be read or written using the [FileRead](../a-z/fileread.md) or [FileWrite](../a-z/filewrite.md) methods.
+If the value of the [File](../a-z/file.md) property is set by [`⎕WS`](../../Language/System Functions/ws.htm), no immediate action is taken, but the corresponding file may subsequently be read or written using the [FileRead](../a-z/fileread.md) or [FileWrite](../a-z/filewrite.md) methods.
 
 
 16-bit icons contain fewer than 256 colours and each pixel is either transparent or opaque. The images in such Icons are represented by the [Bits](../a-z/bits.md), [Mask](../a-z/mask.md) and [CMap](../a-z/cmap.md) properties.

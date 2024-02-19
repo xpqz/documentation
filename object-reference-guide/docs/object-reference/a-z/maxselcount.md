@@ -18,7 +18,7 @@ The MaxSelCount property specifies the maximum number of contiguous days that th
 MaxSelCount is an integer whose default value is 7.
 
 
-MaxSelCount is ignored unless the [Style](style.md) property of the [Calendar](./calendar.md) object is set to `'Multi'`.
+MaxSelCount is ignored unless the [Style](Style.htm) property of the [Calendar](./calendar.md) object is set to `'Multi'`.
 
 
 

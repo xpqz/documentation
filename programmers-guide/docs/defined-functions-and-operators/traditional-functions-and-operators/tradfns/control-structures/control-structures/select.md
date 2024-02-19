@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Select Statement</span><span class="command">:Select aexp</span></h1>
 
-[Formal Definition](Select%20Statement%20Definition.htm)
+[Formal Definition](Select Statement Definition.htm)
 
 
 A `:Select` structure is used to execute alternative blocks of code depending upon the value of an array.  For example, the following displays `'I is 1'` if the variable `I` has the value 1, `'I is 2'` if it is 2, or `'I is neither 1 nor 2'` if it has some other value.

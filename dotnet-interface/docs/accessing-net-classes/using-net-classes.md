@@ -6,7 +6,7 @@ If the argument is a scalar or a 1-element vector, an instance of the class is c
 
 If the argument is a 2-element vector, an instance of the class is created using the *constructor* whose argument matches the disclosed second element.
 
-For example, to create a DateTime object whose value is the 30th April 2008:
+For example, to create a `DateTime` object whose value is the 30th April 2008:
 ```apl
       ⎕USING←'System'
  
@@ -20,7 +20,7 @@ The result of  `⎕NEW` is an reference to the newly created instance:
 9.2
 ```
 
-If you format a reference to a .NET Object, APL calls its ToString method to obtain a useful description or identification of the object. This topic is discussed in more detail later in this chapter.
+If you format a reference to a .NET Object, APL calls its `ToString` method to obtain a useful description or identification of the object. This topic is discussed in more detail later in this chapter.
 ```apl
       mydt
 30/04/2008 00:00:00
@@ -33,7 +33,7 @@ If you want to use fully qualified class names instead, one of the elements of `
       mydt←⎕NEW System.DateTime (2008 4 30)
 ```
 
-When creating an instance of the DateTime class, you are required to provide an argument with two elements: (the class and the *constructor argument*, in our case a 3-element vector representing the date). Many classes provide a default constructor which takes no arguments. From Dyalog APL, the *default constructor* is called by calling `⎕NEW` with only a reference to the class in the argument. For example, to obtain a default `Button` object, we only need to write:
+When creating an instance of the `DateTime` class, you are required to provide an argument with two elements: (the class and the *constructor argument*, in our case a 3-element vector representing the date). Many classes provide a default constructor which takes no arguments. From Dyalog APL, the *default constructor* is called by calling `⎕NEW` with only a reference to the class in the argument. For example, to obtain a default `Button` object, we only need to write:
 ```apl
       mybtn←⎕NEW Button
 ```
@@ -44,11 +44,11 @@ The mechanism by which APL associates the class name with a class in a .NET name
 
 ### Constructors and Overloading
 
-Each .NET Class has one or more *constructor* methods. A constructor is a method which is called to initialise an instance of the Class. Typically, a Class will support several constructor methods - each with a different set of parameters. For example, System.DateTime supports a constructor that takes three Int32 parameters (year, month, day), another that takes six Int32 parameters (year, month, day, hour, minute, second), and so forth. These different constructor methods are not distinguished by having different names but by the different sets of parameters they accept.
+Each .NET Class has one or more *constructor* methods. A constructor is a method which is called to initialise an instance of the Class. Typically, a Class will support several constructor methods - each with a different set of parameters. For example, `System.DateTime` supports a constructor that takes three `Int32` parameters (year, month, day), another that takes six `Int32` parameters (year, month, day, hour, minute, second), and so forth. These different constructor methods are not distinguished by having different names but by the different sets of parameters they accept.
 
 This concept, which is known as *overloading*, may seem somewhat alien to the APL programmer. After all, we are used to defining functions that accept a whole range of different arguments. However, type checking, which is fundamental to the .NET Framework, requires that a method is called with the correct number of parameters, and that each parameter is of a predefined type. Overloading solves this issue.
 
-When you create an instance of a class in C#, you do so using the new operator. This is automatically mapped to the appropriate constructor method by matching the parameters you supply to the various forms of the constructor. A similar mechanism is implemented in Dyalog APL using the `⎕NEW` system function.
+When you create an instance of a class in C#, you do so using the `new` operator. This is automatically mapped to the appropriate constructor method by matching the parameters you supply to the various forms of the constructor. A similar mechanism is implemented in Dyalog APL using the `⎕NEW` system function.
 
 ### How the ⎕NEW System Function is implemented
 
@@ -69,7 +69,7 @@ Otherwise, if you use `⎕NEW` with a class as argument and a second element, AP
 
 ### Displaying a .NET Object
 
-When you display a reference to a .NET object, APL calls the object's ToString method and displays the result. All objects provide a ToString method because all objects ultimately inherit from the .NET class System.Object. Many .NET classes will provide their own ToString that overrides the one inherited from System.Object, and return a useful description or identifier for the object in question. ToString usually supports a range of calling parameters, but APL always calls the version of ToString that is defined to take no calling parameters. Monadic format (`⍕`) and monadic `⎕FMT` have been extended to provide the same result, and provides a quick shorthand method to call ToString in this way. The default ToString supplied by System.Object returns the name of the object's Type. This can be changed using the system function `⎕DF`. For example,
+When you display a reference to a .NET object, APL calls the object's `ToString` method and displays the result. All objects provide a `ToString` method because all objects ultimately inherit from the .NET class `System.Object`. Many .NET classes will provide their own `ToString` that overrides the one inherited from `System.Object`, and return a useful description or identifier for the object in question. `ToString` usually supports a range of calling parameters, but APL always calls the version of `ToString` that is defined to take no calling parameters. Monadic format (`⍕`) and monadic `⎕FMT` have been extended to provide the same result, and provides a quick shorthand method to call `ToString` in this way. The default `ToString` supplied by `System.Object` returns the name of the object's Type. This can be changed using the system function `⎕DF`. For example,
 ```apl
      z←⎕NEW DateTime ⎕TS
      z.(⎕DF(⍕DayOfWeek),,'G< 99:99>'⎕FMT 100⊥Hour Minute)
@@ -78,7 +78,7 @@ Saturday 09:17
 
 ```
 
-Note that if you want to check the type of an object, this can be obtained using the GetType method, which is supported by all .NET objects.
+Note that if you want to check the type of an object, this can be obtained using the `GetType` method, which is supported by all .NET objects.
 
 ### Disposing of .NET Objects
 
@@ -90,7 +90,7 @@ De-allocated memory may not actually be re-used immediately and may indeed never
 
 Furthermore, a .NET object may allocate unmanaged resources (such as window handles) which are not automatically released by the CLR.
 
-To allow the programmer to control the freeing of resources associated with .NET objects in a standard way, objects implement the `IDisposable` interface which provides a `Dispose()` method. The C# language provides a using control structure that automates the freeing of resources. Crucially, it does so however the flow of execution exits the control structure, even as a result of error handling. This obviates the need for the programmer to call `Dispose()` explicitly wherever it may be required.
+To allow the programmer to control the freeing of resources associated with .NET objects in a standard way, objects implement the IDisposable interface which provides a Dispose() method. The C# language provides a `using` control structure that automates the freeing of resources. Crucially, it does so however the flow of execution exits the control structure, even as a result of error handling. This obviates the need for the programmer to call Dispose() explicitly wherever it may be required.
 
 This programming convenience is provide in Dyalog APL by the `:Disposable ... :EndDisposable` control structure. For further information, see  
 Language Reference Guide: 

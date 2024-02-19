@@ -20,7 +20,7 @@ The HTMLRenderer object renders HTML in a window on the screen. It may appear a
 
 
 
-The HTMLRenderer is implemented using the  [Chromium Embedded Framework (CEF).](https://en.wikipedia.org/wiki/Chromium_Embedded_Framework) Note that if the  [ENABLE_CEF parameter](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters.htm#ENABLE_CEF) is set to 0 (its default value is 1) the CEF is disabled and an attempt to create an HTMLRenderer object will fail with an error message.
+The HTMLRenderer is implemented using the  [Chromium Embedded Framework (CEF).](https://en.wikipedia.org/wiki/Chromium_Embedded_Framework) Note that if the  [ENABLE_CEF parameter](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#ENABLE_CEF) is set to 0 (its default value is 1) the CEF is disabled and an attempt to create an HTMLRenderer object will fail with an error message.
 
 
 The HTMLRenderer object can be considered as two components; a client implemented using CEF and an internal server which implements an interface from the APL workspace to the client.  The client may communicate with both the internal server and external servers on the web. Thus it can combine and display information from external and internal feeds.
@@ -65,7 +65,7 @@ Requests handled by the CEF push the request out to the network to be serviced b
 An alternative is to initialise the HTMLRenderer by setting its [URL](../a-z/url.md) property. This is typically  used to display external content , rather than content delivered from the workspace.
 
 
-If neither [HTML](../a-z/html.md) nor [URL](../a-z/url.md) is set when the HTMLRenderer is created, it will generate an [HTTPRequest](../a-z/httprequest.md) event with a requested url of http://dyalog_root.
+If neither [HTML](../a-z/html.md) nor [URL](../a-z/url.md) is set when the HTMLRenderer is created, it will generate an [HTTPRequest](../a-z/httprequest.md) event with a requested url of `http://dyalog_root`.
 
 
 When the HTMLRenderer is displayed in its own window, the  window caption is set by an assignment to its [Caption](../a-z/caption.md) property. The window caption may subsequently change  when content is displayed  (typically  by the title tag in the html). The [Caption](../a-z/caption.md) property reports the current window caption.

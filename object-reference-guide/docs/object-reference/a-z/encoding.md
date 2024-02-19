@@ -18,7 +18,7 @@ are encoded or translated.
 
 
 The possible values are `'None'`,
-`'UTF-8'`, `'Classic'`, or `'Unicode'`, depending upon the value of the [Style](style.md) property.
+`'UTF-8'`, `'Classic'`, or `'Unicode'`, depending upon the value of the [Style](Style.htm) property.
 
 
 
@@ -49,15 +49,15 @@ Classic Edition
 
 
 
-The default value of Encoding depends upon the value of [Style](style.md) as indicated.  Default values are highlighted thus.  in the above tables.
+The default value of Encoding depends upon the value of [Style](Style.htm) as indicated.  Default values are highlighted thus.  in the above tables.
 
 
-An attempt to set the value of Encoding to a value not valid for the current [Style](style.md),
+An attempt to set the value of Encoding to a value not valid for the current [Style](Style.htm),
 as implied by the above tables, will cause `DOMAIN ERROR`.
 
 
-If you change the value of the [Style](style.md) property, the value of Encoding will remain unchanged if it is valid for the new
-Style. Otherwise it will revert to the default value for the new value of [Style](style.md).
+If you change the value of the [Style](Style.htm) property, the value of Encoding will remain unchanged if it is valid for the new
+Style. Otherwise it will revert to the default value for the new value of [Style](Style.htm).
 ```apl
       's0'⎕WC'TCPSocket' ('LocalPort' 2001)
       s0.(Style Encoding)

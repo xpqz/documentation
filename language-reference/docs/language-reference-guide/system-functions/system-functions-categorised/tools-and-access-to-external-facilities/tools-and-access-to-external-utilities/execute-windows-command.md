@@ -50,10 +50,10 @@ If this is done, APL detects the presence of a "`>`" in the command line, runs t
 (Command Prompt window appears)
 
 
-Current date is Wed 19-07-1995
+`Current date is Wed 19-07-1995`
 
 
-Enter new date (dd-mm-yy): 20-07-95
+`Enter new date (dd-mm-yy): 20-07-95`
 
 
 (COMMAND PROMPT window disappears)
@@ -68,7 +68,7 @@ If `Y` specifies a program (with or without parameters) and the pathname to the 
 
 For example, to start a version of Excel to which the pathname is:
 ```apl
-   C:\Program Files\Microsoft Office\OFFICE11\excel.exe
+`C:\Program Files\Microsoft Office\OFFICE11\excel.exe`
 ```
 
 
@@ -113,7 +113,7 @@ The right argument of `⎕CMD` is simply passed to the appropriate command proce
 By default, `⎕CMD` will execute the string `('cmd.exe /c',Y)`; where `Y` is the argument given to `⎕CMD`.  However, the implementation permits the use of alternative command processors as follows:
 
 
-Before execution, the argument is prefixed and postfixed with strings defined by the APL parameters CMD_PREFIX and CMD_POSTFIX.  The former specifies the name of your command processor and any parameters that it requires.  The latter specifies a string which may be required.  If CMD_PREFIX is not defined, it defaults to the name defined by the environment variable COMSPEC followed by  "/c".  If COMSPEC is not defined, it defaults to cmd.exe.  If CMD_POSTFIX is not defined, it defaults to an empty vector.
+Before execution, the argument is prefixed and postfixed with strings defined by the APL parameters CMD_PREFIX and CMD_POSTFIX.  The former specifies the name of your command processor and any parameters that it requires.  The latter specifies a string which may be required.  If CMD_PREFIX is not defined, it defaults to the name defined by the environment variable COMSPEC followed by  "/c".  If COMSPEC is not defined, it defaults to `cmd.exe`.  If CMD_POSTFIX is not defined, it defaults to an empty vector.
 
 
 

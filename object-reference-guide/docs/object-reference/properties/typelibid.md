@@ -12,7 +12,7 @@
 **Description**
 
 
-The TypeLibID property is a read-only property that reports the value of the globally unique identifier ([GUID](../Miscellaneous/Globally%20Unique%20Identifier%20GUID.htm)) of the Type Library associated with a COM object.
+The TypeLibID property is a read-only property that reports the value of the globally unique identifier ([GUID](../Miscellaneous/Globally Unique Identifier GUID.htm)) of the Type Library associated with a COM object.
 
 
 

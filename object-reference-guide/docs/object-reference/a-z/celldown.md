@@ -20,7 +20,7 @@ The default action is to generate a [CellMove](./cellmove.md) event which will t
 
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is an 9 element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is an 9 element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |

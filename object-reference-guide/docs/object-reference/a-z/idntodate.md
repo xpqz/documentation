@@ -12,7 +12,7 @@
 **Description**
 
 
-This method is used to convert a date from an [IDN](../Miscellaneous/International%20Day%20Number.htm) into `⎕TS` format (year, month, day). The corresponding day of the week is also obtained.
+This method is used to convert a date from an [IDN](../Miscellaneous/International Day Number.htm) into `⎕TS` format (year, month, day). The corresponding day of the week is also obtained.
 
 
 The argument to IDNToDate is a single item as follows:

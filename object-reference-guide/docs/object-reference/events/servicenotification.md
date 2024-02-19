@@ -18,7 +18,7 @@ Installation & Configuration Guide:
 APL Application as a ServiceAPL Application as a Service on page 1.
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 4-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |
@@ -29,7 +29,7 @@ The event message reported as the result of [`⎕DQ`](../../Language/System%20Fu
 
 
 
-For further details, see the on-line documentation for SERVICE_STATE and the function `HashDefine` in the sample workspace aplservice.
+For further details, see the on-line documentation for `SERVICE_STATE` and the function `HashDefine` in the sample workspace `aplservice`.
 
 
 The state of a Windows service is determined by the user and the Windows Service Control Manager (SCM).

@@ -27,12 +27,12 @@ Note that if word-wrapping is in effect in a multi-line [Edit](./edit.md) object
 In a [Text](./text.md) object, the value of the Text property may be a simple scalar, an enclosed vector or matrix, a simple vector, a simple matrix, or a vector of enclosed vectors or matrices.
 
 
-In general, the value of Text returned by [`⎕WG`](../../Language/System%20Functions/wg.htm) has the same structure that was assigned to it by [`⎕WC`](../../Language/System%20Functions/wc.htm) or by the most recent call to [`⎕WS`](../../Language/System%20Functions/ws.htm). New-Line characters entered by the users are removed.
+In general, the value of Text returned by [`⎕WG`](../../Language/System Functions/wg.htm) has the same structure that was assigned to it by [`⎕WC`](../../Language/System Functions/wc.htm) or by the most recent call to [`⎕WS`](../../Language/System Functions/ws.htm). New-Line characters entered by the users are removed.
 
 
-You can copy text into the Windows [Clipboard](./clipboard.md) by using [`⎕WS`](../../Language/System%20Functions/ws.htm) to set Text for a [Clipboard](./clipboard.md) object. In this case you may specify a simple character scalar, vector or matrix, or a vector of character vectors. If you are retrieving data from the clipboard that has been stored by another application, Text will be either a character vector or a vector of character vectors.
+You can copy text into the Windows [Clipboard](./clipboard.md) by using [`⎕WS`](../../Language/System Functions/ws.htm) to set Text for a [Clipboard](./clipboard.md) object. In this case you may specify a simple character scalar, vector or matrix, or a vector of character vectors. If you are retrieving data from the clipboard that has been stored by another application, Text will be either a character vector or a vector of character vectors.
 
 
-The Text property of a [StatusField](./statusfield.md) is updated automatically if its [Style](style.md) property is set to monitor the status of a key.
+The Text property of a [StatusField](./statusfield.md) is updated automatically if its [Style](Style.htm) property is set to monitor the status of a key.
 
 

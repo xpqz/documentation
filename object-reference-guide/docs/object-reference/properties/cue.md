@@ -33,6 +33,3 @@ The  Boolean property [ShowCueWhenFocused](../a-z/showcuewhenfocused.md)  determ
 **Note that this feature only applies if Native Look and Feel (see page 1) is enabled.**
 
 
-**Note that this feature only applies if Native Look and Feel (see page 1) is enabled.**
-
-

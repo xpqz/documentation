@@ -24,15 +24,15 @@ By default, the Dyalog APL DLL does not use a fixed maximum workspace size, but 
 
 Nevertheless, it is possible to specify a value for maxws for the application in which the Dyalog APL DLL is embedded. This is achieved by defining a Registry key named:
 ```apl
-HKLM\Software\Dyalog\Embedded\<appname>
+`HKLM\Software\Dyalog\Embedded\<appname>`
 ```
 
 or on 64-bit Windows:
 ```apl
-HKLM\Software\Wow6432Node\Dyalog\Embedded\<appname>
+`HKLM\Software\Wow6432Node\Dyalog\Embedded\<appname>`
 ```
 
-where <appname> is the name of the application, containing a String Value named maxws set to the desired size. If you were running an APL in-process server from Microsoft Excel, the application name would be excel.exe.
+where `<appname>` is the name of the application, containing a String Value named `maxws` set to the desired size. If you were running an APL in-process server from Microsoft Excel, the application name would be `excel.exe`.
 
 When an application loads its first Dyalog APL COM object, it starts the Dyalog APL DLL which initialises a `CLEAR WS`. It then copies the namespace tree for the appropriate OLEServer or ActiveXControl object into its active workspace.
 

@@ -18,7 +18,7 @@ the time.
 
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm),
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm),
 or supplied as the right argument to your callback function, is a 6-element
 vector as follows :
 

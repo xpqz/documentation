@@ -8,8 +8,8 @@ Typically, a script will generate HTML dynamically, when the page is loaded. For
 
 The first time ASP.NET processes a .NET web page, it compiles the entire page into a .NET Assembly. Subsequently, it calls the code in the assembly directly. The language used to compile the page is defined in the <script> section, which is typically defined at the top of the page. If the <script> section is omitted, or if it fails to explicitly specify the language attribute, the page is compiled using the default scripting language. This is configurable, but is typically VB or C#.
 
-This Chapter is made up almost entirely of examples, the source code of which is supplied in the samples\asp.net directory and the sub-directories it contains. This directory is mapped as an IIS Virtual Directory named dyalog.net, so you may execute the examples by specifying the URL http://localhost/dyalog.net/ followed by the name of the sub-directory and page. You can get an overview of the samples by starting on the page http://localhost/dyalog.net/index.htm and follow links from there.
+This Chapter is made up almost entirely of examples, the source code of which is supplied in the samples\asp.net directory and the sub-directories it contains. This directory is mapped as an IIS Virtual Directory named `dyalog.net`, so you may execute the examples by specifying the URL `http://localhost/dyalog.net/` followed by the name of the sub-directory and page. You can get an overview of the samples by starting on the page `http://localhost/dyalog.net/index.htm` and follow links from there.
 
-To use APLScript effectively in Web Pages, you need to have a thorough understanding of how ASP.NET works.
+To use `APLScript` effectively in Web Pages, you need to have a thorough understanding of how ASP.NET works.
 
 In the first example, an outline description ASP.NET technology is provided. For further information, see the Microsoft .NET Framework documentation and *Beginning ASP.NET using VB.NET*, Wrox Press Ltd, ISBN 1861005040.

@@ -29,7 +29,7 @@ The [File](../a-z/file.md) property specifies the name of a file associated with
 The [Text](../a-z/text.md) property may be used to set or retrieve the text of the RichEdit, but ignores formatting information. [Text](../a-z/text.md) may set using a simple character vector, a simple matrix, or a vector of vectors. If  [Text](../a-z/text.md) is specified by a matrix or by a vector of vectors, "new-line" characters are automatically added at the end of each line in the RichEdit control.
 
 
-The user may insert a "new-line" character in the text by pressing Ctrl-Enter. If [Text](../a-z/text.md) was set by a matrix, it is returned as a matrix. Otherwise it is returned as a vector of vectors. "New-line" characters are not returned. If [Text](../a-z/text.md) was not specified  by [`⎕WC`](../../Language/System%20Functions/wc.htm) or  [`⎕WS` ](../../Language/System%20Functions/ws.htm)it is returned  an empty matrix (`1 0⍴''`).
+The user may insert a "new-line" character in the text by pressing Ctrl-Enter. If [Text](../a-z/text.md) was set by a matrix, it is returned as a matrix. Otherwise it is returned as a vector of vectors. "New-line" characters are not returned. If [Text](../a-z/text.md) was not specified  by [`⎕WC`](../../Language/System Functions/wc.htm) or  [`⎕WS` ](../../Language/System Functions/ws.htm)it is returned  an empty matrix (`1 0⍴''`).
 
 
 The [RTFText](../a-z/rtftext.md) property  may be used to set or retrieve the contents of the RichEdit, including text and formatting.

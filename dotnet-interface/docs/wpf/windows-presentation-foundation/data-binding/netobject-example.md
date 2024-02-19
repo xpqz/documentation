@@ -1,12 +1,12 @@
 # Example 6
 
-This example illustrates data binding using a vector of .NET objects, in this case `DateTime` objects.
+This example illustrates data binding using a vector of .NET objects, in this case DateTime objects.
 
 ## The XAML
 
-The XAML shown below,  describes a Window containing a `StackPanel`, inside which is a `ListBox`.
+The XAML shown below,  describes a Window containing a StackPanel, inside which is a ListBox.
 ```apl
-<Window 
+`<Window 
 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -18,7 +18,7 @@ The XAML shown below,  describes a Window containing a `StackPanel`, inside whic
          <ListBox Name="EasterDates" Height="100"
           Margin="5" />
     </StackPanel>
-</Window>
+</Window>`
 ```
 
 ## The APL Code
@@ -36,7 +36,7 @@ The function `NetObjects` is shown below.
 
 ```
 
-`NetObjects[3]` uses FindName to obtain a ref to the `ListBox` (defined in the XAML) named **EasterDates:**
+`NetObjects[3]` uses FindName to obtain a ref to the ListBox (defined in the XAML) named **EasterDates:**
 ```apl
 
 [3]    win.dates←win.FindName⊂'EasterDates'
@@ -58,7 +58,7 @@ The global variable `Easter` contains a vector of 3-element numeric vectors repr
 
 ```
 
-`NetObjects[4]` creates a vector of `DateTime` objects from the global variable `Easter`.
+`NetObjects[4]` creates a vector of DateTime objects from the global variable `Easter`.
 ```apl
 
 [4]    dt←{⎕NEW DateTime ⍵}¨Easter

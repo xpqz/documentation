@@ -16,7 +16,7 @@ This event is reported when the user touches one or two fingers on an object and
 
 
 
-The event message reported as the result of [`⎕DQ`](../../Language/System%20Functions/dq.htm), or supplied as the right argument to your callback function, is a 5-element vector as follows :
+The event message reported as the result of [`⎕DQ`](../../Language/System Functions/dq.htm), or supplied as the right argument to your callback function, is a 5-element vector as follows :
 
 
 | `[1]` | Object | ref or character vector |
@@ -34,20 +34,20 @@ The Flags parameter [3] which reports the state of the Gesture, is an integer wi
 
 | Name | Value | Description |
 | --- | --- | ---  |
-|  | 0 | A gesture is in progress |
-| GF_BEGIN | 1 | A gesture is starting. |
-| GF_INERTIA | 2 | A gesture has triggered inertia. |
-| GF_END | 4 | A gesture has finished. |
+| `` | 0 | A gesture is in progress |
+| `GF_BEGIN` | 1 | A gesture is starting. |
+| `GF_INERTIA` | 2 | A gesture has triggered inertia. |
+| `GF_END` | 4 | A gesture has finished. |
 
 
 
 The term **inertia** refers to built-in Windows processing which provides a standardised user-interface including smooth acceleration and de-acceleration of an object.
 
 
-When the user first touches  an object and begins to drag his finger(s), the object generates a GesturePan event with a `Flags` parameter of 1 (GF_BEGIN). Subsequently, if the user drags the object steadily it generates a series of GesturePan events with a `Flags` parameter of 0.  When the user lifts his finger(s) away, the object generates a final GesturePan event, with a `Flags` parameter of 4 (GF_END).
+When the user first touches  an object and begins to drag his finger(s), the object generates a GesturePan event with a `Flags` parameter of 1 (`GF_BEGIN`). Subsequently, if the user drags the object steadily it generates a series of GesturePan events with a `Flags` parameter of 0.  When the user lifts his finger(s) away, the object generates a final GesturePan event, with a `Flags` parameter of 4 (`GF_END`).
 
 
-If  the user *flicks* an object, the system typically continues to generate GesturePan events after the user has ceased to touch the object. These events are generated in response to the acceleration and deceleration imparted by the *flick*, and the `Flags` parameter for these generated events will be 2 (GF_INERTIA) followed (for the last GesturePan event) by 6 (GF_END+GF_INERTIA).
+If  the user *flicks* an object, the system typically continues to generate GesturePan events after the user has ceased to touch the object. These events are generated in response to the acceleration and deceleration imparted by the *flick*, and the `Flags` parameter for these generated events will be 2 (`GF_INERTIA`) followed (for the last GesturePan event) by 6 (`GF_END`+`GF_INERTIA`).
 
 
 No other event will be reported between the start and end of a series of GesturePan events.

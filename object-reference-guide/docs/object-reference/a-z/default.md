@@ -25,6 +25,6 @@ If however, the user explicitly shifts the focus to another Push [Button](./butt
 For a [Button](./button.md), the Default property has the value 1 or 0. As only one [Button](./button.md) can be the Default [Button](./button.md), setting Default to 1 for a particular [Button](./button.md) automatically sets Default to 0 for all others with the same parent.
 
 
-In a [MsgBox](./msgbox.md), Default specifies which button initially has the focus. It has the value 1, 2 or 3 corresponding to the three buttons that can be defined. See [Btns](btns.md) property for further details.
+In a [MsgBox](./msgbox.md), Default specifies which button initially has the focus. It has the value 1, 2 or 3 corresponding to the three buttons that can be defined. See [Btns](Btns.htm) property for further details.
 
 

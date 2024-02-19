@@ -2,13 +2,13 @@
 
 This example illustrates data binding using a vector of namespaces.
 
-Each row in the WPF `DataGrid` control is represented by an object, and each column as a property of that object. Each row in the `DataGrid` is bound to an object in the data source, and each column in the data grid is bound to a property of the data object.
+Each row in the WPF DataGrid control is represented by an object, and each column as a property of that object. Each row in the DataGrid is bound to an object in the data source, and each column in the data grid is bound to a property of the data object.
 
 ![data binding datagrid1](../img/data-binding-datagrid1.png)
 
 ## The XAML
 
-The XAML shown below,  describes a Window containing a `DockPanel`, inside which is a `DataGrid`.
+The XAML shown below,  describes a Window containing a DockPanel, inside which is a DataGrid.
 ```apl
  <Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -31,11 +31,11 @@ The XAML shown below,  describes a Window containing a `DockPanel`, inside which
 
 ```
 
-The phrase ItemsSource="{Binding}" states that the content of the `DataGrid` is bound to a data source, which in this case will be inherited from the DataContext property of the parent `Window`.
+The phrase `ItemsSource="{Binding}"` states that the content of the DataGrid is bound to a data source, which in this case will be inherited from the DataContext property of the parent Window.
 
-Binding="{Binding Name}" specifies that the contents of the first column are bound to a Path named **Name** in the data source.
+`Binding="{Binding Name}"` specifies that the contents of the first column are bound to a Path named **Name** in the data source.
 
-Similarly, Binding="{Binding Price, StringFormat=C}" specifies that the Path for the second column is **Price** (StringFormat=C merely specifies the default currency format).
+Similarly, `Binding="{Binding Price, StringFormat=C}"` specifies that the Path for the second column is **Price** (`StringFormat=C` merely specifies the default currency format).
 
 ## The APL Code
 

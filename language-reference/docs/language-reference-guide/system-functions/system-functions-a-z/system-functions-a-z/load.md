@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Load Workspace</span><span class="command">⎕LOAD Y</span></h1>
 
-`Y` must be a simple character scalar or vector containing the name of a file that contains a saved workspace. . If no file extension is given it is implied. See [WSEXT on page 1](../../UserGuide/Installation%20and%20Configuration/Configuration%20Parameters/WSEXT.htm#WSEXT).
+`Y` must be a simple character scalar or vector containing the name of a file that contains a saved workspace. . If no file extension is given it is implied. See [WSEXT on page 1](../../UserGuide/Installation and Configuration/Configuration Parameters/WSEXT.htm#WSEXT).
 
 
 If `Y` is ill-formed or does not identify a saved workspace or the user account does not have access permission to the workspace, a `DOMAIN ERROR` is reported.

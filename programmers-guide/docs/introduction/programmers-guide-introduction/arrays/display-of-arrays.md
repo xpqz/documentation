@@ -169,7 +169,7 @@ The user command `]display`   illustrates the structure of an array.
 
 ```
 
-An explanation of the symbols that appear in the borders can be seen by running ]display -?
+An explanation of the symbols that appear in the borders can be seen by running `]display -?`
 
 ## The ]boxing User Command
 
@@ -241,5 +241,5 @@ See also:
 
 - [Shy Result on page 1.](../../../defined-functions-and-operators/dfns-and-dops/dfns-and-dops/shy-result.md)
 
-- [Execute Expression on page 1](../../I%20Beam%20Functions/Execute%20Expression.htm#Execute_Expression)
+- [Execute Expression on page 1](../../I Beam Functions/Execute Expression.htm#Execute_Expression)
 .
