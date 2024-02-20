@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59749,7 +59659,7 @@
 <h1 id="workspaces">Workspaces</h1>
 <p>APL expressions are evaluated within a workspace. The workspace may contain objects, namely classes, namespaces, operators, functions and variables defined by the user. APL expressions may include references to primitive operators, functions and variables provided by APL. These objects do not reside in the workspace, but space is required for the actual process of evaluation to accommodate temporary data. During execution, APL records the state of execution through the STATE INDICATOR which is dynamically maintained until the process is complete. Space is also required to identify objects in the workspace in the SYMBOL TABLE. Maintenance of the symbol table is entirely dynamic. It grows and contracts according to the current workspace contents.</p>
 <p>Workspaces may be explicitly saved with an identifying name. The workspace may subsequently be loaded, or objects may be selectively copied from a saved workspace into the current workspace.</p>
-<p>Workspaces are stored in files whose names must conform to operating system conventions. When a workspace name is specified without a file suffix, these are added or implied. For further information, see <a href="../../UserGuide/Installation and Configuration/Configuration Parameters/WSEXT.htm#WSEXT">WSEXT on page 1</a>.</p>
+<p>Workspaces are stored in files whose names must conform to operating system conventions. When a workspace name is specified without a file suffix, these are added or implied. For further information, see <a href="../../UserGuide/Installation and Configuration/Configuration Parameters/WSEXT.htm#WSEXT">WSEXT</a>.</p>
 <p>If the name of the file in which the workspace is saved contains spaces, the ws argument for the system functions <code>)SAVE</code>, <code>)COPY</code>, <code>)PCOPY</code>, <code>)LOAD</code>, <code>)XLOAD</code> and <code>)DROP</code> should be surrounded by two double-quote (") characters. To include a " character in the file name, you must specify two adjoining double-quotes (i.e. """"). Note however that Windows does not allow double-quotes in file names, so this effectively applies only to non-Windows systems.</p>
 <h3 id="examples">Examples</h3>
 <pre><code class="language-apl">      )SAVE Pete's work

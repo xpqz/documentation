@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59771,17 +59681,17 @@
 <h2 id="the-xaml">The XAML</h2>
 <p>Like most Syncfusion controls, the CircularGauge is made up of  a complex structure of objects, and the XAML (see variable <code>XAML_SF</code>) is too extensive to describe in detail herein. It was created from the sample XAML from the Syncfusion documentation for this control entitled <strong>Essential Gauge for WPF</strong>, which may be downloaded from <a href="http://help.syncfusion.com/wpf/gauge">http://help.syncfusion.com/wpf/gauge</a>.</p>
 <p>The key statements in the XAML are as follows:</p>
-<pre><code class="language-apl">`xmlns:syncfusion=&quot;clr-namespace:Syncfusion.Windows.Gauge;assembly=Syncfusion.Gauge.WPF&quot;`
+<pre><code class="language-apl">xmlns:syncfusion=&quot;clr-namespace:Syncfusion.Windows.Gauge;assembly=Syncfusion.Gauge.WPF&quot;
 </code></pre>
 <p>The above statement defines the prefix <code>syncfusion</code> to mean the specified Syncfusion namespace and assembly. When the prefix <code>syncfusion</code> is subsequently used in front of a control in the XAML, the system knows where to find it.</p>
 <p>The next two statements define CircularPointer controls (the needles on the gauges); one for the Fahrenheit gauge (named <strong>f_pointer</strong>) and one for the Centigrade gauge (named <strong>c_pointer</strong>).</p>
-<pre><code class="language-apl">`&lt;syncfusion:CircularPointer Name=&quot;f_pointer&quot; BorderWidth=&quot;0.3&quot;
+<pre><code class="language-apl"> &lt;syncfusion:CircularPointer Name=&quot;f_pointer&quot; BorderWidth=&quot;0.3&quot;
   PointerLength=&quot;100&quot; PointerPlacement=&quot;Inside&quot; PointerWidth=&quot;20&quot;
-  Value=&quot;32&quot;/&gt;`
+  Value=&quot;32&quot;/&gt;
 </code></pre>
-<pre><code class="language-apl">`&lt;syncfusion:CircularPointer Name=&quot;c_pointer&quot; BorderWidth=&quot;0.3&quot;
+<pre><code class="language-apl"> &lt;syncfusion:CircularPointer Name=&quot;c_pointer&quot; BorderWidth=&quot;0.3&quot;
   PointerLength=&quot;100&quot; PointerPlacement=&quot;Inside&quot; PointerWidth=&quot;20&quot;
-  Value=&quot;0&quot;/`
+  Value=&quot;0&quot;/
 </code></pre>
 <h2 id="the-apl-code">The APL Code</h2>
 <p>The following functions were used to produce the example illustrated above. The main function is <code>SF_TC_XAML</code>.</p>

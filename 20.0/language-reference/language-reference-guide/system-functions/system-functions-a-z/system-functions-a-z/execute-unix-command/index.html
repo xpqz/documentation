@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59816,7 +59726,7 @@
 
 <h1 class="heading"><span class="name">Execute (UNIX) Command</span><span class="command">{R}←⎕SH Y</span></h1>
 
-<p><code>⎕SH</code> executes a UNIX shell or a Windows Command Processor.  <code>⎕SH</code> is a synonym of <code>⎕CMD</code>.  Either function may be used in either environment (UNIX or Windows) with exactly the same effect.  <code>⎕SH</code> is probably more natural for the UNIX user.  This section describes the behaviour of <code>⎕SH</code> and <code>⎕CMD</code> under UNIX.  See "Execute Windows Command: " on page 1 for a discussion of the behaviour of these system functions under Windows.</p>
+<p><code>⎕SH</code> executes a UNIX shell or a Windows Command Processor.  <code>⎕SH</code> is a synonym of <code>⎕CMD</code>.  Either function may be used in either environment (UNIX or Windows) with exactly the same effect.  <code>⎕SH</code> is probably more natural for the UNIX user.  This section describes the behaviour of <code>⎕SH</code> and <code>⎕CMD</code> under UNIX.  See <a href="../execute-windows-command/">"Execute Windows Command: "</a> for a discussion of the behaviour of these system functions under Windows.</p>
 <p><code>Y</code> must be a simple character scalar or vector representing a UNIX shell command.  <code>R</code> is a nested vector of character vectors.</p>
 <p><code>Y</code> may be any acceptable UNIX command. If the command does not produce any output, <code>R</code> is <code>0⍴⊂''</code> but the result is suppressed if not explicitly used or assigned.  If the command has a non-zero exit code, then APL will signal a <code>DOMAIN ERROR</code>.  If the command returns a result and has a zero exit code, then each element of <code>R</code> will be a line from the standard output (stdout) of the command.  Output from standard error (stderr) is not captured unless redirected to stdout.</p>
 <h4 id="examples">Examples</h4>
@@ -59830,7 +59740,7 @@ bin:!:2:2::/bin:
  
       ⎕SH 'apl MYWS &lt;inputfile &gt;out1 2&gt;out2 &amp;'
 </code></pre>
-<p>The system commands <a href="../../../../system-commands/system-commands-a-z/sh/"><code>)SH</code></a> and <a href="../../../../system-commands/system-commands-a-z/cmd/"><code>)CMD</code></a> provide similar facilities. For further information, see Execute (UNIX) Command:  on page 1 and Example on page 1.</p>
+<p>The system commands <a href="../../../../system-commands/system-commands-a-z/sh/"><code>)SH</code></a> and <a href="../../../../system-commands/system-commands-a-z/cmd/"><code>)CMD</code></a> provide similar facilities. For further information, see <a href="../../../../system-commands/system-commands-a-z/sh/">Execute (UNIX) Command: </a> and <a href="../../../../system-commands/system-commands-a-z/cmd/">Example</a>.</p>
 <h4 id="note">Note:</h4>
 <p>This function is disabled and instead generates a <code>DOMAIN ERROR</code> if the RIDE_SPAWNED parameter is non-zero. This is designed to prevent it being invoked from a RIDE session which does not support this type of user interface. For further details, see the <strong>RIDE User Guide</strong>.</p>
 <p>Under macOS and Linux, if the configuration parameter ENABLE_CEF is 1 (which is the default), Auxiliary Processors may not be used (they hang on error).</p>

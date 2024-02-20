@@ -834,43 +834,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -881,14 +844,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2433,43 +2388,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2480,14 +2398,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59911,7 +59821,7 @@
 <p>A script is executed by typing its name. User input is entered from the same terminal or shell and output is displayed on the terminal or shell.</p>
 <h3 id="unix">UNIX</h3>
 <p>On UNIX (and related) systems a Dyalog APL <strong>shell script</strong> is a text file with the following as the first line:</p>
-<pre><code class="language-apl">`#!/usr/local/bin/dyalogscript`
+<pre><code class="language-apl">#!/usr/local/bin/dyalogscript
 </code></pre>
 <p>The script file must be executable. There are three execute bits relating to the user, the group and everyone else.</p>
 <h3 id="windows">Windows</h3>
@@ -59962,12 +59872,12 @@ plus←{
 ⎕←2 ⎕nq '#' 'GetEnvironment' ('MAXWS' 'WSPATH')
 </code></pre>
 <h3 id="example-configuration-file">Example (configuration file)</h3>
-<pre><code class="language-apl">`{ settings: {
+<pre><code class="language-apl">{ settings: {
         /* Maximum workspace size */
         MAXWS: &quot;256M&quot;,
         /* wspath */
         WSPATH: [&quot;c:/tmp&quot;,&quot;f:/devt/tmp&quot;]
-}}`
+}}
 </code></pre>
 <p>Note that the interpreter reads both of these locations, the command line in the script file overrides any setting in the .dcfg file.</p>
 <h3 id="debugging">Debugging:</h3>

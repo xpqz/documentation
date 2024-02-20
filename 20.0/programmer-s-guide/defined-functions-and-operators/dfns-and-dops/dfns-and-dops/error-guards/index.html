@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59769,7 +59679,7 @@
 
 
 <h1 id="error-guards">Error-Guards</h1>
-<p>An <strong>error-guard</strong> is (an expression that evaluates to) a vector of error numbers (see <a href="../../../../error-messages/apl-errors/">APL Error Messages on page 1</a>), followed by the digraph: <code>::</code>, followed by an expression, the <em>body</em> of the guard, to be evaluated as the result of the function. For example:</p>
+<p>An <strong>error-guard</strong> is (an expression that evaluates to) a vector of error numbers (see <a href="../../../../error-messages/apl-errors/">APL Error Messages</a>), followed by the digraph: <code>::</code>, followed by an expression, the <em>body</em> of the guard, to be evaluated as the result of the function. For example:</p>
 <pre><code class="language-apl">      11 5 :: ⍵×0 ⍝ Trap DOMAIN and LENGTH errors.
 </code></pre>
 <p>In common with <code>:Trap</code> and <code>⎕TRAP</code>, error numbers 0 and 1000 are catch-alls for synchronous errors and interrupts respectively.</p>
@@ -59781,7 +59691,7 @@
       expr
 </code></pre>
 <p>In this case, if <code>expr</code> generates an error, its immediately preceding: <code>0::</code> catches it and evaluates <code>try_1st</code> leaving the remaining error-guard in scope. If <code>try_1st</code> fails, the environment is unwound once again and <code>try_2nd</code> is evaluated, this time with no error-guards in scope.</p>
-<p>See also <a href="../guards/">Guards on page 1</a>.</p>
+<p>See also <a href="../guards/">Guards</a>.</p>
 <h2 id="examples">Examples:</h2>
 <p><code>Open</code> returns a handle for a component file. If the exclusive tie fails, it attempts a share-tie and if this fails, it creates a new file. Finally, if all else fails, a handle of 0 is returned.</p>
 <pre><code class="language-apl">open←{                 ⍝ Handle for component file ⍵.

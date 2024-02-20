@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59785,64 +59695,32 @@
 
 <h1 class="heading"><span class="name">Image</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/Image.htm">Parents</a></th>
-<th><a href="../ChildLists/Image.htm">Children</a></th>
-<th><a href="../PropLists/Image.htm">Properties</a></th>
-<th><a href="../MethodLists/Image.htm">Methods</a></th>
-<th><a href="../EventLists/Image.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>Positions bitmaps and icons within an object.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/Image.htm">Parents</a> <a href="../ChildLists/Image.htm">Children</a> <a href="../PropLists/Image.htm">Properties</a> <a href="../MethodLists/Image.htm">Methods</a> <a href="../EventLists/Image.htm">Events</a></p>
+<p>Purpose: Positions bitmaps and icons within an object.</p>
 <p><strong>Description</strong></p>
 <p>The <a href="../points/">Points</a> property specifies the co-ordinates of one or more points at which the specified graphical objects are to be drawn.</p>
-<p>The <a href="../picture/">Picture</a> property specifies the name(s) of <a href="Bitmap.htm">Bitmap</a>, <a href="../icon/">Icon</a> or <a href="Metafile.htm">Metafile</a> object(s) that are to be drawn. It may be a simple character vector or a vector of vectors.</p>
-<p>To draw a single graphic picture, the <a href="../picture/">Picture</a> property is a simple character vector specifying the name of a <a href="Bitmap.htm">Bitmap</a>, <a href="../icon/">Icon</a> or <a href="Metafile.htm">Metafile</a> object. <a href="../points/">Points</a> is either a 2-element vector or a 1-row, 2-column matrix whose elements specify the y-coordinate and x-coordinate respectively at which the object is to be drawn.</p>
-<p>To draw the same picture at several different positions, the <a href="../picture/">Picture</a> property is a simple character vector specifying the name of the <a href="Bitmap.htm">Bitmap</a>, <a href="../icon/">Icon</a> or <a href="Metafile.htm">Metafile</a> object. <a href="../points/">Points</a> is either a 2-column matrix of y-coordinates and x-coordinates, or a nested vector whose first element contains the y-coordinates and whose second element contains the x-coordinates.</p>
-<p>To draw several different pictures, the <a href="../picture/">Picture</a> property is a vector of character vectors specifying the names of several <a href="Bitmap.htm">Bitmap</a>, <a href="../icon/">Icon</a> and/or <a href="Metafile.htm">Metafile</a> objects. <a href="../points/">Points</a> is a 2-column matrix or 2-element nested vector as described above.</p>
+<p>The <a href="../picture/">Picture</a> property specifies the name(s) of <a href="../bitmap/">Bitmap</a>, <a href="../icon/">Icon</a> or <a href="../metafile/">Metafile</a> object(s) that are to be drawn. It may be a simple character vector or a vector of vectors.</p>
+<p>To draw a single graphic picture, the <a href="../picture/">Picture</a> property is a simple character vector specifying the name of a <a href="../bitmap/">Bitmap</a>, <a href="../icon/">Icon</a> or <a href="../metafile/">Metafile</a> object. <a href="../points/">Points</a> is either a 2-element vector or a 1-row, 2-column matrix whose elements specify the y-coordinate and x-coordinate respectively at which the object is to be drawn.</p>
+<p>To draw the same picture at several different positions, the <a href="../picture/">Picture</a> property is a simple character vector specifying the name of the <a href="../bitmap/">Bitmap</a>, <a href="../icon/">Icon</a> or <a href="../metafile/">Metafile</a> object. <a href="../points/">Points</a> is either a 2-column matrix of y-coordinates and x-coordinates, or a nested vector whose first element contains the y-coordinates and whose second element contains the x-coordinates.</p>
+<p>To draw several different pictures, the <a href="../picture/">Picture</a> property is a vector of character vectors specifying the names of several <a href="../bitmap/">Bitmap</a>, <a href="../icon/">Icon</a> and/or <a href="../metafile/">Metafile</a> objects. <a href="../points/">Points</a> is a 2-column matrix or 2-element nested vector as described above.</p>
 <p>Setting the <a href="../edgestyle/">EdgeStyle</a> property causes the picture to be surrounded by the appropriate border. For example, setting <a href="../edgestyle/">EdgeStyle</a> to <code>'Plinth'</code> produces a button-like appearance.</p>
-<p>Setting the <a href="../size/">Size</a> property causes the picture to be scaled to fit within the specified rectangle. It is only necessary to specify <a href="../size/">Size</a> when an Image is used to draw a <a href="Metafile.htm">Metafile</a> object. For a <a href="Bitmap.htm">Bitmap</a> or <a href="../icon/">Icon</a>, <a href="../size/">Size</a> defaults to the size of the object being drawn.</p>
+<p>Setting the <a href="../size/">Size</a> property causes the picture to be scaled to fit within the specified rectangle. It is only necessary to specify <a href="../size/">Size</a> when an Image is used to draw a <a href="../metafile/">Metafile</a> object. For a <a href="../bitmap/">Bitmap</a> or <a href="../icon/">Icon</a>, <a href="../size/">Size</a> defaults to the size of the object being drawn.</p>
 <p>The <a href="../dragable/">Dragable</a> property specifies whether or not the Image can be dragged and dropped using the mouse.</p>
 <h4 id="examples">Examples:</h4>
-<p>First make a <a href="Form.htm">Form</a></p>
+<p>First make a <a href="../form/">Form</a></p>
 <pre><code class="language-apl">      'F' ⎕WC 'Form'
 </code></pre>
-<p>Then make two <a href="Bitmap.htm">Bitmap</a>s :</p>
+<p>Then make two <a href="../bitmap/">Bitmap</a>s :</p>
 <pre><code class="language-apl">      'YES' ⎕WC 'Bitmap' 'C:\WDYALOG\WS\YES'
       'NO'  ⎕WC 'Bitmap' 'C:\WDYALOG\WS\NO'
 </code></pre>
-<p>Display the "YES" <a href="Bitmap.htm">Bitmap</a> at (20,10)</p>
+<p>Display the "YES" <a href="../bitmap/">Bitmap</a> at (20,10)</p>
 <pre><code class="language-apl">      'F.I' ⎕WC 'Image' (20 10)('Picture' 'YES')
 </code></pre>
-<p>Display the "YES" <a href="Bitmap.htm">Bitmap</a> at (20,10) and (20,50)</p>
+<p>Display the "YES" <a href="../bitmap/">Bitmap</a> at (20,10) and (20,50)</p>
 <pre><code class="language-apl">      'F.I' ⎕WC 'Image' (20(10 50))('Picture' 'YES')
 </code></pre>
-<p>Display the "YES" <a href="Bitmap.htm">Bitmap</a> at (20,10) and the "NO" <a href="Bitmap.htm">Bitmap</a> at (20,50)</p>
+<p>Display the "YES" <a href="../bitmap/">Bitmap</a> at (20,10) and the "NO" <a href="../bitmap/">Bitmap</a> at (20,50)</p>
 <pre><code class="language-apl">      'F.I' ⎕WC'Image'(20(10 50))('Picture' 'YES' 'NO')
 </code></pre>
 

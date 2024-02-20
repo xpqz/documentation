@@ -828,43 +828,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -875,14 +838,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2427,43 +2382,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2474,14 +2392,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59692,7 +59602,7 @@
 <p>The value of <code>⎕CT</code> determines the precision with which two numbers are judged to be equal.  Two numbers, <code>X</code> and <code>Y</code>, are judged to be equal if <code>(|X-Y)≤⎕CT×(|X)⌈|Y</code>where <code>≤</code> is applied without tolerance.</p>
 <p>Thus <code>⎕CT</code> is not used as an absolute value in comparisons, but rather specifies a relative value that is dependent on the magnitude of the number with the greater magnitude. It then follows that <code>⎕CT</code> has no effect when either of the numbers is zero.</p>
 <p><code>⎕CT</code> may be assigned any value in the range from <code>0</code> to  <code>2*¯32</code>  (about <code>2.3E¯10</code>). A value of <code>0</code> ensures exact comparison.  The value in a clear workspace is <code>1E¯14</code>. <code>⎕CT</code> has Namespace scope.</p>
-<p>If <code>⎕FR</code> is 1287, the system uses <code>⎕DCT</code>. See Decimal Comparison Tolerance  on page 1.</p>
+<p>If <code>⎕FR</code> is 1287, the system uses <code>⎕DCT</code>. See <a href="../../../../system-functions-a-z/system-functions-a-z/dct/">Decimal Comparison Tolerance </a>.</p>
 <h4 id="examples">Examples</h4>
 <pre><code class="language-apl">      ⎕CT←1E¯10
       1.00000000001 1.0000001 = 1

@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59693,9 +59603,11 @@
 <h1 id="code-behind">Code Behind</h1>
 <p>It is often desirable to separate the code content of a page completely from the HTML and other text, layout or graphical information by placing it in a separate file. In ASP.NET parlance, this technique is known as <em>code behind</em>.</p>
 <p>The <code>intro5.aspx</code> example illustrates this technique.</p>
-<pre><code class="language-apl">`&lt;%@Page Language=&quot;Dyalog&quot;
+<pre><code class="language-apl">&lt;%@Page Language=&quot;Dyalog&quot;
     Inherits=&quot;FruitSelection&quot;
-    src=&quot;fruit.apl&quot; %&gt; &lt;%@Register TagPrefix=&quot;tutorial&quot; Namespace=&quot;Tutorial&quot; Assembly=&quot;tutorial&quot; %&gt; &lt;html&gt;
+    src=&quot;fruit.apl&quot; %&gt;
+&lt;%@Register TagPrefix=&quot;tutorial&quot; Namespace=&quot;Tutorial&quot; Assembly=&quot;tutorial&quot; %&gt;
+&lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;Code behind: separating your code from the page layout&lt;/title&gt;
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;apl.css&quot;&gt;
@@ -59711,10 +59623,13 @@
 &lt;p&gt;
 &lt;asp:Label id=&quot;out&quot; runat=&quot;server&quot; /&gt;&lt;/p&gt;
 &lt;/form&gt;
-&lt;/body&gt; &lt;tutorial:index runat=&quot;server&quot;/&gt; &lt;/html&gt;`
+&lt;/body&gt;
+&lt;tutorial:index runat=&quot;server&quot;/&gt;
+&lt;/html&gt;
+
 </code></pre>
 <p>The statement</p>
-<pre><code class="language-apl">`%@Page Language=&quot;Dyalog&quot; Inherits=&quot;FruitSelection&quot; src=&quot;fruit.apl&quot; %&gt;`
+<pre><code class="language-apl">%@Page Language=&quot;Dyalog&quot; Inherits=&quot;FruitSelection&quot; src=&quot;fruit.apl&quot; %&gt;
 </code></pre>
 <p>says that this page, when compiled, should inherit from a class called <code>FruitSelection</code>. Furthermore, the <code>FruitSelection</code> class is written in the "Dyalog" language, and its source code resides in a file called <code>fruit.apl</code>. <code>FruitSelection</code> is effectively the <em>base class</em>for the <code>.aspx</code> page.</p>
 <p>In this case, <code>fruit.apl</code> is simply another text file containing the <code>APLScript</code> code and is shown below.</p>

@@ -834,43 +834,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -881,14 +844,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2433,43 +2388,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2480,14 +2398,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -60005,7 +59915,7 @@
 <p>whereas,</p>
 <p><code>WSPATH: ["c:\Dyalog18.0"]</code> means  <code>c:Dyalog18.0</code>.</p>
 <h3 id="example_1">Example</h3>
-<pre><code class="language-apl">`{
+<pre><code class="language-apl">{
   Extend: &quot;my_default_configuration.dcfg&quot;,
 
   Settings: {
@@ -60017,20 +59927,20 @@
       // references to other configuration parameters
       FNAME: &quot;[rootdir]/filename&quot;,
   }
-}`
+}
 </code></pre>
 <h3 id="arrays">Arrays</h3>
 <p>An array may be used to define file paths etc. For example,</p>
-<pre><code class="language-apl">`WSPATH: [&quot;/dir1&quot;, &quot;/dir2&quot;]`
+<pre><code class="language-apl">WSPATH: [&quot;/dir1&quot;, &quot;/dir2&quot;]
 </code></pre>
 <p>The only parameters which may be defined as arrays are WSPATH, WSEXT and CFEXT.</p>
 <h3 id="references-to-other-configuration-parameters">References to other Configuration Parameters</h3>
 <p>Configuration parameters which are string values may include references to other configuration parameters (regardless of where they are defined) using square bracket delimiters. For example:</p>
-<pre><code class="language-apl">`MySetting: &quot;[DYALOG]/MyFile&quot;`
+<pre><code class="language-apl">MySetting: &quot;[DYALOG]/MyFile&quot;
 </code></pre>
 <p>will replace <code>[DYALOG</code>] with the value of the DYALOG configuration value.</p>
 <p>If the string inside the <code>[]</code> delimiters is "<code>.</code>", the "<code>.</code>" is replaced is replaced with the path of the directory containing the configuration file itself. Therefore,</p>
-<pre><code class="language-apl">`FILENAME: &quot;[.]/x.txt&quot;`
+<pre><code class="language-apl">FILENAME: &quot;[.]/x.txt&quot;
 </code></pre>
 <p>will set the parameter FILENAME to a value which is a reference to a file called <code>x.txt</code> in the same directory as the configuration file defining it.</p>
 <p>Note that:</p>
@@ -60041,7 +59951,10 @@
 <h3 id="nested-structures">Nested Structures</h3>
 <p>Some parameters are stored in sub-folders in the Windows Registry. Currently, all such parameters used by Dyalog APL itself relate to the Windows IDE, but you can create your own application-specific structures..</p>
 <p>The Configuration file supports this structure by defining an object that corresponds to a Registry sub-folder. For example:</p>
-<pre><code class="language-apl">`Captions: { Session: &quot;My Dyalog Session&quot;, Status: &quot;My Status window&quot;, }`
+<pre><code class="language-apl">Captions: {
+    Session: &quot;My Dyalog Session&quot;,
+    Status: &quot;My Status window&quot;,
+}
 </code></pre>
 <pre><code class="language-apl">      +2 ⎕NQ '.' 'GetEnvironment' 'Captions\Session'
 My Dyalog Session

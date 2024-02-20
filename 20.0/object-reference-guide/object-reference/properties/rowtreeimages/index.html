@@ -828,43 +828,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -875,14 +838,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2427,43 +2382,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2474,14 +2392,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,27 +59599,14 @@
 
 <h1 class="heading"><span class="name">RowTreeImages</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../../a-z/grid/">Grid</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../../a-z/grid/">Grid</a></p>
 <p><strong>Description</strong></p>
 <p>The RowTreeImages property is a simple character vector or ref, or a vector of character vectors or refs, that specifies the names(s) of, or ref(s) to, Bitmap objects that are used to display the tree nodes for a <a href="../../a-z/grid/">Grid</a> object.</p>
 <p>Note that images in tree nodes are only displayed if <a href="../../a-z/rowtreestyle/">RowTreeStyle</a> is set to <code>'ImagesOnly'</code>, <code>'ImagesAndLines'</code>, or <code>'AllImagesAndLines'</code>.</p>
 <p>If RowTreeImages is not specified default images are used.</p>
-<p>The Bitmap specified by the 1st element of RowTreeImages is used to display <em>unopened</em> nodes.</p>
-<p>The Bitmap specified by the 2nd element of RowTreeImages is used to display <em>opened</em> nodes.</p>
-<p>The Bitmap specified by the 3rd element of RowTreeImages is used to display nodes <em>without children</em>.</p>
+<p>The Bitmap specified by the 1<sup>st</sup> element of RowTreeImages is used to display <em>unopened</em> nodes.</p>
+<p>The Bitmap specified by the 2<sup>nd</sup> element of RowTreeImages is used to display <em>opened</em> nodes.</p>
+<p>The Bitmap specified by the 3<sup>rd</sup> element of RowTreeImages is used to display nodes <em>without children</em>.</p>
 <h4 id="example">Example:</h4>
 <pre><code class="language-apl">      'Closed'⎕WC'Bitmap' 'Folder.bmp'
       'Open'⎕WC'Bitmap' 'FolderOpen.bmp'

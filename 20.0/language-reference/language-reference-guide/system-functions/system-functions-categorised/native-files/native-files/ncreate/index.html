@@ -828,43 +828,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -875,14 +838,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2427,43 +2382,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2474,14 +2392,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59725,7 +59635,7 @@
 
 <h1 class="heading"><span class="name">Native File Create</span><span class="command">{R}←X ⎕NCREATE Y</span></h1>
 
-<p>This function creates a new file. Under Windows the file is opened with mode 66 (see <a href="../../../../system-functions-a-z/system-functions-a-z/ntie/">Native File Tie on page 1</a>). Under non-Windows operating systems the current umask will specify the file permissions. The name of the new file is specified by the left argument <code>X</code> which must be a simple character vector or scalar containing a valid pathname for the file.</p>
+<p>This function creates a new file. Under Windows the file is opened with mode 66 (see <a href="../../../../system-functions-a-z/system-functions-a-z/ntie/">Native File Tie</a>). Under non-Windows operating systems the current umask will specify the file permissions. The name of the new file is specified by the left argument <code>X</code> which must be a simple character vector or scalar containing a valid pathname for the file.</p>
 <p><code>Y</code> is 0 or a negative integer value that specifies an (unused) tie number by which the file may subsequently be referred. If <code>Y</code> is 0, the system allocates the first (closest to zero) available tie number which is returned as the result.</p>
 <p>The shy result of <code>⎕NCREATE</code> is the tie number of the new file.</p>
 <h4 id="variant-options">Variant Options</h4>
@@ -59741,7 +59651,7 @@
 <tbody>
 <tr>
 <td><code>1</code></td>
-<td>a uniquely named file will be created by extending the base name (see <a href="../../../../system-functions-a-z/system-functions-a-z/nparts/">File Name Parts on page 1</a> ) with random characters. If a unique name cannot be created then an error will be signalled. The actual name of the file can be determined from <code>⎕NNAMES</code> or <code>⎕NINFO</code> .</td>
+<td>a uniquely named file will be created by extending the base name (see <a href="../../../../system-functions-a-z/system-functions-a-z/nparts/">File Name Parts</a> ) with random characters. If a unique name cannot be created then an error will be signalled. The actual name of the file can be determined from <code>⎕NNAMES</code> or <code>⎕NINFO</code> .</td>
 </tr>
 </tbody>
 </table>

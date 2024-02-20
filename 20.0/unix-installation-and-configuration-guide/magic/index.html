@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59833,13 +59743,13 @@
 <h2 id="magic-and-aix">magic and AIX</h2>
 <p>AIX still uses a very early version of <code>magic</code>, so it is not possible to give as much information about Dyalog APL files as on Linux.</p>
 <p>Dyalog provides a file, <code>magic</code>, which is located in the top level installation directory of Dyalog APL. To use this file to extend the capabilities of the <code>file</code> command either run</p>
-<pre><code class="language-apl">`file -m /opt/mdyalog/ /32/classic/p5/magic *`
+<pre><code class="language-apl">file -m /opt/mdyalog//32/classic/p5/magic *
 </code></pre>
 <p>or catenate the contents of /opt/mdyalog//32/classic/p5/magic onto /etc/magic, and then run</p>
-<pre><code class="language-apl">`file *`
+<pre><code class="language-apl">file *
 </code></pre>
 <h2 id="example">Example:</h2>
-<pre><code class="language-apl">`$ file -m /opt/mdyalog/ /32/classic/p6/magic *
+<pre><code class="language-apl">$ file -m /opt/mdyalog//32/classic/p6/magic *
 1_apl_j1: Dyalog APL component file 64-bit level 1 journaled non-checksummed
 1_apl_j2: Dyalog APL component file 64-bit level 2 journaled checksummed
 1_apl_qfile: Dyalog APL component file 64-bit non-journaled non-checksummed
@@ -59851,12 +59761,12 @@ aplcore: Dyalog APL workspace type 12 subtype 4 32-bit classic little-endian
 colours: Dyalog APL workspace type 12 subtype 4 32-bit classic little-endian
 core: data or International Language text
 signals: Dyalog APL workspace type 12 subtype 4 32-bit classic little-endian
-utf8: Dyalog APL workspace type 12 subtype 4 32-bit unicode little-endian`
+utf8: Dyalog APL workspace type 12 subtype 4 32-bit unicode little-endian
 </code></pre>
 <h3 id="magic-and-linux">magic and Linux</h3>
 <p>Most Linux distributions include details about Dyalog-related files in their magic files; Dyalog has submitted two versions of the magic file for inclusion in distributions. To check whether your Linux distribution has the more recent version, create a journaled component file and then run the file command against that component file. The two examples below show the output with the earlier and later versions of magic in use.</p>
 <h2 id="example-using-the-older-default-magic-file">Example, using the older default magic file:</h2>
-<pre><code class="language-apl">`$ file *
+<pre><code class="language-apl">$ file *
 1_apl_j1: data
 1_apl_j2: data
 1_apl_qfile: data
@@ -59868,10 +59778,12 @@ aplcore: \012- Dyalog APL\012- workspace\012- version 12\012- .4
 colours: \012- Dyalog APL\012- workspace\012- version 12\012- .4
 core: ELF 32-bit LSB core file Intel 80386, version 1 (SYSV), SVR4-style
 signals: \012- Dyalog APL\012- workspace\012- version 12\012- .4
-utf8: \012- Dyalog APL\012- workspace\012- version 12\012- .4`
+utf8: \012- Dyalog APL\012- workspace\012- version 12\012- .4
+
 </code></pre>
 <h2 id="example-with-more-recent-magic-file">Example, with more recent magic file:</h2>
-<pre><code class="language-apl">`$ file *
+<pre><code class="language-apl">
+$ file *
 1_apl_j1: Dyalog APL component file 64-bit level 1 journaled non-checksummed
 1_apl_j2: Dyalog APL component file 64-bit level 2 journaled checksummed
 1_apl_qfile: Dyalog APL component file 64-bit non-journaled non-checksummed
@@ -59883,7 +59795,7 @@ aplcore: Dyalog APL workspace type 12 subtype 4 32-bit classic little-endian
 colours: Dyalog APL workspace type 12 subtype 4 32-bit classic little-endian
 core: ELF 32-bit LSB core file Intel 80386, version 1 (SYSV), SVR4-style, from '/opt/mdyalog/14.0/32/classic/dyalog'
 signals: Dyalog APL workspace type 12 subtype 4 32-bit classic little-endian
-utf8: Dyalog APL workspace type 12 subtype 4 32-bit unicode little-endian`
+utf8: Dyalog APL workspace type 12 subtype 4 32-bit unicode little-endian
 </code></pre>
 <p>The most recent version of the magic file can be found in the top level of the installation directory; see the man page for the file command for details of how to update the system magic file, or use the syntax described in the /etc/magic and AIX section above to override the default magic file with the one supplied in the installation directory.</p>
 

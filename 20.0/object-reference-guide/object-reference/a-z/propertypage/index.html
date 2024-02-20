@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59812,51 +59722,19 @@
 
 <h1 class="heading"><span class="name">PropertyPage</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/PropertyPage.htm">Parents</a></th>
-<th><a href="../ChildLists/PropertyPage.htm">Children</a></th>
-<th><a href="../PropLists/PropertyPage.htm">Properties</a></th>
-<th><a href="../MethodLists/PropertyPage.htm">Methods</a></th>
-<th><a href="../EventLists/PropertyPage.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>The PropertyPage object represents a single page in a PropertySheet.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/PropertyPage.htm">Parents</a> <a href="../ChildLists/PropertyPage.htm">Children</a> <a href="../PropLists/PropertyPage.htm">Properties</a> <a href="../MethodLists/PropertyPage.htm">Methods</a> <a href="../EventLists/PropertyPage.htm">Events</a></p>
+<p>Purpose: The PropertyPage object represents a single page in a PropertySheet.</p>
 <p><strong>Description</strong></p>
-<p>The PropertyPage object represents a single page within a <a href="PropertySheet.htm">PropertySheet</a>.</p>
-<p>The Posn and Size properties are read-only properties determined by the parent <a href="PropertySheet.htm">PropertySheet</a> and may not be changed using <code>⎕WC</code> or <code>⎕WS</code>.</p>
-<p>The <a href="../hashelp/">HasHelp</a> property is either 1 (the default) or 0. If the parent <a href="PropertySheet.htm">PropertySheet</a> has a "Help" button (determined by its own <a href="../hashelp/">HasHelp</a> property) this property determines whether or not the Help button is active when the PropertyPage is the current page. If the <a href="../hashelp/">HasHelp</a> property of a PropertyPage is 0, the Help button on the parent <a href="PropertySheet.htm">PropertySheet</a> will be temporarily disabled when that PropertyPage is displayed.</p>
+<p>The PropertyPage object represents a single page within a <a href="../propertysheet/">PropertySheet</a>.</p>
+<p>The Posn and Size properties are read-only properties determined by the parent <a href="../propertysheet/">PropertySheet</a> and may not be changed using <code>⎕WC</code> or <code>⎕WS</code>.</p>
+<p>The <a href="../hashelp/">HasHelp</a> property is either 1 (the default) or 0. If the parent <a href="../propertysheet/">PropertySheet</a> has a "Help" button (determined by its own <a href="../hashelp/">HasHelp</a> property) this property determines whether or not the Help button is active when the PropertyPage is the current page. If the <a href="../hashelp/">HasHelp</a> property of a PropertyPage is 0, the Help button on the parent <a href="../propertysheet/">PropertySheet</a> will be temporarily disabled when that PropertyPage is displayed.</p>
 <p>The PropertyPage object generates a <a href="../pageactivate/">PageActivate</a> event when it becomes the current page and a <a href="../pagedeactivate/">PageDeactivate</a> event when another page is selected. These events may not be disabled by a callback function.</p>
 <p>If the user presses the Cancel button, the current PropertyPage generates a <a href="../pagecancel/">PageCancel</a> event. This is followed by a Close event which is reported by the parent PropertySheet.</p>
 <p>Other properties and behaviour depend upon the Style of the parent PropertySheet which may be <code>'Standard'</code> or <code>'Wizard'</code></p>
 <h4 id="standard-behaviour">Standard Behaviour</h4>
 <p><img alt="ps1" src="../img/ps1.gif" /></p>
 <p>In a <em>Standard</em> PropertySheet, the Caption property of each PropertyPage specifies the text that is written in its tab.</p>
-<p>PropertyPage objects owned by a Standard <a href="PropertySheet.htm">PropertySheet</a> generate <a href="../pagecancel/">PageCancel</a>, <a href="../pageapply/">PageApply</a> and <a href="../pagehelp/">PageHelp</a> events. These events are all caused by the user  pressing the corresponding button in the parent <a href="PropertySheet.htm">PropertySheet</a>.</p>
+<p>PropertyPage objects owned by a Standard <a href="../propertysheet/">PropertySheet</a> generate <a href="../pagecancel/">PageCancel</a>, <a href="../pageapply/">PageApply</a> and <a href="../pagehelp/">PageHelp</a> events. These events are all caused by the user  pressing the corresponding button in the parent <a href="../propertysheet/">PropertySheet</a>.</p>
 <p>Conventionally, the Apply button is initially inactive. When the user changes an item on any of the PropertyPages, the Apply button immediately becomes active. When the user clicks the Apply button, the application responds (normally by changing the appropriate properties) and then the Apply button becomes inactive once again. This process is controlled as follows.</p>
 <p>The Changed property is a Boolean value that determines whether or not a PropertyPage is marked as having been in any way altered. The Apply button is active if the value of the Changed property for <em>any</em> of the PropertyPages is 1, and is inactive otherwise</p>
 <p>Initially, the value of the Changed property for all of the PropertyPages is 0 and the Apply button is therefore inactive. If the user alters a control on a PropertyPage, by, for example typing into an Edit object or changing the State of a Radio Button, the PropertyPage immediately generates a <a href="../pagechanged/">PageChanged</a> event with the parameter 1. The default processing for this event is to set the Changed property of the PropertySheet (to 1). This in turn activates the "Apply" button. If you return 0 from a callback on the <a href="../pagechanged/">PageChanged</a> event, the Changed property remains 0 and the Apply button remains inactive.</p>
@@ -59864,8 +59742,8 @@
 <p>You may control the value of the Changed property using <code>⎕WS</code> or by calling <a href="../pagechanged/">PageChanged</a> as a method. In all cases, the Apply button is active if the value of Changed on any PropertyPage is 1, and inactive otherwise.</p>
 <h4 id="wizard-behaviour">Wizard Behaviour</h4>
 <p><img alt="ps2" src="../img/ps2.gif" /></p>
-<p>If the PropertyPage is owned by a <em>Wizard</em> <a href="PropertySheet.htm">PropertySheet</a>, its Caption property specifies the text that appears in the title bar of the <a href="PropertySheet.htm">PropertySheet</a> window when the PropertyPage is the current page. Note that a Wizard <a href="PropertySheet.htm">PropertySheet</a> ignores its own Caption property.</p>
-<p>There are effectively 3 page changing buttons on a Wizard <a href="PropertySheet.htm">PropertySheet</a>, named Back, Next and Finish. The Next and Finish buttons actually occupy the same position and are mutually exclusive. The captions on the buttons are language-dependent.</p>
+<p>If the PropertyPage is owned by a <em>Wizard</em> <a href="../propertysheet/">PropertySheet</a>, its Caption property specifies the text that appears in the title bar of the <a href="../propertysheet/">PropertySheet</a> window when the PropertyPage is the current page. Note that a Wizard <a href="../propertysheet/">PropertySheet</a> ignores its own Caption property.</p>
+<p>There are effectively 3 page changing buttons on a Wizard <a href="../propertysheet/">PropertySheet</a>, named Back, Next and Finish. The Next and Finish buttons actually occupy the same position and are mutually exclusive. The captions on the buttons are language-dependent.</p>
 <p>Conventionally, the buttons change according to which of the PropertyPages is currently displayed. If the first one is displayed, the Next button is active but the Back button is inactive. When a middle page is displayed, both the Next and Back buttons are active. When the last page is displayed, the caption on the Next button changes to Finish. However, in some applications, the Back button may be disabled to prevent the user returning to a previous page.</p>
 <p>When the user clicks the Back or Next button, the PropertyPage generates a <a href="../pageback/">PageBack</a> or <a href="../pagenext/">PageNext</a> event followed by a <a href="../pagedeactivate/">PageDeactivate</a> event. The new PropertyPage then generates a <a href="../pageactivate/">PageActivate</a> event. These are followed by a <a href="../setwizard/">SetWizard</a> event which is generated by the parent PropertySheet and actually controls the state of the buttons. When the user clicks the Finish button, the PropertyPage generates a <a href="../pagefinish/">PageFinish</a> event alone. All of these events reported by the PropertyPage are reported for information only. Returning 0 from a callback function has no effect. You may however control the buttons using the <a href="../setwizard/">SetWizard</a> event.</p>
 

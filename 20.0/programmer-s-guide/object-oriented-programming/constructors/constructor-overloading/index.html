@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59693,7 +59603,7 @@
 
 
 <h1 id="constructor-overloading">Constructor Overloading</h1>
-<p>NameList header syntax is used to define different versions of a Constructor each with a different number of parameters, referred to as its <em>signature</em>. See  "Namelists" on page 1 for details. The <a href="Constructor Overload Example Class.htm">Clover Class</a> illustrates this principle.</p>
+<p>NameList header syntax is used to define different versions of a Constructor each with a different number of parameters, referred to as its <em>signature</em>. See <a href="../../../defined-functions-and-operators/traditional-functions-and-operators/tradfns/namelists/"> "Namelists"</a> for details. The <a href="Constructor Overload Example Class.htm">Clover Class</a> illustrates this principle.</p>
 <p>In deciding which Constructor to call, APL matches the shape of the Constructor argument with the signature of each of the Constructors that are defined. If a constructor with the same number of arguments exists (remembering that 0 arguments will match a niladic Constructor), it is called. If there is no exact match, and there is a Constructor with a general signature (an un-parenthesised right argument), it is called. If no suitable constructor is found, a <code>LENGTH ERROR</code> is reported.</p>
 <p>There may be one and only one constructor with a particular signature.</p>
 <p>In the <a href="Constructor Overload Example Class.htm">Clover Class</a> example Class, the following Constructors are defined:</p>
@@ -59756,7 +59666,7 @@
 <pre><code class="language-apl">      (⎕NEW Clover).Con
    Make0  0
 </code></pre>
-<p>The only way a Constructor function should be invoked is by <code>⎕NEW</code>. See "Base Constructors" on page 1 for further details. If you attempt to call a Constructor function  from outside its Class, it will cause a <code>SYNTAX ERROR</code>. A Constructor function should not call another Constructor function within the same Class, although it will not generate an error. This would cause the Base Constructor to be called twice, with unpredictable consequences.</p>
+<p>The only way a Constructor function should be invoked is by <code>⎕NEW</code>. See <a href="../base-constructors/">"Base Constructors"</a> for further details. If you attempt to call a Constructor function  from outside its Class, it will cause a <code>SYNTAX ERROR</code>. A Constructor function should not call another Constructor function within the same Class, although it will not generate an error. This would cause the Base Constructor to be called twice, with unpredictable consequences.</p>
 
 
 

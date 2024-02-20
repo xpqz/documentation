@@ -823,43 +823,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -870,14 +833,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2422,43 +2377,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2469,14 +2387,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59667,24 +59577,7 @@
 
 <h1 class="heading"><span class="name">KeepBits</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../../a-z/bitmap/">Bitmap</a></th>
-<th><a href="../../a-z/cursor/">Cursor</a></th>
-<th><a href="../../a-z/icon/">Icon</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../../a-z/bitmap/">Bitmap</a> <a href="../../a-z/cursor/">Cursor</a> <a href="../../a-z/icon/">Icon</a></p>
 <p><strong>Description</strong></p>
 <p>This property is be used to control the way that <a href="../../a-z/bitmap/">Bitmap</a>, <a href="../../a-z/cursor/">Cursor</a> and <a href="../../a-z/icon/">Icon</a> objects are stored in the workspace.</p>
 <p>When you create a <a href="../../a-z/bitmap/">Bitmap</a>, <a href="../../a-z/icon/">Icon</a> or <a href="../../a-z/cursor/">Cursor</a> using <code>⎕WC</code>, APL asks Windows to allocate a corresponding bitmap, icon or cursor <em>resource</em>. This resource is allocated in Windows memory. If APL were to hold the values of the <em>image properties</em> (<a href="../../a-z/cbits/">CBits</a>, <a href="../../a-z/bits/">Bits</a> and <a href="../../a-z/cmap/">CMap</a> for a <a href="../../a-z/bitmap/">Bitmap</a>; <a href="../../a-z/bits/">Bits</a>, <a href="../../a-z/cmap/">CMap</a> and <a href="../../a-z/mask/">Mask</a> for <a href="../../a-z/cursor/">Cursor</a> and <a href="../../a-z/icon/">Icon</a> objects) internally in the workspace, this data would be duplicated. For large bitmaps this would have a serious impact on memory utilisation and may affect performance. The KeepBits property is provided to allow you to control whether or not APL retains the values of the <em>image properties</em> in the workspace, so that you can choose a strategy to suit your configuration and requirements. KeepBits may take the value 0 or 1.</p>

@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,23 +59599,10 @@
 
 <h1 class="heading"><span class="name">LocalAddr</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../tcpsocket/">TCPSocket</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../tcpsocket/">TCPSocket</a></p>
 <p><strong>Description</strong></p>
 <p>The LocalAddr property is a character vector that specifies the IP address of your computer. Its default value is <code>'0.0.0.0'</code>.</p>
-<p>Unless your computer has more than one network adapter each identified by a different IP address, you do not need to specify LocalAddr. However, in this case you may use <em>either</em> LocalAddr <em>or</em><a href="LocalAddrName.htm"> LocalAddrName</a> to identify the adapter. If you specify both properties, the value of <a href="LocalAddrName.htm">LocalAddrName</a> will be ignored.</p>
+<p>Unless your computer has more than one network adapter each identified by a different IP address, you do not need to specify LocalAddr. However, in this case you may use <em>either</em> LocalAddr <em>or</em><a href="../localaddrname/"> LocalAddrName</a> to identify the adapter. If you specify both properties, the value of <a href="../localaddrname/">LocalAddrName</a> will be ignored.</p>
 <p>Note that you may also set the value of LocalAddr to an empty character vector. In this case, the value returned by <code>⎕WG</code> will be <code>'0.0.0.0'</code>.</p>
 <p>LocalAddr may only be specified in the <code>⎕WC</code> statement that creates the <a href="../tcpsocket/">TCPSocket</a> and may not subsequently be changed using <code>⎕WS</code>.</p>
 

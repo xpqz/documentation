@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59785,47 +59695,15 @@
 
 <h1 class="heading"><span class="name">Printer</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/Printer.htm">Parents</a></th>
-<th><a href="../ChildLists/Printer.htm">Children</a></th>
-<th><a href="../PropLists/Printer.htm">Properties</a></th>
-<th><a href="../MethodLists/Printer.htm">Methods</a></th>
-<th><a href="../EventLists/Printer.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>To provide printer output.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/Printer.htm">Parents</a> <a href="../ChildLists/Printer.htm">Children</a> <a href="../PropLists/Printer.htm">Properties</a> <a href="../MethodLists/Printer.htm">Methods</a> <a href="../EventLists/Printer.htm">Events</a></p>
+<p>Purpose: To provide printer output.</p>
 <p><strong>Description</strong></p>
-<p>The <a href="../pname/">PName</a> property is a character vector which specifies the name of an installed printer and the device to which it is attached. The name and device are separated by a comma (,). All valid values of <a href="../pname/">PName</a> can be obtained from the <a href="../printlist/">PrintList</a> property of the <a href="Root.htm">Root</a> object.</p>
+<p>The <a href="../pname/">PName</a> property is a character vector which specifies the name of an installed printer and the device to which it is attached. The name and device are separated by a comma (,). All valid values of <a href="../pname/">PName</a> can be obtained from the <a href="../printlist/">PrintList</a> property of the <a href="../root/">Root</a> object.</p>
 <p>If not specified, the default value of <a href="../pname/">PName</a> is <code>(⊃'.' ⎕WG 'PrintList')</code>.</p>
 <p>The <a href="../devcaps/">DevCaps</a> property reports the size of the printable area of the page in pixels (dots) and in millimetres. It also reports the number of colours available. This is 2 on a monochrome printer (black and white), although grey scales may be available.</p>
-<p>The <a href="../fontlist/">FontList</a> property provides a list of fonts that are applicable and includes TrueType and printer fonts. This list is typically different from that obtained from the <a href="../fontlist/">FontList</a> property on the <a href="Root.htm">Root</a> object which lists those fonts that apply to the screen.</p>
+<p>The <a href="../fontlist/">FontList</a> property provides a list of fonts that are applicable and includes TrueType and printer fonts. This list is typically different from that obtained from the <a href="../fontlist/">FontList</a> property on the <a href="../root/">Root</a> object which lists those fonts that apply to the screen.</p>
 <p>The Orientation property specifies the orientation of the page and may be either <code>'Portrait'</code> or <code>'Landscape'</code>.</p>
-<p>The graphics objects listed above may be printed in much the same way as they may be displayed on a <a href="Form.htm">Form</a> or <a href="../static/">Static</a>. The differences are :</p>
+<p>The graphics objects listed above may be printed in much the same way as they may be displayed on a <a href="../form/">Form</a> or <a href="../static/">Static</a>. The differences are :</p>
 <p>Once an object has been created, it will be printed, even if its name is subsequently expunged.</p>
 <p>An object does not <strong>replace</strong> an existing one which has the same name.</p>
 <p>The act of changing one or more properties of a named object causes the object to be printed a second time. For example, changing the <a href="../posn/">Posn</a> of an object will print it again at a different place.</p>

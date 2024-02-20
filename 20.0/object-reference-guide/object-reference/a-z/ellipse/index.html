@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59866,40 +59776,8 @@
 
 <h1 class="heading"><span class="name">Ellipse</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/Ellipse.htm">Parents</a></th>
-<th><a href="../ChildLists/Ellipse.htm">Children</a></th>
-<th><a href="../PropLists/Ellipse.htm">Properties</a></th>
-<th><a href="../MethodLists/Ellipse.htm">Methods</a></th>
-<th><a href="../EventLists/Ellipse.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>A Graphical object to draw ellipses, arcs, and pie-slices.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/Ellipse.htm">Parents</a> <a href="../ChildLists/Ellipse.htm">Children</a> <a href="../PropLists/Ellipse.htm">Properties</a> <a href="../MethodLists/Ellipse.htm">Methods</a> <a href="../EventLists/Ellipse.htm">Events</a></p>
+<p>Purpose: A Graphical object to draw ellipses, arcs, and pie-slices.</p>
 <p><strong>Description</strong></p>
 <p>This object duplicates much of the functionality of the <a href="../circle/">Circle</a> object, but differs in two major respects. Firstly, ellipses, circles, and arcs
 are specified in terms of their <strong>bounding rectangles</strong>, rather than in terms
@@ -59912,7 +59790,7 @@ rectangles. The position is defined to be the position of the corner that is <st
 <p>The <a href="../size/">Size</a> property specifies the height and
 width of each bounding rectangle, measuring away from the origin. To obtain a
 perfect circle, you must take the <strong>aspect ratio</strong> of the device into
-account. This is available from the <a href="../devcaps/">DevCaps</a> property of the <a href="Root.htm">Root</a> and <a href="Printer.htm">Printer</a> objects. Alternatively you can use the <a href="../circle/">Circle</a> object.</p>
+account. This is available from the <a href="../devcaps/">DevCaps</a> property of the <a href="../root/">Root</a> and <a href="../printer/">Printer</a> objects. Alternatively you can use the <a href="../circle/">Circle</a> object.</p>
 <p>The <a href="../start/">Start</a> and/or <a href="../end/">End</a> properties are used to draw partial ellipses and circles. They specify start and
 end angles respectively, measuring from the x-axis at the centre of the bounding
 rectangle in a counter-clockwise direction and are expressed in radians. The
@@ -59957,12 +59835,12 @@ top-left corner of the bounding rectangle.</p>
 whose elements specify the height and width of the bounding rectangle.</p>
 <p><a href="../lstyle/">LStyle</a> and <a href="../lwidth/">LWidth</a> are both simple scalar numbers.</p>
 <p><a href="../fstyle/">FStyle</a> is either a single number
-specifying a standard fill pattern, or the name of a <a href="Bitmap.htm">Bitmap</a> object which is to be used to fill the ellipse, circle or arc.</p>
+specifying a standard fill pattern, or the name of a <a href="../bitmap/">Bitmap</a> object which is to be used to fill the ellipse, circle or arc.</p>
 <p><a href="../fcol/">FCol</a>, <a href="../bcol/">BCol</a> and <a href="../fillcol/">FillCol</a> are each either single numbers
 representing standard colours, or 3-element vectors which specify colours
 explicitly in terms of their RGB values.</p>
 <h4 id="examples">Examples:</h4>
-<p>First make a <a href="Form.htm">Form</a> :</p>
+<p>First make a <a href="../form/">Form</a> :</p>
 <pre><code class="language-apl">      'F' ⎕WC 'Form'
 </code></pre>
 <p>Draw a complete ellipse within the bounding rectangle located at (y=10, x=5)
@@ -60006,7 +59884,7 @@ start angles default to <code>0,¯1↓+\End</code></p>
 (applying to all the ellipses, circles or arcs) or simple vectors whose elements
 refer to each of the corresponding ellipses, circles or arcs in turn.</p>
 <p><a href="../fstyle/">FStyle</a> may be a simple scalar numeric or
-a simple character vector (<a href="Bitmap.htm">Bitmap</a> name)
+a simple character vector (<a href="../bitmap/">Bitmap</a> name)
 applying to all rectangles, or a vector whose elements refer to each of the
 corresponding ellipses, circles or arcs in turn.</p>
 <p>Similarly, <a href="../fcol/">FCol</a>, <a href="../bcol/">BCol</a> and <a href="../fillcol/">FillCol</a> may each be single numbers or a
@@ -60018,7 +59896,7 @@ RGB triplets, or a combination of the two.</p>
 object as a whole, and may not be allocated different values for each individual
 ellipse, circle or arc that is drawn.</p>
 <h4 id="examples_1">Examples</h4>
-<p>First make a <a href="Form.htm">Form</a> :</p>
+<p>First make a <a href="../form/">Form</a> :</p>
 <pre><code class="language-apl">      'F' ⎕WC 'Form'
 </code></pre>
 <p>Draw two ellipses in bounding rectangles located at (y=5, x=10) and (y=5,
@@ -60033,7 +59911,7 @@ x=60), each of (height=40, width=10)</p>
 <pre><code class="language-apl">      'F.E1' ⎕WC 'Ellipse' (5(10 60)) ((40 20)(30 10))
 </code></pre>
 <p>Draw an elliptical Pie-Chart in a bounding rectangle located at (y=5, x=10)
-with a height and width equal to 40% of the height and width of the parent <a href="Form.htm">Form</a>.
+with a height and width equal to 40% of the height and width of the parent <a href="../form/">Form</a>.
 Each of the 4 pie-slices is bounded by a black line :</p>
 <pre><code class="language-apl">      Data ←12 27 21 40
       ANGLES←0,¯1↓((○2)÷+/Data)×+\Data

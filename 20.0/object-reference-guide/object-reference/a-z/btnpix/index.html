@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,29 +59599,12 @@
 
 <h1 class="heading"><span class="name">BtnPix</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../button/">Button</a></th>
-<th><a href="../menu/">Menu</a></th>
-<th><a href="../menuitem/">MenuItem</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../button/">Button</a> <a href="../menu/">Menu</a> <a href="../menuitem/">MenuItem</a></p>
 <p><strong>Description</strong></p>
 <p>This property is used to customise the appearance of a <a href="../button/">Button</a>, <a href="../menu/">Menu</a> or <a href="../menuitem/">MenuItem</a>. It specifies the names of or refs to up to 3 <a href="../bitmap/">Bitmap</a> objects to be used to display the object under different circumstances. In general, BtnPix is a 3-element vector of character vectors or refs. However, if it defines a single <a href="../bitmap/">Bitmap</a>, it may be a single ref, a simple character scalar or vector, or an enclosed character vector.</p>
-<p>The first <a href="../bitmap/">Bitmap</a> is displayed when the object is shown in its normal state. For a <a href="../button/">Button</a>, this is when its <a href="State.htm">State</a> is 0. The second <a href="../bitmap/">Bitmap</a> is used for a <a href="../menu/">Menu</a> or <a href="../menuitem/">MenuItem</a>, when the object is selected (highlighted), or for a <a href="../button/">Button</a> when its <a href="State.htm">State</a> is 1. The third <a href="../bitmap/">Bitmap</a> is used when the object is disabled by having its <a href="../active/">Active</a> property set to 0.</p>
-<p>For a <a href="../button/">Button</a> with <a href="../style/">Style </a><code>'Push'</code>, this means that when the user clicks the <a href="../button/">Button</a>, its appearance switches from the first to the second <a href="../bitmap/">Bitmap</a>, and then back again. To maintain the standard 3-D appearance, the <a href="../bitmap/">Bitmap</a>s should contain the correct shadow lines around their edges. For <a href="../button/">Button</a>s with <a href="../style/">Style </a><code>'Radio'</code> or <code>'Check'</code>, the <a href="../button/">Button</a> will display one or other of the two <a href="../bitmap/">Bitmap</a>s according to its current <a href="State.htm">State</a>.</p>
-<p>For example, to have a <a href="../button/">Button</a> that displays a "Tick" or a "Cross" according to its <a href="State.htm">State</a>:</p>
+<p>The first <a href="../bitmap/">Bitmap</a> is displayed when the object is shown in its normal state. For a <a href="../button/">Button</a>, this is when its <a href="../state/">State</a> is 0. The second <a href="../bitmap/">Bitmap</a> is used for a <a href="../menu/">Menu</a> or <a href="../menuitem/">MenuItem</a>, when the object is selected (highlighted), or for a <a href="../button/">Button</a> when its <a href="../state/">State</a> is 1. The third <a href="../bitmap/">Bitmap</a> is used when the object is disabled by having its <a href="../active/">Active</a> property set to 0.</p>
+<p>For a <a href="../button/">Button</a> with <a href="../style/">Style </a><code>'Push'</code>, this means that when the user clicks the <a href="../button/">Button</a>, its appearance switches from the first to the second <a href="../bitmap/">Bitmap</a>, and then back again. To maintain the standard 3-D appearance, the <a href="../bitmap/">Bitmap</a>s should contain the correct shadow lines around their edges. For <a href="../button/">Button</a>s with <a href="../style/">Style </a><code>'Radio'</code> or <code>'Check'</code>, the <a href="../button/">Button</a> will display one or other of the two <a href="../bitmap/">Bitmap</a>s according to its current <a href="../state/">State</a>.</p>
+<p>For example, to have a <a href="../button/">Button</a> that displays a "Tick" or a "Cross" according to its <a href="../state/">State</a>:</p>
 <pre><code class="language-apl">      'YES' ⎕WC 'Bitmap' 'C:\WDYALOG\YES.BMP'
       'NO'  ⎕WC 'Bitmap' 'C:\WDYALOG\NO.BMP'
       'f1.r1' ⎕WC 'Button'('Style' 'Check')

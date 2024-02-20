@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59747,7 +59657,7 @@
 <p>The name of the PropertyGet function must be <code>Get</code>, but is case-independent. For example, <code>get</code>, <code>Get</code>, <code>gEt</code> and <code>GET</code> are all valid names for the PropertyGet function.</p>
 <p>The PropertyGet function must be result returning. For a Simple Property, it may be monadic or niladic. For a Numbered or Keyed Property it must be monadic.</p>
 <p>The result <code>R</code> may be any array. However, for a Keyed Property, <code>R</code> must conform to the rank and shape specified by <code>ipa.Indexers</code> or be scalar.</p>
-<p>If monadic, <code>ipa</code> is an instance of the internal class <a href="PropertyArguments Class.htm">PropertyArguments</a>.</p>
+<p>If monadic, <code>ipa</code> is an instance of the internal class <a href="../propertyarguments-class/">PropertyArguments</a>.</p>
 <p>In all cases, <code>ipa.Name</code> contains the name of the Property being referenced and <code>NewValue</code> is undefined (<code>VALUE ERROR</code>).</p>
 <p>If the Property is <em>Simple</em>, <code>ipa.Indexers</code> is undefined (<code>VALUE ERROR</code>).</p>
 <p>If the Property is <em>Numbered</em>, <code>ipa.Indexers</code> is an integer vector of the same length as the rank of the property (as implied by the result of the <code>Shape</code> function) that identifies a single element of the Property whose value is to be obtained. In this case, <code>R</code> must be scalar.</p>

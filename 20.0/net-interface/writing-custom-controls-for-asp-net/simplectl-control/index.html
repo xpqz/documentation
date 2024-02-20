@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59767,20 +59677,21 @@
 :EndClass ⍝ SimpleCtl                           
 
 </code></pre>
-<p>The <code>Render</code> function <strong>supercedes</strong> (see <a href="../../Language/Control Structures/Class Declaration Statements/access.htm#Access_Statement">:Access Statement on page 1</a>) the <code>Render</code> method that <code>SimpleCtl</code> has inherited from its base class, <code>System.Web.UI.Control</code>.</p>
+<p>The <code>Render</code> function <strong>supercedes</strong> (see <a href="../../Language/Control Structures/Class Declaration Statements/access.htm#Access_Statement">:Access Statement</a>) the <code>Render</code> method that <code>SimpleCtl</code> has inherited from its base class, <code>System.Web.UI.Control</code>.</p>
 <p>The <code>Render</code> method defined by the <code>System.Web.UI.Control</code> base class is <code>void</code> and takes a parameter of type <code>HtmlTextWriter</code>. When the <code>SimpleCtl</code> control is referenced in a Web Page, ASP.NET creates an instance of it and calls its <code>Render</code> method because it is a <code>Control</code> and is expected to have one. Moreover, ASP.NET supplies an object of type <code>HtmlTextWriter</code> as its parameter. You do not need to worry where this object came from, or what it actually represents. You need only know that an <code>HtmlTextWriter</code> provides a method called <code>WriteLine</code> that may be used to output a text string to the browser. The mechanics of how this actually happens are handled by the <code>HtmlTextWriter</code> object itself.</p>
 <p>In APL terms, the argument to our <code>Render</code> function, <code>output</code>, will be a namespace reference, and the function can simply call its <code>WriteLine</code> method with a character vector argument. This argument can contain any valid HTML string and defines the appearance of the <code>SimpleCtl</code> control.</p>
 <p>Using the <code>:Signature</code> statement, the <code>Render</code> function is defined to have the same syntax as the method it overrides, i.e. it does not return a result  <code>void</code> and takes a single parameter of type <code>HtmlTextWriter</code>. Note that to successfully replace the base class method, the <code>Render</code> function must have exactly this <em>:Signature</em>.</p>
 <h3 id="using-simplectl">Using SimpleCtl</h3>
 <p>Our <code>SimpleCtl</code> control may now be included in any .NET Web Page from which <code>temp.dll</code> is accessible. The file <code>samples\asp.net\temp\Simple.aspx</code> is simply an example. The fact that this control is written in Dyalog APL is immaterial.</p>
-<pre><code class="language-apl">`&lt;%@ Register TagPrefix=&quot;Dyalog&quot;
+<pre><code class="language-apl">&lt;%@ Register TagPrefix=&quot;Dyalog&quot;
              Namespace=&quot;DyalogSamples&quot; Assembly=&quot;temp&quot; %&gt;
 
 &lt;html&gt;
 &lt;body&gt;
 &lt;Dyalog:SimpleCtl runat=server/&gt;
 &lt;/body&gt;
-&lt;/html&gt;`
+&lt;/html&gt;
+
 </code></pre>
 <p>The first line of the script specifies that any controls referenced later in the script that are prefixed by <code>Dyalog:</code>, refer to custom controls in the .NET Namespace called <code>DyalogSamples</code> which is located in the Assembly <code>temp.dll</code> in the <code>bin</code> subdirectory.</p>
 <p><img alt="simplectl3" src="../../img/simplectl3.png" /></p>

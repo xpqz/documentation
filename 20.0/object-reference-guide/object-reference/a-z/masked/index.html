@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,28 +59599,15 @@
 
 <h1 class="heading"><span class="name">Masked</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../imagelist/">ImageList</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../imagelist/">ImageList</a></p>
 <p><strong>Description</strong></p>
 <p>The Masked property specifies whether or not the <a href="../imagelist/">ImageList</a> will contain opaque or transparent images. It may be 0, 1(the default), 2, or 3.</p>
 <p>Masked must be established when the <a href="../imagelist/">ImageList</a> is created by <code>⎕WC</code> and may not subsequently be altered. An inappropriate value of Masked will cause the images to be drawn incorrectly.</p>
 <p>If Masked is 0, the <a href="../imagelist/">ImageList</a> expects opaque <a href="../bitmap/">Bitmap</a> objects.</p>
-<p>If Masked is 1, the <a href="../imagelist/">ImageList</a> expects low-colour (4-bit or 8-bit) <a href="../icon/">Icon</a> objects whose transparency is defined by their <a href="Mask.htm">Mask</a> property.</p>
+<p>If Masked is 1, the <a href="../imagelist/">ImageList</a> expects low-colour (4-bit or 8-bit) <a href="../icon/">Icon</a> objects whose transparency is defined by their <a href="../mask/">Mask</a> property.</p>
 <p>If Masked is 2,  the <a href="../imagelist/">ImageList</a> expects <a href="../bitmap/">Bitmap</a> or <a href="../icon/">Icon</a> objects whose alpha channel (the degree of transparency of each pixel) is encoded in its source file along with the colours.</p>
 <p>If Masked is 3 and <a href="../../Miscellaneous/Windows XP Look and Feel.htm">Native Look and Feel </a>
-(see page 1)
+<a href="../../Miscellaneous/Windows XP Look and Feel.htm#Native_Look_and_Feel">(see page 1)</a>
  is enabled, the behaviour is the same as if Masked were 2. If Native Look and Feel is not enabled, it behaves as if Masked were 1. This setting provides the greatest degree of portability for applications whose users may or may not have Native Look and Feel enabled. This value is used for the ImageLists on the Dyalog Session CoolBars.</p>
 
 

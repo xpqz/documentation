@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,25 +59599,12 @@
 
 <h1 class="heading"><span class="name">Encoding</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../tcpsocket/">TCPSocket</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../tcpsocket/">TCPSocket</a></p>
 <p><strong>Description</strong></p>
 <p>The Encoding property is a character vector that specifies how character data
 are encoded or translated.</p>
 <p>The possible values are <code>'None'</code>,
-<code>'UTF-8'</code>, <code>'Classic'</code>, or <code>'Unicode'</code>, depending upon the value of the <a href="Style.htm">Style</a> property.</p>
+<code>'UTF-8'</code>, <code>'Classic'</code>, or <code>'Unicode'</code>, depending upon the value of the <a href="../style/">Style</a> property.</p>
 <p>Unicode Edition</p>
 <p>| Style | Encoding | Description |
 | --- | ---  |
@@ -59724,11 +59621,11 @@ are encoded or translated.</p>
 | <code>'UTF-8'</code> | Characters are converted to/from Unicode using <code>⎕AVU</code> and transmitted/received using the UTF-8 encoding scheme. An attempt to         transmit or receive a characters not present in <code>⎕AVU</code> will cause <code>TRANSLATION ERROR</code> . |
 | <code>'Raw'</code> | 'Classic' | Characters are transmitted/received as indices of <code>⎕AV</code> . |
 | <code>'Unicode'</code> | Characters are converted to/from Unicode using <code>⎕AVU</code> and transmitted/received as Unicode code points. An attempt to transmit         or receive a characters not present in <code>⎕AVU</code> will cause <code>TRANSLATION ERROR</code> . |</p>
-<p>The default value of Encoding depends upon the value of <a href="Style.htm">Style</a> as indicated.  Default values are highlighted thus.  in the above tables.</p>
-<p>An attempt to set the value of Encoding to a value not valid for the current <a href="Style.htm">Style</a>,
+<p>The default value of Encoding depends upon the value of <a href="../style/">Style</a> as indicated.  Default values are highlighted thus.  in the above tables.</p>
+<p>An attempt to set the value of Encoding to a value not valid for the current <a href="../style/">Style</a>,
 as implied by the above tables, will cause <code>DOMAIN ERROR</code>.</p>
-<p>If you change the value of the <a href="Style.htm">Style</a> property, the value of Encoding will remain unchanged if it is valid for the new
-Style. Otherwise it will revert to the default value for the new value of <a href="Style.htm">Style</a>.</p>
+<p>If you change the value of the <a href="../style/">Style</a> property, the value of Encoding will remain unchanged if it is valid for the new
+Style. Otherwise it will revert to the default value for the new value of <a href="../style/">Style</a>.</p>
 <pre><code class="language-apl">      's0'⎕WC'TCPSocket' ('LocalPort' 2001)
       s0.(Style Encoding)
 Char  None 

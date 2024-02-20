@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59791,7 +59701,7 @@
 
 <p><code>Y</code> may be any array.  <code>X</code> is a simple integer vector or scalar.</p>
 <p>The axis specification is optional.  If present, <code>K</code> must be a simple integer scalar or 1-element vector.  The value of <code>K</code> must be an axis of <code>Y</code>.  If absent, the last axis of <code>Y</code> is implied.  The form <code>R←X⌿Y</code> implies the first axis of <code>Y</code>.</p>
-<p>If <code>Y</code> has length 1 along the <code>K</code>th (or implied) axis, it is extended along that axis to match the length of <code>X</code>. Otherwise, the length of <code>X</code> must be the length of the <code>K</code>th (or implied) axis of <code>Y</code>. However, if <code>X</code> is a scalar or one-element vector, it will be extended to the length of the <code>K</code>th axis.</p>
+<p>If <code>Y</code> has length 1 along the <code>K</code><sup>th</sup> (or implied) axis, it is extended along that axis to match the length of <code>X</code>. Otherwise, the length of <code>X</code> must be the length of the <code>K</code><sup>th</sup> (or implied) axis of <code>Y</code>. However, if <code>X</code> is a scalar or one-element vector, it will be extended to the length of the <code>K</code><sup>th</sup> axis.</p>
 <p><code>R</code> is composed from sub-arrays along the <code>K</code>th axis of <code>Y</code>.  If <code>X[I]</code> (an element of <code>X</code>) is positive, then the corresponding sub-array is replicated <code>X[I]</code> times.  If <code>X[I]</code> is zero, then the corresponding sub-array of <code>Y</code> is excluded.  If <code>X[I]</code> is negative, then the fill element of  <code>Y</code> is replicated <code>|X[I]</code> times.  Each of the (replicated) sub-arrays and fill items are joined along the <code>K</code>th axis in the order of occurrence.  The shape of <code>R</code> is the shape of <code>Y</code> except that the length of the (implied) <code>K</code>th axis is <code>+/|X</code> (after possible extension).</p>
 <p>This function is sometimes called Compress when <code>X</code> is Boolean.</p>
 <h4 id="examples">Examples</h4>

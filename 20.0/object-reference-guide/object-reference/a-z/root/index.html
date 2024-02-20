@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59812,38 +59722,8 @@
 
 <h1 class="heading"><span class="name">Root</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ChildLists/Root.htm">Children</a></th>
-<th><a href="../PropLists/Root.htm">Properties</a></th>
-<th><a href="../MethodLists/Root.htm">Methods</a></th>
-<th><a href="../EventLists/Root.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>This is an invisible "system" object that acts as the parent of all other objects.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ChildLists/Root.htm">Children</a> <a href="../PropLists/Root.htm">Properties</a> <a href="../MethodLists/Root.htm">Methods</a> <a href="../EventLists/Root.htm">Events</a></p>
+<p>Purpose: This is an invisible "system" object that acts as the parent of all other objects.</p>
 <p><strong>Description</strong></p>
 <p>There is a single Root object called <code>'.'</code> which is always present. It cannot be created using <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> nor can it be destroyed.</p>
 <p>The <a href="../caption/">Caption</a> and <a href="../iconobj/">IconObj</a> properties of <code>'.'</code> are used to identify a Dyalog APL/W application as distinct from the APL Session. The <a href="../caption/">Caption</a> property specifies the application name that is displayed when you cycle through running applications using Alt+Tab and by the Windows Task List. The <a href="../iconobj/">IconObj</a> property specifies the name of an <a href="../icon/">Icon</a> object that is displayed alongside the application name in the box displayed by Alt+Tab. For these to take effect, your application must have at least one visible and active <a href="../form/">Form</a>.</p>
@@ -59871,7 +59751,7 @@
 <li>This flag may be changed dynamically using the <strong>Options/Object Syntax/Expose Root Properties</strong> menu item on the Session or using <code>2401⌶</code>.  If the workspace is subsequently saved, the current value of the flag is saved with it.</li>
 <li>The value of the flag in a <code>CLEAR WS</code> is determined by the PropertyExposeRoot parameter. Under Windows, this parameter is associated with the <strong>Expose properties of Root</strong> checkbox on the <strong>Object Syntax</strong> Tab of the <strong>Configuration</strong> dialog box. When you change the value of this checkbox and close the <strong>Configuration</strong> dialog by clicking <strong>OK</strong>, the value of the PropertyExposeRoot parameter is immediately updated in the user's section of the Registry. However, the value of the flag <em>in the current workspace</em> is not changed. The PropertyExposeRoot parameter only defines the value of the flag in a <code>CLEAR WS</code>, so if you subsequently type <code>)CLEAR</code>, the current value of the parameter in the Registry determines whether or not Root members are exposed and sets the flag in the workspace accordingly.</li>
 </ol>
-<p>For further information, see <a href="../../UserGuide/The APL Environment/Session MenuBar.htm#Options_Menu">The Options Menu on page 1</a>, <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#PropertyExposeRoot"> PropertyExposeRoot on page 1</a>, and <a href="../../Language/I Beam Functions/Expose Root Properties.htm#ExposeRootPropertiesI-Beam">Expose Root Properties on page 1</a>.</p>
+<p>For further information, see <a href="../../UserGuide/The APL Environment/Session MenuBar.htm#Options_Menu">The Options Menu</a>, <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#PropertyExposeRoot"> PropertyExposeRoot</a>, and <a href="../../Language/I Beam Functions/Expose Root Properties.htm#ExposeRootPropertiesI-Beam">Expose Root Properties</a>.</p>
 <h4 id="notes">Notes:</h4>
 <ol>
 <li>When Root members are exposed, the first reference or assignment to a member, associates that name (with a nameclass of <code>¯2.6</code> or <code>¯3.6</code>) with that member. If, having referenced a member in this way, you subsequently hide Root members using <code>(2401⌶0)</code>, that name remains connected to that member and the member remains exposed. This association may however be removed by erasing the name.</li>

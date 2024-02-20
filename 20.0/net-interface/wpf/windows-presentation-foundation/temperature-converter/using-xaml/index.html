@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59973,7 +59883,7 @@
 </code></pre>
 <p>Arguably the easiest way to create a WPF GUI is to define it using XAML. The XAML defines the structure, layout and appearance of the user-interface in a very concise manner. It is still necessary to write code to display the XAML and to respond to user actions, but the amount of code involved is minimal.</p>
 <p>The XAML for the Temperature Converter is shown below.</p>
-<pre><code class="language-apl">`&lt;Window
+<pre><code class="language-apl">&lt;Window
  xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
  xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
  Name=&quot;Temp&quot;
@@ -60016,110 +59926,116 @@
      Orientation=&quot;Vertical&quot; Minimum=&quot;1&quot; Maximum=&quot;213&quot;&gt;
     &lt;/ScrollBar&gt;
   &lt;/DockPanel&gt;
-&lt;/Window&gt;`
+&lt;/Window&gt;
+
 </code></pre>
 <p><img alt="wpf_example1" src="../img/wpf-example1.png" /></p>
 <p>The window defined by this XAML is illustrated in the screen image shown above. Let us examine the XAML, component by component.</p>
 <h2 id="parent-and-child-controls">Parent and Child Controls</h2>
 <p>First, notice how the structure of the GUI is defined by enclosing the child components inside the opening and closing tags of its parent. So:</p>
-<pre><code class="language-apl">`&lt;Window
+<pre><code class="language-apl">&lt;Window
 ...
   &lt;DockPanel&gt;
 ...
   &lt;/DockPanel&gt;
-&lt;/Window&gt;`
+&lt;/Window&gt;
+
 </code></pre>
 <p>specifies a Window control that <em>contains</em> a DockPanel control.</p>
 <p>Similarly,</p>
-<pre><code class="language-apl">`&lt;Menu&gt;
+<pre><code class="language-apl">    &lt;Menu&gt;
         &lt;MenuItem ... &gt;
             &lt;MenuItem ... /&gt;
             &lt;MenuItem ... /&gt;
         &lt;/MenuItem&gt;
-    &lt;/Menu&gt;`
+    &lt;/Menu&gt;
+
 </code></pre>
 <p>defines a Menu that contains a MenuItem, that itself contains two other MenuItem objects.</p>
 <h2 id="named-and-un-named-controls">Named and Un-named Controls</h2>
 <p>Secondly, notice that certain objects are <em>named</em> whereas others are not. For example: <code>TextBox Name="mnuFahrenheit</code> defines  a TextBox named <strong>txtFahenheit</strong>; whereas <code>&lt;DockPanel ...&gt;</code> defines an unnamed DockPanel object.</p>
 <p>Objects are given names so that they can be referenced from the code that displays content in the user-interface or handles the user actions. In this case, the code will read the content of the <strong>txtFahrenheit</strong> TextBox but has no need to reference the DockPanel.</p>
 <h2 id="the-main-window">The Main Window</h2>
-<pre><code class="language-apl">`&lt;Window
+<pre><code class="language-apl">&lt;Window
  xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
  xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
  Name=&quot;Temp&quot;
  Title=&quot;WPF Temperature Converter&quot;
  SizeToContent=&quot;WidthandHeight&quot;&gt;
 ...
-&lt;/Window&gt;`
+&lt;/Window&gt;
 </code></pre>
 <p>This extract of XAML defines a Window control; a top-level window that is equivalent to a Dyalog APL GUI Form.</p>
 <p>The <strong>xmlns</strong> attributes define the XML namespaces (effectively the vocabulary of the xml scheme) and are mandatory in an XAML document.</p>
 <p>The name of the TextBox is <strong>Temp</strong>, and its caption is <strong>WFP Temperature Converter</strong>. The SizeToContent property is set to "WidthandHeight", which causes the TextBox to automatically size itself to fit its content in both horizontal and vertical directions.</p>
 <h2 id="the-dockpanel">The DockPanel</h2>
-<pre><code class="language-apl">`&lt;DockPanel LastChildFill=&quot;False&quot;&gt; .. &lt;/DockPanel&gt;`
+<pre><code class="language-apl"> &lt;DockPanel LastChildFill=&quot;False&quot;&gt;
+..
+ &lt;/DockPanel&gt;
 </code></pre>
 <p>WPF provides a number of <em>layout controls</em>. These are containers whose only purpose is to arrange child controls in a particular way, and to dictate how they are re-arranged when the parent window is resized. The DockPanel is one of the simplest of the WPF layout controls.</p>
 <p>In this case, the DockPanel is controlling 3 child windows a Menu, a Grid and a ScrollBar.</p>
 <p>The attachment of a particular child control is specified by setting its DockPanel.Dock property. By default, the last control added to a DockPanel is stretched to fill the remaining space when the window is expanded. In this case, the requirement is for a fixed-width scrollbar attached to the right edge, so the default is overridden by setting the LastChildFill property to "False".</p>
 <h2 id="the-menu">The Menu</h2>
-<pre><code class="language-apl">`&lt;Menu DockPanel.Dock=&quot;Top&quot;&gt;
+<pre><code class="language-apl">    &lt;Menu DockPanel.Dock=&quot;Top&quot;&gt;
         &lt;MenuItem Header=&quot;_Scale&quot;&gt;
             &lt;MenuItem Name=&quot;mnuFahrenheit&quot; Header=&quot;_Fahrenheit&quot;
              IsCheckable=&quot;True&quot; IsChecked=&quot;True&quot;/&gt;
             &lt;MenuItem Name=&quot;mnuCentigrade&quot; Header=&quot;_Centigrade&quot;
              IsCheckable=&quot;True&quot;/&gt;
         &lt;/MenuItem&gt;
-    &lt;/Menu&gt;`
+    &lt;/Menu&gt;
 </code></pre>
 <p><img alt="wpf_example2" src="../img/wpf-example2.png" /></p>
 <p>The above extract from the XAML defines a Menu. Setting Dock to "Top" causes the Menu as a whole to be docked, so that it appears like a menubar, along the top of the DockPanel. The Menu contains a single MenuItem labelled <strong>Scale</strong> which itself contains two sub-items labelled <strong>Fahrenheit</strong> and <strong>Centigrade</strong> respectively. The IsCheckable property specifies whether or not the user can check the MenuItem, and the IsChecked property sets and reports its checked state. The underscore characters (e.g. as in "_Scale") identify the following character as a keyboard shortcut.</p>
 <h2 id="the-grid">The Grid</h2>
-<pre><code class="language-apl">`&lt;Grid Width=&quot;230&quot; Margin=&quot;40,10,10,10&quot;&gt;
+<pre><code class="language-apl">    &lt;Grid Width=&quot;230&quot; Margin=&quot;40,10,10,10&quot;&gt;
     ...
-    &lt;/Grid&gt;`
+    &lt;/Grid&gt;
 </code></pre>
-<p>The Grid object is another WPF layout control that organises other controls in rows and columns. Here, the XAML defines a Grid with a width of 230; a left margin if 40, and a top, right and bottom margin of 10. As there is no explicit unit specified, the system uses the default device-independent unit (<strong>px</strong>) of 1/96th inch.</p>
+<p>The Grid object is another WPF layout control that organises other controls in rows and columns. Here, the XAML defines a Grid with a width of 230; a left margin if 40, and a top, right and bottom margin of 10. As there is no explicit unit specified, the system uses the default device-independent unit (<strong>px</strong>) of 1/96<sup>th</sup> inch.</p>
 <p>The rows  and columns of a Grid are defined by collections of RowDefinition and ColumnDefinition objects.</p>
 <p>Here the XAML specifies that the Grid contains 3 rows, each of which has a Height set to "Auto" which means that its height depends upon the height of its content.</p>
-<pre><code class="language-apl">`&lt;Grid.RowDefinitions&gt;
+<pre><code class="language-apl">      &lt;Grid.RowDefinitions&gt;
         &lt;RowDefinition Height=&quot;Auto&quot;/&gt;
         &lt;RowDefinition Height=&quot;Auto&quot;/&gt;
         &lt;RowDefinition Height=&quot;Auto&quot;/&gt;
-      &lt;/Grid.RowDefinitions&gt;`
+      &lt;/Grid.RowDefinitions&gt; 
 </code></pre>
 <p>Similarly, there are 3 columns. The first column (which will contain labels) takes its width from its content, i.e. it will be just wide enough to display the longest label. The other columns   for the edit boxes and buttons are specified to be 80px and 60px wide respectively. In this case, the content (TextBox and Button objects) will take their widths from that of the column.</p>
-<pre><code class="language-apl">`&lt;Grid.ColumnDefinitions&gt;
+<pre><code class="language-apl">     &lt;Grid.ColumnDefinitions&gt;
         &lt;ColumnDefinition Width=&quot;Auto&quot;/&gt;
         &lt;ColumnDefinition Width=&quot;80&quot;/&gt;
         &lt;ColumnDefinition Width=&quot;60&quot;/&gt;
-      &lt;/Grid.ColumnDefinitions&gt;`
+      &lt;/Grid.ColumnDefinitions&gt; 
 </code></pre>
 <h2 id="the-label-objectscolumn-1">The Label Objects(Column 1)</h2>
-<pre><code class="language-apl">`&lt;Label Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; Content=&quot;Fahrenheit&quot;/&gt;
-    &lt;Label Grid.Row=&quot;1&quot; Grid.Column=&quot;0&quot; Content=&quot;Centigrade&quot;/&gt;`
+<pre><code class="language-apl">    &lt;Label Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; Content=&quot;Fahrenheit&quot;/&gt;
+    &lt;Label Grid.Row=&quot;1&quot; Grid.Column=&quot;0&quot; Content=&quot;Centigrade&quot;/&gt;
 </code></pre>
 <p>Here the XAML specifies Label objects Fahrenheit and Centigrade. Because they are defined within the<code>&lt;Grid&gt; ...&lt;/Grid&gt;</code> tags, they are child objects of the Grid. In addition it is necessary to specify in which cells they are displayed using their Grid.Row and Grid.Column properties. Note that the cell coordinates have zero origin.</p>
 <h2 id="the-textbox-objectscolumn-2">The TextBox Objects(Column 2)</h2>
-<pre><code class="language-apl">`&lt;TextBox Name=&quot;txtFahrenheit&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot;
+<pre><code class="language-apl">    &lt;TextBox Name=&quot;txtFahrenheit&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot;
      Margin=&quot;5&quot;/&gt;
     &lt;TextBox Name=&quot;txtCentigrade&quot; Grid.Row=&quot;1&quot; Grid.Column=&quot;1&quot;
-     Margin=&quot;5&quot;/&gt;`
+     Margin=&quot;5&quot;/&gt;
 </code></pre>
 <p>The XAML specifies two TextBox objects named <strong>txtFahrenheit</strong> and<strong>txtCentigrade</strong> respectively. Setting Margin to "5" means that a margin of 5px is applied around each edge; otherwise the text boxes would occupy the entire width of the column (80px). The effective width of each TextBox will therefore be 70px <code>(80-2×5)</code>.</p>
 <h2 id="the-button-objects-column-3">The Button Objects (Column 3)</h2>
-<pre><code class="language-apl">`&lt;Button Name=&quot;btnF2C&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;2&quot;
+<pre><code class="language-apl">    &lt;Button Name=&quot;btnF2C&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;2&quot;
      Content=&quot;F&gt;C&quot; Margin=&quot;5&quot;/&gt;
     &lt;Button Name=&quot;btnC2F&quot; Grid.Row=&quot;1&quot; Grid.Column=&quot;2&quot;
      Content=&quot;C&gt;F&quot; Margin=&quot;5&quot;/&gt;
     &lt;Button Name=&quot;btnQuit&quot; Grid.Row=&quot;2&quot; Grid.Column=&quot;1&quot;
-     Content=&quot;Quit&quot; Margin=&quot;5&quot;/&gt;`
+     Content=&quot;Quit&quot; Margin=&quot;5&quot;/&gt;
+
 </code></pre>
 <p>The XAML specifies three named Button controls. Note that the caption on a Button is specified by its Content property.</p>
 <h2 id="the-scrollbar-object">The ScrollBar Object</h2>
 <p>This example uses a ScrollBar which the user may scroll to input a value, either in Fahrenheit or Centigrade depending upon which of the two menu items (<strong>Fahrenheit</strong> or <strong>Centigrade</strong>) is checked.A ScrollBar is not the ideal choice of control for this type of user interation, but this example is designed to look and behave like the original Dyalog GUI example, which was written for the original version of Dyalog APL for Windows.</p>
-<pre><code class="language-apl">`&lt;ScrollBar Name=&quot;scrTemp&quot; DockPanel.Dock=&quot;Right&quot;  Width=&quot;20&quot;
+<pre><code class="language-apl">    &lt;ScrollBar Name=&quot;scrTemp&quot; DockPanel.Dock=&quot;Right&quot;  Width=&quot;20&quot;
      Orientation=&quot;Vertical&quot; Minimum=&quot;1&quot; Maximum=&quot;213&quot;&gt;
-    &lt;/ScrollBar&gt;`
+    &lt;/ScrollBar&gt;
 </code></pre>
 <p>This XAML snippet defines a ScrollBar named <strong>scrTemp</strong>.</p>
 <p>Setting DockPanel.Dock to "Right" means that it will be docked (aligned) on the right edge of the DockPanel. It will be a vertical scrollbar, have a fixed width of 20px and a default height. The range of the ScrollBar is defined by its Minimum and Maximum properties which are set so that the ScrollBar will specify a value in Fahrenheit.</p>

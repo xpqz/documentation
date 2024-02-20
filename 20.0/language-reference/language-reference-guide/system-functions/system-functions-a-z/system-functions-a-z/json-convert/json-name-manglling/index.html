@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59756,7 +59666,7 @@
 <p>When Dyalog converts from JSON to APL data, and a member of a JSON object has a name which is not a valid APL name, it is renamed.</p>
 <h2 id="example">Example:</h2>
 <p>In this example, the JSON describes an object containing two numeric items, one named <strong>a</strong> (which is a valid APL name) and the other named <strong>2a</strong> (which is not):</p>
-<pre><code class="language-apl">`{&quot;a&quot;: 1, &quot;2a&quot;: 2}`
+<pre><code class="language-apl">{&quot;a&quot;: 1, &quot;2a&quot;: 2}
 </code></pre>
 <p>When this JSON is imported as an APL namespace using <code>⎕JSON</code>, Dyalog converts the name <strong>2a</strong> to a valid APL name. The <em>name mangling</em> algorithm creates a name beginning with <code>⍙</code>.</p>
 <pre><code class="language-apl">      (⎕JSON'{&quot;a&quot;: 1, &quot;2a&quot;: 2}').⎕NL 2
@@ -59768,7 +59678,7 @@ a
 {&quot;a&quot;:1,&quot;2a&quot;:2}
 
 </code></pre>
-<p>Should you need to create and decode these names directly,<code>7162⌶</code> provides the same name mangling and un-mangling operations. See <a href="../../../../../the-i-beam-operator/a-z/json-translate-name/">JSON Translate Name on page 1</a>.</p>
+<p>Should you need to create and decode these names directly,<code>7162⌶</code> provides the same name mangling and un-mangling operations. See <a href="../../../../../the-i-beam-operator/a-z/json-translate-name/">JSON Translate Name</a>.</p>
 <pre><code class="language-apl">      0(7162⌶)'2a'
 ⍙2a
       1(7162⌶)'⍙2a'

@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59693,10 +59603,10 @@
 <p><strong>Description</strong></p>
 <p>This is a 2-element numeric vector specifying the height and width of the object.</p>
 <p>For the <a href="../bitmap/">Bitmap</a> object, Size is set and reported in pixels. Setting the Size of a <a href="../bitmap/">Bitmap</a> causes it to be scaled (up or down).</p>
-<p>For all other objects, Size is reported and set in units defined by the <a href="../coord/">Coord</a> property and, if <a href="../coord/">Coord</a> is <code>'User'</code>, the <a href="XRange.htm">XRange</a> and <a href="YRange.htm">YRange</a> properties of the object's parent.</p>
+<p>For all other objects, Size is reported and set in units defined by the <a href="../coord/">Coord</a> property and, if <a href="../coord/">Coord</a> is <code>'User'</code>, the <a href="../xrange/">XRange</a> and <a href="../yrange/">YRange</a> properties of the object's parent.</p>
 <p>For the <a href="../root/">Root</a> object, if <a href="../coord/">Coord</a> is <code>'Prop'</code> the value of Size is (100,100). If <a href="../coord/">Coord</a> is <code>'Pixel'</code> the value of Size reports the number of pixels on the screen.</p>
 <p>For a <a href="../form/">Form</a> or <a href="../subform/">SubForm</a>, the Size property defines the area within the object, and excludes its title bar, menu bar and border if these are present.</p>
-<p>For a <a href="../combo/">Combo</a> object with a "drop-down" list, the first element of Size (height) is ignored. The height of the edit field is determined by the height of the font, while the size of the list box is determined by the <a href="Rows.htm">Rows</a> property.</p>
+<p>For a <a href="../combo/">Combo</a> object with a "drop-down" list, the first element of Size (height) is ignored. The height of the edit field is determined by the height of the font, while the size of the list box is determined by the <a href="../rows/">Rows</a> property.</p>
 <p>Otherwise the Size property defines the total size of the object, including borders, edges etc.</p>
 <p>When specifying Size, you can set the height or width to a default value (<code>⎕WC</code>) or leave it unchanged (<code>⎕WS</code>) by giving the corresponding element a value of <code>⍬</code>.</p>
 

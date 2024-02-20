@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59773,10 +59683,10 @@
 <p>If <code>B</code> is a two item vector <code>q r</code>, it is implicitly extended to <code>r q r</code>. If  <code>B</code> has a single item <code>r</code>, it is implicitly extended to <code>r r r</code>.</p>
 <p>If an item <code>k</code> of <code>B</code> is zero or positive it selects k-cells of the corresponding argument. If it is negative, it selects (r+k)-cells where <code>r</code> is the rank of the corresponding argument. A value of <code>¯1</code> selects major cells.  For further information, see 
 Programming Reference Guide: </p>
-<p>Cells and Subarrays"Cells and Sub-arrays" on page 1.</p>
+<p>Cells and Subarrays<a href="../Introduction/Variables/Cells and Subarrays.htm#CellsSubarrays">"Cells and Sub-arrays"</a>.</p>
 <p>If <code>X</code> is omitted, <code>f</code> may be any monadic function that returns a result. <code>Y</code> may be any array. The Rank operator <code>⍤</code> applies function <code>f</code> successively to the sub-arrays in <code>Y</code> specified by <code>p</code> (i.e. the first item of <code>B</code>, as specified or implicitly extended).</p>
 <p>If <code>X</code> is specified, it may be any array and <code>f</code> may be any dyadic function that returns a result. <code>Y</code> may be any array. In this case, the Rank operator applies function <code>f</code> successively between the sub-arrays in <code>X</code> specified by <code>q</code> and the sub-arrays in <code>Y</code> specified by <code>r</code>.</p>
-<p>The sub-arrays of <code>R</code> are the results of the individual applications of <code>f</code>. If these results differ in rank or shape, they are extended to a common rank and shape in the manner of Mix. See Mix on page 1.</p>
+<p>The sub-arrays of <code>R</code> are the results of the individual applications of <code>f</code>. If these results differ in rank or shape, they are extended to a common rank and shape in the manner of Mix. See <a href="../../../primitive-functions/primitive-functions-a-z/primitive-functions-a-z/mix/">Mix</a>.</p>
 <p>Notice that it is necessary to prevent the right operand <code>k</code> binding to the right argument. This can be done using parentheses e.g. <code>(f⍤1)Y</code>. The same can be achieved using  <code>⊢</code> e.g. <code>f⍤1⊢Y</code> because <code>⍤</code> binds tighter to its right operand than <code>⊢</code> does to its left argument, and <code>⊢</code> therefore resolves to Identity.</p>
 <h4 id="monadic-examples">Monadic Examples</h4>
 <p>Using enclose (<code>⊂</code>) as the left operand elucidates the workings of the rank operator.</p>

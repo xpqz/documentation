@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59691,7 +59601,7 @@
 
 
 <h1 id="execution">Execution</h1>
-<p>When your Web Service (or Page) is invoked, ASP.NET requests an instance of the corresponding Class from the Assembly (DLL) that was created when it was compiled. The first time this happens for any Dyalog APL Web Service or Web Page, the Dyalog APL dynamic link library  is loaded into the ASP.NET host process and the namespace corresponding to your Web Service class is <code>)COPYed</code> from the Assembly. The Dyalog APL dynamic link library then delivers an instance of this namespace to the client (calling) process. See <a href="../../implementation-details/introduction/">Introduction on page 1</a> for further details.</p>
+<p>When your Web Service (or Page) is invoked, ASP.NET requests an instance of the corresponding Class from the Assembly (DLL) that was created when it was compiled. The first time this happens for any Dyalog APL Web Service or Web Page, the Dyalog APL dynamic link library  is loaded into the ASP.NET host process and the namespace corresponding to your Web Service class is <code>)COPYed</code> from the Assembly. The Dyalog APL dynamic link library then delivers an instance of this namespace to the client (calling) process. See <a href="../../implementation-details/introduction/">Introduction</a> for further details.</p>
 <p>In general, every call on a method in a Web Service causes a new instance of the Web Server class to be created. If you need to maintain/update variables between calls, you need to write them to permanent storage.</p>
 <p>If a client invokes a different Dyalog APL Web Service or Web Page, its class is <code>)COPY</code>ed from its Assembly into the workspace managed by the Dyalog APL dynamic link library. When you export a class, you can select one of three Isolation Modes:</p>
 <ol>

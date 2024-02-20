@@ -823,43 +823,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -870,14 +833,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2422,43 +2377,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2469,14 +2387,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59667,7 +59577,7 @@
 
 <h1 class="heading"><span class="name">Start Windows Auxiliary Processor</span><span class="command">{R}←X ⎕CMD Y</span></h1>
 
-<p>Used dyadically, <code>⎕CMD</code> starts an Auxiliary Processor.  The effect, as far as the APL workspace is concerned, is identical under both Windows and UNIX, although the method of implementation differs.  <code>⎕CMD</code> is a synonym of <code>⎕SH</code>.  Either function may be used in either environment (Windows or UNIX) with exactly the same effect.  <code>⎕CMD</code> is probably more natural for the Windows user.  This section describes the behaviour of <code>⎕CMD</code> and <code>⎕SH</code> under Windows.  See <a href="../../../../system-functions-a-z/system-functions-a-z/start-unix-auxiliary-processor/">"Examples" on page 1</a> for a discussion of the behaviour of these system functions under UNIX.</p>
+<p>Used dyadically, <code>⎕CMD</code> starts an Auxiliary Processor.  The effect, as far as the APL workspace is concerned, is identical under both Windows and UNIX, although the method of implementation differs.  <code>⎕CMD</code> is a synonym of <code>⎕SH</code>.  Either function may be used in either environment (Windows or UNIX) with exactly the same effect.  <code>⎕CMD</code> is probably more natural for the Windows user.  This section describes the behaviour of <code>⎕CMD</code> and <code>⎕SH</code> under Windows.  See <a href="../../../../system-functions-a-z/system-functions-a-z/start-unix-auxiliary-processor/">"Examples"</a> for a discussion of the behaviour of these system functions under UNIX.</p>
 <p><code>X</code> must be a simple character vector containing the name (or pathname) of a Dyalog APL Auxiliary Processor (AP). Although it is possible for users to create their own APs, Dyalog recommends that user write their own DLLs/shared libraries instead.</p>
 <p><code>Y</code> may be a simple character scalar or vector, or a vector of character vectors.  Under Windows the contents of <code>Y</code> are ignored.</p>
 <p><code>⎕CMD</code> loads the Auxiliary Processor into memory.  If no other APs are currently running, <code>⎕CMD</code> also allocates an area of memory for communication between APL and its APs.</p>

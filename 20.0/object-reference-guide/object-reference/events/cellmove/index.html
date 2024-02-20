@@ -823,43 +823,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -870,14 +833,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2422,43 +2377,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2469,14 +2387,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59667,20 +59577,7 @@
 
 <h1 class="heading"><span class="name">CellMove</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../../a-z/grid/">Grid</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../../a-z/grid/">Grid</a></p>
 <p><strong>Description</strong></p>
 <p>If enabled, this event is reported when the user attempts to position the cursor over a cell in a <a href="../../a-z/grid/">Grid</a> by clicking the left mouse button or by pressing a cursor movement key. The purpose of this event is to allow an application to perform some action prior to the user entering a cell,  to inhibit entry to a cell, or to deny exit from the current cell.</p>
 <p>The default action is to position the user on the new cell. This action can be prevented by returning a 0 from the callback function attached to the event.</p>
@@ -59736,12 +59633,12 @@
 </tr>
 </tbody>
 </table>
-<p>The 5th element of the event message is 1 if switching to the new cell would cause the <a href="../../a-z/grid/">Grid</a> to scroll.</p>
-<p>The 6th element of the event message is 1 if the user is moving to the new cell by extending the selection. It is 2 if the user selects an entire row or column (by clicking on a title), which moves the current cell to the first one in the selection.</p>
-<p>The 7th element of the event message is 1 if the mouse is used to switch to a new cell.</p>
-<p>The 8th element of the event message is 1 if the user is attempting to move to the new cell from another cell in the Grid having typed in (as if to alter)  the current cell.</p>
-<p>The 9th element of the event message is the intended new value in the current cell or <code>⍬</code> (zilde) if <strong>Changed flag</strong> is 0.</p>
-<p>The CellMove event may be used to validate and refuse changes as the user navigates between cells.  See also <a href="../../a-z/cellchange/">CellChange on page 1</a>.</p>
+<p>The 5<sup>th</sup> element of the event message is 1 if switching to the new cell would cause the <a href="../../a-z/grid/">Grid</a> to scroll.</p>
+<p>The 6<sup>th</sup> element of the event message is 1 if the user is moving to the new cell by extending the selection. It is 2 if the user selects an entire row or column (by clicking on a title), which moves the current cell to the first one in the selection.</p>
+<p>The 7<sup>th</sup> element of the event message is 1 if the mouse is used to switch to a new cell.</p>
+<p>The 8<sup>th</sup> element of the event message is 1 if the user is attempting to move to the new cell from another cell in the Grid having typed in (as if to alter)  the current cell.</p>
+<p>The 9<sup>th</sup> element of the event message is the intended new value in the current cell or <code>⍬</code> (zilde) if <strong>Changed flag</strong> is 0.</p>
+<p>The CellMove event may be used to validate and refuse changes as the user navigates between cells.  See also <a href="../../a-z/cellchange/">CellChange</a>.</p>
 <p>An application can position the user on a particular cell in a <a href="../../a-z/grid/">Grid</a> by calling CellMove as a method. If so, the argument need contain only the <strong>New cell row</strong> and <strong>New cell column</strong> parameters.</p>
 
 

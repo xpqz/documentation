@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59866,40 +59776,8 @@
 
 <h1 class="heading"><span class="name">Marker</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/Marker.htm">Parents</a></th>
-<th><a href="../ChildLists/Marker.htm">Children</a></th>
-<th><a href="../PropLists/Marker.htm">Properties</a></th>
-<th><a href="../MethodLists/Marker.htm">Methods</a></th>
-<th><a href="../EventLists/Marker.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>A graphical object used to draw polymarkers.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/Marker.htm">Parents</a> <a href="../ChildLists/Marker.htm">Children</a> <a href="../PropLists/Marker.htm">Properties</a> <a href="../MethodLists/Marker.htm">Methods</a> <a href="../EventLists/Marker.htm">Events</a></p>
+<p>Purpose: A graphical object used to draw polymarkers.</p>
 <p><strong>Description</strong></p>
 <p>The <a href="../points/">Points</a> property specifies one or more sets of points at which one or more sets of polymarkers are to be drawn.</p>
 <p>The <a href="../style/">Style</a> property determines the symbol that is drawn at each of a set of points. Marker styles are specified either by numbers which represent the following symbol shapes .</p>
@@ -59937,8 +59815,8 @@
 </tr>
 </tbody>
 </table>
-<p>or by character vectors containing the names of <a href="Bitmap.htm">Bitmap</a> or <a href="../icon/">Icon</a> objects.</p>
-<p>The height of each symbol is specified by the value of the <a href="../size/">Size</a> property. However this applies only to <a href="../style/">Style</a>s 1-6 and is ignored if <a href="../style/">Style</a> is 0 or the name of a <a href="Bitmap.htm">Bitmap</a>. The colour of each symbol is specified by the <a href="../fcol/">FCol</a> property. The default is black.</p>
+<p>or by character vectors containing the names of <a href="../bitmap/">Bitmap</a> or <a href="../icon/">Icon</a> objects.</p>
+<p>The height of each symbol is specified by the value of the <a href="../size/">Size</a> property. However this applies only to <a href="../style/">Style</a>s 1-6 and is ignored if <a href="../style/">Style</a> is 0 or the name of a <a href="../bitmap/">Bitmap</a>. The colour of each symbol is specified by the <a href="../fcol/">FCol</a> property. The default is black.</p>
 <p>The value of <a href="../dragable/">Dragable</a> determines whether or not the object can be dragged. The value of <a href="../autoconf/">AutoConf</a> determines whether or not the Marker object is resized when its parent is resized.</p>
 <p>The structure of the property values is best considered separately for single and multiple sets of polymarkers.</p>
 <h4 id="single-set-of-polymarkers">Single Set of Polymarkers</h4>
@@ -59946,7 +59824,7 @@
 <p><a href="../style/">Style</a> and <a href="../size/">Size</a> are both simple scalar numbers.</p>
 <p><a href="../fcol/">FCol</a> is either a single number representing a standard colour, or a 3-element vector which specifies the marker colour explicitly in terms of RGB values.</p>
 <h4 id="examples">Examples:</h4>
-<p>First make a <a href="Form.htm">Form</a>:</p>
+<p>First make a <a href="../form/">Form</a>:</p>
 <pre><code class="language-apl">      'F' ⎕WC 'Form'
 </code></pre>
 <p>Draw a point at (y=20, x=10):</p>
@@ -59971,7 +59849,7 @@
 <p><a href="../style/">Style</a> and <a href="../size/">Size</a> may be simple scalars specifying a single type and/or size of symbol to be used for all the sets of polymarkers, or vectors specifying different symbols and/or sizes for each set.</p>
 <p><a href="../fcol/">FCol</a> may be a single number or a single (enclosed) 3-element vector applying to all the sets of polymarkers. Alternatively, <a href="../fcol/">FCol</a> may be a vector whose elements refer to each of the sets of polymarkers in turn. If so, the elements may be single numbers or nested RGB triplets, or a combination of the two.</p>
 <h4 id="examples_1">Examples:</h4>
-<p>First make a <a href="Form.htm">Form</a>:</p>
+<p>First make a <a href="../form/">Form</a>:</p>
 <pre><code class="language-apl">      'F' ⎕WC 'Form'
 </code></pre>
 <p>Draw a "<code>⎕</code>" at (10,20) and a "<code>⋄</code>" at (20,20):</p>

@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,42 +59599,12 @@
 
 <h1 class="heading"><span class="name">ActiveXContainer</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/ActiveXContainer.htm">Parents</a></th>
-<th><a href="../PropLists/ActiveXContainer.htm">Properties</a></th>
-<th><a href="../MethodLists/ActiveXContainer.htm">Methods</a></th>
-<th><a href="../EventLists/ActiveXContainer.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>The ActiveXContainer object represents the application that is currently hosting an instance of an ActiveXControl object.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/ActiveXContainer.htm">Parents</a> <a href="../PropLists/ActiveXContainer.htm">Properties</a> <a href="../MethodLists/ActiveXContainer.htm">Methods</a> <a href="../EventLists/ActiveXContainer.htm">Events</a></p>
+<p>Purpose: The ActiveXContainer object represents the application that is currently hosting an instance of an ActiveXControl object.</p>
 <p><strong>Description</strong></p>
-<p>An ActiveXContainer is used to represent the host application that is hosting an <a href="ActiveXControl.htm">ActiveXControl</a> object, and provides access to its ambient properties such as font, and colour.</p>
-<p>An ActiveXContainer object is created using the <a href="../container/">Container</a> property of the <a href="ActiveXControl.htm">ActiveXControl</a> object.</p>
-<p>For example, the following expression, executed within an <a href="ActiveXControl.htm">ActiveXControl</a> instance creates an ActiveXContainer named <code>'CONT'</code></p>
+<p>An ActiveXContainer is used to represent the host application that is hosting an <a href="../activexcontrol/">ActiveXControl</a> object, and provides access to its ambient properties such as font, and colour.</p>
+<p>An ActiveXContainer object is created using the <a href="../container/">Container</a> property of the <a href="../activexcontrol/">ActiveXControl</a> object.</p>
+<p>For example, the following expression, executed within an <a href="../activexcontrol/">ActiveXControl</a> instance creates an ActiveXContainer named <code>'CONT'</code></p>
 <pre><code class="language-apl">      'CONT' ⎕NS ⎕WG'Container'
 </code></pre>
 <p>The ambient properties of the host application are reported by the <a href="../fontobj/">FontObj</a>, <a href="../fcol/">BCol</a> and <a href="../bcol/">FCol</a> properties which are all read-only.</p>

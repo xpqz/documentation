@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59744,19 +59654,19 @@
 
 <h1 class="heading"><span class="name">Reduce</span><span class="command">R←f/[K]Y</span></h1>
 
-<p><code>f</code> must be a dyadic function.  <code>Y</code> may be any array whose items in the sub-arrays along the <code>K</code>th axis are appropriate to function <code>f</code>.</p>
+<p><code>f</code> must be a dyadic function.  <code>Y</code> may be any array whose items in the sub-arrays along the <code>K</code><sup>th</sup> axis are appropriate to function <code>f</code>.</p>
 <p>The axis specification is optional.  If present, <code>K</code> must identify an axis of <code>Y</code>.  If absent, the last axis of <code>Y</code> is implied.  The form <code>R←f⌿Y</code> implies the first axis of <code>Y</code>.</p>
-<p><code>R</code> is an array formed by applying function <code>f</code> between items of the vectors along the <code>K</code>th (or implied) axis of <code>Y</code>. For a typical vector <code>Y</code>, the result <code>R</code> is:</p>
+<p><code>R</code> is an array formed by applying function <code>f</code> between items of the vectors along the <code>K</code><sup>th</sup> (or implied) axis of <code>Y</code>. For a typical vector <code>Y</code>, the result <code>R</code> is:</p>
 <pre><code class="language-apl">       R  ←→ ⊂(1⊃Y)f(2⊃Y)f......f(n⊃Y)
 </code></pre>
-<p>The shape <code>S</code> of <code>R</code> is the shape of <code>Y</code> excluding the <code>K</code>th axis, i.e.</p>
+<p>The shape <code>S</code> of <code>R</code> is the shape of <code>Y</code> excluding the <code>K</code><sup>th</sup> axis, i.e.</p>
 <pre><code class="language-apl">       S  ←→  ⍴R  ←→  (K≠⍳⍴⍴Y)/⍴Y
 </code></pre>
 <p>If <code>Y</code> is a scalar then for any function <code>f</code>, <code>R</code> is <code>Y</code>.</p>
-<p>If the length of the <code>K</code>th axis of <code>Y</code> is 1, or if the length of any other axis of <code>Y</code> is 0, then <code>f</code> is not applied and <code>R</code> is <code>S⍴Y</code>.</p>
-<p>Otherwise, if the length of the <code>K</code>th axis is 0 then the result depends on <code>f</code> and on <code>⊃Y</code> (the prototypical item of <code>Y</code>) as follows:</p>
+<p>If the length of the <code>K</code><sup>th</sup> axis of <code>Y</code> is 1, or if the length of any other axis of <code>Y</code> is 0, then <code>f</code> is not applied and <code>R</code> is <code>S⍴Y</code>.</p>
+<p>Otherwise, if the length of the <code>K</code><sup>th</sup> axis is 0 then the result depends on <code>f</code> and on <code>⊃Y</code> (the prototypical item of <code>Y</code>) as follows:</p>
 <p>If <code>f</code> is one of the functions listed in <a href="#IdentityElements">Table 1</a> then <code>R</code> is <code>S⍴⊂I</code>, where <code>I</code> is formed from <code>⊃Y</code> by replacing each depth-zero item of <code>⊃Y</code> with the <strong>identity element</strong> from the table.</p>
-<p>Otherwise if <code>f</code> is Catenate, <code>R</code> is <code>S⍴⊂0/⊃Y</code>. If <code>f</code> is Catenate First, <code>R</code> is <code>S⍴⊂0⌿⊃Y</code>. If <code>f</code> is Catenate along the Jth axis, <code>R</code> is <code>S⍴⊂0/[J]⊃Y</code>. See <a href="../../../primitive-functions/primitive-functions-a-z/primitive-functions-a-z/catenate-laminate/">Catenate/Laminate on page 1</a>.</p>
+<p>Otherwise if <code>f</code> is Catenate, <code>R</code> is <code>S⍴⊂0/⊃Y</code>. If <code>f</code> is Catenate First, <code>R</code> is <code>S⍴⊂0⌿⊃Y</code>. If <code>f</code> is Catenate along the J<sup>th</sup> axis, <code>R</code> is <code>S⍴⊂0/[J]⊃Y</code>. See <a href="../../../primitive-functions/primitive-functions-a-z/primitive-functions-a-z/catenate-laminate/">Catenate/Laminate</a>.</p>
 <p>Otherwise, <code>DOMAIN ERROR</code> is reported.</p>
 <p>Identity Elements</p>
 <table>

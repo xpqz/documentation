@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59926,13 +59836,13 @@
 <p>The Golf Web Service example manages the reservation of tee-times at golf courses. All the data is held in a component file called <code>GolfData.dcf</code>. This file may be initialised using the function <code>Golf.INITFILE</code> in the workspace <code>samples\asp.net\webservices\webservices.dws</code>. You may need to alter the file path first.</p>
 <p>Each golf course managed by the application has a unique code (integer) and a name (string). This is handled by defining a class (structure) called <code>GolfCourse</code> with two fields, <code>Code</code> and <code>Name</code>.</p>
 <p><code>GolfService</code> provides 3 methods:</p>
-<pre><code class="language-apl">`GetCourses()`
+<pre><code class="language-apl">GetCourses()
 </code></pre>
 <p>Returns a list of Golf Courses (CourseCode and CourseName). The result of this method is an array of <code>GolfCourse</code> objects.</p>
-<pre><code class="language-apl">`GetStartingSheet(CourseCode,Date)`
+<pre><code class="language-apl">GetStartingSheet(CourseCode,Date)
 </code></pre>
 <p>Returns the starting sheet for a specified golf course on a given day. A starting sheet is a list of starting times with a list of the golfers booked to start their round at that time. The result of this method is a <code>StartingSheet</code> object.</p>
-<pre><code class="language-apl">`MakeBooking(CourseCode,TeeTime,GimmeNearest, Name1,Name2,Name3,Name4))`
+<pre><code class="language-apl">MakeBooking(CourseCode,TeeTime,GimmeNearest, Name1,Name2,Name3,Name4))
 </code></pre>
 <p>Requests a tee reservation at the course specified by <code>CourseCode</code>. <code>TeeTime</code> is a <code>DateTime</code> object that specifies the requested date and time. <code>GimmeNearest</code> is <code>Boolean</code>. If 1, requests the nearest tee-time to that specified; if 0, requests only the specified tee-time. Name1-4 are strings specifying up to 4 players. Note that all parameters are required. The result of this method is a <code>Booking</code> object.</p>
 <h3 id="golfservice-globalasax">GolfService: Global.asax</h3>
@@ -60229,7 +60139,7 @@
 </code></pre>
 <h3 id="testing-golfservice-from-a-browser">Testing GolfService from a Browser</h3>
 <p>If you point your browser at the URL:</p>
-<pre><code class="language-apl">`http://localhost/dyalog.net.15.0.unicode.32/Golf/Golf.asmx`
+<pre><code class="language-apl"> http://localhost/dyalog.net.15.0.unicode.32/Golf/Golf.asmx
 </code></pre>
 <p><code>GolfService</code> will be compiled and ASP.NET will fabricate a page about it for the browser to display as shown below.</p>
 <p>The three methods exposed by <code>GolfService</code> are listed.</p>
@@ -60254,7 +60164,7 @@
 <p><img alt="golfservice6" src="../../img/golfservice6.png" /></p>
 <h4 id="using-golfservice-from-c">Using GolfService from C</h4>
 <p>The <code>csharp</code> sub-directory in <code>samples\asp.net\golf</code> contains sample files for accessing the <code>GolfService</code> Web Service from C#. The C# source code in <code>Golf.cs</code> is shown below.</p>
-<pre><code class="language-apl">`using System;
+<pre><code class="language-apl">using System;
 
 class MainClass  {
 
@@ -60279,17 +60189,19 @@ class MainClass  {
         foreach (String player in booking.TeeTime.Players)
             Console.WriteLine(player);
         }
-}`
+}
+
 </code></pre>
 <p>The following example shows how you may run the <code>C#</code> program <code>golf.exe</code> from a Command Prompt window. Please remember to specify a reasonable date and time rather than the one used in this example.</p>
-<pre><code class="language-apl">`csharp&gt;golf 2006-08-07T08:00:00 T.Woods A.Palmer P.Donnelly
+<pre><code class="language-apl">csharp&gt;golf 2006-08-07T08:00:00 T.Woods A.Palmer P.Donnelly
 True
 25/08/2008 08:00:00
 T.Woods
 A.Palmer
 P.Donnelly
 
-csharp&gt;`
+csharp&gt;
+
 </code></pre>
 
 

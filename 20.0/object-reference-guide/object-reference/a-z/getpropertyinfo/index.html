@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59785,42 +59695,12 @@
 
 <h1 class="heading"><span class="name">GetPropertyInfo</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../ocxclass/">OCXClass</a></th>
-<th><a href="../oleclient/">OLEClient</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../ocxclass/">OCXClass</a> <a href="../oleclient/">OLEClient</a></p>
 <p><strong>Description</strong></p>
 <p>This method is used to obtain information about a particular property or set of properties supported by a COM object.</p>
 <p>For each property supported by a COM object, the author will have registered the property name, its data type, and an optional help message or description of the property. GetPropertyInfo returns this information.</p>
 <p>The argument to GetPropertyInfo is a single item as follows:</p>
-<table>
-<thead>
-<tr>
-<th><code>[1]</code></th>
-<th>Property name(s)</th>
-<th>see below</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><code>[1]</code> Property name(s) see below</p>
 <p><em>Property name(s)</em> is a simple character vector or a vector of character vectors specifying one or more names of properties supported by the object.</p>
 <p>The result is a nested vector with one element per property name. Each element of this vector is itself a 2-element vector of character vectors containing the data type and help message for the corresponding property.</p>
 <h4 id="example">Example</h4>
@@ -59839,7 +59719,7 @@
 │ └──┘                                        └───────┘ │
 └∊──────────────────────────────────────────────────────┘
 </code></pre>
-<p>If the data type of a property is VT_USERDEFINED, it means that the property may assume one of a set of values defined by a type list. In this case, the name of the type list is returned in place of the string "VT_USERDEFINED". Further information can be obtained using <a href="GetTypeInfo.htm">GetTypeInfo</a> with this name as a parameter.</p>
+<p>If the data type of a property is VT_USERDEFINED, it means that the property may assume one of a set of values defined by a type list. In this case, the name of the type list is returned in place of the string "VT_USERDEFINED". Further information can be obtained using <a href="../gettypeinfo/">GetTypeInfo</a> with this name as a parameter.</p>
 
 
 

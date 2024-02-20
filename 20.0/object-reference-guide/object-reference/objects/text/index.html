@@ -828,43 +828,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -875,14 +838,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2427,43 +2382,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2474,14 +2392,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,40 +59599,8 @@
 
 <h1 class="heading"><span class="name">Text</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/Text.htm">Parents</a></th>
-<th><a href="../ChildLists/Text.htm">Children</a></th>
-<th><a href="../PropLists/Text.htm">Properties</a></th>
-<th><a href="../MethodLists/Text.htm">Methods</a></th>
-<th><a href="../EventLists/Text.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>Writes text.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/Text.htm">Parents</a> <a href="../ChildLists/Text.htm">Children</a> <a href="../PropLists/Text.htm">Properties</a> <a href="../MethodLists/Text.htm">Methods</a> <a href="../EventLists/Text.htm">Events</a></p>
+<p>Purpose: Writes text.</p>
 <p><strong>Description</strong></p>
 <p>The Text object is used to write arbitrary text. It can be used in a <a href="../../a-z/form/">Form</a>,
 <a href="../../a-z/subform/">SubForm</a> or <a href="../../a-z/group/">Group</a> instead of a <a href="../../a-z/label/">Label</a>. The main difference is that
@@ -59791,9 +59669,9 @@ whether or not the Text object is repositioned when its parent is resized.</p>
 <p>Write <code>'Hello'</code> at (10,20)</p>
 <pre><code class="language-apl">      'g.t1' ⎕WC 'Text' 'Hello' (10 20)
 </code></pre>
-<pre><code class="language-apl">Write `'THIS IS A
+<pre><code class="language-apl">Write 'THIS IS A
        BLOCK OF
-       TEXT     '`  at (20,30)
+       TEXT     '   at (20,30)
 </code></pre>
 <pre><code class="language-apl">      BLK←3 9⍴'THIS IS A BLOCK OF TEXT     '
       'g.t1' ⎕WC 'Text' BLK (10 20)

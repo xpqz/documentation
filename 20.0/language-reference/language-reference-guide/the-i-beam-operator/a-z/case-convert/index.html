@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59762,16 +59672,16 @@
 
 <h1 class="heading"><span class="name">Case Convert</span><span class="command">R←{X}(819⌶)Y</span></h1>
 <h4 id="note">Note:</h4>
-<p>This i-beam function has been replaced by a system function and is deprecated. See <a href="../System Functions/c.htm#Case_Convert">Case Convert on page 1</a>.</p>
+<p>This i-beam function has been replaced by a system function and is deprecated. See <a href="../System Functions/c.htm#Case_Convert">Case Convert</a>.</p>
 <p>Converts character data in <code>Y</code> to upper or lower-case. This function is considerably faster than any comparable function coded in APL, especially on nested arrays.</p>
 <p><code>Y</code> may be any array of arbitrary depth so long as all the elements are characters.</p>
 <p>The optional left-argument <code>X</code> is 0 (convert to lower-case) or 1 (convert to upper-case). If omitted, the default is 0.</p>
 <p>The result <code>R</code> has the same structure as  <code>Y</code> but each character element is case folded to upper or lower case.</p>
 <p>Characters are converted per the default case mappings specified by The Unicode Consortium, described at:</p>
-<pre><code class="language-apl">`ftp://ftp.unicode.org/Public/3.0-Update/UnicodeData-3.0.0.html`
+<pre><code class="language-apl"> ftp://ftp.unicode.org/Public/3.0-Update/UnicodeData-3.0.0.html
 </code></pre>
 <p>and using the table at:</p>
-<pre><code class="language-apl">`http://unicode.org/Public/UNIDATA/UnicodeData.txt`
+<pre><code class="language-apl"> http://unicode.org/Public/UNIDATA/UnicodeData.txt
 </code></pre>
 <p>If conversion is being used to do case-insensitive character comparisons then converting everything to lower case is generally preferable to converting everything to upper. This is because converting to lower case can be faster.</p>
 <p>This I-beam is supported in Classic Edition  using the same code as the Unicode Edition. This means that any case-folding defined in the input translate tables is ignored, and that <code>TRANSLATION ERROR</code>s will be generated if the folded characters do not appear in <code>⎕AV</code>.</p>

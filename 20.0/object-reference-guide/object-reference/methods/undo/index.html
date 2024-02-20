@@ -823,43 +823,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -870,14 +833,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2422,43 +2377,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2469,14 +2387,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59667,42 +59577,14 @@
 
 <h1 class="heading"><span class="name">Undo</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../../a-z/grid/">Grid</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../../a-z/grid/">Grid</a></p>
 <p><strong>Description</strong></p>
 <p>This method is used to undo the previous change in a <a href="../../a-z/grid/">Grid</a> object.</p>
 <p>The <a href="../../a-z/grid/">Grid</a> object maintains a buffer of the most recent 8 changes made by the user since the <a href="../../a-z/values/">Values</a> property was last set by <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> or <a href="../../Language/System Functions/ws.htm"><code>⎕WS</code></a>.</p>
 <p>Your application can restore these changes one by one by calling the Undo method on the <a href="../../a-z/grid/">Grid</a>. The Undo method restores the most recent change made by the user and removes that change from the undo stack.</p>
 <p>It is therefore not possible to "undo an undo".</p>
 <p>The argument to Undo is <code>⍬</code>, or a single item as follows :</p>
-<table>
-<thead>
-<tr>
-<th><code>[1]</code></th>
-<th>Number of changes</th>
-<th>integer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><code>[1]</code> Number of changes integer</p>
 <p>If called with an argument of <code>⍬</code>, the default value for the <em>Number of changes</em> is 1. This restores the most recent change.</p>
 
 

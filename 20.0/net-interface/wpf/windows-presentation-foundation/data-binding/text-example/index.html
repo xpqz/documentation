@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59791,7 +59701,7 @@
 <p><img alt="data binding text xaml 1" src="../img/data-binding-text-xaml-1.png" /></p>
 <h2 id="the-xaml">The XAML</h2>
 <p>The XAML shown below, describes a Window containing a TextBox.</p>
-<pre><code class="language-apl">`&lt;Window
+<pre><code class="language-apl">&lt;Window
  xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
  xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
  Name=&quot;Temp&quot;
@@ -59800,11 +59710,11 @@
      &lt;TextBox Name=&quot;txt&quot; Width=&quot;300&quot; Margin=&quot;5&quot;
       Text=&quot;{Binding txtSource,Mode=TwoWay,
              UpdateSourceTrigger=PropertyChanged}&quot;/&gt;
-&lt;/Window&gt;`
+&lt;/Window&gt;
 </code></pre>
 <p>It contains a data binding expression, namely:</p>
-<pre><code class="language-apl">`Text=&quot;{Binding txtSource,Mode=TwoWay,
-             UpdateSourceTrigger=PropertyChanged}&quot;`
+<pre><code class="language-apl">      Text=&quot;{Binding txtSource,Mode=TwoWay,
+             UpdateSourceTrigger=PropertyChanged}&quot;
 </code></pre>
 <p>This specifies that the Text property of the TextBox is bound to a value in the Binding Source (which has yet to be defined) whose path is <code>txtSource</code>. The binding mode is set to <code>TwoWay</code> which means that any change in the TextBox will be reflected in a new value in the Binding Source, and vice-versa. The value in the Binding Source will be updated when the property (in this case the Text Property) changes.</p>
 <h2 id="the-apl-code">The APL Code</h2>
@@ -59865,14 +59775,14 @@
 </code></pre>
 <pre><code class="language-apl">      Text 'Hello World'
 </code></pre>
-<pre><code class="language-apl">![data binding text xaml 1](../img/data-binding-text-xaml-1.png)
+<pre><code class="language-apl">
 </code></pre>
 <pre><code class="language-apl">     txtSource←⌽txtSource
 </code></pre>
-<pre><code class="language-apl">![data binding text xaml 2](../img/data-binding-text-xaml-2.png)
+<pre><code class="language-apl">
 </code></pre>
 <p>Typing into the TextBox changes the value of the bound variable.</p>
-<pre><code class="language-apl">![data binding text xaml 3](../img/data-binding-text-xaml-3.png)
+<pre><code class="language-apl">
 </code></pre>
 <pre><code class="language-apl">      txtSource
 What is in txtSource now?

@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59790,7 +59700,7 @@
 <p>This example uses XAML to specify the user-interface and the main components of the data binding.</p>
 <h2 id="the-xaml">The XAML</h2>
 <p>The XAML is much the same as in Example 1 and 2 except that it connects two properties Text and FontSize of the same TextBox to two Paths <strong>txtSource</strong> and <strong>sizeSource</strong>.</p>
-<pre><code class="language-apl">`&lt;Window
+<pre><code class="language-apl">&lt;Window
  xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
  xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
  Name=&quot;Temp&quot;
@@ -59800,7 +59710,8 @@
       Text=&quot;{Binding txtSource,Mode=TwoWay,
              UpdateSourceTrigger=PropertyChanged}&quot;
       FontSize=&quot;{Binding sizeSource,Mode=OneWay}&quot;/&gt;
-&lt;/Window&gt;`
+&lt;/Window&gt;
+
 </code></pre>
 <h2 id="the-apl-code">The APL Code</h2>
 <p>The function <code>TextFontSize</code> is shown below.</p>
@@ -59841,14 +59752,14 @@
 </code></pre>
 <pre><code class="language-apl">      DB_Text_FontSize_XAML'Hello World' 30
 </code></pre>
-<pre><code class="language-apl">![data binding text fontsize 1](../img/data-binding-text-fontsize-1.png)
+<pre><code class="language-apl">
 </code></pre>
 <pre><code class="language-apl">      src.(txtSource sizeSource←(⌽txtSource) 18)
 </code></pre>
-<pre><code class="language-apl">![data binding text fontsize 2](../img/data-binding-text-fontsize-2.png)
+<pre><code class="language-apl">
 </code></pre>
 <p>As in previous examples, when the user changes the text, the new text appears in <code>txtSource</code>.</p>
-<pre><code class="language-apl">![data binding text fontsize 3](../img/data-binding-text-fontsize-3.png)
+<pre><code class="language-apl">
 </code></pre>
 <pre><code class="language-apl">      src.txtSource
 Learn to play the bouzouki!

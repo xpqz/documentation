@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,40 +59599,8 @@
 
 <h1 class="heading"><span class="name">Clipboard</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/Clipboard.htm">Parents</a></th>
-<th><a href="../ChildLists/Clipboard.htm">Children</a></th>
-<th><a href="../PropLists/Clipboard.htm">Properties</a></th>
-<th><a href="../MethodLists/Clipboard.htm">Methods</a></th>
-<th><a href="../EventLists/Clipboard.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>This object provides access to the Windows clipboard.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/Clipboard.htm">Parents</a> <a href="../ChildLists/Clipboard.htm">Children</a> <a href="../PropLists/Clipboard.htm">Properties</a> <a href="../MethodLists/Clipboard.htm">Methods</a> <a href="../EventLists/Clipboard.htm">Events</a></p>
+<p>Purpose: This object provides access to the Windows clipboard.</p>
 <p><strong>Description</strong></p>
 <p>When an application places data in the Windows clipboard, it may store it in one or more formats. An application wishing to retrieve data from the clipboard can then choose which format to read it in. Dyalog APL supports standard clipboard formats, including CF_TEXT, CF_BITMAP and CF_METAFILE. If there is any data in the clipboard, the <a href="../formats/">Formats</a> property lists the formats in which it may be retrieved.</p>
 <p>In addition, the <a href="../array/">Array</a> property may be used to set or retrieve clipboard contents in Dyalog APL array format.</p>
@@ -59734,13 +59612,13 @@
 <pre><code class="language-apl">      'CL' ⎕WC 'Clipboard'
       Data ← 'CL' ⎕WG 'Text'
 </code></pre>
-<p>The next example retrieves a bitmap from the clipboard and defines it as a <a href="Bitmap.htm">Bitmap</a> object named <code>'BM'</code> ready for use :</p>
+<p>The next example retrieves a bitmap from the clipboard and defines it as a <a href="../bitmap/">Bitmap</a> object named <code>'BM'</code> ready for use :</p>
 <pre><code class="language-apl">      'BM' ⎕WC 'Bitmap' '', 'CL' ⎕WG 'Bits' 'CMap'
 </code></pre>
 <p>Data may be placed in the clipboard using <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> or <a href="../../Language/System Functions/ws.htm"><code>⎕WS</code></a>. To store text, you simply set the <a href="../text/">Text</a> property. You may use a simple character vector or matrix, or a vector of character vectors. For example :</p>
 <pre><code class="language-apl">      'CL' ⎕WS 'Text' 'Hello World'
 </code></pre>
-<p>To store a bitmap you can set either the <a href="../picture/">Picture</a> property to the <strong>name</strong> of a <a href="Bitmap.htm">Bitmap</a> object, or you can set the <a href="../bits/">Bits</a> and <a href="../cmap/">CMap</a> properties explicitly. The former is more efficient, especially for large bitmaps, for example :</p>
+<p>To store a bitmap you can set either the <a href="../picture/">Picture</a> property to the <strong>name</strong> of a <a href="../bitmap/">Bitmap</a> object, or you can set the <a href="../bits/">Bits</a> and <a href="../cmap/">CMap</a> properties explicitly. The former is more efficient, especially for large bitmaps, for example :</p>
 <pre><code class="language-apl">      'CL' ⎕WS 'Bitmap' 'BM'
 </code></pre>
 <p>or</p>

@@ -823,43 +823,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -870,14 +833,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2422,43 +2377,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2469,14 +2387,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59667,7 +59577,7 @@
 
 <h1 class="heading"><span class="name">Load Workspace</span><span class="command">⎕LOAD Y</span></h1>
 
-<p><code>Y</code> must be a simple character scalar or vector containing the name of a file that contains a saved workspace. . If no file extension is given it is implied. See <a href="../../UserGuide/Installation and Configuration/Configuration Parameters/WSEXT.htm#WSEXT">WSEXT on page 1</a>.</p>
+<p><code>Y</code> must be a simple character scalar or vector containing the name of a file that contains a saved workspace. . If no file extension is given it is implied. See <a href="../../UserGuide/Installation and Configuration/Configuration Parameters/WSEXT.htm#WSEXT">WSEXT</a>.</p>
 <p>If <code>Y</code> is ill-formed or does not identify a saved workspace or the user account does not have access permission to the workspace, a <code>DOMAIN ERROR</code> is reported.</p>
 <p>Otherwise, the active workspace is replaced by the workspace identified in <code>Y</code>.  The active workspace is lost.  If the loaded workspace was saved by the <code>)SAVE</code> system command, the latent expression (<code>⎕LX</code>) is immediately executed, unless APL was invoked with the -x option.  If the loaded workspace was saved by the <code>⎕SAVE</code> system function, execution resumes from the point of exit from the <code>⎕SAVE</code> function, with the result of the <code>⎕SAVE</code> function being 0, running in the same namespace in which the <code>⎕SAVE</code> was executed.</p>
 <p>The workspace identification and time-stamp when saved is not displayed.</p>

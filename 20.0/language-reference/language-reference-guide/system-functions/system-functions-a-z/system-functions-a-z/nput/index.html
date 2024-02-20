@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59870,7 +59780,7 @@
 
 <h1 class="heading"><span class="name">Write Text File</span><span class="command">{R}←X ⎕NPUT Y</span></h1>
 
-<p>This function writes character data to a text file. See also Read Text File on page 1.</p>
+<p>This function writes character data to a text file. See also <a href="../nget/">Read Text File</a>.</p>
 <p><code>Y</code> is either a simple character vector or scalar containing the name of the file to be written, or a 2-item vector whose first item is the file name and whose second is an integer scalar specifying <code>flags</code> for the operation.</p>
 <p>If <code>flags</code> is 0 (the default value if omitted) the file will not be overwritten if it already exists and <code>⎕NPUT</code> will signal an error. If <code>flags</code> is 1 the file will be overwritten. If flags is 2 the file will be appended to; i.e.</p>
 <table>
@@ -59903,7 +59813,7 @@
 <p><code>content</code> is either a vector of character vectors, each of which represents a line in the file to be written, or a simple character vector.</p>
 <p>If specified, <code>encoding</code> is either:</p>
 <ul>
-<li>a character vector from the first column in the table File Encodings on page 1.  If <code>encoding</code> specifies a UTF format, it may be qualified with -BOM  (e.g. UTF-8-BOM), which causes a Byte Order Mark (BOM) to be written at the beginning of the file or -NOBOM which does not. If the -BOM or -NOBOM suffix is omitted, UTF-8 defaults to UTF-8-NOBOM, while the other UTF formats default to -BOM.</li>
+<li>a character vector from the first column in the table <a href="../nget/">File Encodings</a>.  If <code>encoding</code> specifies a UTF format, it may be qualified with -BOM  (e.g. UTF-8-BOM), which causes a Byte Order Mark (BOM) to be written at the beginning of the file or -NOBOM which does not. If the -BOM or -NOBOM suffix is omitted, UTF-8 defaults to UTF-8-NOBOM, while the other UTF formats default to -BOM.</li>
 <li>a 256-element numeric vector that maps each possible byte value (0-255) to a  Unicode code point (1st element = Unicode code point corresponding to byte value 0, and so on). ¯1 indicates that the corresponding byte value is not mapped to any character. Apart from ¯1, no value may appear in the table more than once.</li>
 </ul>
 <p>If  omitted, <code>encoding</code> defaults to UTF-8-NOBOM.</p>
@@ -59912,7 +59822,7 @@
 <li>No BOM will be written, even if encoding specifies it.</li>
 <li>No check is made that the existing file content is text in the same encoding format.</li>
 </ul>
-<p>If specified, <code>newline</code> is numeric and is either  <code>⍬</code> or a scalar or vector  from the  column labelled <strong>Value</strong> in the <strong>newline characters</strong> section of the table Line separators: on page 1. Any other value causes <code>DOMAIN ERROR</code>. If <code>newline</code> is omitted it defaults to <code>(13 10)</code> on Windows and <code>10</code> on other platforms.</p>
+<p>If specified, <code>newline</code> is numeric and is either  <code>⍬</code> or a scalar or vector  from the  column labelled <strong>Value</strong> in the <strong>newline characters</strong> section of the table <a href="../nget/">Line separators:</a>. Any other value causes <code>DOMAIN ERROR</code>. If <code>newline</code> is omitted it defaults to <code>(13 10)</code> on Windows and <code>10</code> on other platforms.</p>
 <p>In all cases, <code>newline</code> is appended if required to a simple vector or to each vector in a vector of vectors.</p>
 <p>If content contains anything other than a character vector or scalar (or these, nested) then a <code>DOMAIN ERROR</code> is signalled.</p>
 <p>If both <code>encoding</code> and <code>newline</code> are omitted <code>X</code> specifies only <code>content</code> and may be a simple character vector or a vector of character vectors.</p>

@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59693,7 +59603,7 @@
 <h1 id="your-first-apl-web-page">Your first APL Web Page</h1>
 <p>The first web page example is <code>tutorial/intro1.aspx</code>, which is listed below. This page displays a button whose text is reversed each time you press it.</p>
 <p>Note that the example is intended to be run in the framework of the tutorial and contains two lines of code (shown in italic) that refer to this framework and should be ignored.</p>
-<pre><code class="language-apl">*&lt;%@Register TagPrefix=&quot;tutorial&quot; Namespace=&quot;Tutorial&quot; Assembly=&quot;tutorial&quot; %&gt;*
+<pre><code class="language-apl">&lt;%@Register TagPrefix=&quot;tutorial&quot; Namespace=&quot;Tutorial&quot; Assembly=&quot;tutorial&quot; %&gt;
 &lt;script language=&quot;Dyalog&quot; runat=&quot;server&quot;&gt;
 
 ∇Reverse args
@@ -59713,7 +59623,7 @@
       OnClick=&quot;Reverse&quot; 
       /&gt;
 &lt;/form&gt;
-*&lt;tutorial:index runat=&quot;server&quot;/&gt;*
+&lt;tutorial:index runat=&quot;server&quot;/&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -59726,7 +59636,7 @@
 <p>At this point, it is instructive to study what happens when the page is first loaded and the appearance of the page is illustrated below.</p>
 <p><img alt="intro1_1" src="../../img/intro1-1.png" /></p>
 <p>The HTML that is transmitted to the browser is:</p>
-<pre><code class="language-apl">`&lt;html&gt;
+<pre><code class="language-apl">&lt;html&gt;
 &lt;body&gt;
     &lt;form name=&quot;ctrl1&quot; method=&quot;post&quot; action=&quot;intro1.aspx&quot; id=&quot;ctrl1&quot;&gt;
 &lt;input type=&quot;hidden&quot; name=&quot;__VIEWSTATE&quot;
@@ -59736,7 +59646,8 @@ value=&quot;YTB6NTQ3ODg0MjcyX19feA==5725bd57&quot; /&gt;
 id=&quot;Pressme&quot; /&gt;
     &lt;/form&gt;
 &lt;/body&gt;
-&lt;/html&gt;`
+&lt;/html&gt;
+
 </code></pre>
 <p>Firstly, notice that, as expected, the contents of the <code>&lt;script&gt;</code> section are not present. Secondly, because the Form and Button are intrinsic controls, ASP.NET has added certain attributes to the HTML that were not specified in the source code.</p>
 <p>The Button now has the added attribute <code>input type="submit"</code>, which means that pressing the Button causes the contents of the Form to be transmitted back to the sever.</p>
@@ -59755,7 +59666,7 @@ id=&quot;Pressme&quot; /&gt;
 <p>After pressing the button, the page is redisplayed as shown below:</p>
 <p><img alt="intro1_2" src="../../img/intro1-2.png" /></p>
 <p>This time, the HTML generated by <code>intro1.aspx</code> is:</p>
-<pre><code class="language-apl">`&lt;html&gt;
+<pre><code class="language-apl">&lt;html&gt;
 &lt;body&gt;
     &lt;form name=&quot;ctrl1&quot; method=&quot;post&quot; action=&quot;intro1.aspx&quot; id=&quot;ctrl1&quot;&gt;
 &lt;input type=&quot;hidden&quot; name=&quot;__VIEWSTATE&quot;
@@ -59767,7 +59678,8 @@ MHpoelRlXHh0X2VNIHNzZXJQeF9feF9feHhfeHhfeF9feA==45acf576&quot;
 id=&quot;Pressme&quot; /&gt;
     &lt;/form&gt;
 &lt;/body&gt;
-&lt;/html&gt;`
+&lt;/html&gt;
+
 </code></pre>
 <p>Returning to the <code>Reverse</code> function, note that the declaration statements at the top of the function are essential to make it callable in this context.</p>
 <pre><code class="language-apl">∇Reverse args

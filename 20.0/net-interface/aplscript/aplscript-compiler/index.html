@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59721,7 +59631,7 @@
 <li>Compile a Dyalog APL Workspace (.dws) into a native Windows executable program, with the same characteristics and advantages described above.</li>
 </ul>
 <p>The Script is designed to be run from a command prompt. If in the 64-bit Unicode Edition change to the appropriate directory and type <code>dyalogc64_unicode /?</code> (to query its usage) the following output is displayed:</p>
-<pre><code class="language-apl">`c:\Program Files\Dyalog\Dyalog APL-64 18.0 Unicode&gt;dyalogc64_unicode /?
+<pre><code class="language-apl">c:\Program Files\Dyalog\Dyalog APL-64 18.0 Unicode&gt;dyalogc64_unicode /?
 Dyalog APLScript compiler 64 bit. Unicode Mode. Version 18.0.38524.0
 Copyright Dyalog Ltd 2000-2020
 
@@ -59753,14 +59663,14 @@ dyalogc.exe command line options:
 /i:Process        Set the isolation mode of a .NET Assembly
 /i:Assembly       Set the isolation mode of a .NET Assembly
 /i:AppDomain      Set the isolation mode of a .NET Assembly
-/i:Local          Set the isolation mode of a .NET Assembly`
+/i:Local          Set the isolation mode of a .NET Assembly
 </code></pre>
-<p>Note that the isolation mode specified by the <code>/i</code> option overrides the setting in <code>web.config</code>. See <a href="../../implementation-details/asp-net-configuration-file/">DyalogIsolationMode on page 1</a>.</p>
+<p>Note that the isolation mode specified by the <code>/i</code> option overrides the setting in <code>web.config</code>. See <a href="../../implementation-details/asp-net-configuration-file/">DyalogIsolationMode</a>.</p>
 <p>The <code>/a</code> option is used to specify the name of a JSON file that contains assembly info. For example:</p>
-<pre><code class="language-apl">`dyalogc64_unicode.exe /t:library j:/ws/attributetest.dws /a:c:/tmp/atts.json`
+<pre><code class="language-apl">dyalogc64_unicode.exe /t:library j:/ws/attributetest.dws /a:c:/tmp/atts.json
 </code></pre>
 <p>where <code>c:/tmp/atts.json</code> contains:</p>
-<pre><code class="language-apl">`{
+<pre><code class="language-apl">{
 &quot;AssemblyVersion&quot;:&quot;1.2.2.2&quot;,
 &quot;AssemblyFileVersion&quot;:&quot;2.1.1.4&quot;,
 &quot;AssemblyProduct&quot;:&quot;My Application&quot;,
@@ -59769,7 +59679,7 @@ dyalogc.exe command line options:
 &quot;AssemblyDescription&quot;:&quot;Provides a text description for an assembly.&quot;,
 &quot;AssemblyTitle&quot;:&quot;My Assembly Title&quot;,
 &quot;AssemblyTrademark&quot;:&quot;Your Legal Trademarks&quot;,
-}`
+}
 </code></pre>
 
 

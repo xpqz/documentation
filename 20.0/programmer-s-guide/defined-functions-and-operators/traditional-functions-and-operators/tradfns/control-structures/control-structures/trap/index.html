@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59770,7 +59680,7 @@
 
 <p><a href="Trap Statement Definition.htm">Formal Definition</a></p>
 <p><code>:Trap</code> is an error trapping mechanism that can be used in conjunction with, or as an alternative to, the <code>⎕TRAP</code> system variable. It is equivalent to APL2's <code>⎕EA</code>, except that the code to be executed is not restricted to a single expression and is not contained within quotes (and so is slightly more efficient).</p>
-<p><code>ecode</code> is an integer scalar or vector containing the list of event codes which are to be <em>handled</em> during execution of the segment of code between the <code>:Trap</code> and <code>:End[Trap]</code> statements. Note that event codes 0 and 1000 are wild cards that means<em>any</em> event code in a given range. See <a href="../../../../../../error-messages/apl-errors/">APL Error Messages on page 1</a>.</p>
+<p><code>ecode</code> is an integer scalar or vector containing the list of event codes which are to be <em>handled</em> during execution of the segment of code between the <code>:Trap</code> and <code>:End[Trap]</code> statements. Note that event codes 0 and 1000 are wild cards that means<em>any</em> event code in a given range. See <a href="../../../../../../error-messages/apl-errors/">APL Error Messages</a>.</p>
 <h5 id="operation">Operation</h5>
 <p>The segment of code immediately following the <code>:Trap</code> keyword is executed. On completion of this segment, if no error occurs, control passes to the code following <code>:End[Trap]</code>.</p>
 <p>If an error occurs which is not specified by <code>ecode</code>, it is processed by outer <code>:Trap</code>s,   <code>⎕TRAP</code>s, or by the default system processing in the normal fashion.</p>

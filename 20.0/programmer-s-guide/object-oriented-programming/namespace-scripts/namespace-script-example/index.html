@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59696,17 +59606,17 @@
 <p>The <a href="DiaryStuff Example Namespace.htm">DiaryStuff</a> example illustrates the manner in which classes may be defined and used in a Namespace script.</p>
 <p><a href="DiaryStuff Example Namespace.htm">DiaryStuff</a> defines two Classes named <code>Diary</code> and <code>DiaryEntry</code>.</p>
 <p><code>Diary</code> contains a (private) Field named <code>entries</code>, which is simply a vector of instances of <code>DiaryEntry</code>. These are 2-element vectors containing a .NET DateTime object and a description.</p>
-<p>The <code>entries</code> Field is initialised to an empty vector of <code>DiaryEntry</code> instances which causes the invocation of the default constructor <code>DiaryEntry.Make0</code> when <code>Diary</code> is fixed. See <a href="../../constructors/empty-arrays-of-instances-why/">"Empty Arrays of Instances: Why ?" on page 1</a> for further explanation.</p>
+<p>The <code>entries</code> Field is initialised to an empty vector of <code>DiaryEntry</code> instances which causes the invocation of the default constructor <code>DiaryEntry.Make0</code> when <code>Diary</code> is fixed. See <a href="../../constructors/empty-arrays-of-instances-why/">"Empty Arrays of Instances: Why ?"</a> for further explanation.</p>
 <p>The <code>entries</code> Field is referenced through the <code>Entry</code> Property, which is defined as the <a href="../../class-members/properties/default-property/">Default Property</a>. This allows individual entries to be referenced and changed using indexing on a <code>Diary</code> Instance.</p>
 <p>Note that <code>DiaryEntry</code> is defined in the script first (before <code>Diary</code>) because it is referenced by the initialisation of the <code>Diaries.entries</code> Field</p>
 <p>Create a new instance of <code>Diary</code>.</p>
 <pre><code class="language-apl">      D←⎕NEW DiaryStuff.Diary
 </code></pre>
-<p>Add a new entry "meeting with John at 09:00 on April 30th"</p>
+<p>Add a new entry "meeting with John at 09:00 on April 30<sup>th"</sup></p>
 <pre><code class="language-apl">      D.Add(2006 4 30 9 0)'Meeting with John'
  30/04/2006 09:00:00  Meeting with John 
 </code></pre>
-<p>Add another diary entry "Dentist at 10:00 on April 30th".</p>
+<p>Add another diary entry "Dentist at 10:00 on April 30<sup>th".</sup></p>
 <pre><code class="language-apl">      D.Add(2006 4 30 10 0)'Dentist'
  30/04/2006 10:00:00  Dentist 
 </code></pre>
@@ -59722,7 +59632,7 @@
 <pre><code class="language-apl">      D[2]
  30/04/2006 11:00:00  Doctor 
 </code></pre>
-<p>What am I doing on the 30th?</p>
+<p>What am I doing on the 30<sup>th</sup>?</p>
 <pre><code class="language-apl">      D.DoingOn 2006 4 30
   30/04/2006 09:00:00  Meeting with John    ...
   ... 30/04/2006 11:00:00  Doctor  

@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59795,7 +59705,7 @@
 <p><img alt="aplclasses4_2" src="../../img/aplclasses4-2.png" /></p>
 <h3 id="programcs">program.cs</h3>
 <p><code>aplclasses4\Framework\program.cs</code> contains code to invoke the two different constructor functions <code>CTOR1</code> and <code>CTOR2</code> :</p>
-<pre><code class="language-apl">`using System;
+<pre><code class="language-apl">using System;
 using APLClasses;
 public class MainClass
     {
@@ -59811,7 +59721,7 @@ public class MainClass
         for (int i=0;i&lt;rslt03.Length;i++)
             Console.WriteLine(rslt03[i]);
         }
-    }`
+    }
 </code></pre>
 <p>Here the code creates two instances of the Primitives class named <code>apl10</code> and <code>apl03</code>. The first is created with a constructor parameter of <code>(1)</code>; the second with a constructor parameter of <code>(0,3)</code>.</p>
 <p>The C# compiler matches the first call with <code>CTOR1</code>, because <code>CTOR1</code> is defined to accept a single <code>Int32</code> parameter. The second call is matched to <code>CTOR2</code> because <code>CTOR2</code> is defined to accept two <code>Int32</code> parameters.</p>

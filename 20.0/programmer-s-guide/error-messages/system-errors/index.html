@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59951,11 +59861,11 @@
 <li>As a result of the failure of a workspace integrity check</li>
 <li>As a result of a System Exception</li>
 </ul>
-<p>On Windows, if the <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS">DYALOG_NOPOPUPS</a> parameter is 0 (the default), it will display the System Error dialog box (see <a href="#System_Error_Dialog">System Error Dialog Box on page 1</a>). This is suppressed if <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS">DYALOG_NOPOPUPS</a> is 1.</p>
+<p>On Windows, if the <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS">DYALOG_NOPOPUPS</a> parameter is 0 (the default), it will display the System Error dialog box (see <a href="#System_Error_Dialog">System Error Dialog Box</a>). This is suppressed if <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS">DYALOG_NOPOPUPS</a> is 1.</p>
 <h3 id="aplcore-file">aplcore file</h3>
 <p>When a system error occurs, APL normally saves an <strong>aplcore</strong> file which may be sent to Dyalog for diagnosis. The name and location of the <strong>aplcore</strong> file may be specified by the <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#APLCoreName">AplCoreName</a> parameter. If this parameter is not specified, the <strong>aplcore</strong> file is named <code>aplcore</code> and is saved in the current working directory.</p>
 <p>Normally a new <strong>aplcore</strong> will replace a file of the same name. However, if <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#APLCoreName">AplCoreName</a> contains an asterisk (*), the system will create a new file,  replacing the asterisk with a number incremented from the largest numbered file present.</p>
-<p>The number of <strong>aplcore</strong> files retained by the system is specified by the <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores">MaxAplCores</a> parameter. If <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores">MaxAplCores</a> is 0, the system will not save an <strong>aplcore</strong>. However, under Windows, if <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS">DYALOG_NOPOPUPS</a> is 0, and the user checks the <strong>Create an aplcore file</strong> checkbox when the <strong>System Error</strong>dialog box is displayed, an <strong>aplcore</strong> will be saved regardless of the value of <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores">MaxAplCores</a>. See <a href="#System_Error_Dialog">System Error Dialog Box on page 1</a>.</p>
+<p>The number of <strong>aplcore</strong> files retained by the system is specified by the <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores">MaxAplCores</a> parameter. If <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores">MaxAplCores</a> is 0, the system will not save an <strong>aplcore</strong>. However, under Windows, if <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS">DYALOG_NOPOPUPS</a> is 0, and the user checks the <strong>Create an aplcore file</strong> checkbox when the <strong>System Error</strong>dialog box is displayed, an <strong>aplcore</strong> will be saved regardless of the value of <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores">MaxAplCores</a>. See <a href="#System_Error_Dialog">System Error Dialog Box</a>.</p>
 <p>Be aware that if your application contains any secure data, this data may be present in an <strong>aplcore</strong> file, and it may be appropriate to set both <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores">MaxAplCores</a> and DYALOG_NOPOPUPS to 0 to prevent such data being saved on disk.</p>
 <p>Information that may prove useful in debugging the problem, including (where possible) the SI stack at the point where the <strong>aplcore</strong> was generated, is by default written to the end of <strong>aplcore</strong> files; the section begins with the string</p>
 <p>'=================== Interesting Information'</p>

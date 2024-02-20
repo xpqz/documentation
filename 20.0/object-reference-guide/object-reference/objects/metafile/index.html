@@ -823,43 +823,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -870,14 +833,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2422,43 +2377,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2469,14 +2387,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59667,40 +59577,8 @@
 
 <h1 class="heading"><span class="name">Metafile</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/Metafile.htm">Parents</a></th>
-<th><a href="../ChildLists/Metafile.htm">Children</a></th>
-<th><a href="../PropLists/Metafile.htm">Properties</a></th>
-<th><a href="../MethodLists/Metafile.htm">Methods</a></th>
-<th><a href="../EventLists/Metafile.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>This object represents a picture in Windows Metafile format.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/Metafile.htm">Parents</a> <a href="../ChildLists/Metafile.htm">Children</a> <a href="../PropLists/Metafile.htm">Properties</a> <a href="../MethodLists/Metafile.htm">Methods</a> <a href="../EventLists/Metafile.htm">Events</a></p>
+<p>Purpose: This object represents a picture in Windows Metafile format.</p>
 <p><strong>Description</strong></p>
 <p>The Windows Metafile is a mechanism for representing a picture in terms of a collection of graphical components. Windows Metafiles are distributed in special files (.WMF) from which they are loaded into memory for use by an application. Once loaded a Metafile is a Windows "resource" that can be used in a variety of ways. The Metafile object represents this resource.</p>
 <p>The <a href="../../a-z/file/">File</a> property specifies the name of a .WMF file from which the Metafile is to be loaded or to which it is to be saved. If you specify <a href="../../a-z/file/">File</a> with <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> the Metafile object is loaded from it. If you specify <a href="../../a-z/file/">File</a> with <a href="../../Language/System Functions/ws.htm"><code>⎕WS</code></a> no action takes place until you instruct the Metafile object to re-initialise itself from the file or to save itself to the file. These operations are performed using the <a href="../../a-z/fileread/">FileRead</a> and <a href="../../a-z/filewrite/">FileWrite</a> methods. If you omit the <a href="../../a-z/file/">File</a> property in the argument to <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> or if you specify a null vector, the Metafile object is initially empty. The following example loads the picture defined by the GOLF.WMF Metafile that is distributed with Microsoft Office.</p>

@@ -838,43 +838,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../autocomplete/showfiles/" class="md-nav__link">
         
@@ -885,14 +848,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2447,43 +2402,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../valuetips/enabled/" class="md-nav__link">
         
@@ -2494,14 +2412,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59693,16 +59603,16 @@
 
 
 <h1 id="maxws">MaxWS</h1>
-<p>This parameter determines your workspace size and is the amount of memory allocated to the workspace at APL start-up. See <a href="../../configuration-parameters/">Specifying Size-related Parameters on page 1</a> for further details about defining a valid value for this parameter.</p>
+<p>This parameter determines your workspace size and is the amount of memory allocated to the workspace at APL start-up. See <a href="../../configuration-parameters/">Specifying Size-related Parameters</a> for further details about defining a valid value for this parameter.</p>
 <p>The default value is 256M (256MiB), with the exception of the Raspberry Pi where the default is 64M. Values less than 4M are ignored, and the maximum value is 15E.</p>
 <p>For example, to get a 4GiB workspace, set:</p>
-<pre><code class="language-apl">`MAXWS=4G`
+<pre><code class="language-apl">        MAXWS=4G
 </code></pre>
 <p>Dyalog APL places no implicit restriction on workspace size, and the virtual memory capability of the underlying operating system allows you to access more memory than you have physically installed. However if you use a workspace that <strong>greatly</strong> exceeds your physical memory you will encounter excessive <em>paging</em> and your APL programs will run slowly. You may also cause the system to crash.</p>
 <p>Note that the memory used for the workspace must be <em>contiguous</em> .</p>
 <p>32-bit versions of Dyalog APL are typically limited to between 1.3GiB to 1.9GiB under Windows, and 1.9GiB under UNIX. These are operating system limitations imposed on 32-bit processes rather than ones imposed by Dyalog APL, and are affected by the number and size of DLLs/shared libraries that are loaded into the process space.</p>
 <p>64-bit versions of Dyalog APL have no such limitations; Dyalog has used workspaces of 96GiB on various platforms.</p>
-<p>See also <a href="../../The APL Environment/Configuration Dialog Workspace Tab.htm#MaxWS">Maximum workspace size on page 1</a>.</p>
+<p>See also <a href="../../The APL Environment/Configuration Dialog Workspace Tab.htm#MaxWS">Maximum workspace size</a>.</p>
 
 
 

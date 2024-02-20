@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,40 +59599,8 @@
 
 <h1 class="heading"><span class="name">MsgBox</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/MsgBox.htm">Parents</a></th>
-<th><a href="../ChildLists/MsgBox.htm">Children</a></th>
-<th><a href="../PropLists/MsgBox.htm">Properties</a></th>
-<th><a href="../MethodLists/MsgBox.htm">Methods</a></th>
-<th><a href="../EventLists/MsgBox.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>Provides a "modal" dialog box for displaying messages, errors, warnings and other information. The dialog box has a title, one or more lines of text, and up to three buttons.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/MsgBox.htm">Parents</a> <a href="../ChildLists/MsgBox.htm">Children</a> <a href="../PropLists/MsgBox.htm">Properties</a> <a href="../MethodLists/MsgBox.htm">Methods</a> <a href="../EventLists/MsgBox.htm">Events</a></p>
+<p>Purpose: Provides a "modal" dialog box for displaying messages, errors, warnings and other information. The dialog box has a title, one or more lines of text, and up to three buttons.</p>
 <p><strong>Description</strong></p>
 <p>The <a href="../caption/">Caption</a> property determines the text displayed in the object's title bar.</p>
 <p>The <a href="../text/">Text</a> property determines the text to be displayed as the message.</p>
@@ -59773,7 +59651,7 @@
 </tbody>
 </table>
 <p>The <a href="../default/">Default</a> property may be used to determine which of the buttons is the "default" button, i.e. the one which initially has the focus and is "selected" when the user presses the Enter key. It has the value 1, 2 or 3. If <a href="../default/">Default</a> is not specified, the first button is the "default" button. Note that if the user switches focus to another button and presses Enter, this action selects the button with the focus.</p>
-<p>Like a pop-up (floating) <a href="Menu.htm">Menu</a>, the MsgBox object is unusual in that it is strictly modal. It is created by <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> in the normal way, but at that stage is invisible and inactive. It is activated ONLY when <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> is called with the name of the MsgBox as the argument. When this is done, the MsgBox object pops up and is activated. Because there is no other object specified in the argument to <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a>, all other objects are de-activated. The only thing that the user can do (within the APL application) is to press one of the buttons in the MsgBox. When this happens, the MsgBox automatically pops down, the callback function (if any) is fired, and then <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> terminates.</p>
+<p>Like a pop-up (floating) <a href="../menu/">Menu</a>, the MsgBox object is unusual in that it is strictly modal. It is created by <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> in the normal way, but at that stage is invisible and inactive. It is activated ONLY when <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> is called with the name of the MsgBox as the argument. When this is done, the MsgBox object pops up and is activated. Because there is no other object specified in the argument to <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a>, all other objects are de-activated. The only thing that the user can do (within the APL application) is to press one of the buttons in the MsgBox. When this happens, the MsgBox automatically pops down, the callback function (if any) is fired, and then <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> terminates.</p>
 <p>Notice that the position and size of the MsgBox are determined by Windows and are fixed, although the MsgBox may be moved by the user after it has been displayed.</p>
 <p>The MsgBox object generates one of three events; <a href="../msgbtn1/">MsgBtn1</a> (61), <a href="../msgbtn2/">MsgBtn2</a> (62), or <a href="../msgbtn3/">MsgBtn3</a> (63) depending upon which button is pressed.</p>
 <pre><code class="language-apl">   Caption←'Default MsgBox' ⋄ Text←'Hello World'

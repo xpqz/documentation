@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59803,22 +59713,22 @@ of the screen.</p>
 <p>If Coord is <code>'RealPixel'</code>, the origin of the
 object's parent is deemed to be at its top left interior corner, and the scale
 along its x- and y-axes is measured in physical pixel units. The object's position
-and size (<a href="Posn.htm">Posn</a> and <a href="Size.htm">Size</a> properties) are therefore reported and set in physical pixel units. If you set
+and size (<a href="../posn/">Posn</a> and <a href="../size/">Size</a> properties) are therefore reported and set in physical pixel units. If you set
 Coord on the system object to <code>'Pixel'</code>, the
-value of its <a href="Size.htm">Size</a> property gives you the
+value of its <a href="../size/">Size</a> property gives you the
 resolution of your screen. Note that pixels are numbered from 0
 to (Size -1).</p>
-<p>If Coord is <code>'ScaledPixel'</code>  the number of pixels specified for <a href="Posn.htm">Posn</a>, <a href="Size.htm">Size</a>,  and other such properties will be automatically scaled by Dyalog APL according to the user's chosen display scaling factor. So if you specify an Edit object to be 80 pixels wide and 20 pixels high, and the user's scaling factor is 150%, Dyalog will automatically draw it 120 pixels wide and 30 pixels high. Dyalog will also de-scale coordinate values reported by <code>⎕WG</code> and  event messages.</p>
+<p>If Coord is <code>'ScaledPixel'</code>  the number of pixels specified for <a href="../posn/">Posn</a>, <a href="../size/">Size</a>,  and other such properties will be automatically scaled by Dyalog APL according to the user's chosen display scaling factor. So if you specify an Edit object to be 80 pixels wide and 20 pixels high, and the user's scaling factor is 150%, Dyalog will automatically draw it 120 pixels wide and 30 pixels high. Dyalog will also de-scale coordinate values reported by <code>⎕WG</code> and  event messages.</p>
 <p>If Coord is <code>'User'</code>, the origin and
-scale of the co-ordinate system are defined by the values of the <a href="YRange.htm">YRange</a> and <a href="XRange.htm">XRange</a> properties <strong>of the parent
+scale of the co-ordinate system are defined by the values of the <a href="../yrange/">YRange</a> and <a href="../xrange/">XRange</a> properties <strong>of the parent
 object</strong>. Each of these is a 2-element numeric vector whose elements define
 the co-ordinates of top left and bottom right interior corners of the (parent)
 object respectively.</p>
 <p>Note that if Coord is <code>'User'</code> and you
-change the values of <a href="YRange.htm">YRange</a> and/or <a href="XRange.htm">XRange</a> of the parent, the object (and all its siblings with Coord <code>'User'</code>)
+change the values of <a href="../yrange/">YRange</a> and/or <a href="../xrange/">XRange</a> of the parent, the object (and all its siblings with Coord <code>'User'</code>)
 are redrawn (and clipped) according to the new origin and scale defined for the
-parent. The values of their <a href="Posn.htm">Posn</a>, <a href="Size.htm">Size</a> and <a href="Points.htm">Points</a> properties are unaffected.
-Changing <a href="Range.htm">YRange</a> and/or <a href="Range.htm">XRange</a> therefore provides a convenient and efficient means to "<strong>pan and zoom</strong>".</p>
+parent. The values of their <a href="../posn/">Posn</a>, <a href="../size/">Size</a> and <a href="../points/">Points</a> properties are unaffected.
+Changing <a href="../range/">YRange</a> and/or <a href="../range/">XRange</a> therefore provides a convenient and efficient means to "<strong>pan and zoom</strong>".</p>
 <p>The Coord property for graphic objects created as  children of a Grid may
 also be set to Cell. Apart from being easier to compute, a graphic drawn using
 cell coordinates will expand and contract when the grid rows and columns are
@@ -59828,13 +59738,13 @@ resized.</p>
 down and along from the top-left corner of the parent <a href="../form/">Form</a> T.</p>
 <pre><code class="language-apl">      'T.B1'⎕WC'Button' 'OK'(5 5)(10 20)('Coord' 'Pixel')
 </code></pre>
-<p>If you set Coord to <code>'RealPixel'</code> in the <a href="../root/">Root</a> object <code>'.'</code>, then query its <a href="Size.htm">Size</a>,
+<p>If you set Coord to <code>'RealPixel'</code> in the <a href="../root/">Root</a> object <code>'.'</code>, then query its <a href="../size/">Size</a>,
 you get the dimensions of the screen in pixels, i.e.</p>
 <pre><code class="language-apl">      '.' ⎕WS 'Coord' 'RealPixel'
       '.' ⎕WG 'Size'
 480 640
 </code></pre>
-<p>If you set Coord to <code>'ScaledPixel'</code> in the <a href="../root/">Root</a> object <code>'.'</code>, then query its <a href="Size.htm">Size</a>,
+<p>If you set Coord to <code>'ScaledPixel'</code> in the <a href="../root/">Root</a> object <code>'.'</code>, then query its <a href="../size/">Size</a>,
 you get the virtual resolution of the screen, i.e.</p>
 <pre><code class="language-apl">      '.'⎕WS 'Coord' 'ScaledPixel'
       '.'⎕WG'Size'
@@ -59843,7 +59753,7 @@ you get the virtual resolution of the screen, i.e.</p>
 </code></pre>
 <p>If Coord is <code>'Pixel'</code>, it is interpreted as either <code>'RealPixel'</code> or <code>'ScaledPixel'</code> according to the value of the Dyalog_Pixel_Type parameter, which is either ScaledPixel or RealPixel. See 
 Installation &amp; Configuration Guide: </p>
-<p>Dyalog_Pixel_Type parameterDyalog_Pixel_Type on page 1.</p>
+<p>Dyalog_Pixel_Type parameter<a href="../../../UserGuide/Installation and Configuration/Configuration Parameters/Dyalog_Pixel_Type.htm#Dyalog_Pixel_Type">Dyalog_Pixel_Type</a>.</p>
 <p><strong>If this parameter is not specified, the default is RealPixel. So by default, when you set Coord to Pixel, it will be treated as RealPixel.</strong></p>
 
 

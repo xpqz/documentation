@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,26 +59599,13 @@
 
 <h1 class="heading"><span class="name">RowLineTypes</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../grid/">Grid</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../grid/">Grid</a></p>
 <p><strong>Description</strong></p>
 <p>This property specifies the appearance of the horizontal grid lines in a <a href="../grid/">Grid</a> object.</p>
-<p>RowLineTypes is an integer vector, whose length is normally equal to the number of rows in the <a href="../grid/">Grid</a>. Each element in RowLineTypes specifies an index into the <a href="../gridlinefcol/">GridLineFCol</a> and <a href="GridLineWidth.htm">GridLineWidth</a> properties, thus selecting the colour and width of the horizontal grid lines.</p>
-<p>For example, if RowLineTypes[1] is 3, the first horizontal grid line in the <a href="../grid/">Grid</a> is displayed using the colour specified by the 3rd element of <a href="../gridlinefcol/">GridLineFCol</a>, and the width specified by the 3rd element of <a href="GridLineWidth.htm">GridLineWidth</a>.</p>
-<p>Note that RowLineTypes is not <code>⎕IO</code> dependent, and the value 0 is treated the same as the value 1; both selecting the <em>first</em> colour and line width specified by <a href="../gridlinefcol/">GridLineFCol</a> and <a href="GridLineWidth.htm">GridLineWidth</a> respectively.</p>
-<p>The default value of RowLineTypes is an empty numeric vector (<code>⍬</code>). If so, all horizontal grid lines are drawn using the first element of <a href="../gridlinefcol/">GridLineFCol</a> and <a href="GridLineWidth.htm">GridLineWidth</a>.</p>
+<p>RowLineTypes is an integer vector, whose length is normally equal to the number of rows in the <a href="../grid/">Grid</a>. Each element in RowLineTypes specifies an index into the <a href="../gridlinefcol/">GridLineFCol</a> and <a href="../gridlinewidth/">GridLineWidth</a> properties, thus selecting the colour and width of the horizontal grid lines.</p>
+<p>For example, if RowLineTypes[1] is 3, the first horizontal grid line in the <a href="../grid/">Grid</a> is displayed using the colour specified by the 3<sup>rd</sup> element of <a href="../gridlinefcol/">GridLineFCol</a>, and the width specified by the 3<sup>rd</sup> element of <a href="../gridlinewidth/">GridLineWidth</a>.</p>
+<p>Note that RowLineTypes is not <code>⎕IO</code> dependent, and the value 0 is treated the same as the value 1; both selecting the <em>first</em> colour and line width specified by <a href="../gridlinefcol/">GridLineFCol</a> and <a href="../gridlinewidth/">GridLineWidth</a> respectively.</p>
+<p>The default value of RowLineTypes is an empty numeric vector (<code>⍬</code>). If so, all horizontal grid lines are drawn using the first element of <a href="../gridlinefcol/">GridLineFCol</a> and <a href="../gridlinewidth/">GridLineWidth</a>.</p>
 <p>A horizontal grid line is drawn along the bottom edge of its associated row. One pixel is drawn <em>inside</em> the row of cells; additional pixels (if any) are drawn <em>between</em> that row of cells and the next one below.</p>
 
 

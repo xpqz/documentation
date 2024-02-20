@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,20 +59599,7 @@
 
 <h1 class="heading"><span class="name">TCPAccept</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../tcpsocket/">TCPSocket</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../tcpsocket/">TCPSocket</a></p>
 <p><strong>Description</strong></p>
 <p>If enabled, this event is reported when a client connects to a server <a href="../tcpsocket/">TCPSocket</a> object.</p>
 <p>You may not disable or nullify the operation by setting the action code for the event to <code>¯1</code> or by returning 0 from a callback function. You may also not call TCPAccept as a method or generate this event artificially using <code>⎕NQ</code>.</p>
@@ -59730,7 +59627,7 @@
 </table>
 <p>The socket handle reported by this event is the socket handle for the original listening socket that was associated with the <a href="../tcpsocket/">TCPSocket</a> before the client connected.</p>
 <p>If you want your server to remain available for other clients, you must create a new <a href="../tcpsocket/">TCPSocket</a> object in a callback function attached to this event. The new <a href="../tcpsocket/">TCPSocket</a> object must be created by cloning the original listening socket. This is done by specifying the socket handle as the value of its SocketNumber property. You may not specify any other properties (except Event and Data) in the <code>⎕WC</code> statement that creates the new clone object.</p>
-<p>The default processing for this event is to close the socket handle reported by the 3rd element of the event message <strong>unless</strong> it has been associated with a new <a href="../tcpsocket/">TCPSocket</a> object by the callback function as described above. You may prevent this from occurring by returning 0 from a callback function. This may be necessary in a multithreaded application.</p>
+<p>The default processing for this event is to close the socket handle reported by the 3<sup>rd</sup> element of the event message <strong>unless</strong> it has been associated with a new <a href="../tcpsocket/">TCPSocket</a> object by the callback function as described above. You may prevent this from occurring by returning 0 from a callback function. This may be necessary in a multithreaded application.</p>
 <p>You may not call TCPClose as a method or generate this event artificially using <code>⎕NQ</code>.</p>
 
 

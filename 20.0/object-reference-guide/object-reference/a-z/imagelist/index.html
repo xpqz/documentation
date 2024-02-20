@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,48 +59599,16 @@
 
 <h1 class="heading"><span class="name">ImageList</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/ImageList.htm">Parents</a></th>
-<th><a href="../ChildLists/ImageList.htm">Children</a></th>
-<th><a href="../PropLists/ImageList.htm">Properties</a></th>
-<th><a href="../MethodLists/ImageList.htm">Methods</a></th>
-<th><a href="../EventLists/ImageList.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>The ImageList object represents a set of bitmapped images.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/ImageList.htm">Parents</a> <a href="../ChildLists/ImageList.htm">Children</a> <a href="../PropLists/ImageList.htm">Properties</a> <a href="../MethodLists/ImageList.htm">Methods</a> <a href="../EventLists/ImageList.htm">Events</a></p>
+<p>Purpose: The ImageList object represents a set of bitmapped images.</p>
 <p><strong>Description</strong></p>
-<p>An ImageList object represents an array of bitmapped images which are used to depict items in a <a href="ListView.htm">ListView</a> or <a href="TreeView.htm">TreeView</a> object, or the images in a <a href="CoolBar.htm">CoolBar</a>, <a href="Menu.htm">Menu</a>, <a href="TabControl.htm">TabControl</a> or <a href="ToolControl.htm">ToolControl</a>.</p>
+<p>An ImageList object represents an array of bitmapped images which are used to depict items in a <a href="../listview/">ListView</a> or <a href="../treeview/">TreeView</a> object, or the images in a <a href="../coolbar/">CoolBar</a>, <a href="../menu/">Menu</a>, <a href="../tabcontrol/">TabControl</a> or <a href="../toolcontrol/">ToolControl</a>.</p>
 <p>Making an ImageList is a 2-step process. First, you create an (empty) ImageList specifying its <a href="../size/">Size</a> and <a href="../masked/">Masked</a> properties. The former establishes the size of each of the bitmapped images in the array. The <a href="../masked/">Masked</a> property specifies whether the ImageList is to contain opaque or transparent images. Note that these properties must be established when the ImageList is created by <code>⎕WC</code> and may not subsequently be changed using <code>⎕WS</code>.</p>
-<p>Next, you create a series of <a href="Bitmap.htm">Bitmap</a> or <a href="Icon.htm">Icon</a> objects as <em>children</em> of the ImageList. As you make each one, APL adds the corresponding image (or images) to the ImageList object. If the size of each of the <a href="Bitmap.htm">Bitmap</a> or <a href="Icon.htm">Icon</a> objects is equal to the <a href="../size/">Size</a> of the ImageList itself, each child object corresponds to an image in the ImageList. However, if you add an object whose <em>width</em> is an exact multiple of the <em>width</em> of the ImageList, a corresponding number of images will be added.</p>
-<p>For example, if the <a href="../size/">Size</a> of the ImageList is 16x16 (the default) and you create a child <a href="Bitmap.htm">Bitmap</a> of size 16x48, three images (each of size 16x16) will be added to the ImageList. This is more efficient than building the images one-by-one. In other circumstances (where the size of the <a href="Bitmap.htm">Bitmap</a> or <a href="Icon.htm">Icon</a> is not equal to <a href="../size/">Size</a> of ImageList), the <a href="Bitmap.htm">Bitmap</a> or <a href="Icon.htm">Icon</a> will be scaled to fit.</p>
+<p>Next, you create a series of <a href="../bitmap/">Bitmap</a> or <a href="../icon/">Icon</a> objects as <em>children</em> of the ImageList. As you make each one, APL adds the corresponding image (or images) to the ImageList object. If the size of each of the <a href="../bitmap/">Bitmap</a> or <a href="../icon/">Icon</a> objects is equal to the <a href="../size/">Size</a> of the ImageList itself, each child object corresponds to an image in the ImageList. However, if you add an object whose <em>width</em> is an exact multiple of the <em>width</em> of the ImageList, a corresponding number of images will be added.</p>
+<p>For example, if the <a href="../size/">Size</a> of the ImageList is 16x16 (the default) and you create a child <a href="../bitmap/">Bitmap</a> of size 16x48, three images (each of size 16x16) will be added to the ImageList. This is more efficient than building the images one-by-one. In other circumstances (where the size of the <a href="../bitmap/">Bitmap</a> or <a href="../icon/">Icon</a> is not equal to <a href="../size/">Size</a> of ImageList), the <a href="../bitmap/">Bitmap</a> or <a href="../icon/">Icon</a> will be scaled to fit.</p>
 <p>Note that when making Bitmaps or Icons as children of an ImageList, it is not necessary to <em>name</em> them because they are subsequently referenced only via the <a href="../imageindex/">ImageIndex</a> and <a href="../selimageindex/">SelImageIndex</a> properties and not by name. The number of images in an ImageList is given by the read-only property, ImageCount.</p>
 <p>The <a href="../mapcols/">MapCols</a> property, which must be specified at the time you create the object, specifies whether or not bitmap colours are remapped to reflect the user's colour preferences.</p>
-<p>An ImageList is <em>associated</em> with a <a href="ListView.htm">ListView</a> or <a href="TreeView.htm">TreeView</a> object by the <a href="../imagelistobj/">ImageListObj</a> property. Each item in the <a href="ListView.htm">ListView</a> or <a href="TreeView.htm">TreeView</a> is then allocated a specific image in the ImageList by the <a href="../imageindex/">ImageIndex</a> and <a href="../selimageindex/">SelImageIndex</a> properties.</p>
+<p>An ImageList is <em>associated</em> with a <a href="../listview/">ListView</a> or <a href="../treeview/">TreeView</a> object by the <a href="../imagelistobj/">ImageListObj</a> property. Each item in the <a href="../listview/">ListView</a> or <a href="../treeview/">TreeView</a> is then allocated a specific image in the ImageList by the <a href="../imageindex/">ImageIndex</a> and <a href="../selimageindex/">SelImageIndex</a> properties.</p>
 
 
 

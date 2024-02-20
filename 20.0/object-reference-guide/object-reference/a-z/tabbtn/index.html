@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,45 +59599,13 @@
 
 <h1 class="heading"><span class="name">TabBtn</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/TabBtn.htm">Parents</a></th>
-<th><a href="../ChildLists/TabBtn.htm">Children</a></th>
-<th><a href="../PropLists/TabBtn.htm">Properties</a></th>
-<th><a href="../MethodLists/TabBtn.htm">Methods</a></th>
-<th><a href="../EventLists/TabBtn.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>To tab a <a href="../subform/">SubForm</a> .</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/TabBtn.htm">Parents</a> <a href="../ChildLists/TabBtn.htm">Children</a> <a href="../PropLists/TabBtn.htm">Properties</a> <a href="../MethodLists/TabBtn.htm">Methods</a> <a href="../EventLists/TabBtn.htm">Events</a></p>
+<p>Purpose: To tab a <a href="../subform/">SubForm</a> .</p>
 <p><strong>Description</strong></p>
 <p>TabBtn objects are associated with <a href="../subform/">SubForm</a>s which are positioned on top of one another. When the user clicks on a TabBtn, the corresponding <a href="../subform/">SubForm</a> is brought to the top and given the focus.</p>
-<p><a href="TabBar.htm">TabBar</a> and TabBtn objects were implemented before Windows provided direct support for tabbed dialogs, and have been superceded by <a href="TabControl.htm">TabControl</a> and <a href="TabButton.htm">TabButton</a> objects. Please use these instead.</p>
+<p><a href="../tabbar/">TabBar</a> and TabBtn objects were implemented before Windows provided direct support for tabbed dialogs, and have been superceded by <a href="../tabcontrol/">TabControl</a> and <a href="../tabbutton/">TabButton</a> objects. Please use these instead.</p>
 <p>The appearance of a TabBtn is determined by its <a href="../edgestyle/">EdgeStyle</a>, <a href="../border/">Border</a> and <a href="../caption/">Caption</a> properties. These take their defaults from the <a href="../subform/">SubForm</a> with which the TabBtn is associated. Thus there is generally no need to specify them. <a href="../bcol/">BCol</a> also defaults to that of its associated <a href="../subform/">SubForm</a>.</p>
-<p>The position of a TabBtn is normally determined by its parent <a href="TabBar.htm">TabBar</a> and its default size is fixed (22 x 80 pixels), and not related to the size of its <a href="../caption/">Caption</a>. These defaults can be overridden using the <a href="../posn/">Posn</a> and <a href="../size/">Size</a> properties.</p>
+<p>The position of a TabBtn is normally determined by its parent <a href="../tabbar/">TabBar</a> and its default size is fixed (22 x 80 pixels), and not related to the size of its <a href="../caption/">Caption</a>. These defaults can be overridden using the <a href="../posn/">Posn</a> and <a href="../size/">Size</a> properties.</p>
 <p>A <a href="../subform/">SubForm</a> is associated with a TabBtn by setting the <a href="../tabobj/">TabObj</a> property of the <a href="../subform/"><em>SubForm</em></a> to the name of, or ref to, the TabBtn. The <a href="../tabobj/">TabObj</a> property of the TabBtn is a read-only property that contains the name of, or ref to, the associated <a href="../subform/">SubForm</a>.</p>
 
 

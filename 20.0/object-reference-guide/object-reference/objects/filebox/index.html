@@ -823,43 +823,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -870,14 +833,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2422,43 +2377,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2469,14 +2387,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59667,40 +59577,8 @@
 
 <h1 class="heading"><span class="name">FileBox</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/FileBox.htm">Parents</a></th>
-<th><a href="../ChildLists/FileBox.htm">Children</a></th>
-<th><a href="../PropLists/FileBox.htm">Properties</a></th>
-<th><a href="../MethodLists/FileBox.htm">Methods</a></th>
-<th><a href="../EventLists/FileBox.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>Prompts user to select a file.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/FileBox.htm">Parents</a> <a href="../ChildLists/FileBox.htm">Children</a> <a href="../PropLists/FileBox.htm">Properties</a> <a href="../MethodLists/FileBox.htm">Methods</a> <a href="../EventLists/FileBox.htm">Events</a></p>
+<p>Purpose: Prompts user to select a file.</p>
 <p><strong>Description</strong></p>
 <p>The FileBox object implements the standard Windows FileSelection Dialog Box. This is a "modal" object. When you create a FileBox with <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a>, it is initially invisible and the user cannot interact with it. To use it, you must execute <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> with the name of the FileBox as its right argument. This causes the FileBox to be displayed. During the "local" <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> the user may interact <strong>only</strong> with the FileBox, or with other applications. When the user terminates the operation (by pressing the "Save", "Open", or "Cancel" Buttons, or by closing the window) the "local" <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> terminates, and the FileBox disappears.</p>
 <p>When the "local" <a href="../../Language/System Functions/dq.htm"><code>⎕DQ</code></a> is terminated, the FileBox generates either an <a href="../../a-z/fileboxok/">FileBoxOK</a>(71) or <a href="../../a-z/fileboxcancel/">FileBoxCancel</a>(72) event. The former is generated when the user presses the "Save" or "Open" button; the latter when the user presses the "Cancel" button or closes the FileBox.</p>

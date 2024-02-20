@@ -834,43 +834,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -881,14 +844,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2433,43 +2388,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2480,14 +2398,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59983,18 +59893,7 @@
 <h3 id="syslog-usage">SysLog Usage</h3>
 <p><code>SysLog</code> implements an interface to a subset of the functionality of Microsoft's System.Diagnostics.EventLog class.  Some of <code>SysLog</code>'s methods, namely  <code>CreateEventSource</code>, <code>DeleteEventSource</code> and <code>DeleteLog</code>, require you to run Dyalog <strong>as an administrator</strong> to be fully functional.</p>
 <p>All of the methods in <code>SysLog</code> with the exception of <code>Write</code> are shared methods meaning you do not have to create an instance of <code>SysLog</code> in order to execute them.</p>
-<table>
-<thead>
-<tr>
-<th><code>SysLog.CreateEventSource sourcename {logname}</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><code>SysLog.CreateEventSource sourcename {logname}</code></p>
 <h4 id="purpose">Purpose:</h4>
 <p>Creates a new Windows Event Log source and optionally specifies or creates a Windows Event Log for the source.</p>
 <table>
@@ -60015,18 +59914,7 @@
 </tr>
 </tbody>
 </table>
-<table>
-<thead>
-<tr>
-<th><code>{level} SysLog.WriteLog sourcename message</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><code>{level} SysLog.WriteLog sourcename message</code></p>
 <h4 id="purpose_1">Purpose:</h4>
 <p>Writes a message to the Windows Event Log associated with <code>sourcename</code>, optionally specifying a severity level.</p>
 <table>
@@ -60063,18 +59951,7 @@
 </tr>
 </tbody>
 </table>
-<table>
-<thead>
-<tr>
-<th><code>{level} instance.Write message</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><code>{level} instance.Write message</code></p>
 <h4 id="purpose_2">Purpose:</h4>
 <p>Writes a message to the Windows Event Log associated with source name specified for the <code>SysLog</code> instance, optionally specifying a severity level.</p>
 <table>
@@ -60115,18 +59992,7 @@
 <pre><code class="language-apl">      logger←⎕NEW SysLog 'mysource'
       1 logger.Write 'The sky is falling!'
 </code></pre>
-<table>
-<thead>
-<tr>
-<th><code>Boolean←SysLog.LogExists logname</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><code>Boolean←SysLog.LogExists logname</code></p>
 <h4 id="purpose_3">Purpose:</h4>
 <p>Returns 1 if a Windows Event Log named <code>logname</code> exists, 0 otherwise.</p>
 <table>
@@ -60143,18 +60009,7 @@
 </tr>
 </tbody>
 </table>
-<table>
-<thead>
-<tr>
-<th><code>Boolean←SysLog.EventSourceExists sourcename</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><code>Boolean←SysLog.EventSourceExists sourcename</code></p>
 <h4 id="purpose_4">Purpose:</h4>
 <p>Returns 1 if a Windows Event Log source named <code>sourcename</code> exists, 0 otherwise.</p>
 <table>
@@ -60171,18 +60026,7 @@
 </tr>
 </tbody>
 </table>
-<table>
-<thead>
-<tr>
-<th><code>logname←LogNameFromSourceName sourcename</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><code>logname←LogNameFromSourceName sourcename</code></p>
 <h4 id="purpose_5">Purpose:</h4>
 <p>Returns the Windows Event Log log name associated with the source named <code>sourcename</code>.</p>
 <table>
@@ -60203,18 +60047,7 @@
 </tr>
 </tbody>
 </table>
-<table>
-<thead>
-<tr>
-<th><code>DeleteEventSource sourcename</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><code>DeleteEventSource sourcename</code></p>
 <h4 id="purpose_6">Purpose:</h4>
 <p>Deletes the Windows Event Log source named <code>sourcename</code>.</p>
 <table>
@@ -60231,18 +60064,7 @@
 </tr>
 </tbody>
 </table>
-<table>
-<thead>
-<tr>
-<th><code>DeleteLog logname</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><code>DeleteLog logname</code></p>
 <h4 id="purpose_7">Purpose:</h4>
 <p>Deletes the Windows Event Log log named <code>logname</code>.</p>
 <table>

@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59793,7 +59703,7 @@
 <p>For a <a href="../datetimepicker/">DateTimePicker</a>, the Align property specifies the horizontal alignment of the drop-down Calendar which may be <code>'Left'</code> (the default) or <code>'Right'</code>. This applies only if the Style of the DateTimePicker is <code>'Combo'</code>.</p>
 <p>For a single-line <a href="../edit/">Edit</a>, Align specifies the vertical alignment of the text. It may be <code>'None'</code> (the default), <code>'Centre'</code> or <code>'Center'</code>.</p>
 <p>For a <a href="../menu/">Menu</a>, <a href="../menuitem/">MenuItem</a>, or <a href="../statusfield/">StatusField</a>, Align <code>'Right'</code> is used to position the object at the right end of its parent <a href="../menubar/">MenuBar</a> or <a href="../statusbar/">StatusBar</a>. <code>'None'</code> is equivalent to <code>'Left'</code> which is the default.</p>
-<p>For objects of type <a href="../coolbar/">CoolBar</a>, <a href="../splitter/">Splitter</a>, <a href="../scroll/">Scroll</a>, <a href="../statusbar/">StatusBar</a>, <a href="../tabbar/">TabBar</a>, <a href="../toolbar/">ToolBar</a> and <a href="../toolcontrol/">ToolControl</a>, Align may be <code>'None'</code>, <code>'Top'</code>, <code>'Bottom'</code>, <code>'Left'</code> or <code>'Right'</code>. It specifies to which (if any) of the four sides of the parent the object is anchored and also the default position and size of the object. Specifying Align typically causes the <a href="Attach.htm">Attach</a> property to be set to appropriate values as follows :</p>
+<p>For objects of type <a href="../coolbar/">CoolBar</a>, <a href="../splitter/">Splitter</a>, <a href="../scroll/">Scroll</a>, <a href="../statusbar/">StatusBar</a>, <a href="../tabbar/">TabBar</a>, <a href="../toolbar/">ToolBar</a> and <a href="../toolcontrol/">ToolControl</a>, Align may be <code>'None'</code>, <code>'Top'</code>, <code>'Bottom'</code>, <code>'Left'</code> or <code>'Right'</code>. It specifies to which (if any) of the four sides of the parent the object is anchored and also the default position and size of the object. Specifying Align typically causes the <a href="../attach/">Attach</a> property to be set to appropriate values as follows :</p>
 <table>
 <thead>
 <tr>
@@ -59822,8 +59732,8 @@
 </table>
 <p>These settings cause the object to remain at a fixed distance (in pixels) from the corresponding edge of the parent. Furthermore, the object will have a fixed height or width, but its length will stretch and shrink as the <a href="../form/">Form</a> is resized.</p>
 <p>Note that this does not apply to a <a href="../tabcontrol/">TabControl</a> for which the default value of Attach is <code>'None'  'None'  'None'  'None'</code>, regardless of the value of Align.</p>
-<p>The default value of Align is <code>'Right'</code> for a vertical <a href="../scroll/">Scroll</a>, <code>'Bottom'</code> for a horizontal <a href="../scroll/">Scroll</a>, and <code>'Top'</code> for a <a href="../coolbar/">CoolBar</a>, <a href="../tabbar/">TabBar</a>, <a href="../tabcontrol/">TabControl</a>, <a href="../toolbar/">ToolBar</a> and <a href="../toolcontrol/">ToolControl</a>. Furthermore, unless <a href="Posn.htm">Posn</a> and <a href="Size.htm">Size</a> are specified explicitly, the object is placed along the corresponding edge of its parent.</p>
-<p>For a <a href="../scroll/">Scroll</a> object, Align also determines the direction of a <a href="../scroll/">Scroll</a> object unless it is overridden by setting <a href="HScroll.htm">HScroll</a> or <a href="VScroll.htm">VScroll</a> directly. If neither <a href="HScroll.htm">HScroll</a> or VScroll is defined and Align is <code>'Top'</code> or <code>'Bottom'</code>, a horizontal scrollbar is provided. If neither <a href="HScroll.htm">HScroll</a> or <a href="VScroll.htm">VScroll</a> is defined and Align is <code>'None'</code>, <code>'Left'</code> or <code>'Right'</code>, a vertical scrollbar is provided.</p>
+<p>The default value of Align is <code>'Right'</code> for a vertical <a href="../scroll/">Scroll</a>, <code>'Bottom'</code> for a horizontal <a href="../scroll/">Scroll</a>, and <code>'Top'</code> for a <a href="../coolbar/">CoolBar</a>, <a href="../tabbar/">TabBar</a>, <a href="../tabcontrol/">TabControl</a>, <a href="../toolbar/">ToolBar</a> and <a href="../toolcontrol/">ToolControl</a>. Furthermore, unless <a href="../posn/">Posn</a> and <a href="../size/">Size</a> are specified explicitly, the object is placed along the corresponding edge of its parent.</p>
+<p>For a <a href="../scroll/">Scroll</a> object, Align also determines the direction of a <a href="../scroll/">Scroll</a> object unless it is overridden by setting <a href="../hscroll/">HScroll</a> or <a href="../vscroll/">VScroll</a> directly. If neither <a href="../hscroll/">HScroll</a> or VScroll is defined and Align is <code>'Top'</code> or <code>'Bottom'</code>, a horizontal scrollbar is provided. If neither <a href="../hscroll/">HScroll</a> or <a href="../vscroll/">VScroll</a> is defined and Align is <code>'None'</code>, <code>'Left'</code> or <code>'Right'</code>, a vertical scrollbar is provided.</p>
 <h4 id="note">Note</h4>
 <p>The value of the Align property may <strong>only</strong> be assigned by <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> and may <strong>not</strong> be changed using <a href="../../Language/System Functions/ws.htm"><code>⎕WS</code></a>.</p>
 

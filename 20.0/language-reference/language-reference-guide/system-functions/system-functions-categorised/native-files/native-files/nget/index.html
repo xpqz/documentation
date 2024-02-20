@@ -823,43 +823,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -870,14 +833,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2422,43 +2377,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2469,14 +2387,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59667,7 +59577,7 @@
 
 <h1 class="heading"><span class="name">Read Text File</span><span class="command">R←{X} ⎕NGET Y</span></h1>
 
-<p>This function reads the contents of the specified text file. See also Write Text File on page 1.</p>
+<p>This function reads the contents of the specified text file. See also <a href="../../../../system-functions-a-z/system-functions-a-z/nput/">Write Text File</a>.</p>
 <p><code>Y</code> is either a character vector/scalar containing the name of the file to be read, or a 2-item vector whose first item is the file name and whose second is an integer scalar specifying <code>flags</code> for the operation.</p>
 <p>If <code>flags</code> is 0 (the default value if omitted) the content in the result <code>R</code> is a character vector. If <code>flags</code> is 1 the result is a nested array of character vectors corresponding to the lines in the file.</p>
 <p>The optional left-argument <code>X</code> is either</p>
@@ -59726,7 +59636,7 @@
 </tr>
 </tbody>
 </table>
-<p>The above UTF formats may be qualified with -BOM or -NOBOM (e.g. UTF-8-BOM). See Write Text File on page 1.</p>
+<p>The above UTF formats may be qualified with -BOM or -NOBOM (e.g. UTF-8-BOM). See <a href="../../../../system-functions-a-z/system-functions-a-z/nput/">Write Text File</a>.</p>
 <p>Whether or not <code>X</code> is specified, if the start of the file contains a recognised   Byte Order Mark (BOM), the file is decoded according to the BOM. Otherwise, if <code>X</code> is specified the file is decoded according to the value of <code>X</code>. Otherwise, the file is examined to try to decide its encoding and is decoded accordingly.</p>
 <p>The result <code>R</code> is a 3-element vector comprising <code>(content) (encoding) (newline)</code>  where:</p>
 <table>

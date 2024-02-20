@@ -828,43 +828,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -875,14 +838,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2427,43 +2382,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2474,14 +2392,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59695,18 +59605,18 @@
 <li>whether or not the names of properties, methods and events provided by a Dyalog APL GUI object are exposed </li>
 <li>certain aspects of behaviour of .NET and COM objects</li>
 </ol>
-<p>If <code>⎕WX</code> is 1 (1st bit is set), the names of properties, methods and events are exposed as reserved names in GUI namespaces and can be accessed directly by name. This means that the same names may not be used for global variables in GUI namespaces.</p>
+<p>If <code>⎕WX</code> is 1 (1<sup>st</sup> bit is set), the names of properties, methods and events are exposed as reserved names in GUI namespaces and can be accessed directly by name. This means that the same names may not be used for global variables in GUI namespaces.</p>
 <p>If <code>⎕WX</code> is 0, these names are hidden and may only be accessed indirectly using <code>⎕WG</code> and <code>⎕WS</code>.</p>
-<p>If <code>⎕WX</code> is 3 (2nd bit is also set) COM and .NET objects adopt the  behaviour introduced in Version 11, as opposed to the behaviour in previous versions of Dyalog APL.</p>
+<p>If <code>⎕WX</code> is 3 (2<sup>nd</sup> bit is also set) COM and .NET objects adopt the  behaviour introduced in Version 11, as opposed to the behaviour in previous versions of Dyalog APL.</p>
 <p>Any attempt to set <code>⎕WX</code> to 2 generates a <code>DOMAIN ERROR</code>.</p>
 <p>Note that it is the value of <code>⎕WX</code> in the object itself, rather than the value of <code>⎕WX</code> in the calling environment, that determines its behaviour.</p>
 <p>When you create an object, its <code>⎕WX</code> (like any other system variable) is initially inherited from its parent.</p>
 <p>If the value of <code>⎕WX</code> of a GUI object is initially 0, it will not expose its members. If you subsequently change it from 0 to 1, it will expose them. If you change its <code>⎕WX</code> back to 0, it will not expose any yet-unexposed members, although already-exposed members will continue to be exposed.</p>
-<p>The value of <code>⎕WX</code> in a clear workspace is defined by the default_wx parameter (see <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#default_wx"> default_wx on page 1</a>) which itself defaults to 3.</p>
+<p>The value of <code>⎕WX</code> in a clear workspace is defined by the default_wx parameter (see <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#default_wx"> default_wx</a>) which itself defaults to 3.</p>
 <p><code>⎕WX</code> has namespace scope and may be localised in a function header. This allows you to create a utility namespace or utility function in which the exposure of objects is known and determined, regardless of its global value in the workspace.</p>
 <h4 id="notes">Notes:</h4>
 <ul>
-<li>The visibility of the properties and methods of the Root object are not controlled by <code>⎕WX</code> but by the PropertyExposeRoot parameter. For further information, see <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#PropertyExposeRoot"> PropertyExposeRoot on page 1</a>.</li>
+<li>The visibility of the properties and methods of the Root object are not controlled by <code>⎕WX</code> but by the PropertyExposeRoot parameter. For further information, see <a href="../../UserGuide/Installation and Configuration/Configuration Parameters.htm#PropertyExposeRoot"> PropertyExposeRoot</a>.</li>
 <li><code>⎕WX</code> is retained for backwards compatibility and should be considered as deprecated. Dyalog recommends  <code>⎕WX</code> be set to 3 and never changed.</li>
 </ul>
 

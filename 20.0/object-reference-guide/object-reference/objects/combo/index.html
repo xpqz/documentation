@@ -823,43 +823,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -870,14 +833,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2422,43 +2377,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2469,14 +2387,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59667,40 +59577,8 @@
 
 <h1 class="heading"><span class="name">Combo</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/Combo.htm">Parents</a></th>
-<th><a href="../ChildLists/Combo.htm">Children</a></th>
-<th><a href="../PropLists/Combo.htm">Properties</a></th>
-<th><a href="../MethodLists/Combo.htm">Methods</a></th>
-<th><a href="../EventLists/Combo.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>This object combines an input area with a list box and allows the user to enter a selection by typing text or by choosing an item from the list.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/Combo.htm">Parents</a> <a href="../ChildLists/Combo.htm">Children</a> <a href="../PropLists/Combo.htm">Properties</a> <a href="../MethodLists/Combo.htm">Methods</a> <a href="../EventLists/Combo.htm">Events</a></p>
+<p>Purpose: This object combines an input area with a list box and allows the user to enter a selection by typing text or by choosing an item from the list.</p>
 <p><strong>Description</strong></p>
 <p>Three types of Combo box are provided by the <a href="../../a-z/style/">Style</a> property which may be <code>'Drop'</code> (the default), <code>'Simple'</code> or <code>'DropEdit'</code>.</p>
 <p>The <a href="../../a-z/items/">Items</a> property specifies the list of items which are displayed in the list box and from which the user can choose.</p>
@@ -59708,7 +59586,7 @@
 <p>If the <a href="../../a-z/style/">Style</a> is <code>'Simple'</code> or <code>'DropEdit'</code>, the user may type text into the edit field. In these cases, the contents of the edit field may also be specified or queried using the <a href="../../a-z/text/">Text</a> property.</p>
 <p>Note that if the user first selects an item from the list box, then changes it in the edit field, the entry in the list box is automatically deselected. There is therefore no conflict between the value of <a href="../../a-z/text/">Text</a> and the value of <a href="../../a-z/selitems/">SelItems</a>.</p>
 <p><strong>Warning: Windows truncates the contents of the edit field (reflected in the value of the Text property) to 510 characters.</strong></p>
-<p>For a Combo with <a href="../../a-z/style/">Style </a><code>'Simple'</code>, the <a href="../../a-z/">Index</a> property specifies or reports the position of <a href="../../a-z/items/">Items</a> in the list box as a positive integer value. If <a href="../../a-z/">Index</a> has the value "n", it means that the "nth" item in <a href="../../a-z/items/">Items</a> is displayed on the top line in the list box. Note that <a href="../../a-z/">Index</a> can only be set using <a href="../../Language/System Functions/ws.htm"><code>⎕WS</code></a> and <strong>not</strong> by <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> and is ignored if all the <a href="../../a-z/items/">Items</a> fit in the list box. The default value for <a href="../../a-z/">Index</a> is <code>⎕IO</code>.</p>
+<p>For a Combo with <a href="../../a-z/style/">Style </a><code>'Simple'</code>, the <a href="../../a-z/">Index</a> property specifies or reports the position of <a href="../../a-z/items/">Items</a> in the list box as a positive integer value. If <a href="../../a-z/">Index</a> has the value "n", it means that the "n<sup>th</sup>" item in <a href="../../a-z/items/">Items</a> is displayed on the top line in the list box. Note that <a href="../../a-z/">Index</a> can only be set using <a href="../../Language/System Functions/ws.htm"><code>⎕WS</code></a> and <strong>not</strong> by <a href="../../Language/System Functions/wc.htm"><code>⎕WC</code></a> and is ignored if all the <a href="../../a-z/items/">Items</a> fit in the list box. The default value for <a href="../../a-z/">Index</a> is <code>⎕IO</code>.</p>
 <p>The <a href="../../a-z/seltext/">SelText</a> property identifies the portion of the edit field that is highlighted. It is not applicable to a Combo with <a href="../../a-z/style/">Style </a><code>'Drop'</code> as the user cannot enter or change data in its edit field.</p>
 <p>The height of a Combo object with <a href="../../a-z/style/">Style </a><code>'Drop'</code> or <code>'DropEdit'</code> is defined in a manner that is different from other objects. The height of the edit field is fixed, and is dependent only upon the size of the font. The height of the associated drop-down list box is determined by the <a href="../../a-z/rows/">Rows</a> property. The first element of the <a href="../../a-z/size/">Size</a> property (height) is ignored. For a Simple combo box (whose listbox is permanently displayed), the overall height is determined by the first element of <a href="../../a-z/size/">Size</a>. <a href="../../a-z/rows/">Rows</a> is a "read-only" property.</p>
 <p>The <a href="../../a-z/vscroll/">VScroll</a> property specifies whether or not a vertical scrollbar is provided. The default value 0 means no scrollbar, setting <a href="../../a-z/vscroll/">VScroll</a> to <code>¯1</code> or <code>¯2</code> specifies that the Combo has a vertical scrollbar.</p>

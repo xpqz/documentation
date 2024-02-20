@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59770,7 +59680,7 @@
 
 <p><a href="Hold Statement Definition.htm">Formal Definition</a></p>
 <p>Whenever more than one thread tries to access the same piece of data or shared resource at the same time, you need some type of synchronisation to control access to that data. This is provided by <code>:Hold</code>.</p>
-<p><code>:Hold</code> provides a mechanism to control thread entry into a critical section of code. <code>tkns</code> must be a simple character vector or scalar, or a vector of character vectors. <code>tkns</code> represents a set of "tokens", all of which must be acquired before the thread can continue into the control structure. <code>:Hold</code> is analogous to the component file system <code>⎕FHOLD</code> which is used to synchronise access between <strong>processes</strong>. See also File Hold on page 1.</p>
+<p><code>:Hold</code> provides a mechanism to control thread entry into a critical section of code. <code>tkns</code> must be a simple character vector or scalar, or a vector of character vectors. <code>tkns</code> represents a set of "tokens", all of which must be acquired before the thread can continue into the control structure. <code>:Hold</code> is analogous to the component file system <code>⎕FHOLD</code> which is used to synchronise access between <strong>processes</strong>. See also <a href="../System Functions/fhold.htm#FileHold">File Hold</a>.</p>
 <p>Within the whole active workspace, a token with a particular value may be held only once. If the hold succeeds, the current thread <em>acquires</em>the tokens and execution continues with the first phrase in the control structure. On exit from the structure, the tokens are released for use by other threads. If the hold fails, because one or more of the tokens is already in use:</p>
 <ol>
 <li>If there is no <code>:Else</code> clause in the control structure, execution of the thread is blocked until the requested tokens become available.</li>
@@ -59813,8 +59723,8 @@
 </thead>
 <tbody>
 <tr>
-<td>:Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold</td>
-<td>:Hold 'green'     ...     :Hold 'red'          ...     :EndHold :EndHold</td>
+<td><code>apl :Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold</code></td>
+<td><code>apl :Hold 'green'     ...     :Hold 'red'          ...     :EndHold :EndHold</code></td>
 </tr>
 </tbody>
 </table>
@@ -59835,8 +59745,8 @@
 </thead>
 <tbody>
 <tr>
-<td>:Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold</td>
-<td>:Hold 'green' 'red'     ...     :EndHold</td>
+<td><code>apl :Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold</code></td>
+<td><code>apl  :Hold 'green' 'red'     ...     :EndHold</code></td>
 </tr>
 </tbody>
 </table>
@@ -59874,7 +59784,7 @@
 <p>Note that <code>:Hold</code>, like its component file system counterpart <code>⎕FHOLD</code>, is a device to enable <em>co-operating</em>threads to synchronise their operation.</p>
 <p><code>:Hold</code> does not <em>prevent</em>threads from updating the same data structures concurrently, it prevents threads only from <code>:Hold</code>ing the same tokens.</p>
 <h4 id="high-priority-callbacks">High-Priority Callbacks</h4>
-<p>See High-Priority Callback Functions on page 1.</p>
+<p>See <a href="../../InterfaceGuide/Introduction/High Priority Callbacks.htm#High-Priority_Callback_Functions">High-Priority Callback Functions</a>.</p>
 <p><code>:Hold</code>
  with a non-zero number of tokens is not permitted in a high-priority callback and an attempt to use it  will cause the error:</p>
 <pre><code class="language-apl"> DOMAIN ERROR: Cannot :Hold within high priority callback

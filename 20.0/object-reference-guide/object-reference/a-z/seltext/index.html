@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,31 +59599,10 @@
 
 <h1 class="heading"><span class="name">SelText</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../buttonedit/">ButtonEdit</a></th>
-<th><a href="../combo/">Combo</a></th>
-<th><a href="../comboex/">ComboEx</a></th>
-<th><a href="../edit/">Edit</a></th>
-<th><a href="../richedit/">RichEdit</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../buttonedit/">ButtonEdit</a> <a href="../combo/">Combo</a> <a href="../comboex/">ComboEx</a> <a href="../edit/">Edit</a> <a href="../richedit/">RichEdit</a></p>
 <p><strong>Description</strong></p>
 <p>This property determines or identifies the portion of text in an object that is currently selected and highlighted. It can be used to pre-select all or part of the text to be replaced or deleted when the user starts typing. It can also be used to query the area of text that the user has highlighted. This can be useful if you want to implement your own cut/paste/replace features.</p>
-<p>SelText is always a 2-element integer vector. If the field contents (defined by the <a href="Text.htm">Text</a> property) is a vector, SelText is simple. Its first element is the index of the first selected character and its second element is 1 + the index of the last selected character. The length of the selected string is therefore obtained by subtracting the first element from the second.</p>
+<p>SelText is always a 2-element integer vector. If the field contents (defined by the <a href="../text/">Text</a> property) is a vector, SelText is simple. Its first element is the index of the first selected character and its second element is 1 + the index of the last selected character. The length of the selected string is therefore obtained by subtracting the first element from the second.</p>
 <p>If there are no characters selected, the two elements are equal and specify the current position of the input cursor.</p>
 <p>If the contents is a vector of vectors or a matrix, each element of SelText is a 2-element vector. The first item in each of the elements indexes the vector (in a vector of vectors) or row (in a matrix). The second item in each element indexes the position of the character in the vector or along the row. Again, the value reported for the last character in the selected string is 1 + its index.</p>
 

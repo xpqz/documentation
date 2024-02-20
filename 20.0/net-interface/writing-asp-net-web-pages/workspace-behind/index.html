@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59766,33 +59676,38 @@
 <ol>
 <li>Replace the Dyalog APL GUI with the equivalent HTML Forms, which are defined in one or more separate <code>.aspx</code> web pages. To retain consistency, it is helpful to give the ASP controls the same names as the original GUI controls, which they are replacing.</li>
 <li>Attach the names of APL callback functions to the appropriate ASP controls; essentially, any controls that will be involved in a postback operation, such as the Submit button. </li>
-<li>
-<p>Starting with a <code>CLEAR WS</code>, create a <code>Class</code> that represents a .NET class based upon <code>System.Web.UI.Page</code>. For example, in converting the ACTFNS workspace, we started by creating the class:      )edit ○actuarial</p>
-</li>
-<li>
-<p>then defining <code>⎕USING</code> as follows::Using System                    <br />
+<li>Starting with a <code>CLEAR WS</code>, create a <code>Class</code> that represents a .NET class based upon <code>System.Web.UI.Page</code>. For example, in converting the ACTFNS workspace, we started by creating the class:```apl
+      )edit ○actuarial</li>
+</ol>
+<pre><code>
+4. then defining `⎕USING` as follows:```apl
+:Using System                      
 :Using System.Web.UI,system.web.dll
-:Using System.Web.UI.WebControls    <br />
-:Using System.Web.UI.HtmlControls   <br />
+:Using System.Web.UI.WebControls      
+:Using System.Web.UI.HtmlControls     
 :Using System.Data,system.data.dll 
-The name you choose for this class will replace <code>classname</code> in the <code>Inherits="classname"</code> declaration in the <code>.aspx</code> web page(s) that call it.</p>
-</li>
+</code></pre>
+<p>The name you choose for this class will replace <code>classname</code> in the <code>Inherits="classname"</code> declaration in the <code>.aspx</code> web page(s) that call it.</p>
+<ol>
 <li>
-<p>Create a namespace, change into it, and copy the workspace to be converted; in this case, the starting point was a workspace named <code>DH_ACTFNS</code>:
-      )NS actuarial_utils
-      )CS actuarial_utils</p>
+<p>Create a namespace, change into it, and copy the workspace to be converted; in this case, the starting point was a workspace named <code>DH_ACTFNS</code>:```apl</p>
+<p>)NS actuarial_utils
+  )CS actuarial_utils</p>
+<h1 id="actuarial_utils">.actuarial_utils</h1>
+<p>)COPY DH_ACTFNS
+DH_ACTFNS saved ...</p>
 </li>
 </ol>
-<h1 id="actuarial_utils">.actuarial_utils</h1>
-<pre><code>  )COPY DH_ACTFNS
-</code></pre>
-<p>DH_ACTFNS saved ...
-6. Modify the code as appropriate, inserting a <code>Page_Load</code> function and whatever callback functions that are required.
-7. Make sure the class 'actuarial' has an <em>:Include actuarial_utils</em>statement</p>
-<h3 id="the-page_load-function">The Page_Load function</h3>
-<p>The <code>Page_Load</code> function must be declared as :<em>Access</em><em>Public</em>. <code>Page_Load</code> must be spelled correctly as it is this name that causes the function to supersede the base class <code>Page_Load</code> method of the same name.</p>
-<p>For example, the Page_Load function of the <code>actuarial</code> class in ACTFNS.DWS is shown below:</p>
-<pre><code class="language-apl">    ∇ Page_Load;INT;AGE;DUR;TERM;TAB_DURS;MPC1;INT1;INT2;
+<pre><code>
+6. Modify the code as appropriate, inserting a `Page_Load` function and whatever callback functions that are required.
+7. Make sure the class 'actuarial' has an *:Include actuarial_utils*statement
+### The Page_Load function
+
+The `Page_Load` function must be declared as :*Access**Public*. `Page_Load` must be spelled correctly as it is this name that causes the function to supersede the base class `Page_Load` method of the same name.
+
+For example, the Page_Load function of the `actuarial` class in ACTFNS.DWS is shown below:
+```apl
+    ∇ Page_Load;INT;AGE;DUR;TERM;TAB_DURS;MPC1;INT1;INT2;
                 INTY;RUN_OPTION;OPT
       :Access public
       :Signature Page_Load
@@ -59832,7 +59747,7 @@ The name you choose for this class will replace <code>classname</code> in the <c
 <p>Note that the <code>actuarial</code> class is used by two different web pages, and the function <code>GET_RUN_OPTION</code> function determines which of these are involved. (It does so by detecting the presence or otherwise of a particular control on the page).</p>
 <h3 id="callback-functions">Callback functions</h3>
 <p>The actuarial class in ACTFNS.DWS provides four callback functions named <code>CALC_FSLTAB_RESULTS</code>, <code>CALC_FSL_RESULTS,``CHANGE_TABLES</code> and <code>CHANGE_TABLE_FORMAT</code>. The first two of these functions are attached as callbacks to the <strong>Calculate</strong> button in each of two separate web pages <code>sla_tab.aspx</code> and <code>sla_disp.aspx</code>. For example, the statement that defines the button in <code>sla_tab.aspx</code> is:</p>
-<pre><code class="language-apl">`&lt;asp:Button id=Button1 runat=&quot;server&quot; Text=&quot;Calculate&quot; onClick=&quot;CALC_FSLTAB_RESULTS&quot;&gt;&lt;/asp:Button&gt;`
+<pre><code class="language-apl">&lt;asp:Button id=Button1 runat=&quot;server&quot; Text=&quot;Calculate&quot; onClick=&quot;CALC_FSLTAB_RESULTS&quot;&gt;&lt;/asp:Button&gt;
 </code></pre>
 <p>The third callback, <code>CHANGE_TABLES</code>, is called by <code>sla_tab.aspx</code> when the user selects a different set of Mortality Tables from the three provided. <code>CHANGE_TABLE_FORMAT</code> is called when the user clicks either of the two radio buttons that select how the output is to be displayed.</p>
 <p>Like the <code>Page_Load</code> function, callback functions must be declared as being <em>Public</em>methods. This is done using the :<em>Access</em> statement.</p>
@@ -59844,33 +59759,36 @@ The name you choose for this class will replace <code>classname</code> in the <c
 </code></pre>
 <h3 id="validation-functions">Validation functions</h3>
 <p>In a Dyalog APL web page application, there are basically two approaches to validation. You can handle it entirely yourself or you can exploit the various validation controls that come with ASP.NET. The sample application uses the latter approach by way of illustration. For example:</p>
-<pre><code class="language-apl">`&lt;asp:TextBox id=EINT runat=&quot;server&quot;&gt;&lt;/asp:TextBox&gt;
+<pre><code class="language-apl">&lt;asp:TextBox id=EINT runat=&quot;server&quot;&gt;&lt;/asp:TextBox&gt;
 &lt;asp:RequiredFieldValidator id=&quot;RFVINT&quot;
      ControlToValidate=&quot;EINT&quot;
      ErrorMessage=&quot;Interest Rate must be a number
                    between 0 and 20&quot;
      Text=&quot;*&quot;
-     runat=&quot;server&quot;/&gt;&lt;/td&gt;`
+     runat=&quot;server&quot;/&gt;&lt;/td&gt;
+
 </code></pre>
 <p>These ASP.NET statements associate a <code>RequiredFieldValidator</code>named <em>RFVINT</em> with the <em>EINT</em> field, the field used to enter <strong>Interest Rate</strong>. If the user leaves this field blank, the system will automatically generate the specified error message. The page defines a separate <code>ValidationSummary</code> control as follows:</p>
-<pre><code class="language-apl">`&lt;asp:ValidationSummary id=&quot;Summary1&quot; 
+<pre><code class="language-apl">&lt;asp:ValidationSummary id=&quot;Summary1&quot; 
 HeaderText=&quot;Please enter a value in the following 
       fields&quot;
      Font-Size=&quot;smaller&quot;
      ShowSummary=&quot;false&quot;
      ShowMessageBox=&quot;true&quot;
      EnableClientScript=&quot;true&quot;
-     runat=&quot;server&quot;/&gt;`
+     runat=&quot;server&quot;/&gt;
+
 </code></pre>
 <p>The <code>ValidationSummary</code> control collects error messages from all the other validation controls on the page, and displays them together. In this case, a pop-up message box is used. One advantage of this approach is that this type of validation can be carried out client-side by local JavaScript that is generated automatically on the server and incorporated in the HTML that is sent to the browser.</p>
 <p>Logical field validation for this page is carried out on the server by APL functions that are attached to <code>CustomValidator</code> controls. For example:</p>
-<pre><code class="language-apl">`&lt;asp:CustomValidator id=&quot;CustomValidator_INT&quot; 
+<pre><code class="language-apl">&lt;asp:CustomValidator id=&quot;CustomValidator_INT&quot; 
      OnServerValidate=&quot;VALIDATE_INT&quot;
      ControlToValidate=&quot;EINT&quot;
      Display=&quot;Dynamic&quot;                 
      ErrorMessage=&quot;Interest Rate must be a number between
                    0 and 20&quot;
-     runat=&quot;server&quot;/&gt;`
+     runat=&quot;server&quot;/&gt;
+
 </code></pre>
 <p>These ASP.NET statements associate a <code>CustomValidator</code> control named <strong>CustomValidator_INT</strong> with the <strong>Interest Rate</strong> field <strong>EINT</strong>. The statement <code>OnServerValidate="VALIDATE_INT"</code> specifies that <code>VALIDATE_INT</code> is the validation function for the<strong>CustomValidator_INT</strong> object.</p>
 <p>The <code>VALIDATE_INT</code> function and its .NET Properties page are shown below.</p>
@@ -59989,7 +59907,7 @@ HeaderText=&quot;Please enter a value in the following
 </code></pre>
 <h3 id="forcing-validation">Forcing Validation</h3>
 <p>Validation controls are automatically invoked when the user activates a Button control, but not when other postbacks occur. For example, when the user selects a different Mortality Table (represented by a <code>RadioButtonList</code> control), the page calls the <code>CHANGE_TABLES</code> function.</p>
-<pre><code class="language-apl">`&lt;asp:RadioButtonList id=MT runat=&quot;server&quot;
+<pre><code class="language-apl">&lt;asp:RadioButtonList id=MT runat=&quot;server&quot;
      RepeatDirection=&quot;Vertical&quot; RepeatRows=&quot;3&quot;  tabIndex=1
      onSelectedIndexChanged=&quot;CHANGE_TABLES&quot; 
      AutoPostBack=&quot;true&quot;&gt;
@@ -59999,7 +59917,8 @@ HeaderText=&quot;Please enter a value in the following
      UK Immediate Annuitant&lt;/asp:ListItem&gt;
 &lt;asp:ListItem Value=&quot;UK Pension Annuitant&quot;&gt;
      UK Pension Annuitant&lt;/asp:ListItem&gt;
-&lt;/asp:RadioButtonList&gt;`
+&lt;/asp:RadioButtonList&gt;
+
 </code></pre>
 <p>A <code>RadioButtonList</code> control does not cause validation to occur, so this must be done explicitly. This is easily achieved by calling the <code>Validate</code> method of the Page itself as shown in <code>CHANGE_TABLES[11]</code> below.</p>
 <pre><code class="language-apl">     ∇ CHANGE_TABLES ARGS;TableNames;TableName;OPTSMORT;
@@ -60066,7 +59985,7 @@ HeaderText=&quot;Please enter a value in the following
      ∇
 </code></pre>
 <p>The results of the calculation are displayed in a DataGrid object named <code>fsl</code>. This is defined within the <code>sla_tab.aspx</code> page as follows:</p>
-<pre><code class="language-apl">`&lt;asp:DataGrid id=&quot;fsl&quot; runat=&quot;server&quot; Width=&quot;700&quot;
+<pre><code class="language-apl">&lt;asp:DataGrid id=&quot;fsl&quot; runat=&quot;server&quot; Width=&quot;700&quot;
      AllowPaging=&quot;false&quot; BorderColor=&quot;black&quot; CellPadding=&quot;3&quot;
      CellSpacing=&quot;0&quot; Font-Size=&quot;9pt&quot; PageSize=&quot;10&quot;&gt;
      &lt;ItemStyle HorizontalAlign=&quot;right&quot; Width=&quot;100&quot;&gt;
@@ -60074,7 +59993,8 @@ HeaderText=&quot;Please enter a value in the following
      &lt;HeaderStyle HorizontalAlign=&quot;center&quot;
      Font-Size=&quot;12pt&quot; Font-Bold=&quot;true&quot; BackColor=&quot;#17748A&quot;
      ForeColor=&quot;#FFFFFF&quot;&gt;&lt;/HeaderStyle&gt;
-     &lt;/asp:DataGrid&gt;`
+     &lt;/asp:DataGrid&gt;
+
 </code></pre>
 <p><code>CALC_FSLTAB_RESULTS[1]</code> checks to see if the user input is valid. If not, <code>[55]</code> hides the <code>DataGrid</code>object <code>fsl</code> so that no results are displayed in the page. The display of error messages is handled separately, and automatically, by the <code>ValidationSummary</code> control on the page.</p>
 <p><code>CALC_FSLTAB[11 15]</code> obtain the values of the <em>CMTAB</em> (<code>DropDownList</code>) and <em>TA</em> (<code>RadioButton</code>) controls on the page.</p>

@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59994,7 +59904,7 @@
 
 <h1 class="heading"><span class="name">Native File Move</span><span class="command">{R}←X ⎕NMOVE Y</span></h1>
 
-<p>This function moves native files and directories from one or more sources specified by <code>Y</code> to a destination specified by  <code>X</code>. <code>⎕NMOVE</code> is similar to <code>⎕NCOPY</code> (see Native File Copy  on page 1).</p>
+<p>This function moves native files and directories from one or more sources specified by <code>Y</code> to a destination specified by  <code>X</code>. <code>⎕NMOVE</code> is similar to <code>⎕NCOPY</code> (see <a href="ncopy.htm#NativeFileCopy">Native File Copy </a>).</p>
 <p>When possible <code>⎕NMOVE</code> <em>renames</em> files and directories, which effects a fast move when the source and destination are on the same file system. By default (see RenameOnly option below), if <code>⎕NMOVE</code> is unable to rename files or directories, it instead copies them and deletes the originals.</p>
 <p><code>X</code> is a character vector that specifies the name of the destination.</p>
 <p><code>Y</code> is a character vector that specifies the name of the source, or a vector of character vectors containing zero or more sources.</p>
@@ -60147,7 +60057,7 @@ backups/UserCommand20.cache
 <tbody>
 <tr>
 <td><code>1</code></td>
-<td>The name or names in <code>Y</code> that specify the <strong>base name</strong> and <strong>extension</strong> (see NParts on page 1 ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character.</td>
+<td>The name or names in <code>Y</code> that specify the <strong>base name</strong> and <strong>extension</strong> (see <a href="../../../../system-functions-a-z/system-functions-a-z/nparts/">NParts</a> ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character.</td>
 </tr>
 </tbody>
 </table>
@@ -60204,13 +60114,13 @@ backups/UserCommand20.cache
 <thead>
 <tr>
 <th><code>'Start'</code></th>
-<th>Reported by the first invocation of the callback which occurs before any files are scanned or processed. This may be used to set the parameters that control the operation. See Options on page 1 .</th>
+<th>Reported by the first invocation of the callback which occurs before any files are scanned or processed. This may be used to set the parameters that control the operation. See <a href="#Options">Options</a> .</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>'Scan'</code></td>
-<td>Indicates that the system function is in the initial phase of scanning the files in order to calculate <code>Limit</code> . See ScanFirst on page 1 .</td>
+<td>Indicates that the system function is in the initial phase of scanning the files in order to calculate <code>Limit</code> . See <a href="#ScanFirst">ScanFirst</a> .</td>
 </tr>
 <tr>
 <td><code>'Progress'</code></td>

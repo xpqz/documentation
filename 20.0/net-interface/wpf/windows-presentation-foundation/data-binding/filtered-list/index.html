@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59794,7 +59704,7 @@
 <p>Incidentally, the ItemsSource property overrides the Items collection as a means to specify the content of the ItemsControl. When the ItemsSource property is set, the Items collection becomes read-only and of fixed-size. Note that the ItemsSource property supports OneWay binding by default.</p>
 <h2 id="the-xaml">The XAML</h2>
 <p>The variable <code>XAML_FilteredList</code>, shown below, contains XAML to specify a Window containing a StackPanel. The StackPanel control is a WPF layout control that organises child controls in a single line, by default vertically. In this example, the StackPanel contains a TextBox and, below it, a WrapPanel, and below that a TextBlock. The WrapPanel is also a layout control that organises its child controls sequentially from left to right. The WrapPanel contains two ListBox controls.</p>
-<pre><code class="language-apl">`&lt;Window 
+<pre><code class="language-apl">&lt;Window 
     xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
     xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
     Title=&quot;Filtered List Example&quot;
@@ -59812,7 +59722,8 @@
         &lt;/WrapPanel&gt;   
         &lt;TextBlock Text=&quot;Dyalog WPF Demo&quot; Margin=&quot;5&quot;/&gt;
     &lt;/StackPanel&gt;
- &lt;/Window&gt;`
+ &lt;/Window&gt;
+
 </code></pre>
 <h2 id="the-code">The Code</h2>
 <pre><code class="language-apl">     ∇ FilteredList;MySource;win;sink
@@ -59837,21 +59748,24 @@
 </code></pre>
 <p>The DataContext property is inherited by all child controls, so they all share the same Binding Source. Their different Paths to different values in the Binding Source are specified in the XAML as follows.</p>
 <p>The Text property of the TextBox named <strong>filter</strong> is bound to the variable <code>Filter</code> by the expression <code>Text="{Binding Filter,...</code></p>
-<pre><code class="language-apl">`&lt;TextBox Name=&quot;filter&quot; Margin=&quot;5&quot;
-         Text=&quot;{Binding Filter,Mode=TwoWay,`
+<pre><code class="language-apl">
+        &lt;TextBox Name=&quot;filter&quot; Margin=&quot;5&quot;
+         Text=&quot;{Binding Filter,Mode=TwoWay,
 </code></pre>
 <p>The ItemsSource property of the ListBox named <strong>all</strong> is bound to the variable <code>DyalogNames</code> by the expression <code>ItemsSource="{Binding DyalogNames}"</code></p>
-<pre><code class="language-apl">`&lt;ListBox Name=&quot;all&quot; Width=&quot;135&quot; Height=&quot;440&quot;
-             Margin=&quot;5&quot; ItemsSource=&quot;{Binding DyalogNames}&quot;/&gt;`
+<pre><code class="language-apl">
+            &lt;ListBox Name=&quot;all&quot; Width=&quot;135&quot; Height=&quot;440&quot;
+             Margin=&quot;5&quot; ItemsSource=&quot;{Binding DyalogNames}&quot;/&gt;
 </code></pre>
 <p>Thirdly, the ItemsSource property of the ListBox named <strong>filtered</strong> is bound to the variable <code>FilteredList</code> by the expression <code>ItemsSource="{Binding FilteredList}"</code></p>
-<pre><code class="language-apl">`&lt;ListBox Name=&quot;filtered&quot; Width=&quot;135&quot; Height=&quot;440&quot;
-             Margin=&quot;5&quot; ItemsSource=&quot;{Binding FilteredList}&quot;/&gt;`
+<pre><code class="language-apl">
+            &lt;ListBox Name=&quot;filtered&quot; Width=&quot;135&quot; Height=&quot;440&quot;
+             Margin=&quot;5&quot; ItemsSource=&quot;{Binding FilteredList}&quot;/&gt;
 </code></pre>
 <h2 id="testing-the-data-binding">Testing the Data Binding</h2>
 <pre><code class="language-apl">      FilteredList
 </code></pre>
-<pre><code class="language-apl">![data binding filteredlist 1](../img/data-binding-filteredlist-1.png)
+<pre><code class="language-apl">
 </code></pre>
 <p>If the user types a single character, in this case "e", into the TextBox, this fires a TextChanged event which in turn fires the callback function shown below:</p>
 <pre><code class="language-apl">     ∇ FilteredList_TextChanged a;hits

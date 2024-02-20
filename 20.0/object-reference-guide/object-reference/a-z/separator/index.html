@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,47 +59599,15 @@
 
 <h1 class="heading"><span class="name">Separator</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/Separator.htm">Parents</a></th>
-<th><a href="../ChildLists/Separator.htm">Children</a></th>
-<th><a href="../PropLists/Separator.htm">Properties</a></th>
-<th><a href="../MethodLists/Separator.htm">Methods</a></th>
-<th><a href="../EventLists/Separator.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>A horizontal or vertical line used to separate items in a menu.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/Separator.htm">Parents</a> <a href="../ChildLists/Separator.htm">Children</a> <a href="../PropLists/Separator.htm">Properties</a> <a href="../MethodLists/Separator.htm">Methods</a> <a href="../EventLists/Separator.htm">Events</a></p>
+<p>Purpose: A horizontal or vertical line used to separate items in a menu.</p>
 <p><strong>Description</strong></p>
-<p>This object provides a vertical or horizontal line to separate items in a <a href="Menu.htm">Menu</a>. It may also be used to split a <a href="MenuBar.htm">MenuBar</a> over more than one line.</p>
+<p>This object provides a vertical or horizontal line to separate items in a <a href="../menu/">Menu</a>. It may also be used to split a <a href="../menubar/">MenuBar</a> over more than one line.</p>
 <p>The orientation of the Separator is determined by its <a href="../style/">Style</a> property, which may be <code>'Horz'</code> (horizontal) or <code>'Vert'</code> (vertical). The default is <code>'Horz'</code>.</p>
 <p>If you want to provide a menu with a 3-Dimensional (pushbutton) appearance, you should also set the <a href="../edgestyle/">EdgeStyle</a> property on any Separator objects in it. Alternatively, you can achieve the same effect by setting the background colour (<a href="../bcol/">BCol</a>) for the Separators to grey (192 192 192).</p>
-<p>The <a href="../posn/">Posn</a> property is a single integer number which specifies the positional index of the Separator relative to the other objects in the <a href="Menu.htm">Menu</a>. A Separator does not generate any events.</p>
-<p>Like other components of a menu, the position of a Separator is normally determined by the order in which it is created in relation to other objects with the same parent. However, you can use the <a href="../posn/">Posn</a> property to <strong>insert</strong> a Separator into an existing structure. For example, having defined three <a href="MenuItem.htm">MenuItem</a> objects as children of a <a href="Menu.htm">Menu</a>, you can insert a Separator between the first and the second by specifying its <a href="../posn/">Posn</a> to be 2. Note that the value of <a href="../posn/">Posn</a> for the <a href="MenuItem.htm">MenuItem</a>s that were previously second and third will then be reset to third and fourth respectively.</p>
-<p>If you put a Separator (either <a href="../style/">Style</a>) into a <a href="MenuBar.htm">MenuBar</a>, it has the effect of adding another line to it. Any items added after the Separator will appear in the new line.</p>
+<p>The <a href="../posn/">Posn</a> property is a single integer number which specifies the positional index of the Separator relative to the other objects in the <a href="../menu/">Menu</a>. A Separator does not generate any events.</p>
+<p>Like other components of a menu, the position of a Separator is normally determined by the order in which it is created in relation to other objects with the same parent. However, you can use the <a href="../posn/">Posn</a> property to <strong>insert</strong> a Separator into an existing structure. For example, having defined three <a href="../menuitem/">MenuItem</a> objects as children of a <a href="../menu/">Menu</a>, you can insert a Separator between the first and the second by specifying its <a href="../posn/">Posn</a> to be 2. Note that the value of <a href="../posn/">Posn</a> for the <a href="../menuitem/">MenuItem</a>s that were previously second and third will then be reset to third and fourth respectively.</p>
+<p>If you put a Separator (either <a href="../style/">Style</a>) into a <a href="../menubar/">MenuBar</a>, it has the effect of adding another line to it. Any items added after the Separator will appear in the new line.</p>
 
 
 

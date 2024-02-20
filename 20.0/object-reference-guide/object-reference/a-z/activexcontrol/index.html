@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,40 +59599,8 @@
 
 <h1 class="heading"><span class="name">ActiveXControl</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/ActiveXControl.htm">Parents</a></th>
-<th><a href="../ChildLists/ActiveXControl.htm">Children</a></th>
-<th><a href="../PropLists/ActiveXControl.htm">Properties</a></th>
-<th><a href="../MethodLists/ActiveXControl.htm">Methods</a></th>
-<th><a href="../EventLists/ActiveXControl.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>The ActiveXControl object represents a Dyalog APL namespace as an ActiveX control.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/ActiveXControl.htm">Parents</a> <a href="../ChildLists/ActiveXControl.htm">Children</a> <a href="../PropLists/ActiveXControl.htm">Properties</a> <a href="../MethodLists/ActiveXControl.htm">Methods</a> <a href="../EventLists/ActiveXControl.htm">Events</a></p>
+<p>Purpose: The ActiveXControl object represents a Dyalog APL namespace as an ActiveX control.</p>
 <p><strong>Description</strong></p>
 <p>The ActiveXControl object represents a Dyalog APL namespace as an ActiveX control.</p>
 <p>During development, an ActiveXControl is a container object that is the child of a Form and acts as a wrapper for one or more other GUI objects.</p>
@@ -59738,7 +59616,7 @@
 <p><a href="../posn/">Posn</a> and <a href="../size/">Size</a> are negotiable properties. When an instance of the ActiveXControl is created, the values of <a href="../posn/">Posn</a> and <a href="../size/">Size</a> will be assigned by the host application. You may change these values using <code>⎕WS</code>, but the host application has the right to refuse them and there is no guarantee that you will get what you set.</p>
 <p>The <a href="../border/">Border</a> and <a href="../edgestyle/">EdgeStyle</a> properties may be used to control the outline appearance of the ActiveXControl object.</p>
 <p>The <a href="../dragable/">Dragable</a> and <a href="../keeponclose/">KeepOnClose</a> properties apply only during development and are otherwise ignored.</p>
-<p>The <a href="../toolboxbitmap/">ToolboxBitmap</a> property specifies the name of a <a href="Bitmap.htm">Bitmap</a> object that may be used by a host application to represent the ActiveXControl when its complete visual appearance is not required.. For example, if you add an ActiveX control to the Microsoft Visual Basic development environment, its bitmap is added to the toolbox. The Bitmap should therefore be of an appropriate size, usually 24 x 24 pixels.</p>
+<p>The <a href="../toolboxbitmap/">ToolboxBitmap</a> property specifies the name of a <a href="../bitmap/">Bitmap</a> object that may be used by a host application to represent the ActiveXControl when its complete visual appearance is not required.. For example, if you add an ActiveX control to the Microsoft Visual Basic development environment, its bitmap is added to the toolbox. The Bitmap should therefore be of an appropriate size, usually 24 x 24 pixels.</p>
 <p>The <a href="../container/">Container</a> property provides access to an <a href="../activexcontainer/">ActiveXContainer</a> object that represents the host application itself. This may be used to obtain the values of ambient properties, or to access methods exposed by the host application via OLE interfaces.</p>
 <p>When an instance of an ActiveXControl is created, it generates first a <a href="../precreate/">PreCreate</a> event, and then a Create event. The <a href="../precreate/">PreCreate</a> event is generated at the point the <em>instance</em> is made.</p>
 <p>The <a href="../create/">Create</a> event is generated at the point when the host application requires the instance to appear visually. If, as is recommended, you create child controls of the instance when it is created, you must respond to the <a href="../create/">Create</a> event, because at the time that <a href="../precreate/">PreCreate</a> is generated, the object does not have a window.</p>

@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59777,7 +59687,7 @@
 <p><img alt="aplclasses2_2" src="../../img/aplclasses2-2.png" /></p>
 <h3 id="programcs">program.cs</h3>
 <p>The following C# source, called <code>aplclasses2\Framework\program.cs</code>, will be used to call the new version of our Dyalog.NET class.</p>
-<pre><code class="language-apl">`using System;
+<pre><code class="language-apl">      using System;
       using APLClasses;
       public class MainClass
             {
@@ -59789,10 +59699,10 @@
                   for (int i=0;i&lt;rslt.Length;i++)
                   Console.WriteLine(rslt[i]);
                   }
-            }`
+            }
 </code></pre>
 <p>The program is the same as in the previous example, except that the code that creates an instance of the <code>Primitives</code> class is simply changed to specify an argument; in this case 0.</p>
-<pre><code class="language-apl">`Primitives apl = new Primitives(0);`
+<pre><code class="language-apl">Primitives apl = new Primitives(0);
 </code></pre>
 <p>Using VS, open the solution file<code>d:\aplclasses\aplclasses2\Framework\project.sln</code> and view <code>program.cs</code>.</p>
 <p><img alt="aplclasses2_3" src="../../img/aplclasses2-3.png" /></p>

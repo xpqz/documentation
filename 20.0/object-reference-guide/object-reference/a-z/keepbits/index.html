@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,27 +59599,10 @@
 
 <h1 class="heading"><span class="name">KeepBits</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../bitmap/">Bitmap</a></th>
-<th><a href="../cursor/">Cursor</a></th>
-<th><a href="../icon/">Icon</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../bitmap/">Bitmap</a> <a href="../cursor/">Cursor</a> <a href="../icon/">Icon</a></p>
 <p><strong>Description</strong></p>
 <p>This property is be used to control the way that <a href="../bitmap/">Bitmap</a>, <a href="../cursor/">Cursor</a> and <a href="../icon/">Icon</a> objects are stored in the workspace.</p>
-<p>When you create a <a href="../bitmap/">Bitmap</a>, <a href="../icon/">Icon</a> or <a href="../cursor/">Cursor</a> using <code>⎕WC</code>, APL asks Windows to allocate a corresponding bitmap, icon or cursor <em>resource</em>. This resource is allocated in Windows memory. If APL were to hold the values of the <em>image properties</em> (<a href="CBits.htm">CBits</a>, <a href="Bits.htm">Bits</a> and <a href="CMap.htm">CMap</a> for a <a href="../bitmap/">Bitmap</a>; <a href="Bits.htm">Bits</a>, <a href="CMap.htm">CMap</a> and <a href="Mask.htm">Mask</a> for <a href="../cursor/">Cursor</a> and <a href="../icon/">Icon</a> objects) internally in the workspace, this data would be duplicated. For large bitmaps this would have a serious impact on memory utilisation and may affect performance. The KeepBits property is provided to allow you to control whether or not APL retains the values of the <em>image properties</em> in the workspace, so that you can choose a strategy to suit your configuration and requirements. KeepBits may take the value 0 or 1.</p>
+<p>When you create a <a href="../bitmap/">Bitmap</a>, <a href="../icon/">Icon</a> or <a href="../cursor/">Cursor</a> using <code>⎕WC</code>, APL asks Windows to allocate a corresponding bitmap, icon or cursor <em>resource</em>. This resource is allocated in Windows memory. If APL were to hold the values of the <em>image properties</em> (<a href="../cbits/">CBits</a>, <a href="../bits/">Bits</a> and <a href="../cmap/">CMap</a> for a <a href="../bitmap/">Bitmap</a>; <a href="../bits/">Bits</a>, <a href="../cmap/">CMap</a> and <a href="../mask/">Mask</a> for <a href="../cursor/">Cursor</a> and <a href="../icon/">Icon</a> objects) internally in the workspace, this data would be duplicated. For large bitmaps this would have a serious impact on memory utilisation and may affect performance. The KeepBits property is provided to allow you to control whether or not APL retains the values of the <em>image properties</em> in the workspace, so that you can choose a strategy to suit your configuration and requirements. KeepBits may take the value 0 or 1.</p>
 <p>If KeepBits is 0 the values of the <em>image properties</em> are <strong>not</strong> stored internally in your workspace. If you save a workspace containing a <a href="../bitmap/">Bitmap</a>, <a href="../cursor/">Cursor</a> or <a href="../icon/">Icon</a> object, the corresponding Windows resource is automatically re-allocated when the workspace is loaded by referring to the associated file. This is the file whose full pathname is defined by the value of the object's <a href="../file/">File</a> property. It follows that if you adopt this strategy, you must ensure that the <a href="../file/">File</a> property is set correctly. If APL cannot find the file when the workspace is <code>)LOAD</code>ed, it cannot re-create the object, and you will get a <code>VALUE ERROR</code> when you subsequently refer to it. A further consideration is the effect on <code>⎕WG</code>. If KeepBits is 0, and you execute <code>⎕WG 'CBits'</code> or <code>'Bits'</code> or <code>'CMap'</code> or <code>'Mask'</code>, APL obtains these values by requesting the data from Windows.</p>
 <p>If KeepBits is set to 1, the contents of the <em>image properties</em> are stored in the workspace, thus duplicating the information which is held by Windows itself. If you save a workspace containing a <a href="../bitmap/">Bitmap</a>, <a href="../cursor/">Cursor</a> or <a href="../icon/">Icon</a> the corresponding Windows resource is automatically re-allocated from the <em>image properties</em> when the workspace is loaded. The value of the <a href="../file/">File</a> property is ignored. When you execute <code>⎕WG 'CBits'</code> or <code>'Bits'</code> or <code>'CMap'</code> or <code>'Mask'</code>, APL generates the result directly from the stored values held (internally) in the workspace.</p>
 

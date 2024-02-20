@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,35 +59599,12 @@
 
 <h1 class="heading"><span class="name">SelItems</span></h1>
 
-<table>
-<thead>
-<tr>
-<th>Applies To:</th>
-<th><a href="../combo/">Combo</a></th>
-<th><a href="../comboex/">ComboEx</a></th>
-<th><a href="../grid/">Grid</a></th>
-<th><a href="../list/">List</a></th>
-<th><a href="../listview/">ListView</a></th>
-<th><a href="../treeview/">TreeView</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Applies To: <a href="../combo/">Combo</a> <a href="../comboex/">ComboEx</a> <a href="../grid/">Grid</a> <a href="../list/">List</a> <a href="../listview/">ListView</a> <a href="../treeview/">TreeView</a></p>
 <p><strong>Description</strong></p>
 <p>This property determines which (if any) of the items in an object are currently selected and highlighted. Except in a Grid, it is a Boolean vector with one element per item in the list. A value of 1 means "selected"; 0 means "not selected".</p>
-<p>This property is used after a <a href="../select/">Select</a> event to identify which item has been chosen. In a <a href="../combo/">Combo</a> or a <a href="../list/">List</a> with <a href="Style.htm">Style</a> <code>'Single'</code> it will contain only a single 1.</p>
-<p>SelItems should also be used to pre-set the contents of the edit field in a <a href="../combo/">Combo</a> box with <a href="Style.htm">Style</a> <code>'Drop'</code>. In <a href="../combo/">Combo</a> boxes with <a href="Style.htm">Style</a> <code>'Simple'</code> or <code>'DropEdit'</code>, the contents of the edit field may also be specified by the <a href="Text.htm">Text</a> property. If you specify both, the value of <a href="Text.htm">Text</a> takes precedence.</p>
-<p>In a <a href="../grid/">Grid,</a> SelItems is a 2-element integer vector. The first element identifies the row and column coordinates respectively of the first cell(s) in the selected block(s) and the second, the row and column coordinates of the last cell(s) in the selected block(s). If the <a href="CellSelect.htm#CellSelect_Property">CellSelect</a> property allows only a single block of cells to be selected, each set of coordinates is a 2-element vector. If the <a href="CellSelect.htm#CellSelect_Property">CellSelect</a> property permits more than one block of cells to be selected, each set of coordinates is a 2-column matrix with one row per selected block, whose columns identify the first row and column, and the last row and column respectively of each selected block.</p>
+<p>This property is used after a <a href="../select/">Select</a> event to identify which item has been chosen. In a <a href="../combo/">Combo</a> or a <a href="../list/">List</a> with <a href="../style/">Style</a> <code>'Single'</code> it will contain only a single 1.</p>
+<p>SelItems should also be used to pre-set the contents of the edit field in a <a href="../combo/">Combo</a> box with <a href="../style/">Style</a> <code>'Drop'</code>. In <a href="../combo/">Combo</a> boxes with <a href="../style/">Style</a> <code>'Simple'</code> or <code>'DropEdit'</code>, the contents of the edit field may also be specified by the <a href="../text/">Text</a> property. If you specify both, the value of <a href="../text/">Text</a> takes precedence.</p>
+<p>In a <a href="../grid/">Grid,</a> SelItems is a 2-element integer vector. The first element identifies the row and column coordinates respectively of the first cell(s) in the selected block(s) and the second, the row and column coordinates of the last cell(s) in the selected block(s). If the <a href="../cellselect/">CellSelect</a> property allows only a single block of cells to be selected, each set of coordinates is a 2-element vector. If the <a href="../cellselect/">CellSelect</a> property permits more than one block of cells to be selected, each set of coordinates is a 2-column matrix with one row per selected block, whose columns identify the first row and column, and the last row and column respectively of each selected block.</p>
 
 
 

@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59810,7 +59720,7 @@
 <p><img alt="data binding datagrid1" src="../img/data-binding-datagrid1.png" /></p>
 <h2 id="the-xaml">The XAML</h2>
 <p>The XAML shown below,  describes a Window containing a DockPanel, inside which is a DataGrid. The XAML is identical to the XAML in Example 7, except for the window caption.</p>
-<pre><code class="language-apl">`&lt;Window
+<pre><code class="language-apl"> &lt;Window
     xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
     xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
     Title=&quot;DataGrid Matrix Example&quot; Height=&quot;500&quot;
@@ -59827,7 +59737,8 @@
             &lt;/DataGrid.Columns&gt;
         &lt;/DataGrid&gt;
     &lt;/DockPanel&gt;
- &lt;/Window&gt;`
+ &lt;/Window&gt;
+
 </code></pre>
 <p>The phrase <code>ItemsSource="{Binding}"</code> states that the content of the DataGrid is bound to a data source, which in this case will be inherited from the DataContext property of the parent Window.</p>
 <p><code>Binding="{Binding Name}"</code> specifies that the contents of the first column are bound to a Path named <strong>Name</strong> in the data source.</p>
@@ -59848,10 +59759,10 @@
 <p>As in Example 7, the global variable <code>Wines</code> contains a vector of character vectors, each of which is the name of a wine.</p>
 <p><code>Grid[2-4</code>] creates a  matrix <code>winelist</code>, whose first column contains the names of the wines, and whose second column their (randomly generated) prices. As this is a global variable, the variable is expunged before being used in order to remove any previous data binding information that was associated with it.</p>
 <p><code>Grid[5]</code>creates the left argument for <code>(2015⌶)</code> which defines the names and data types of the properties which the columns of the matrix <code>winelist</code> will be exposed as. In this case, the names of the paths are <code>Name</code> and <code>Price</code>, and their data types are both <code>System.Object</code>. So the first column will be exposed as <code>Name</code> and the second as <code>Price</code>, matching the path names specified in the XAML:</p>
-<pre><code class="language-apl">`&lt;DataGridTextColumn Header=&quot;Wine&quot;
+<pre><code class="language-apl">            &lt;DataGridTextColumn Header=&quot;Wine&quot;
             Binding=&quot;{Binding Name}&quot;/&gt;
             &lt;DataGridTextColumn Header=&quot;Price&quot;
-            Binding=&quot;{Binding Price, StringFormat=C}&quot; /&gt;`
+            Binding=&quot;{Binding Price, StringFormat=C}&quot; /&gt;
 </code></pre>
 <h2 id="testing-the-data-binding">Testing the Data Binding</h2>
 <pre><code class="language-apl">
@@ -59859,12 +59770,12 @@
       )CS DataBinding.DataGridMatrix
       Grid
 </code></pre>
-<pre><code class="language-apl">![data binding datagrid1](../img/data-binding-datagrid1.png)
+<pre><code class="language-apl">
 </code></pre>
 <p>Let's round the prices to the nearest $5.</p>
 <pre><code class="language-apl"> winelist[;2]←5×⌊0.5+winelist[;2]÷5
 </code></pre>
-<pre><code class="language-apl">![data binding datagrid2](../img/data-binding-datagrid2.png)
+<pre><code class="language-apl">
 </code></pre>
 <h2 id="using-code">Using Code</h2>
 <p>The same result can be achieved using code instead of XAML as illustrated by the function <code>GridCodeNoFmt</code>. The function is so-named because this code is insufficient to display the second column in currency format.</p>

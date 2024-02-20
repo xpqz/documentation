@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59762,7 +59672,7 @@
 
 <h1 class="heading"><span class="name">Execute (UNIX) Command</span><span class="command">)SH {cmd}</span></h1>
 
-<p>This command allows WINDOWS or UNIX shell commands to be given from APL.  <code>)SH</code> is a synonym of <code>)CMD</code>. Either command may be given in either environment (Windows or UNIX) with exactly the same effect.  <code>)SH</code> is probably more natural for the UNIX user. This section describes the behaviour of <code>)SH</code> and <code>)CMD</code> under UNIX. See "Windows Command Processor: " on page 1 for a discussion of their behaviour under Windows.</p>
+<p>This command allows WINDOWS or UNIX shell commands to be given from APL.  <code>)SH</code> is a synonym of <code>)CMD</code>. Either command may be given in either environment (Windows or UNIX) with exactly the same effect.  <code>)SH</code> is probably more natural for the UNIX user. This section describes the behaviour of <code>)SH</code> and <code>)CMD</code> under UNIX. See <a href="../cmd/">"Windows Command Processor: "</a> for a discussion of their behaviour under Windows.</p>
 <p><code>)SH</code> allows UNIX shell commands to be given from APL. The argument must be entered in the appropriate case (usually lower-case).  The result of the command, if any, is displayed.</p>
 <p><code>)SH</code> causes Dyalog APL to invoke the <code>system()</code> library call. The shell which is used to run the command is therefore the shell which <code>system()</code> is defined to call. For example, under AIX this would be <code>/usr/bin/sh</code>.</p>
 <p>When the shell is closed, control returns to APL. See <em>Dyalog for UNIX UI Guide</em> for further information.</p>
@@ -59777,7 +59687,7 @@
   6179 10879188  pts/0  0:00 ksh
   6179 11665660      -  0:00 sshd
 </code></pre>
-<p>The system functions <a href="../../../system-functions/system-functions-a-z/system-functions-a-z/execute-unix-command/"><code>⎕SH</code></a> and <a href="../../../system-functions/system-functions-a-z/system-functions-a-z/execute-windows-command/"><code>⎕CMD</code></a> provide similar facilities but may be executed from within APL code. For further information, see Execute (UNIX) Command:  on page 1 and Execute Windows Command:  on page 1.</p>
+<p>The system functions <a href="../../../system-functions/system-functions-a-z/system-functions-a-z/execute-unix-command/"><code>⎕SH</code></a> and <a href="../../../system-functions/system-functions-a-z/system-functions-a-z/execute-windows-command/"><code>⎕CMD</code></a> provide similar facilities but may be executed from within APL code. For further information, see <a href="../../../system-functions/system-functions-a-z/system-functions-a-z/execute-unix-command/">Execute (UNIX) Command: </a> and <a href="../../../system-functions/system-functions-a-z/system-functions-a-z/execute-windows-command/">Execute Windows Command: </a>.</p>
 <h4 id="note">Note:</h4>
 <p>This function is disabled and instead generates a <code>DOMAIN ERROR</code> if the RIDE_SPAWNED parameter is non-zero. This is designed to prevent it being invoked from a RIDE session which does not support this type of user interface. For further details, see the <strong>RIDE User Guide</strong>.</p>
 

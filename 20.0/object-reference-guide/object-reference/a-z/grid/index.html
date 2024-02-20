@@ -827,43 +827,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -874,14 +837,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2426,43 +2381,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2473,14 +2391,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59689,40 +59599,8 @@
 
 <h1 class="heading"><span class="name">Grid</span></h1>
 
-<table>
-<thead>
-<tr>
-<th><a href="../ParentLists/Grid.htm">Parents</a></th>
-<th><a href="../ChildLists/Grid.htm">Children</a></th>
-<th><a href="../PropLists/Grid.htm">Properties</a></th>
-<th><a href="../MethodLists/Grid.htm">Methods</a></th>
-<th><a href="../EventLists/Grid.htm">Events</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Purpose:</th>
-<th>Spreadsheet object for displaying and editing data.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><a href="../ParentLists/Grid.htm">Parents</a> <a href="../ChildLists/Grid.htm">Children</a> <a href="../PropLists/Grid.htm">Properties</a> <a href="../MethodLists/Grid.htm">Methods</a> <a href="../EventLists/Grid.htm">Events</a></p>
+<p>Purpose: Spreadsheet object for displaying and editing data.</p>
 <p><strong>Description</strong></p>
 <p>The <a href="../values/">Values</a> property is a matrix whose
 elements are displayed in the cells of the Grid. An element (and therefore a
@@ -59755,12 +59633,12 @@ individual cells through the <a href="../celltypes/">CellTypes</a> property.</p
 that specifies the name of an object which is to be associated with every cell
 in the Grid, or a vector of names whose elements are mapped to individual cells
 through the <a href="../celltypes/">CellTypes</a> property. These
-objects may be of type <a href="Button.htm">Button</a>, <a href="ColorButton.htm">ColorButton</a>,
-<a href="Combo.htm">Combo</a>, <a href="Edit.htm">Edit</a>, <a href="Label.htm">Label</a>,
-<a href="Spinner.htm">Spinner</a> or <a href="TrackBar.htm">TrackBar</a>.
+objects may be of type <a href="../button/">Button</a>, <a href="../colorbutton/">ColorButton</a>,
+<a href="../combo/">Combo</a>, <a href="../edit/">Edit</a>, <a href="../label/">Label</a>,
+<a href="../spinner/">Spinner</a> or <a href="../trackbar/">TrackBar</a>.
 In addition, the <a href="../input/">Input</a> property may specify
-instances of <a href="OCXClass.htm">OCXClass</a> objects (ActiveX
-controls) and <a href="NetType.htm">NetType</a> objects (.NET classes).</p>
+instances of <a href="../ocxclass/">OCXClass</a> objects (ActiveX
+controls) and <a href="../nettype/">NetType</a> objects (.NET classes).</p>
 <p>If the <a href="../input/">Input</a> property is empty (the
 default) the user may browse the data in the spreadsheet but may not alter it.
 Furthermore, no feedback is provided as to which is the current cell. If the <a href="../input/">Input</a> property specifies the name of an object that is the child of the Grid itself,
@@ -59771,13 +59649,13 @@ object as the user moves around the spreadsheet. In addition, the current cell
 is identified by a thick border. In either case, the associated object is used
 to impose formatting and validation.</p>
 <p>If the <a href="../input/">Input</a> property specifies the name
-of a <a href="Label.htm">Label</a> object, that object is used to
-impose formatting, but the data is protected and may not be changed. If the <a href="Label.htm">Label</a> is a child of the Grid, it moves from cell to cell, and its characteristics (<a href="../border/">Border</a>,
+of a <a href="../label/">Label</a> object, that object is used to
+impose formatting, but the data is protected and may not be changed. If the <a href="../label/">Label</a> is a child of the Grid, it moves from cell to cell, and its characteristics (<a href="../border/">Border</a>,
 <a href="../fcol/">FCol</a>, <a href="../bcol/">BCol</a> and <a href="../fontobj/">FontObj</a>) can be used to identify the
-current cell. If the <a href="Label.htm">Label</a> is an external one,
+current cell. If the <a href="../label/">Label</a> is an external one,
 no visual feedback is provided; even though the current cell (reflected by the <a href="../curcell/">CurCell</a> property) changes as the user moves around the Grid.</p>
 <p>If the Input property specifies one or more instances of OCXClass objects
-(ActiveX controls) and <a href="NetType.htm">NetType</a> objects (.NET
+(ActiveX controls) and <a href="../nettype/">NetType</a> objects (.NET
 classes), the <a href="../inputproperties/">InputProperties</a> property is used to map the <a href="../values/">Values</a> property
 of the Grid to specific properties of the external object.</p>
 <p>The <a href="../celltypes/">CellTypes</a> property is either an
@@ -59813,7 +59691,7 @@ callback to the <a href="../addrow/">AddRow</a> and selectively disable
 this default action if required. The <a href="../addcol/">AddCol</a> event works in a similar manner for columns. Although the user has no direct
 means of <em>inserting</em> a row or column, your application can do this by
 calling <a href="../addrow/">AddRow</a> or <a href="../addcol/">AddCol</a> as a method on the Grid object. Typically this would be done in response to the
-user selecting a <a href="MenuItem.htm">MenuItem</a> or pressing a <a href="Button.htm">Button</a>.</p>
+user selecting a <a href="../menuitem/">MenuItem</a> or pressing a <a href="../button/">Button</a>.</p>
 <p>The <a href="../colchange/">ColChange</a>, <a href="../rowchange/">RowChange</a>,
 <a href="../delrow/">DelRow</a>, <a href="../delcol/">DelCol</a> and <a href="../undo/">Undo</a> methods allow your application to
 perform these corresponding operations.</p>

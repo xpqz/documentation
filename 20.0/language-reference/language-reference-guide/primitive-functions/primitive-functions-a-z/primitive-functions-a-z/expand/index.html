@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59790,8 +59700,8 @@
 <h1 class="heading"><span class="name">Expand</span><span class="command">R←X\[K]Y</span></h1>
 
 <p><code>Y</code> may be any array.  <code>X</code> is a simple integer scalar or vector.  The axis specification is optional.  If present, <code>K</code> must be a simple integer scalar or 1-element vector.  The value of <code>K</code> must be an axis of <code>Y</code>.  If absent, the last axis of <code>Y</code> is implied.  The form <code>R←X⍀Y</code> implies the first axis.  If <code>Y</code> is a scalar, it is treated as a one-element vector.</p>
-<p>If <code>Y</code> has length 1 along the <code>K</code>th (or implied) axis, it is extended along that axis to match the number of positive elements in <code>X</code>. Otherwise, the number of positive elements in <code>X</code> must be the length of the <code>K</code>th (or implied) axis of <code>Y</code>.</p>
-<p><code>R</code> is composed from the sub-arrays along the <code>K</code>th axis of <code>Y</code>. If <code>X[I]</code> (an element of <code>X</code>) is the <code>J</code>th positive element in <code>X</code>, then the <code>J</code>th sub-array along the <code>K</code>th axis of <code>Y</code> is replicated <code>X[I]</code> times. If <code>X[I]</code> is negative, then a sub-array of fill elements of <code>Y</code> is replicated <code>|X[I]</code> times and inserted in relative order along the <code>K</code>th axis of the result. If <code>X[I]</code> is zero, it is treated as the value <code>¯1</code>. The shape of <code>R</code> is the shape of <code>Y</code> except that the length of the <code>K</code>th axis is <code>+/1⌈|X</code>.</p>
+<p>If <code>Y</code> has length 1 along the <code>K</code><sup>th</sup> (or implied) axis, it is extended along that axis to match the number of positive elements in <code>X</code>. Otherwise, the number of positive elements in <code>X</code> must be the length of the <code>K</code><sup>th</sup> (or implied) axis of <code>Y</code>.</p>
+<p><code>R</code> is composed from the sub-arrays along the <code>K</code><sup>th</sup> axis of <code>Y</code>. If <code>X[I]</code> (an element of <code>X</code>) is the <code>J</code><sup>th</sup> positive element in <code>X</code>, then the <code>J</code><sup>th</sup> sub-array along the <code>K</code><sup>th</sup> axis of <code>Y</code> is replicated <code>X[I]</code> times. If <code>X[I]</code> is negative, then a sub-array of fill elements of <code>Y</code> is replicated <code>|X[I]</code> times and inserted in relative order along the <code>K</code><sup>th</sup> axis of the result. If <code>X[I]</code> is zero, it is treated as the value <code>¯1</code>. The shape of <code>R</code> is the shape of <code>Y</code> except that the length of the <code>K</code><sup>th</sup> axis is <code>+/1⌈|X</code>.</p>
 <h4 id="examples">Examples</h4>
 <pre><code class="language-apl">      0\⍳0
 0

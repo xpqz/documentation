@@ -832,43 +832,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_16" id="__nav_1_10_2_16_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    AutoComplete
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_16">
-            <span class="md-nav__icon md-icon"></span>
-            AutoComplete
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/autocomplete/showfiles/" class="md-nav__link">
         
@@ -879,14 +842,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2431,43 +2386,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2_90" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_10_2_90" id="__nav_1_10_2_90_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ValueTips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_10_2_90_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_10_2_90">
-            <span class="md-nav__icon md-icon"></span>
-            ValueTips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../../../windows-installation-and-configuration-guide/configuration-parameters/a-z/valuetips/enabled/" class="md-nav__link">
         
@@ -2478,14 +2396,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -59844,7 +59754,7 @@
 <h1 class="heading"><span class="name">Transpose (Dyadic)</span><span class="command">R←X⍉Y</span></h1>
 
 <p><code>Y</code> may be any array.  <code>X</code> must be a simple scalar or vector whose elements are included in the set <code>⍳⍴⍴Y</code>.  Integer values in <code>X</code> may be repeated but all integers in the set <code>⍳⌈/X</code> must be included.  The length of <code>X</code> must equal the rank of <code>Y</code>.</p>
-<p><code>R</code> is an array formed by the transposition of the axes of <code>Y</code> as specified by <code>X</code>.  The <code>I</code>th element of <code>X</code> gives the new position for the <code>I</code>th axis of <code>Y</code>.  If <code>X</code> repositions two or more axes of <code>Y</code> to the same axis, the elements used to fill this axis are those whose indices on the relevant axes of <code>Y</code> are equal.</p>
+<p><code>R</code> is an array formed by the transposition of the axes of <code>Y</code> as specified by <code>X</code>.  The <code>I</code><sup>th</sup> element of <code>X</code> gives the new position for the <code>I</code><sup>th</sup> axis of <code>Y</code>.  If <code>X</code> repositions two or more axes of <code>Y</code> to the same axis, the elements used to fill this axis are those whose indices on the relevant axes of <code>Y</code> are equal.</p>
 <p><code>⎕IO</code> is an implicit argument of Dyadic Transpose.</p>
 <h4 id="examples">Examples</h4>
 <pre><code class="language-apl">      A
