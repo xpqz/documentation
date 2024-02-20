@@ -103,7 +103,7 @@ Trappable Event Codes
 See  
 Programming Reference Guide: 
 
-Trap StatementProgrammer's Guide: "Trap Statement" for an alternative 'control structured' error trapping mechanism.
+Trap Statement[Programmer's Guide: "Trap Statement"](../Control Structures/trap.htm#TrapStatement) for an alternative 'control structured' error trapping mechanism.
 
 #### Examples
 ```apl

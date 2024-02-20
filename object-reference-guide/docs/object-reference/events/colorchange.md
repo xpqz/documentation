@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ColorChange</span></h1>
 
-| Applies To: | [ColorButton](../a-z/colorbutton.md) |
-| --- | ---  |
+Applies To: [ColorButton](../a-z/colorbutton.md)
 
 
 **Description**
@@ -24,7 +23,7 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 | `[3]` | New Colour | 3-element integer vector |
 
 
-The 3rd element of the event message contains the RGB value for the selected colour.
+The 3<sup>rd</sup> element of the event message contains the RGB value for the selected colour.
 
 
 Note that the event is reported when the user chooses a colour, whether or not the newly selected colour differs from the one that was previously selected.

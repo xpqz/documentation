@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">EndSplit</span></h1>
 
-| Applies To: | [Splitter](../a-z/splitter.md) |
-| --- | ---  |
+Applies To: [Splitter](../a-z/splitter.md)
 
 
 **Description**

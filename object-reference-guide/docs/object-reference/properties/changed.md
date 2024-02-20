@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Changed</span></h1>
 
-| Applies To: | [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) | [PropertyPage](../a-z/propertypage.md) | [RichEdit](../a-z/richedit.md) | [Spinner](../a-z/spinner.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [ButtonEdit](../a-z/buttonedit.md) [Edit](../a-z/edit.md) [PropertyPage](../a-z/propertypage.md) [RichEdit](../a-z/richedit.md) [Spinner](../a-z/spinner.md)
 
 
 **Description**

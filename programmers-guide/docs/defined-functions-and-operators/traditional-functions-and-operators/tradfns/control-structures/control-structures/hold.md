@@ -12,7 +12,7 @@ Whenever more than one thread tries to access the same piece of data or shared r
 
 
 
-`:Hold` provides a mechanism to control thread entry into a critical section of code. `tkns` must be a simple character vector or scalar, or a vector of character vectors. `tkns` represents a set of "tokens", all of which must be acquired before the thread can continue into the control structure. `:Hold` is analogous to the component file system `⎕FHOLD` which is used to synchronise access between **processes**. See also File Hold on page 1.
+`:Hold` provides a mechanism to control thread entry into a critical section of code. `tkns` must be a simple character vector or scalar, or a vector of character vectors. `tkns` represents a set of "tokens", all of which must be acquired before the thread can continue into the control structure. `:Hold` is analogous to the component file system `⎕FHOLD` which is used to synchronise access between **processes**. See also [File Hold](../System Functions/fhold.htm#FileHold).
 
 
 Within the whole active workspace, a token with a particular value may be held only once. If the hold succeeds, the current thread *acquires*the tokens and execution continues with the first phrase in the control structure. On exit from the structure, the tokens are released for use by other threads. If the hold fails, because one or more of the tokens is already in use:
@@ -66,7 +66,7 @@ However, with the nesting of holds comes the possibility of a "deadlock". For ex
 
 | Thread 1 | Thread 2 |
 | --- | ---  |
-| :Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold | :Hold 'green'     ...     :Hold 'red'          ...     :EndHold :EndHold |
+| ```apl :Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold  ``` | ```apl :Hold 'green'     ...     :Hold 'red'          ...     :EndHold :EndHold ``` |
 
 
 In this case if both threads succeed in acquiring their first hold, they will both block waiting for the other to release its token.
@@ -85,7 +85,7 @@ Note that token acquisition for any particular `:Hold` is atomic, that is, eithe
 
 | Thread 1 | Thread 2 |
 | --- | ---  |
-| :Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold | :Hold 'green' 'red'     ...     :EndHold |
+| ```apl :Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold  ``` | ```apl  :Hold 'green' 'red'     ...     :EndHold   ``` |
 
 #### Examples
 
@@ -147,7 +147,7 @@ Note that `:Hold`, like its component file system counterpart `⎕FHOLD`, is a d
 
 
 
-See High-Priority Callback Functions on page 1.
+See [High-Priority Callback Functions](../../InterfaceGuide/Introduction/High Priority Callbacks.htm#High-Priority_Callback_Functions).
 
 
 

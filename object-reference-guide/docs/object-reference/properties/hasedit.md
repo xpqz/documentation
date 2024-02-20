@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">HasEdit</span></h1>
 
-| Applies To: | [BrowseBox](../a-z/browsebox.md) |
-| --- | ---  |
+Applies To: [BrowseBox](../a-z/browsebox.md)
 
 
 **Description**

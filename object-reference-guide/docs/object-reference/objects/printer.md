@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Printer</span></h1>
 
-| [Parents](../ParentLists/Printer.htm) | [Children](../ChildLists/Printer.htm) | [Properties](../PropLists/Printer.htm) | [Methods](../MethodLists/Printer.htm) | [Events](../EventLists/Printer.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Printer.htm) [Children](../ChildLists/Printer.htm) [Properties](../PropLists/Printer.htm) [Methods](../MethodLists/Printer.htm) [Events](../EventLists/Printer.htm)
 
 
-| Purpose: | To provide printer output. |
-| --- | ---  |
+Purpose: To provide printer output.
 
 
 **Description**

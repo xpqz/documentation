@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Rect</span></h1>
 
-| [Parents](../ParentLists/Rect.htm) | [Children](../ChildLists/Rect.htm) | [Properties](../PropLists/Rect.htm) | [Methods](../MethodLists/Rect.htm) | [Events](../EventLists/Rect.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Rect.htm) [Children](../ChildLists/Rect.htm) [Properties](../PropLists/Rect.htm) [Methods](../MethodLists/Rect.htm) [Events](../EventLists/Rect.htm)
 
 
-| Purpose: | A graphical object used to draw boxes. |
-| --- | ---  |
+Purpose: A graphical object used to draw boxes.
 
 
 **Description**

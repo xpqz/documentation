@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">OLEServer</span></h1>
 
-| [Parents](../ParentLists/OLEServer.htm) | [Children](../ChildLists/OLEServer.htm) | [Properties](../PropLists/OLEServer.htm) | [Methods](../MethodLists/OLEServer.htm) | [Events](../EventLists/OLEServer.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/OLEServer.htm) [Children](../ChildLists/OLEServer.htm) [Properties](../PropLists/OLEServer.htm) [Methods](../MethodLists/OLEServer.htm) [Events](../EventLists/OLEServer.htm)
 
 
-| Purpose: | The OLEServer object is used to establish a namespace as an OLE Server         object that can be used by an OLE Automation client. |
-| --- | ---  |
+Purpose: The OLEServer object is used to establish a namespace as an OLE Server         object that can be used by an OLE Automation client.
 
 
 **Description**

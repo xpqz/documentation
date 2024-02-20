@@ -21,7 +21,7 @@ The following notation is used to describe Control Structures within this sectio
 | `bexp` | an expression returning a single Boolean value (0 or 1), |
 | `var` | loop variable used by `:For` control structure, |
 | `code` | 0 or more lines of APL code, including other (nested) control structures, |
-| `andor` | *either* one or more `:AndIf` statements, *or* one or more `:OrIf` statements. For further details, see below. | .-----------------------. |                       | |<--------------.       |<--------------. |               |       |               | code            |       code            | |               |       |               | |               |       |               | :AndIf bexp-----'       :OrIf bexp------' |                       | |<----------------------' | |
+| `andor` | *either* one or more `:AndIf` statements, *or* one or more `:OrIf` statements. For further details, see below. ```apl | .-----------------------. |                       | |<--------------.       |<--------------. |               |       |               | code            |       code            | |               |       |               | |               |       |               | :AndIf bexp-----'       :OrIf bexp------' |                       | |<----------------------' |  ``` |
 
 ## Notes
 

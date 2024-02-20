@@ -5,18 +5,16 @@
 
 <h1 class="heading"><span class="name">ComboEx</span></h1>
 
-| [Parents](../ParentLists/ComboEx.htm) | [Children](../ChildLists/ComboEx.htm) | [Properties](../PropLists/ComboEx.htm) | [Methods](../MethodLists/ComboEx.htm) | [Events](../EventLists/ComboEx.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/ComboEx.htm) [Children](../ChildLists/ComboEx.htm) [Properties](../PropLists/ComboEx.htm) [Methods](../MethodLists/ComboEx.htm) [Events](../EventLists/ComboEx.htm)
 
 
-| Purpose: | The ComboEx object is an extended version of the Combo object that provides additional features including item images |
-| --- | ---  |
+Purpose: The ComboEx object is an extended version of the Combo object that provides additional features including item images
 
 
 **Description**
 
 
-The ComboEx object is a ComboBox that supports item images and indenting. It is a superset of the [Combo](../a-z/combo.md) object and supports all its functionality. For further details, see ["Combo" on page 1](../a-z/combo.md).
+The ComboEx object is a ComboBox that supports item images and indenting. It is a superset of the [Combo](../a-z/combo.md) object and supports all its functionality. For further details, see ["Combo"](../a-z/combo.md).
 
 
 

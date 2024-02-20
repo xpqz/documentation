@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">TypeList</span></h1>
 
-| Applies To: | [OCXClass](./ocxclass.md) | [OLEClient](./oleclient.md) |
-| --- | --- | ---  |
+Applies To: [OCXClass](./ocxclass.md) [OLEClient](./oleclient.md)
 
 
 **Description**

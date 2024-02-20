@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Formats</span></h1>
 
-| Applies To: | [Clipboard](../a-z/clipboard.md) |
-| --- | ---  |
+Applies To: [Clipboard](../a-z/clipboard.md)
 
 
 **Description**

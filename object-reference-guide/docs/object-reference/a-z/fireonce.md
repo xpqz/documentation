@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">FireOnce</span></h1>
 
-| Applies To: | [Timer](./timer.md) |
-| --- | ---  |
+Applies To: [Timer](./timer.md)
 
 
 **Description**

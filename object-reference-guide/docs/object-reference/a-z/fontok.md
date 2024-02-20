@@ -24,10 +24,10 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 | `[4]` | Colour | RGB triplet |
 
 
-The font specification in the 3rd element of the event message is a 7-element nested vector that describes the chosen font. See Font Object for further details.
+The font specification in the 3<sup>rd</sup> element of the event message is a 7-element nested vector that describes the chosen font. See Font Object for further details.
 
 
-The colour specification in the 4th element of the event message is a 3-element integer vector of RGB values for the colour chosen by the user.
+The colour specification in the 4<sup>th</sup> element of the event message is a 3-element integer vector of RGB values for the colour chosen by the user.
 
 
 

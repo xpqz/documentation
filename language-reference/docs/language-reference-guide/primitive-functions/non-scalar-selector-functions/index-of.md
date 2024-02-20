@@ -137,6 +137,6 @@ LENGTH ERROR
 For performance information, see  
 Programming Reference Guide: 
 
-Search Functions and Hash TablesProgrammer's Guide: "Search Functions and Hash Tables".
+Search Functions and Hash Tables[Programmer's Guide: "Search Functions and Hash Tables"](../../Language/Defined Functions and Operators/Search Functions and Hash.htm#SearchFunctionsAndHashTables).
 
 

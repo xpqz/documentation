@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">MDIActivate</span></h1>
 
-| Applies To: | [SubForm](./subform.md) |
-| --- | ---  |
+Applies To: [SubForm](./subform.md)
 
 
 **Description**

@@ -66,7 +66,7 @@ Various values for EDITOR_COLUMNS_FUNCTION
 
 | Value | Editor window appearance |
 | --- | ---  |
-| 0 | fn1 a  :If a=1      b←2  :EndIf |
-| 22 | [0]   fn1 a [1]   :If a=1 [2] ○     b←2 [3]   :EndIf |
-| 26 | fn1 a  ├ :If a=1 ○│     b←2  ├ :EndIf |
-| 40 | [0]    fn1 a [1]  ├ :If a=1 [2] ○│     b←2 [3]  ├ :EndIf |
+| 0 | ```apl  fn1 a  :If a=1      b←2  :EndIf ``` |
+| 22 | ```apl  [0]   fn1 a [1]   :If a=1 [2] ○     b←2 [3]   :EndIf 		 ``` |
+| 26 | ```apl     fn1 a  ├ :If a=1 ○│     b←2  ├ :EndIf ``` |
+| 40 | ```apl  [0]    fn1 a [1]  ├ :If a=1 [2] ○│     b←2 [3]  ├ :EndIf ``` |

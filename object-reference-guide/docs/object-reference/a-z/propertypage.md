@@ -5,25 +5,23 @@
 
 <h1 class="heading"><span class="name">PropertyPage</span></h1>
 
-| [Parents](../ParentLists/PropertyPage.htm) | [Children](../ChildLists/PropertyPage.htm) | [Properties](../PropLists/PropertyPage.htm) | [Methods](../MethodLists/PropertyPage.htm) | [Events](../EventLists/PropertyPage.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/PropertyPage.htm) [Children](../ChildLists/PropertyPage.htm) [Properties](../PropLists/PropertyPage.htm) [Methods](../MethodLists/PropertyPage.htm) [Events](../EventLists/PropertyPage.htm)
 
 
-| Purpose: | The PropertyPage object represents a single page in a PropertySheet. |
-| --- | ---  |
+Purpose: The PropertyPage object represents a single page in a PropertySheet.
 
 
 **Description**
 
 
-The PropertyPage object represents a single page within a [PropertySheet](PropertySheet.htm).
+The PropertyPage object represents a single page within a [PropertySheet](propertysheet.md).
 
 
 
-The Posn and Size properties are read-only properties determined by the parent [PropertySheet](PropertySheet.htm) and may not be changed using `⎕WC` or `⎕WS`.
+The Posn and Size properties are read-only properties determined by the parent [PropertySheet](propertysheet.md) and may not be changed using `⎕WC` or `⎕WS`.
 
 
-The [HasHelp](./hashelp.md) property is either 1 (the default) or 0. If the parent [PropertySheet](PropertySheet.htm) has a "Help" button (determined by its own [HasHelp](./hashelp.md) property) this property determines whether or not the Help button is active when the PropertyPage is the current page. If the [HasHelp](./hashelp.md) property of a PropertyPage is 0, the Help button on the parent [PropertySheet](PropertySheet.htm) will be temporarily disabled when that PropertyPage is displayed.
+The [HasHelp](./hashelp.md) property is either 1 (the default) or 0. If the parent [PropertySheet](propertysheet.md) has a "Help" button (determined by its own [HasHelp](./hashelp.md) property) this property determines whether or not the Help button is active when the PropertyPage is the current page. If the [HasHelp](./hashelp.md) property of a PropertyPage is 0, the Help button on the parent [PropertySheet](propertysheet.md) will be temporarily disabled when that PropertyPage is displayed.
 
 
 The PropertyPage object generates a [PageActivate](./pageactivate.md) event when it becomes the current page and a [PageDeactivate](./pagedeactivate.md) event when another page is selected. These events may not be disabled by a callback function.
@@ -43,7 +41,7 @@ Other properties and behaviour depend upon the Style of the parent PropertySheet
 In a *Standard* PropertySheet, the Caption property of each PropertyPage specifies the text that is written in its tab.
 
 
-PropertyPage objects owned by a Standard [PropertySheet](PropertySheet.htm) generate [PageCancel](./pagecancel.md), [PageApply](./pageapply.md) and [PageHelp](./pagehelp.md) events. These events are all caused by the user  pressing the corresponding button in the parent [PropertySheet](PropertySheet.htm).
+PropertyPage objects owned by a Standard [PropertySheet](propertysheet.md) generate [PageCancel](./pagecancel.md), [PageApply](./pageapply.md) and [PageHelp](./pagehelp.md) events. These events are all caused by the user  pressing the corresponding button in the parent [PropertySheet](propertysheet.md).
 
 
 Conventionally, the Apply button is initially inactive. When the user changes an item on any of the PropertyPages, the Apply button immediately becomes active. When the user clicks the Apply button, the application responds (normally by changing the appropriate properties) and then the Apply button becomes inactive once again. This process is controlled as follows.
@@ -66,10 +64,10 @@ You may control the value of the Changed property using `⎕WS` or by calling [P
 ![ps2](../img/ps2.gif)
 
 
-If the PropertyPage is owned by a *Wizard* [PropertySheet](PropertySheet.htm), its Caption property specifies the text that appears in the title bar of the [PropertySheet](PropertySheet.htm) window when the PropertyPage is the current page. Note that a Wizard [PropertySheet](PropertySheet.htm) ignores its own Caption property.
+If the PropertyPage is owned by a *Wizard* [PropertySheet](propertysheet.md), its Caption property specifies the text that appears in the title bar of the [PropertySheet](propertysheet.md) window when the PropertyPage is the current page. Note that a Wizard [PropertySheet](propertysheet.md) ignores its own Caption property.
 
 
-There are effectively 3 page changing buttons on a Wizard [PropertySheet](PropertySheet.htm), named Back, Next and Finish. The Next and Finish buttons actually occupy the same position and are mutually exclusive. The captions on the buttons are language-dependent.
+There are effectively 3 page changing buttons on a Wizard [PropertySheet](propertysheet.md), named Back, Next and Finish. The Next and Finish buttons actually occupy the same position and are mutually exclusive. The captions on the buttons are language-dependent.
 
 
 Conventionally, the buttons change according to which of the PropertyPages is currently displayed. If the first one is displayed, the Next button is active but the Back button is inactive. When a middle page is displayed, both the Next and Back buttons are active. When the last page is displayed, the caption on the Next button changes to Finish. However, in some applications, the Back button may be disabled to prevent the user returning to a previous page.

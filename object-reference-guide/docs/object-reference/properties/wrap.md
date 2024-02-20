@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Wrap</span></h1>
 
-| Applies To: | [ListView](../a-z/listview.md) | [ProgressBar](../a-z/progressbar.md) | [Spinner](../a-z/spinner.md) | [UpDown](../a-z/updown.md) |
-| --- | --- | --- | --- | ---  |
+Applies To: [ListView](../a-z/listview.md) [ProgressBar](../a-z/progressbar.md) [Spinner](../a-z/spinner.md) [UpDown](../a-z/updown.md)
 
 
 **Description**

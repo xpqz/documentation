@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Rect</span></h1>
 
-| [Parents](../ParentLists/Rect.htm) | [Children](../ChildLists/Rect.htm) | [Properties](../PropLists/Rect.htm) | [Methods](../MethodLists/Rect.htm) | [Events](../EventLists/Rect.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Rect.htm) [Children](../ChildLists/Rect.htm) [Properties](../PropLists/Rect.htm) [Methods](../MethodLists/Rect.htm) [Events](../EventLists/Rect.htm)
 
 
-| Purpose: | A graphical object used to draw boxes. |
-| --- | ---  |
+Purpose: A graphical object used to draw boxes.
 
 
 **Description**
@@ -53,7 +51,7 @@ For a single rectangle, [Points](./points.md) is either a 2-column matrix of (y,
 [LStyle](./lstyle.md) and [LWidth](./lwidth.md) are both simple scalar numbers.
 
 
-[FStyle](./fstyle.md) is either a single number specifying a standard fill pattern, or the name of a [Bitmap](Bitmap.htm) object which is to be used as a "brush" to fill the rectangle.
+[FStyle](./fstyle.md) is either a single number specifying a standard fill pattern, or the name of a [Bitmap](bitmap.md) object which is to be used as a "brush" to fill the rectangle.
 
 
 [FCol](./fcol.md), [BCol](./bcol.md) and [FillCol](./fillcol.md) are each either single numbers representing standard colours, or 3-element vectors which specify colours explicitly in terms of their RGB values.
@@ -62,7 +60,7 @@ For a single rectangle, [Points](./points.md) is either a 2-column matrix of (y,
 #### Examples:
 
 
-First make a [Form](Form.htm) :
+First make a [Form](form.md) :
 ```apl
       'F' ⎕WC 'Form'
 ```
@@ -107,7 +105,7 @@ Likewise, [Size](./size.md) may be a simple 2-element vector (applying to all th
 [LStyle](./lstyle.md) and [LWidth](./lwidth.md) may each be simple scalar values (applying to all the rectangles) or simple vectors whose elements refer to each of the corresponding rectangles in turn.
 
 
-[FStyle](./fstyle.md) may be a simple scalar numeric or a simple character vector ([Bitmap](Bitmap.htm) name) applying to all rectangles, or a vector whose elements refer to each of the corresponding rectangles in turn.
+[FStyle](./fstyle.md) may be a simple scalar numeric or a simple character vector ([Bitmap](bitmap.md) name) applying to all rectangles, or a vector whose elements refer to each of the corresponding rectangles in turn.
 
 
 Similarly, [FCol](./fcol.md), [BCol](./bcol.md) and [FillCol](./fillcol.md) may each be single numbers or a single (enclosed) 3-element vector applying to all the rectangles. Alternatively, these properties may contain vectors whose elements refer to each of the rectangles in turn. If so, their elements may be single numbers or nested RGB triplets, or a combination of the two.
@@ -116,7 +114,7 @@ Similarly, [FCol](./fcol.md), [BCol](./bcol.md) and [FillCol](./fillcol.md) may 
 #### Examples:
 
 
-First make a [Form](Form.htm) :
+First make a [Form](form.md) :
 ```apl
       'F' ⎕WC 'Form'
 ```

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">DockAccept</span></h1>
 
-| Applies To: | [CoolBand](../a-z/coolband.md) | [CoolBar](../a-z/coolbar.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) | [ToolControl](../a-z/toolcontrol.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [CoolBand](../a-z/coolband.md) [CoolBar](../a-z/coolbar.md) [Form](../a-z/form.md) [SubForm](../a-z/subform.md) [ToolControl](../a-z/toolcontrol.md)
 
 
 **Description**

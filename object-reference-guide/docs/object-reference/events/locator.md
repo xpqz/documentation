@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Locator</span></h1>
 
-| Applies To: | [Locator](../a-z/locator.md) |
-| --- | ---  |
+Applies To: [Locator](../a-z/locator.md)
 
 
 **Description**

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SetItemState</span></h1>
 
-| Applies To: | [ListView](./listview.md) | [TreeView](./treeview.md) |
-| --- | --- | ---  |
+Applies To: [ListView](./listview.md) [TreeView](./treeview.md)
 
 
 **Description**
@@ -35,6 +34,6 @@ The status of an item is calculated as the sum of one or more of the following s
 | 16 | Item is displayed in bold text |
 | 32 | Item is expanded |
 | 64 | Item is or has been expanded |
-| 4096 | Item is checked. See "CheckBoxes" on page 1 |
+| 4096 | Item is checked. See ["CheckBoxes"](./checkboxes.md) |
 
 

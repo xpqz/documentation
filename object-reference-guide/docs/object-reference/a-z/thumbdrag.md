@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ThumbDrag</span></h1>
 
-| Applies To: | [Scroll](./scroll.md) | [TrackBar](./trackbar.md) |
-| --- | --- | ---  |
+Applies To: [Scroll](./scroll.md) [TrackBar](./trackbar.md)
 
 
 **Description**

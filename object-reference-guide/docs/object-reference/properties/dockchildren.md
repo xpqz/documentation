@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">DockChildren</span></h1>
 
-| Applies To: | [CoolBar](../a-z/coolbar.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) |
-| --- | --- | --- | ---  |
+Applies To: [CoolBar](../a-z/coolbar.md) [Form](../a-z/form.md) [SubForm](../a-z/subform.md)
 
 
 **Description**

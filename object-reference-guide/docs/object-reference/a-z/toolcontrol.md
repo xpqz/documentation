@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">ToolControl</span></h1>
 
-| [Parents](../ParentLists/ToolControl.htm) | [Children](../ChildLists/ToolControl.htm) | [Properties](../PropLists/ToolControl.htm) | [Methods](../MethodLists/ToolControl.htm) | [Events](../EventLists/ToolControl.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/ToolControl.htm) [Children](../ChildLists/ToolControl.htm) [Properties](../PropLists/ToolControl.htm) [Methods](../MethodLists/ToolControl.htm) [Events](../EventLists/ToolControl.htm)
 
 
-| Purpose: | The ToolControl object provides a standard Windows ToolBar. |
-| --- | ---  |
+Purpose: The ToolControl object provides a standard Windows ToolBar.
 
 
 **Description**
@@ -20,7 +18,7 @@ The ToolControl object provides an interface to the native Windows ToolBar contr
 
 
 
-The tools on a ToolControl are normally represented by [ToolButton](toolbutton.md) objects, but the ToolControl may also act as a parent for other objects, including a [MenuBar](MenuBar.htm) (see below).
+The tools on a ToolControl are normally represented by [ToolButton](toolbutton.md) objects, but the ToolControl may also act as a parent for other objects, including a [MenuBar](menubar.md) (see below).
 
 
 Unlike the [ToolBar](toolbar.md), the ToolControl fully determines the positioning of its children automatically and this is governed by their order of creation. The Posn property of any child of a ToolControl is therefore read-only. Furthermore, the height of objects in a ToolControl may be no greater than that of a [ToolButton](toolbutton.md) in the same ToolControl. This in turn is governed by the sizes of the [FontObj](./fontobj.md) and [ImageList](imagelist.md) in use in that ToolControl. ToolControl objects should be used in preference to [ToolBar](toolbar.md) objects.
@@ -124,10 +122,10 @@ The [ShowDropDown](./showdropdown.md) property specifies whether or not a drop-d
 The [ButtonsAcceptFocus](./buttonsacceptfocus.md) property determines how the ToolControl responds to the Tab and cursor movement keys.
 
 
-As a special case, the ToolControl may contain a [MenuBar](MenuBar.htm) as its **only** child. In this case, Dyalog APL causes the menu items to be drawn as buttons as shown below.
+As a special case, the ToolControl may contain a [MenuBar](menubar.md) as its **only** child. In this case, Dyalog APL causes the menu items to be drawn as buttons as shown below.
 
 
-Although nothing is done to prevent it, the use of other objects in a ToolControl containing a [MenuBar](MenuBar.htm), is not supported.
+Although nothing is done to prevent it, the use of other objects in a ToolControl containing a [MenuBar](menubar.md), is not supported.
 ```apl
 'F'⎕WC'Form' 'ToolControl with MenuBar'('Size' 20 40)
 'F.TB'⎕WC'ToolControl'

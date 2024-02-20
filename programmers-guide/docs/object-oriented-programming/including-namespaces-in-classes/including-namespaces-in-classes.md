@@ -25,4 +25,4 @@ Conversely, functions in `NS` will supersede members of the same name that are i
 
 Any number of Namespaces may be included in a Class and the `:Include` statements may occur anywhere in the Class script. However, for the sake of readability, it is recommended that you have `:Include` statements at the top, given that any definitions in the script will supersede included functions and operators.
 
-For information on copying classes that reference namespaces in this way, see  [Referenced Objects on page 1](../System Commands/copy.htm#Referenced_Objects).
+For information on copying classes that reference namespaces in this way, see  [Referenced Objects](../System Commands/copy.htm#Referenced_Objects).

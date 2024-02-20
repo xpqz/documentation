@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SelItems</span></h1>
 
-| Applies To: | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [Grid](../a-z/grid.md) | [List](../a-z/list.md) | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
-| --- | --- | --- | --- | --- | --- | ---  |
+Applies To: [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [Grid](../a-z/grid.md) [List](../a-z/list.md) [ListView](../a-z/listview.md) [TreeView](../a-z/treeview.md)
 
 
 **Description**

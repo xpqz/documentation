@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">RemotePortName</span></h1>
 
-| Applies To: | [TCPSocket](../a-z/tcpsocket.md) |
-| --- | ---  |
+Applies To: [TCPSocket](../a-z/tcpsocket.md)
 
 
 **Description**

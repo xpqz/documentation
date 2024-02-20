@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">StatusBar</span></h1>
 
-| [Parents](../ParentLists/StatusBar.htm) | [Children](../ChildLists/StatusBar.htm) | [Properties](../PropLists/StatusBar.htm) | [Methods](../MethodLists/StatusBar.htm) | [Events](../EventLists/StatusBar.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/StatusBar.htm) [Children](../ChildLists/StatusBar.htm) [Properties](../PropLists/StatusBar.htm) [Methods](../MethodLists/StatusBar.htm) [Events](../EventLists/StatusBar.htm)
 
 
-| Purpose: | This object is used to manage [StatusField](statusfield.md) objects which display  information for the user. |
-| --- | ---  |
+Purpose: This object is used to manage [StatusField](statusfield.md) objects which display  information for the user.
 
 
 **Description**

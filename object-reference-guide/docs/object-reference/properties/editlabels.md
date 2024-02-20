@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">EditLabels</span></h1>
 
-| Applies To: | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
-| --- | --- | ---  |
+Applies To: [ListView](../a-z/listview.md) [TreeView](../a-z/treeview.md)
 
 
 **Description**

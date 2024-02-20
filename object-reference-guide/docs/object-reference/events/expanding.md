@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Expanding</span></h1>
 
-| Applies To: | [Grid](../a-z/grid.md) | [TreeView](../a-z/treeview.md) |
-| --- | --- | ---  |
+Applies To: [Grid](../a-z/grid.md) [TreeView](../a-z/treeview.md)
 
 
 **Description**

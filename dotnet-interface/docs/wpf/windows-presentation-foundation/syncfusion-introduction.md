@@ -10,13 +10,13 @@ In addition, to use the controls contained in these assemblies it is necessary t
 
 If using XAML, the XAML must include the appropriate `xmlns` statements that specify where the Syncfusion controls are to be found. For example:
 ```apl
-`xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Gauge;
-                  assembly=Syncfusion.Gauge.WPF"`
+xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Gauge;
+                  assembly=Syncfusion.Gauge.WPF"
 ```
 
 The above statement defines the prefix `syncfusion` to mean the specified Syncfusion namespace and assembly that contains the various Gauge controls. When the prefix `syncfusion` is subsequently used in front of a control in the XAML, the system knows where to find it. For example:
 ```apl
-`<syncfusion:CircularGauge Name="fahrenheit" Margin="10">`
+<syncfusion:CircularGauge Name="fahrenheit" Margin="10">
 ```
 
 ### ⎕USING

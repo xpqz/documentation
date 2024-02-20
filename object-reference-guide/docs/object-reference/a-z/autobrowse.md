@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">AutoBrowse</span></h1>
 
-| Applies To: | [OLEClient](./oleclient.md) |
-| --- | ---  |
+Applies To: [OLEClient](./oleclient.md)
 
 
 **Description**

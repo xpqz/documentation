@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">TabObj</span></h1>
 
-| Applies To: | [SubForm](./subform.md) | [TabBar](./tabbar.md) | [TabBtn](./tabbtn.md) | [TabButton](./tabbutton.md) | [TabControl](./tabcontrol.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [SubForm](./subform.md) [TabBar](./tabbar.md) [TabBtn](./tabbtn.md) [TabButton](./tabbutton.md) [TabControl](./tabcontrol.md)
 
 
 **Description**

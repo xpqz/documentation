@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">CloseUp</span></h1>
 
-| Applies To: | [DateTimePicker](../a-z/datetimepicker.md) |
-| --- | ---  |
+Applies To: [DateTimePicker](../a-z/datetimepicker.md)
 
 
 **Description**

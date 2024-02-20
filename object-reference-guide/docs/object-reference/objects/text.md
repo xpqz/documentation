@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Text</span></h1>
 
-| [Parents](../ParentLists/Text.htm) | [Children](../ChildLists/Text.htm) | [Properties](../PropLists/Text.htm) | [Methods](../MethodLists/Text.htm) | [Events](../EventLists/Text.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Text.htm) [Children](../ChildLists/Text.htm) [Properties](../PropLists/Text.htm) [Methods](../MethodLists/Text.htm) [Events](../EventLists/Text.htm)
 
 
-| Purpose: | Writes text. |
-| --- | ---  |
+Purpose: Writes text.
 
 
 **Description**
@@ -109,9 +107,9 @@ Write `'Hello'` at (10,20)
       'g.t1' ⎕WC 'Text' 'Hello' (10 20)
 ```
 ```apl
-Write `'THIS IS A
+Write 'THIS IS A
        BLOCK OF
-       TEXT     '`  at (20,30)
+       TEXT     '   at (20,30)
 ```
 ```apl
       BLK←3 9⍴'THIS IS A BLOCK OF TEXT     '

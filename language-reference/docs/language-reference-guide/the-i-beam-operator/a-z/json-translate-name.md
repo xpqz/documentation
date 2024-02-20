@@ -49,6 +49,6 @@ a
 ```
 
 
-For further details, see [JSON Name Mangling on page 1](../../system-functions/system-functions-a-z/system-functions-a-z/json-convert/json.md).
+For further details, see [JSON Name Mangling](../../system-functions/system-functions-a-z/system-functions-a-z/json-convert/json.md).
 
 

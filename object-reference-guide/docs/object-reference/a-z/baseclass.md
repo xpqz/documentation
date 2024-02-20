@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">BaseClass</span></h1>
 
-| Applies To: | [NetType](./nettype.md) |
-| --- | ---  |
+Applies To: [NetType](./nettype.md)
 
 
 **Description**

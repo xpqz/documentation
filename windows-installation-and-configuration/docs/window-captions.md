@@ -42,10 +42,10 @@ Each string value should contain a mixture of your own text and keywords which a
 
 For example, if the Registry contains**.\Captions\Session** whose value is:
 ```apl
-`My APL ({WSID}) Version {VER_A}.{VER_B}[{VER_C}]  - {PID}`
+    My APL ({WSID}) Version {VER_A}.{VER_B}[{VER_C}]  - {PID}
 ```
 
 then the caption displayed in a new Dyalog APL Session window might be:
 ```apl
-`My APL (CLEAR WS) Version 14.0[20105] - 4616`
+    My APL (CLEAR WS) Version 14.0[20105] - 4616
 ```

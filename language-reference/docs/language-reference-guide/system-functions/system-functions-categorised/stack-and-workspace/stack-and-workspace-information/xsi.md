@@ -32,7 +32,7 @@ x.foo[1]
 This can be used for example, to edit all functions in the stack, irrespective of the current namespace by typing:    `⎕ed ⎕xsi`
 
 
-See also ["State Indicator: " on page 1](../../../system-functions-a-z/system-functions-a-z/si.md).
+See also ["State Indicator: "](../../../system-functions-a-z/system-functions-a-z/si.md).
 
 
 

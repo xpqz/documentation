@@ -8,12 +8,12 @@ For example, `math.dll` might be a library of mathematical functions containing 
 
 In a compiled language such as C, the types of arguments and results of functions must be declared explicitly. Typically, these types will be published with the documentation that accompanies the DLL. For example, function `divide` might be declared:
 ```apl
-`double divide(int32_t, int32_t);`
+ double divide(int32_t, int32_t);
 ```
 
 which means that it expects two long (4-byte) integer arguments and returns a double (8-byte) floating point result. Notice the correspondence between the C declaration and the right argument of `⎕NA`:
 ```apl
-`C:             double    divide       (int32_t,  int32_t);`
+    C:             double    divide       (int32_t,  int32_t);
 ```
 ```apl
     APL:  'div' ⎕NA 'F8    math|divide       I4        I4 '
@@ -32,7 +32,7 @@ div
 2.5
 ```
 
-It is imperative that care be taken when coding type declarations. A DLL *cannot* check types of data passed from APL. A wrong type declaration will lead to erroneous results or may even cause the workspace to become corrupted and crash. During development, you may wish to prevent this happening. See: [ ErrorOnExternalException on page 1](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#ErrorOnExternalException).
+It is imperative that care be taken when coding type declarations. A DLL *cannot* check types of data passed from APL. A wrong type declaration will lead to erroneous results or may even cause the workspace to become corrupted and crash. During development, you may wish to prevent this happening. See: [ ErrorOnExternalException](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#ErrorOnExternalException).
 
 The full syntax for the right argument of `⎕NA` is:
 ```apl
@@ -130,9 +130,9 @@ The use of T with default width is recommended to ensure portability between Edi
 
 C functions accept data arguments either by *value* or by *address*. This distinction is indicated by the presence of a '`*`' or '`[]`' in the argument declaration:
 ```apl
-`int  num1;       // value of num1 passed.
+int  num1;       // value of num1 passed.
 int *num2;       // Address of num2 passed.
-int num3[];      // Address of num3 passed.`
+int num3[];      // Address of num3 passed.
 ```
 
 An argument (or result) of an external function of type pointer, must be matched in the `⎕NA` call by a declaration starting with one of the characters: `<`, `>`, or `=`.
@@ -223,8 +223,8 @@ Note that 32-bit versions can support 64-bit integer *arguments*, but not 64-bit
 
 Arrays are specified by following the basic data type with `[n]` or `[]`, where `n` indicates the number of elements in the array. In the C declaration, the number of elements in an array may be specified explicitly at compile time, or determined dynamically at runtime. In the latter case, the size of the array is often passed along with the array, in a separate argument. In this case, `n`, the number of elements is omitted from the specification. Note that C deals only in scalars and rank 1 (vector) arrays.
 ```apl
-`int vec[10];               // explicit vector length.
-unsigned size, list[];     // undetermined length.`
+int vec[10];               // explicit vector length.
+unsigned size, list[];     // undetermined length. 
 ```
 
 could be coded as:
@@ -235,10 +235,10 @@ could be coded as:
 
 Confusion sometimes arises over a difference in the declaration syntax between C and `⎕NA`. In C, an argument declaration may be given to receive a pointer to either a single scalar item, or to the first element of an array. This is because in C, the address of an array is deemed to be the address of its first element.
 ```apl
-`void foo (char *string);
+   void foo (char *string);
    char ch = 'a', ptr = "abc";
    foo(&ch);// call with address of scalar.
-   foo(ptr);// call with address of array.`
+   foo(ptr);// call with address of array.
 ```
 
 However, from APL's point of view, these two cases are distinct and if the function is to be called with the address of (pointer to) a *scalar*, it must be declared: `'<T'`. Otherwise, to be called with the address of an *array*, it must be declared: `'<T[]'`. Note that it is perfectly acceptable in such circumstances to define more than one name association to the same DLL function specifying different argument types:
@@ -253,16 +253,16 @@ Arbitrary data structures, which are akin to nested arrays, are specified using 
 
 For example, this structure might be defined in C thus:
 ```apl
-`typedef struct
+typedef struct
 {
     double  f;
     short   i;
-} mystruct;`
+} mystruct;
 ```
 
 A function defined to receive a count followed by an *input* pointer to an array of such structures:
 ```apl
-`void foo(unsigned count, mystruct *str);`
+void foo(unsigned count, mystruct *str);
 ```
 
 An appropriate `⎕NA` declaration would be:
@@ -279,12 +279,13 @@ Notice that for the above call, APL converts the two Boolean `(0 0)` elements to
 
 Note that if the C compiler would add extra space for alignment within a structure the `⎕NA` syntax will need to code that explicitly. For example:
 ```apl
-`typedef struct
+typedef struct
 {
     short i;
 	/* most C compilers would add 6 bytes of alignment here */
     double d;
-} mystruct;`
+} mystruct;
+
 ```
 
 An appropriate `⎕NA` declaration would be:
@@ -389,7 +390,7 @@ As with the input-only case, a pointer to the first element of the argument is p
 
 `⎕NA` syntax enables APL to pass arguments to DLL functions by *value* or *address* as appropriate. For example if a function requires an integer followed by a *pointer* to an integer:
 ```apl
-`void fun(int valu, int *addr);`
+void fun(int valu, int *addr);
 ```
 
 You might declare and call it:
@@ -526,7 +527,7 @@ You should consult the documentation for the specific function that you intend t
 
 # The Dyalog DLL
 
-The Dyalog DLL (see [Run-Time Applications and Components on page 1](../../UserGuide/Installation and Configuration/Runtime Applications and Components.htm#RunTime_Applications)) contains three functions: MEMCPY, STRNCPY and STRLEN.
+The Dyalog DLL (see [Run-Time Applications and Components](../../UserGuide/Installation and Configuration/Runtime Applications and Components.htm#RunTime_Applications)) contains three functions: MEMCPY, STRNCPY and STRLEN.
 
 # MEMCPY
 
@@ -534,11 +535,11 @@ The Dyalog DLL (see [Run-Time Applications and Components on page 1](../../UserG
 
 Its C definition is:
 ```apl
-`void *MEMCPY(       // copy memory
+void *MEMCPY(       // copy memory
       void *to,     // target address
       void *fm,     // source address
       size_t size   // number of bytes to copy
-      );`
+      );
 ```
 
 `MEMCPY` copies `size` bytes starting from source address `fm`, to destination address `to`. The source and destination areas should not overlap; if they do the behaviour is undefined and the result is the first argument.
@@ -561,11 +562,11 @@ Notice that:
 
 Suppose that a database application requires that we construct a record in global memory prior to writing it to file. The record structure might look like this:
 ```apl
-`typedef struct {
+typedef struct {
         int empno;// employee number.
         float salary;// salary.
         char name[20];// name.
-        } person;`
+        } person;
 ```
 
 Then, having previously allocated memory (`addr`) to receive the record, we can define:
@@ -580,11 +581,11 @@ Then, having previously allocated memory (`addr`) to receive the record, we can 
 
 Its C definition is:
 ```apl
-`void *STRNCPY(// copy null-terminated string
+void *STRNCPY(// copy null-terminated string
         char *to,// target address
         char *fm,// source address
         size_t size// MAX number of chars to copy
-        );`
+        );
 ```
 
 `STRNCPY` copies a maximum of `size` characters from the null-terminated source string at address `fm`, to the destination address `to`. If the source and destination strings overlap, the result is the first argument.
@@ -597,10 +598,10 @@ If the source string (including its terminating null) is longer than `size`, onl
 
 Suppose that a database application returns a pointer (`addr`) to a structure that contains two (max 20-char) null-terminated strings.
 ```apl
-`typedef struct {  // null-terminated strings:
+typedef struct {  // null-terminated strings:
         char first[20];  // first name (max 19 chars + 1 null).
         char last[20];   // last name. (max 19 chars + 1 null).
-        } name;`
+        } name;
 ```
 
 To copy the names *from* the structure:
@@ -635,9 +636,9 @@ This is a cover for the C standard function `wcsncpy()`. It is named this way so
 
 `STRLEN` calculates the length of a C string (a 0-terminated string of bytes in memory). Its C declaration is:
 ```apl
-`size_t STRLEN(         // calculate length of string
+size_t STRLEN(         // calculate length of string
         const char *s    // address of string
-        );`
+        );
 ```
 
 # Example
@@ -697,7 +698,7 @@ The following statements would provide access to this routine through an APL fun
 
 The Windows function `MessageBox` displays a standard dialog box on the screen and awaits a response from the user.  It takes 4 arguments.  The first is the window handle for the window that owns the message box.  This is declared as an unsigned *int*.  The second and third arguments are both pointers to null-terminated strings containing the message to be displayed in the Message Box and the caption to be used in the window title bar.  The 4th argument is an unsigned *int* that specifies the Message Box type.  The result is an *int* which indicates which of the buttons in the message box the user has pressed.  The function is declared as follows:
 ```apl
-`int MessageBox(HWND, LPCSTR, LPCSTR, UINT);`
+int MessageBox(HWND, LPCSTR, LPCSTR, UINT);
 ```
 
 The following statements provide access to this routine through an APL function of the same name. Note that the 2nd and 3rd arguments are both coded as input pointers to type T null-terminated character arrays which ensures portability between Editions.

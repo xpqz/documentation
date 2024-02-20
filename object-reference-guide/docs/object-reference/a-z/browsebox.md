@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">BrowseBox</span></h1>
 
-| [Parents](../ParentLists/BrowseBox.htm) | [Children](../ChildLists/BrowseBox.htm) | [Properties](../PropLists/BrowseBox.htm) | [Methods](../MethodLists/BrowseBox.htm) | [Events](../EventLists/BrowseBox.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/BrowseBox.htm) [Children](../ChildLists/BrowseBox.htm) [Properties](../PropLists/BrowseBox.htm) [Methods](../MethodLists/BrowseBox.htm) [Events](../EventLists/BrowseBox.htm)
 
 
-| Purpose: | The BrowseBox object allows the user to browse for and select a folder         or other resource. |
-| --- | ---  |
+Purpose: The BrowseBox object allows the user to browse for and select a folder         or other resource.
 
 
 **Description**

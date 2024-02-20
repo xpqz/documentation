@@ -11,7 +11,7 @@ Specifies how many threads are to be used for parallel execution.
 If `Y` has the value `⍬`, `R` is the number of virtual processors in the machine.
 
 
-Otherwise, `Y` is an integer that specifies the number of threads that are to be used henceforth for parallel execution. Prior to this call, the default number of threads is specified by the parameter  `APL_MAX_THREADS`. See [ APL_MAX_THREADS on page 1](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#APLMaxThreads).
+Otherwise, `Y` is an integer that specifies the number of threads that are to be used henceforth for parallel execution. Prior to this call, the default number of threads is specified by the parameter  `APL_MAX_THREADS`. See [ APL_MAX_THREADS](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#APLMaxThreads).
 
 
 Note that whatever the value of `Y`, Dyalog limits the number of threads to 64. So the effective number of threads is `Y⌊64`.
@@ -28,6 +28,6 @@ To set the number of threads to be the same as the number of virtual processors,
 
 
 See [Parallel Execution
-         on page 1](../Introduction/Parallel Execution.htm#Parallel_Execution) and [Parallel Execution Threshold on page 1](Parallel Execution Threshold.htm#ParallelExecutionThreshold).
+        ](../Introduction/Parallel Execution.htm#Parallel_Execution) and [Parallel Execution Threshold](parallel-execution-threshold.md).
 
 

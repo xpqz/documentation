@@ -5,19 +5,17 @@
 
 <h1 class="heading"><span class="name">ToolBar</span></h1>
 
-| [Parents](../ParentLists/ToolBar.htm) | [Children](../ChildLists/ToolBar.htm) | [Properties](../PropLists/ToolBar.htm) | [Methods](../MethodLists/ToolBar.htm) | [Events](../EventLists/ToolBar.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/ToolBar.htm) [Children](../ChildLists/ToolBar.htm) [Properties](../PropLists/ToolBar.htm) [Methods](../MethodLists/ToolBar.htm) [Events](../EventLists/ToolBar.htm)
 
 
-| Purpose: | To manage a group of controls such as [Button](Button.htm) s. |
-| --- | ---  |
+Purpose: To manage a group of controls such as [Button](button.md) s.
 
 
 **Description**
 
 
 The ToolBar object is used to display and manage a set of controls. It is
-typically used to present a set of [Button](Button.htm)s
+typically used to present a set of [Button](button.md)s
 which the user can press to perform various actions. However, the ToolBar has
 the ability to manage other controls too.
 
@@ -26,12 +24,12 @@ the ability to manage other controls too.
 By default, the ToolBar is a raised bar stretched across the top of its
 parent form. You can alter its appearance using its [EdgeStyle](./edgestyle.md) property and you can control its alignment with its [Align](./align.md) property. [Align](./align.md) can be set to Top (the
 default), Bottom, Left or Right and causes the ToolBar to be attached to the
-corresponding edge of the [Form](Form.htm). A ToolBar
+corresponding edge of the [Form](form.md). A ToolBar
 aligned Top or Bottom will automatically stretch or shrink horizontally when its
-parent [Form](Form.htm) is resized, but it will remain fixed
+parent [Form](form.md) is resized, but it will remain fixed
 vertically. A ToolBar aligned Left or Right will stretch vertically but will
 remain fixed horizontally. By default a ToolBar occupies the entire width or
-length of the side of the [Form](Form.htm) to which it is
+length of the side of the [Form](form.md) to which it is
 attached and is 30 pixels high or wide. You can change these defaults using the [Posn](./posn.md) and [Size](./size.md) properties.
 
 
@@ -56,7 +54,7 @@ multi-row ToolBar you have to set its height explicitly. If [HScroll](./hscroll.
 controls continue to be added along the ToolBar even though they extend beyond
 its right edge and may be scrolled into view using a mini scrollbar. If [HScroll](./hscroll.md) is `¯1`, the scrollbar is shown whether or
 not any controls extend beyond the width of the ToolBar. If [HScroll](./hscroll.md) is `¯2`, the scrollbar appears only if
-required and may appear or disappear when the user resizes the parent [Form](Form.htm).
+required and may appear or disappear when the user resizes the parent [Form](form.md).
 
 
 If [Align](./align.md) is `'Left'` or `'Right'`, controls are positioned so as
@@ -74,7 +72,7 @@ If [VScroll](./vscroll.md) is `¯1` or `¯2`,
 controls continue to be added down the ToolBar even though they extend beyond
 its bottom edge and may be scrolled into view using a mini scrollbar. If [VScroll](./vscroll.md) is `¯1`, the scrollbar is shown whether or
 not any controls extend beyond the bottom of the ToolBar. If [VScroll](./vscroll.md) is `¯2`, the scrollbar appears only if
-required and may appear or disappear when the user resizes the parent [Form](Form.htm).
+required and may appear or disappear when the user resizes the parent [Form](form.md).
 
 
 [VScroll](./vscroll.md) and [HScroll](./hscroll.md) may only be set when the object is created and may not subsequently be changed.
@@ -88,6 +86,6 @@ between the groups, you need only specify the position of the first one in each
 group.
 
 
-The ToolBar object was introduced in Dyalog APL before an appropriate standard Windows control existed. The ToolBar object should be considered as a legacy object and used only in old GUI applications. The [ToolControl](ToolControl.htm) object should be used instead.
+The ToolBar object was introduced in Dyalog APL before an appropriate standard Windows control existed. The ToolBar object should be considered as a legacy object and used only in old GUI applications. The [ToolControl](toolcontrol.md) object should be used instead.
 
 

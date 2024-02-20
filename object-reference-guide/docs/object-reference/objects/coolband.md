@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">CoolBand</span></h1>
 
-| [Parents](../ParentLists/CoolBand.htm) | [Children](../ChildLists/CoolBand.htm) | [Properties](../PropLists/CoolBand.htm) | [Methods](../MethodLists/CoolBand.htm) | [Events](../EventLists/CoolBand.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/CoolBand.htm) [Children](../ChildLists/CoolBand.htm) [Properties](../PropLists/CoolBand.htm) [Methods](../MethodLists/CoolBand.htm) [Events](../EventLists/CoolBand.htm)
 
 
-| Purpose: | The CoolBand object represents an area in a CoolBar that contains a         child window. |
-| --- | ---  |
+Purpose: The CoolBand object represents an area in a CoolBar that contains a         child window.
 
 
 **Description**
@@ -75,7 +73,7 @@ you specify it to be 0. You may move a CoolBand to the previous or next row by
 changing its [NewLine](../a-z/newline.md) property (using `⎕WS`) from 1 to 0, or from 0 to 1 respectively.
 
 
-The 2nd element of the [Size](../a-z/size.md) property determines the width of the CoolBand; the value of the 1st element is read-only.
+The 2<sup>nd</sup> element of the [Size](../a-z/size.md) property determines the width of the CoolBand; the value of the 1<sup>st</sup> element is read-only.
 
 
 [Size](../a-z/size.md) may **only** be specified by `⎕WC`.

@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">PropertySheet</span></h1>
 
-| [Parents](../ParentLists/PropertySheet.htm) | [Children](../ChildLists/PropertySheet.htm) | [Properties](../PropLists/PropertySheet.htm) | [Methods](../MethodLists/PropertySheet.htm) | [Events](../EventLists/PropertySheet.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/PropertySheet.htm) [Children](../ChildLists/PropertySheet.htm) [Properties](../PropLists/PropertySheet.htm) [Methods](../MethodLists/PropertySheet.htm) [Events](../EventLists/PropertySheet.htm)
 
 
-| Purpose: | The PropertySheet object represents a standard multi-page dialog box. |
-| --- | ---  |
+Purpose: The PropertySheet object represents a standard multi-page dialog box.
 
 
 **Description**

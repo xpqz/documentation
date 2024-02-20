@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">FieldType</span></h1>
 
-| Applies To: | [ButtonEdit](./buttonedit.md) | [DateTimePicker](./datetimepicker.md) | [Edit](./edit.md) | [Label](./label.md) | [Spinner](./spinner.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [ButtonEdit](./buttonedit.md) [DateTimePicker](./datetimepicker.md) [Edit](./edit.md) [Label](./label.md) [Spinner](./spinner.md)
 
 
 **Description**
@@ -35,11 +34,11 @@ For a [DateTimePicker](./datetimepicker.md), FieldType may be one of the followi
 
 
 
-The value of the date or time is represented by the [DateTime](DateTime.htm) property. Note that all validation is performed by the object itself, and it is impossible to enter an invalid value.
+The value of the date or time is represented by the [DateTime](datetime.md) property. Note that all validation is performed by the object itself, and it is impossible to enter an invalid value.
 
 
 
-For an [Edit](./edit.md), [Label](./label.md) and [Spinner](./spinner.md), if FieldType is defined, the contents of the object are defined by its [Value](value.md) property, which is a number, rather than by its [Text](Text.htm) property, and special formatting and validation rules are applied. FieldType may be one of the following :
+For an [Edit](./edit.md), [Label](./label.md) and [Spinner](./spinner.md), if FieldType is defined, the contents of the object are defined by its [Value](value.md) property, which is a number, rather than by its [Text](text.md) property, and special formatting and validation rules are applied. FieldType may be one of the following :
 
 
 | `'Numeric'` | Simple numeric formatting and validation |
@@ -56,7 +55,7 @@ For an [Edit](./edit.md), [Label](./label.md) and [Spinner](./spinner.md), if Fi
 FieldType `'Char'` only affects an [Edit](./edit.md) object. When the user enters data into a standard single-line [Edit](./edit.md) object, the [Value](value.md) property is set to a number if the contents are numeric, or to a character vector if the contents do not represent a valid number. If FieldType is `'Char'`, the [Value](value.md) property is always set to a character vector, regardless of the type of the field contents.
 
 
-If FieldType is `'Numeric'`, the object displays the number defined by its [Value](value.md) property rounded to the number of decimal places specified by its [Decimals](Decimals.htm) property. The decimal separator character used will be as specified by the Number format in the user's International Control Panel settings. If the object is an [Edit](./edit.md) object, the user is prevented from entering anything but a valid number. The number of decimal digits is also restricted to [Decimals](Decimals.htm). When the user "leaves" the object, the number is re-formatted.
+If FieldType is `'Numeric'`, the object displays the number defined by its [Value](value.md) property rounded to the number of decimal places specified by its [Decimals](decimals.md) property. The decimal separator character used will be as specified by the Number format in the user's International Control Panel settings. If the object is an [Edit](./edit.md) object, the user is prevented from entering anything but a valid number. The number of decimal digits is also restricted to [Decimals](decimals.md). When the user "leaves" the object, the number is re-formatted.
 
 
 If FieldType is `'LongNumeric'`, the object displays the number specified by its [Value](value.md) property according to the Number format in the user's International Control Panel settings. This format specifies the 1000 separator, decimal separator, decimal digits and whether or not a leading zero is inserted. If the object is an [Edit](./edit.md) object, the user is prevented from entering anything but a valid number. However, the character specified for the 1000 separator is ignored and may be entered anywhere in the number. When the user "leaves" the object, the number is re-formatted correctly.

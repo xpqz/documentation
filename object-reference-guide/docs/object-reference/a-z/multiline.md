@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">MultiLine</span></h1>
 
-| Applies To: | [TabControl](./tabcontrol.md) | [ToolControl](./toolcontrol.md) |
-| --- | --- | ---  |
+Applies To: [TabControl](./tabcontrol.md) [ToolControl](./toolcontrol.md)
 
 
 **Description**
@@ -24,7 +23,7 @@ If MultiLine is 0 and there are more tabs or buttons than will fit in the space 
 However, If MultiLine is 0 in a [ToolControl](./toolcontrol.md), the buttons are clipped, and the user may have to resize the object to see them all.
 
 
-See also: [Justify](Justify.htm), [TabSize](TabSize.htm).
+See also: [Justify](justify.md), [TabSize](tabsize.md).
 
 
 

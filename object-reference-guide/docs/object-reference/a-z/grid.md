@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Grid</span></h1>
 
-| [Parents](../ParentLists/Grid.htm) | [Children](../ChildLists/Grid.htm) | [Properties](../PropLists/Grid.htm) | [Methods](../MethodLists/Grid.htm) | [Events](../EventLists/Grid.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Grid.htm) [Children](../ChildLists/Grid.htm) [Properties](../PropLists/Grid.htm) [Methods](../MethodLists/Grid.htm) [Events](../EventLists/Grid.htm)
 
 
-| Purpose: | Spreadsheet object for displaying and editing data. |
-| --- | ---  |
+Purpose: Spreadsheet object for displaying and editing data.
 
 
 **Description**
@@ -64,12 +62,12 @@ The [Input](./input.md) property is a character vector
 that specifies the name of an object which is to be associated with every cell
 in the Grid, or a vector of names whose elements are mapped to individual cells
 through the [CellTypes](./celltypes.md) property. These
-objects may be of type [Button](Button.htm), [ColorButton](ColorButton.htm),
-[Combo](Combo.htm), [Edit](Edit.htm), [Label](Label.htm),
-[Spinner](Spinner.htm) or [TrackBar](TrackBar.htm).
+objects may be of type [Button](button.md), [ColorButton](colorbutton.md),
+[Combo](combo.md), [Edit](edit.md), [Label](label.md),
+[Spinner](spinner.md) or [TrackBar](trackbar.md).
 In addition, the [Input](./input.md) property may specify
-instances of [OCXClass](OCXClass.htm) objects (ActiveX
-controls) and [NetType](NetType.htm) objects (.NET classes).
+instances of [OCXClass](ocxclass.md) objects (ActiveX
+controls) and [NetType](nettype.md) objects (.NET classes).
 
 
 If the [Input](./input.md) property is empty (the
@@ -86,15 +84,15 @@ to impose formatting and validation.
 
 
 If the [Input](./input.md) property specifies the name
-of a [Label](Label.htm) object, that object is used to
-impose formatting, but the data is protected and may not be changed. If the [Label](Label.htm) is a child of the Grid, it moves from cell to cell, and its characteristics ([Border](./border.md),
+of a [Label](label.md) object, that object is used to
+impose formatting, but the data is protected and may not be changed. If the [Label](label.md) is a child of the Grid, it moves from cell to cell, and its characteristics ([Border](./border.md),
 [FCol](./fcol.md), [BCol](./bcol.md) and [FontObj](./fontobj.md)) can be used to identify the
-current cell. If the [Label](Label.htm) is an external one,
+current cell. If the [Label](label.md) is an external one,
 no visual feedback is provided; even though the current cell (reflected by the [CurCell](./curcell.md) property) changes as the user moves around the Grid.
 
 
 If the Input property specifies one or more instances of OCXClass objects
-(ActiveX controls) and [NetType](NetType.htm) objects (.NET
+(ActiveX controls) and [NetType](nettype.md) objects (.NET
 classes), the [InputProperties](./inputproperties.md) property is used to map the [Values](./values.md) property
 of the Grid to specific properties of the external object.
 
@@ -144,7 +142,7 @@ callback to the [AddRow](./addrow.md) and selectively disable
 this default action if required. The [AddCol](./addcol.md) event works in a similar manner for columns. Although the user has no direct
 means of *inserting* a row or column, your application can do this by
 calling [AddRow](./addrow.md) or [AddCol](./addcol.md) as a method on the Grid object. Typically this would be done in response to the
-user selecting a [MenuItem](MenuItem.htm) or pressing a [Button](Button.htm).
+user selecting a [MenuItem](menuitem.md) or pressing a [Button](button.md).
 
 
 The [ColChange](./colchange.md), [RowChange](./rowchange.md),

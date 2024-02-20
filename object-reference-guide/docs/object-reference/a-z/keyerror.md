@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">KeyError</span></h1>
 
-| Applies To: | [ButtonEdit](./buttonedit.md) | [Edit](./edit.md) | [Spinner](./spinner.md) |
-| --- | --- | --- | ---  |
+Applies To: [ButtonEdit](./buttonedit.md) [Edit](./edit.md) [Spinner](./spinner.md)
 
 
 **Description**

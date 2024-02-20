@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">VariableHeight</span></h1>
 
-| Applies To: | [CoolBar](./coolbar.md) |
-| --- | ---  |
+Applies To: [CoolBar](./coolbar.md)
 
 
 **Description**

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Items</span></h1>
 
-| Applies To: | [Combo](./combo.md) | [ComboEx](./comboex.md) | [List](./list.md) | [ListView](./listview.md) | [Spinner](./spinner.md) | [TreeView](./treeview.md) |
-| --- | --- | --- | --- | --- | --- | ---  |
+Applies To: [Combo](./combo.md) [ComboEx](./comboex.md) [List](./list.md) [ListView](./listview.md) [Spinner](./spinner.md) [TreeView](./treeview.md)
 
 
 **Description**

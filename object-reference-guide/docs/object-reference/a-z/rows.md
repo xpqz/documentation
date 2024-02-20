@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Rows</span></h1>
 
-| Applies To: | [Combo](./combo.md) | [ComboEx](./comboex.md) |
-| --- | --- | ---  |
+Applies To: [Combo](./combo.md) [ComboEx](./comboex.md)
 
 
 **Description**

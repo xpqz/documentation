@@ -4,8 +4,7 @@
 
 <h1 class="heading"><span class="name">GridKeyPress</span></h1>
 
-| Applies To: | [Grid](../a-z/grid.md) |
-| --- | ---  |
+Applies To: [Grid](../a-z/grid.md)
 
 
 **Description**
@@ -33,7 +32,7 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 For a full description of elements [3-6], see [KeyPress](../a-z/keypress.md) event.
 
 
-The 7th element of the event message contains either a reference to, or the name of the Input object associated with the current cell and on which the corresponding [KeyPress](../a-z/keypress.md) event has been reported.
+The 7<sup>th</sup> element of the event message contains either a reference to, or the name of the Input object associated with the current cell and on which the corresponding [KeyPress](../a-z/keypress.md) event has been reported.
 
 
 The default action of the GridKeyPress event is to pass a [KeyPress](../a-z/keypress.md) event message back to the appropriate Input object to be actioned. The GridKeyPress is reported on the Grid, after the [KeyPress](../a-z/keypress.md) event on the Input object. If a callback on the Input object's [KeyPress](../a-z/keypress.md) event returns 0 or if a callback on GridKeyPress returns 0, the keystroke will be ignored.

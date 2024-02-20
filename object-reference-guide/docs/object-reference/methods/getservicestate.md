@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">GetServiceState</span></h1>
 
-| Applies To: | [Root](../a-z/root.md) |
-| --- | ---  |
+Applies To: [Root](../a-z/root.md)
 
 
 **Description**
@@ -15,7 +14,7 @@
 This method is used to obtain the current state of a Dyalog APL service running under Windows. See  
 Installation & Configuration Guide: 
 
-APL Application as a ServiceAPL Application as a Service on page 1.
+APL Application as a Service[APL Application as a Service](../../UserGuide/Installation and Configuration/APL Application as a Service.htm#A4S).
 
 
 The GetServiceState method is niladic.
@@ -23,7 +22,7 @@ The GetServiceState method is niladic.
 
 The result of the method is a 7-element numeric vector corresponding to the `SERVICE_STATUS` structure which is described in C++ as follows:
 ```apl
-`typedef struct _SERVICE_STATUS {
+typedef struct _SERVICE_STATUS {
   DWORD dwServiceType;
   DWORD dwCurrentState;
   DWORD dwControlsAccepted;
@@ -31,7 +30,7 @@ The result of the method is a 7-element numeric vector corresponding to the `SER
   DWORD dwServiceSpecificExitCode;
   DWORD dwCheckPoint;
   DWORD dwWaitHint;
-} SERVICE_STATUS, *LPSERVICE_STATUS;.`
+} SERVICE_STATUS, *LPSERVICE_STATUS;.
 ```
 
 

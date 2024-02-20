@@ -8,21 +8,21 @@ Like most Syncfusion controls, the CircularGauge is made up of  a complex struct
 
 The key statements in the XAML are as follows:
 ```apl
-`xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Gauge;assembly=Syncfusion.Gauge.WPF"`
+xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Gauge;assembly=Syncfusion.Gauge.WPF"
 ```
 
 The above statement defines the prefix `syncfusion` to mean the specified Syncfusion namespace and assembly. When the prefix `syncfusion` is subsequently used in front of a control in the XAML, the system knows where to find it.
 
 The next two statements define CircularPointer controls (the needles on the gauges); one for the Fahrenheit gauge (named **f_pointer**) and one for the Centigrade gauge (named **c_pointer**).
 ```apl
-`<syncfusion:CircularPointer Name="f_pointer" BorderWidth="0.3"
+ <syncfusion:CircularPointer Name="f_pointer" BorderWidth="0.3"
   PointerLength="100" PointerPlacement="Inside" PointerWidth="20"
-  Value="32"/>`
+  Value="32"/>
 ```
 ```apl
-`<syncfusion:CircularPointer Name="c_pointer" BorderWidth="0.3"
+ <syncfusion:CircularPointer Name="c_pointer" BorderWidth="0.3"
   PointerLength="100" PointerPlacement="Inside" PointerWidth="20"
-  Value="0"/`
+  Value="0"/
 ```
 
 ## The APL Code

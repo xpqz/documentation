@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Cue</span></h1>
 
-| Applies To: | [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) |
-| --- | --- | ---  |
+Applies To: [ButtonEdit](../a-z/buttonedit.md) [Edit](../a-z/edit.md)
 
 
 **Description**

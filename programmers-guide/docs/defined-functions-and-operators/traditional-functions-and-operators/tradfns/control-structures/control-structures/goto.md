@@ -11,7 +11,7 @@ A `:GoTo` statement is a direct alternative to `→` (branch) and causes executi
 The following are equivalent.  See 
 Language Reference Guide: 
 
-BranchLanguage Reference for further details.
+Branch[Language Reference](../Primitive Functions/Branch.htm#Branch) for further details.
 ```apl
       →Exit
       :GoTo Exit

@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Read Text File</span><span class="command">R←{X} ⎕NGET Y</span></h1>
 
-This function reads the contents of the specified text file. See also Write Text File on page 1.
+This function reads the contents of the specified text file. See also [Write Text File](nput.md).
 
 
 `Y` is either a character vector/scalar containing the name of the file to be read, or a 2-item vector whose first item is the file name and whose second is an integer scalar specifying `flags` for the operation.
@@ -40,7 +40,7 @@ File Encodings
 
 
 
-The above UTF formats may be qualified with -BOM or -NOBOM (e.g. UTF-8-BOM). See Write Text File on page 1.
+The above UTF formats may be qualified with -BOM or -NOBOM (e.g. UTF-8-BOM). See [Write Text File](nput.md).
 
 
 Whether or not `X` is specified, if the start of the file contains a recognised   Byte Order Mark (BOM), the file is decoded according to the BOM. Otherwise, if `X` is specified the file is decoded according to the value of `X`. Otherwise, the file is examined to try to decide its encoding and is decoded accordingly.

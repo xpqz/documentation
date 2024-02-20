@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Edit</span></h1>
 
-| [Parents](../ParentLists/Edit.htm) | [Children](../ChildLists/Edit.htm) | [Properties](../PropLists/Edit.htm) | [Methods](../MethodLists/Edit.htm) | [Events](../EventLists/Edit.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Edit.htm) [Children](../ChildLists/Edit.htm) [Properties](../PropLists/Edit.htm) [Methods](../MethodLists/Edit.htm) [Events](../EventLists/Edit.htm)
 
 
-| Purpose: | Allows user to enter or edit data. |
-| --- | ---  |
+Purpose: Allows user to enter or edit data.
 
 
 **Description**
@@ -78,7 +76,7 @@ If the user changes any data in the field **and** attempts to change focus to an
 
 
 For full functionality (in particular, for the [Cue](../a-z/cue.md) property to apply), the Edit object requires that  [Native Look and Feel ](../../Miscellaneous/Windows XP Look and Feel.htm)
-(see page 1)
+[(see page 1)](../../Miscellaneous/Windows XP Look and Feel.htm#Native_Look_and_Feel)
  is enabled.
 
 

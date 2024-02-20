@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Bits</span></h1>
 
-| Applies To: | [Bitmap](../a-z/bitmap.md) | [Clipboard](../a-z/clipboard.md) | [Cursor](../a-z/cursor.md) | [Icon](../a-z/icon.md) |
-| --- | --- | --- | --- | ---  |
+Applies To: [Bitmap](../a-z/bitmap.md) [Clipboard](../a-z/clipboard.md) [Cursor](../a-z/cursor.md) [Icon](../a-z/icon.md)
 
 
 **Description**

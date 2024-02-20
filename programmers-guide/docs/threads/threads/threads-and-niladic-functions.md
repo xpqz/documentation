@@ -7,13 +7,18 @@ If you wish to invoke a niladic function asynchronously, you have the following 
 - Turn your niladic function into a monadic function by giving it a dummy argument which it ignores.
 - Call your niladic function with a dfn to which you give an argument that is implicitly ignored. For example, if the function `NIL` is niladic, you can call it asynchronously using the expression: `{NIL}& 0`
 - Call your function via a dummy monadic function, e.g.
-            
+            ```apl
+
       ∇ NIL_M DUMMY
 [1]      NIL
       ∇
       NIL_M& ''
            
-- Use execute, e.g.      ⍎& 'NIL'
+```
+
+- Use execute, e.g.```apl
+      ⍎& 'NIL'
+```
 
 Note that niladic functions *can* be invoked asynchronously as callback functions. For example, the statement:
 ```apl

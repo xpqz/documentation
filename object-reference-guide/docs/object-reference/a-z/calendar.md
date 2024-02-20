@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Calendar</span></h1>
 
-| [Parents](../ParentLists/Calendar.htm) | [Children](../ChildLists/Calendar.htm) | [Properties](../PropLists/Calendar.htm) | [Methods](../MethodLists/Calendar.htm) | [Events](../EventLists/Calendar.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Calendar.htm) [Children](../ChildLists/Calendar.htm) [Properties](../PropLists/Calendar.htm) [Methods](../MethodLists/Calendar.htm) [Events](../EventLists/Calendar.htm)
 
 
-| Purpose: | The Calendar object provides an interface to the Month Calendar Control |
-| --- | ---  |
+Purpose: The Calendar object provides an interface to the Month Calendar Control
 
 
 **Description**

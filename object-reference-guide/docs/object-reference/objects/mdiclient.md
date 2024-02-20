@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">MDIClient</span></h1>
 
-| [Parents](../ParentLists/MDIClient.htm) | [Children](../ChildLists/MDIClient.htm) | [Properties](../PropLists/MDIClient.htm) | [Methods](../MethodLists/MDIClient.htm) | [Events](../EventLists/MDIClient.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/MDIClient.htm) [Children](../ChildLists/MDIClient.htm) [Properties](../PropLists/MDIClient.htm) [Methods](../MethodLists/MDIClient.htm) [Events](../EventLists/MDIClient.htm)
 
 
-| Purpose: | Implements Multiple Document Interface (MDI) behaviour. |
-| --- | ---  |
+Purpose: Implements Multiple Document Interface (MDI) behaviour.
 
 
 **Description**

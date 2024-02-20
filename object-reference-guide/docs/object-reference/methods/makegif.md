@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">MakeGIF</span></h1>
 
-| Applies To: | [Bitmap](../a-z/bitmap.md) |
-| --- | ---  |
+Applies To: [Bitmap](../a-z/bitmap.md)
 
 
 **Description**

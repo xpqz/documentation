@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">TipField</span></h1>
 
-| [Parents](../ParentLists/TipField.htm) | [Children](../ChildLists/TipField.htm) | [Properties](../PropLists/TipField.htm) | [Methods](../MethodLists/TipField.htm) | [Events](../EventLists/TipField.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/TipField.htm) [Children](../ChildLists/TipField.htm) [Properties](../PropLists/TipField.htm) [Methods](../MethodLists/TipField.htm) [Events](../EventLists/TipField.htm)
 
 
-| Purpose: | To display pop-up help. |
-| --- | ---  |
+Purpose: To display pop-up help.
 
 
 **Description**

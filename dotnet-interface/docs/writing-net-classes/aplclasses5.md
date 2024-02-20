@@ -49,7 +49,7 @@ Load `aplclasses5.dws` and export `aplclasses5.dll` as before.
 
 `samples\APLClasses\aplfns5.cs`contains code to invoke the three different variants of `IndexGen`, in the new `aplclasses.dll`. Notice that it uses a local sub-routine `PrintArray()`.
 ```apl
-`using System;
+      using System;
       using APLClasses;
       public class MainClass
             {
@@ -90,7 +90,8 @@ Load `aplclasses5.dws` and export `aplclasses5.dll` as before.
                   Array rslt3 = apl.IndexGen(args);
                   Console.WriteLine(rslt3);
 
-            }`
+            }
+
 ```
 
 Using VS, open the solution file`d:\aplclasses\aplclasses2\Framework\project.sln` and view `program.cs`.

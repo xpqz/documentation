@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">NetType</span></h1>
 
-| [Parents](../ParentLists/NetType.htm) | [Children](../ChildLists/NetType.htm) | [Properties](../PropLists/NetType.htm) | [Methods](../MethodLists/NetType.htm) | [Events](../EventLists/NetType.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/NetType.htm) [Children](../ChildLists/NetType.htm) [Properties](../PropLists/NetType.htm) [Methods](../MethodLists/NetType.htm) [Events](../EventLists/NetType.htm)
 
 
-| Purpose: | The NetType object is used to export a namespace as a Microsoft.NET class. |
-| --- | ---  |
+Purpose: The NetType object is used to export a namespace as a Microsoft.NET class.
 
 
 **Description**

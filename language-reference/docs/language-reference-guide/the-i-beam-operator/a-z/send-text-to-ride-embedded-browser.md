@@ -13,7 +13,8 @@ Optionally, `X` is a simple character vector or scalar, the contents of which ar
 
 To include SVG content, the HTML text in `Y` must include the following:
 ```apl
-`<meta http-equiv="X-UA-Compatible" content="IE=9" >.`
+
+ <meta http-equiv="X-UA-Compatible" content="IE=9" >.
 ```
 
 

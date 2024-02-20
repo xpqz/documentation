@@ -12,8 +12,8 @@ Function `Grid2` is an APL translation of the example given in the help file for
 
 Function `Grid` is an APL translation of the example given in the file:
 ```apl
-`C:\Program Files\Microsoft.NET\SDK\v1.1\...
-QuickStart\winforms\samples\Data\Grid\vb\Grid.vb`
+C:\Program Files\Microsoft.NET\SDK\v1.1\...
+QuickStart\winforms\samples\Data\Grid\vb\Grid.vb
 ```
 
 This example uses Microsoft SQL Server 2000 to extract sample data from the sample NorthWind database. To run this example, you must have SQL Server running and you must modify function `Grid_Load` to specify the name of your server.

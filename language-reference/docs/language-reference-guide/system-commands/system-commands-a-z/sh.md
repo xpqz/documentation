@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Execute (UNIX) Command</span><span class="command">)SH {cmd}</span></h1>
 
-This command allows WINDOWS or UNIX shell commands to be given from APL.  `)SH` is a synonym of `)CMD`. Either command may be given in either environment (Windows or UNIX) with exactly the same effect.  `)SH` is probably more natural for the UNIX user. This section describes the behaviour of `)SH` and `)CMD` under UNIX. See "Windows Command Processor: " on page 1 for a discussion of their behaviour under Windows.
+This command allows WINDOWS or UNIX shell commands to be given from APL.  `)SH` is a synonym of `)CMD`. Either command may be given in either environment (Windows or UNIX) with exactly the same effect.  `)SH` is probably more natural for the UNIX user. This section describes the behaviour of `)SH` and `)CMD` under UNIX. See ["Windows Command Processor: "](cmd.md) for a discussion of their behaviour under Windows.
 
 
 
@@ -33,7 +33,7 @@ The parameters CMD_PREFIX and CMD_POSTFIX may be used to execute a different she
 ```
 
 
-The system functions [`⎕SH`](../../system-functions/system-functions-a-z/system-functions-a-z/execute-unix-command.md) and [`⎕CMD`](../../system-functions/system-functions-a-z/system-functions-a-z/execute-windows-command.md) provide similar facilities but may be executed from within APL code. For further information, see Execute (UNIX) Command:  on page 1 and Execute Windows Command:  on page 1.
+The system functions [`⎕SH`](../../system-functions/system-functions-a-z/system-functions-a-z/execute-unix-command.md) and [`⎕CMD`](../../system-functions/system-functions-a-z/system-functions-a-z/execute-windows-command.md) provide similar facilities but may be executed from within APL code. For further information, see [Execute (UNIX) Command: ](../../system-functions/system-functions-a-z/system-functions-a-z/execute-unix-command.md) and [Execute Windows Command: ](../../system-functions/system-functions-a-z/system-functions-a-z/execute-windows-command.md).
 
 #### Note:
 

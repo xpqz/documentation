@@ -53,7 +53,7 @@ If `K` is omitted, the shape of the result is `(⍴Y),⍴y`.
 
 
 
-If `K` is between 0 and 1, the shape of the result is `(⍴y),⍴Y` because`(⍴y)` is inserted between the 0th and the 1st axis of the result, i.e. at the beginning.
+If `K` is between 0 and 1, the shape of the result is `(⍴y),⍴Y` because`(⍴y)` is inserted between the 0<sup>th</sup> and the 1<sup>st</sup> axis of the result, i.e. at the beginning.
 ```apl
 
       ↑[.5](1 2)(3 4)(5 6)
@@ -62,7 +62,7 @@ If `K` is between 0 and 1, the shape of the result is `(⍴y),⍴Y` because`(⍴
 ```
 
 
-If `K` is between 1 and 2, the shape of the result is `(⍴Y),⍴y` because`(⍴y)` is inserted between the 1st and 2nd axis of the result, i.e. at the end. This is the same as the case when `K` is omitted.
+If `K` is between 1 and 2, the shape of the result is `(⍴Y),⍴y` because`(⍴y)` is inserted between the 1<sup>st</sup> and 2<sup>nd</sup> axis of the result, i.e. at the end. This is the same as the case when `K` is omitted.
 ```apl
 
       ↑[1.5](1 2)(3 4)(5 6)

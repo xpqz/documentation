@@ -6,7 +6,7 @@ This example is similar to Example 6 but illustrates how numeric data in `⎕TS`
 
 The XAML shown below describes a Window containing a StackPanel, inside which is a ListBox.
 ```apl
-`<Window
+<Window
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="DateTimes using ⎕TS data"
@@ -17,7 +17,7 @@ The XAML shown below describes a Window containing a StackPanel, inside which is
          <ListBox Name="TideTimes" Height="200"
           Margin="5" />
     </StackPanel>
-</Window>`
+</Window>
 ```
 
 ## The APL Code
@@ -57,7 +57,7 @@ Then, `Tides[7]` creates a binding source object from this array and assigns it 
       DataBinding.NetObjects.Tides
 ```
 ```apl
-![tides](../img/tides.png)
+
 ```
 
 `Tides[3]` uses FindName to obtain a ref to the ListBox (defined in the XAML) named **TideTimes**:
@@ -80,5 +80,5 @@ Then, `Tides[7]` creates a binding source object from this array and assigns it 
       DataBinding.NetObjects.Tides
 ```
 ```apl
-![tides](../img/tides.png)
+
 ```

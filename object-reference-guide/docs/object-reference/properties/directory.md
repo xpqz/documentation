@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Directory</span></h1>
 
-| Applies To: | [FileBox](../a-z/filebox.md) |
-| --- | ---  |
+Applies To: [FileBox](../a-z/filebox.md)
 
 
 **Description**

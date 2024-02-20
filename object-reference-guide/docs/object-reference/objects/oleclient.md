@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">OLEClient</span></h1>
 
-| [Parents](../ParentLists/OLEClient.htm) | [Children](../ChildLists/OLEClient.htm) | [Properties](../PropLists/OLEClient.htm) | [Methods](../MethodLists/OLEClient.htm) | [Events](../EventLists/OLEClient.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/OLEClient.htm) [Children](../ChildLists/OLEClient.htm) [Properties](../PropLists/OLEClient.htm) [Methods](../MethodLists/OLEClient.htm) [Events](../EventLists/OLEClient.htm)
 
 
-| Purpose: | The OLEClient object provides access to an OLE Automation Server |
-| --- | ---  |
+Purpose: The OLEClient object provides access to an OLE Automation Server
 
 
 **Description**

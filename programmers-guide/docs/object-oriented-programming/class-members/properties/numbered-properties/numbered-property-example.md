@@ -2,7 +2,7 @@
 
 The [ComponentFile Class](../component-file-class-example.md) [(see page 1)](../component-file-class-example.md) specifies a Numbered Property named `Component` which represents the contents of a specified component on the file.
 ```apl
-    :Property **Numbered** Component
+    :Property Numbered Component
     :Access Public Instance
         ∇ r←shape
           r←¯1+2⊃⎕FSIZE tie

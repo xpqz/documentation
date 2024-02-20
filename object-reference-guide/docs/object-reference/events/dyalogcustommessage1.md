@@ -4,8 +4,7 @@
 
 <h1 class="heading"><span class="name">DyalogCustomMessage1</span></h1>
 
-| Applies To: | [Form](../a-z/form.md) |
-| --- | ---  |
+Applies To: [Form](../a-z/form.md)
 
 
 **Description**
@@ -17,8 +16,8 @@ events into the Dyalog APL/W message queue.
 
 DyalogCustomMessage1 may be invoked from a C program as follows:
 ```apl
-`msg=RegisterWindowMessage("DyalogCustomMessage1");
-SendMessage(hWnd,msg,wParam,lParam);`
+msg=RegisterWindowMessage("DyalogCustomMessage1");
+SendMessage(hWnd,msg,wParam,lParam);
 ```
 
 

@@ -4,8 +4,7 @@
 
 <h1 class="heading"><span class="name">AutoExpand</span></h1>
 
-| Applies To: | [Grid](../a-z/grid.md) |
-| --- | ---  |
+Applies To: [Grid](../a-z/grid.md)
 
 
 **Description**

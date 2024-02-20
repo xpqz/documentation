@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">FormatString</span></h1>
 
-| Applies To: | [ButtonEdit](./buttonedit.md) | [Edit](./edit.md) | [Grid](./grid.md) | [Label](./label.md) | [Spinner](./spinner.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [ButtonEdit](./buttonedit.md) [Edit](./edit.md) [Grid](./grid.md) [Label](./label.md) [Spinner](./spinner.md)
 
 
 **Description**

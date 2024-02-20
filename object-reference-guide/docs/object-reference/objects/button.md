@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Button</span></h1>
 
-| [Parents](../ParentLists/Button.htm) | [Children](../ChildLists/Button.htm) | [Properties](../PropLists/Button.htm) | [Methods](../MethodLists/Button.htm) | [Events](../EventLists/Button.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Button.htm) [Children](../ChildLists/Button.htm) [Properties](../PropLists/Button.htm) [Methods](../MethodLists/Button.htm) [Events](../EventLists/Button.htm)
 
 
-| Purpose: | Allows the user to initiate an action or to select an option using a button. |
-| --- | ---  |
+Purpose: Allows the user to initiate an action or to select an option using a button.
 
 
 **Description**
@@ -21,7 +19,7 @@ The type of button displayed is determined by the [Style](../a-z/style.md) prope
 
 
 `'Split'` and `'CommandLink'` apply only to Windows Vista and later and require  [Native Look and Feel ](../../Miscellaneous/Windows XP Look and Feel.htm)
-(see page 1)
+[(see page 1)](../../Miscellaneous/Windows XP Look and Feel.htm#Native_Look_and_Feel)
 . Otherwise the use of these Styles will produce a Button with Style `'Push'`.
 
 

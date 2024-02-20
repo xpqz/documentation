@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Timer</span></h1>
 
-| Applies To: | [Timer](../a-z/timer.md) |
-| --- | ---  |
+Applies To: [Timer](../a-z/timer.md)
 
 
 **Description**

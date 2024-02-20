@@ -11,7 +11,7 @@
 If `Y` refers to an undefined error code "`n`", the event message returned is "`ERROR NUMBER n`".
 
 
-See "APL Error Messages" on page 1APL Error Messages
+See ["APL Error Messages"](../../Language/Errors/APL Errors.htm#APLErrors)APL Error Messages
 
 #### Example
 ```apl

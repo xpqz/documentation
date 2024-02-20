@@ -77,7 +77,7 @@ Note that `⎕DF` defines the Display Form statically, rather than dynamically.
       F
 #.F
 
-      F.(⎕DF Caption)⍝ set display form to **current** caption
+      F.(⎕DF Caption)⍝ set display form to current caption
       F
 This is the Caption
 

@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">DateTimePicker</span></h1>
 
-| [Parents](../ParentLists/DateTimePicker.htm) | [Children](../ChildLists/DateTimePicker.htm) | [Properties](../PropLists/DateTimePicker.htm) | [Methods](../MethodLists/DateTimePicker.htm) | [Events](../EventLists/DateTimePicker.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/DateTimePicker.htm) [Children](../ChildLists/DateTimePicker.htm) [Properties](../PropLists/DateTimePicker.htm) [Methods](../MethodLists/DateTimePicker.htm) [Events](../EventLists/DateTimePicker.htm)
 
 
-| Purpose: | The DateTimePicker object is an editable date/time field with an         optional drop-down Calendar. |
-| --- | ---  |
+Purpose: The DateTimePicker object is an editable date/time field with an         optional drop-down Calendar.
 
 
 **Description**

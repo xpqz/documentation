@@ -8,4 +8,4 @@ The default is `Users\<username>\Documents\Dyalog APL-<bits> <DyalogMajor>.<Dyal
 
 Note that the LogFile property of `⎕SE` reports the name of the log file that is being used.
 
-See also [Use log file on page 1](../../The APL Environment/Configuration Dialog Session Tab.htm#Log_File).
+See also [Use log file](../../The APL Environment/Configuration Dialog Session Tab.htm#Log_File).

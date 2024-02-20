@@ -8,7 +8,7 @@ This example illustrates data binding using XAML to specify the user-interface c
 
 The XAML shown below, describes a Window containing a TextBox.
 ```apl
-`<Window
+<Window
  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
  Name="Temp"
@@ -17,13 +17,13 @@ The XAML shown below, describes a Window containing a TextBox.
      <TextBox Name="txt" Width="300" Margin="5"
       Text="{Binding txtSource,Mode=TwoWay,
              UpdateSourceTrigger=PropertyChanged}"/>
-</Window>`
+</Window>
 ```
 
 It contains a data binding expression, namely:
 ```apl
-`Text="{Binding txtSource,Mode=TwoWay,
-             UpdateSourceTrigger=PropertyChanged}"`
+      Text="{Binding txtSource,Mode=TwoWay,
+             UpdateSourceTrigger=PropertyChanged}"
 ```
 
 This specifies that the Text property of the TextBox is bound to a value in the Binding Source (which has yet to be defined) whose path is `txtSource`. The binding mode is set to `TwoWay` which means that any change in the TextBox will be reflected in a new value in the Binding Source, and vice-versa. The value in the Binding Source will be updated when the property (in this case the Text Property) changes.
@@ -107,18 +107,18 @@ The following expressions may be used to explore the effect of data binding.
       Text 'Hello World'
 ```
 ```apl
-![data binding text xaml 1](../img/data-binding-text-xaml-1.png)
+
 ```
 ```apl
      txtSource←⌽txtSource
 ```
 ```apl
-![data binding text xaml 2](../img/data-binding-text-xaml-2.png)
+
 ```
 
 Typing into the TextBox changes the value of the bound variable.
 ```apl
-![data binding text xaml 3](../img/data-binding-text-xaml-3.png)
+
 ```
 ```apl
       txtSource

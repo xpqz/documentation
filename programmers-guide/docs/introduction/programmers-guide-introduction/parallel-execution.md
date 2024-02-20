@@ -7,6 +7,6 @@ For example,  if you have a computer with 4 cores (either real or virtual) and e
 The maximum number of threads to use can be controlled using `1111⌶`, and the parallel execution threshold is changed using `1112⌶`. These "tuning" I-beams should be considered experimental, and may be changed or replaced  in a future release.  (See 
 Language Reference Guide: 
 
- Number of Threads and Parallel Execution ThresholdNumber of Threads on page 1 and Parallel Execution Threshold on page 1).
+ Number of Threads and Parallel Execution Threshold[Number of Threads](../I Beam Functions/Number Of Threads.htm#NumberofThreads) and [Parallel Execution Threshold](../I Beam Functions/Parallel Execution Threshold.htm#ParallelExecutionThreshold)).
 
 Note that these scalar dyadic functions are not multi-threaded when applied to arrays of Boolean or integer values, they are also not multi-threaded for `+`, `-` or `×` when applied to arrays of 64 bits floating (type 645). Tests show that the overhead of preparing such arrays for multi-threaded operations outweigh the performance benefits.

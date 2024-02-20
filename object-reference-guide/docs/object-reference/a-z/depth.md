@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Depth</span></h1>
 
-| Applies To: | [TreeView](./treeview.md) |
-| --- | ---  |
+Applies To: [TreeView](./treeview.md)
 
 
 **Description**

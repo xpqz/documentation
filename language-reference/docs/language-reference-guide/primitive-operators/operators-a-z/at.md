@@ -26,7 +26,7 @@ The result `R` is the same as `Y` but with the items specified by `g` substitute
 
 Replace the 2nd and 4th items of `⍳5`:
 ```apl
-      (10 20@2 4)⍳5   ⍝ Note that the expression does not require parentheses because without them, the array `2 4` binds anyway to the `@` operator rather than to the `⍳` function.
+      (10 20@2 4)⍳5   ⍝ Note that the expression does not require parentheses because without them, the array 2 4 binds anyway to the @ operator rather than to the ⍳ function.
 1 10 3 20 5
 
       10 20@2 4⍳5

@@ -8,15 +8,15 @@ However, any Registry Value that is maintained via a configuration dialog box wi
 
 ### AutoComplete
 
-This contains registry entries that describe your personal AutoComplete options. See " Auto Complete Tab" on page 1.
+This contains registry entries that describe your personal AutoComplete options. See [" Auto Complete Tab"](../The APL Environment/Configuration Dialog.htm#AutoComplete).
 
 ### Captions
 
-This contains registry entries to customise the Captions used in the various windows of the Dyalog APL IDE. See Window Captions  on page 1.
+This contains registry entries to customise the Captions used in the various windows of the Dyalog APL IDE. See [Window Captions ](window-captions.md).
 
 ### Colours
 
-This contains entries that describe the colour schemes you have and your personal preferences. See "Colour Selection Dialog" on page 1.
+This contains entries that describe the colour schemes you have and your personal preferences. See ["Colour Selection Dialog"](../The APL Environment/Colour Selection Dialog.htm#Colour_Selection_Dialog).
 
 ### Editor
 
@@ -38,18 +38,18 @@ The Workspace Explorer Tool.
 
 ### files
 
-This contains the size of your recently used file list (see " General Tab" on page 1) and the list of your most recently loaded workspaces.
+This contains the size of your recently used file list (see [" General Tab"](../The APL Environment/Configuration Dialog.htm#General_Tab)) and the list of your most recently loaded workspaces.
 
 ### KeyboardShortcuts/keys
 
-This contains the definitions of your Keyboard Shortcuts (Unicode Edition only). See "Keyboard Shortcuts Tab" on page 1.
+This contains the definitions of your Keyboard Shortcuts (Unicode Edition only). See ["Keyboard Shortcuts Tab"](../The APL Environment/Configuration Dialog.htm#Keyboard_Shortcuts).
 
 ### KeyboardShortcuts/chars
 
 This contains the Registry Keyboard mappings between keystrokes and APL characters (Unicode Edition only). See 
 UI Guide: 
 
-Registry KeyboardUnicode Edition and the Registry Keyboard on page 1.
+Registry Keyboard[Unicode Edition and the Registry Keyboard](../The APL Environment/APL Keyboards.htm#Registry_Keyboard).
 
 ### LanguageBar
 
@@ -57,11 +57,11 @@ This contains the definitions of the symbols, tips, and help for the symbols in 
 
 ### Printing
 
-This contains the entries for your Printer Setup options. See  "Print Configuration Dialog Box" on page 1.
+This contains the entries for your Printer Setup options. See  ["Print Configuration Dialog Box"](../The APL Environment/Print Configuration.htm#Print_Configuration).
 
 ### SALT
 
-This contains entries for SALT. See "SALT" on page 1.
+This contains entries for SALT. See ["SALT"](../The APL Environment/Configuration Dialog.htm#SALT).
 
 ### Search
 
@@ -96,5 +96,5 @@ This contains entries to maintain the position of various Session tool windows s
 
 The Array Editor stores its settings in the following registry sub-folder:
 ```apl
-`HKEY_CURRENT_USER\Software\DavidLiebtag.com\Array Editor\1.1\Options`
+HKEY_CURRENT_USER\Software\DavidLiebtag.com\Array Editor\1.1\Options
 ```

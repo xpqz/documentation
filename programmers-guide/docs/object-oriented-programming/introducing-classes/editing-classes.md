@@ -17,4 +17,4 @@ For example, if `X` is *not* a public member of the class `MyClass`, then the fo
 
 The namespace is analogous to the namespace associated with a GUI object and will be re-initialised (emptied) whenever the Class is re-fixed. Objects in this parallel namespace are not visible from inside the Class or an Instance of the Class.
 
-For further information, see [Changing Scripted Objects Dynamically on page 1](../namespace-scripts/namespace-scripts.md).
+For further information, see [Changing Scripted Objects Dynamically](../namespace-scripts/namespace-scripts.md).

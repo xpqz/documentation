@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">HTMLRenderer</span></h1>
 
-| [Parents](../ParentLists/HTMLRenderer.htm) | [Children](../ChildLists/HTMLRenderer.htm) | [Properties](../PropLists/HTMLRenderer.htm) | [Methods](../MethodLists/HTMLRenderer.htm) | [Events](../EventLists/HTMLRenderer.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/HTMLRenderer.htm) [Children](../ChildLists/HTMLRenderer.htm) [Properties](../PropLists/HTMLRenderer.htm) [Methods](../MethodLists/HTMLRenderer.htm) [Events](../EventLists/HTMLRenderer.htm)
 
 
-| Purpose: | The HTMLRenderer Object is a cross-platform mechanism for producing Graphical User Interfaces (GUI), based on HyperText Markup Language (HTML). |
-| --- | ---  |
+Purpose: The HTMLRenderer Object is a cross-platform mechanism for producing Graphical User Interfaces (GUI), based on HyperText Markup Language (HTML).
 
 
 **Description**

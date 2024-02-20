@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">DevCaps</span></h1>
 
-| Applies To: | [Printer](../a-z/printer.md) | [Root](../a-z/root.md) |
-| --- | --- | ---  |
+Applies To: [Printer](../a-z/printer.md) [Root](../a-z/root.md)
 
 
 **Description**

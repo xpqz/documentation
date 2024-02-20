@@ -2,7 +2,7 @@
 
 This parameter defines how Dyalog APL is to interpret a 2-digit year number. If yy_window is not set (the default) then under Windows, Version 13.2 onwards will adhere to the rules specified in the Windows Region and Language 2-digit year settings.
 
-Dyalog allows a choice of input date formats for`⎕SM` and GUI edit fields. If you have chosen a 2-digit year format such as MM/DD/YY, then an input of 02/01/00 will by default be interpreted as 1stFebruary 1900 - not 1stFebruary 2000.
+Dyalog allows a choice of input date formats for`⎕SM` and GUI edit fields. If you have chosen a 2-digit year format such as MM/DD/YY, then an input of 02/01/00 will by default be interpreted as 1<sup>st</sup>February 1900 - not 1<sup>st</sup>February 2000.
 
 If your application uses a 4-digit year format such as YYYY-MM-DD, the problem will not arise.
 

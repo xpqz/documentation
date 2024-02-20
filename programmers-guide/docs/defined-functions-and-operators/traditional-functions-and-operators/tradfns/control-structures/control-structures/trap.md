@@ -12,7 +12,7 @@
 
 
 
-`ecode` is an integer scalar or vector containing the list of event codes which are to be *handled* during execution of the segment of code between the `:Trap` and `:End[Trap]` statements. Note that event codes 0 and 1000 are wild cards that means*any* event code in a given range. See [APL Error Messages on page 1](../../../../../error-messages/apl-errors.md).
+`ecode` is an integer scalar or vector containing the list of event codes which are to be *handled* during execution of the segment of code between the `:Trap` and `:End[Trap]` statements. Note that event codes 0 and 1000 are wild cards that means*any* event code in a given range. See [APL Error Messages](../../../../../error-messages/apl-errors.md).
 
 ##### Operation
 

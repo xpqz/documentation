@@ -11,7 +11,7 @@
 Unless the path specified by `Y` is a full pathname, it is taken to be relative to the current working directory which may be obtained by the expression: `⊃1 ⎕NPARTS ''`.
 
 
-See WorkspacesProgrammer's Guide: "Workspaces" for the rules for specifying a workspace name.
+See Workspaces[Programmer's Guide: "Workspaces"](../../Language/Introduction/Workspaces.htm#Workspaces) for the rules for specifying a workspace name.
 
 
 The active workspace is saved with the  file name specified by  `Y`, whether or not a workspace file of that name already exists.
@@ -36,7 +36,7 @@ The optional left argument `X` is either 0 or 1. If `X` is omitted or 1, the sav
 If `X` is 0, the workspace is saved without any state indicator in effect. The effect is the same as if you first executed `)RESET` and then `)SAVE`. In this case, when the workspace is subsequently loaded, the value of the latent expression (`⎕LX`) is honoured if applicable.
 
 
-As is the case for `)SAVE` (see "Save Workspace: " on page 1), monadic `⎕SAVE` will fail and issue `DOMAIN ERROR` if any threads (other than the root thread 0) are running or if there are any Edit or Trace windows open. However, neither of these restrictions apply if the left argument `X` is 0.
+As is the case for `)SAVE` (see ["Save Workspace: "](../../../system-commands/system-commands-a-z/save.md)), monadic `⎕SAVE` will fail and issue `DOMAIN ERROR` if any threads (other than the root thread 0) are running or if there are any Edit or Trace windows open. However, neither of these restrictions apply if the left argument `X` is 0.
 
 
 Note that the values of all system variables (including `⎕SM`) and all GUI objects are saved.
@@ -50,6 +50,6 @@ SAVED WS
 ```
 
 
-Additional operations may be performed before saving the workspace. For further information, see Set Workspace Save Options on page 1.
+Additional operations may be performed before saving the workspace. For further information, see [Set Workspace Save Options](../../../the-i-beam-operator/a-z/set-workspace-save-options.md).
 
 

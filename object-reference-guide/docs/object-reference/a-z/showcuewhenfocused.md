@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ShowCueWhenFocused</span></h1>
 
-| Applies To: | [ButtonEdit](./buttonedit.md) | [Edit](./edit.md) |
-| --- | --- | ---  |
+Applies To: [ButtonEdit](./buttonedit.md) [Edit](./edit.md)
 
 
 **Description**

@@ -2,7 +2,7 @@
 
 Using Dyalog APL you may create different types of run-time applications and components. Note that the distribution of run-time applications and components requires a Dyalog APL Run-Time Agreement. Please contact Dyalog or your distributor, or see the Dyalog web page for more information.
 
-For a list of the distributable components and their corresponding file names, for the different versions of Dyalog, see Files on page 1. These components are referred to in hereafter by the name shown in the first column of the table. It is essential that you distribute the components that are appropriate for the Edition you are using.
+For a list of the distributable components and their corresponding file names, for the different versions of Dyalog, see [Files](files-and-directories.md). These components are referred to in hereafter by the name shown in the first column of the table. It is essential that you distribute the components that are appropriate for the Edition you are using.
 
 The various types of run-time applications and components are as follows:
 
@@ -18,7 +18,7 @@ All but the first of these are made using the **Export** dialog box accessed fro
 
 ### Configuration Parameters
 
-Configuration parameters for these run-time applications, both for the Dyalog engine and for your own application settings, may be specified in a number of ways. See Configuration Parameters on page 1.
+Configuration parameters for these run-time applications, both for the Dyalog engine and for your own application settings, may be specified in a number of ways. See [Configuration Parameters](configuration-parameters/configuration-parameters.md).
 
 Nevertheless, it is strongly recommended that you use Configuration files. In this section we will discuss only Application Configuration files, although User Configuration files may be used as well.
 
@@ -44,17 +44,17 @@ In the command-line examples that follow, the name of the Run-Time EXE has been 
 
 ### Using a workspace
 ```apl
-`dyalogrt.exe myapp.dws`
+     dyalogrt.exe myapp.dws
 ```
 
 The application starts by running `⎕LX` in `myapp.dws`. If a configuration file named `myapp.dcfg` in the same directory, it is loaded and applied.
 
 ### Using a source code file
 ```apl
-`dyalogrt.exe Load=myfn.aplf`
+     dyalogrt.exe Load=myfn.aplf
 ```
 
-The application loads the file named `myfn.aplf` which contains the source code for a function, and executes the expression `(myfn 0⍴⊂'')` (see  Load on page 1).  If a configuration file named `myfn.dcfg` in the same directory, it is loaded and applied.
+The application loads the file named `myfn.aplf` which contains the source code for a function, and executes the expression `(myfn 0⍴⊂'')` (see [ Load](Configuration Parameters/Load.htm#Load_Parameter)).  If a configuration file named `myfn.dcfg` in the same directory, it is loaded and applied.
 
 ### Stand-alone and Bound run-times
 
@@ -85,11 +85,11 @@ To make an out-of-process COM Server, you must:
 
 The command-line for your COM Server must be specified in the field labelled **Command Line** in the **Export** dialog box. The field is initialised to invoke the Run-Time EXE with the name of your workspace in the same fashion as the workspace-based run-time discussed above. This command-line is recorded in the Windows Registry to be invoked when a client application requests it.
 
-You may change the contents of the **Command Line** field to use a configuration file, in the same way as for a workspace-based runtime. The following example uses the Loan COM Server. See The LOAN Workspace on page 1.
+You may change the contents of the **Command Line** field to use a configuration file, in the same way as for a workspace-based runtime. The following example uses the Loan COM Server. See [The LOAN Workspace](../../InterfaceGuide/OLE Server/The LOAN Workspace.htm#LOAN_Workspace).
 
 ### Example:
 ```apl
-`dyalog.exe C:\Dyalog18.0\myloan.dws`
+      dyalog.exe C:\Dyalog18.0\myloan.dws
 ```
 
 The command-line above will, on invocation, cause Dyalog to load the `myloan.dws` workspace together with the configuration file `myloan.dcfg` if it exists in that directory.
@@ -147,7 +147,7 @@ A Microsoft .NET Assembly contains one or more .NET Classes. To make a Microsoft
 1. establish one or more NetType namespaces in your workspace, populated with functions and variables that you wish to export as methods, properties and events.
 2. use the **File/Export …** menu item on the Session window to create a Microsoft .NET Assembly (DLL) which contains your workspace bound to the Run-Time DLL.
 
-For more information, see Isolation Mode on page 1.
+For more information, see [Isolation Mode](../../DotNet/Implementation Details/Isolation Mode.htm#Isolation_Mode).
 
 To distribute your .NET Classes, you need to supply and install
 

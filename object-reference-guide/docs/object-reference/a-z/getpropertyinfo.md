@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">GetPropertyInfo</span></h1>
 
-| Applies To: | [OCXClass](./ocxclass.md) | [OLEClient](./oleclient.md) |
-| --- | --- | ---  |
+Applies To: [OCXClass](./ocxclass.md) [OLEClient](./oleclient.md)
 
 
 **Description**
@@ -23,8 +22,7 @@ For each property supported by a COM object, the author will have registered the
 The argument to GetPropertyInfo is a single item as follows:
 
 
-| `[1]` | Property name(s) | see below |
-| --- | --- | ---  |
+`[1]` Property name(s) see below
 
 
 *Property name(s)* is a simple character vector or a vector of character vectors specifying one or more names of properties supported by the object.
@@ -52,6 +50,6 @@ The result is a nested vector with one element per property name. Each element o
 ```
 
 
-If the data type of a property is VT_USERDEFINED, it means that the property may assume one of a set of values defined by a type list. In this case, the name of the type list is returned in place of the string "VT_USERDEFINED". Further information can be obtained using [GetTypeInfo](GetTypeInfo.htm) with this name as a parameter.
+If the data type of a property is VT_USERDEFINED, it means that the property may assume one of a set of values defined by a type list. In this case, the name of the type list is returned in place of the string "VT_USERDEFINED". Further information can be obtained using [GetTypeInfo](gettypeinfo.md) with this name as a parameter.
 
 

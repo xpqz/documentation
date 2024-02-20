@@ -32,7 +32,7 @@ For example, you can deduce that `DateTime.New` may be called with three numeric
 
 ![browsing net classes 5](../img/browsing-net-classes-5.png)
 
-For example, the following statement may be used to create a new instance of `DateTime` (09:30 in the morning on 30th April 2001):
+For example, the following statement may be used to create a new instance of `DateTime` (09:30 in the morning on 30<sup>th</sup> April 2001):
 ```apl
       mydt←⎕NEW DateTime (2001 4 30 9 30 0)
  
@@ -69,6 +69,6 @@ The **Methods** folder lists the methods supported by the Class. The Explorer sh
 Many of the reported objects are listed as *Private*, which means they are inaccessible to users of the class – you are not able to call them or inspect their value. For more information about classes, see 
 Language Reference Guide: 
 
-Object Oriented ProgrammingIntroducing Classes on page 1.
+Object Oriented Programming[Introducing Classes](../../Language/Object Oriented Programming/Classes/Introducing Classes.htm#IntroducingClasses).
 
 ![browsing net classes 8](../img/browsing-net-classes-8.png)

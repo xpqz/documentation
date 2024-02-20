@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Image</span></h1>
 
-| [Parents](../ParentLists/Image.htm) | [Children](../ChildLists/Image.htm) | [Properties](../PropLists/Image.htm) | [Methods](../MethodLists/Image.htm) | [Events](../EventLists/Image.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Image.htm) [Children](../ChildLists/Image.htm) [Properties](../PropLists/Image.htm) [Methods](../MethodLists/Image.htm) [Events](../EventLists/Image.htm)
 
 
-| Purpose: | Positions bitmaps and icons within an object. |
-| --- | ---  |
+Purpose: Positions bitmaps and icons within an object.
 
 
 **Description**

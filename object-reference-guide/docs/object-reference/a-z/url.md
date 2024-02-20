@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">URL</span></h1>
 
-| Applies To: | [HTMLRenderer](./htmlrenderer.md) |
-| --- | ---  |
+Applies To: [HTMLRenderer](./htmlrenderer.md)
 
 
 **Description**

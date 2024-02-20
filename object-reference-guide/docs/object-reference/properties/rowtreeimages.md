@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">RowTreeImages</span></h1>
 
-| Applies To: | [Grid](../a-z/grid.md) |
-| --- | ---  |
+Applies To: [Grid](../a-z/grid.md)
 
 
 **Description**
@@ -22,13 +21,13 @@ Note that images in tree nodes are only displayed if [RowTreeStyle](../a-z/rowtr
 If RowTreeImages is not specified default images are used.
 
 
-The Bitmap specified by the 1st element of RowTreeImages is used to display *unopened* nodes.
+The Bitmap specified by the 1<sup>st</sup> element of RowTreeImages is used to display *unopened* nodes.
 
 
-The Bitmap specified by the 2nd element of RowTreeImages is used to display *opened* nodes.
+The Bitmap specified by the 2<sup>nd</sup> element of RowTreeImages is used to display *opened* nodes.
 
 
-The Bitmap specified by the 3rd element of RowTreeImages is used to display nodes *without children*.
+The Bitmap specified by the 3<sup>rd</sup> element of RowTreeImages is used to display nodes *without children*.
 
 #### Example:
 ```apl

@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Windows Command Processor</span><span class="command">)CMD cmd</span></h1>
 
-This command allows Windows Command Processor or UNIX shell commands to be given from APL.  `)CMD` is a synonym of `)SH`.  Either command may be given in either environment (Windows or UNIX) with exactly the same effect.  `)CMD` is probably more natural for the Windows user.  This section describes the behaviour of `)CMD` and `)SH` under Windows.  See "Execute (UNIX) Command: " on page 1 for a discussion of the behaviour of these commands under UNIX.
+This command allows Windows Command Processor or UNIX shell commands to be given from APL.  `)CMD` is a synonym of `)SH`.  Either command may be given in either environment (Windows or UNIX) with exactly the same effect.  `)CMD` is probably more natural for the Windows user.  This section describes the behaviour of `)CMD` and `)SH` under Windows.  See ["Execute (UNIX) Command: "](sh.md) for a discussion of the behaviour of these commands under UNIX.
 
 
 
@@ -40,7 +40,8 @@ If **cmd** issues prompts and expects user input, it is **ESSENTIAL** to explici
 
 (Command Prompt window appears)
 ```apl
-`Current date is Wed 19-07-1995 Enter new date (dd-mm-yy): 20-07-95`
+Current date is Wed 19-07-1995
+Enter new date (dd-mm-yy): 20-07-95
 ```
 
 
@@ -58,7 +59,7 @@ By default, `)CMD` will execute the string `('cmd.exe /c',Y)` where `Y` is the a
 Before execution, the argument is prefixed and postfixed with strings defined by the APL parameters CMD_PREFIX and CMD_POSTFIX. The former specifies the name of your command processor and any parameters that it requires. The latter specifies a string which may be required. If CMD_PREFIX is not defined, it defaults to the name defined by the environment variable COMSPEC followed by "\c".  If COMSPEC is not defined, it defaults to COMMAND.COM or CMD.EXE as appropriate. If CMD_POSTFIX is not defined, it defaults to an empty vector.
 
 
-The system functions [`⎕SH`](../../system-functions/system-functions-a-z/system-functions-a-z/execute-unix-command.md) and [`⎕CMD`](../../system-functions/system-functions-a-z/system-functions-a-z/execute-windows-command.md) provide similar facilities but may be executed from within APL code. For further information, see Execute (UNIX) Command:  on page 1 and Execute Windows Command:  on page 1.
+The system functions [`⎕SH`](../../system-functions/system-functions-a-z/system-functions-a-z/execute-unix-command.md) and [`⎕CMD`](../../system-functions/system-functions-a-z/system-functions-a-z/execute-windows-command.md) provide similar facilities but may be executed from within APL code. For further information, see [Execute (UNIX) Command: ](../../system-functions/system-functions-a-z/system-functions-a-z/execute-unix-command.md) and [Execute Windows Command: ](../../system-functions/system-functions-a-z/system-functions-a-z/execute-windows-command.md).
 
 #### Note:
 

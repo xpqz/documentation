@@ -32,4 +32,4 @@ You could set the border style of the Form `f1` to `FormBorderStyle.Fixed3D` wit
 
 However, this practice is not recommended. Not only does it make your code less clear, but also if a value for a property or a parameter to a method may be one of several different enum types, APL cannot tell which is expected and the call will fail.
 
-For example, when the constructor for `System.Drawing.Font` is called with 3 parameters, the 3rd parameter may be either a `FontStyle` enum or a `GraphicsUnit` enum. If you were to call Font with a 3rd parameter of 1, APL cannot tell whether this refers to a `FontStyle` enum, or a `GraphicsUnit` enum, and the call will fail.
+For example, when the constructor for `System.Drawing.Font` is called with 3 parameters, the 3<sup>rd</sup> parameter may be either a `FontStyle` enum or a `GraphicsUnit` enum. If you were to call Font with a 3<sup>rd</sup> parameter of 1, APL cannot tell whether this refers to a `FontStyle` enum, or a `GraphicsUnit` enum, and the call will fail.

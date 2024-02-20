@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">CustomColors</span></h1>
 
-| Applies To: | [ColorButton](../a-z/colorbutton.md) |
-| --- | ---  |
+Applies To: [ColorButton](../a-z/colorbutton.md)
 
 
 **Description**

@@ -17,7 +17,7 @@ Furthermore, you are not limited to the set of parameters employed by APL itself
 
 Although for clarity parameter names are given here in mixed case, they are case-independent under Windows. Under UNIX and Linux, if Dyalog parameters are specified as environment variables they must be named entirely in upper-case.
 
-Note that the value of a parameter obtained by the GetEnvironment method (see GetEnvironment MethodGetEnvironment on page 1) uses exactly the same set of rules.
+Note that the value of a parameter obtained by the GetEnvironment method (see GetEnvironment Method[GetEnvironment](../../GUI/MethodOrEvents/GetEnvironment.htm#GetEnvironment_Method)) uses exactly the same set of rules.
 
 The following section details those parameters that are implemented by Registry Values in the top-level folder identified by **IniFile**. Values that are implemented in sub-folders are *mainly* internal and are not described in detail here. However, any Value that is maintained via a configuration dialog box will be named and described in the documentation for that dialog box in The APL Environment.
 
@@ -37,7 +37,7 @@ Specifying an invalid value will prevent Dyalog APL from starting.
 
 You can change parameters in the Registry in one of two ways:
 
-- Using the Configuration dialog box that is obtained by selecting *Configure* from the *Options* menu on the Dyalog APL/W session. See "The Configuration Dialog Box" on page 1 for details.
+- Using the Configuration dialog box that is obtained by selecting *Configure* from the *Options* menu on the Dyalog APL/W session. See ["The Configuration Dialog Box"](../The APL Environment/Configuration Dialog.htm#Configuration_Dialog) for details.
 - By directly editing the Windows Registry using `REGEDIT.EXE` or `REGEDIT32.EXE`. This is necessary for parameters that are not editable via the Configuration dialog box.
 
 ### Configuration Parameters

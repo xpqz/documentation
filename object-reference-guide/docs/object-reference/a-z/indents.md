@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Indents</span></h1>
 
-| Applies To: | [ComboEx](./comboex.md) |
-| --- | ---  |
+Applies To: [ComboEx](./comboex.md)
 
 
 **Description**

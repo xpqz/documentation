@@ -10,7 +10,7 @@ Each row in the WPF DataGrid control is represented by an object, and each colum
 
 The XAML shown below,  describes a Window containing a DockPanel, inside which is a DataGrid. The XAML is identical to the XAML in Example 7, except for the window caption.
 ```apl
-`<Window
+ <Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="DataGrid Matrix Example" Height="500"
@@ -27,7 +27,8 @@ The XAML shown below,  describes a Window containing a DockPanel, inside which i
             </DataGrid.Columns>
         </DataGrid>
     </DockPanel>
- </Window>`
+ </Window>
+
 ```
 
 The phrase `ItemsSource="{Binding}"` states that the content of the DataGrid is bound to a data source, which in this case will be inherited from the DataContext property of the parent Window.
@@ -58,10 +59,10 @@ As in Example 7, the global variable `Wines` contains a vector of character vect
 
 `Grid[5]`creates the left argument for `(2015⌶)` which defines the names and data types of the properties which the columns of the matrix `winelist` will be exposed as. In this case, the names of the paths are `Name` and `Price`, and their data types are both `System.Object`. So the first column will be exposed as `Name` and the second as `Price`, matching the path names specified in the XAML:
 ```apl
-`<DataGridTextColumn Header="Wine"
+            <DataGridTextColumn Header="Wine"
             Binding="{Binding Name}"/>
             <DataGridTextColumn Header="Price"
-            Binding="{Binding Price, StringFormat=C}" />`
+            Binding="{Binding Price, StringFormat=C}" />
 ```
 
 ## Testing the Data Binding
@@ -72,7 +73,7 @@ As in Example 7, the global variable `Wines` contains a vector of character vect
       Grid
 ```
 ```apl
-![data binding datagrid1](../img/data-binding-datagrid1.png)
+
 ```
 
 Let's round the prices to the nearest $5.
@@ -80,7 +81,7 @@ Let's round the prices to the nearest $5.
  winelist[;2]←5×⌊0.5+winelist[;2]÷5
 ```
 ```apl
-![data binding datagrid2](../img/data-binding-datagrid2.png)
+
 ```
 
 ## Using Code

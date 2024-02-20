@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">View</span></h1>
 
-| Applies To: | [ListView](../a-z/listview.md) |
-| --- | ---  |
+Applies To: [ListView](../a-z/listview.md)
 
 
 **Description**

@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">CoolBar</span></h1>
 
-| [Parents](../ParentLists/CoolBar.htm) | [Children](../ChildLists/CoolBar.htm) | [Properties](../PropLists/CoolBar.htm) | [Methods](../MethodLists/CoolBar.htm) | [Events](../EventLists/CoolBar.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/CoolBar.htm) [Children](../ChildLists/CoolBar.htm) [Properties](../PropLists/CoolBar.htm) [Methods](../MethodLists/CoolBar.htm) [Events](../EventLists/CoolBar.htm)
 
 
-| Purpose: | The CoolBar object acts as a container for CoolBand objects. |
-| --- | ---  |
+Purpose: The CoolBar object acts as a container for CoolBand objects.
 
 
 **Description**

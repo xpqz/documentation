@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ReportBCol</span></h1>
 
-| Applies To: | [ListView](./listview.md) |
-| --- | ---  |
+Applies To: [ListView](./listview.md)
 
 
 **Description**
@@ -24,7 +23,7 @@ i.e. if non-scalar, `(⍴ReportBCol)←→(0 1+⍴ReportInfo)`
 Each  element of ReportBCol is either an integer colour value or a 3-element of RGB colour indices.
 
 
-For further information, see ["BCol" on page 1](bcol.md).
+For further information, see ["BCol"](bcol.md).
 
 
 

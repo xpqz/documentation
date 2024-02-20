@@ -35,7 +35,7 @@ For example, if index origin is 1:
 
 | Left argument: | Right argument: |
 | --- | ---  |
-| abc ABA | ab ac Aa Ac |
+| ```apl abc ABA    ``` | ```apl ab ac Aa Ac ``` |
 
 
 
@@ -45,7 +45,7 @@ Along last axis:
 
 | Character: | Value: | Ordering: |
 | --- | --- | ---  |
-| ab ac Aa Ac | 1 2 1 3 1 1 1 3 | 3 =1   <-duplicate ordering with 4 =1   <-respect to last axis. |
+| ```apl ab ac Aa Ac ``` | ```apl 1 2 1 3 1 1 1 3 ``` | ```apl 3 =1   <-duplicate ordering with 4 =1   <-respect to last axis. ``` |
 
 
 
@@ -55,7 +55,7 @@ Duplicates exist, so resolve these with respect to the first axis:
 
 | Character: | Value: | Ordering: |
 | --- | --- | ---  |
-| ac Ac | 1 1 2 1 | 2 1 |
+| ```apl  ac Ac ``` | ```apl 1 1 2 1  ``` | ```apl 2 1 ``` |
 
 
 

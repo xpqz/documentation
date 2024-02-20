@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Cross References</span><span class="command">R←⎕REFS Y</span></h1>
 
-`Y` must be a simple character scalar or vector, identifying the name of a function or operator, or the object representation form of a function or operator (see ["Object Representation: " on page 1](or.htm#ObjectRepresentation)).  `R` is a simple character matrix, with one name per row, of identified names in the function or operator in `Y` excluding distinguished names of system constants, variables or functions.
+`Y` must be a simple character scalar or vector, identifying the name of a function or operator, or the object representation form of a function or operator (see ["Object Representation: "](or.md)).  `R` is a simple character matrix, with one name per row, of identified names in the function or operator in `Y` excluding distinguished names of system constants, variables or functions.
 
 
 #### Example

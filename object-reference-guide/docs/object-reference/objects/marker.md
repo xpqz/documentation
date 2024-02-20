@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Marker</span></h1>
 
-| [Parents](../ParentLists/Marker.htm) | [Children](../ChildLists/Marker.htm) | [Properties](../PropLists/Marker.htm) | [Methods](../MethodLists/Marker.htm) | [Events](../EventLists/Marker.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Marker.htm) [Children](../ChildLists/Marker.htm) [Properties](../PropLists/Marker.htm) [Methods](../MethodLists/Marker.htm) [Events](../EventLists/Marker.htm)
 
 
-| Purpose: | A graphical object used to draw polymarkers. |
-| --- | ---  |
+Purpose: A graphical object used to draw polymarkers.
 
 
 **Description**

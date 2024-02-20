@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">LateBind</span></h1>
 
-| Applies To: | [OLEClient](./oleclient.md) | [OLEServer](./oleserver.md) |
-| --- | --- | ---  |
+Applies To: [OLEClient](./oleclient.md) [OLEServer](./oleserver.md)
 
 
 **Description**

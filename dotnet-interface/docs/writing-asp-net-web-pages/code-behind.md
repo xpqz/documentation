@@ -4,9 +4,11 @@ It is often desirable to separate the code content of a page completely from the
 
 The `intro5.aspx` example illustrates this technique.
 ```apl
-`<%@Page Language="Dyalog"
+<%@Page Language="Dyalog"
 	Inherits="FruitSelection"
-	src="fruit.apl" %> <%@Register TagPrefix="tutorial" Namespace="Tutorial" Assembly="tutorial" %> <html>
+	src="fruit.apl" %>
+<%@Register TagPrefix="tutorial" Namespace="Tutorial" Assembly="tutorial" %>
+<html>
 <head>
 <title>Code behind: separating your code from the page layout</title>
 <link rel="stylesheet" type="text/css" href="apl.css">
@@ -22,12 +24,15 @@ The `intro5.aspx` example illustrates this technique.
 <p>
 <asp:Label id="out" runat="server" /></p>
 </form>
-</body> <tutorial:index runat="server"/> </html>`
+</body>
+<tutorial:index runat="server"/>
+</html>
+
 ```
 
 The statement
 ```apl
-`%@Page Language="Dyalog" Inherits="FruitSelection" src="fruit.apl" %>`
+%@Page Language="Dyalog" Inherits="FruitSelection" src="fruit.apl" %>
 ```
 
 says that this page, when compiled, should inherit from a class called `FruitSelection`. Furthermore, the `FruitSelection` class is written in the "Dyalog" language, and its source code resides in a file called `fruit.apl`. `FruitSelection` is effectively the *base class*for the `.aspx` page.

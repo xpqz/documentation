@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">OLEUnregister</span></h1>
 
-| Applies To: | [OLEServer](./oleserver.md) |
-| --- | ---  |
+Applies To: [OLEServer](./oleserver.md)
 
 
 **Description**

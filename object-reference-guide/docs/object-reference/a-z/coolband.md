@@ -5,18 +5,16 @@
 
 <h1 class="heading"><span class="name">CoolBand</span></h1>
 
-| [Parents](../ParentLists/CoolBand.htm) | [Children](../ChildLists/CoolBand.htm) | [Properties](../PropLists/CoolBand.htm) | [Methods](../MethodLists/CoolBand.htm) | [Events](../EventLists/CoolBand.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/CoolBand.htm) [Children](../ChildLists/CoolBand.htm) [Properties](../PropLists/CoolBand.htm) [Methods](../MethodLists/CoolBand.htm) [Events](../EventLists/CoolBand.htm)
 
 
-| Purpose: | The CoolBand object represents an area in a CoolBar that contains a         child window. |
-| --- | ---  |
+Purpose: The CoolBand object represents an area in a CoolBar that contains a         child window.
 
 
 **Description**
 
 
-The CoolBand object is a container object that represents a band in a [CoolBar](CoolBar.htm).
+The CoolBand object is a container object that represents a band in a [CoolBar](coolbar.md).
 
 
 
@@ -25,7 +23,7 @@ and a single child object.
 
 
 A CoolBand may not contain more than one child object, but that child object
-may itself be a container such as a [ToolControl](ToolControl.htm) or a [SubForm](SubForm.htm).
+may itself be a container such as a [ToolControl](toolcontrol.md) or a [SubForm](subform.md).
 
 
 The [Caption](./caption.md) property specifies a text
@@ -38,11 +36,11 @@ optional picture which is to be displayed alongside the [Caption](./caption.md).
 If specified, [ImageIndex](./imageindex.md) is an index
 into an [ImageList](imagelist.md) whose name is referenced
 via the [ImageListObj](./imagelistobj.md) property of the
-parent [CoolBar](CoolBar.htm).
+parent [CoolBar](coolbar.md).
 
 
 The background in a CoolBand may be specified using its [BCol](./bcol.md) or [Picture](./picture.md) properties. Although typically,
-the visible background area is small, it is visible through a [transparent](./transparent.md) [ToolControl](ToolControl.htm).
+the visible background area is small, it is visible through a [transparent](./transparent.md) [ToolControl](toolcontrol.md).
 
 
 The [ChildEdge](./childedge.md) property specifies
@@ -51,31 +49,31 @@ whether or not the CoolBand leaves space above and below its child window.
 
 The [GripperMode](./grippermode.md) property specifies
 whether or not the CoolBand has a gripper bar which is used to reposition and
-resize the CoolBand within its parent [CoolBar](CoolBar.htm).
+resize the CoolBand within its parent [CoolBar](coolbar.md).
 [GripperMode](./grippermode.md) may be '`Always'`(the default), `'Never'` or `'Auto'`.
 
 
-The position of a Cool Band within a [CoolBar](CoolBar.htm) is determined by its [Index](./index.md) and [NewLine](./newline.md) properties, and by the position and size of preceding CoolBand objects in the
-same [CoolBar](CoolBar.htm). For a CoolBand, [Posn](./posn.md) is a read-only property that reports its position but [Posn](./posn.md) may not be used to set it.
+The position of a Cool Band within a [CoolBar](coolbar.md) is determined by its [Index](./index.md) and [NewLine](./newline.md) properties, and by the position and size of preceding CoolBand objects in the
+same [CoolBar](coolbar.md). For a CoolBand, [Posn](./posn.md) is a read-only property that reports its position but [Posn](./posn.md) may not be used to set it.
 
 
 The [Index](./index.md) property specifies the position
-of a CoolBand within its parent [CoolBar](CoolBar.htm),
+of a CoolBand within its parent [CoolBar](coolbar.md),
 relative to other CoolBands and is `⎕IO` dependent. Initially, the value of [Index](./index.md) is
 determined by the order in which the CoolBands are created. You may re-order the
-CoolBands within a [CoolBar](CoolBar.htm), under program
+CoolBands within a [CoolBar](coolbar.md), under program
 control, by changing [Index](./index.md) with `⎕WS`.
 
 
 The [NewLine](./newline.md) property specifies whether
 or not the CoolBand occupies the same row as an existing CoolBand, or is
-displayed on a new line within its [CoolBar](CoolBar.htm) parent. The value of [NewLine](./newline.md) in the first
-CoolBand in a [CoolBar](CoolBar.htm) is always 1, even if
+displayed on a new line within its [CoolBar](coolbar.md) parent. The value of [NewLine](./newline.md) in the first
+CoolBand in a [CoolBar](coolbar.md) is always 1, even if
 you specify it to be 0. You may move a CoolBand to the previous or next row by
 changing its [NewLine](./newline.md) property (using `⎕WS`) from 1 to 0, or from 0 to 1 respectively.
 
 
-The 2nd element of the [Size](./size.md) property determines the width of the CoolBand; the value of the 1st element is read-only.
+The 2<sup>nd</sup> element of the [Size](./size.md) property determines the width of the CoolBand; the value of the 1<sup>st</sup> element is read-only.
 
 
 [Size](./size.md) may **only** be specified by `⎕WC`.

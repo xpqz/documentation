@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Note</span></h1>
 
-| Applies To: | [Button](./button.md) |
-| --- | ---  |
+Applies To: [Button](./button.md)
 
 
 **Description**
@@ -15,7 +14,7 @@
 The Note property applies only to a [Button](./button.md) whose Style is `'CommandLink'`.
 
 
-It is a character vector (by default empty) that specifies text to be displayed below the [Caption](Caption.htm).
+It is a character vector (by default empty) that specifies text to be displayed below the [Caption](caption.md).
 
 #### Example:
 ```apl

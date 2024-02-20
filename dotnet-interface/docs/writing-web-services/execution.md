@@ -1,6 +1,6 @@
 # Execution
 
-When your Web Service (or Page) is invoked, ASP.NET requests an instance of the corresponding Class from the Assembly (DLL) that was created when it was compiled. The first time this happens for any Dyalog APL Web Service or Web Page, the Dyalog APL dynamic link library  is loaded into the ASP.NET host process and the namespace corresponding to your Web Service class is `)COPYed` from the Assembly. The Dyalog APL dynamic link library then delivers an instance of this namespace to the client (calling) process. See [Introduction on page 1](../implementation-details/introduction.md) for further details.
+When your Web Service (or Page) is invoked, ASP.NET requests an instance of the corresponding Class from the Assembly (DLL) that was created when it was compiled. The first time this happens for any Dyalog APL Web Service or Web Page, the Dyalog APL dynamic link library  is loaded into the ASP.NET host process and the namespace corresponding to your Web Service class is `)COPYed` from the Assembly. The Dyalog APL dynamic link library then delivers an instance of this namespace to the client (calling) process. See [Introduction](../implementation-details/introduction.md) for further details.
 
 In general, every call on a method in a Web Service causes a new instance of the Web Server class to be created. If you need to maintain/update variables between calls, you need to write them to permanent storage.
 

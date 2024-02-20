@@ -14,7 +14,8 @@ For a list of the files associated with each of these components, see
 
 Files and Directories
 
-Files on page 1
+[
+Files](../../UserGuide/Installation and Configuration/Files and Directories.htm#Files)
 .
 
 ### Code Samples
@@ -25,4 +26,4 @@ The `samples` subdirectory contains several sub-directories relating to the .NET
 - `aplscript`; a sub-directory that contains APLScript examples.
 - `asp.net`; a sub-directory that is mapped to the IIS Virtual Directory `dyalog.net`, and contains various sample APL Web applications.
 - `winforms`; a sub-directory that contains sample applications that use the `System.Windows.Forms` GUI classes.
-- `web.config`: this file specifies Dyalog configuration parameters for ASP.NET. See The web.config file on page 1.
+- `web.config`: this file specifies Dyalog configuration parameters for ASP.NET. See [The web.config file](../implementation-details/asp-net-configuration-file.md).

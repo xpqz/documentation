@@ -87,7 +87,7 @@ whereas,
 
 ### Example
 ```apl
-`{
+{
   Extend: "my_default_configuration.dcfg",
   
   Settings: {
@@ -99,14 +99,14 @@ whereas,
       // references to other configuration parameters
       FNAME: "[rootdir]/filename",
   }
-}`
+}
 ```
 
 ### Arrays
 
 An array may be used to define file paths etc. For example,
 ```apl
-`WSPATH: ["/dir1", "/dir2"]`
+WSPATH: ["/dir1", "/dir2"]
 ```
 
 The only parameters which may be defined as arrays are WSPATH, WSEXT and CFEXT.
@@ -115,14 +115,14 @@ The only parameters which may be defined as arrays are WSPATH, WSEXT and CFEXT.
 
 Configuration parameters which are string values may include references to other configuration parameters (regardless of where they are defined) using square bracket delimiters. For example:
 ```apl
-`MySetting: "[DYALOG]/MyFile"`
+MySetting: "[DYALOG]/MyFile"
 ```
 
 will replace `[DYALOG`] with the value of the DYALOG configuration value.
 
 If the string inside the `[]` delimiters is "`.`", the "`.`" is replaced is replaced with the path of the directory containing the configuration file itself. Therefore,
 ```apl
-`FILENAME: "[.]/x.txt"`
+FILENAME: "[.]/x.txt"
 ```
 
 will set the parameter FILENAME to a value which is a reference to a file called `x.txt` in the same directory as the configuration file defining it.
@@ -138,7 +138,10 @@ Some parameters are stored in sub-folders in the Windows Registry. Currently, al
 
 The Configuration file supports this structure by defining an object that corresponds to a Registry sub-folder. For example:
 ```apl
-`Captions: { Session: "My Dyalog Session", Status: "My Status window", }`
+Captions: {
+    Session: "My Dyalog Session",
+    Status: "My Status window",
+}
 ```
 
 ```apl

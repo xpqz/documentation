@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">HAlign</span></h1>
 
-| Applies To: | [Text](./text.md) |
-| --- | ---  |
+Applies To: [Text](./text.md)
 
 
 **Description**
@@ -18,10 +17,10 @@ This property determines the horizontal alignment of text in a [Text](./text.md)
 These may be:
 
 
-| 0 | left aligned | the left edge of the bounding box of the text is aligned on the       x-coordinate specified by the [Points](Points.htm) property. |
+| 0 | left aligned | the left edge of the bounding box of the text is aligned on the       x-coordinate specified by the [Points](points.md) property. |
 | --- | --- | ---  |
-| 1 | centre aligned | the centre of the bounding box of the text is aligned on the       x-coordinate specified by the [Points](Points.htm) property. |
-| 2 | right aligned | the right edge of the bounding box of the text is aligned on the       x-coordinate specified by the [Points](Points.htm) property. |
+| 1 | centre aligned | the centre of the bounding box of the text is aligned on the       x-coordinate specified by the [Points](points.md) property. |
+| 2 | right aligned | the right edge of the bounding box of the text is aligned on the       x-coordinate specified by the [Points](points.md) property. |
 
 
 

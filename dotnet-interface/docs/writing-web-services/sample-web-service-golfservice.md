@@ -10,19 +10,19 @@ Each golf course managed by the application has a unique code (integer) and a na
 
 `GolfService` provides 3 methods:
 ```apl
-`GetCourses()`
+GetCourses()
 ```
 
 Returns a list of Golf Courses (CourseCode and CourseName). The result of this method is an array of `GolfCourse` objects.
 
 ```apl
-`GetStartingSheet(CourseCode,Date)`
+GetStartingSheet(CourseCode,Date)
 ```
 
 Returns the starting sheet for a specified golf course on a given day. A starting sheet is a list of starting times with a list of the golfers booked to start their round at that time. The result of this method is a `StartingSheet` object.
 
 ```apl
-`MakeBooking(CourseCode,TeeTime,GimmeNearest, Name1,Name2,Name3,Name4))`
+MakeBooking(CourseCode,TeeTime,GimmeNearest, Name1,Name2,Name3,Name4))
 ```
 
 Requests a tee reservation at the course specified by `CourseCode`. `TeeTime` is a `DateTime` object that specifies the requested date and time. `GimmeNearest` is `Boolean`. If 1, requests the nearest tee-time to that specified; if 0, requests only the specified tee-time. Name1-4 are strings specifying up to 4 players. Note that all parameters are required. The result of this method is a `Booking` object.
@@ -384,7 +384,7 @@ If an appropriate slot is found, Lines[72 73] update the `Slot` object with the 
 
 If you point your browser at the URL:
 ```apl
-`http://localhost/dyalog.net.15.0.unicode.32/Golf/Golf.asmx`
+ http://localhost/dyalog.net.15.0.unicode.32/Golf/Golf.asmx
 ```
 
 `GolfService` will be compiled and ASP.NET will fabricate a page about it for the browser to display as shown below.
@@ -433,7 +433,7 @@ The output clearly shows that the result, a `StartingSheet` object, contains an 
 
 The `csharp` sub-directory in `samples\asp.net\golf` contains sample files for accessing the `GolfService` Web Service from C#. The C# source code in `Golf.cs` is shown below.
 ```apl
-`using System;
+using System;
 
 class MainClass  {
 
@@ -458,17 +458,19 @@ class MainClass  {
 		foreach (String player in booking.TeeTime.Players)
 			Console.WriteLine(player);
 		}
-}`
+}
+
 ```
 
 The following example shows how you may run the `C#` program `golf.exe` from a Command Prompt window. Please remember to specify a reasonable date and time rather than the one used in this example.
 ```apl
-`csharp>golf 2006-08-07T08:00:00 T.Woods A.Palmer P.Donnelly
+csharp>golf 2006-08-07T08:00:00 T.Woods A.Palmer P.Donnelly
 True
 25/08/2008 08:00:00
 T.Woods
 A.Palmer
 P.Donnelly
 
-csharp>`
+csharp>
+
 ```

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">OLEControls</span></h1>
 
-| Applies To: | [Root](../a-z/root.md) |
-| --- | ---  |
+Applies To: [Root](../a-z/root.md)
 
 
 **Description**

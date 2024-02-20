@@ -1,10 +1,10 @@
 # Web Service (.asmx) Scripts
 
-Web Services may be written in a variety of languages, including `APLScript`, the scripting version of Dyalog APL. See [APLScript on page 1](../APLScript/Chapter Heading.htm#Chapter_Heading).
+Web Services may be written in a variety of languages, including `APLScript`, the scripting version of Dyalog APL. See [APLScript](../APLScript/Chapter Heading.htm#Chapter_Heading).
 
 The first statement in the script file declares the language and the name of the service. For example, the following statement declares a Dyalog APL Web Service named `GolfService`.
 ```apl
-`<%@ WebService Language="Dyalog" Class="GolfService" %>`
+<%@ WebService Language="Dyalog" Class="GolfService" %>
 ```
 
 Note that `Language="Dyalog"` is specifically connected to the Dyalog APL script compiler through the application's web.config file or through the global ASP.NET system file `Machine.config`. Note that versions of Dyalog prior to 11.0 used `Language="APL"`.

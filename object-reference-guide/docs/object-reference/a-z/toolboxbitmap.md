@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ToolboxBitmap</span></h1>
 
-| Applies To: | [ActiveXControl](./activexcontrol.md) | [OCXClass](./ocxclass.md) |
-| --- | --- | ---  |
+Applies To: [ActiveXControl](./activexcontrol.md) [OCXClass](./ocxclass.md)
 
 
 **Description**

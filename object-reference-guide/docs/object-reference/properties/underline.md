@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Underline</span></h1>
 
-| Applies To: | [Font](../a-z/font.md) |
-| --- | ---  |
+Applies To: [Font](../a-z/font.md)
 
 
 **Description**

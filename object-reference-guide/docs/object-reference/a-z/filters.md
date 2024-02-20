@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Filters</span></h1>
 
-| Applies To: | [FileBox](./filebox.md) |
-| --- | ---  |
+Applies To: [FileBox](./filebox.md)
 
 
 **Description**

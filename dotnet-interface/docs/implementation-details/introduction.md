@@ -10,5 +10,6 @@ For the names of these files corresponding to the version of Dyalog that you are
 
 Files and Directories
 
-Files on page 1
+[
+Files](../../UserGuide/Installation and Configuration/Files and Directories.htm#Files)
 .

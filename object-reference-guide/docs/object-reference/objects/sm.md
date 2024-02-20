@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">SM</span></h1>
 
-| [Parents](../ParentLists/SM.htm) | [Children](../ChildLists/SM.htm) | [Properties](../PropLists/SM.htm) | [Methods](../MethodLists/SM.htm) | [Events](../EventLists/SM.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/SM.htm) [Children](../ChildLists/SM.htm) [Properties](../PropLists/SM.htm) [Methods](../MethodLists/SM.htm) [Events](../EventLists/SM.htm)
 
 
-| Purpose: | Defines a window for `⎕SM` / `⎕SR` . |
-| --- | ---  |
+Purpose: Defines a window for `⎕SM` / `⎕SR` .
 
 
 **Description**

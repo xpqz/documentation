@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">ToolButton</span></h1>
 
-| [Parents](../ParentLists/ToolButton.htm) | [Children](../ChildLists/ToolButton.htm) | [Properties](../PropLists/ToolButton.htm) | [Methods](../MethodLists/ToolButton.htm) | [Events](../EventLists/ToolButton.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/ToolButton.htm) [Children](../ChildLists/ToolButton.htm) [Properties](../PropLists/ToolButton.htm) [Methods](../MethodLists/ToolButton.htm) [Events](../EventLists/ToolButton.htm)
 
 
-| Purpose: | The ToolButton object represents a button in a ToolControl. |
-| --- | ---  |
+Purpose: The ToolButton object represents a button in a ToolControl.
 
 
 **Description**

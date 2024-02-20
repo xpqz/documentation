@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Spin</span></h1>
 
-| Applies To: | [Spinner](./spinner.md) | [UpDown](./updown.md) |
-| --- | --- | ---  |
+Applies To: [Spinner](./spinner.md) [UpDown](./updown.md)
 
 
 **Description**

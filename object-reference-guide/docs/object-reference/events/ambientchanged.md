@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">AmbientChanged</span></h1>
 
-| Applies To: | [ActiveXContainer](../a-z/activexcontainer.md) | [ActiveXControl](../a-z/activexcontrol.md) |
-| --- | --- | ---  |
+Applies To: [ActiveXContainer](../a-z/activexcontainer.md) [ActiveXControl](../a-z/activexcontrol.md)
 
 
 **Description**

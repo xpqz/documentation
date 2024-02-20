@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SetVarInfo</span></h1>
 
-| Applies To: | [ActiveXControl](./activexcontrol.md) | [OLEServer](./oleserver.md) |
-| --- | --- | ---  |
+Applies To: [ActiveXControl](./activexcontrol.md) [OLEServer](./oleserver.md)
 
 
 **Description**

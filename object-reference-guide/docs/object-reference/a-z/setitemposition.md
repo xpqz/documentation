@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SetItemPosition</span></h1>
 
-| Applies To: | [ListView](./listview.md) |
-| --- | ---  |
+Applies To: [ListView](./listview.md)
 
 
 **Description**

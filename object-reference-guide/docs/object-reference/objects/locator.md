@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Locator</span></h1>
 
-| [Parents](../ParentLists/Locator.htm) | [Children](../ChildLists/Locator.htm) | [Properties](../PropLists/Locator.htm) | [Methods](../MethodLists/Locator.htm) | [Events](../EventLists/Locator.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Locator.htm) [Children](../ChildLists/Locator.htm) [Properties](../PropLists/Locator.htm) [Methods](../MethodLists/Locator.htm) [Events](../EventLists/Locator.htm)
 
 
-| Purpose: | Allows the user to input a point, ellipse, line or rectangle. |
-| --- | ---  |
+Purpose: Allows the user to input a point, ellipse, line or rectangle.
 
 
 **Description**

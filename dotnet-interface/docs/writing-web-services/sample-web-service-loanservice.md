@@ -2,7 +2,7 @@
 
 The `LoanService` sample is supplied in `Dyalog\Samples\asp.net\Loan\Loan.asmx`, which is mapped via an IIS Virtual Directory to the URL:
 ```apl
-`http://localhost/dyalog.net.15.0.unicode.32/Loan/Loan.asmx`
+ http://localhost/dyalog.net.15.0.unicode.32/Loan/Loan.asmx
 ```
 
 This `APLScript` sample defines a class named `LoanService` that is based upon`System.Web.Services.WebService`. The `LoanService` class defines a sub-class called `LoanResult` and a method called `CalcPayments`.

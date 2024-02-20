@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">InputMode</span></h1>
 
-| Applies To: | [Grid](./grid.md) |
-| --- | ---  |
+Applies To: [Grid](./grid.md)
 
 
 **Description**
@@ -29,7 +28,7 @@ InputMode is a character vector with one of the following values:
 
 
 
-By default, the input mode is *Scroll*. In this mode, cursor movement keys are actioned by the Grid itself and used to move from cell to cell. The user may switch to *InCell* mode by double-clicking or by pressing the key defined by [InputModeKey](InputModeKey.htm) (the default is "F2").
+By default, the input mode is *Scroll*. In this mode, cursor movement keys are actioned by the Grid itself and used to move from cell to cell. The user may switch to *InCell* mode by double-clicking or by pressing the key defined by [InputModeKey](inputmodekey.md) (the default is "F2").
 
 
 In *InCell* mode, all cursor movement keys are actioned by the Input object and typically move the cursor around *within*the Input object and do not switch between cells. When the user switches to a different cell, InputMode reverts to*Scroll*mode
@@ -44,7 +43,7 @@ If InputMode is `'AutoEdit'`, the behaviour of a cell that contains a floating I
 When the user enters the cell, the contents are selected (and highlighted).At this stage, the cursor movement keys move to an adjacent cell. If the user presses a (valid) data key, that character replaces the current contents of the cell.
 
 
-If the user presses F2 (or the key defined by the [InputModeKey](InputModeKey.htm) property), the data is de-selected and unhighlighted and the cursor is placed at the rightmost end of the data.
+If the user presses F2 (or the key defined by the [InputModeKey](inputmodekey.md) property), the data is de-selected and unhighlighted and the cursor is placed at the rightmost end of the data.
 
 
 In either case, the left and right cursor keys now move the cursor within the current data string, but skip to the adjacent cell from the beginning or end of the data. This behaviour differs from *InCell* mode in which the cursor movement keys *stick* at the end of the data.

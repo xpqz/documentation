@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">SubForm</span></h1>
 
-| [Parents](../ParentLists/SubForm.htm) | [Children](../ChildLists/SubForm.htm) | [Properties](../PropLists/SubForm.htm) | [Methods](../MethodLists/SubForm.htm) | [Events](../EventLists/SubForm.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/SubForm.htm) [Children](../ChildLists/SubForm.htm) [Properties](../PropLists/SubForm.htm) [Methods](../MethodLists/SubForm.htm) [Events](../EventLists/SubForm.htm)
 
 
-| Purpose: | This object represents a window that is owned by and constrained         within another [Form](../a-z/form.md) or an [MDIClient](../a-z/mdiclient.md) . |
-| --- | ---  |
+Purpose: This object represents a window that is owned by and constrained         within another [Form](../a-z/form.md) or an [MDIClient](../a-z/mdiclient.md) .
 
 
 **Description**

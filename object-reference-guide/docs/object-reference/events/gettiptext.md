@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">GetTipText</span></h1>
 
-| Applies To: | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
-| --- | --- | ---  |
+Applies To: [ListView](../a-z/listview.md) [TreeView](../a-z/treeview.md)
 
 
 **Description**
@@ -26,7 +25,7 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 | `[5]` | TipText | The text to be displayed. |
 
 
-Modifying and returning the 5th element of the argument to the callback function allows the application to change the displayed tip.
+Modifying and returning the 5<sup>th</sup> element of the argument to the callback function allows the application to change the displayed tip.
 
 
 The text can be set to a character array of rank 2 or less.
@@ -39,6 +38,6 @@ The default processing for the event is to display the default tip (if there is 
 The associated callback is run **immediately** while the windows notification is still on the stack. See 
 Interface Guide: 
 
-High-Priority Callback FunctionsHigh-Priority Callback Functions on page 1.
+High-Priority Callback Functions[High-Priority Callback Functions](../../InterfaceGuide/Introduction/High Priority Callbacks.htm#High-Priority_Callback_Functions).
 
 

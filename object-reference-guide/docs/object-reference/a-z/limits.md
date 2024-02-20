@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Limits</span></h1>
 
-| Applies To: | [ProgressBar](./progressbar.md) | [Scroll](./scroll.md) | [Spinner](./spinner.md) | [TrackBar](./trackbar.md) | [UpDown](./updown.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [ProgressBar](./progressbar.md) [Scroll](./scroll.md) [Spinner](./spinner.md) [TrackBar](./trackbar.md) [UpDown](./updown.md)
 
 
 **Description**

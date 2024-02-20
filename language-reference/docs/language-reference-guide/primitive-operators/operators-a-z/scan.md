@@ -11,7 +11,7 @@
 The axis specification is optional.  If present, `K` must identify an axis of `Y`.  If absent, the last axis of `Y` is implied.  The form `R←f⍀Y` implies the first axis of `Y`.
 
 
-`R` is an array formed by successive reductions along the `K`th axis of `Y`.  If `V` is a typical vector taken from the `K`th axis of `Y`, then the `I`th element of the result is determined as `f/I↑V`.
+`R` is an array formed by successive reductions along the `K`th axis of `Y`.  If `V` is a typical vector taken from the `K`th axis of `Y`, then the `I`<sup>th</sup> element of the result is determined as `f/I↑V`.
 
 
 The shape of `R` is the same as the shape of `Y`.  If `Y` is an empty array, then `R` is the same empty array.

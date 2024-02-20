@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">TCPClose</span></h1>
 
-| Applies To: | [TCPSocket](./tcpsocket.md) |
-| --- | ---  |
+Applies To: [TCPSocket](./tcpsocket.md)
 
 
 **Description**

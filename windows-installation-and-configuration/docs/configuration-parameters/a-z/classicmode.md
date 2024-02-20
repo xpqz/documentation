@@ -4,4 +4,4 @@ This parameter specifies whether or not the Session operates in *Dyalog Classic 
 
 Note that in this mode, a maximum of 50 Trace windows may be displayed.
 
-See also [Classic Dyalog mode on page 1](../../The APL Environment/Configuration Dialog Trace_Edit Tab.htm#ClassicMode).
+See also [Classic Dyalog mode](../../The APL Environment/Configuration Dialog Trace_Edit Tab.htm#ClassicMode).

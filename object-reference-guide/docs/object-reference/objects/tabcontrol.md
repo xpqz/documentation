@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">TabControl</span></h1>
 
-| [Parents](../ParentLists/TabControl.htm) | [Children](../ChildLists/TabControl.htm) | [Properties](../PropLists/TabControl.htm) | [Methods](../MethodLists/TabControl.htm) | [Events](../EventLists/TabControl.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/TabControl.htm) [Children](../ChildLists/TabControl.htm) [Properties](../PropLists/TabControl.htm) [Methods](../MethodLists/TabControl.htm) [Events](../EventLists/TabControl.htm)
 
 
-| Purpose: | The TabControl object provides access to the native Windows tab         control. |
-| --- | ---  |
+Purpose: The TabControl object provides access to the native Windows tab         control.
 
 
 **Description**

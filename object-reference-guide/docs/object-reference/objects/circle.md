@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Circle</span></h1>
 
-| [Parents](../ParentLists/Circle.htm) | [Children](../ChildLists/Circle.htm) | [Properties](../PropLists/Circle.htm) | [Methods](../MethodLists/Circle.htm) | [Events](../EventLists/Circle.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Circle.htm) [Children](../ChildLists/Circle.htm) [Properties](../PropLists/Circle.htm) [Methods](../MethodLists/Circle.htm) [Events](../EventLists/Circle.htm)
 
 
-| Purpose: | A Graphical object to draw circles, arcs, and pie-slices. |
-| --- | ---  |
+Purpose: A Graphical object to draw circles, arcs, and pie-slices.
 
 
 **Description**

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">StartIn</span></h1>
 
-| Applies To: | [BrowseBox](./browsebox.md) |
-| --- | ---  |
+Applies To: [BrowseBox](./browsebox.md)
 
 
 **Description**

@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Animation</span></h1>
 
-| [Parents](../ParentLists/Animation.htm) | [Children](../ChildLists/Animation.htm) | [Properties](../PropLists/Animation.htm) | [Methods](../MethodLists/Animation.htm) | [Events](../EventLists/Animation.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Animation.htm) [Children](../ChildLists/Animation.htm) [Properties](../PropLists/Animation.htm) [Methods](../MethodLists/Animation.htm) [Events](../EventLists/Animation.htm)
 
 
-| Purpose: | The Animation object displays simple animations from basic .AVI files or resources. |
-| --- | ---  |
+Purpose: The Animation object displays simple animations from basic .AVI files or resources.
 
 
 **Description**

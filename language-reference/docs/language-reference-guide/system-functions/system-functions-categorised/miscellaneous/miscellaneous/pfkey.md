@@ -18,7 +18,7 @@ Note that RIDE does not currently support the use of `⎕PFKEY`; it is possible
 If `X` is specified it is a simple or nested character vector defining the new setting of the key.  The value of `X` is returned in the result `R`.
 
 
-The elements of `X` are either character scalars or 2-element character vectors which specify keycodes. See [Keyboard Shortcuts on page 1](../../UserGuide/The APL Environment/Keyboard Shortcuts.htm#Keyboard_Shortcuts).
+The elements of `X` are either character scalars or 2-element character vectors which specify keycodes. See [Keyboard Shortcuts](../../UserGuide/The APL Environment/Keyboard Shortcuts.htm#Keyboard_Shortcuts).
 
 
 Programmable function keys are recognised in any of the three types of window (SESSION, EDIT and TRACE) provided by the Dyalog APL development environment. `⎕SR` operates with the 'raw' function keys and ignores programmed settings.

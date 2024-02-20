@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SelImageIndex</span></h1>
 
-| Applies To: | [ComboEx](../a-z/comboex.md) | [TreeView](../a-z/treeview.md) |
-| --- | --- | ---  |
+Applies To: [ComboEx](../a-z/comboex.md) [TreeView](../a-z/treeview.md)
 
 
 **Description**

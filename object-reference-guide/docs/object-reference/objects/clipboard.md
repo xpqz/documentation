@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Clipboard</span></h1>
 
-| [Parents](../ParentLists/Clipboard.htm) | [Children](../ChildLists/Clipboard.htm) | [Properties](../PropLists/Clipboard.htm) | [Methods](../MethodLists/Clipboard.htm) | [Events](../EventLists/Clipboard.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Clipboard.htm) [Children](../ChildLists/Clipboard.htm) [Properties](../PropLists/Clipboard.htm) [Methods](../MethodLists/Clipboard.htm) [Events](../EventLists/Clipboard.htm)
 
 
-| Purpose: | This object provides access to the Windows clipboard. |
-| --- | ---  |
+Purpose: This object provides access to the Windows clipboard.
 
 
 **Description**

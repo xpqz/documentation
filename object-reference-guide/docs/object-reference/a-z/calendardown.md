@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">CalendarDown</span></h1>
 
-| Applies To: | [Calendar](./calendar.md) |
-| --- | ---  |
+Applies To: [Calendar](./calendar.md)
 
 
 **Description**
@@ -35,24 +34,24 @@ vector as follows :
 
 
 
-The 6th element of the event message is one of the following values:
+The 6<sup>th</sup> element of the event message is one of the following values:
 
 
-If the value of the 6th element of the event message is 2
-(CALENDARDATE), the 3rd element is the corresponding date reported as
+If the value of the 6<sup>th</sup> element of the event message is 2
+(CALENDARDATE), the 3<sup>rd</sup> element is the corresponding date reported as
 an [IDN](../Miscellaneous/International Day Number.htm).
 
 
-If the value of the 6th element of the event message is 5
-(CALENDARDAY), the 3rd element is the index of the corresponding
+If the value of the 6<sup>th</sup> element of the event message is 5
+(CALENDARDAY), the 3<sup>rd</sup> element is the index of the corresponding
 weekday (0-6).
 
 
-If the value of the 6th element of the event message is 6
-(CALENDARWEEKNUM), the 3rd element is the date of the first
+If the value of the 6<sup>th</sup> element of the event message is 6
+(CALENDARWEEKNUM), the 3<sup>rd</sup> element is the date of the first
 (leftmost) day in the corresponding week, reported as an [IDN](../Miscellaneous/International Day Number.htm).
 
 
-Otherwise, the 3rd element of the event message is 0.
+Otherwise, the 3<sup>rd</sup> element of the event message is 0.
 
 

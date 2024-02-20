@@ -6,7 +6,7 @@ The *maximum* amount of memory allocated to a Dyalog APL workspace is defined by
 
 Upon `)LOAD` and `)CLEAR`, APL allocates an amount of memory corresponding to the size of the workspace being loaded (which is zero for a clear ws) plus the *workspace delta.*
 
-The workspace delta is 1/16th of maxws, except if there is less than 1/16th of maxws in use, delta is 1/64th of maxws. This may also be expressed as follows:
+The workspace delta is 1/16<sup>th</sup> of maxws, except if there is less than 1/16<sup>th</sup> of maxws in use, delta is 1/64<sup>th</sup> of maxws. This may also be expressed as follows:
 ```apl
       delta←maxws{⌈⍺÷⊃(⍵>⍺÷16)⌽64 16}ws
 ```
@@ -34,5 +34,5 @@ The system function `⎕WA` may therefore be used judiciously (workspace reorgan
 
 Note that in Dyalog APL, the SYMBOL TABLE is entirely dynamic and grows and shrinks in size automatically. There is no `SYMBOL TABLE FULL` condition.
 
-Additional functions for managing the memory used by the workspace are described in   [Memory Manager Statistics: on page 1](../../Language/I Beam Functions/Memory Manager Statistics.htm#MemoryManagerStatistics) and
-		                                                                                     [Specify Workspace Available: on page 1](../../Language/I Beam Functions/Specify Workspace Available.htm#Specify_Workspace_Available).
+Additional functions for managing the memory used by the workspace are described in   [Memory Manager Statistics:](../../Language/I Beam Functions/Memory Manager Statistics.htm#MemoryManagerStatistics) and
+		                                                                                     [Specify Workspace Available:](../../Language/I Beam Functions/Specify Workspace Available.htm#Specify_Workspace_Available).

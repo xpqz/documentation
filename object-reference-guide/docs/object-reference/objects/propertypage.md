@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">PropertyPage</span></h1>
 
-| [Parents](../ParentLists/PropertyPage.htm) | [Children](../ChildLists/PropertyPage.htm) | [Properties](../PropLists/PropertyPage.htm) | [Methods](../MethodLists/PropertyPage.htm) | [Events](../EventLists/PropertyPage.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/PropertyPage.htm) [Children](../ChildLists/PropertyPage.htm) [Properties](../PropLists/PropertyPage.htm) [Methods](../MethodLists/PropertyPage.htm) [Events](../EventLists/PropertyPage.htm)
 
 
-| Purpose: | The PropertyPage object represents a single page in a PropertySheet. |
-| --- | ---  |
+Purpose: The PropertyPage object represents a single page in a PropertySheet.
 
 
 **Description**

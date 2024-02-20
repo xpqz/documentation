@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">RichEdit</span></h1>
 
-| [Parents](../ParentLists/RichEdit.htm) | [Children](../ChildLists/RichEdit.htm) | [Properties](../PropLists/RichEdit.htm) | [Methods](../MethodLists/RichEdit.htm) | [Events](../EventLists/RichEdit.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/RichEdit.htm) [Children](../ChildLists/RichEdit.htm) [Properties](../PropLists/RichEdit.htm) [Methods](../MethodLists/RichEdit.htm) [Events](../EventLists/RichEdit.htm)
 
 
-| Purpose: | The RichEdit object is a multi-line text editor that provides a wide range of word-processing capabilities. |
-| --- | ---  |
+Purpose: The RichEdit object is a multi-line text editor that provides a wide range of word-processing capabilities.
 
 
 **Description**

@@ -34,21 +34,30 @@ The steps involved in converting the workspaces were as follows:
 
 1. Replace the Dyalog APL GUI with the equivalent HTML Forms, which are defined in one or more separate `.aspx` web pages. To retain consistency, it is helpful to give the ASP controls the same names as the original GUI controls, which they are replacing.
 2. Attach the names of APL callback functions to the appropriate ASP controls; essentially, any controls that will be involved in a postback operation, such as the Submit button. 
-3. Starting with a `CLEAR WS`, create a `Class` that represents a .NET class based upon `System.Web.UI.Page`. For example, in converting the ACTFNS workspace, we started by creating the class:      )edit ○actuarial
+3. Starting with a `CLEAR WS`, create a `Class` that represents a .NET class based upon `System.Web.UI.Page`. For example, in converting the ACTFNS workspace, we started by creating the class:```apl
+      )edit ○actuarial
 			 
-4. then defining `⎕USING` as follows::Using System                      
+```
+
+4. then defining `⎕USING` as follows:```apl
+:Using System                      
 :Using System.Web.UI,system.web.dll
 :Using System.Web.UI.WebControls      
 :Using System.Web.UI.HtmlControls     
 :Using System.Data,system.data.dll 
+```
+
 The name you choose for this class will replace `classname` in the `Inherits="classname"` declaration in the `.aspx` web page(s) that call it.
 
-5. Create a namespace, change into it, and copy the workspace to be converted; in this case, the starting point was a workspace named `DH_ACTFNS`:
+5. Create a namespace, change into it, and copy the workspace to be converted; in this case, the starting point was a workspace named `DH_ACTFNS`:```apl
+
       )NS actuarial_utils
       )CS actuarial_utils
 #.actuarial_utils
       )COPY DH_ACTFNS
 DH_ACTFNS saved ...
+```
+
 6. Modify the code as appropriate, inserting a `Page_Load` function and whatever callback functions that are required.
 7. Make sure the class 'actuarial' has an *:Include actuarial_utils*statement
 ### The Page_Load function
@@ -104,7 +113,7 @@ Note that the `actuarial` class is used by two different web pages, and the func
 
 The actuarial class in ACTFNS.DWS provides four callback functions named `CALC_FSLTAB_RESULTS`, `CALC_FSL_RESULTS,``CHANGE_TABLES` and `CHANGE_TABLE_FORMAT`. The first two of these functions are attached as callbacks to the **Calculate** button in each of two separate web pages `sla_tab.aspx` and `sla_disp.aspx`. For example, the statement that defines the button in `sla_tab.aspx` is:
 ```apl
-`<asp:Button id=Button1 runat="server" Text="Calculate" onClick="CALC_FSLTAB_RESULTS"></asp:Button>`
+<asp:Button id=Button1 runat="server" Text="Calculate" onClick="CALC_FSLTAB_RESULTS"></asp:Button>
 ```
 
 The third callback, `CHANGE_TABLES`, is called by `sla_tab.aspx` when the user selects a different set of Mortality Tables from the three provided. `CHANGE_TABLE_FORMAT` is called when the user clicks either of the two radio buttons that select how the output is to be displayed.
@@ -125,25 +134,27 @@ For example, the statements for the function `CALC_FSLTAB_RESULTS` is shown belo
 
 In a Dyalog APL web page application, there are basically two approaches to validation. You can handle it entirely yourself or you can exploit the various validation controls that come with ASP.NET. The sample application uses the latter approach by way of illustration. For example:
 ```apl
-`<asp:TextBox id=EINT runat="server"></asp:TextBox>
+<asp:TextBox id=EINT runat="server"></asp:TextBox>
 <asp:RequiredFieldValidator id="RFVINT"
      ControlToValidate="EINT"
      ErrorMessage="Interest Rate must be a number
                    between 0 and 20"
      Text="*"
-     runat="server"/></td>`
+     runat="server"/></td>
+
 ```
 
 These ASP.NET statements associate a `RequiredFieldValidator`named *RFVINT* with the *EINT* field, the field used to enter **Interest Rate**. If the user leaves this field blank, the system will automatically generate the specified error message. The page defines a separate `ValidationSummary` control as follows:
 ```apl
-`<asp:ValidationSummary id="Summary1" 
+<asp:ValidationSummary id="Summary1" 
 HeaderText="Please enter a value in the following 
       fields"
      Font-Size="smaller"
      ShowSummary="false"
      ShowMessageBox="true"
      EnableClientScript="true"
-     runat="server"/>`
+     runat="server"/>
+
 ```
 
 The `ValidationSummary` control collects error messages from all the other validation controls on the page, and displays them together. In this case, a pop-up message box is used. One advantage of this approach is that this type of validation can be carried out client-side by local JavaScript that is generated automatically on the server and incorporated in the HTML that is sent to the browser.
@@ -151,13 +162,14 @@ The `ValidationSummary` control collects error messages from all the other valid
 Logical field validation for this page is carried out on the server by APL functions that are attached to `CustomValidator` controls. For example:
 
 ```apl
-`<asp:CustomValidator id="CustomValidator_INT" 
+<asp:CustomValidator id="CustomValidator_INT" 
      OnServerValidate="VALIDATE_INT"
      ControlToValidate="EINT"
      Display="Dynamic"                 
      ErrorMessage="Interest Rate must be a number between
                    0 and 20"
-     runat="server"/>`
+     runat="server"/>
+
 ```
 
 These ASP.NET statements associate a `CustomValidator` control named **CustomValidator_INT** with the **Interest Rate** field **EINT**. The statement `OnServerValidate="VALIDATE_INT"` specifies that `VALIDATE_INT` is the validation function for the**CustomValidator_INT** object.
@@ -301,7 +313,7 @@ Line [5] uses similar logic to set up an appropriate error message, which is ass
 
 Validation controls are automatically invoked when the user activates a Button control, but not when other postbacks occur. For example, when the user selects a different Mortality Table (represented by a `RadioButtonList` control), the page calls the `CHANGE_TABLES` function.
 ```apl
-`<asp:RadioButtonList id=MT runat="server"
+<asp:RadioButtonList id=MT runat="server"
      RepeatDirection="Vertical" RepeatRows="3"  tabIndex=1
      onSelectedIndexChanged="CHANGE_TABLES" 
      AutoPostBack="true">
@@ -311,7 +323,8 @@ Validation controls are automatically invoked when the user activates a Button c
      UK Immediate Annuitant</asp:ListItem>
 <asp:ListItem Value="UK Pension Annuitant">
      UK Pension Annuitant</asp:ListItem>
-</asp:RadioButtonList>`
+</asp:RadioButtonList>
+
 ```
 
 A `RadioButtonList` control does not cause validation to occur, so this must be done explicitly. This is easily achieved by calling the `Validate` method of the Page itself as shown in `CHANGE_TABLES[11]` below.
@@ -385,7 +398,7 @@ The function `CALC_FSLTAB_RESULTS`, which for brevity is only partially shown be
 
 The results of the calculation are displayed in a DataGrid object named `fsl`. This is defined within the `sla_tab.aspx` page as follows:
 ```apl
-`<asp:DataGrid id="fsl" runat="server" Width="700"
+<asp:DataGrid id="fsl" runat="server" Width="700"
      AllowPaging="false" BorderColor="black" CellPadding="3"
      CellSpacing="0" Font-Size="9pt" PageSize="10">
      <ItemStyle HorizontalAlign="right" Width="100">
@@ -393,7 +406,8 @@ The results of the calculation are displayed in a DataGrid object named `fsl`. T
      <HeaderStyle HorizontalAlign="center"
      Font-Size="12pt" Font-Bold="true" BackColor="#17748A"
      ForeColor="#FFFFFF"></HeaderStyle>
-     </asp:DataGrid>`
+     </asp:DataGrid>
+
 ```
 
 `CALC_FSLTAB_RESULTS[1]` checks to see if the user input is valid. If not, `[55]` hides the `DataGrid`object `fsl` so that no results are displayed in the page. The display of error messages is handled separately, and automatically, by the `ValidationSummary` control on the page.

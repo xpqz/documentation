@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Execute (UNIX) Command</span><span class="command">{R}←⎕SH Y</span></h1>
 
-`⎕SH` executes a UNIX shell or a Windows Command Processor.  `⎕SH` is a synonym of `⎕CMD`.  Either function may be used in either environment (UNIX or Windows) with exactly the same effect.  `⎕SH` is probably more natural for the UNIX user.  This section describes the behaviour of `⎕SH` and `⎕CMD` under UNIX.  See "Execute Windows Command: " on page 1 for a discussion of the behaviour of these system functions under Windows.
+`⎕SH` executes a UNIX shell or a Windows Command Processor.  `⎕SH` is a synonym of `⎕CMD`.  Either function may be used in either environment (UNIX or Windows) with exactly the same effect.  `⎕SH` is probably more natural for the UNIX user.  This section describes the behaviour of `⎕SH` and `⎕CMD` under UNIX.  See ["Execute Windows Command: "](execute-windows-command.md) for a discussion of the behaviour of these system functions under Windows.
 
 
 
@@ -28,7 +28,7 @@ bin:!:2:2::/bin:
 ```
 
 
-The system commands [`)SH`](../../../system-commands/system-commands-a-z/sh.md) and [`)CMD`](../../../system-commands/system-commands-a-z/cmd.md) provide similar facilities. For further information, see Execute (UNIX) Command:  on page 1 and Example on page 1.
+The system commands [`)SH`](../../../system-commands/system-commands-a-z/sh.md) and [`)CMD`](../../../system-commands/system-commands-a-z/cmd.md) provide similar facilities. For further information, see [Execute (UNIX) Command: ](../../../system-commands/system-commands-a-z/sh.md) and [Example](../../../system-commands/system-commands-a-z/cmd.md).
 
 #### Note:
 

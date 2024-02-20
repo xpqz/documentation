@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Native File Move</span><span class="command">{R}←X ⎕NMOVE Y</span></h1>
 
-This function moves native files and directories from one or more sources specified by `Y` to a destination specified by  `X`. `⎕NMOVE` is similar to `⎕NCOPY` (see Native File Copy  on page 1).
+This function moves native files and directories from one or more sources specified by `Y` to a destination specified by  `X`. `⎕NMOVE` is similar to `⎕NCOPY` (see [Native File Copy ](ncopy.htm#NativeFileCopy)).
 
 
 When possible `⎕NMOVE` *renames* files and directories, which effects a fast move when the source and destination are on the same file system. By default (see RenameOnly option below), if `⎕NMOVE` is unable to rename files or directories, it instead copies them and deletes the originals.
@@ -171,7 +171,7 @@ When `⎕NMOVE` copies and deletes files:
 
 | 0 | The name or names in `Y` identifies a specific file name. |
 | --- | ---  |
-| `1` | The name or names in `Y` that specify the **base name** and **extension** (see NParts on page 1 ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character. |
+| `1` | The name or names in `Y` that specify the **base name** and **extension** (see [NParts](../../../system-functions-a-z/system-functions-a-z/nparts.md) ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character. |
 
 #### ProgressCallback Option
 
@@ -213,9 +213,9 @@ The right argument given to the callback function is a 3-element vector:
 Event is a character vector which indicates the stage of the copy or move operation..
 
 
-| `'Start'` | Reported by the first invocation of the callback which occurs before any files are scanned or processed. This may be used to set the parameters that control the operation. See Options on page 1 . |
+| `'Start'` | Reported by the first invocation of the callback which occurs before any files are scanned or processed. This may be used to set the parameters that control the operation. See [Options](#Options) . |
 | --- | ---  |
-| `'Scan'` | Indicates that the system function is in the initial phase of scanning the files in order to calculate `Limit` . See ScanFirst on page 1 . |
+| `'Scan'` | Indicates that the system function is in the initial phase of scanning the files in order to calculate `Limit` . See [ScanFirst](#ScanFirst) . |
 | `'Progress'` | Indicates that the system function is at the main stage of the operation and is moving or copying the files. |
 | `'Done'` | Indicates that all files have been processed. |
 

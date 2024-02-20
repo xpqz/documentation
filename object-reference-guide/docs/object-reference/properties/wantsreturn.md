@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">WantsReturn</span></h1>
 
-| Applies To: | [Edit](../a-z/edit.md) | [RichEdit](../a-z/richedit.md) |
-| --- | --- | ---  |
+Applies To: [Edit](../a-z/edit.md) [RichEdit](../a-z/richedit.md)
 
 
 **Description**

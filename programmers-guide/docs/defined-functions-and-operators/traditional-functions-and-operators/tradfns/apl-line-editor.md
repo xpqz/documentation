@@ -7,7 +7,7 @@ Using the APL Line Editor, functions and operators are defined by entering Defin
 Operations may also be defined using the system function `⎕FX` (implicit in a `⎕ED` fix) which acts upon the canonical (character), vector, nested or object representation form of an operation. (See 
 Language Reference Guide: 
 
-Fix DefinitionFix Definition  on page 1 for details.)
+Fix Definition[Fix Definition ](../../System Functions/fx.htm#FixDefinition) for details.)
 
 Functions may also be created dynamically or by function assignment.
 

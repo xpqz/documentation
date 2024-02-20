@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Bitmap</span></h1>
 
-| [Parents](../ParentLists/Bitmap.htm) | [Children](../ChildLists/Bitmap.htm) | [Properties](../PropLists/Bitmap.htm) | [Methods](../MethodLists/Bitmap.htm) | [Events](../EventLists/Bitmap.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Bitmap.htm) [Children](../ChildLists/Bitmap.htm) [Properties](../PropLists/Bitmap.htm) [Methods](../MethodLists/Bitmap.htm) [Events](../EventLists/Bitmap.htm)
 
 
-| Purpose: | A graphical object used to represent a bitmap which may be used both to display a picture or as a pattern (brush) used to fill other objects. |
-| --- | ---  |
+Purpose: A graphical object used to represent a bitmap which may be used both to display a picture or as a pattern (brush) used to fill other objects.
 
 
 **Description**
@@ -65,12 +63,12 @@ The [MakeGIF](./makegif.md) and [MakePNG](./makepng.md) methods may be used to c
 Using a bitmap is always a 2-stage process. First you create a Bitmap object with [`⎕WC`](../../Language/System Functions/wc.htm). Then you use it by specifying its name as a property of another object.
 
 
-The [Picture](./picture.md) property specifies the name of a Bitmap to be displayed in an [ActiveXControl](activexcontrol.md), [Button](button.md), [Form](Form.htm), [Group](group.md), [Image](image.md), [MDIClient](MDIClient.htm), [Sm](SM.htm), [Static](static.md), [StatusBar](StatusBar.htm), [StatusField](statusfield.md), [SubForm](subform.md), [TabBar](TabBar.htm), or [ToolBar](toolbar.md).
+The [Picture](./picture.md) property specifies the name of a Bitmap to be displayed in an [ActiveXControl](activexcontrol.md), [Button](button.md), [Form](form.md), [Group](group.md), [Image](image.md), [MDIClient](mdiclient.md), [Sm](sm.md), [Static](static.md), [StatusBar](statusbar.md), [StatusField](statusfield.md), [SubForm](subform.md), [TabBar](tabbar.md), or [ToolBar](toolbar.md).
 
 
-The [BtnPix](./btnpix.md) property specifies three Bitmaps to be used to represent the 3 states of a [Button](button.md), [Menu](Menu.htm) or [MenuItem](MenuItem.htm).
+The [BtnPix](./btnpix.md) property specifies three Bitmaps to be used to represent the 3 states of a [Button](button.md), [Menu](menu.md) or [MenuItem](menuitem.md).
 
 
-The [FStyle](./fstyle.md) property specifies the name of a Bitmap to be used as a pattern to fill a [Poly](Poly.htm), [Ellipse](ellipse.md) or [Rect](rect.md) object.
+The [FStyle](./fstyle.md) property specifies the name of a Bitmap to be used as a pattern to fill a [Poly](poly.md), [Ellipse](ellipse.md) or [Rect](rect.md) object.
 
 

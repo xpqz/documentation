@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">BtnPix</span></h1>
 
-| Applies To: | [Button](../a-z/button.md) | [Menu](../a-z/menu.md) | [MenuItem](../a-z/menuitem.md) |
-| --- | --- | --- | ---  |
+Applies To: [Button](../a-z/button.md) [Menu](../a-z/menu.md) [MenuItem](../a-z/menuitem.md)
 
 
 **Description**

@@ -27,6 +27,6 @@ The following (`⎕ML=0`) function returns a 2-column snapshot of the contents o
 
 
 
-See also: [Querying  the Token Pool (Y is 2) on page 1](talloc.md).
+See also: [Querying  the Token Pool (Y is 2)](talloc.md).
 
 

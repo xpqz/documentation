@@ -8,7 +8,7 @@
 `Y` may be any array.  `X` must be a simple scalar or vector whose elements are included in the set `⍳⍴⍴Y`.  Integer values in `X` may be repeated but all integers in the set `⍳⌈/X` must be included.  The length of `X` must equal the rank of `Y`.
 
 
-`R` is an array formed by the transposition of the axes of `Y` as specified by `X`.  The `I`th element of `X` gives the new position for the `I`th axis of `Y`.  If `X` repositions two or more axes of `Y` to the same axis, the elements used to fill this axis are those whose indices on the relevant axes of `Y` are equal.
+`R` is an array formed by the transposition of the axes of `Y` as specified by `X`.  The `I`<sup>th</sup> element of `X` gives the new position for the `I`<sup>th</sup> axis of `Y`.  If `X` repositions two or more axes of `Y` to the same axis, the elements used to fill this axis are those whose indices on the relevant axes of `Y` are equal.
 
 
 `⎕IO` is an implicit argument of Dyadic Transpose.

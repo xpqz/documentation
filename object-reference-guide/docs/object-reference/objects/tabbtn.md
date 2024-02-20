@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">TabBtn</span></h1>
 
-| [Parents](../ParentLists/TabBtn.htm) | [Children](../ChildLists/TabBtn.htm) | [Properties](../PropLists/TabBtn.htm) | [Methods](../MethodLists/TabBtn.htm) | [Events](../EventLists/TabBtn.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/TabBtn.htm) [Children](../ChildLists/TabBtn.htm) [Properties](../PropLists/TabBtn.htm) [Methods](../MethodLists/TabBtn.htm) [Events](../EventLists/TabBtn.htm)
 
 
-| Purpose: | To tab a [SubForm](../a-z/subform.md) . |
-| --- | ---  |
+Purpose: To tab a [SubForm](../a-z/subform.md) .
 
 
 **Description**

@@ -156,7 +156,12 @@ Note that `Double` is a ref to the .NET type `System.Double`.
 
 Taking this a stage further, suppose that `foo()` is defined with 5 overloads as follows:
 ```apl
-`foo() foo(int i) foo(double d) foo(double d, int i) foo(double[] d)`
+foo()
+foo(int i)
+foo(double d)
+foo(double d, int i)
+foo(double[] d)
+
 ```
 
 The following statements will call the niladic, double, (double, int) and double[] overloads respectively.

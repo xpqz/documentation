@@ -24,8 +24,7 @@ Before deploying your Dyalog APL application as a service, you should:
 
 All of the methods in `SysLog` with the exception of `Write` are shared methods meaning you do not have to create an instance of `SysLog` in order to execute them.
 
-| `SysLog.CreateEventSource sourcename {logname}` |
-| ---  |
+`SysLog.CreateEventSource sourcename {logname}`
 
 #### Purpose:
 
@@ -36,8 +35,7 @@ Creates a new Windows Event Log source and optionally specifies or creates a Win
 | `sourcename` | character vector source name that does not already exist |
 | `{logname}` | optional character vector log name with which to associate the source name. If not supplied, the source will be associated with the Windows Logs/Application log.  If there is no log named `logname` , it will be created. |
 
-| `{level} SysLog.WriteLog sourcename message` |
-| ---  |
+`{level} SysLog.WriteLog sourcename message`
 
 #### Purpose:
 
@@ -52,8 +50,7 @@ Writes a message to the Windows Event Log associated with `sourcename`, optional
 | `2` , `'W'` or `'w'` | may be used for warning messages |
 | `3` , `'I'` or `'i'` | may be used for informational messages |
 
-| `{level} instance.Write message` |
-| ---  |
+`{level} instance.Write message`
 
 #### Purpose:
 
@@ -74,8 +71,7 @@ Writes a message to the Windows Event Log associated with source name specified 
       1 logger.Write 'The sky is falling!'
 ```
 
-| `Boolean←SysLog.LogExists logname` |
-| ---  |
+`Boolean←SysLog.LogExists logname`
 
 #### Purpose:
 
@@ -85,8 +81,7 @@ Returns 1 if a Windows Event Log named `logname` exists, 0 otherwise.
 | --- | ---  |
 | `logname` | character vector Windows Event Log log name |
 
-| `Boolean←SysLog.EventSourceExists sourcename` |
-| ---  |
+`Boolean←SysLog.EventSourceExists sourcename`
 
 #### Purpose:
 
@@ -96,8 +91,7 @@ Returns 1 if a Windows Event Log source named `sourcename` exists, 0 otherwise.
 | --- | ---  |
 | `sourcename` | character vector Windows Event Log source name |
 
-| `logname←LogNameFromSourceName sourcename` |
-| ---  |
+`logname←LogNameFromSourceName sourcename`
 
 #### Purpose:
 
@@ -108,8 +102,7 @@ Returns the Windows Event Log log name associated with the source named `sourcen
 | `sourcename` | character vector Windows Event Log source name |
 | `logname` | character vector Windows Event Log log name |
 
-| `DeleteEventSource sourcename` |
-| ---  |
+`DeleteEventSource sourcename`
 
 #### Purpose:
 
@@ -119,8 +112,7 @@ Deletes the Windows Event Log source named `sourcename`.
 | --- | ---  |
 | `sourcename` | character vector Windows Event Log source name |
 
-| `DeleteLog logname` |
-| ---  |
+`DeleteLog logname`
 
 #### Purpose:
 

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">CMap</span></h1>
 
-| Applies To: | [Bitmap](./bitmap.md) | [Clipboard](./clipboard.md) | [Cursor](./cursor.md) | [Icon](./icon.md) |
-| --- | --- | --- | --- | ---  |
+Applies To: [Bitmap](./bitmap.md) [Clipboard](./clipboard.md) [Cursor](./cursor.md) [Icon](./icon.md)
 
 
 **Description**
@@ -16,7 +15,7 @@ This property defines the table of colours (the colour map) used by a [Bitmap](.
 
 
 
-Please note that [Bits](bits.md) and CMap may **only** be used to represent an image with a colour palette of **256 colours or less**. If the colour palette is larger, the values of [Bits](bits.md) and CMap reported by `⎕WG` will be (0 0). For a high-colour image, use [CBits](CBits.htm) instead.
+Please note that [Bits](bits.md) and CMap may **only** be used to represent an image with a colour palette of **256 colours or less**. If the colour palette is larger, the values of [Bits](bits.md) and CMap reported by `⎕WG` will be (0 0). For a high-colour image, use [CBits](cbits.md) instead.
 
 
 When you create a [Bitmap](./bitmap.md) or [Icon](./icon.md) by specifying [Bits](bits.md) and CMap, the actual colours you obtain are not necessarily those that you specified. This is partly due to hardware restrictions and partly due to the way in which Windows manages colours. Firstly, your display adapter and driver limit the number of pure colours that can be displayed at any one time and therefore define a maximum size for the colour map. For example, on a **standard** VGA you are limited to 16 different pure colours (additional ones are provided by **dithering**).

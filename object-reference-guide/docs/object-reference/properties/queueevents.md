@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">QueueEvents</span></h1>
 
-| Applies To: | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |
-| --- | --- | ---  |
+Applies To: [OCXClass](../a-z/ocxclass.md) [OLEClient](../a-z/oleclient.md)
 
 
 **Description**

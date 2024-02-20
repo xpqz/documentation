@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ChildEdge</span></h1>
 
-| Applies To: | [CoolBand](./coolband.md) |
-| --- | ---  |
+Applies To: [CoolBand](./coolband.md)
 
 
 **Description**

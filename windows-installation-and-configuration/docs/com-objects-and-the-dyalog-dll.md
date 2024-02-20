@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Each different implementation of Dyalog contains two versions of the Dyalog APL Dynamic Link Library, a development version (Development DLL) and a run-time version (Run-Time DLL). For further details, see [Files on page 1](files-and-directories.md).
+Each different implementation of Dyalog contains two versions of the Dyalog APL Dynamic Link Library, a development version (Development DLL) and a run-time version (Run-Time DLL). For further details, see [Files](files-and-directories.md).
 
 In the remainder of this section, the term *Dyalog APL DLL* is used to refer to any one of these DLLs. The term *COM object* is used to refer to a Dyalog APL in-process OLE Server (OLEServer object) or a Dyalog APL ActiveX Control (ActiveXControl object).
 
@@ -24,12 +24,12 @@ By default, the Dyalog APL DLL does not use a fixed maximum workspace size, but 
 
 Nevertheless, it is possible to specify a value for maxws for the application in which the Dyalog APL DLL is embedded. This is achieved by defining a Registry key named:
 ```apl
-`HKLM\Software\Dyalog\Embedded\<appname>`
+HKLM\Software\Dyalog\Embedded\<appname>
 ```
 
 or on 64-bit Windows:
 ```apl
-`HKLM\Software\Wow6432Node\Dyalog\Embedded\<appname>`
+HKLM\Software\Wow6432Node\Dyalog\Embedded\<appname>
 ```
 
 where `<appname>` is the name of the application, containing a String Value named `maxws` set to the desired size. If you were running an APL in-process server from Microsoft Excel, the application name would be `excel.exe`.

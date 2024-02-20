@@ -10,7 +10,7 @@ Arguably the easiest way to create a WPF GUI is to define it using XAML. The XAM
 
 The XAML for the Temperature Converter is shown below.
 ```apl
-`<Window
+<Window
  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
  Name="Temp"
@@ -53,7 +53,8 @@ The XAML for the Temperature Converter is shown below.
      Orientation="Vertical" Minimum="1" Maximum="213">
     </ScrollBar>
   </DockPanel>
-</Window>`
+</Window>
+
 ```
 
 ![wpf_example1](../img/wpf-example1.png)
@@ -64,24 +65,26 @@ The window defined by this XAML is illustrated in the screen image shown above. 
 
 First, notice how the structure of the GUI is defined by enclosing the child components inside the opening and closing tags of its parent. So:
 ```apl
-`<Window
+<Window
 ...
   <DockPanel>
 ...
   </DockPanel>
-</Window>`
+</Window>
+
 ```
 
 specifies a Window control that *contains* a DockPanel control.
 
 Similarly,
 ```apl
-`<Menu>
+    <Menu>
         <MenuItem ... >
             <MenuItem ... />
             <MenuItem ... />
         </MenuItem>
-    </Menu>`
+    </Menu>
+
 ```
 
 defines a Menu that contains a MenuItem, that itself contains two other MenuItem objects.
@@ -94,14 +97,14 @@ Objects are given names so that they can be referenced from the code that displa
 
 ## The Main Window
 ```apl
-`<Window
+<Window
  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
  Name="Temp"
  Title="WPF Temperature Converter"
  SizeToContent="WidthandHeight">
 ...
-</Window>`
+</Window>
 ```
 
 This extract of XAML defines a Window control; a top-level window that is equivalent to a Dyalog APL GUI Form.
@@ -112,7 +115,9 @@ The name of the TextBox is **Temp**, and its caption is **WFP Temperature Conver
 
 ## The DockPanel
 ```apl
-`<DockPanel LastChildFill="False"> .. </DockPanel>`
+ <DockPanel LastChildFill="False">
+..
+ </DockPanel>
 ```
 
 WPF provides a number of *layout controls*. These are containers whose only purpose is to arrange child controls in a particular way, and to dictate how they are re-arranged when the parent window is resized. The DockPanel is one of the simplest of the WPF layout controls.
@@ -123,14 +128,14 @@ The attachment of a particular child control is specified by setting its DockPan
 
 ## The Menu
 ```apl
-`<Menu DockPanel.Dock="Top">
+    <Menu DockPanel.Dock="Top">
         <MenuItem Header="_Scale">
             <MenuItem Name="mnuFahrenheit" Header="_Fahrenheit"
              IsCheckable="True" IsChecked="True"/>
             <MenuItem Name="mnuCentigrade" Header="_Centigrade"
              IsCheckable="True"/>
         </MenuItem>
-    </Menu>`
+    </Menu>
 ```
 
 ![wpf_example2](../img/wpf-example2.png)
@@ -139,59 +144,60 @@ The above extract from the XAML defines a Menu. Setting Dock to "Top" causes the
 
 ## The Grid
 ```apl
-`<Grid Width="230" Margin="40,10,10,10">
+    <Grid Width="230" Margin="40,10,10,10">
     ...
-    </Grid>`
+    </Grid>
 ```
 
-The Grid object is another WPF layout control that organises other controls in rows and columns. Here, the XAML defines a Grid with a width of 230; a left margin if 40, and a top, right and bottom margin of 10. As there is no explicit unit specified, the system uses the default device-independent unit (**px**) of 1/96th inch.
+The Grid object is another WPF layout control that organises other controls in rows and columns. Here, the XAML defines a Grid with a width of 230; a left margin if 40, and a top, right and bottom margin of 10. As there is no explicit unit specified, the system uses the default device-independent unit (**px**) of 1/96<sup>th</sup> inch.
 
 The rows  and columns of a Grid are defined by collections of RowDefinition and ColumnDefinition objects.
 
 Here the XAML specifies that the Grid contains 3 rows, each of which has a Height set to "Auto" which means that its height depends upon the height of its content.
 ```apl
-`<Grid.RowDefinitions>
+      <Grid.RowDefinitions>
         <RowDefinition Height="Auto"/>
         <RowDefinition Height="Auto"/>
         <RowDefinition Height="Auto"/>
-      </Grid.RowDefinitions>`
+      </Grid.RowDefinitions> 
 ```
 
 Similarly, there are 3 columns. The first column (which will contain labels) takes its width from its content, i.e. it will be just wide enough to display the longest label. The other columns   for the edit boxes and buttons are specified to be 80px and 60px wide respectively. In this case, the content (TextBox and Button objects) will take their widths from that of the column.
 ```apl
-`<Grid.ColumnDefinitions>
+     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="Auto"/>
         <ColumnDefinition Width="80"/>
         <ColumnDefinition Width="60"/>
-      </Grid.ColumnDefinitions>`
+      </Grid.ColumnDefinitions> 
 ```
 
 ## The Label Objects(Column 1)
 ```apl
-`<Label Grid.Row="0" Grid.Column="0" Content="Fahrenheit"/>
-    <Label Grid.Row="1" Grid.Column="0" Content="Centigrade"/>`
+    <Label Grid.Row="0" Grid.Column="0" Content="Fahrenheit"/>
+    <Label Grid.Row="1" Grid.Column="0" Content="Centigrade"/>
 ```
 
 Here the XAML specifies Label objects Fahrenheit and Centigrade. Because they are defined within the`<Grid> ...</Grid>` tags, they are child objects of the Grid. In addition it is necessary to specify in which cells they are displayed using their Grid.Row and Grid.Column properties. Note that the cell coordinates have zero origin.
 
 ## The TextBox Objects(Column 2)
 ```apl
-`<TextBox Name="txtFahrenheit" Grid.Row="0" Grid.Column="1"
+    <TextBox Name="txtFahrenheit" Grid.Row="0" Grid.Column="1"
      Margin="5"/>
     <TextBox Name="txtCentigrade" Grid.Row="1" Grid.Column="1"
-     Margin="5"/>`
+     Margin="5"/>
 ```
 
 The XAML specifies two TextBox objects named **txtFahrenheit** and**txtCentigrade** respectively. Setting Margin to "5" means that a margin of 5px is applied around each edge; otherwise the text boxes would occupy the entire width of the column (80px). The effective width of each TextBox will therefore be 70px `(80-2×5)`.
 
 ## The Button Objects (Column 3)
 ```apl
-`<Button Name="btnF2C" Grid.Row="0" Grid.Column="2"
+    <Button Name="btnF2C" Grid.Row="0" Grid.Column="2"
      Content="F>C" Margin="5"/>
     <Button Name="btnC2F" Grid.Row="1" Grid.Column="2"
      Content="C>F" Margin="5"/>
     <Button Name="btnQuit" Grid.Row="2" Grid.Column="1"
-     Content="Quit" Margin="5"/>`
+     Content="Quit" Margin="5"/>
+
 ```
 
 The XAML specifies three named Button controls. Note that the caption on a Button is specified by its Content property.
@@ -200,9 +206,9 @@ The XAML specifies three named Button controls. Note that the caption on a Butto
 
 This example uses a ScrollBar which the user may scroll to input a value, either in Fahrenheit or Centigrade depending upon which of the two menu items (**Fahrenheit** or **Centigrade**) is checked.A ScrollBar is not the ideal choice of control for this type of user interation, but this example is designed to look and behave like the original Dyalog GUI example, which was written for the original version of Dyalog APL for Windows.
 ```apl
-`<ScrollBar Name="scrTemp" DockPanel.Dock="Right"  Width="20"
+    <ScrollBar Name="scrTemp" DockPanel.Dock="Right"  Width="20"
      Orientation="Vertical" Minimum="1" Maximum="213">
-    </ScrollBar>`
+    </ScrollBar>
 ```
 
 This XAML snippet defines a ScrollBar named **scrTemp**.

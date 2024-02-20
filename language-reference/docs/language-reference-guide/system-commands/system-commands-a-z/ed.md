@@ -8,7 +8,7 @@
 `)ED` invokes the Dyalog APL editor and opens an Edit window for each of the objects specified in `nms`.
 
 
-If a name includes the slash character  ("\" or "/") it is taken to be the name of a file. See [Editing Scripts and Text Files on page 1](../../UserGuide/The APL Environment/Editing Scripts and Text Files.htm#Editing_Text).
+If a name includes the slash character  ("\" or "/") it is taken to be the name of a file. See [Editing Scripts and Text Files](../../UserGuide/The APL Environment/Editing Scripts and Text Files.htm#Editing_Text).
 
 
 If a name is followed by a line number specified in square brackets, the Editor positions the cursor in the corresponding line. There must not be a space between the last character of the name and the "[".

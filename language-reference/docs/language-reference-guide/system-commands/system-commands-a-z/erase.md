@@ -18,7 +18,7 @@ If a named object is a GUI object, the object and all its children are deleted a
 If an object is not erased for any reason, the system reports  `not found`  followed by the name of the object.
 
 
-Erasing objects such as external functions may have other implications: see ["Expunge Object: " on page 1](../../system-functions/system-functions-a-z/system-functions-a-z/ex.md) for details.
+Erasing objects such as external functions may have other implications: see ["Expunge Object: "](../../system-functions/system-functions-a-z/system-functions-a-z/ex.md) for details.
 
 #### Example
 ```apl

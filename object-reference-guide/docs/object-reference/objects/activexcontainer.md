@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">ActiveXContainer</span></h1>
 
-| [Parents](../ParentLists/ActiveXContainer.htm) | [Properties](../PropLists/ActiveXContainer.htm) | [Methods](../MethodLists/ActiveXContainer.htm) | [Events](../EventLists/ActiveXContainer.htm) |
-| --- | --- | --- | ---  |
+[Parents](../ParentLists/ActiveXContainer.htm) [Properties](../PropLists/ActiveXContainer.htm) [Methods](../MethodLists/ActiveXContainer.htm) [Events](../EventLists/ActiveXContainer.htm)
 
 
-| Purpose: | The ActiveXContainer object represents the application that is currently hosting an instance of an ActiveXControl object. |
-| --- | ---  |
+Purpose: The ActiveXContainer object represents the application that is currently hosting an instance of an ActiveXControl object.
 
 
 **Description**

@@ -56,7 +56,7 @@ foo[2] r←⎕NEW¨b1 b2
 
 Notice that Classes in a Namespace Script are fixed before other objects (hence the assignments to `d` and `e` are evaluated *after* Classes `a1` and `bb2` are fixed), although the order in which Classes themselves are defined is still important if they reference one another during initialisation.
 
-A practical example using `:Namespace` is given in the [next topic](Namespace Script Example.htm).
+A practical example using `:Namespace` is given in the [next topic](namespace-script-example.md).
 
 ### Changing Scripted Objects Dynamically
 

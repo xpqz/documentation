@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SetFnInfo</span></h1>
 
-| Applies To: | [ActiveXControl](../a-z/activexcontrol.md) | [OLEServer](../a-z/oleserver.md) |
-| --- | --- | ---  |
+Applies To: [ActiveXControl](../a-z/activexcontrol.md) [OLEServer](../a-z/oleserver.md)
 
 
 **Description**
@@ -35,7 +34,7 @@ The argument to SetFnInfo is a 2, 3, 4, 5 or 6-element array as follows:
 | `[3]` | Help ID | integer |
 | `[4]` | Function type | integer |
 | `[5]` | Property name | character vector |
-| `[6]` | DISPID | integer. See DISPID (Dispatch ID) on page 1 |
+| `[6]` | DISPID | integer. See [DISPID (Dispatch ID)](../../Miscellaneous/DISPID.htm#DISPID) |
 
 
 #### Function info

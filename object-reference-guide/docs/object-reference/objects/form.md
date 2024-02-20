@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Form</span></h1>
 
-| [Parents](../ParentLists/Form.htm) | [Children](../ChildLists/Form.htm) | [Properties](../PropLists/Form.htm) | [Methods](../MethodLists/Form.htm) | [Events](../EventLists/Form.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Form.htm) [Children](../ChildLists/Form.htm) [Properties](../PropLists/Form.htm) [Methods](../MethodLists/Form.htm) [Events](../EventLists/Form.htm)
 
 
-| Purpose: | This is a top-level window used to contain other objects (controls). |
-| --- | ---  |
+Purpose: This is a top-level window used to contain other objects (controls).
 
 
 **Description**

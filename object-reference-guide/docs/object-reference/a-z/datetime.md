@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">DateTime</span></h1>
 
-| Applies To: | [DateTimePicker](./datetimepicker.md) |
-| --- | ---  |
+Applies To: [DateTimePicker](./datetimepicker.md)
 
 
 **Description**
@@ -21,7 +20,7 @@ The DateTime property represents the date and time value that is currently displ
 It is normally a 4-element integer vector containing the date (as an IDN), hour, minutes and seconds respectively.
 
 
-However, if the checkbox shown in the object is unset (see [HasCheckBox](HasCheckBox.htm)), the value of DateTime will be
+However, if the checkbox shown in the object is unset (see [HasCheckBox](hascheckbox.md)), the value of DateTime will be
 `⍬` (zilde).
 
 

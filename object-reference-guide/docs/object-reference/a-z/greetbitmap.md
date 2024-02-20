@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">GreetBitmap</span></h1>
 
-| Applies To: | [Root](./root.md) |
-| --- | ---  |
+Applies To: [Root](./root.md)
 
 
 **Description**
@@ -31,7 +30,7 @@ removed.
 
 The image may also be displayed initially by setting parameter: **greet_bitmap** on the command line, e.g.:
 ```apl
-`c:\myapp\dyalogrt greet_bitmap=mylogo myws`
+c:\myapp\dyalogrt greet_bitmap=mylogo myws
 ```
 
 

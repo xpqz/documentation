@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Save Workspace</span><span class="command">)SAVE {-force} {ws}</span></h1>
 
-This command compacts (see "Workspace Available: " on page 1 for details) and saves the active workspace.
+This command compacts (see ["Workspace Available: "](../../system-functions/system-functions-a-z/system-functions-a-z/wa.md) for details) and saves the active workspace.
 
 
 If specified, `ws` is a full or relative path name to the file in which the workspace will be written. If `ws` is omitted, it defaults to `⎕WSID`. Unless the path specified by `ws` or `⎕WSID` is a full pathname, it is taken to be relative to the current working directory which may be obtained by the expression: `⊃1 ⎕NPARTS ''`.
@@ -14,13 +14,13 @@ If specified, `ws` is a full or relative path name to the file in which the work
 If  `ws` specifies a file name other than that implied by  `⎕WSID`, the specified file must not already exist unless the force parameter is specified.. If `ws` is omitted or resolves to the same file as  `⎕WSID`, an existing stored workspace with the same name will be replaced.
 
 
-See WorkspacesProgrammer's Guide: "Workspaces" for the rules for specifying a workspace name.
+See Workspaces[Programmer's Guide: "Workspaces"](../../Language/Introduction/Workspaces.htm#Workspaces) for the rules for specifying a workspace name.
 
 
 If an extension is not specified, an extension is added according to the [WSEXT parameter](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#WSEXT)..
 
 
-A workspace may not be saved if any threads (other than the root thread 0) are running or if there are any Edit or Trace windows open. Otherwise, the workspace is saved with its state of execution intact, however certain operations may be performed before it is saved. For further information, see Set Workspace Save Options on page 1.
+A workspace may not be saved if any threads (other than the root thread 0) are running or if there are any Edit or Trace windows open. Otherwise, the workspace is saved with its state of execution intact, however certain operations may be performed before it is saved. For further information, see [Set Workspace Save Options](../../the-i-beam-operator/a-z/set-workspace-save-options.md).
 
 
 

@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Static</span></h1>
 
-| [Parents](../ParentLists/Static.htm) | [Children](../ChildLists/Static.htm) | [Properties](../PropLists/Static.htm) | [Methods](../MethodLists/Static.htm) | [Events](../EventLists/Static.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Static.htm) [Children](../ChildLists/Static.htm) [Properties](../PropLists/Static.htm) [Methods](../MethodLists/Static.htm) [Events](../EventLists/Static.htm)
 
 
-| Purpose: | This object is primarily used to display graphics in a sub-window. |
-| --- | ---  |
+Purpose: This object is primarily used to display graphics in a sub-window.
 
 
 **Description**
@@ -29,7 +27,7 @@ Note that the colours implied by the [Style](./style.md) are not "hard-coded" bu
 | White | Window Background Colour |
 
 
-If the background colour of the [Form](Form.htm) is also set to the Window Background Colour, it follows that the [Style](./style.md)s `'WhiteFrame'` and `'WhiteBox'` make the Static itself invisible (against the background), although the **contents** of the Static will show. This makes the Static appear like an invisible clipping window.
+If the background colour of the [Form](form.md) is also set to the Window Background Colour, it follows that the [Style](./style.md)s `'WhiteFrame'` and `'WhiteBox'` make the Static itself invisible (against the background), although the **contents** of the Static will show. This makes the Static appear like an invisible clipping window.
 
 
 | `'BlackFrame'` | `'BlackBox'` |

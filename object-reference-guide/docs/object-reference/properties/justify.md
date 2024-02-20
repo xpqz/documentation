@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Justify</span></h1>
 
-| Applies To: | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) | [Label](../a-z/label.md) | [Spinner](../a-z/spinner.md) | [TabControl](../a-z/tabcontrol.md) |
-| --- | --- | --- | --- | --- | --- | ---  |
+Applies To: [Button](../a-z/button.md) [ButtonEdit](../a-z/buttonedit.md) [Edit](../a-z/edit.md) [Label](../a-z/label.md) [Spinner](../a-z/spinner.md) [TabControl](../a-z/tabcontrol.md)
 
 
 **Description**

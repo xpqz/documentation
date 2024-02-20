@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Specify Workspace Available</span><span class="command">R←2002⌶Y</span></h1>
 
-This function is identical to the system function `⎕WA` except that it provides the means to specify the amount of memory The term **memory** here means virtual memory which includes memory mapped to disk.  that is *committed* for the workspace rather than have it assigned by the internal algorithm. Committed memory is memory that is allocated to a specific process and thereby reduces the amount of memory available for other applications. See also Workspace Management on page 1Workspace Management.
+This function is identical to the system function `⎕WA` except that it provides the means to specify the amount of memory The term **memory** here means virtual memory which includes memory mapped to disk.  that is *committed* for the workspace rather than have it assigned by the internal algorithm. Committed memory is memory that is allocated to a specific process and thereby reduces the amount of memory available for other applications. See also [Workspace Management](../../UserGuide/Installation and Configuration/Workspace Management.htm#Workspace_Management)Workspace Management.
 
 
 Like `⎕WA`,  `2002⌶` compacts the workspace so that it occupies the minimum number of bytes possible, adds an *extra amount*, and then de-commits all the remaining memory that it is currently using, allowing it to be allocated by the operating system for use by other applications.
@@ -24,7 +24,7 @@ The purpose of the *extra amount* is to reduce the likelihood that APL will imme
 If the size of the committed workspace would be smaller than the minimum value (specified by `2000⌶`) or larger than the maximum value (which defaults to `MAXWS`), a `DOMAIN ERROR` is signalled.
 
 
-See also Memory Manager Statistics: on page 1.
+See also [Memory Manager Statistics:](memory-manager-statistics.md).
 
 
 Note that this function does not change the size of the *extra amount* that will be applied subsequently by `⎕WA` or by an automatic compaction.

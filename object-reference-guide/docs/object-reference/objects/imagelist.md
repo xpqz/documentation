@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">ImageList</span></h1>
 
-| [Parents](../ParentLists/ImageList.htm) | [Children](../ChildLists/ImageList.htm) | [Properties](../PropLists/ImageList.htm) | [Methods](../MethodLists/ImageList.htm) | [Events](../EventLists/ImageList.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/ImageList.htm) [Children](../ChildLists/ImageList.htm) [Properties](../PropLists/ImageList.htm) [Methods](../MethodLists/ImageList.htm) [Events](../EventLists/ImageList.htm)
 
 
-| Purpose: | The ImageList object represents a set of bitmapped images. |
-| --- | ---  |
+Purpose: The ImageList object represents a set of bitmapped images.
 
 
 **Description**

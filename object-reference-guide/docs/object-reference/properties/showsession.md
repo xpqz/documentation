@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ShowSession</span></h1>
 
-| Applies To: | [OLEServer](../a-z/oleserver.md) |
-| --- | ---  |
+Applies To: [OLEServer](../a-z/oleserver.md)
 
 
 **Description**

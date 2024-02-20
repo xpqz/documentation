@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Grid</span></h1>
 
-| [Parents](../ParentLists/Grid.htm) | [Children](../ChildLists/Grid.htm) | [Properties](../PropLists/Grid.htm) | [Methods](../MethodLists/Grid.htm) | [Events](../EventLists/Grid.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Grid.htm) [Children](../ChildLists/Grid.htm) [Properties](../PropLists/Grid.htm) [Methods](../MethodLists/Grid.htm) [Events](../EventLists/Grid.htm)
 
 
-| Purpose: | Spreadsheet object for displaying and editing data. |
-| --- | ---  |
+Purpose: Spreadsheet object for displaying and editing data.
 
 
 **Description**

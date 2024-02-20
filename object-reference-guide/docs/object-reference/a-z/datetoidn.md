@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">DateToIDN</span></h1>
 
-| Applies To: | [Calendar](./calendar.md) | [DateTimePicker](./datetimepicker.md) | [Root](./root.md) |
-| --- | --- | --- | ---  |
+Applies To: [Calendar](./calendar.md) [DateTimePicker](./datetimepicker.md) [Root](./root.md)
 
 
 **Description**

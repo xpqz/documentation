@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">MDIMenu</span></h1>
 
-| Applies To: | [MenuBar](../a-z/menubar.md) |
-| --- | ---  |
+Applies To: [MenuBar](../a-z/menubar.md)
 
 
 **Description**

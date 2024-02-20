@@ -8,7 +8,7 @@
 This report is given if a component file becomes damaged.  This rarely occurs but may result from a computer system failure. Components files may be checked using `⎕FCHK`. See 
 Language Reference Guide: 
 
-File Check and RepairFile Check and Repair  on page 1.
+File Check and Repair[File Check and Repair ](../System Functions/fchk.htm#FileCheckandRepair).
 
 
 

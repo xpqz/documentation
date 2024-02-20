@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">FontList</span></h1>
 
-| Applies To: | [Printer](./printer.md) | [Root](./root.md) |
-| --- | --- | ---  |
+Applies To: [Printer](./printer.md) [Root](./root.md)
 
 
 **Description**

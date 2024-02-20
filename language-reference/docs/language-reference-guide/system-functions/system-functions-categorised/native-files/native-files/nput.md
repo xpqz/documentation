@@ -4,7 +4,7 @@
 
 <h1 class="heading"><span class="name">Write Text File</span><span class="command">{R}←X ⎕NPUT Y</span></h1>
 
-This function writes character data to a text file. See also Read Text File on page 1.
+This function writes character data to a text file. See also [Read Text File](../../../system-functions-a-z/system-functions-a-z/nget.md).
 
 
 `Y` is either a simple character vector or scalar containing the name of the file to be written, or a 2-item vector whose first item is the file name and whose second is an integer scalar specifying `flags` for the operation.
@@ -28,7 +28,7 @@ The left-argument `X` is comprised of 1, 2 or 3 items which identify `(content) 
 
 If specified, `encoding` is either:
 
-- a character vector from the first column in the table File Encodings on page 1.  If `encoding` specifies a UTF format, it may be qualified with -BOM  (e.g. UTF-8-BOM), which causes a Byte Order Mark (BOM) to be written at the beginning of the file or -NOBOM which does not. If the -BOM or -NOBOM suffix is omitted, UTF-8 defaults to UTF-8-NOBOM, while the other UTF formats default to -BOM.
+- a character vector from the first column in the table [File Encodings](../../../system-functions-a-z/system-functions-a-z/nget.md).  If `encoding` specifies a UTF format, it may be qualified with -BOM  (e.g. UTF-8-BOM), which causes a Byte Order Mark (BOM) to be written at the beginning of the file or -NOBOM which does not. If the -BOM or -NOBOM suffix is omitted, UTF-8 defaults to UTF-8-NOBOM, while the other UTF formats default to -BOM.
 - a 256-element numeric vector that maps each possible byte value (0-255) to a  Unicode code point (1st element = Unicode code point corresponding to byte value 0, and so on). ¯1 indicates that the corresponding byte value is not mapped to any character. Apart from ¯1, no value may appear in the table more than once.
 
 
@@ -42,7 +42,7 @@ Note: If a non-empty file is appended to:
 - No check is made that the existing file content is text in the same encoding format.
 
 
-If specified, `newline` is numeric and is either  `⍬` or a scalar or vector  from the  column labelled **Value** in the **newline characters** section of the table Line separators: on page 1. Any other value causes `DOMAIN ERROR`. If `newline` is omitted it defaults to `(13 10)` on Windows and `10` on other platforms.
+If specified, `newline` is numeric and is either  `⍬` or a scalar or vector  from the  column labelled **Value** in the **newline characters** section of the table [Line separators:](../../../system-functions-a-z/system-functions-a-z/nget.md). Any other value causes `DOMAIN ERROR`. If `newline` is omitted it defaults to `(13 10)` on Windows and `10` on other platforms.
 
 
 In all cases, `newline` is appended if required to a simple vector or to each vector in a vector of vectors.

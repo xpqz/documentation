@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">FixedOrder</span></h1>
 
-| Applies To: | [CoolBar](../a-z/coolbar.md) |
-| --- | ---  |
+Applies To: [CoolBar](../a-z/coolbar.md)
 
 
 **Description**

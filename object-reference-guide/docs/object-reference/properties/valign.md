@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">VAlign</span></h1>
 
-| Applies To: | [Text](../a-z/text.md) |
-| --- | ---  |
+Applies To: [Text](../a-z/text.md)
 
 
 **Description**

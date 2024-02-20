@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Checked</span></h1>
 
-| Applies To: | [MenuItem](./menuitem.md) |
-| --- | ---  |
+Applies To: [MenuItem](./menuitem.md)
 
 
 **Description**

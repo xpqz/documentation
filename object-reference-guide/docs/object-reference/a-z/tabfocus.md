@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">TabFocus</span></h1>
 
-| Applies To: | [TabControl](./tabcontrol.md) |
-| --- | ---  |
+Applies To: [TabControl](./tabcontrol.md)
 
 
 **Description**

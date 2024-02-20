@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">ColorButton</span></h1>
 
-| [Parents](../ParentLists/ColorButton.htm) | [Properties](../PropLists/ColorButton.htm) | [Methods](../MethodLists/ColorButton.htm) | [Events](../EventLists/ColorButton.htm) |
-| --- | --- | --- | ---  |
+[Parents](../ParentLists/ColorButton.htm) [Properties](../PropLists/ColorButton.htm) [Methods](../MethodLists/ColorButton.htm) [Events](../EventLists/ColorButton.htm)
 
 
-| Purpose: | The ColorButton object allows the user to select a colour. |
-| --- | ---  |
+Purpose: The ColorButton object allows the user to select a colour.
 
 
 **Description**

@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">List</span></h1>
 
-| [Parents](../ParentLists/List.htm) | [Children](../ChildLists/List.htm) | [Properties](../PropLists/List.htm) | [Methods](../MethodLists/List.htm) | [Events](../EventLists/List.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/List.htm) [Children](../ChildLists/List.htm) [Properties](../PropLists/List.htm) [Methods](../MethodLists/List.htm) [Events](../EventLists/List.htm)
 
 
-| Purpose: | Allows the user to select one or more items from a list. |
-| --- | ---  |
+Purpose: Allows the user to select one or more items from a list.
 
 
 **Description**

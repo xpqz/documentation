@@ -4,8 +4,7 @@
 
 <h1 class="heading"><span class="name">EndEditLabel</span></h1>
 
-| Applies To: | [ListView](./listview.md) | [TreeView](./treeview.md) |
-| --- | --- | ---  |
+Applies To: [ListView](./listview.md) [TreeView](./treeview.md)
 
 
 **Description**

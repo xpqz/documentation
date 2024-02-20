@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">RadiusMode</span></h1>
 
-| Applies To: | [Circle](../a-z/circle.md) | [Root](../a-z/root.md) |
-| --- | --- | ---  |
+Applies To: [Circle](../a-z/circle.md) [Root](../a-z/root.md)
 
 
 **Description**

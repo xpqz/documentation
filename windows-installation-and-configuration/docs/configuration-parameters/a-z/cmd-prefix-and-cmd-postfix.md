@@ -2,4 +2,4 @@
 
 These parameters defines strings within which operating system commands specified as the arguments to`⎕CMD` and`⎕SH` , and`)CMD` and`)SH` , are wrapped. Its purpose is to run the command arguments under a non-standard command shell. This applies to Windows only.
 
-See [Windows Command on page 1](../../../Language/System Functions/cmd.htm#cmd) for implementation details.
+See [Windows Command](../../../Language/System Functions/cmd.htm#cmd) for implementation details.

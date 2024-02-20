@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Label</span></h1>
 
-| [Parents](../ParentLists/Label.htm) | [Children](../ChildLists/Label.htm) | [Properties](../PropLists/Label.htm) | [Methods](../MethodLists/Label.htm) | [Events](../EventLists/Label.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Label.htm) [Children](../ChildLists/Label.htm) [Properties](../PropLists/Label.htm) [Methods](../MethodLists/Label.htm) [Events](../EventLists/Label.htm)
 
 
-| Purpose: | Displays static text. |
-| --- | ---  |
+Purpose: Displays static text.
 
 
 **Description**

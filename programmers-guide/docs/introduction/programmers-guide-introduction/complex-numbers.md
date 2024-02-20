@@ -1,6 +1,6 @@
 # Complex Numbers
 
-A complex number is a number consisting of a real and an imaginary part which is usually written in the form a+ bi, where a and b are real numbers, and i is the standard imaginary unit with the property i2= −1.
+A complex number is a number consisting of a real and an imaginary part which is usually written in the form a+ bi, where a and b are real numbers, and i is the standard imaginary unit with the property i<sup>2</sup>= −1.
 
 Dyalog APL adopts the J notation introduced in IBM APL2 to represent the value of a complex number which is written as `aJb` or `ajb` (without spaces). The former representation (with a capital `J`) is always used to display a value.
 
@@ -26,7 +26,7 @@ The arithmetic primitive functions handle complex numbers in the appropriate way
       2j3-.3j5  ⍝ (a+bi)-(c+di) = (a-c)+(b-d)i
 1.7J¯2
  
-      2j3×.3j.5 ⍝ (a+bi)(c+di)= ac+bci+adi+bdi2
+      2j3×.3j.5 ⍝ (a+bi)(c+di)= ac+bci+adi+bdi<sup>2</sup>
                 ⍝             = (ac-bd)+(bc+ad)i
 ¯0.9J1.9
 ```

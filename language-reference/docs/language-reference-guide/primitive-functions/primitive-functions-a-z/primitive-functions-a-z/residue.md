@@ -11,7 +11,7 @@
 For positive arguments, `R` is the remainder when `Y` is divided by `X`. If `X=0`, `R` is `Y`.
 
 
-For other argument values, `R` is given by the expression `Y-X×⌊Y÷X+0=X`. This expression also applies when `X` and/or `Y` are complex if the simple `⌊` is replaced by the `CpxFloor` function. See [Complex Floor on page 1](../../scalar-monadic-functions/floor.md).
+For other argument values, `R` is given by the expression `Y-X×⌊Y÷X+0=X`. This expression also applies when `X` and/or `Y` are complex if the simple `⌊` is replaced by the `CpxFloor` function. See [Complex Floor](../../scalar-monadic-functions/floor.md).
 
 
 `⎕CT` and `⎕DCT` are  implicit arguments of Residue.

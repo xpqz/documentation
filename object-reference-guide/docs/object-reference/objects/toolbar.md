@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">ToolBar</span></h1>
 
-| [Parents](../ParentLists/ToolBar.htm) | [Children](../ChildLists/ToolBar.htm) | [Properties](../PropLists/ToolBar.htm) | [Methods](../MethodLists/ToolBar.htm) | [Events](../EventLists/ToolBar.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/ToolBar.htm) [Children](../ChildLists/ToolBar.htm) [Properties](../PropLists/ToolBar.htm) [Methods](../MethodLists/ToolBar.htm) [Events](../EventLists/ToolBar.htm)
 
 
-| Purpose: | To manage a group of controls such as [Button](../a-z/button.md) s. |
-| --- | ---  |
+Purpose: To manage a group of controls such as [Button](../a-z/button.md) s.
 
 
 **Description**

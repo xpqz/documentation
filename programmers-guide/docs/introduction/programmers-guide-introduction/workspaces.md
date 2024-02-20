@@ -4,7 +4,7 @@ APL expressions are evaluated within a workspace. The workspace may contain obje
 
 Workspaces may be explicitly saved with an identifying name. The workspace may subsequently be loaded, or objects may be selectively copied from a saved workspace into the current workspace.
 
-Workspaces are stored in files whose names must conform to operating system conventions. When a workspace name is specified without a file suffix, these are added or implied. For further information, see [WSEXT on page 1](../../UserGuide/Installation and Configuration/Configuration Parameters/WSEXT.htm#WSEXT).
+Workspaces are stored in files whose names must conform to operating system conventions. When a workspace name is specified without a file suffix, these are added or implied. For further information, see [WSEXT](../../UserGuide/Installation and Configuration/Configuration Parameters/WSEXT.htm#WSEXT).
 
 If the name of the file in which the workspace is saved contains spaces, the ws argument for the system functions `)SAVE`, `)COPY`, `)PCOPY`, `)LOAD`, `)XLOAD` and `)DROP` should be surrounded by two double-quote (") characters. To include a " character in the file name, you must specify two adjoining double-quotes (i.e. """"). Note however that Windows does not allow double-quotes in file names, so this effectively applies only to non-Windows systems.
 

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">FileBoxCancel</span></h1>
 
-| Applies To: | [BrowseBox](./browsebox.md) | [FileBox](./filebox.md) |
-| --- | --- | ---  |
+Applies To: [BrowseBox](./browsebox.md) [FileBox](./filebox.md)
 
 
 **Description**

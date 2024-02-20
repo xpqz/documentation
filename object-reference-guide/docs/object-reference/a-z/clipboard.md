@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Clipboard</span></h1>
 
-| [Parents](../ParentLists/Clipboard.htm) | [Children](../ChildLists/Clipboard.htm) | [Properties](../PropLists/Clipboard.htm) | [Methods](../MethodLists/Clipboard.htm) | [Events](../EventLists/Clipboard.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Clipboard.htm) [Children](../ChildLists/Clipboard.htm) [Properties](../PropLists/Clipboard.htm) [Methods](../MethodLists/Clipboard.htm) [Events](../EventLists/Clipboard.htm)
 
 
-| Purpose: | This object provides access to the Windows clipboard. |
-| --- | ---  |
+Purpose: This object provides access to the Windows clipboard.
 
 
 **Description**
@@ -45,7 +43,7 @@ The following example retrieves text from the clipboard :
 
 
 
-The next example retrieves a bitmap from the clipboard and defines it as a [Bitmap](Bitmap.htm) object named `'BM'` ready for use :
+The next example retrieves a bitmap from the clipboard and defines it as a [Bitmap](bitmap.md) object named `'BM'` ready for use :
 ```apl
       'BM' ⎕WC 'Bitmap' '', 'CL' ⎕WG 'Bits' 'CMap'
 ```
@@ -61,7 +59,7 @@ Data may be placed in the clipboard using [`⎕WC`](../../Language/System Functi
 
 
 
-To store a bitmap you can set either the [Picture](./picture.md) property to the **name** of a [Bitmap](Bitmap.htm) object, or you can set the [Bits](./bits.md) and [CMap](./cmap.md) properties explicitly. The former is more efficient, especially for large bitmaps, for example :
+To store a bitmap you can set either the [Picture](./picture.md) property to the **name** of a [Bitmap](bitmap.md) object, or you can set the [Bits](./bits.md) and [CMap](./cmap.md) properties explicitly. The former is more efficient, especially for large bitmaps, for example :
 ```apl
       'CL' ⎕WS 'Bitmap' 'BM'
 ```

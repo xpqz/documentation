@@ -4,8 +4,7 @@
 
 <h1 class="heading"><span class="name">MaskCol</span></h1>
 
-| Applies To: | [Bitmap](./bitmap.md) | [Form](./form.md) |
-| --- | --- | ---  |
+Applies To: [Bitmap](./bitmap.md) [Form](./form.md)
 
 
 **Description**

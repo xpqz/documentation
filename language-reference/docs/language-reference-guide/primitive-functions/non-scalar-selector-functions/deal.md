@@ -21,7 +21,7 @@
 ```
 
 
-`⎕IO` and `⎕RL` are implicit arguments of Deal. A side effect of Deal is to change the value of `⎕RL`. See ["Random Link: " on page 1](../../system-functions/system-functions-a-z/system-functions-a-z/rl.md).
+`⎕IO` and `⎕RL` are implicit arguments of Deal. A side effect of Deal is to change the value of `⎕RL`. See ["Random Link: "](../../system-functions/system-functions-a-z/system-functions-a-z/rl.md).
 
 
 

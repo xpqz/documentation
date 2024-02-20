@@ -8,7 +8,7 @@ This example illustrates the use of the optional left argument to `2015⌶` to s
 
 The XAML shown below,  describes the same Window containing a TextBox as before.
 ```apl
-`<Window
+<Window
  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
  Name="Temp"
@@ -17,12 +17,14 @@ The XAML shown below,  describes the same Window containing a TextBox as before.
      <TextBox Name="txt" Text="Hello World" Width="300"
       Margin="5"
       FontSize="{Binding sizeSource,Mode=OneWay}"/>
-</Window>`
+</Window>
+
 ```
 
 This time, the data binding expression is:
 ```apl
-`FontSize="{Binding sizeSource,Mode=OneWay}"/>`
+
+      FontSize="{Binding sizeSource,Mode=OneWay}"/>
 ```
 
 This specifies that the FontSize property of the TextBox is bound to a value in the Binding Source (which has yet to be defined) whose path is `sizeSource`. The binding mode is set to `OneWay` which means that the FontSize property depends on the data value but not vice versa. Were the FontSize to change for any external reason (which is admittedly unlikely in the case of FontSize), it would not alter the value in `sizeSource` to which it is bound.
@@ -61,7 +63,7 @@ The key difference is in `FontSize[8]`. Here the left argument of `(2015⌶)` is
       FontSize 12
 ```
 ```apl
-![data binding fontsize xaml 1](../img/data-binding-fontsize-xaml-1.png)
+
 ```
 ```apl
       sizeSource
@@ -69,5 +71,5 @@ The key difference is in `FontSize[8]`. Here the left argument of `(2015⌶)` is
       sizeSource←30
 ```
 ```apl
-![data binding fontsize xaml 2](../img/data-binding-fontsize-xaml-2.png)
+
 ```

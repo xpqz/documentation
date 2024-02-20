@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">TCPSocket</span></h1>
 
-| [Parents](../ParentLists/TCPSocket.htm) | [Children](../ChildLists/TCPSocket.htm) | [Properties](../PropLists/TCPSocket.htm) | [Methods](../MethodLists/TCPSocket.htm) | [Events](../EventLists/TCPSocket.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/TCPSocket.htm) [Children](../ChildLists/TCPSocket.htm) [Properties](../PropLists/TCPSocket.htm) [Methods](../MethodLists/TCPSocket.htm) [Events](../EventLists/TCPSocket.htm)
 
 
-| Purpose: | The TCPSocket object provides an interface to TCP/IP. |
-| --- | ---  |
+Purpose: The TCPSocket object provides an interface to TCP/IP.
 
 
 **Description**

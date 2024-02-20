@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">MDICascade</span></h1>
 
-| Applies To: | [MDIClient](./mdiclient.md) |
-| --- | ---  |
+Applies To: [MDIClient](./mdiclient.md)
 
 
 **Description**

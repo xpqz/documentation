@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">ListView</span></h1>
 
-| [Parents](../ParentLists/ListView.htm) | [Children](../ChildLists/ListView.htm) | [Properties](../PropLists/ListView.htm) | [Methods](../MethodLists/ListView.htm) | [Events](../EventLists/ListView.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/ListView.htm) [Children](../ChildLists/ListView.htm) [Properties](../PropLists/ListView.htm) [Methods](../MethodLists/ListView.htm) [Events](../EventLists/ListView.htm)
 
 
-| Purpose: | The ListView object displays a collection of items. |
-| --- | ---  |
+Purpose: The ListView object displays a collection of items.
 
 
 **Description**

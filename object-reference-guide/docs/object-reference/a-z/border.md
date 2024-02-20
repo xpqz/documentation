@@ -14,7 +14,7 @@
 This property specifies whether or not an object is displayed with a border around it. It is a single number with the value 0 (no border)1 (Border), or 2. The value 2 applies only to a [Form](./form.md) and is used in combination with `('EdgeStyle' 'Dialog')` to obtain standard dialog box appearance
 
 
-For a [Form](./form.md) or [SubForm](./subform.md), the value of the Border property is only relevant if [Sizeable](Sizeable.htm), [Moveable](Moveable.htm), [SysMenu](SysMenu.htm), [MaxButton](maxbutton.md) and [MinButton](MinButton.htm) are **all** 0.
+For a [Form](./form.md) or [SubForm](./subform.md), the value of the Border property is only relevant if [Sizeable](sizeable.md), [Moveable](moveable.md), [SysMenu](sysmenu.md), [MaxButton](maxbutton.md) and [MinButton](minbutton.md) are **all** 0.
 
 #### Note
 

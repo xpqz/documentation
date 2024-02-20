@@ -1,6 +1,6 @@
 # Error-Guards
 
-An **error-guard** is (an expression that evaluates to) a vector of error numbers (see [APL Error Messages on page 1](../../../error-messages/apl-errors.md)), followed by the digraph: `::`, followed by an expression, the *body* of the guard, to be evaluated as the result of the function. For example:
+An **error-guard** is (an expression that evaluates to) a vector of error numbers (see [APL Error Messages](../../../error-messages/apl-errors.md)), followed by the digraph: `::`, followed by an expression, the *body* of the guard, to be evaluated as the result of the function. For example:
 ```apl
       11 5 :: ⍵×0 ⍝ Trap DOMAIN and LENGTH errors.
 ```
@@ -19,7 +19,7 @@ Notice that you can provide "cascading" error trapping in the following way:
 
 In this case, if `expr` generates an error, its immediately preceding: `0::` catches it and evaluates `try_1st` leaving the remaining error-guard in scope. If `try_1st` fails, the environment is unwound once again and `try_2nd` is evaluated, this time with no error-guards in scope.
 
-See also [Guards on page 1](guards.md).
+See also [Guards](guards.md).
 
 ## Examples:
 

@@ -92,7 +92,7 @@ Table E5: Editor-related environment variables
 
 | Variable | Notes |
 | --- | ---  |
-| EDITOR_COLUMNS_* | See Configuring the Editor on page 1. Can be one of EDITOR_COLUMNS_CHARACTER_ARRAY EDITOR_COLUMNS_CLASS EDITOR_COLUMNS_FUNCTION EDITOR_COLUMNS_NAMESPACE EDITOR_COLUMNS_NUMERIC_ARRAY |
+| EDITOR_COLUMNS_* | See [Configuring the Editor](../configuring-the-editor.md). Can be one of EDITOR_COLUMNS_CHARACTER_ARRAY EDITOR_COLUMNS_CLASS EDITOR_COLUMNS_FUNCTION EDITOR_COLUMNS_NAMESPACE EDITOR_COLUMNS_NUMERIC_ARRAY |
 | DYALOG_DISCARD_FN_SOURCE | Specifies whether source code is retained in the workspace |
 
 Table E6:Tracer-related environment variables

@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">ToolControl</span></h1>
 
-| [Parents](../ParentLists/ToolControl.htm) | [Children](../ChildLists/ToolControl.htm) | [Properties](../PropLists/ToolControl.htm) | [Methods](../MethodLists/ToolControl.htm) | [Events](../EventLists/ToolControl.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/ToolControl.htm) [Children](../ChildLists/ToolControl.htm) [Properties](../PropLists/ToolControl.htm) [Methods](../MethodLists/ToolControl.htm) [Events](../EventLists/ToolControl.htm)
 
 
-| Purpose: | The ToolControl object provides a standard Windows ToolBar. |
-| --- | ---  |
+Purpose: The ToolControl object provides a standard Windows ToolBar.
 
 
 **Description**

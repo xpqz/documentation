@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Popup</span></h1>
 
-| Applies To: | [SysTrayItem](../a-z/systrayitem.md) | [ToolButton](../a-z/toolbutton.md) |
-| --- | --- | ---  |
+Applies To: [SysTrayItem](../a-z/systrayitem.md) [ToolButton](../a-z/toolbutton.md)
 
 
 **Description**

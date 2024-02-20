@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Update Function Timestamp</span><span class="command">{R}←X(1159⌶)Y</span></h1>
 
-`Y` is an array of function names in the same format as the right argument of `⎕AT`. For further information, see [Attributes on page 1](../../system-functions/system-functions-a-z/system-functions-a-z/at.md).
+`Y` is an array of function names in the same format as the right argument of `⎕AT`. For further information, see [Attributes](../../system-functions/system-functions-a-z/system-functions-a-z/at.md).
 
 
 `X` is an array of function attributes in the same format as the output of `⎕AT`.

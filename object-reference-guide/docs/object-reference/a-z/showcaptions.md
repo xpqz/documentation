@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ShowCaptions</span></h1>
 
-| Applies To: | [ToolControl](./toolcontrol.md) |
-| --- | ---  |
+Applies To: [ToolControl](./toolcontrol.md)
 
 
 **Description**

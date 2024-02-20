@@ -86,6 +86,6 @@ When multiple names are specified they are processed in the order given. If an e
 
 | 0 | The name or names in `Y` identifies a specific file name. |
 | --- | ---  |
-| `1` | The name or names in `Y` that specify the **base name** and **extension** (see NParts on page 1 ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character. |
+| `1` | The name or names in `Y` that specify the **base name** and **extension** (see [NParts](./nparts.md) ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character. |
 
 

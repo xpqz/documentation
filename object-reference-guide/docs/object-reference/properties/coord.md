@@ -101,7 +101,7 @@ you get the virtual resolution of the screen, i.e.
 If Coord is `'Pixel'`, it is interpreted as either `'RealPixel'` or `'ScaledPixel'` according to the value of the Dyalog_Pixel_Type parameter, which is either ScaledPixel or RealPixel. See 
 Installation & Configuration Guide: 
 
-Dyalog_Pixel_Type parameterDyalog_Pixel_Type on page 1.
+Dyalog_Pixel_Type parameter[Dyalog_Pixel_Type](../../../UserGuide/Installation and Configuration/Configuration Parameters/Dyalog_Pixel_Type.htm#Dyalog_Pixel_Type).
 
 
 **If this parameter is not specified, the default is RealPixel. So by default, when you set Coord to Pixel, it will be treated as RealPixel.**

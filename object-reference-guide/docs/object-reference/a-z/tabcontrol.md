@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">TabControl</span></h1>
 
-| [Parents](../ParentLists/TabControl.htm) | [Children](../ChildLists/TabControl.htm) | [Properties](../PropLists/TabControl.htm) | [Methods](../MethodLists/TabControl.htm) | [Events](../EventLists/TabControl.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/TabControl.htm) [Children](../ChildLists/TabControl.htm) [Properties](../PropLists/TabControl.htm) [Methods](../MethodLists/TabControl.htm) [Events](../EventLists/TabControl.htm)
 
 
-| Purpose: | The TabControl object provides access to the native Windows tab         control. |
-| --- | ---  |
+Purpose: The TabControl object provides access to the native Windows tab         control.
 
 
 **Description**
@@ -31,20 +29,20 @@ The overall appearance of the TabControl is determined by the [Style](./style.md
 default), `'Buttons'` or `'FlatButtons'`.
 
 
-Individual tabs or buttons are represented by [TabButton](TabButton.htm) objects which should be created as children of the TabControl object. Optional
+Individual tabs or buttons are represented by [TabButton](tabbutton.md) objects which should be created as children of the TabControl object. Optional
 captions and pictures are specified by the [Caption](./caption.md) and [ImageIndex](./imageindex.md) properties of the
-individual [TabButton](TabButton.htm) objects themselves.
+individual [TabButton](tabbutton.md) objects themselves.
 Otherwise, the appearance of the tabs or buttons is determined by properties of
 the TabControl itself.
 
 
-To implement a multiple page tabbed dialog [(see Example 1)](../Examples/TabControl Example 1.htm), you should create a [Form](Form.htm), then a
+To implement a multiple page tabbed dialog [(see Example 1)](../Examples/TabControl Example 1.htm), you should create a [Form](form.md), then a
 TabControl with Style `'Tabs'` as a child of
-the [Form](Form.htm). Next, create one or more pairs of [TabButton](TabButton.htm) and [SubForm](subform.md) objects as children of the
+the [Form](form.md). Next, create one or more pairs of [TabButton](tabbutton.md) and [SubForm](subform.md) objects as children of the
 TabControl. You associate each [SubForm](subform.md) with a
-particular tab by setting its [TabObj](./tabobj.md) property to the name of, or ref to, the associated [TabButton](TabButton.htm) object. Making the [SubForms](subform.md) children of the
+particular tab by setting its [TabObj](./tabobj.md) property to the name of, or ref to, the associated [TabButton](tabbutton.md) object. Making the [SubForms](subform.md) children of the
 TabControl ensures that, by default, they will automatically be resized
-correctly. You may alternatively create your [SubForms](subform.md) as children of the main [Form](Form.htm) and establish
+correctly. You may alternatively create your [SubForms](subform.md) as children of the main [Form](form.md) and establish
 appropriate resize behaviour using their [Attach](./attach.md) property.
 
 
@@ -143,7 +141,7 @@ To obtain fixed sized tabs with [MultiLine](./multiline.md) set to 1, you must 
 
 
 If fixed size tabs are in effect, the positions at which the picture and
-Caption are drawn within each [TabButton](TabButton.htm) is
+Caption are drawn within each [TabButton](tabbutton.md) is
 controlled by the [TabJustify](./tabjustify.md) property
 which may be `'Centre'`, `'Edge'`,
 or `'IconEdge'`.
@@ -153,7 +151,7 @@ or `'IconEdge'`.
 13](../Examples/TabControl Example 13.htm) illustrates these different settings.
 
 
-The font used to draw the captions in the [TabButton](TabButton.htm) objects is determined by the [FontObj](./fontobj.md) property of the TabControl.
+The font used to draw the captions in the [TabButton](tabbutton.md) objects is determined by the [FontObj](./fontobj.md) property of the TabControl.
 
 
 You cannot specify the foreground or background colours of the tabs/buttons,
@@ -163,7 +161,7 @@ TabControl.
 
 
 The [TabObj](./tabobj.md) property is read-only and
-reports the name of, or ref to, the [TabButton](TabButton.htm) that is currently selected.
+reports the name of, or ref to, the [TabButton](tabbutton.md) that is currently selected.
 
 
 The [MultiSelect](./multiselect.md) property specifies

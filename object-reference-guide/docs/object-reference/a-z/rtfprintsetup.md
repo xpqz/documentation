@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">RTFPrintSetup</span></h1>
 
-| Applies To: | [Printer](./printer.md) | [RichEdit](./richedit.md) |
-| --- | --- | ---  |
+Applies To: [Printer](./printer.md) [RichEdit](./richedit.md)
 
 
 **Description**

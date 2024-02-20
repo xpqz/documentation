@@ -14,7 +14,7 @@ If `X` is omitted, `f` must be a monadic function. If `X` is specified, `f` must
 The derived function is equivalent to `fgY` or `XfgY` and need not return a result.
 
 
-The Beside operator allows functions to be glued together to build up more complex functions. For further information, see Function Composition on page 1.
+The Beside operator allows functions to be glued together to build up more complex functions. For further information, see [Function Composition](../operator-syntax.md).
 
 
 #### Examples

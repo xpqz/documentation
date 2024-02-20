@@ -12,7 +12,7 @@ For example in the following, the expressions `sum←` and `num←` create **loc
        }
 ```
 
-An assignment to `⍵` is not allowed and will result in an error. For assignment to `⍺`, see [Default Left Argument on page 1](Default Left Argument.htm#DefaultLeftArgument).
+An assignment to `⍵` is not allowed and will result in an error. For assignment to `⍺`, see [Default Left Argument](default-left-argument.md).
 
 Note that dfns may be commented in the usual way using `⍝`.
 
@@ -26,7 +26,7 @@ For example, in the following,
       mean←{          ⍝ Arithmetic mean
           sum←+/⍵     ⍝ Sum of items
           num←⍴⍵      ⍝ Number of items
-          sum,num     ⍝ Attempt to show sum,num **(wrong)!**
+          sum,num     ⍝ Attempt to show sum,num (wrong)!
           sum÷num     ⍝ ... and return result.
        }
 		

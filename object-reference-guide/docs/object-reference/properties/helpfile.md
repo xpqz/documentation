@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">HelpFile</span></h1>
 
-| Applies To: | [ActiveXControl](../a-z/activexcontrol.md) | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |
-| --- | --- | --- | ---  |
+Applies To: [ActiveXControl](../a-z/activexcontrol.md) [OCXClass](../a-z/ocxclass.md) [OLEClient](../a-z/oleclient.md)
 
 
 **Description**

@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">MenuItem</span></h1>
 
-| [Parents](../ParentLists/MenuItem.htm) | [Children](../ChildLists/MenuItem.htm) | [Properties](../PropLists/MenuItem.htm) | [Methods](../MethodLists/MenuItem.htm) | [Events](../EventLists/MenuItem.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/MenuItem.htm) [Children](../ChildLists/MenuItem.htm) [Properties](../PropLists/MenuItem.htm) [Methods](../MethodLists/MenuItem.htm) [Events](../EventLists/MenuItem.htm)
 
 
-| Purpose: | This object allows the user to initiate an action or to select an option from a menu. |
-| --- | ---  |
+Purpose: This object allows the user to initiate an action or to select an option from a menu.
 
 
 **Description**

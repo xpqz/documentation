@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SetColSize</span></h1>
 
-| Applies To: | [Grid](./grid.md) | [ListView](./listview.md) |
-| --- | --- | ---  |
+Applies To: [Grid](./grid.md) [ListView](./listview.md)
 
 
 **Description**

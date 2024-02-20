@@ -5,14 +5,13 @@
 
 <h1 class="heading"><span class="name">ShowDropDown</span></h1>
 
-| Applies To: | [ColorButton](./colorbutton.md) | [ToolControl](./toolcontrol.md) |
-| --- | --- | ---  |
+Applies To: [ColorButton](./colorbutton.md) [ToolControl](./toolcontrol.md)
 
 
 **Description**
 
 
-The ShowDropDown property specifies whether or not a drop-down menu symbol is drawn in a [ColorButton](./colorbutton.md) or alongside [ToolButton](./toolbutton.md) objects which have [Style ](Style.htm)`'DropDown'`.
+The ShowDropDown property specifies whether or not a drop-down menu symbol is drawn in a [ColorButton](./colorbutton.md) or alongside [ToolButton](./toolbutton.md) objects which have [Style ](style.md)`'DropDown'`.
 
 
 

@@ -5,18 +5,16 @@
 
 <h1 class="heading"><span class="name">ButtonEdit</span></h1>
 
-| [Parents](../ParentLists/ButtonEdit.htm) | [Children](../ChildLists/ButtonEdit.htm) | [Properties](../PropLists/ButtonEdit.htm) | [Methods](../MethodLists/ButtonEdit.htm) | [Events](../EventLists/ButtonEdit.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/ButtonEdit.htm) [Children](../ChildLists/ButtonEdit.htm) [Properties](../PropLists/ButtonEdit.htm) [Methods](../MethodLists/ButtonEdit.htm) [Events](../EventLists/ButtonEdit.htm)
 
 
-| Purpose: | Allows user to enter or edit data. |
-| --- | ---  |
+Purpose: Allows user to enter or edit data.
 
 
 **Description**
 
 
-The ButtonEdit object combines a single-line input field with a customisable button. It provides the same user and programmer interfaces as an [Edit](Edit.htm#Edit_Object) object (Style `'Single'`).
+The ButtonEdit object combines a single-line input field with a customisable button. It provides the same user and programmer interfaces as an [Edit](edit.md) object (Style `'Single'`).
 
 
 
@@ -61,7 +59,7 @@ The following picture illustrates two ButtonEdit objects
 
 
 For full functionality (in particular, for the [Cue](./cue.md) property to apply), the ButtonEdit object requires that  [Native Look and Feel ](../../Miscellaneous/Windows XP Look and Feel.htm)
-(see page 1)
+[(see page 1)](../../Miscellaneous/Windows XP Look and Feel.htm#Native_Look_and_Feel)
  is enabled.
 
 

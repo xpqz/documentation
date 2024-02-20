@@ -15,7 +15,7 @@ The PropertyShape function must be niladic or monadic and must return a result.
 
 
 
-If monadic, `ipa` is an instance of the internal class [PropertyArguments](PropertyArguments Class.htm). `ipa.Name` contains the name of the Property being referenced and `NewValue` and `Indexers` are undefined (`VALUE ERROR`).
+If monadic, `ipa` is an instance of the internal class [PropertyArguments](propertyarguments-class.md). `ipa.Name` contains the name of the Property being referenced and `NewValue` and `Indexers` are undefined (`VALUE ERROR`).
 
 
 The result `R` must be an integer vector or scalar that specifies the `rank` of the Property. Each element of `R` specifies the length of the corresponding dimension of the Property. Otherwise, the reference or assignment to the Property will fail with `DOMAIN ERROR`.

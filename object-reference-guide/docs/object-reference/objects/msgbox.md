@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">MsgBox</span></h1>
 
-| [Parents](../ParentLists/MsgBox.htm) | [Children](../ChildLists/MsgBox.htm) | [Properties](../PropLists/MsgBox.htm) | [Methods](../MethodLists/MsgBox.htm) | [Events](../EventLists/MsgBox.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/MsgBox.htm) [Children](../ChildLists/MsgBox.htm) [Properties](../PropLists/MsgBox.htm) [Methods](../MethodLists/MsgBox.htm) [Events](../EventLists/MsgBox.htm)
 
 
-| Purpose: | Provides a "modal" dialog box for displaying messages, errors, warnings and other information. The dialog box has a title, one or more lines of text, and up to three buttons. |
-| --- | ---  |
+Purpose: Provides a "modal" dialog box for displaying messages, errors, warnings and other information. The dialog box has a title, one or more lines of text, and up to three buttons.
 
 
 **Description**

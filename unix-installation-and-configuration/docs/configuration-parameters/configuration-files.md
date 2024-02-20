@@ -52,7 +52,10 @@ To include literal square brackets in a string, prefix them with a `\` character
 
 Configuration files support nested parameter structures by defining an object that corresponds to the structure. For example:
 ```apl
-`Captions: { Session: "My Dyalog Session" Status: "My Status window" }`
+Captions: {
+    Session: "My Dyalog Session"
+    Status: "My Status window"
+}
 ```
 ```apl
       +2 ⎕NQ '.' 'GetEnvironment' 'Captions\Session'
@@ -61,7 +64,7 @@ My Dyalog Session
 
 ## Example Configuration File Content
 ```apl
-`{
+{
    Extend: "my_default_configuration.dcfg",
    Settings: {
    // maximum workspace
@@ -72,5 +75,5 @@ My Dyalog Session
    // references to other configuration parameters
    FNAME: "[rootdir]/filename",
    }
-}`
+}
 ```

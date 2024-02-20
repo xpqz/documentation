@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ShowBalloonTip</span></h1>
 
-| Applies To: | [SysTrayItem](./systrayitem.md) |
-| --- | ---  |
+Applies To: [SysTrayItem](./systrayitem.md)
 
 
 **Description**

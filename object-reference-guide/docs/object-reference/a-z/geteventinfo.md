@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">GetEventInfo</span></h1>
 
-| Applies To: | [OCXClass](./ocxclass.md) | [OLEClient](./oleclient.md) |
-| --- | --- | ---  |
+Applies To: [OCXClass](./ocxclass.md) [OLEClient](./oleclient.md)
 
 
 **Description**
@@ -23,8 +22,7 @@ For each event supported by a COM object, the author will have registered the da
 The argument to GetEventInfo is a single item as follows:
 
 
-| `[1]` | Event name(s) | see below |
-| --- | --- | ---  |
+`[1]` Event name(s) see below
 
 
 

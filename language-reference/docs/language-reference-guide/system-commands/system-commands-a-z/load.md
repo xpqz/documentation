@@ -8,7 +8,7 @@
 This command causes the named stored workspace to be loaded.  The current active workspace is lost.
 
 
-`ws` specifies a file name. If no file extension is given, it is implied. See [WSEXT on page 1](../../UserGuide/Installation and Configuration/Configuration Parameters/WSEXT.htm#WSEXT).
+`ws` specifies a file name. If no file extension is given, it is implied. See [WSEXT](../../UserGuide/Installation and Configuration/Configuration Parameters/WSEXT.htm#WSEXT).
 
 
 If `ws` is a full or relative pathname, only the specified directory is examined.  If not, the APL workspace path (`WSPATH`) is traversed in search of the named workspace.  A stored workspace is one which has previously been saved with the system command `)SAVE` or the system function `⎕SAVE`.  Under Windows, if `ws` is omitted, the File Open dialog box is displayed.

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Array</span></h1>
 
-| Applies To: | [Clipboard](./clipboard.md) |
-| --- | ---  |
+Applies To: [Clipboard](./clipboard.md)
 
 
 **Description**

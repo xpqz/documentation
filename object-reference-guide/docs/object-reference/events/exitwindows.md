@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ExitWindows</span></h1>
 
-| Applies To: | [Root](../a-z/root.md) |
-| --- | ---  |
+Applies To: [Root](../a-z/root.md)
 
 
 **Description**
@@ -28,6 +27,6 @@ The event message reported as the result of [`⎕DQ`](../../Language/System Func
 The associated callback is run **immediately** while the windows notification is still on the stack. See 
 Interface Guide: 
 
-High-Priority Callback FunctionsHigh-Priority Callback Functions on page 1.
+High-Priority Callback Functions[High-Priority Callback Functions](../../InterfaceGuide/Introduction/High Priority Callbacks.htm#High-Priority_Callback_Functions).
 
 

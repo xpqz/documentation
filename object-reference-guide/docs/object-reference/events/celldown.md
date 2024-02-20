@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">CellDown</span></h1>
 
-| Applies To: | [Grid](../a-z/grid.md) |
-| --- | ---  |
+Applies To: [Grid](../a-z/grid.md)
 
 
 **Description**

@@ -11,7 +11,7 @@
 `X` is an ordered non-scalar array that represents a set of intervals or ranges.
 
 
-Note that the `i`th interval starts at  `X[i]`, then includes all subsequent values up to but not including `X[i+1]`.
+Note that the `i`<sup>th</sup> interval starts at  `X[i]`, then includes all subsequent values up to but not including `X[i+1]`.
 
 
 
@@ -47,10 +47,10 @@ If `X` is `'AEIOU'` it defines 6 intervals numbered 0 to 5 as follows:
 The result `R` is an integer array that identifies into which interval  the corresponding value in `Y` falls.
 
 
-Like dyadic `⍳` (see [Index Of on page 1](index-of.md)), Interval Index works with major cells. For a vector these are its elements; for a matrix its rows, and so forth.
+Like dyadic `⍳` (see [Index Of](index-of.md)), Interval Index works with major cells. For a vector these are its elements; for a matrix its rows, and so forth.
 
 
-`X` and `Y` are compared using  the same logic as monadic `⍋` (see [Grade Up (Monadic) on page 1](grade-up-monadic.md)) which is independent of `⎕CT` and `⎕DCT`.
+`X` and `Y` are compared using  the same logic as monadic `⍋` (see [Grade Up (Monadic)](grade-up-monadic.md)) which is independent of `⎕CT` and `⎕DCT`.
 
 
 `⎕IO` is an implicit argument of Interval Index. In all the following examples, `⎕IO` is 1.

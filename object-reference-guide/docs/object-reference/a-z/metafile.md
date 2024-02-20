@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Metafile</span></h1>
 
-| [Parents](../ParentLists/Metafile.htm) | [Children](../ChildLists/Metafile.htm) | [Properties](../PropLists/Metafile.htm) | [Methods](../MethodLists/Metafile.htm) | [Events](../EventLists/Metafile.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Metafile.htm) [Children](../ChildLists/Metafile.htm) [Properties](../PropLists/Metafile.htm) [Methods](../MethodLists/Metafile.htm) [Events](../EventLists/Metafile.htm)
 
 
-| Purpose: | This object represents a picture in Windows Metafile format. |
-| --- | ---  |
+Purpose: This object represents a picture in Windows Metafile format.
 
 
 **Description**

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Radius</span></h1>
 
-| Applies To: | [Circle](./circle.md) | [Rect](./rect.md) |
-| --- | --- | ---  |
+Applies To: [Circle](./circle.md) [Rect](./rect.md)
 
 
 **Description**

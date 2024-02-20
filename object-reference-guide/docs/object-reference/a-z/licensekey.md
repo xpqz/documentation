@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">LicenseKey</span></h1>
 
-| Applies To: | [OCXClass](./ocxclass.md) |
-| --- | ---  |
+Applies To: [OCXClass](./ocxclass.md)
 
 
 **Description**

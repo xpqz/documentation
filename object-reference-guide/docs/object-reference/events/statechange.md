@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">StateChange</span></h1>
 
-| Applies To: | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) |
-| --- | --- | ---  |
+Applies To: [Form](../a-z/form.md) [SubForm](../a-z/subform.md)
 
 
 **Description**

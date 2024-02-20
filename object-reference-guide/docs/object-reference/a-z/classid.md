@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ClassID</span></h1>
 
-| Applies To: | [ActiveXControl](./activexcontrol.md) | [OCXClass](./ocxclass.md) | [OLEClient](./oleclient.md) | [OLEServer](./oleserver.md) |
-| --- | --- | --- | --- | ---  |
+Applies To: [ActiveXControl](./activexcontrol.md) [OCXClass](./ocxclass.md) [OLEClient](./oleclient.md) [OLEServer](./oleserver.md)
 
 
 **Description**

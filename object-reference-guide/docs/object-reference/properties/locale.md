@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Locale</span></h1>
 
-| Applies To: | [OLEClient](../a-z/oleclient.md) |
-| --- | ---  |
+Applies To: [OLEClient](../a-z/oleclient.md)
 
 
 **Description**

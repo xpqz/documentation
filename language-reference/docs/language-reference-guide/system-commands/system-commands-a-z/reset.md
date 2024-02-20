@@ -11,7 +11,7 @@ This command cancels all suspensions recorded in the state indicator and discard
 The optional parameter `n` specifies that only the top `n` suspensions are to be cleared.
 
 
-`)RESET` also performs an internal re-organisation of the workspace and process memory. See ["Workspace Available: " on page 1](../../system-functions/system-functions-a-z/system-functions-a-z/wa.md)  for details.
+`)RESET` also performs an internal re-organisation of the workspace and process memory. See ["Workspace Available: "](../../system-functions/system-functions-a-z/system-functions-a-z/wa.md)  for details.
 
 #### Example
 ```apl

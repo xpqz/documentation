@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Menu</span></h1>
 
-| [Parents](../ParentLists/Menu.htm) | [Children](../ChildLists/Menu.htm) | [Properties](../PropLists/Menu.htm) | [Methods](../MethodLists/Menu.htm) | [Events](../EventLists/Menu.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Menu.htm) [Children](../ChildLists/Menu.htm) [Properties](../PropLists/Menu.htm) [Methods](../MethodLists/Menu.htm) [Events](../EventLists/Menu.htm)
 
 
-| Purpose: | This is a pop-up object which allows the user to initiate an action or         to select an option using a "menu". |
-| --- | ---  |
+Purpose: This is a pop-up object which allows the user to initiate an action or         to select an option using a "menu".
 
 
 **Description**

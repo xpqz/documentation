@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Scroll</span></h1>
 
-| [Parents](../ParentLists/Scroll.htm) | [Children](../ChildLists/Scroll.htm) | [Properties](../PropLists/Scroll.htm) | [Methods](../MethodLists/Scroll.htm) | [Events](../EventLists/Scroll.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Scroll.htm) [Children](../ChildLists/Scroll.htm) [Properties](../PropLists/Scroll.htm) [Methods](../MethodLists/Scroll.htm) [Events](../EventLists/Scroll.htm)
 
 
-| Purpose: | Provides a vertical or horizontal scrollbar. |
-| --- | ---  |
+Purpose: Provides a vertical or horizontal scrollbar.
 
 
 **Description**

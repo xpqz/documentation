@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">InterceptedURLs</span></h1>
 
-| Applies To: | [HTMLRenderer](../a-z/htmlrenderer.md) |
-| --- | ---  |
+Applies To: [HTMLRenderer](../a-z/htmlrenderer.md)
 
 
 **Description**
@@ -29,8 +28,8 @@ The first column is a wild-carded character scalar or vector containing a patter
 
 If the requested url is a relative rather than an absolute URL, it is prepended by the string `http://dyalog_root/`. So, for example, if the [HTML](../a-z/html.md) property contains :
 ```apl
-`<link rel="stylesheet" href="style.css">
-<script src="app.js"></script>`
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
 ```
 
 
@@ -44,8 +43,8 @@ When the value of InterceptedURLs is its default ( `(0 2⍴'')` it is treated as
 
 Note that if code in the page creates a web socket intended for internal use, with anything other than `dyalog_root` as the URL, the URL must match a pattern in InterceptedURLs with 1 in the second column. The following example does not require a matching pattern in InterceptedURLs.
 ```apl
-`// Create a new WebSocket.
-  window.socket = new WebSocket('ws://dyalog_root/');`
+ // Create a new WebSocket.
+  window.socket = new WebSocket('ws://dyalog_root/');
 ```
 
 

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SetEventInfo</span></h1>
 
-| Applies To: | [ActiveXControl](../a-z/activexcontrol.md) | [OLEServer](../a-z/oleserver.md) |
-| --- | --- | ---  |
+Applies To: [ActiveXControl](../a-z/activexcontrol.md) [OLEServer](../a-z/oleserver.md)
 
 
 **Description**
@@ -36,7 +35,7 @@ The argument to SetEventInfo is a 1, 2, 3 or 4-element array as follows:
 | --- | --- | ---  |
 | `[2]` | Event info | nested array (see below) |
 | `[3]` | Help ID | integer |
-| `[4]` | DISPID | integer. See DISPID (Dispatch ID) on page 1 |
+| `[4]` | DISPID | integer. See [DISPID (Dispatch ID)](../../Miscellaneous/DISPID.htm#DISPID) |
 
 
 
@@ -89,9 +88,9 @@ The following statements were used to declare the*ChangeValue1*event The event p
 
 If the host application was Visual Basic, a suitable callback function might be:
 ```apl
-`Private Sub Dual1_ChangeValue1(Value1 As Long)
+Private Sub Dual1_ChangeValue1(Value1 As Long)
 Value1=2*(Value1\2)
-End Sub`
+End Sub
 ```
 
 

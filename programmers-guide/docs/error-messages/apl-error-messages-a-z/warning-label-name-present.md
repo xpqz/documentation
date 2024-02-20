@@ -8,7 +8,7 @@
 This warning message is reported on closing definition mode when one or more label names also occur in the header line of the function.  This does not prevent definition of the function in the active workspace.  The order in which values are associated with names is described in  
 Programming Reference Guide: 
 
-Defined Functions & Operators"Defined Functions & Operators" on page 1.
+Defined Functions & Operators["Defined Functions & Operators"](../Defined Functions and Operators/Defined Functions and Operators.htm#Chapter2).
 
 
 

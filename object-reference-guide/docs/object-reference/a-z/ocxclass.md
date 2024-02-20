@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">OCXClass</span></h1>
 
-| [Parents](../ParentLists/OCXClass.htm) | [Properties](../PropLists/OCXClass.htm) | [Methods](../MethodLists/OCXClass.htm) | [Events](../EventLists/OCXClass.htm) |
-| --- | --- | --- | ---  |
+[Parents](../ParentLists/OCXClass.htm) [Properties](../PropLists/OCXClass.htm) [Methods](../MethodLists/OCXClass.htm) [Events](../EventLists/OCXClass.htm)
 
 
-| Purpose: | This object provides access to OLE (ActiveX) Controls. |
-| --- | ---  |
+Purpose: This object provides access to OLE (ActiveX) Controls.
 
 
 **Description**

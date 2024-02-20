@@ -2,7 +2,7 @@
 
 The first APLExample sample is supplied in `samples\asp.net\webservices\eg1.asmx` which is mapped via an IIS Virtual Directory to the URL:
 ```apl
-`http://localhost/dyalog.net.15.0.unicode.32/webservices/eg1.asmx`
+ http://localhost/dyalog.net.15.0.unicode.32/webservices/eg1.asmx
 ```
 ```apl
  

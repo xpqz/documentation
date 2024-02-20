@@ -5,18 +5,16 @@
 
 <h1 class="heading"><span class="name">Splitter</span></h1>
 
-| [Parents](../ParentLists/Splitter.htm) | [Children](../ChildLists/Splitter.htm) | [Properties](../PropLists/Splitter.htm) | [Methods](../MethodLists/Splitter.htm) | [Events](../EventLists/Splitter.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Splitter.htm) [Children](../ChildLists/Splitter.htm) [Properties](../PropLists/Splitter.htm) [Methods](../MethodLists/Splitter.htm) [Events](../EventLists/Splitter.htm)
 
 
-| Purpose: | The Splitter object divides a container into resizable panes. |
-| --- | ---  |
+Purpose: The Splitter object divides a container into resizable panes.
 
 
 **Description**
 
 
-The Splitter divides the client area of a [Form](Form.htm) or [SubForm](subform.md) into resizable panes. Each pane created this way may be empty or be occupied by a single object. If the object in a pane is itself a container object, such as a [SubForm](subform.md), it may have a number of other controls within it.
+The Splitter divides the client area of a [Form](form.md) or [SubForm](subform.md) into resizable panes. Each pane created this way may be empty or be occupied by a single object. If the object in a pane is itself a container object, such as a [SubForm](subform.md), it may have a number of other controls within it.
 
 
 
@@ -27,10 +25,10 @@ A Splitter may manage objects of the following types:
 
 
 
-If [Style](./style.md) is `'Vert'` (the default), the Splitter is drawn vertically in its parent with the first object ([SplitObj1](./splitobj1.md)) positioned to its left, and the second object ([SplitObj2](./splitobj2.md)) to its right.  See Splitter: Example 1.
+If [Style](./style.md) is `'Vert'` (the default), the Splitter is drawn vertically in its parent with the first object ([SplitObj1](./splitobj1.md)) positioned to its left, and the second object ([SplitObj2](./splitobj2.md)) to its right. [ See Splitter: Example 1.](../Examples/Splitter Example 1.htm)
 
 
-If [Style](./style.md) is `'Horz'`, the Splitter is drawn horizontally in its parent with the first object ([SplitObj1](./splitobj1.md)) positioned above, and the second object ([SplitObj2](./splitobj2.md)) below. See Splitter: Example 2.
+If [Style](./style.md) is `'Horz'`, the Splitter is drawn horizontally in its parent with the first object ([SplitObj1](./splitobj1.md)) positioned above, and the second object ([SplitObj2](./splitobj2.md)) below.[ See Splitter: Example 2.](../Examples/Splitter Example 2.htm)
 
 
 The [Style](./style.md) property must be set when the object is created with `⎕WC` and may not subsequently be changed using `⎕WS`.
@@ -73,19 +71,19 @@ If you want to divide a Form into more than 2 resizable panes, there are two pos
 The first approach is a hierarchical one using SubForms. This example shows how you can create a Form containing three resizable Edit objects.
 
 
-First, you create an Edit, a SubForm, and a Splitter as children of the *Form*, using the Splitter to divide the Form into two panes, one for the Edit and the other for the SubForm. Next, you create two Edit objects and a Splitter as children of the *SubForm*, using the second Splitter to divide the SubForm into two. You can continue with this approach to any reasonable depth.  See Splitter: Example 3.
+First, you create an Edit, a SubForm, and a Splitter as children of the *Form*, using the Splitter to divide the Form into two panes, one for the Edit and the other for the SubForm. Next, you create two Edit objects and a Splitter as children of the *SubForm*, using the second Splitter to divide the SubForm into two. You can continue with this approach to any reasonable depth. [ See Splitter: Example 3.](../Examples/Splitter Example 3.htm)
 
 
 Notice that, by default, when the first Splitter is shifted to the left, both panes in the SubForm expand equally.
 
 
-The second approach is to create multiple Splitters *at the same level*, i.e. owned by the same parent.  See Splitter: Example 4.
+The second approach is to create multiple Splitters *at the same level*, i.e. owned by the same parent. [ See Splitter: Example 4.](../Examples/Splitter Example 4.htm)
 
 
 In this case, the third Edit object `F.E3` is unaffected by movement of the leftmost Splitter `F.S1`. Note also, that the first Splitter `F.S1` may not be dragged further right than the second Splitter `F.S2`.
 
 
-Using the non-hierarchical approach, horizontal and vertical Splitters may be combined in interesting ways. This can also be achieved using nested SubForms, but at the expense of a complex object hierarchy. See Splitter: Example 5.
+Using the non-hierarchical approach, horizontal and vertical Splitters may be combined in interesting ways. This can also be achieved using nested SubForms, but at the expense of a complex object hierarchy.[ See Splitter: Example 5.](../Examples/Splitter Example 5.htm)
 
 
 Notice that in this example, with the exception of the last Splitter `F.S4`, it is necessary only to specify the [SplitObj1](./splitobj1.md) property for each of the Splitters. The reason is that the first four Splitters only manage one object *directly*. For example, the object to the right of `F.S1` is in fact a horizontal Splitter `F.S2`. Dragging `F.S1` changes the length of `F.S2` which in turn changes the width of `F.E2`. and `F.E3`.

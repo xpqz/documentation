@@ -6,7 +6,7 @@ This example illustrates data binding using a vector of .NET objects, in this ca
 
 The XAML shown below,  describes a Window containing a StackPanel, inside which is a ListBox.
 ```apl
-`<Window 
+<Window 
 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -18,7 +18,7 @@ The XAML shown below,  describes a Window containing a StackPanel, inside which 
          <ListBox Name="EasterDates" Height="100"
           Margin="5" />
     </StackPanel>
-</Window>`
+</Window>
 ```
 
 ## The APL Code
@@ -77,5 +77,5 @@ Then, NetObjects[5] creates a binding source object from this array and assigns 
 
 ```
 ```apl
-![data binding netobjects1](../img/data-binding-netobjects1.png)
+
 ```

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">DDE</span></h1>
 
-| Applies To: | [Root](./root.md) |
-| --- | ---  |
+Applies To: [Root](./root.md)
 
 
 **Description**

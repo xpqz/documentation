@@ -14,7 +14,7 @@ Incidentally, the ItemsSource property overrides the Items collection as a means
 
 The variable `XAML_FilteredList`, shown below, contains XAML to specify a Window containing a StackPanel. The StackPanel control is a WPF layout control that organises child controls in a single line, by default vertically. In this example, the StackPanel contains a TextBox and, below it, a WrapPanel, and below that a TextBlock. The WrapPanel is also a layout control that organises its child controls sequentially from left to right. The WrapPanel contains two ListBox controls.
 ```apl
-`<Window 
+<Window 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="Filtered List Example"
@@ -32,7 +32,8 @@ The variable `XAML_FilteredList`, shown below, contains XAML to specify a Window
         </WrapPanel>   
         <TextBlock Text="Dyalog WPF Demo" Margin="5"/>
     </StackPanel>
- </Window>`
+ </Window>
+
 ```
 
 ## The Code
@@ -65,20 +66,23 @@ The DataContext property is inherited by all child controls, so they all share t
 
 The Text property of the TextBox named **filter** is bound to the variable `Filter` by the expression `Text="{Binding Filter,...`
 ```apl
-`<TextBox Name="filter" Margin="5"
-         Text="{Binding Filter,Mode=TwoWay,`
+
+        <TextBox Name="filter" Margin="5"
+         Text="{Binding Filter,Mode=TwoWay,
 ```
 
 The ItemsSource property of the ListBox named **all** is bound to the variable `DyalogNames` by the expression `ItemsSource="{Binding DyalogNames}"`
 ```apl
-`<ListBox Name="all" Width="135" Height="440"
-             Margin="5" ItemsSource="{Binding DyalogNames}"/>`
+
+            <ListBox Name="all" Width="135" Height="440"
+             Margin="5" ItemsSource="{Binding DyalogNames}"/>
 ```
 
 Thirdly, the ItemsSource property of the ListBox named **filtered** is bound to the variable `FilteredList` by the expression `ItemsSource="{Binding FilteredList}"`
 ```apl
-`<ListBox Name="filtered" Width="135" Height="440"
-             Margin="5" ItemsSource="{Binding FilteredList}"/>`
+
+            <ListBox Name="filtered" Width="135" Height="440"
+             Margin="5" ItemsSource="{Binding FilteredList}"/>
 ```
 
 ## Testing the Data Binding
@@ -86,7 +90,7 @@ Thirdly, the ItemsSource property of the ListBox named **filtered** is bound to 
       FilteredList
 ```
 ```apl
-![data binding filteredlist 1](../img/data-binding-filteredlist-1.png)
+
 ```
 
 If the user types a single character, in this case "e", into the TextBox, this fires a TextChanged event which in turn fires the callback function shown below:

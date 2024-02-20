@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">TabBar</span></h1>
 
-| [Parents](../ParentLists/TabBar.htm) | [Children](../ChildLists/TabBar.htm) | [Properties](../PropLists/TabBar.htm) | [Methods](../MethodLists/TabBar.htm) | [Events](../EventLists/TabBar.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/TabBar.htm) [Children](../ChildLists/TabBar.htm) [Properties](../PropLists/TabBar.htm) [Methods](../MethodLists/TabBar.htm) [Events](../EventLists/TabBar.htm)
 
 
-| Purpose: | To manage a set of [TabBtn](tabbtn.md) objects. |
-| --- | ---  |
+Purpose: To manage a set of [TabBtn](tabbtn.md) objects.
 
 
 **Description**
@@ -24,7 +22,7 @@ top and given the focus.
 
 TabBar and [TabBtn](tabbtn.md) objects were implemented
 before Windows provided direct support for tabbed dialogs, and have been
-superceded by [TabControl](tabcontrol.md) and [TabButton](TabButton.htm) objects. Please use these instead.
+superceded by [TabControl](tabcontrol.md) and [TabButton](tabbutton.md) objects. Please use these instead.
 
 
 By default, a TabBar is a flat bar stretched across the bottom of its parent

@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">SysTrayItem</span></h1>
 
-| [Parents](../ParentLists/SysTrayItem.htm) | [Children](../ChildLists/SysTrayItem.htm) | [Properties](../PropLists/SysTrayItem.htm) | [Methods](../MethodLists/SysTrayItem.htm) | [Events](../EventLists/SysTrayItem.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/SysTrayItem.htm) [Children](../ChildLists/SysTrayItem.htm) [Properties](../PropLists/SysTrayItem.htm) [Methods](../MethodLists/SysTrayItem.htm) [Events](../EventLists/SysTrayItem.htm)
 
 
-| Purpose: | The SysTrayItem object represents an item that you can create in the Windows System Tray. |
-| --- | ---  |
+Purpose: The SysTrayItem object represents an item that you can create in the Windows System Tray.
 
 
 **Description**

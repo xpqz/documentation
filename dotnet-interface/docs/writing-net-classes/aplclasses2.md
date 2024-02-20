@@ -41,7 +41,7 @@ Using this version,  build a new .NET Assembly using *File/Export**…* as befor
 
 The following C# source, called `aplclasses2\Framework\program.cs`, will be used to call the new version of our Dyalog.NET class.
 ```apl
-`using System;
+      using System;
       using APLClasses;
       public class MainClass
             {
@@ -53,12 +53,12 @@ The following C# source, called `aplclasses2\Framework\program.cs`, will be used
                   for (int i=0;i<rslt.Length;i++)
                   Console.WriteLine(rslt[i]);
                   }
-            }`
+            }
 ```
 
 The program is the same as in the previous example, except that the code that creates an instance of the `Primitives` class is simply changed to specify an argument; in this case 0.
 ```apl
-`Primitives apl = new Primitives(0);`
+Primitives apl = new Primitives(0);
 ```
 
 Using VS, open the solution file`d:\aplclasses\aplclasses2\Framework\project.sln` and view `program.cs`.

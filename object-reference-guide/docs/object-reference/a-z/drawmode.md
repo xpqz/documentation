@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">DrawMode</span></h1>
 
-| Applies To: | [Circle](./circle.md) | [Ellipse](./ellipse.md) | [Marker](./marker.md) | [Poly](./poly.md) | [Rect](./rect.md) | [Text](./text.md) |
-| --- | --- | --- | --- | --- | --- | ---  |
+Applies To: [Circle](./circle.md) [Ellipse](./ellipse.md) [Marker](./marker.md) [Poly](./poly.md) [Rect](./rect.md) [Text](./text.md)
 
 
 **Description**

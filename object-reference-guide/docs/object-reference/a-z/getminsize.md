@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">GetMinSize</span></h1>
 
-| Applies To: | [Calendar](./calendar.md) |
-| --- | ---  |
+Applies To: [Calendar](./calendar.md)
 
 
 **Description**

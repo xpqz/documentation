@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">TCPGetHostID</span></h1>
 
-| Applies To: | [Root](../a-z/root.md) | [TCPSocket](../a-z/tcpsocket.md) |
-| --- | --- | ---  |
+Applies To: [Root](../a-z/root.md) [TCPSocket](../a-z/tcpsocket.md)
 
 
 **Description**

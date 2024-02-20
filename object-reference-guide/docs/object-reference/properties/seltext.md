@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SelText</span></h1>
 
-| Applies To: | [ButtonEdit](../a-z/buttonedit.md) | [Combo](../a-z/combo.md) | [ComboEx](../a-z/comboex.md) | [Edit](../a-z/edit.md) | [RichEdit](../a-z/richedit.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [ButtonEdit](../a-z/buttonedit.md) [Combo](../a-z/combo.md) [ComboEx](../a-z/comboex.md) [Edit](../a-z/edit.md) [RichEdit](../a-z/richedit.md)
 
 
 **Description**

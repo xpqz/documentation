@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Transparent</span></h1>
 
-| Applies To: | [Animation](../a-z/animation.md) | [ButtonEdit](../a-z/buttonedit.md) | [ToolControl](../a-z/toolcontrol.md) |
-| --- | --- | --- | ---  |
+Applies To: [Animation](../a-z/animation.md) [ButtonEdit](../a-z/buttonedit.md) [ToolControl](../a-z/toolcontrol.md)
 
 
 **Description**

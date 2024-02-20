@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Separator</span></h1>
 
-| [Parents](../ParentLists/Separator.htm) | [Children](../ChildLists/Separator.htm) | [Properties](../PropLists/Separator.htm) | [Methods](../MethodLists/Separator.htm) | [Events](../EventLists/Separator.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Separator.htm) [Children](../ChildLists/Separator.htm) [Properties](../PropLists/Separator.htm) [Methods](../MethodLists/Separator.htm) [Events](../EventLists/Separator.htm)
 
 
-| Purpose: | A horizontal or vertical line used to separate items in a menu. |
-| --- | ---  |
+Purpose: A horizontal or vertical line used to separate items in a menu.
 
 
 **Description**

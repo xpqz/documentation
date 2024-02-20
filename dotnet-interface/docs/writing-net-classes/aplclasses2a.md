@@ -4,7 +4,9 @@ In Example 2, the argument to `CTOR`, the constructor for the `Primitives` class
 
 To investigate this case, change the line of code in `program.cs` that creates an instance of the Primitives class, passing the argument 2, like this:
 ```apl
-`Primitives apl = new Primitives(2);`
+  
+                  Primitives apl = new Primitives(2);
+  
 ```
 
 ![aplclasses2a_1](../img/aplclasses2a-1.png)

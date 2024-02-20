@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Bitmap</span></h1>
 
-| [Parents](../ParentLists/Bitmap.htm) | [Children](../ChildLists/Bitmap.htm) | [Properties](../PropLists/Bitmap.htm) | [Methods](../MethodLists/Bitmap.htm) | [Events](../EventLists/Bitmap.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Bitmap.htm) [Children](../ChildLists/Bitmap.htm) [Properties](../PropLists/Bitmap.htm) [Methods](../MethodLists/Bitmap.htm) [Events](../EventLists/Bitmap.htm)
 
 
-| Purpose: | A graphical object used to represent a bitmap which may be used both to display a picture or as a pattern (brush) used to fill other objects. |
-| --- | ---  |
+Purpose: A graphical object used to represent a bitmap which may be used both to display a picture or as a pattern (brush) used to fill other objects.
 
 
 **Description**

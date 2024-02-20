@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">LWidth</span></h1>
 
-| Applies To: | [Circle](./circle.md) | [Ellipse](./ellipse.md) | [Poly](./poly.md) | [Rect](./rect.md) |
-| --- | --- | --- | --- | ---  |
+Applies To: [Circle](./circle.md) [Ellipse](./ellipse.md) [Poly](./poly.md) [Rect](./rect.md)
 
 
 **Description**

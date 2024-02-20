@@ -7,7 +7,7 @@ Dyalog APL will generate a system error and (normally) terminate in one of two c
 - As a result of the failure of a workspace integrity check
 - As a result of a System Exception
 
-On Windows, if the [DYALOG_NOPOPUPS](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS) parameter is 0 (the default), it will display the System Error dialog box (see [System Error Dialog Box on page 1](#System_Error_Dialog)). This is suppressed if [DYALOG_NOPOPUPS](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS) is 1.
+On Windows, if the [DYALOG_NOPOPUPS](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS) parameter is 0 (the default), it will display the System Error dialog box (see [System Error Dialog Box](#System_Error_Dialog)). This is suppressed if [DYALOG_NOPOPUPS](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS) is 1.
 
 ### aplcore file
 
@@ -15,7 +15,7 @@ When a system error occurs, APL normally saves an **aplcore** file which may be 
 
 Normally a new **aplcore** will replace a file of the same name. However, if [AplCoreName](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#APLCoreName) contains an asterisk (*), the system will create a new file,  replacing the asterisk with a number incremented from the largest numbered file present.
 
-The number of **aplcore** files retained by the system is specified by the [MaxAplCores](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores) parameter. If [MaxAplCores](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores) is 0, the system will not save an **aplcore**. However, under Windows, if [DYALOG_NOPOPUPS](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS) is 0, and the user checks the **Create an aplcore file** checkbox when the **System Error**dialog box is displayed, an **aplcore** will be saved regardless of the value of [MaxAplCores](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores). See [System Error Dialog Box on page 1](#System_Error_Dialog).
+The number of **aplcore** files retained by the system is specified by the [MaxAplCores](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores) parameter. If [MaxAplCores](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores) is 0, the system will not save an **aplcore**. However, under Windows, if [DYALOG_NOPOPUPS](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#DYALOG_NOPOPUPS) is 0, and the user checks the **Create an aplcore file** checkbox when the **System Error**dialog box is displayed, an **aplcore** will be saved regardless of the value of [MaxAplCores](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores). See [System Error Dialog Box](#System_Error_Dialog).
 
 Be aware that if your application contains any secure data, this data may be present in an **aplcore** file, and it may be appropriate to set both [MaxAplCores](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#maxaplcores) and DYALOG_NOPOPUPS to 0 to prevent such data being saved on disk.
 

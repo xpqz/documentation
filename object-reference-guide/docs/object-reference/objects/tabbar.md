@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">TabBar</span></h1>
 
-| [Parents](../ParentLists/TabBar.htm) | [Children](../ChildLists/TabBar.htm) | [Properties](../PropLists/TabBar.htm) | [Methods](../MethodLists/TabBar.htm) | [Events](../EventLists/TabBar.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/TabBar.htm) [Children](../ChildLists/TabBar.htm) [Properties](../PropLists/TabBar.htm) [Methods](../MethodLists/TabBar.htm) [Events](../EventLists/TabBar.htm)
 
 
-| Purpose: | To manage a set of [TabBtn](../a-z/tabbtn.md) objects. |
-| --- | ---  |
+Purpose: To manage a set of [TabBtn](../a-z/tabbtn.md) objects.
 
 
 **Description**

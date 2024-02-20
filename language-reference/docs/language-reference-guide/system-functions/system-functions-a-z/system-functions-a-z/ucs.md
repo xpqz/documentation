@@ -94,7 +94,7 @@ Because integers are *signed*, numbers greater than 127 will be represented as 2
       'UTF-16' ⎕UCS 'ABCÆØÅ⍒⍋'
 65 66 67 198 216 197 9042 9035
       ⎕←unihan←⎕UCS (2×2*16)+⍳3 ⍝ x20001-x20003
-![unihan](../img/unihan.png)
+
       'UTF-16' ⎕UCS unihan
 55360 56321 55360 56322 55360 56323
 ```

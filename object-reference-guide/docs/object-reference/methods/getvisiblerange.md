@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">GetVisibleRange</span></h1>
 
-| Applies To: | [Calendar](../a-z/calendar.md) |
-| --- | ---  |
+Applies To: [Calendar](../a-z/calendar.md)
 
 
 **Description**

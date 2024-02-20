@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">DockStart</span></h1>
 
-| Applies To: | [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) | [Form](./form.md) | [SubForm](./subform.md) | [ToolControl](./toolcontrol.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [CoolBand](./coolband.md) [CoolBar](./coolbar.md) [Form](./form.md) [SubForm](./subform.md) [ToolControl](./toolcontrol.md)
 
 
 **Description**
@@ -30,6 +29,6 @@ A callback function may prevent the docking operation from starting by returning
 The associated callback is run **immediately** while the windows notification is still on the stack. See 
 Interface Guide: 
 
-High-Priority Callback FunctionsHigh-Priority Callback Functions on page 1.
+High-Priority Callback Functions[High-Priority Callback Functions](../../InterfaceGuide/Introduction/High Priority Callbacks.htm#High-Priority_Callback_Functions).
 
 

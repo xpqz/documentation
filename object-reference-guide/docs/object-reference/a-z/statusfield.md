@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">StatusField</span></h1>
 
-| [Parents](../ParentLists/StatusField.htm) | [Children](../ChildLists/StatusField.htm) | [Properties](../PropLists/StatusField.htm) | [Methods](../MethodLists/StatusField.htm) | [Events](../EventLists/StatusField.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/StatusField.htm) [Children](../ChildLists/StatusField.htm) [Properties](../PropLists/StatusField.htm) [Methods](../MethodLists/StatusField.htm) [Events](../EventLists/StatusField.htm)
 
 
-| Purpose: | This object is used to display information for the user. |
-| --- | ---  |
+Purpose: This object is used to display information for the user.
 
 
 **Description**

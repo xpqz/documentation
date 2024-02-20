@@ -41,12 +41,12 @@ If `exp` evaluates to a function, the items of its argument array(s) are *distri
 
 Monadic function `f`:
 ```apl
-`(x y).f d e → (x.f d)(y.f e)`
+      (x y).f d e → (x.f d)(y.f e)
 ```
 
 Dyadic function `g`:
 ```apl
-`a b (x y).g  d e → (a x.g d)(b y.g e)`
+      a b (x y).g  d e → (a x.g d)(b y.g e)
 ```
 
 An array of refs to the left of an assignment arrow is expanded thus:

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">GetDayStates</span></h1>
 
-| Applies To: | [Calendar](../a-z/calendar.md) |
-| --- | ---  |
+Applies To: [Calendar](../a-z/calendar.md)
 
 
 **Description**
@@ -44,10 +43,10 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 
 
 
-When the callback function is invoked, the 3rd and 4th elements of the event message contain IDNs for the first and last date in the range of dates that the [Calendar](../a-z/calendar.md) object is about to display. The 5th element of the event message contains those IDNs *within this range of dates* that the [Calendar](../a-z/calendar.md) control already knows are to be displayed using the bold font attribute. This will typically be empty.
+When the callback function is invoked, the 3<sup>rd</sup> and 4<sup>th</sup> elements of the event message contain IDNs for the first and last date in the range of dates that the [Calendar](../a-z/calendar.md) object is about to display. The 5<sup>th</sup> element of the event message contains those IDNs *within this range of dates* that the [Calendar](../a-z/calendar.md) control already knows are to be displayed using the bold font attribute. This will typically be empty.
 
 
-The result of your callback function should be the same event message with only the 5th element modified in any way. This should contain the IDNs of the dates (within the range specified by the 3rd and 4th elements) that are to be displayed using the bold font attribute.
+The result of your callback function should be the same event message with only the 5<sup>th</sup> element modified in any way. This should contain the IDNs of the dates (within the range specified by the 3<sup>rd</sup> and 4<sup>th</sup> elements) that are to be displayed using the bold font attribute.
 
 
 #### Example:

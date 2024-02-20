@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">PageActiveObject</span></h1>
 
-| Applies To: | [PropertySheet](./propertysheet.md) |
-| --- | ---  |
+Applies To: [PropertySheet](./propertysheet.md)
 
 
 **Description**

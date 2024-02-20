@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Static</span></h1>
 
-| [Parents](../ParentLists/Static.htm) | [Children](../ChildLists/Static.htm) | [Properties](../PropLists/Static.htm) | [Methods](../MethodLists/Static.htm) | [Events](../EventLists/Static.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Static.htm) [Children](../ChildLists/Static.htm) [Properties](../PropLists/Static.htm) [Methods](../MethodLists/Static.htm) [Events](../EventLists/Static.htm)
 
 
-| Purpose: | This object is primarily used to display graphics in a sub-window. |
-| --- | ---  |
+Purpose: This object is primarily used to display graphics in a sub-window.
 
 
 **Description**

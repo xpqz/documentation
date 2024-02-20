@@ -8,7 +8,7 @@
 `Y` must be 0 or a simple 1 or 2 element integer vector containing an available file tie number to be associated with the file for further file operations, and an optional passnumber.  If the passnumber is omitted it is assumed to be zero.  The tie number must not already be associated with a tied file.
 
 
-`X` must be a simple character scalar or vector which specifies the name of the file to be tied.  The file must be named in accordance with the operating system's conventions, and may be specified with a relative or absolute pathname. If no file extension is supplied, the set of extensions specified by the  CFEXT parameter are tried one after another until the file is found or the set of extensions is exhausted. See CFEXT Parameter CFEXT on page 1.
+`X` must be a simple character scalar or vector which specifies the name of the file to be tied.  The file must be named in accordance with the operating system's conventions, and may be specified with a relative or absolute pathname. If no file extension is supplied, the set of extensions specified by the  CFEXT parameter are tried one after another until the file is found or the set of extensions is exhausted. See CFEXT Parameter[ CFEXT](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#CFEXT).
 
 
 The file must exist and be accessible by the user.  If it is already tied by another task, it must not be tied exclusively.

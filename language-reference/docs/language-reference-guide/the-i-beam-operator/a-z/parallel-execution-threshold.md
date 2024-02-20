@@ -15,7 +15,7 @@ Prior to this call, the default value of the threshold is specified by an enviro
 
 
 See [Parallel Execution
-         on page 1](../Introduction/Parallel Execution.htm#Parallel_Execution) and [Number of Threads on page 1](number-of-threads.md).
+        ](../Introduction/Parallel Execution.htm#Parallel_Execution) and [Number of Threads](number-of-threads.md).
 
 
 

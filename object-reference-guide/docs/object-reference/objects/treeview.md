@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">TreeView</span></h1>
 
-| [Parents](../ParentLists/TreeView.htm) | [Children](../ChildLists/TreeView.htm) | [Properties](../PropLists/TreeView.htm) | [Methods](../MethodLists/TreeView.htm) | [Events](../EventLists/TreeView.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/TreeView.htm) [Children](../ChildLists/TreeView.htm) [Properties](../PropLists/TreeView.htm) [Methods](../MethodLists/TreeView.htm) [Events](../EventLists/TreeView.htm)
 
 
-| Purpose: | The TreeView object displays a hierarchical list of items. |
-| --- | ---  |
+Purpose: The TreeView object displays a hierarchical list of items.
 
 
 **Description**

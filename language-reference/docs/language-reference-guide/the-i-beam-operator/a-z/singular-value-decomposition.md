@@ -32,7 +32,7 @@ For further information, see [https://en.wikipedia.org/wiki/Singular_value_decom
 #### Note:
 
 
-This function signals `DOMAIN ERROR` if `⎕FR` is 1287. See [Floating-Point Representation  on page 1](../../system-functions/system-functions-a-z/system-functions-a-z/fr.md).
+This function signals `DOMAIN ERROR` if `⎕FR` is 1287. See [Floating-Point Representation ](../../system-functions/system-functions-a-z/system-functions-a-z/fr.md).
 
 
 

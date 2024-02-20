@@ -6,7 +6,7 @@
 
 | Event | Num | Description |
 | --- | --- | ---  |
-| All | 0 | This is shorthand for "all events".  It is not an event in its own right. See [Special Case for All events on page 1](../a-z/event.md) . |
+| All | 0 | This is shorthand for "all events".  It is not an event in its own right. See [Special Case for All events](../a-z/event.md) . |
 | [ActivateApp](../a-z/activateapp.md) | 139 | User has switched to/from the APL application |
 | [AddCol](../a-z/addcol.md) | 153 | appended a column to a [Grid](../a-z/grid.md) object |
 | [AddRow](../a-z/addrow.md) | 152 | appended a row to a [Grid](../a-z/grid.md) object |

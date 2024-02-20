@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">GetEnvironment</span></h1>
 
-| Applies To: | [Root](./root.md) |
-| --- | ---  |
+Applies To: [Root](./root.md)
 
 
 **Description**
@@ -20,8 +19,7 @@ This method is used to obtain information about one or more parameters that were
 The argument to GetEnvironment is a single item as follows:
 
 
-| `[1]` | Parameter name(s) | see below |
-| --- | --- | ---  |
+`[1]` Parameter name(s) see below
 
 
 

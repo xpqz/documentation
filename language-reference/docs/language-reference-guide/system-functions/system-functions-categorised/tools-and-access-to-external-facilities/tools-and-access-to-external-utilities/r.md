@@ -225,7 +225,7 @@ The following characters have special meaning:
 
 
 
-The above may be qualified so that matching text is folded, or mapped to upper- or lower-case, by using the **f**, **u**, and **l** modifiers respectively; the effect is as if the text was processed by `⎕C`. See Case Convert on page 1.
+The above may be qualified so that matching text is folded, or mapped to upper- or lower-case, by using the **f**, **u**, and **l** modifiers respectively; the effect is as if the text was processed by `⎕C`. See [Case Convert](c.htm#Case_Convert).
 
 
 Character sequences beginning with the backslash place the modifier after the backslash; character sequences with no leading backslash add both a backslash and the modifier to the start of the sequence, for example:
@@ -674,7 +674,7 @@ Before data is passed to PCRE it is converted to UTF-8 format. This converted da
 It is possible to save a workspace with an active `⎕R` or `⎕S` on the stack and execution can continue when the workspace is reloaded with the same interpreter version. Later versions of the interpreter may not remain compatible and may signal a `DOMAIN ERROR` with explanatory message in the status window if it is unable to continue execution.
 
 
-PCRE has a buffer length limit of 231 bytes (2GB). UTF-8 encodes each character using between 1 and 6 bytes (typically 1 or 3). In the very worst case, where every character is encoded in 6 bytes, the maximum block length which can be searched would be 357,913,940 characters.
+PCRE has a buffer length limit of 2<sup>31</sup> bytes (2GB). UTF-8 encodes each character using between 1 and 6 bytes (typically 1 or 3). In the very worst case, where every character is encoded in 6 bytes, the maximum block length which can be searched would be 357,913,940 characters.
 
 #### Further Examples
 
@@ -808,15 +808,13 @@ The currency conversion requires the use of a function. Note the nested use of `
 Input file:
 
 
-| `01/03/1980,Widgets,DEM 10.20` `02/04/1980,Bolts,DEM 61.75` `17/06/1980,Nuts; special rate DEM 17.00,DEM 17.00` `18/07/1980,Hammer,DEM 1.25` |
-| ---  |
+`01/03/1980,Widgets,DEM 10.20` `02/04/1980,Bolts,DEM 61.75` `17/06/1980,Nuts; special rate DEM 17.00,DEM 17.00` `18/07/1980,Hammer,DEM 1.25`
 
 
 Output file:
 
 
-| `1980-03-01,Widgets,€ 5.21` `1980-04-02,Bolts,€ 31.57` `1980-06-17,Nuts; special rate DEM 17.00,€ 8.69` `1980-07-18,Hammer,€ 0.63` |
-| ---  |
+`1980-03-01,Widgets,€ 5.21` `1980-04-02,Bolts,€ 31.57` `1980-06-17,Nuts; special rate DEM 17.00,€ 8.69` `1980-07-18,Hammer,€ 0.63`
 ```apl
      ∇ ret←f a;d;m;y;v
 [1]    ⎕IO←0

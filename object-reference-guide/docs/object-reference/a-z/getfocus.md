@@ -20,7 +20,7 @@ The GetFocus method is niladic.
 The result is a simple character vector. An empty result indicates that no Dyalog APL GUI object has the input focus.
 
 
-See also: [GetFocusObj on page 1](GetFocusObj.htm#GetFocusObj_Method).
+See also: [GetFocusObj](getfocusobj.md).
 
 
 

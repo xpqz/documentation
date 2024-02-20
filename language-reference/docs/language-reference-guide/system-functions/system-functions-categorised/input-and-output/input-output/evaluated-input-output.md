@@ -11,7 +11,7 @@
 When `⎕` is assigned an array, the array is displayed at the terminal in exactly the same form as is direct output (see  
 Programming Reference Guide: 
 
-Display of ArraysProgrammer's Guide: "Display of Arrays").
+Display of Arrays[Programmer's Guide: "Display of Arrays"](../Introduction/Variables/Display of Arrays.htm)).
 
 
 #### Example

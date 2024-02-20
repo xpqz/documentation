@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">BalloonHide</span></h1>
 
-| Applies To: | [SysTrayItem](../a-z/systrayitem.md) |
-| --- | ---  |
+Applies To: [SysTrayItem](../a-z/systrayitem.md)
 
 
 **Description**

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Cancel</span></h1>
 
-| Applies To: | [Button](./button.md) |
-| --- | ---  |
+Applies To: [Button](./button.md)
 
 
 **Description**

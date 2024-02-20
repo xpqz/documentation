@@ -237,9 +237,9 @@ A shy  or suppressed result is a result that is not automatically displayed in t
 
 See also:
 
-- [Model Syntax on page 1.](../../../defined-functions-and-operators/traditional-functions-and-operators/tradfns/model-syntax.md)
+- [Model Syntax.](../../../defined-functions-and-operators/traditional-functions-and-operators/tradfns/model-syntax.md)
 
-- [Shy Result on page 1.](../../../defined-functions-and-operators/dfns-and-dops/dfns-and-dops/shy-result.md)
+- [Shy Result.](../../../defined-functions-and-operators/dfns-and-dops/dfns-and-dops/shy-result.md)
 
-- [Execute Expression on page 1](../../I Beam Functions/Execute Expression.htm#Execute_Expression)
+- [Execute Expression](../../I Beam Functions/Execute Expression.htm#Execute_Expression)
 .

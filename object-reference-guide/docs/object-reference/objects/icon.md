@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Icon</span></h1>
 
-| [Parents](../ParentLists/Icon.htm) | [Children](../ChildLists/Icon.htm) | [Properties](../PropLists/Icon.htm) | [Methods](../MethodLists/Icon.htm) | [Events](../EventLists/Icon.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Icon.htm) [Children](../ChildLists/Icon.htm) [Properties](../PropLists/Icon.htm) [Methods](../MethodLists/Icon.htm) [Events](../EventLists/Icon.htm)
 
 
-| Purpose: | This object defines an icon. |
-| --- | ---  |
+Purpose: This object defines an icon.
 
 
 **Description**

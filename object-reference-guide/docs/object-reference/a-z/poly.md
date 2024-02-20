@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Poly</span></h1>
 
-| [Parents](../ParentLists/Poly.htm) | [Children](../ChildLists/Poly.htm) | [Properties](../PropLists/Poly.htm) | [Methods](../MethodLists/Poly.htm) | [Events](../EventLists/Poly.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Poly.htm) [Children](../ChildLists/Poly.htm) [Properties](../PropLists/Poly.htm) [Methods](../MethodLists/Poly.htm) [Events](../EventLists/Poly.htm)
 
 
-| Purpose: | A graphical object used to draw lines, polygons, and filled areas. |
-| --- | ---  |
+Purpose: A graphical object used to draw lines, polygons, and filled areas.
 
 
 **Description**

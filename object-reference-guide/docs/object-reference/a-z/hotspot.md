@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">HotSpot</span></h1>
 
-| Applies To: | [Cursor](./cursor.md) |
-| --- | ---  |
+Applies To: [Cursor](./cursor.md)
 
 
 **Description**

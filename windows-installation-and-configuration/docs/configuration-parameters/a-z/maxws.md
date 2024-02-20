@@ -1,12 +1,12 @@
 # MaxWS
 
-This parameter determines your workspace size and is the amount of memory allocated to the workspace at APL start-up. See [Specifying Size-related Parameters on page 1](../configuration-parameters.md) for further details about defining a valid value for this parameter.
+This parameter determines your workspace size and is the amount of memory allocated to the workspace at APL start-up. See [Specifying Size-related Parameters](../configuration-parameters.md) for further details about defining a valid value for this parameter.
 
 The default value is 256M (256MiB), with the exception of the Raspberry Pi where the default is 64M. Values less than 4M are ignored, and the maximum value is 15E.
 
 For example, to get a 4GiB workspace, set:
 ```apl
-`MAXWS=4G`
+        MAXWS=4G
 ```
 
 Dyalog APL places no implicit restriction on workspace size, and the virtual memory capability of the underlying operating system allows you to access more memory than you have physically installed. However if you use a workspace that **greatly** exceeds your physical memory you will encounter excessive *paging* and your APL programs will run slowly. You may also cause the system to crash.
@@ -17,4 +17,4 @@ Note that the memory used for the workspace must be *contiguous* .
 
 64-bit versions of Dyalog APL have no such limitations; Dyalog has used workspaces of 96GiB on various platforms.
 
-See also [Maximum workspace size on page 1](../../The APL Environment/Configuration Dialog Workspace Tab.htm#MaxWS).
+See also [Maximum workspace size](../../The APL Environment/Configuration Dialog Workspace Tab.htm#MaxWS).

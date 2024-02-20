@@ -43,7 +43,7 @@ The default properties for a newly created file are as follows:
 - E depends upon the computer architecture.
 
 
-Note that the defaults for C and J can be overridden by calling `⎕FCREATE` via the Variant operator `⍠`. For further information, see [File Properties on page 1](fcreate.htm#File_Properties).
+Note that the defaults for C and J can be overridden by calling `⎕FCREATE` via the Variant operator `⍠`. For further information, see [File Properties](fcreate.md).
 
 #### Journaling Levels
 

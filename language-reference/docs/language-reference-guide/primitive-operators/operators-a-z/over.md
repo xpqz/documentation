@@ -17,7 +17,7 @@ If `X` is omitted, `f` must be a monadic function. If `X` is specified, `f` must
 The derived function is equivalent to `fgY` or `(gX)f(gY)` and need not return a result.
 
 
-The Over operator allows functions to be *glued* together to build up more complex functions. For further information, see Function Composition on page 1.
+The Over operator allows functions to be *glued* together to build up more complex functions. For further information, see [Function Composition](../operator-syntax.md).
 
 
 #### Examples

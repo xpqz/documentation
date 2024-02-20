@@ -17,7 +17,7 @@ This program is called automatically by `ASP.NET` when a client application requ
 The Script is designed to be run from a command prompt. If in the 64-bit Unicode Edition change to the appropriate directory and type `dyalogc64_unicode /?` (to query its usage) the following output is displayed:
 
 ```apl
-`c:\Program Files\Dyalog\Dyalog APL-64 18.0 Unicode>dyalogc64_unicode /?
+c:\Program Files\Dyalog\Dyalog APL-64 18.0 Unicode>dyalogc64_unicode /?
 Dyalog APLScript compiler 64 bit. Unicode Mode. Version 18.0.38524.0
 Copyright Dyalog Ltd 2000-2020
 
@@ -49,19 +49,19 @@ dyalogc.exe command line options:
 /i:Process        Set the isolation mode of a .NET Assembly
 /i:Assembly       Set the isolation mode of a .NET Assembly
 /i:AppDomain      Set the isolation mode of a .NET Assembly
-/i:Local          Set the isolation mode of a .NET Assembly`
+/i:Local          Set the isolation mode of a .NET Assembly
 ```
 
-Note that the isolation mode specified by the `/i` option overrides the setting in `web.config`. See [DyalogIsolationMode on page 1](../implementation-details/asp-net-configuration-file.md).
+Note that the isolation mode specified by the `/i` option overrides the setting in `web.config`. See [DyalogIsolationMode](../implementation-details/asp-net-configuration-file.md).
 
 The `/a` option is used to specify the name of a JSON file that contains assembly info. For example:
 ```apl
-`dyalogc64_unicode.exe /t:library j:/ws/attributetest.dws /a:c:/tmp/atts.json`
+dyalogc64_unicode.exe /t:library j:/ws/attributetest.dws /a:c:/tmp/atts.json
 ```
 
 where `c:/tmp/atts.json` contains:
 ```apl
-`{
+{
 "AssemblyVersion":"1.2.2.2",
 "AssemblyFileVersion":"2.1.1.4",
 "AssemblyProduct":"My Application",
@@ -70,5 +70,5 @@ where `c:/tmp/atts.json` contains:
 "AssemblyDescription":"Provides a text description for an assembly.",
 "AssemblyTitle":"My Assembly Title",
 "AssemblyTrademark":"Your Legal Trademarks",
-}`
+}
 ```

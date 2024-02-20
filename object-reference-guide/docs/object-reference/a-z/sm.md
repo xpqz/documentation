@@ -5,18 +5,16 @@
 
 <h1 class="heading"><span class="name">SM</span></h1>
 
-| [Parents](../ParentLists/SM.htm) | [Children](../ChildLists/SM.htm) | [Properties](../PropLists/SM.htm) | [Methods](../MethodLists/SM.htm) | [Events](../EventLists/SM.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/SM.htm) [Children](../ChildLists/SM.htm) [Properties](../PropLists/SM.htm) [Methods](../MethodLists/SM.htm) [Events](../EventLists/SM.htm)
 
 
-| Purpose: | Defines a window for `⎕SM` / `⎕SR` . |
-| --- | ---  |
+Purpose: Defines a window for `⎕SM` / `⎕SR` .
 
 
 **Description**
 
 
-This object defines a window for `⎕SM`/`⎕SR` and allows you to combine the functionality of `⎕SM`/`⎕SR` with the "windows" GUI. For example, you can define a [Form](form.md) with a [MenuBar](MenuBar.htm) at the top and a `⎕SM` window beneath it, with perhaps some [Button](button.md)s alongside.
+This object defines a window for `⎕SM`/`⎕SR` and allows you to combine the functionality of `⎕SM`/`⎕SR` with the "windows" GUI. For example, you can define a [Form](form.md) with a [MenuBar](menubar.md) at the top and a `⎕SM` window beneath it, with perhaps some [Button](button.md)s alongside.
 
 
 

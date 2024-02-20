@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Group</span></h1>
 
-| [Parents](../ParentLists/Group.htm) | [Children](../ChildLists/Group.htm) | [Properties](../PropLists/Group.htm) | [Methods](../MethodLists/Group.htm) | [Events](../EventLists/Group.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Group.htm) [Children](../ChildLists/Group.htm) [Properties](../PropLists/Group.htm) [Methods](../MethodLists/Group.htm) [Events](../EventLists/Group.htm)
 
 
-| Purpose: | This object is used to group a related set of controls together         visually, and to impose "radio-button" behaviour. |
-| --- | ---  |
+Purpose: This object is used to group a related set of controls together         visually, and to impose "radio-button" behaviour.
 
 
 **Description**

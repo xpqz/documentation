@@ -8,7 +8,7 @@ A script is executed by typing its name. User input is entered from the same ter
 
 On UNIX (and related) systems a Dyalog APL **shell script** is a text file with the following as the first line:
 ```apl
-`#!/usr/local/bin/dyalogscript`
+#!/usr/local/bin/dyalogscript
 ```
 
 The script file must be executable. There are three execute bits relating to the user, the group and everyone else.
@@ -83,12 +83,12 @@ Configuration parameters may be specified in a Configuration file located in the
 
 ### Example (configuration file)
 ```apl
-`{ settings: {
+{ settings: {
         /* Maximum workspace size */
         MAXWS: "256M",
         /* wspath */
         WSPATH: ["c:/tmp","f:/devt/tmp"]
-}}`
+}}
 ```
 
 Note that the interpreter reads both of these locations, the command line in the script file overrides any setting in the .dcfg file.

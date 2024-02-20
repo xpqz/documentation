@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">MultiLine</span></h1>
 
-| Applies To: | [TabControl](../a-z/tabcontrol.md) | [ToolControl](../a-z/toolcontrol.md) |
-| --- | --- | ---  |
+Applies To: [TabControl](../a-z/tabcontrol.md) [ToolControl](../a-z/toolcontrol.md)
 
 
 **Description**

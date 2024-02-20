@@ -36,7 +36,7 @@ Load `aplclasses3.dws` and export  `aplclasses3.dll` as before.
 
 The following C# source, called `aplclasses2\Framework\program.cs`,  contains code to catch the exception and to display the exception message.
 ```apl
-`using System;
+using System;
 using APLClasses;
 public class MainClass
 	{
@@ -56,7 +56,7 @@ catch (Exception e)
 	}
 		}
 
-	}`
+	}	
 ```
 
 Using VS, open the solution file`d:\aplclasses\aplclasses3\Framework\project.sln` and view `program.cs`.

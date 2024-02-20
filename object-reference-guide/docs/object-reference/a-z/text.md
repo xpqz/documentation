@@ -33,6 +33,6 @@ In general, the value of Text returned by [`⎕WG`](../../Language/System Functi
 You can copy text into the Windows [Clipboard](./clipboard.md) by using [`⎕WS`](../../Language/System Functions/ws.htm) to set Text for a [Clipboard](./clipboard.md) object. In this case you may specify a simple character scalar, vector or matrix, or a vector of character vectors. If you are retrieving data from the clipboard that has been stored by another application, Text will be either a character vector or a vector of character vectors.
 
 
-The Text property of a [StatusField](./statusfield.md) is updated automatically if its [Style](Style.htm) property is set to monitor the status of a key.
+The Text property of a [StatusField](./statusfield.md) is updated automatically if its [Style](style.md) property is set to monitor the status of a key.
 
 

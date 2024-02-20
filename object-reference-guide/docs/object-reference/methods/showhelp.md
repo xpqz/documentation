@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ShowHelp</span></h1>
 
-| Applies To: | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |
-| --- | --- | ---  |
+Applies To: [OCXClass](../a-z/ocxclass.md) [OLEClient](../a-z/oleclient.md)
 
 
 **Description**
@@ -18,8 +17,7 @@ This method is used to display the Windows help file for a COM object or the hel
 The argument to ShowHelp is `⍬`, or a single item as follows :
 
 
-| `[1]` | Topic | character vector. |
-| --- | --- | ---  |
+`[1]` Topic character vector.
 
 
 *Topic* specifies the name of a property, event or method.

@@ -21,7 +21,7 @@
 
 
 
-See ["Native File Read: " on page 1](../../../system-functions-a-z/system-functions-a-z/nread.md) for a list of valid conversion codes.
+See ["Native File Read: "](../../../system-functions-a-z/system-functions-a-z/nread.md) for a list of valid conversion codes.
 
 
 The shy result is the location of the internal file pointer which will be pointing to the end of the newly written data. Used, for example, in:
@@ -48,7 +48,7 @@ As a consequence of these two rules, you must specify the data type (either 160 
 #### Example
 ```apl
 
-      n←'test'⎕NTIE 0 ⍝ See ["Example" on page 1](../../../system-functions-a-z/system-functions-a-z/nappend.md)
+      n←'test'⎕NTIE 0 ⍝ See "Example"
 
       ⎕NREAD n 80 3 0
 abc

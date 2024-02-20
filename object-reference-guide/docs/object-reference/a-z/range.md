@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Range</span></h1>
 
-| Applies To: | [Form](./form.md) | [Scroll](./scroll.md) | [SubForm](./subform.md) |
-| --- | --- | --- | ---  |
+Applies To: [Form](./form.md) [Scroll](./scroll.md) [SubForm](./subform.md)
 
 
 **Description**

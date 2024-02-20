@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Execute Windows Command</span><span class="command">{R}←⎕CMD Y</span></h1>
 
-`⎕CMD` executes the Windows Command Processor or UNIX shell or starts another Windows application program.  `⎕CMD` is a synonym of `⎕SH`.  Either system function may be used in either environment (Windows or UNIX) with exactly the same effect.  `⎕CMD` is probably more natural for the Windows user.  This section describes the behaviour of `⎕CMD` and `⎕SH` under Windows. See "Execute (UNIX) Command: " on page 1 for a discussion of the behaviour of these system functions under UNIX.
+`⎕CMD` executes the Windows Command Processor or UNIX shell or starts another Windows application program.  `⎕CMD` is a synonym of `⎕SH`.  Either system function may be used in either environment (Windows or UNIX) with exactly the same effect.  `⎕CMD` is probably more natural for the Windows user.  This section describes the behaviour of `⎕CMD` and `⎕SH` under Windows. See ["Execute (UNIX) Command: "](execute-unix-command.md) for a discussion of the behaviour of these system functions under UNIX.
 
 
 #### Executing the Windows Command Processor
@@ -68,13 +68,13 @@ If `Y` specifies a program (with or without parameters) and the pathname to the 
 
 For example, to start a version of Excel to which the pathname is:
 ```apl
-`C:\Program Files\Microsoft Office\OFFICE11\excel.exe`
+   C:\Program Files\Microsoft Office\OFFICE11\excel.exe
 ```
 
 
 the argument to `⎕CMD` should be:
 ```apl
-⎕CMD '**"**c:\program files\microsoft office\office11\excel.exe**"**'
+⎕CMD '"c:\program files\microsoft office\office11\excel.exe"'
 
 ```
 
@@ -88,20 +88,20 @@ The Windows Command Processor does not permit more than one set of double-quotes
 The following statements are all valid:
 ```apl
 ⎕CMD 'c:\windows\system32\notepad.exe c:\myfile.txt'  
-⎕CMD 'c:\windows\system32\notepad.exe **"**c:\myfile.txt**"**'
-⎕CMD '**"**c:\windows\system32\notepad.exe**"** c:\myfile.txt'
+⎕CMD 'c:\windows\system32\notepad.exe "c:\myfile.txt"'
+⎕CMD '"c:\windows\system32\notepad.exe" c:\myfile.txt'
 ```
 
 
 Whereas the next statement, which contains two sets of double-quotes, will fail:
 ```apl
-⎕CMD '**"**c:\windows\system32\notepad.exe**"** **"**c:\myfile.txt**"**'
+⎕CMD '"c:\windows\system32\notepad.exe" "c:\myfile.txt"'
 ```
 
 
 Such a statement can however be executed using the second form of `⎕CMD`(where the argument is a 2-element vector of character vectors) which does not use the Windows Command Processor and is not subject to this restriction. However, the call to `⎕CMD` will return immediately, and no output from the command will be returned.
 ```apl
-⎕CMD'**"**c:\windows\system32\notepad.exe**"** **"**c:\myfile.txt**"**' ''
+⎕CMD'"c:\windows\system32\notepad.exe" "c:\myfile.txt"' ''
 ```
 
 ##### Implementation Notes
@@ -180,7 +180,7 @@ There is no way to terminate an application started by `⎕CMD` from APL; it wil
 Either form of `⎕CMD` may be used to execute a program. The difference is that when the program is executed via the Command Processor, APL waits for it to complete and returns any result that the program would have displayed in the Command Window had it been executed from a Command Window. In the second case, APL starts the program (in parallel).
 
 
-The system commands [`)SH`](../../../system-commands/system-commands-a-z/sh.md) and [`)CMD`](../../../system-commands/system-commands-a-z/cmd.md) provide similar facilities. For further information, see Execute (UNIX) Command:  on page 1 and Example on page 1.
+The system commands [`)SH`](../../../system-commands/system-commands-a-z/sh.md) and [`)CMD`](../../../system-commands/system-commands-a-z/cmd.md) provide similar facilities. For further information, see [Execute (UNIX) Command: ](../../../system-commands/system-commands-a-z/sh.md) and [Example](../../../system-commands/system-commands-a-z/cmd.md).
 
 #### Note:
 

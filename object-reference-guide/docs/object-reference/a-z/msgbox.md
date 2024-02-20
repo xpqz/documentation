@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">MsgBox</span></h1>
 
-| [Parents](../ParentLists/MsgBox.htm) | [Children](../ChildLists/MsgBox.htm) | [Properties](../PropLists/MsgBox.htm) | [Methods](../MethodLists/MsgBox.htm) | [Events](../EventLists/MsgBox.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/MsgBox.htm) [Children](../ChildLists/MsgBox.htm) [Properties](../PropLists/MsgBox.htm) [Methods](../MethodLists/MsgBox.htm) [Events](../EventLists/MsgBox.htm)
 
 
-| Purpose: | Provides a "modal" dialog box for displaying messages, errors, warnings and other information. The dialog box has a title, one or more lines of text, and up to three buttons. |
-| --- | ---  |
+Purpose: Provides a "modal" dialog box for displaying messages, errors, warnings and other information. The dialog box has a title, one or more lines of text, and up to three buttons.
 
 
 **Description**
@@ -57,7 +55,7 @@ If any other combination is specified, [`⎕WC`](../../Language/System Functions
 The [Default](./default.md) property may be used to determine which of the buttons is the "default" button, i.e. the one which initially has the focus and is "selected" when the user presses the Enter key. It has the value 1, 2 or 3. If [Default](./default.md) is not specified, the first button is the "default" button. Note that if the user switches focus to another button and presses Enter, this action selects the button with the focus.
 
 
-Like a pop-up (floating) [Menu](Menu.htm), the MsgBox object is unusual in that it is strictly modal. It is created by [`⎕WC`](../../Language/System Functions/wc.htm) in the normal way, but at that stage is invisible and inactive. It is activated ONLY when [`⎕DQ`](../../Language/System Functions/dq.htm) is called with the name of the MsgBox as the argument. When this is done, the MsgBox object pops up and is activated. Because there is no other object specified in the argument to [`⎕DQ`](../../Language/System Functions/dq.htm), all other objects are de-activated. The only thing that the user can do (within the APL application) is to press one of the buttons in the MsgBox. When this happens, the MsgBox automatically pops down, the callback function (if any) is fired, and then [`⎕DQ`](../../Language/System Functions/dq.htm) terminates.
+Like a pop-up (floating) [Menu](menu.md), the MsgBox object is unusual in that it is strictly modal. It is created by [`⎕WC`](../../Language/System Functions/wc.htm) in the normal way, but at that stage is invisible and inactive. It is activated ONLY when [`⎕DQ`](../../Language/System Functions/dq.htm) is called with the name of the MsgBox as the argument. When this is done, the MsgBox object pops up and is activated. Because there is no other object specified in the argument to [`⎕DQ`](../../Language/System Functions/dq.htm), all other objects are de-activated. The only thing that the user can do (within the APL application) is to press one of the buttons in the MsgBox. When this happens, the MsgBox automatically pops down, the callback function (if any) is fired, and then [`⎕DQ`](../../Language/System Functions/dq.htm) terminates.
 
 
 Notice that the position and size of the MsgBox are determined by Windows and are fixed, although the MsgBox may be moved by the user after it has been displayed.

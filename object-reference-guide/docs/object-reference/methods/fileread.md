@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">FileRead</span></h1>
 
-| Applies To: | [Bitmap](../a-z/bitmap.md) | [Cursor](../a-z/cursor.md) | [Icon](../a-z/icon.md) | [Metafile](../a-z/metafile.md) | [RichEdit](../a-z/richedit.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [Bitmap](../a-z/bitmap.md) [Cursor](../a-z/cursor.md) [Icon](../a-z/icon.md) [Metafile](../a-z/metafile.md) [RichEdit](../a-z/richedit.md)
 
 
 **Description**

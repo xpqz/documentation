@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Spinner</span></h1>
 
-| [Parents](../ParentLists/Spinner.htm) | [Children](../ChildLists/Spinner.htm) | [Properties](../PropLists/Spinner.htm) | [Methods](../MethodLists/Spinner.htm) | [Events](../EventLists/Spinner.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Spinner.htm) [Children](../ChildLists/Spinner.htm) [Properties](../PropLists/Spinner.htm) [Methods](../MethodLists/Spinner.htm) [Events](../EventLists/Spinner.htm)
 
 
-| Purpose: | The Spinner object allows the user to enter a value, using an [UpDown](../a-z/updown.md) object to adjust it as required. |
-| --- | ---  |
+Purpose: The Spinner object allows the user to enter a value, using an [UpDown](../a-z/updown.md) object to adjust it as required.
 
 
 **Description**

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">GetBuildID</span></h1>
 
-| Applies To: | [Root](./root.md) |
-| --- | ---  |
+Applies To: [Root](./root.md)
 
 
 **Description**
@@ -21,8 +20,7 @@ The argument to GetBuildID is `⍬` or a
 single item as follows:
 
 
-| `[1]` | File name | character vector |
-| --- | --- | ---  |
+`[1]` File name character vector
 
 
 

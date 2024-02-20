@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">RTFText</span></h1>
 
-| Applies To: | [Clipboard](./clipboard.md) | [RichEdit](./richedit.md) |
-| --- | --- | ---  |
+Applies To: [Clipboard](./clipboard.md) [RichEdit](./richedit.md)
 
 
 **Description**

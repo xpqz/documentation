@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">TrackBar</span></h1>
 
-| [Parents](../ParentLists/TrackBar.htm) | [Children](../ChildLists/TrackBar.htm) | [Properties](../PropLists/TrackBar.htm) | [Methods](../MethodLists/TrackBar.htm) | [Events](../EventLists/TrackBar.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/TrackBar.htm) [Children](../ChildLists/TrackBar.htm) [Properties](../PropLists/TrackBar.htm) [Methods](../MethodLists/TrackBar.htm) [Events](../EventLists/TrackBar.htm)
 
 
-| Purpose: | The TrackBar object is a slider control that allows the user to enter a value by positioning a pointer (thumb) on a scale. |
-| --- | ---  |
+Purpose: The TrackBar object is a slider control that allows the user to enter a value by positioning a pointer (thumb) on a scale.
 
 
 **Description**

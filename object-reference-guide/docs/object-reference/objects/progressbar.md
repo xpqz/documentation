@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">ProgressBar</span></h1>
 
-| [Parents](../ParentLists/ProgressBar.htm) | [Children](../ChildLists/ProgressBar.htm) | [Properties](../PropLists/ProgressBar.htm) | [Methods](../MethodLists/ProgressBar.htm) | [Events](../EventLists/ProgressBar.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/ProgressBar.htm) [Children](../ChildLists/ProgressBar.htm) [Properties](../PropLists/ProgressBar.htm) [Methods](../MethodLists/ProgressBar.htm) [Events](../EventLists/ProgressBar.htm)
 
 
-| Purpose: | The ProgressBar object is used to indicate the progress of a lengthy operation. |
-| --- | ---  |
+Purpose: The ProgressBar object is used to indicate the progress of a lengthy operation.
 
 
 **Description**

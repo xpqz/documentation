@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ShowDropDown</span></h1>
 
-| Applies To: | [ColorButton](../a-z/colorbutton.md) | [ToolControl](../a-z/toolcontrol.md) |
-| --- | --- | ---  |
+Applies To: [ColorButton](../a-z/colorbutton.md) [ToolControl](../a-z/toolcontrol.md)
 
 
 **Description**

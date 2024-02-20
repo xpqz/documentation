@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">State</span></h1>
 
-| Applies To: | [Button](../a-z/button.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) | [TabButton](../a-z/tabbutton.md) | [ToolButton](../a-z/toolbutton.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [Button](../a-z/button.md) [Form](../a-z/form.md) [SubForm](../a-z/subform.md) [TabButton](../a-z/tabbutton.md) [ToolButton](../a-z/toolbutton.md)
 
 
 **Description**

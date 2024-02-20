@@ -2,7 +2,7 @@
 
 `Intro3.aspx` illustrates how you can dynamically initialise the contents of a Web Page using the Page_Load event. This example also introduces another type of Web Control, the `DropDownList` object.
 ```apl
-*<%@Register TagPrefix="tutorial" Namespace="Tutorial" Assembly="tutorial" %>*
+<%@Register TagPrefix="tutorial" Namespace="Tutorial" Assembly="tutorial" %>
 <script language="Dyalog" runat="server">
 
 ∇Page_Load 
@@ -36,7 +36,8 @@ out.Text←'You selected ',list.SelectedItem.Text
 	Text="Submit"
 	runat="server"
 	OnClick="Select"/>
-</form>*<tutorial:index runat="server"/>*
+</form>
+<tutorial:index runat="server"/>
 </body>
 </html>
 

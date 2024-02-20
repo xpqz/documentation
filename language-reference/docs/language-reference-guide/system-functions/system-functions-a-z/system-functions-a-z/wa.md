@@ -22,6 +22,6 @@ A side effect of using `⎕WA` is an internal reorganisation of the workspace an
 ```
 
 
-See also: [Specify Workspace Available: on page 1](../../../the-i-beam-operator/a-z/specify-workspace-available.md)
+See also: [Specify Workspace Available:](../../../the-i-beam-operator/a-z/specify-workspace-available.md)
 
 

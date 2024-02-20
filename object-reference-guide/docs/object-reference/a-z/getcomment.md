@@ -4,8 +4,7 @@
 
 <h1 class="heading"><span class="name">GetComment</span></h1>
 
-| Applies To: | [Grid](./grid.md) |
-| --- | ---  |
+Applies To: [Grid](./grid.md)
 
 
 **Description**

@@ -12,7 +12,7 @@ The value of `⎕DCT` determines the precision with which two numbers are judged
 
 
 
-For further information, see "Comparison Tolerance: " on page 1.
+For further information, see ["Comparison Tolerance: "](../../../system-functions-a-z/system-functions-a-z/ct.md).
 
 #### Examples
 ```apl

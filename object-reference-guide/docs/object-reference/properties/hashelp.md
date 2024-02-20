@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">HasHelp</span></h1>
 
-| Applies To: | [PropertyPage](../a-z/propertypage.md) | [PropertySheet](../a-z/propertysheet.md) |
-| --- | --- | ---  |
+Applies To: [PropertyPage](../a-z/propertypage.md) [PropertySheet](../a-z/propertysheet.md)
 
 
 **Description**

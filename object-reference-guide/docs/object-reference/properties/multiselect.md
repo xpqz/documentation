@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">MultiSelect</span></h1>
 
-| Applies To: | [TabControl](../a-z/tabcontrol.md) |
-| --- | ---  |
+Applies To: [TabControl](../a-z/tabcontrol.md)
 
 
 **Description**

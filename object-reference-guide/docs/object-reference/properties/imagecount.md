@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ImageCount</span></h1>
 
-| Applies To: | [ImageList](../a-z/imagelist.md) |
-| --- | ---  |
+Applies To: [ImageList](../a-z/imagelist.md)
 
 
 **Description**

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ProgressStyle</span></h1>
 
-| Applies To: | [ProgressBar](../a-z/progressbar.md) |
-| --- | ---  |
+Applies To: [ProgressBar](../a-z/progressbar.md)
 
 
 **Description**

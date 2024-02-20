@@ -5,7 +5,7 @@
 
 <h1 class="heading"><span class="name">Grade Down (Monadic)</span><span class="command">R←⍒Y</span></h1>
 
-`Y` may be any array of rank greater than 0 but may not contain namespaces.  `R` is an integer vector being the permutation of `⍳1↑⍴Y` that places the sub-arrays along the first axis in descending order. For the rules for comparing items of `Y` with one another, see [Grade Up (Monadic) on page 1](../../non-scalar-selector-functions/grade-up-monadic.md).
+`Y` may be any array of rank greater than 0 but may not contain namespaces.  `R` is an integer vector being the permutation of `⍳1↑⍴Y` that places the sub-arrays along the first axis in descending order. For the rules for comparing items of `Y` with one another, see [Grade Up (Monadic)](../../non-scalar-selector-functions/grade-up-monadic.md).
 
 
 `⎕IO` is an implicit argument of Grade Down.
@@ -46,8 +46,8 @@ Porridge
 
 | Unicode Edition | Classic Edition |
 | --- | ---  |
-| ⍒M 2 3 1 4 | ⍒M 3 1 4 2 |
-| M[⍒M;] porridge Porridge Goldilocks 3 bears | M[⍒M;] Porridge Goldilocks 3 bears porridge |
+| ```apl       ⍒M 2 3 1 4 ``` | ```apl       ⍒M 3 1 4 2 ``` |
+| ```apl       M[⍒M;] porridge Porridge Goldilocks 3 bears ``` | ```apl       M[⍒M;] Porridge Goldilocks 3 bears porridge ``` |
 
 ```apl
       ⍴pb

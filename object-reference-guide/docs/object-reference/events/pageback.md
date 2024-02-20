@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">PageBack</span></h1>
 
-| Applies To: | [PropertyPage](../a-z/propertypage.md) |
-| --- | ---  |
+Applies To: [PropertyPage](../a-z/propertypage.md)
 
 
 **Description**

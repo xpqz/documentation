@@ -19,7 +19,7 @@ and finishes with:
 
 Typically, the APLScript code consists of callback functions that are attached to server-side events on the page.
 
-For further information, see [The web.config file on page 1](../implementation-details/asp-net-configuration-file.md).
+For further information, see [The web.config file](../implementation-details/asp-net-configuration-file.md).
 
 ### Web Service Layout
 

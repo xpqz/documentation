@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SetWizard</span></h1>
 
-| Applies To: | [PropertySheet](../a-z/propertysheet.md) |
-| --- | ---  |
+Applies To: [PropertySheet](../a-z/propertysheet.md)
 
 
 **Description**

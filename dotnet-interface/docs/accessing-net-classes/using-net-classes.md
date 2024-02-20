@@ -6,7 +6,7 @@ If the argument is a scalar or a 1-element vector, an instance of the class is c
 
 If the argument is a 2-element vector, an instance of the class is created using the *constructor* whose argument matches the disclosed second element.
 
-For example, to create a `DateTime` object whose value is the 30th April 2008:
+For example, to create a `DateTime` object whose value is the 30<sup>th</sup> April 2008:
 ```apl
       ⎕USING←'System'
  

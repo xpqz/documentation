@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">CheckBoxes</span></h1>
 
-| Applies To: | [ListView](../a-z/listview.md) | [TreeView](../a-z/treeview.md) |
-| --- | --- | ---  |
+Applies To: [ListView](../a-z/listview.md) [TreeView](../a-z/treeview.md)
 
 
 **Description**
@@ -30,7 +29,7 @@ settings of the [View](../a-z/view.md) property.
 
 
 The GetItemState method can be used to determine if a specific item in a [ListView](../a-z/listview.md) or [TreeView](../a-z/treeview.md) is checked. The result of the
-method will have the 13th bit set if the item is checked.
+method will have the 13<sup>th</sup> bit set if the item is checked.
 ```apl
       STATE←Form.ListView.GetItemState 11
       13⊃⌽(32⍴2)⊤STATE

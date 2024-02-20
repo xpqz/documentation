@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SelRange</span></h1>
 
-| Applies To: | [TrackBar](../a-z/trackbar.md) |
-| --- | ---  |
+Applies To: [TrackBar](../a-z/trackbar.md)
 
 
 **Description**

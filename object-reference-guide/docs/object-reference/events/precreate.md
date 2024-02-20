@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">PreCreate</span></h1>
 
-| Applies To: | [ActiveXControl](../a-z/activexcontrol.md) |
-| --- | ---  |
+Applies To: [ActiveXControl](../a-z/activexcontrol.md)
 
 
 **Description**

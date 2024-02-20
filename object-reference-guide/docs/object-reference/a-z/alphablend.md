@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">AlphaBlend</span></h1>
 
-| Applies To: | [Form](./form.md) |
-| --- | ---  |
+Applies To: [Form](./form.md)
 
 
 **Description**

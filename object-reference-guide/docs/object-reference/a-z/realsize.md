@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">RealSize</span></h1>
 
-| Applies To: | [Metafile](./metafile.md) |
-| --- | ---  |
+Applies To: [Metafile](./metafile.md)
 
 
 **Description**

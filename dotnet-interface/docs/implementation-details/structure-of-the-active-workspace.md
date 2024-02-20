@@ -8,7 +8,7 @@ Within each `AppDomain_` namespace, there will be one or more namespaces associa
 
 Note that in the manufactured namespace names, characters that would be invalid symbols in a namespace name are replaced by underscores.
 
-The following picture shows the namespace tree that exists in the Dyalog DLL workspace when the first example (see [Example 1 on page 1](../writing-net-classes/aplclasses1.md)) in the chapter Writing .Net Classes is executed under Visual Studio. However, to cause the suspension, an error has been introduced in the method  `IndexGen`.
+The following picture shows the namespace tree that exists in the Dyalog DLL workspace when the first example (see [Example 1](../writing-net-classes/aplclasses1.md)) in the chapter Writing .Net Classes is executed under Visual Studio. However, to cause the suspension, an error has been introduced in the method  `IndexGen`.
 
 In this case, there is a single AppDomain involved whose name, `DyApp_vshost_exe` is specified by .NET. APL has made a corresponding namespace called `AppDomain_DyApp_vshost_exe`. Next, there is a namespace associated with the Assembly `aplclasses`, named `Assembly_aplclasses`. Beneath this is a namespace called `APLClasses` associated with the .NET Namespace of the same name. Finally, there is the APL Class called `Primitives` .
 

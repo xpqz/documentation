@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SplitObj2</span></h1>
 
-| Applies To: | [Splitter](./splitter.md) |
-| --- | ---  |
+Applies To: [Splitter](./splitter.md)
 
 
 **Description**

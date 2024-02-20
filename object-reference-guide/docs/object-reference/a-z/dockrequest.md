@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">DockRequest</span></h1>
 
-| Applies To: | [CoolBand](./coolband.md) | [CoolBar](./coolbar.md) | [Form](./form.md) | [SubForm](./subform.md) | [ToolControl](./toolcontrol.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [CoolBand](./coolband.md) [CoolBar](./coolbar.md) [Form](./form.md) [SubForm](./subform.md) [ToolControl](./toolcontrol.md)
 
 
 **Description**

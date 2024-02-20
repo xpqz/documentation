@@ -53,8 +53,7 @@ nav:
       - configuration-parameters/a-z/apl-max-threads.md
       - configuration-parameters/a-z/wrapsearchmsgbox.md
       - configuration-parameters/a-z/autodpi.md
-      - AutoComplete:
-        - configuration-parameters/a-z/autocomplete/showfiles.md
+      - configuration-parameters/a-z/autocomplete/showfiles.md
       - configuration-parameters/a-z/autoformat.md
       - configuration-parameters/a-z/autoindent.md
       - configuration-parameters/a-z/auto-pw.md
@@ -128,8 +127,7 @@ nav:
       - configuration-parameters/a-z/trace-level-warn.md
       - configuration-parameters/a-z/unicodetoclipboard.md
       - configuration-parameters/a-z/useexternalhelpurl.md
-      - ValueTips:
-        - configuration-parameters/a-z/valuetips/enabled.md
+      - configuration-parameters/a-z/valuetips/enabled.md
       - configuration-parameters/a-z/wantsspecialkeys.md
       - configuration-parameters/a-z/wrapsearch.md
       - configuration-parameters/a-z/wsext.md

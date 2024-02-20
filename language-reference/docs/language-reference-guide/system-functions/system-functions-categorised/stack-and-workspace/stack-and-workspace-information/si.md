@@ -55,6 +55,6 @@ To check if the function `∆N` is pendent:
 ```
 
 
-See also ["Extended State Indicator: " on page 1](../../../system-functions-a-z/system-functions-a-z/xsi.md).
+See also ["Extended State Indicator: "](../../../system-functions-a-z/system-functions-a-z/xsi.md).
 
 

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">RowLineTypes</span></h1>
 
-| Applies To: | [Grid](../a-z/grid.md) |
-| --- | ---  |
+Applies To: [Grid](../a-z/grid.md)
 
 
 **Description**
@@ -19,7 +18,7 @@ This property specifies the appearance of the horizontal grid lines in a [Grid](
 RowLineTypes is an integer vector, whose length is normally equal to the number of rows in the [Grid](../a-z/grid.md). Each element in RowLineTypes specifies an index into the [GridLineFCol](../a-z/gridlinefcol.md) and [GridLineWidth](../a-z/gridlinewidth.md) properties, thus selecting the colour and width of the horizontal grid lines.
 
 
-For example, if RowLineTypes[1] is 3, the first horizontal grid line in the [Grid](../a-z/grid.md) is displayed using the colour specified by the 3rd element of [GridLineFCol](../a-z/gridlinefcol.md), and the width specified by the 3rd element of [GridLineWidth](../a-z/gridlinewidth.md).
+For example, if RowLineTypes[1] is 3, the first horizontal grid line in the [Grid](../a-z/grid.md) is displayed using the colour specified by the 3<sup>rd</sup> element of [GridLineFCol](../a-z/gridlinefcol.md), and the width specified by the 3<sup>rd</sup> element of [GridLineWidth](../a-z/gridlinewidth.md).
 
 
 Note that RowLineTypes is not `⎕IO` dependent, and the value 0 is treated the same as the value 1; both selecting the *first* colour and line width specified by [GridLineFCol](../a-z/gridlinefcol.md) and [GridLineWidth](../a-z/gridlinewidth.md) respectively.

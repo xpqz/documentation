@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Weight</span></h1>
 
-| Applies To: | [Font](./font.md) |
-| --- | ---  |
+Applies To: [Font](./font.md)
 
 
 **Description**

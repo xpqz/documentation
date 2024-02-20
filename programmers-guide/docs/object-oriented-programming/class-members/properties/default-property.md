@@ -6,7 +6,7 @@ The Numbered Property example of the [ComponentFile Class](component-file-class-
 
 Indexing may now be applied directly to the Instance `F1`. In essence, `F1[n]` is simply shorthand for `F1.Component[n]` and `n⌷F1` is shorthand for `n⌷F1.Component`
 ```apl
-    :Property Numbered **Default** Component
+    :Property Numbered Default Component
     :Access Public Instance
         ∇ r←shape
           r←¯1+2⊃⎕FSIZE tie

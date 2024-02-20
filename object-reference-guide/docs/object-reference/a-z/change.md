@@ -4,8 +4,7 @@
 
 <h1 class="heading"><span class="name">Change</span></h1>
 
-| Applies To: | [ButtonEdit](./buttonedit.md) | [Combo](./combo.md) | [Edit](./edit.md) | [RichEdit](./richedit.md) | [Spinner](./spinner.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [ButtonEdit](./buttonedit.md) [Combo](./combo.md) [Edit](./edit.md) [RichEdit](./richedit.md) [Spinner](./spinner.md)
 
 
 **Description**

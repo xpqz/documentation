@@ -371,7 +371,7 @@ When converting from XML, `Markup` determines whether markup (other than entity 
 | Converting from XML | Converting from XML |
 | --- | ---  |
 | Strip (strip) | Markup data is not included in the output array |
-| `Preserve (preserve)` | Markup text appears in the output array, without the leading '<' and trailing '>' in the tag (2 nd ) column |
+| `Preserve (preserve)` | Markup text appears in the output array, without the leading '<' and trailing '>' in the tag (2 <sup>nd</sup> ) column |
 ```apl
   
       ]display eg

@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">FileBox</span></h1>
 
-| [Parents](../ParentLists/FileBox.htm) | [Children](../ChildLists/FileBox.htm) | [Properties](../PropLists/FileBox.htm) | [Methods](../MethodLists/FileBox.htm) | [Events](../EventLists/FileBox.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/FileBox.htm) [Children](../ChildLists/FileBox.htm) [Properties](../PropLists/FileBox.htm) [Methods](../MethodLists/FileBox.htm) [Events](../EventLists/FileBox.htm)
 
 
-| Purpose: | Prompts user to select a file. |
-| --- | ---  |
+Purpose: Prompts user to select a file.
 
 
 **Description**

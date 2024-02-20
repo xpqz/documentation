@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">SetPropertyInfo</span></h1>
 
-| Applies To: | [OCXClass](../a-z/ocxclass.md) | [OLEClient](../a-z/oleclient.md) |
-| --- | --- | ---  |
+Applies To: [OCXClass](../a-z/ocxclass.md) [OLEClient](../a-z/oleclient.md)
 
 
 **Description**
@@ -24,7 +23,7 @@ The argument to SetPropertyInfo is a  2 or 3-element array as follows:
 | --- | --- | ---  |
 | `[2]` | Property info | nested vector |
 | `[3]` | Property function | integer |
-| `[4]` | DISPID | integer. See DISPID (Dispatch ID) on page 1 |
+| `[4]` | DISPID | integer. See [DISPID (Dispatch ID)](../../Miscellaneous/DISPID.htm#DISPID) |
 
 
 

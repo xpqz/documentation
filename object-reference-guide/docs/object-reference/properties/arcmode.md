@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ArcMode</span></h1>
 
-| Applies To: | [Circle](../a-z/circle.md) | [Ellipse](../a-z/ellipse.md) |
-| --- | --- | ---  |
+Applies To: [Circle](../a-z/circle.md) [Ellipse](../a-z/ellipse.md)
 
 
 **Description**

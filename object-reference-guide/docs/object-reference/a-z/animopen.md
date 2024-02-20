@@ -4,8 +4,7 @@
 
 <h1 class="heading"><span class="name">AnimOpen</span></h1>
 
-| Applies To: | [Animation](./animation.md) |
-| --- | ---  |
+Applies To: [Animation](./animation.md)
 
 
 **Description**

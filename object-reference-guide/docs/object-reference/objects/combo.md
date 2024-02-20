@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Combo</span></h1>
 
-| [Parents](../ParentLists/Combo.htm) | [Children](../ChildLists/Combo.htm) | [Properties](../PropLists/Combo.htm) | [Methods](../MethodLists/Combo.htm) | [Events](../EventLists/Combo.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Combo.htm) [Children](../ChildLists/Combo.htm) [Properties](../PropLists/Combo.htm) [Methods](../MethodLists/Combo.htm) [Events](../EventLists/Combo.htm)
 
 
-| Purpose: | This object combines an input area with a list box and allows the user to enter a selection by typing text or by choosing an item from the list. |
-| --- | ---  |
+Purpose: This object combines an input area with a list box and allows the user to enter a selection by typing text or by choosing an item from the list.
 
 
 **Description**
@@ -35,7 +33,7 @@ Note that if the user first selects an item from the list box, then changes it i
 **Warning: Windows truncates the contents of the edit field (reflected in the value of the Text property) to 510 characters.**
 
 
-For a Combo with [Style ](../a-z/style.md)`'Simple'`, the [Index](../a-z/index.md) property specifies or reports the position of [Items](../a-z/items.md) in the list box as a positive integer value. If [Index](../a-z/index.md) has the value "n", it means that the "nth" item in [Items](../a-z/items.md) is displayed on the top line in the list box. Note that [Index](../a-z/index.md) can only be set using [`⎕WS`](../../Language/System Functions/ws.htm) and **not** by [`⎕WC`](../../Language/System Functions/wc.htm) and is ignored if all the [Items](../a-z/items.md) fit in the list box. The default value for [Index](../a-z/index.md) is `⎕IO`.
+For a Combo with [Style ](../a-z/style.md)`'Simple'`, the [Index](../a-z/index.md) property specifies or reports the position of [Items](../a-z/items.md) in the list box as a positive integer value. If [Index](../a-z/index.md) has the value "n", it means that the "n<sup>th</sup>" item in [Items](../a-z/items.md) is displayed on the top line in the list box. Note that [Index](../a-z/index.md) can only be set using [`⎕WS`](../../Language/System Functions/ws.htm) and **not** by [`⎕WC`](../../Language/System Functions/wc.htm) and is ignored if all the [Items](../a-z/items.md) fit in the list box. The default value for [Index](../a-z/index.md) is `⎕IO`.
 
 
 The [SelText](../a-z/seltext.md) property identifies the portion of the edit field that is highlighted. It is not applicable to a Combo with [Style ](../a-z/style.md)`'Drop'` as the user cannot enter or change data in its edit field.

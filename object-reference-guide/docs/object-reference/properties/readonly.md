@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ReadOnly</span></h1>
 
-| Applies To: | [Button](../a-z/button.md) | [ButtonEdit](../a-z/buttonedit.md) | [Edit](../a-z/edit.md) | [Spinner](../a-z/spinner.md) |
-| --- | --- | --- | --- | ---  |
+Applies To: [Button](../a-z/button.md) [ButtonEdit](../a-z/buttonedit.md) [Edit](../a-z/edit.md) [Spinner](../a-z/spinner.md)
 
 
 **Description**

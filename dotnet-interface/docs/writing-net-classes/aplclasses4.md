@@ -63,7 +63,7 @@ Load `aplclasses4.dws` and export a new version of `aplclasses.dll` as before.
 
 `aplclasses4\Framework\program.cs` contains code to invoke the two different constructor functions `CTOR1` and `CTOR2` :
 ```apl
-`using System;
+using System;
 using APLClasses;
 public class MainClass
 	{
@@ -79,7 +79,7 @@ public class MainClass
 		for (int i=0;i<rslt03.Length;i++)
 			Console.WriteLine(rslt03[i]);
 		}
-	}`
+	}
 ```
 
 Here the code creates two instances of the Primitives class named `apl10` and `apl03`. The first is created with a constructor parameter of `(1)`; the second with a constructor parameter of `(0,3)`.

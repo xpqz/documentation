@@ -170,7 +170,7 @@ A modified version of `⎕JSON` ...
 The Variant operator may also be used in conjunction with .NET classes; it can used to cast an array into a specific .NET data type, and to specify which constructor should be used when creating a new instance of a .NET class which has overloaded constructors. For further information, see 
 .NET Interface Guide: 
 
-Advanced TechniquesAdvanced Techniques on page 1.
+Advanced Techniques[Advanced Techniques](../../DotNet/Accessing DotNet Classes/Advanced Techniques.htm#Advanced_Techniques).
 
 
 The following derived function returns the location of the word `'variant'` within its right argument using default values for all the options.

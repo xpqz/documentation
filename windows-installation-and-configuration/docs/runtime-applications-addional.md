@@ -2,7 +2,7 @@
 
 ### Accessing your Application using RIDE
 
-If you wish to access your run-time application remotely using the RIDE, you must  put a copy of the appropriate Conga DLLs (see Files on page 1) in the same directory as your .EXE or workspace. This is different from previous versions of Dyalog which had separate RIDE DLLs.
+If you wish to access your run-time application remotely using the RIDE, you must  put a copy of the appropriate Conga DLLs (see [Files](files-and-directories.md)) in the same directory as your .EXE or workspace. This is different from previous versions of Dyalog which had separate RIDE DLLs.
 
 ### Additional Files for Syncfusion
 
@@ -17,7 +17,7 @@ If your application uses the **SQAPL/EL ODBC** interface, you must distribute an
 - SQAPL DLL
 - APLUNICD INI
 
-For the names of the files corresponding to these components, see Files on page 1.
+For the names of the files corresponding to these components, see [Files](files-and-directories.md).
 
 The SQAPL DLL must be installed in the user's Windows directory or be on the user's path.
 

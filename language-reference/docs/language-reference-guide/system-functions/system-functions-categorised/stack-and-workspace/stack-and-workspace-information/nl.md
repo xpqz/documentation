@@ -4,7 +4,7 @@
 
 <h1 class="heading"><span class="name">Name List</span><span class="command">R←{X}⎕NL Y</span></h1>
 
-`Y` must be a simple numeric scalar or vector containing one or more of the values for name-class.  See also ["Name Classification: " on page 1](../../../system-functions-a-z/system-functions-a-z/nc.md).
+`Y` must be a simple numeric scalar or vector containing one or more of the values for name-class.  See also ["Name Classification: "](../../../system-functions-a-z/system-functions-a-z/nc.md).
 
 
 `X` is optional. If present, it must be a simple character scalar or vector. `R` is a list of the names of active objects whose name-class is included in `Y` in standard sorted order.

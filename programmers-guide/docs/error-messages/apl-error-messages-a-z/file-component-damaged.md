@@ -8,7 +8,7 @@
 This report is given if an attempt is made to access a component that is not a valid APL object.  This will rarely occur, but may happen as a result of a previous computer system failure.  Components files may be checked using `⎕FCHK`. See  
 Language Reference Guide: 
 
-File Check and RepairFile Check and Repair  on page 1.
+File Check and Repair[File Check and Repair ](../System Functions/fchk.htm#FileCheckandRepair).
 
 
 

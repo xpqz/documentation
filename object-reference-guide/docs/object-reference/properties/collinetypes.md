@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">ColLineTypes</span></h1>
 
-| Applies To: | [Grid](../a-z/grid.md) |
-| --- | ---  |
+Applies To: [Grid](../a-z/grid.md)
 
 
 **Description**
@@ -19,7 +18,7 @@ This property specifies the appearance of the vertical grid lines in a [Grid](..
 ColLineTypes is an integer vector, whose length is normally equal to the number of columns in the [Grid](../a-z/grid.md). Each element in ColLineTypes specifies an index into the [GridLineFCol](../a-z/gridlinefcol.md) and [GridLineWidth](../a-z/gridlinewidth.md) properties, thus selecting the colour and width of the vertical grid lines.
 
 
-For example, if ColLineTypes[1] is 3, the first vertical grid line in the [Grid](../a-z/grid.md) is displayed using the colour specified by the 3rd element of [GridLineFCol](../a-z/gridlinefcol.md), and the width specified by the 3rd element of [GridLineWidth](../a-z/gridlinewidth.md).
+For example, if ColLineTypes[1] is 3, the first vertical grid line in the [Grid](../a-z/grid.md) is displayed using the colour specified by the 3rd element of [GridLineFCol](../a-z/gridlinefcol.md), and the width specified by the 3<sup>rd</sup> element of [GridLineWidth](../a-z/gridlinewidth.md).
 
 
 Note that ColLineTypes is not `⎕IO` dependent, and the value 0 is treated the same as the value 1; both selecting the *first* colour and line width specified by [GridLineFCol](../a-z/gridlinefcol.md) and [GridLineWidth](../a-z/gridlinewidth.md) respectively.

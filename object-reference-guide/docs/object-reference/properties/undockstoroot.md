@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">UndocksToRoot</span></h1>
 
-| Applies To: | [CoolBand](../a-z/coolband.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) | [ToolControl](../a-z/toolcontrol.md) |
-| --- | --- | --- | --- | ---  |
+Applies To: [CoolBand](../a-z/coolband.md) [Form](../a-z/form.md) [SubForm](../a-z/subform.md) [ToolControl](../a-z/toolcontrol.md)
 
 
 **Description**

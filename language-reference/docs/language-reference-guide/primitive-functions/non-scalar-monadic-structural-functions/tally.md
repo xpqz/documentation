@@ -11,7 +11,7 @@
 Tally returns the number of major cells of `Y`. See 
 Programming Reference Guide: 
 
-Cells and Subarrays"Cells and Sub-arrays" on page 1.
+Cells and Subarrays["Cells and Sub-arrays"](../Introduction/Variables/Cells and Subarrays.htm#CellsSubarrays).
 
 
 This can also be expressed as the length of the leading axis or 1 if `Y` is a scalar. Tally is equivalent to the function `{⍬⍴(⍴⍵),1}`.

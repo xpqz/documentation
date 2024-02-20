@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">HasCheckBox</span></h1>
 
-| Applies To: | [DateTimePicker](./datetimepicker.md) |
-| --- | ---  |
+Applies To: [DateTimePicker](./datetimepicker.md)
 
 
 **Description**

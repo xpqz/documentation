@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">DockMove</span></h1>
 
-| Applies To: | [CoolBand](../a-z/coolband.md) | [CoolBar](../a-z/coolbar.md) | [Form](../a-z/form.md) | [SubForm](../a-z/subform.md) | [ToolControl](../a-z/toolcontrol.md) |
-| --- | --- | --- | --- | --- | ---  |
+Applies To: [CoolBand](../a-z/coolband.md) [CoolBar](../a-z/coolbar.md) [Form](../a-z/form.md) [SubForm](../a-z/subform.md) [ToolControl](../a-z/toolcontrol.md)
 
 
 **Description**
@@ -31,13 +30,13 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 
 
 
-The 4th element of the event message Edge is a character vector that indicates along which edge of the host object the client object will be docked if the mouse button is released. It is either  `'Top'`, `'Bottom'`, `'Left'`, `'Right'` or `'None'`. The latter indicates that the object will not be docked. An object will dock only if the mouse pointer is inside, and sufficiently near to an edge of, the host.
+The 4<sup>th</sup> element of the event message Edge is a character vector that indicates along which edge of the host object the client object will be docked if the mouse button is released. It is either  `'Top'`, `'Bottom'`, `'Left'`, `'Right'` or `'None'`. The latter indicates that the object will not be docked. An object will dock only if the mouse pointer is inside, and sufficiently near to an edge of, the host.
 
 
 The 5th and 6th elements of the event message report the position of the mouse pointer in the host object.
 
 
-The 7th element of the event message is a 4-element nested vector containing the y-position, x-position, height and width of a rectangle. If Edge is `'None'`, this is the bounding rectangle of the client object. Otherwise, the rectangle describes a docking zone in the host that the client object will occupy when the mouse button is released.
+The 7<sup>th</sup> element of the event message is a 4-element nested vector containing the y-position, x-position, height and width of a rectangle. If Edge is `'None'`, this is the bounding rectangle of the client object. Otherwise, the rectangle describes a docking zone in the host that the client object will occupy when the mouse button is released.
 
 
 If a callback function returns 0, the system displays the bounding rectangle and not a docking zone, and the docking operation is inhibited. You could use this mechanism to prohibit docking along one or more edges, whilst allowing it along others.

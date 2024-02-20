@@ -63,7 +63,7 @@ The global variable `Wines` contains a vector of character vectors, each of whic
       Grid
 ```
 ```apl
-![data binding datagrid1](../img/data-binding-datagrid1.png)
+
 ```
 
 Let's round the prices to the nearest $5.
@@ -71,5 +71,5 @@ Let's round the prices to the nearest $5.
  winelist.Price←5×⌊0.5+winelist.Price÷5
 ```
 ```apl
-![data binding datagrid2](../img/data-binding-datagrid2.png)
+
 ```

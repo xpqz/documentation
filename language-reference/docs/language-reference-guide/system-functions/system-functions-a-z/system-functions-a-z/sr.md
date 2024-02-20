@@ -14,7 +14,7 @@ In versions of Dyalog APL that support asynchronous terminals, if the current sc
 In Dyalog APL/X, `⎕SR` causes the input cursor to be positioned in the USER window.  During execution of `⎕SR`, only the USER Window defined by `⎕SM` will accept input and respond to the keyboard or mouse.  The SESSION and any EDIT and TRACE Windows that may appear on the display are dormant.
 
 
-In versions of Dyalog APL with GUI support, a single SM object may be defined.  This object defines the size and position of the `⎕SM` window, and allows `⎕SM` to be used in conjunctions with other GUI components.  In these versions, `⎕SR` acts as a superset of `⎕DQ` (see "Dequeue Events: " on page 1) but additionally controls the character-based user interface defined by `⎕SM`.
+In versions of Dyalog APL with GUI support, a single SM object may be defined.  This object defines the size and position of the `⎕SM` window, and allows `⎕SM` to be used in conjunctions with other GUI components.  In these versions, `⎕SR` acts as a superset of `⎕DQ` (see ["Dequeue Events: "](dq.md)) but additionally controls the character-based user interface defined by `⎕SM`.
 
 
 

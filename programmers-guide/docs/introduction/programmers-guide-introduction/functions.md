@@ -51,7 +51,7 @@ Functions may also be created by using assignment (`←`).
 
 ### Function Assignment & Display
 
-The result of a function-expression may be given a name.  This is known as FUNCTION ASSIGNMENT (see also [Dfns & Dops on page 1](../../defined-functions-and-operators/dfns-and-dops/dynamic-functions-and-operators.md)).  If the result of a function-expression is not given a name, its value is displayed.  This is termed FUNCTION DISPLAY.
+The result of a function-expression may be given a name.  This is known as FUNCTION ASSIGNMENT (see also [Dfns & Dops](../../defined-functions-and-operators/dfns-and-dops/dynamic-functions-and-operators.md)).  If the result of a function-expression is not given a name, its value is displayed.  This is termed FUNCTION DISPLAY.
 
 ### Examples
 ```apl

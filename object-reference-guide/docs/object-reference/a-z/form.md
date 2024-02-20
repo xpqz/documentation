@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Form</span></h1>
 
-| [Parents](../ParentLists/Form.htm) | [Children](../ChildLists/Form.htm) | [Properties](../PropLists/Form.htm) | [Methods](../MethodLists/Form.htm) | [Events](../EventLists/Form.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Form.htm) [Children](../ChildLists/Form.htm) [Properties](../PropLists/Form.htm) [Methods](../MethodLists/Form.htm) [Events](../EventLists/Form.htm)
 
 
-| Purpose: | This is a top-level window used to contain other objects (controls). |
-| --- | ---  |
+Purpose: This is a top-level window used to contain other objects (controls).
 
 
 **Description**
@@ -94,7 +92,7 @@ The background of the Form may be coloured using [BCol](./bcol.md).
 The default value for [BCol](./bcol.md) is the Windows
 Button Face colour unless [EdgeStyle](./edgestyle.md) is
 set to `'None'` or `'Default'` in which case it is the Windows background colour. Alternatively, the background
-of a Form can be defined using a [Bitmap](bitmap.md) or [Metafile](Metafile.htm) object whose name is defined by the [Picture](./picture.md) property. A [Metafile](Metafile.htm) is automatically scaled
+of a Form can be defined using a [Bitmap](bitmap.md) or [Metafile](metafile.md) object whose name is defined by the [Picture](./picture.md) property. A [Metafile](metafile.md) is automatically scaled
 to fit the Form. A [Bitmap](bitmap.md) can be tiled *or* scaled. See [Picture](./picture.md) property for details.
 
 

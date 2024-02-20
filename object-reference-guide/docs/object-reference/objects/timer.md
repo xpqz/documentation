@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Timer</span></h1>
 
-| [Parents](../ParentLists/Timer.htm) | [Properties](../PropLists/Timer.htm) | [Methods](../MethodLists/Timer.htm) | [Events](../EventLists/Timer.htm) |
-| --- | --- | --- | ---  |
+[Parents](../ParentLists/Timer.htm) [Properties](../PropLists/Timer.htm) [Methods](../MethodLists/Timer.htm) [Events](../EventLists/Timer.htm)
 
 
-| Purpose: | To generate an action at regular intervals. |
-| --- | ---  |
+Purpose: To generate an action at regular intervals.
 
 
 **Description**

@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">AlwaysShowSelection</span></h1>
 
-| Applies To: | [Grid](./grid.md) | [ListView](./listview.md) | [TreeView](./treeview.md) |
-| --- | --- | --- | ---  |
+Applies To: [Grid](./grid.md) [ListView](./listview.md) [TreeView](./treeview.md)
 
 
 **Description**

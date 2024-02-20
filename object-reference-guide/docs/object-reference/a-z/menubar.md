@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">MenuBar</span></h1>
 
-| [Parents](../ParentLists/MenuBar.htm) | [Children](../ChildLists/MenuBar.htm) | [Properties](../PropLists/MenuBar.htm) | [Methods](../MethodLists/MenuBar.htm) | [Events](../EventLists/MenuBar.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/MenuBar.htm) [Children](../ChildLists/MenuBar.htm) [Properties](../PropLists/MenuBar.htm) [Methods](../MethodLists/MenuBar.htm) [Events](../EventLists/MenuBar.htm)
 
 
-| Purpose: | Specifies a horizontal menu bar displayed at the top of a [Form](form.md) . |
-| --- | ---  |
+Purpose: Specifies a horizontal menu bar displayed at the top of a [Form](form.md) .
 
 
 **Description**

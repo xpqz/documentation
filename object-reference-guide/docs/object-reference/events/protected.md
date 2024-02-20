@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">Protected</span></h1>
 
-| Applies To: | [RichEdit](../a-z/richedit.md) |
-| --- | ---  |
+Applies To: [RichEdit](../a-z/richedit.md)
 
 
 **Description**

@@ -164,7 +164,7 @@ DOMAIN ERROR: There were errors processing the script
 | `'None'` | No internal references are inserted and lexical scope does not apply. |
 
 
-See [Lexical Scope in Scripts on page 1](../../RelNotes19.0/Lexical Scope in Scripts.htm#LexicalScope).
+See [Lexical Scope in Scripts](../../RelNotes19.0/Lexical Scope in Scripts.htm#LexicalScope).
 
 
 The following examples illustrate how different values of the InjectReferences option affect the scope of objects in scripts. The examples are based on the following family tree:

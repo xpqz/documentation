@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Ellipse</span></h1>
 
-| [Parents](../ParentLists/Ellipse.htm) | [Children](../ChildLists/Ellipse.htm) | [Properties](../PropLists/Ellipse.htm) | [Methods](../MethodLists/Ellipse.htm) | [Events](../EventLists/Ellipse.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Ellipse.htm) [Children](../ChildLists/Ellipse.htm) [Properties](../PropLists/Ellipse.htm) [Methods](../MethodLists/Ellipse.htm) [Events](../EventLists/Ellipse.htm)
 
 
-| Purpose: | A Graphical object to draw ellipses, arcs, and pie-slices. |
-| --- | ---  |
+Purpose: A Graphical object to draw ellipses, arcs, and pie-slices.
 
 
 **Description**

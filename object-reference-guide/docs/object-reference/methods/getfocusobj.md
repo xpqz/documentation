@@ -20,7 +20,7 @@ The GetFocusObj method is niladic.
 The result is a ref. If there is no Dyalog APL GUI object with the input focus, the result is `⎕NULL`.
 
 
-See also: [GetFocus on page 1](../a-z/getfocus.md).
+See also: [GetFocus](../a-z/getfocus.md).
 
 
 

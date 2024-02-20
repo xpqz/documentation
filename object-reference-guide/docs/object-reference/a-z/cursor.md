@@ -5,12 +5,10 @@
 
 <h1 class="heading"><span class="name">Cursor</span></h1>
 
-| [Parents](../ParentLists/Cursor.htm) | [Children](../ChildLists/Cursor.htm) | [Properties](../PropLists/Cursor.htm) | [Methods](../MethodLists/Cursor.htm) | [Events](../EventLists/Cursor.htm) |
-| --- | --- | --- | --- | ---  |
+[Parents](../ParentLists/Cursor.htm) [Children](../ChildLists/Cursor.htm) [Properties](../PropLists/Cursor.htm) [Methods](../MethodLists/Cursor.htm) [Events](../EventLists/Cursor.htm)
 
 
-| Purpose: | This object defines a cursor. |
-| --- | ---  |
+Purpose: This object defines a cursor.
 
 
 **Description**

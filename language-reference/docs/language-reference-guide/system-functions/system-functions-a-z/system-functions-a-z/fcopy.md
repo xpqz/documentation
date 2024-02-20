@@ -10,7 +10,7 @@
 `Y` must be a simple integer scalar or 1 or 2-element vector containing the file tie number and optional passnumber. The file need not be tied exclusively.
 
 
-`X` is a character vector containing the name of a new file to be copied to. If no file extension is supplied, the first extension specified by the   CFEXT parameter will be added. See CFEXT Parameter CFEXT on page 1.
+`X` is a character vector containing the name of a new file to be copied to. If no file extension is supplied, the first extension specified by the   CFEXT parameter will be added. See CFEXT Parameter[ CFEXT](../../UserGuide/Installation and Configuration/Configuration Parameters.htm#CFEXT).
 
 
 `⎕FCOPY` creates a copy of the tied file specified by `Y`, named `X`.

@@ -5,7 +5,7 @@ Load the workspace `aplclasses1.dws`, then view the `Primitives` class:
       )load D:\aplclasses\aplclasses1\aplclasses1.dws
 D:\aplclasses\aplclasses1\aplclasses1.dws ⍝ saved ...
 
-      )ed ○APLClasses.Primitives The character before the name `APLClasses.Primitives`, `○`, is typically obtained with Ctrl-O. It is used to tell the editor to edit a class
+      )ed ○APLClasses.Primitives The character before the name APLClasses.Primitives, ○, is typically obtained with Ctrl-O. It is used to tell the editor to edit a class
 ```
 ```apl
 :Class Primitives
@@ -28,7 +28,7 @@ Its syntax is:
                                  [,argNtype [argNname]]*]
 ```
 
-that is: The type of the result returned by the function - followed by arrow - if any, the exported name (it can be different from the APL function name but it must be provided), and, if any arguments are to be supplied, their types and optional names, each type-name pair separated from the next by a comma. In the example above the function returns an array of 32-bit integers and takes a single integer as its argument. For further details, see [Signature Statement on page 1](../../Language/Control Structures/signature.htm#SignatureStatement).
+that is: The type of the result returned by the function - followed by arrow - if any, the exported name (it can be different from the APL function name but it must be provided), and, if any arguments are to be supplied, their types and optional names, each type-name pair separated from the next by a comma. In the example above the function returns an array of 32-bit integers and takes a single integer as its argument. For further details, see [Signature Statement](../../Language/Control Structures/signature.htm#SignatureStatement).
 
 Note that, when the class is fixed, APL will try to find the .NET data types you have specified for the result and for the parameters. If one or more of the data types are not recognised as available .NET Types, you will be informed in the status window and APL will refuse to fix the class. If you see such a warning you have either entered an incorrect data type name, or you have not set `:Using` correctly, or some other syntax problem has been detected (for example the function is missing a terminating `∇`. In the previous example, the only data type used is `System.Int32`. Since we have set `:Using System,` the name `Int32` is found in the right place and all is well.
 
@@ -57,7 +57,7 @@ The `using` statements specify the names of .NET namespaces to be searched for u
 
 The program creates an object named `apl` of type `Primitives` by calling the `new` operator on that class. Then it calls the `IndexGen` method with a parameter of 10.
 ```apl
-`using System;
+      using System;
       using APLClasses;
       public class MainClass
           {
@@ -68,7 +68,7 @@ The program creates an object named `apl` of type `Primitives` by calling the `n
                   for (int i=0;i<rslt.Length;i++)
                   Console.WriteLine(rslt[i]);
               }
-          }`
+          }
 ```
 
 Using VS, open the solution file`d:\aplclasses\aplclasses1\Framework\project.sln` and view `program.cs`.

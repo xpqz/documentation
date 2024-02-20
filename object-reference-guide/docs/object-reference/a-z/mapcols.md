@@ -5,8 +5,7 @@
 
 <h1 class="heading"><span class="name">MapCols</span></h1>
 
-| Applies To: | [ImageList](./imagelist.md) |
-| --- | ---  |
+Applies To: [ImageList](./imagelist.md)
 
 
 **Description**
